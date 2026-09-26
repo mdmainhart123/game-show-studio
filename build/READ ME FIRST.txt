@@ -1,0 +1,46 @@
+GAME SHOW STUDIO  —  v1.0
+Trivia Blitz  •  Quiz Board  •  Spin & Solve
+==================================================
+
+INSTALL (one time, about 2 minutes)
+--------------------------------------------------
+1. Right-click the .zip file you downloaded and choose "Extract All...".
+   (Don't run it from inside the zip. It has to be extracted first.)
+2. Move the extracted "Game Show Studio" folder somewhere permanent,
+   for example your Documents folder or C:\Games.
+3. Open the folder and double-click "Game Show Studio.exe".
+4. The first time only, Windows may show a blue box saying
+   "Windows protected your PC". This happens because the app is new
+   and not "signed" by a big publisher. Click "More info", then
+   "Run anyway".
+5. Optional: right-click "Game Show Studio.exe" > "Show more options" >
+   "Send to" > "Desktop (create shortcut)" so it's one click next time.
+
+RUNNING A GAME NIGHT
+--------------------------------------------------
+- Connect the laptop to the projector or TV, then press F11 for full screen.
+- Teams & Scores: pick 2–10 teams and name them. Scores carry across
+  all three games, and you can fix any score with the + / − buttons.
+- Press Space to move things along (reveal, next, spin).
+- "How to play" on the home screen explains each game.
+
+ADDING YOUR OWN QUESTIONS
+--------------------------------------------------
+Option A: Home > Question Manager > "+ Add".
+Option B, for lots of questions at once:
+  1. Open a file from the "Question Templates" folder in Notepad.
+  2. Replace the examples with your questions and save.
+  3. Question Manager > pick the right tab > "Import from text file".
+     The app tells you exactly which lines (if any) need fixing.
+Each template explains its format at the top.
+
+YOUR QUESTIONS ARE SAVED AUTOMATICALLY in:
+  %APPDATA%\Game Show Studio\questions.json
+Use "Back up everything" in the Question Manager to save a copy
+(to a USB stick, for example), and "Restore backup" on another
+computer to bring everything over.
+
+UPDATING TO A NEW VERSION
+--------------------------------------------------
+Delete the old "Game Show Studio" folder and extract the new one.
+Your questions and teams are stored separately, so they stay put.

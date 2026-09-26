@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Show Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div class="brand" id="homeLink" title="Home">
+        <img class="logo" src="icon.png" alt="">
+        <span>Game Show <b>Studio</b></span>
+      </div>
+      <div class="spacer"></div>
+      <div id="topActions" style="display:flex;gap:10px"></div>
+      <button class="icon-btn" id="soundBtn" title="Sound on/off">🔊</button>
+      <button class="icon-btn" id="fsBtn" title="Full screen (F11)">⛶</button>
+    </header>
+    <main id="screen"></main>
+    <footer class="scorebar" id="scorebar"></footer>
+  </div>
+  <canvas id="confetti"></canvas>
+  <script src="data.js"></script>
+  <script src="core.js"></script>
+  <script src="editor.js"></script>
+  <script src="trivia.js"></script>
+  <script src="board.js"></script>
+  <script src="wheel.js"></script>
+  <script src="start.js"></script>
+</body>
+</html>

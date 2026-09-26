@@ -1,0 +1,16 @@
+# Netlify settings for Game Show Studio (web version).
+# The site is just the files in /app — no build step needed.
+[build]
+  publish = "app"
+  command = "echo 'No build needed - publishing the app folder'"
+
+[build.environment]
+  # Netlify installs package.json tools automatically; skip the big
+  # Electron download since the website doesn't need it.
+  ELECTRON_SKIP_BINARY_DOWNLOAD = "1"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"

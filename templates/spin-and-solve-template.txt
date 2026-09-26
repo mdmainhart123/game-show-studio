@@ -1,0 +1,18 @@
+# =============================================================
+#  SPIN & SOLVE — puzzle import template  (Game Show Studio)
+# =============================================================
+#  One puzzle per line:
+#
+#    category | puzzle
+#
+#  - Letters, numbers, spaces and  ' - & ? ! , . :  are allowed.
+#  - The board is 4 rows of 14 squares, so keep puzzles short
+#    (about 45 characters max, and no single word over 14 letters).
+#  - Lines starting with # are notes and are ignored.
+# =============================================================
+
+Phrase | Better late than never
+Place | The Grand Canyon
+Food & Drink | Peanut butter and jelly sandwich
+Thing | A cup of hot cocoa
+Before & After | Apple pie in the sky

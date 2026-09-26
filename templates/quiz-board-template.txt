@@ -1,0 +1,31 @@
+# =============================================================
+#  QUIZ BOARD — clue import template  (Game Show Studio)
+# =============================================================
+#  A board is a grid of categories (columns) and point values.
+#
+#    BOARD: name of the game board        (starts a new board)
+#    CATEGORY: name of the category        (starts a new column)
+#    points | clue | answer                 (one clue per line)
+#
+#  - Up to 6 categories per board and up to 6 clues per category
+#    are shown (5 is the classic layout).
+#  - Put a | (the "pipe" key, Shift + \ ) between each part.
+#  - Lines starting with # are notes and are ignored.
+#  - You can put several boards in one file.
+# =============================================================
+
+BOARD: Sample Board
+
+CATEGORY: Animals
+100 | This animal is known as the "King of the Jungle" | Lion
+200 | The only mammal that can truly fly | Bat
+300 | A group of crows is called this | A murder
+400 | This animal's fingerprints are almost identical to a human's | Koala
+500 | The fastest land animal | Cheetah
+
+CATEGORY: Geography
+100 | The largest ocean on Earth | Pacific Ocean
+200 | The capital of Canada | Ottawa
+300 | This river flows through Egypt | The Nile
+400 | The smallest country in the world | Vatican City
+500 | This country has the most natural lakes | Canada

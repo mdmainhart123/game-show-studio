@@ -1,0 +1,20 @@
+{
+  "name": "game-show-studio",
+  "version": "1.0.0",
+  "description": "Colorful team game show app: Trivia, Quiz Board, and Spin & Solve",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "node build/build-win.js"
+  },
+  "author": "Matt Mainhart",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "@fontsource/fredoka": "^5.3.0",
+    "electron": "^44.4.5",
+    "png-to-ico": "^3.0.2",
+    "resedit": "^3.1.0"
+  },
+  "productName": "Game Show Studio"
+}
