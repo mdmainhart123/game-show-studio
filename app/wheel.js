@@ -40,9 +40,19 @@ App.screens.wheelPlay = (el, puzzles) => {
   let phase, spinValue = 0, rot = Math.random() * Math.PI * 2, spinning = false, rafId;
   const N = WEDGES.length, SEG = (Math.PI * 2) / N;
 
-  App.setTopActions(`<button class="btn sm ghost" id="wEnd">End game</button>`, {
-    wEnd: async () => { if (await confirmBox('End the game now and show final scores?', 'End game')) App.show('results', 'Spin & Solve', 'wheelSetup'); },
+  App.gameBar({
+    back: () => navTo(pIdx - 1),
+    next: () => navTo(pIdx + 1),
+    backTitle: 'Previous puzzle', nextTitle: 'Next puzzle',
+    endTitle: 'Spin & Solve', endScreen: 'wheelSetup',
   });
+  async function navTo(i) {
+    if (spinning || i < 0) return;
+    if (phase !== 'solved' && usedLetters.size && !(await confirmBox('Leave this puzzle unsolved? Round points on it are lost (team scores are kept).', 'Leave puzzle'))) return;
+    if (i >= puzzles.length) { App.show('results', 'Spin & Solve', 'wheelSetup'); return; }
+    pIdx = i - 1;
+    startPuzzle();
+  }
 
   el.innerHTML = `
     <div class="wh">
@@ -99,6 +109,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     pIdx++;
     if (pIdx >= puzzles.length) { App.show('results', 'Spin & Solve', 'wheelSetup'); return; }
     puzzle = puzzles[pIdx];
+    App.setNavEnabled(pIdx > 0, true);
     rows = GSData.layoutPuzzle(puzzle.phrase).rows;
     shown = new Set(); usedLetters = new Set(); bank = {};
     teams.forEach(t => bank[t.id] = 0);
@@ -173,6 +184,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   function spin() {
     if (spinning || phase !== 'turn') return;
     spinning = true; phase = 'spinning';
+    App.setNavEnabled(false, false);
     $('#spin', el).disabled = true; setLetters('none'); setActions('');
     status('Spinning…');
     const start = rot, dist = Math.PI * 2 * (4 + Math.random() * 3) + Math.random() * Math.PI * 2;
@@ -184,8 +196,8 @@ App.screens.wheelPlay = (el, puzzles) => {
       rot = start + dist * e;
       drawWheel();
       const w = wedgeAtPointer();
-      if (w !== lastW) { lastW = w; Sfx.tick(); }
-      if (p < 1) rafId = requestAnimationFrame(step); else { spinning = false; landed(WEDGES[w]); }
+      if (w !== lastW) { lastW = w; Sfx.peg(); }
+      if (p < 1) rafId = requestAnimationFrame(step); else { spinning = false; App.setNavEnabled(pIdx > 0, true); landed(WEDGES[w]); }
     };
     rafId = requestAnimationFrame(step);
   }

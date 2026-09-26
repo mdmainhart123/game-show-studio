@@ -18,10 +18,12 @@ const App = {
   async start() {
     let d = null;
     try { d = window.api ? await window.api.loadData() : JSON.parse(localStorage.getItem('gss-data') || 'null'); } catch (e) { d = null; }
-    if (!d || !Array.isArray(d.trivia)) d = GSData.starterData();
+    const fresh = !d || !Array.isArray(d.trivia);
+    if (fresh) d = GSData.starterData();
     d.teams ||= [0, 1, 2].map(i => ({ id: GSData.uid(), name: DEFAULT_TEAM_NAMES[i], color: TEAM_COLORS[i], score: 0 }));
     d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250 }, d.settings || {});
     this.data = d;
+    const added = this.applyPacks();
     this.save(true);
 
     $('#homeLink').onclick = () => this.leaveGame();
@@ -31,8 +33,41 @@ const App = {
     document.addEventListener('keydown', e => {
       if (e.key === 'F11') { e.preventDefault(); this.toggleFullscreen(); }
       if (e.key === 'Escape' && Modal.stack.length) Modal.stack[Modal.stack.length - 1].close();
+      // ← / → move through a game (not while typing or in a pop-up)
+      if (this.nav && !Modal.stack.length && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) {
+        if (e.key === 'ArrowLeft' && this.nav.backOn) { e.preventDefault(); this.nav.back(); }
+        if (e.key === 'ArrowRight' && this.nav.nextOn) { e.preventDefault(); this.nav.next(); }
+      }
     });
     this.show('home');
+    if (added.length && !fresh) { // first-time visitors just get everything, no pop-up
+      Modal.open({
+        title: '🎉 New questions added!',
+        body: `<div style="font-size:19px;line-height:1.6">${added.map(a => `<div>📦 <b>${esc(a.name)}</b> — ${a.summary}</div>`).join('')}</div>
+               <p class="hint" style="margin-top:14px">They're mixed in with your own questions, which weren't changed. Find them in the Question Manager.</p>`,
+        actions: [{ label: 'Awesome!', cls: 'pink' }],
+      });
+    }
+  },
+
+  // Question packs (app/packs.js) are added to saved data once each.
+  applyPacks() {
+    const d = this.data, added = [];
+    d.packsApplied ||= [];
+    (window.GS_PACKS || []).forEach(p => {
+      if (d.packsApplied.includes(p.id)) return;
+      const parts = [];
+      [['trivia', 'parseTrivia', 'trivia question'], ['board', 'parseBoard', 'board clue'], ['wheel', 'parseWheel', 'puzzle']].forEach(([k, fn, noun]) => {
+        if (!p[k]) return;
+        const r = GSData[fn](p[k]);
+        if (r.problems.length) console.warn('Pack', p.id, k, r.problems);
+        d[k].push(...r.items);
+        if (r.items.length) parts.push(`${r.items.length} ${noun}${r.items.length === 1 ? '' : 's'}`);
+      });
+      d.packsApplied.push(p.id);
+      added.push({ name: p.name, summary: parts.join(', ') });
+    });
+    return added;
   },
 
   save(now) {
@@ -60,6 +95,7 @@ const App = {
     el.scrollTop = 0;
     $('#topActions').innerHTML = '';
     this.inGame = false;
+    this.nav = null;
     const r = this.screens[name](el, ...args);
     if (typeof r === 'function') this.cleanup = r;
     Scores.render();
@@ -67,8 +103,31 @@ const App = {
 
   // Leaving a game mid-way asks first.
   async leaveGame() {
-    if (this.inGame && !(await confirmBox('Leave this game and go back to the home screen?', 'Leave game'))) return;
+    if (this.inGame && !(await confirmBox('Leave this game and go back to the home screen? Team scores are kept.', 'Go home'))) return;
     this.show('home');
+  },
+
+  // Standard in-game buttons: ◀ Back · Next ▶ · 🏠 Home · 🏁 End game
+  gameBar({ extra = '', handlers = {}, back, next, backTitle = 'Back', nextTitle = 'Next', endTitle, endScreen }) {
+    this.nav = { back, next, backOn: true, nextOn: true };
+    this.setTopActions(`${extra}
+      <button class="btn sm ghost" id="navBack" title="${backTitle} (← key)">◀ Back</button>
+      <button class="btn sm cyan" id="navNext" title="${nextTitle} (→ key)">Next ▶</button>
+      <button class="btn sm yellow" id="navHome" title="Back to the game menu">🏠 Home</button>
+      <button class="btn sm ghost" id="navEnd" title="Show final scores">🏁 End game</button>`, {
+      ...handlers,
+      navBack: () => this.nav?.backOn && back(),
+      navNext: () => this.nav?.nextOn && next(),
+      navHome: () => this.leaveGame(),
+      navEnd: async () => { if (await confirmBox('End the game now and show final scores?', 'End game')) this.show('results', endTitle, endScreen); },
+    });
+  },
+  setNavEnabled(backOn, nextOn) {
+    if (!this.nav) return;
+    Object.assign(this.nav, { backOn, nextOn });
+    const b = $('#navBack'), n = $('#navNext');
+    if (b) b.disabled = !backOn;
+    if (n) n.disabled = !nextOn;
   },
 
   setTopActions(html, handlers = {}) {
@@ -191,6 +250,27 @@ const Sfx = {
     } catch (e) {}
   },
   tick() { this.tone(1200, 0.04, 'square', 0.05); },
+  // Wheel peg: a soft, low wooden "tock" (filtered, quick fade, gentle pitch drop).
+  // Throttled so a fast spin sounds like a smooth clatter instead of a buzz.
+  peg() {
+    if (!App.data?.settings.sound) return;
+    try {
+      this.ctx ||= new (window.AudioContext || window.webkitAudioContext)();
+      const c = this.ctx, t = c.currentTime;
+      if (this._lastPeg && t - this._lastPeg < 0.055) return;
+      this._lastPeg = t;
+      const o = c.createOscillator(), f = c.createBiquadFilter(), g = c.createGain();
+      o.type = 'triangle';
+      o.frequency.setValueAtTime(230 + Math.random() * 25, t);
+      o.frequency.exponentialRampToValueAtTime(140, t + 0.07);
+      f.type = 'lowpass'; f.frequency.value = 800;
+      g.gain.setValueAtTime(0.0001, t);
+      g.gain.linearRampToValueAtTime(0.16, t + 0.004);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.09);
+      o.connect(f).connect(g).connect(c.destination);
+      o.start(t); o.stop(t + 0.1);
+    } catch (e) {}
+  },
   click() { this.tone(700, 0.05, 'triangle', 0.1); },
   ding() { this.tone(1318, 0.35, 'sine', 0.2); this.tone(1976, 0.4, 'sine', 0.1, 0.05); },
   correct() { [523, 659, 784, 1046].forEach((f, i) => this.tone(f, 0.22, 'triangle', 0.18, i * 0.09)); },
@@ -267,6 +347,7 @@ function showHelp() {
       <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — A question shows with a timer. Teams write down or shout out A/B/C/D. Press <kbd>Space</kbd> or <b>Reveal</b> to show the answer, click every team that got it right, then <b>Award &amp; Next</b>.</p>
       <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — A team picks a category and value. Click the tile, read the clue, then <b>Show answer</b>. Click ✓ to award the points or ✗ to take them away (you can turn that off). Close the clue to go back to the board.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. When a team thinks they know it, click <b>Solve it!</b> and have them say it out loud. If they're right, they bank their round points plus a 500-point bonus.</p>
+      <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, <b>🏠 Home</b> to pick a different game (scores are kept), and <b>🏁 End game</b> for final scores. In Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Tips:</b> Press <kbd>F11</kbd> for full screen on a projector. Press <kbd>Esc</kbd> to close a pop-up.</p></div>`,
     actions: [{ label: 'Got it!', cls: 'pink' }],
   });

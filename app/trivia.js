@@ -30,23 +30,29 @@ App.screens.triviaSetup = (el) => {
 App.screens.triviaPlay = (el, questions) => {
   App.inGame = true;
   const d = App.data;
+  // records[i] = { order, pts, teams:Set } once a question has been revealed
+  const records = [];
   let idx = -1, phase, timeLeft, total, timerId, paused, picked, pts, order;
   const R = 52, C = 2 * Math.PI * R;
-  App.setTopActions(`<button class="btn sm ghost" id="tPause">⏸ Pause</button><button class="btn sm ghost" id="tSkip">Skip ⏭</button><button class="btn sm ghost" id="tEnd">End game</button>`, {
-    tPause: () => { if (phase !== 'q') return; paused = !paused; $('#tPause').textContent = paused ? '▶ Resume' : '⏸ Pause'; },
-    tSkip: () => next(),
-    tEnd: async () => { if (await confirmBox('End the game now and show final scores?', 'End game')) App.show('results', 'Trivia Blitz', 'triviaSetup'); },
+  App.gameBar({
+    extra: `<button class="btn sm ghost" id="tPause">⏸ Pause</button>`,
+    handlers: { tPause: () => { if (phase !== 'q') return; paused = !paused; $('#tPause').textContent = paused ? '▶ Resume' : '⏸ Pause'; } },
+    back: () => { if (phase === 'r') applyAward(true); go(idx - 1); },
+    next: () => { if (phase === 'r') applyAward(true); go(idx + 1); },
+    endTitle: 'Trivia Blitz', endScreen: 'triviaSetup',
   });
 
-  function next() {
+  function go(i) {
     clearInterval(timerId);
-    if (App.current !== 'triviaPlay') return;
-    idx++;
-    if (idx >= questions.length) { App.show('results', 'Trivia Blitz', 'triviaSetup'); return; }
+    if (App.current !== 'triviaPlay' || i < 0) return;
+    if (i >= questions.length) { App.show('results', 'Trivia Blitz', 'triviaSetup'); return; }
+    idx = i;
+    App.setNavEnabled(idx > 0, true);
     const q = questions[idx];
-    order = shuffle([q.answer, ...q.wrong]);
+    const rec = records[idx];
+    order = rec ? rec.order : shuffle([q.answer, ...q.wrong]);
     total = timeLeft = q.time || 20;
-    phase = 'q'; paused = false; picked = new Set();
+    phase = 'q'; paused = false; picked = new Set(rec ? rec.teams : []);
     $('#tPause') && ($('#tPause').textContent = '⏸ Pause');
     el.innerHTML = `
       <div class="tq-wrap">
@@ -67,7 +73,12 @@ App.screens.triviaPlay = (el, questions) => {
           <button class="btn lg yellow" id="reveal">Reveal answer <kbd>Space</kbd></button>
         </div>
       </div>`;
-    $('#reveal', el).onclick = reveal;
+    if (rec) { // revisiting: show the answer and the saved picks, no timer
+      $('#timer', el).style.visibility = 'hidden';
+      reveal(true);
+      return;
+    }
+    $('#reveal', el).onclick = () => reveal();
     let lastSec = timeLeft;
     timerId = setInterval(() => {
       if (paused) return;
@@ -81,42 +92,57 @@ App.screens.triviaPlay = (el, questions) => {
     }, 100);
   }
 
-  function reveal() {
+  function reveal(revisit) {
     if (phase !== 'q') return;
     clearInterval(timerId);
     phase = 'r';
-    const bonus = d.settings.speedBonus ? 1 + 0.5 * (timeLeft / total) : 1;
-    pts = Math.round((d.settings.triviaPoints * bonus) / 10) * 10;
+    if (revisit) pts = records[idx].pts;
+    else {
+      const bonus = d.settings.speedBonus ? 1 + 0.5 * (timeLeft / total) : 1;
+      pts = Math.round((d.settings.triviaPoints * bonus) / 10) * 10;
+      records[idx] = { order, pts, teams: new Set() };
+      Sfx.reveal();
+    }
     $('#answers', el).classList.add('revealed');
-    Sfx.reveal();
     const teams = Scores.teams();
+    const last = idx + 1 >= questions.length;
     $('#award', el).innerHTML = `
-      <span class="lbl">Who got it right? <span style="color:var(--yellow)">+${fmt(pts)}</span></span>
-      ${teams.map((t, i) => `<button class="tpick" data-id="${t.id}" style="--tc:${t.color}" title="Key ${(i + 1) % 10}">${esc(t.name)}</button>`).join('')}
+      <span class="lbl">${revisit ? 'Already scored — fix it if needed:' : 'Who got it right?'} <span style="color:var(--yellow)">+${fmt(pts)}</span></span>
+      ${teams.map((t, i) => `<button class="tpick ${picked.has(t.id) ? 'on' : ''}" data-id="${t.id}" style="--tc:${t.color}" title="Key ${(i + 1) % 10}">${esc(t.name)}</button>`).join('')}
       <div class="spacer"></div>
-      <button class="btn lg pink" id="nextBtn">${idx + 1 >= questions.length ? 'Award &amp; finish 🏁' : 'Award &amp; next ▶'}</button>`;
+      <button class="btn lg pink" id="nextBtn">${revisit ? (last ? 'Save &amp; finish 🏁' : 'Save &amp; next ▶') : (last ? 'Award &amp; finish 🏁' : 'Award &amp; next ▶')}</button>`;
     $$('.tpick', el).forEach(b => b.onclick = () => toggle(b.dataset.id));
-    $('#nextBtn', el).onclick = award;
+    $('#nextBtn', el).onclick = () => {
+      if (phase !== 'r') return;
+      const from = idx;
+      if (applyAward()) setTimeout(() => { if (idx === from) go(from + 1); }, 700); else go(from + 1);
+    };
   }
   function toggle(id) {
     picked.has(id) ? picked.delete(id) : picked.add(id);
     $$('.tpick', el).forEach(b => b.classList.toggle('on', picked.has(b.dataset.id)));
     Sfx.click();
   }
-  function award() {
-    if (phase !== 'r') return;
+  // Adds points for newly-picked teams and removes them from un-picked ones.
+  // Returns true if anyone gained points (to pause for the cheer).
+  function applyAward(quiet) {
+    if (phase !== 'r') return false;
     phase = 'done';
-    picked.forEach(id => Scores.add(id, pts));
-    if (picked.size) Sfx.correct();
-    setTimeout(next, picked.size ? 700 : 0);
+    const rec = records[idx];
+    let gained = false;
+    picked.forEach(id => { if (!rec.teams.has(id)) { Scores.add(id, rec.pts); gained = true; } });
+    rec.teams.forEach(id => { if (!picked.has(id)) Scores.add(id, -rec.pts); });
+    rec.teams = new Set(picked);
+    if (gained && !quiet) Sfx.correct();
+    return gained && !quiet;
   }
   const onKey = e => {
     if (Modal.stack.length || e.target.tagName === 'INPUT') return;
-    if (e.code === 'Space' || e.key === 'Enter') { e.preventDefault(); phase === 'q' ? reveal() : award(); }
+    if (e.code === 'Space' || e.key === 'Enter') { e.preventDefault(); if (phase === 'q') reveal(); else if (phase === 'r') $('#nextBtn', el)?.click(); }
     const n = e.key === '0' ? 10 : parseInt(e.key, 10);
     if (phase === 'r' && n >= 1 && n <= Scores.teams().length) toggle(Scores.teams()[n - 1].id);
   };
   document.addEventListener('keydown', onKey);
-  next();
+  go(0);
   return () => { clearInterval(timerId); document.removeEventListener('keydown', onKey); };
 };

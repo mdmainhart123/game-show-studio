@@ -29,6 +29,7 @@ App.screens.boardSetup = (el) => {
   if (!names.length) { $('#add', el).onclick = () => App.show('editor', 'board'); return; }
   $('#go', el).onclick = () => {
     if ($('#reset', el).checked) Scores.resetAll();
+    App.boardUsed = {}; // fresh game: every board's tiles start unplayed
     App.show('boardPlay', $('#bd', el).value);
   };
 };
@@ -37,11 +38,19 @@ App.screens.boardPlay = (el, name) => {
   App.inGame = true;
   const cats = boardLayout(name);
   const rows = Math.max(...cats.map(c => c.clues.length));
-  const used = new Set();
+  App.boardUsed ||= {};
+  const used = (App.boardUsed[name] ||= new Set()); // remembered if you switch boards and come back
   const totalClues = cats.reduce((s, c) => s + c.clues.length, 0);
-  App.setTopActions(`<span style="font-size:20px;font-weight:600;align-self:center;margin-right:8px">${esc(name)}</span><button class="btn sm ghost" id="bEnd">End game</button>`, {
-    bEnd: async () => { if (await confirmBox('End the game now and show final scores?', 'End game')) App.show('results', 'Quiz Board', 'boardSetup'); },
+  const names = boardNames(), bi = names.indexOf(name);
+  App.gameBar({
+    extra: `<span style="font-size:18px;font-weight:600;align-self:center;margin-right:6px">${esc(name)} <span class="hint">(${bi + 1} of ${names.length})</span></span>`,
+    back: () => App.show('boardPlay', names[bi - 1]),
+    next: () => App.show('boardPlay', names[bi + 1]),
+    backTitle: 'Previous board', nextTitle: 'Next board',
+    endTitle: 'Quiz Board', endScreen: 'boardSetup',
   });
+  const navNormal = () => App.setNavEnabled(bi > 0, bi < names.length - 1);
+  navNormal();
 
   function drawBoard() {
     el.innerHTML = `<div class="jb" style="grid-template-columns:repeat(${cats.length},1fr);grid-template-rows:minmax(80px,.8fr) repeat(${rows},1fr)">
@@ -58,6 +67,7 @@ App.screens.boardPlay = (el, name) => {
   function openClue(id) {
     const clue = App.data.board.find(c => c.id === id);
     used.add(id);
+    App.setNavEnabled(false, false); // finish the clue before switching boards
     Sfx.reveal();
     const judged = {};
     const view = document.createElement('div');
@@ -95,9 +105,9 @@ App.screens.boardPlay = (el, name) => {
     let closed = false;
     function close() {
       if (closed) return; closed = true;
-      view.remove(); drawBoard();
+      view.remove(); drawBoard(); navNormal();
       document.removeEventListener('keydown', onKey);
-      if (used.size >= totalClues) setTimeout(() => App.current === 'boardPlay' && App.show('results', 'Quiz Board', 'boardSetup'), 400);
+      if (used.size >= totalClues) setTimeout(boardDone, 400);
     }
     const onKey = e => {
       if (Modal.stack.length) return;
@@ -106,6 +116,19 @@ App.screens.boardPlay = (el, name) => {
     };
     document.addEventListener('keydown', onKey);
     cleanupKey = () => document.removeEventListener('keydown', onKey);
+  }
+  function boardDone() {
+    if (App.current !== 'boardPlay') return;
+    const hasNext = bi < names.length - 1;
+    Sfx.fanfare();
+    Modal.open({
+      title: '🎯 Board complete!',
+      body: `<p style="font-size:20px;margin:0">Every clue on <b>${esc(name)}</b> has been played.${hasNext ? ` Keep going with <b>${esc(names[bi + 1])}</b>, or wrap up?` : ''}</p>`,
+      actions: [
+        { label: '🏁 Final scores', cls: hasNext ? 'ghost' : 'pink', onClick: c => { c(); App.show('results', 'Quiz Board', 'boardSetup'); } },
+        ...(hasNext ? [{ label: 'Next board ▶', cls: 'pink', onClick: c => { c(); App.show('boardPlay', names[bi + 1]); } }] : []),
+      ],
+    });
   }
   let cleanupKey = () => {};
   drawBoard();
