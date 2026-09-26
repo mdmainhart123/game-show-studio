@@ -277,3 +277,32 @@ body.many-teams .count-pick button { width: 56px; height: 56px; }
 body.many-teams .team-chip .tname { padding-right: 0; font-size: 15px; }
 body.many-teams .team-chip .adj { opacity: 0; transition: opacity .15s; }
 body.many-teams .team-chip:hover .adj { opacity: 1; }
+
+/* ---------- trivia: take-turns mode ---------- */
+.mode-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.mode-pick .mode { text-align: left; border: 3px solid transparent; border-radius: 16px; padding: 14px 16px; background: rgba(0,0,0,.25); color: #fff; display: flex; flex-direction: column; gap: 6px; }
+.mode-pick .mode b { font-size: 20px; }
+.mode-pick .mode small { font-size: 15px; color: var(--muted); line-height: 1.35; }
+.mode-pick .mode.on { border-color: var(--yellow); background: rgba(255,210,63,.12); }
+.turn-pill { background: var(--tc, #555); border-radius: 99px; padding: 10px 22px; font-size: clamp(20px, 3vh, 28px); font-weight: 700; box-shadow: 0 5px 0 rgba(0,0,0,.25); text-shadow: 0 2px 0 rgba(0,0,0,.2); white-space: nowrap; }
+.turn-pill.pop { animation: bump .5s; }
+.answers.turns .ans { cursor: pointer; font-family: inherit; }
+.answers.turns:not(.revealed) .ans:not(.out):hover { transform: translateY(-4px) scale(1.01); filter: brightness(1.08); }
+.answers.turns:not(.revealed) .ans:not(.out):active { transform: translateY(2px); }
+.ans .atext { display: flex; flex-direction: column; }
+.ans .who { font-size: .5em; font-weight: 600; opacity: .95; }
+.ans.out { opacity: .32; filter: grayscale(.6); cursor: default !important; }
+.ans.out .shape span { display: none; }
+.ans.out .shape::after { content: '✗'; }
+.answers.revealed .ans.out { opacity: .28; }
+div.field { display: block; font-weight: 500; font-size: 16px; color: var(--muted); margin-bottom: 14px; }
+div.field > span { display: block; margin-bottom: 6px; }
+@media (max-height: 800px) {
+  .setup { margin: 0 auto; }
+  .setup h1 { font-size: 40px; }
+  .setup .panel { margin: 12px 0 16px; padding: 16px 20px; }
+  .setup label.field, .setup div.field { margin-bottom: 10px; }
+  .setup .input { padding: 8px 12px; font-size: 17px; }
+  .mode-pick .mode { padding: 10px 14px; }
+  .setup .btn.xl { padding: 14px 40px; font-size: 28px; }
+}
