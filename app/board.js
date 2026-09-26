@@ -20,15 +20,14 @@ App.screens.boardSetup = (el) => {
       <div class="panel">
         <label class="field"><span>Which board?</span>
           <select class="input" id="bd">${names.map(n => { const L = boardLayout(n); return `<option value="${esc(n)}">${esc(n)} — ${L.length} categories, ${L.reduce((s, c) => s + c.clues.length, 0)} clues</option>`; }).join('')}</select></label>
-        <label class="field" style="display:flex;align-items:center;gap:10px;color:#fff"><input type="checkbox" id="reset" style="width:22px;height:22px"> Start everyone at 0 points</label>
-        <div class="hint">Wrong answers ${App.data.settings.boardDeduct ? 'subtract' : "don't subtract"} points. Change this in Teams &amp; Scores.</div>
+        <div class="hint">Wrong answers ${App.data.settings.boardDeduct ? 'subtract' : "don't subtract"} points (change in Teams &amp; Scores). Scores start at 0 for each game.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>`
       : `<div class="panel empty">No boards yet.<br><br><button class="btn yellow" id="add">📝 Add some clues</button></div>`}
     </div>`;
   if (!names.length) { $('#add', el).onclick = () => App.show('editor', 'board'); return; }
   $('#go', el).onclick = () => {
-    if ($('#reset', el).checked) Scores.resetAll();
+    Scores.resetAll(); // every new game starts at 0
     App.boardUsed = {}; // fresh game: every board's tiles start unplayed
     App.show('boardPlay', $('#bd', el).value);
   };

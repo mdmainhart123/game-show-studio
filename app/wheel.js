@@ -17,8 +17,7 @@ App.screens.wheelSetup = (el) => {
           ${cats.map(c => `<option value="${esc(c)}">${esc(c)} (${d.wheel.filter(p => p.category === c).length})</option>`).join('')}</select></label>
         <label class="field"><span>How many puzzles?</span>
           <select class="input" id="num">${[1, 3, 5, 8].map(n => `<option value="${n}" ${n === 3 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
-        <label class="field" style="display:flex;align-items:center;gap:10px;color:#fff"><input type="checkbox" id="reset" style="width:22px;height:22px"> Start everyone at 0 points</label>
-        <div class="hint">Vowels cost ${d.settings.vowelCost}. Solving banks your round points + ${SOLVE_BONUS} bonus.</div>
+        <div class="hint">Vowels cost ${d.settings.vowelCost}. Solving banks your round points + ${SOLVE_BONUS} bonus. Scores start at 0 for each game.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>`
       : `<div class="panel empty">No puzzles yet.<br><br><button class="btn yellow" id="add">📝 Add some puzzles</button></div>`}
@@ -27,7 +26,7 @@ App.screens.wheelSetup = (el) => {
   $('#go', el).onclick = () => {
     const cat = $('#cat', el).value;
     const pool = shuffle(d.wheel.filter(p => !cat || p.category === cat));
-    if ($('#reset', el).checked) Scores.resetAll();
+    Scores.resetAll(); // every new game starts at 0
     App.show('wheelPlay', pool.slice(0, +$('#num', el).value));
   };
 };
@@ -48,7 +47,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   });
   async function navTo(i) {
     if (spinning || i < 0) return;
-    if (phase !== 'solved' && usedLetters.size && !(await confirmBox('Leave this puzzle unsolved? Round points on it are lost (team scores are kept).', 'Leave puzzle'))) return;
+    if (phase !== 'solved' && usedLetters.size && !(await confirmBox('Leave this puzzle unsolved? Round points on it are lost (team totals are kept).', 'Leave puzzle'))) return;
     if (i >= puzzles.length) { App.show('results', 'Spin & Solve', 'wheelSetup'); return; }
     pIdx = i - 1;
     startPuzzle();

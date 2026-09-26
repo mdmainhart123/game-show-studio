@@ -103,7 +103,7 @@ const App = {
 
   // Leaving a game mid-way asks first.
   async leaveGame() {
-    if (this.inGame && !(await confirmBox('Leave this game and go back to the home screen? Team scores are kept.', 'Go home'))) return;
+    if (this.inGame && !(await confirmBox('Leave this game and go back to the home screen? Scores reset to 0 when the next game starts.', 'Go home'))) return;
     this.show('home');
   },
 
@@ -343,11 +343,11 @@ function showHelp() {
   Modal.open({
     title: 'How to play', wide: true,
     body: `<div style="font-size:18px;line-height:1.5">
-      <p><b style="color:var(--yellow)">Before you start:</b> open <b>Teams &amp; Scores</b> to set 2–10 team names. Scores carry across games, so you can play all three in one session. Use the <b>+ / −</b> buttons on the scoreboard to fix a score any time.</p>
-      <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and the next question starts with the next team. Wrong = they lose the points, that answer is crossed out, and the next team tries. <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
+      <p><b style="color:var(--yellow)">Before you start:</b> open <b>Teams &amp; Scores</b> to set 2–10 team names. Scores start at 0 each time you start a game. Use the <b>+ / −</b> buttons on the scoreboard to fix a score any time.</p>
+      <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = they lose the points, that answer is crossed out, and the next team tries. <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
       <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — A team picks a category and value. Click the tile, read the clue, then <b>Show answer</b>. Click ✓ to award the points or ✗ to take them away (you can turn that off). Close the clue to go back to the board.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. When a team thinks they know it, click <b>Solve it!</b> and have them say it out loud. If they're right, they bank their round points plus a 500-point bonus.</p>
-      <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, <b>🏠 Home</b> to pick a different game (scores are kept), and <b>🏁 End game</b> for final scores. In Trivia, going back to a scored question lets you fix who got it right.</p>
+      <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, <b>🏠 Home</b> to pick a different game, and <b>🏁 End game</b> for final scores. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Tips:</b> Press <kbd>F11</kbd> for full screen on a projector. Press <kbd>Esc</kbd> to close a pop-up.</p></div>`,
     actions: [{ label: 'Got it!', cls: 'pink' }],
   });
@@ -369,7 +369,7 @@ App.screens.teams = (el) => {
             <input data-i="${i}" value="${esc(t.name)}" maxlength="24" placeholder="Team name">
             <div style="font-size:26px;font-weight:700;min-width:70px;text-align:right">${fmt(t.score)}</div>
           </div>`).join('')}</div>
-        <div class="hint">Click a name to rename a team. Scores stay the same when you switch between games.</div>
+        <div class="hint">Click a name to rename a team. Scores reset to 0 whenever a new game starts.</div>
       </div>
       <div class="panel" style="margin-top:20px">
         <div style="font-size:20px;font-weight:600;margin-bottom:12px">Game settings</div>

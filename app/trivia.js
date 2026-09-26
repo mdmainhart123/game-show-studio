@@ -14,11 +14,10 @@ App.screens.triviaSetup = (el) => {
           <select class="input" id="num">${[5, 10, 15, 20, 30].map(n => `<option value="${n}" ${n === 10 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
         <div class="field"><span>Play style</span>
           <div class="mode-pick">
-            <button class="mode ${d.settings.triviaMode !== 'all' ? 'on' : ''}" data-m="turns"><b>🎯 Take turns</b><small>One team at a time. Tap their answer: right = +${d.settings.triviaPoints}, wrong = −${d.settings.triviaPoints} and the next team tries.</small></button>
+            <button class="mode ${d.settings.triviaMode !== 'all' ? 'on' : ''}" data-m="turns"><b>🎯 Take turns</b><small>One team at a time. Tap their answer: right = +${d.settings.triviaPoints} and they go again; wrong = −${d.settings.triviaPoints} and the next team tries.</small></button>
             <button class="mode ${d.settings.triviaMode === 'all' ? 'on' : ''}" data-m="all"><b>👥 Everyone answers</b><small>All teams answer at once. Reveal, then tick every team that got it right.</small></button>
           </div></div>
-        <label class="field" style="display:flex;align-items:center;gap:10px;color:#fff"><input type="checkbox" id="reset" style="width:22px;height:22px"> Start everyone at 0 points</label>
-        <div class="hint">Points per question: ${d.settings.triviaPoints}. Change this in Teams &amp; Scores.</div>
+        <div class="hint">Points per question: ${d.settings.triviaPoints} (change in Teams &amp; Scores). Scores start at 0 for each game.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>`
       : `<div class="panel empty">No trivia questions yet.<br><br><button class="btn yellow" id="add">📝 Add some questions</button></div>`}
@@ -31,7 +30,7 @@ App.screens.triviaSetup = (el) => {
   $('#go', el).onclick = () => {
     const cat = $('#cat', el).value;
     const pool = shuffle(d.trivia.filter(q => !cat || (q.category || 'General') === cat));
-    if ($('#reset', el).checked) Scores.resetAll();
+    Scores.resetAll(); // every new game starts at 0
     App.show(d.settings.triviaMode === 'all' ? 'triviaPlay' : 'triviaTurns', pool.slice(0, +$('#num', el).value));
   };
 };
@@ -157,8 +156,9 @@ App.screens.triviaPlay = (el, questions) => {
 };
 
 // 🎯 Take-turns mode: the team whose turn it is taps an answer.
-// Right = +points and play moves to the next question (next team starts).
-// Wrong = −points, that answer is crossed out, and the next team tries.
+// Right = +points, and that same team starts the next question.
+// Wrong = −points, that answer is crossed out, and the next team tries;
+// if nobody gets it, the team after the last wrong guess starts the next one.
 App.screens.triviaTurns = (el, questions) => {
   App.inGame = true;
   const d = App.data, teams = Scores.teams(), pts = d.settings.triviaPoints;
@@ -264,8 +264,8 @@ App.screens.triviaTurns = (el, questions) => {
       Scores.add(t.id, pts);
       rec.log.push(`✓ ${t.name} +${fmt(pts)}`);
       Sfx.correct();
-      turn++;
-      finish(`<span style="color:var(--green)">✓ Correct!</span> ${esc(t.name)} +${fmt(pts)}`, false, true);
+      // correct team keeps control and starts the next question
+      finish(`<span style="color:var(--green)">✓ Correct!</span> ${esc(t.name)} +${fmt(pts)} — they start the next question!`, false, true);
       return;
     }
     Scores.add(t.id, -pts);
