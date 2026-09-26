@@ -20,7 +20,7 @@ App.screens.boardSetup = (el) => {
       <div class="panel">
         <label class="field"><span>Which board?</span>
           <select class="input" id="bd">${names.map(n => { const L = boardLayout(n); return `<option value="${esc(n)}">${esc(n)} — ${L.length} categories, ${L.reduce((s, c) => s + c.clues.length, 0)} clues</option>`; }).join('')}</select></label>
-        <div class="hint">Wrong answers ${App.data.settings.boardDeduct ? 'subtract' : "don't subtract"} points (change in Teams &amp; Scores). Scores start at 0 for each game.</div>
+        <div class="hint">Wrong answers ${App.data.settings.boardDeduct ? 'subtract' : "don't subtract"} points (change in Teams &amp; Scores). Scores reset to 0 after each game.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>`
       : `<div class="panel empty">No boards yet.<br><br><button class="btn yellow" id="add">📝 Add some clues</button></div>`}

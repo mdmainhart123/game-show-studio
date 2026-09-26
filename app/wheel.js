@@ -17,7 +17,7 @@ App.screens.wheelSetup = (el) => {
           ${cats.map(c => `<option value="${esc(c)}">${esc(c)} (${d.wheel.filter(p => p.category === c).length})</option>`).join('')}</select></label>
         <label class="field"><span>How many puzzles?</span>
           <select class="input" id="num">${[1, 3, 5, 8].map(n => `<option value="${n}" ${n === 3 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
-        <div class="hint">Vowels cost ${d.settings.vowelCost}. Solving banks your round points + ${SOLVE_BONUS} bonus. Scores start at 0 for each game.</div>
+        <div class="hint">Vowels cost ${d.settings.vowelCost}. Solving banks your round points + ${SOLVE_BONUS} bonus. Scores reset to 0 after each game.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>`
       : `<div class="panel empty">No puzzles yet.<br><br><button class="btn yellow" id="add">📝 Add some puzzles</button></div>`}

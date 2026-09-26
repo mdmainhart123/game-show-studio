@@ -103,7 +103,7 @@ const App = {
 
   // Leaving a game mid-way asks first.
   async leaveGame() {
-    if (this.inGame && !(await confirmBox('Leave this game and go back to the home screen? Scores reset to 0 when the next game starts.', 'Go home'))) return;
+    if (this.inGame && !(await confirmBox('Leave this game and go back to the home screen? Scores will reset to 0.', 'Go home'))) return;
     this.show('home');
   },
 
@@ -304,6 +304,7 @@ function confetti(ms = 3500) {
 // ================= HOME =================
 App.screens.home = (el) => {
   Scores.setActive(null);
+  Scores.resetAll(); // back at Home = fresh scores
   const d = App.data;
   const boards = new Set(d.board.map(c => c.board)).size;
   el.innerHTML = `
@@ -343,7 +344,7 @@ function showHelp() {
   Modal.open({
     title: 'How to play', wide: true,
     body: `<div style="font-size:18px;line-height:1.5">
-      <p><b style="color:var(--yellow)">Before you start:</b> open <b>Teams &amp; Scores</b> to set 2–10 team names. Scores start at 0 each time you start a game. Use the <b>+ / −</b> buttons on the scoreboard to fix a score any time.</p>
+      <p><b style="color:var(--yellow)">Before you start:</b> open <b>Teams &amp; Scores</b> to set 2–10 team names. Scores reset to 0 when a game ends or you go back Home. Use the <b>+ / −</b> buttons on the scoreboard to fix a score any time.</p>
       <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = they lose the points, that answer is crossed out, and the next team tries. <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
       <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — A team picks a category and value. Click the tile, read the clue, then <b>Show answer</b>. Click ✓ to award the points or ✗ to take them away (you can turn that off). Close the clue to go back to the board.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. When a team thinks they know it, click <b>Solve it!</b> and have them say it out loud. If they're right, they bank their round points plus a 500-point bonus.</p>
@@ -369,7 +370,7 @@ App.screens.teams = (el) => {
             <input data-i="${i}" value="${esc(t.name)}" maxlength="24" placeholder="Team name">
             <div style="font-size:26px;font-weight:700;min-width:70px;text-align:right">${fmt(t.score)}</div>
           </div>`).join('')}</div>
-        <div class="hint">Click a name to rename a team. Scores reset to 0 whenever a new game starts.</div>
+        <div class="hint">Click a name to rename a team. Scores reset to 0 when a game ends or you go back Home.</div>
       </div>
       <div class="panel" style="margin-top:20px">
         <div style="font-size:20px;font-weight:600;margin-bottom:12px">Game settings</div>
@@ -405,7 +406,9 @@ App.screens.teams = (el) => {
 
 // ================= RESULTS =================
 App.screens.results = (el, gameName, againScreen) => {
-  const r = Scores.ranked();
+  // Snapshot the final scores for the podium, then reset everyone to 0.
+  const r = Scores.ranked().map(t => ({ ...t }));
+  Scores.resetAll();
   const order = [r[1], r[0], r[2]].filter(Boolean);
   const tied = r.filter(t => t.score === r[0].score);
   const hs = innerHeight < 800 ? 0.6 : 1;

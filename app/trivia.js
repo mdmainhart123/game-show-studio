@@ -17,7 +17,7 @@ App.screens.triviaSetup = (el) => {
             <button class="mode ${d.settings.triviaMode !== 'all' ? 'on' : ''}" data-m="turns"><b>🎯 Take turns</b><small>One team at a time. Tap their answer: right = +${d.settings.triviaPoints} and they go again; wrong = −${d.settings.triviaPoints} and the next team tries.</small></button>
             <button class="mode ${d.settings.triviaMode === 'all' ? 'on' : ''}" data-m="all"><b>👥 Everyone answers</b><small>All teams answer at once. Reveal, then tick every team that got it right.</small></button>
           </div></div>
-        <div class="hint">Points per question: ${d.settings.triviaPoints} (change in Teams &amp; Scores). Scores start at 0 for each game.</div>
+        <div class="hint">Points per question: ${d.settings.triviaPoints} (change in Teams &amp; Scores). Scores reset to 0 after each game.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>`
       : `<div class="panel empty">No trivia questions yet.<br><br><button class="btn yellow" id="add">📝 Add some questions</button></div>`}
