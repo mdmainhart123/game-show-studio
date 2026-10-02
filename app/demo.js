@@ -155,7 +155,7 @@ const Demo = {
       const names = boardNames();
       const sel = $('#bd'); sel.value = this.pickRandom(names);
       await this.tap('#go');
-      await this.say('Teams take turns picking a <b>category</b> and a <b>point value</b>. Bigger points = harder clue.', 3800);
+      await this.say('The highlighted team picks a <b>category</b> and a <b>point value</b>. Bigger points = harder clue.', 3800);
       const name = names.find(n => $('#topActions').textContent.includes(n)) || sel.value;
       const dd = App.boardDD?.[name] || new Set();
       const normal = $$('.tile[data-id]').filter(t => !dd.has(t.dataset.id) && /^[23]00$/.test(t.textContent.replace(/,/g, '')));
@@ -166,14 +166,13 @@ const Demo = {
       await this.tap('#show');
       await this.say('Show the answer whenever you\'re ready.', 2200);
       await this.tap($('.jt:nth-child(2) .ok'));
-      await this.say('✅ Correct earns the points, and the tile disappears from the board.', 3200);
+      await this.say('✅ Correct earns the points — and that team picks next.', 3200);
       await this.until(() => !$('.clue-view'));
       const ddTile = $$('.tile[data-id]').find(t => dd.has(t.dataset.id));
       if (ddTile) {
         await this.say('Somewhere on every board is a hidden surprise…', 2400);
         await this.tap(ddTile);
-        await this.say('🎲 <b>DAILY DOUBLE!</b> Tap the team that picked it.', 3000);
-        await this.tap($('.dd-step .tpick:nth-child(3)') || $('.dd-step .tpick'));
+        await this.say('🎲 <b>DAILY DOUBLE!</b> It belongs to the team whose pick it was.', 3200);
         await this.say('They bet as much as they want — up to their score or the board\'s top value.', 3200);
         await this.tap($('.dd-wager .btn.orange'));
         await this.say('All in! 😱', 1600);

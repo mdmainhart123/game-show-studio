@@ -96,6 +96,7 @@ const App = {
     $('#topActions').innerHTML = '';
     this.inGame = false;
     this.nav = null;
+    this.chipClick = null;
     const r = this.screens[name](el, ...args);
     if (typeof r === 'function') this.cleanup = r;
     Scores.render();
@@ -187,9 +188,13 @@ const Scores = {
         <div class="tscore">${fmt(t.score)}</div>
         <div class="adj"><button data-d="1" title="Add 100">+</button><button data-d="-1" title="Subtract 100">−</button></div>
       </div>`).join('');
-    $$('.team-chip .adj button', bar).forEach(b => b.onclick = () => {
+    $$('.team-chip .adj button', bar).forEach(b => b.onclick = e => {
+      e.stopPropagation();
       this.add(b.closest('.team-chip').dataset.id, 100 * Number(b.dataset.d));
     });
+    // a game can let the host click a team box (e.g. Quiz Board: "it's your pick")
+    bar.classList.toggle('clickable', !!App.chipClick);
+    if (App.chipClick) $$('.team-chip', bar).forEach(ch => ch.onclick = () => App.chipClick(ch.dataset.id));
   },
   ranked() { return this.teams().slice().sort((a, b) => b.score - a.score); },
 };
@@ -357,9 +362,9 @@ function showHelp() {
     body: `<div style="font-size:18px;line-height:1.5">
       <p><b style="color:var(--yellow)">Before you start:</b> open <b>Teams &amp; Scores</b> to set 2–10 team names. Scores reset to 0 when a game ends or you go back Home. Use the <b>+ / −</b> buttons on the scoreboard to fix a score any time.</p>
       <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in Teams &amp; Scores). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
-      <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — A team picks a category and value. Click the tile, read the clue, then <b>Show answer</b>. Click ✓ to award the points or ✗ to take them away (you can turn that off). Close the clue to go back to the board.</p>
+      <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Click ✓ to award the points or ✗ to take them away (you can turn that off). Whoever gets it right picks next; if nobody does, the next team picks. Click a team's score box to change whose pick it is.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. When a team thinks they know it, click <b>Solve it!</b> and have them say it out loud. If they're right, they get a 500-point bonus. Points go straight onto the scoreboard at the bottom; BANKRUPT takes away whatever that team earned on the current puzzle.</p>
-      <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. The team that picks it bets any amount up to their score (or the board's top value), and only they answer.</p>
+      <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
       <p><b style="color:var(--yellow)">🏆 Final Round</b> — every game ends with one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in Teams &amp; Scores.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, <b>🏠 Home</b> to pick a different game, and <b>🏁 End game</b> for final scores. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Tips:</b> Press <kbd>F11</kbd> for full screen on a projector. Press <kbd>Esc</kbd> to close a pop-up.</p></div>`,

@@ -363,3 +363,6 @@ body.demo .wheel-box { width: min(100%, calc(100vh - 400px)); }
 body.demo .tq-card { min-height: 13vh; padding-top: 12px; padding-bottom: 12px; }
 body.demo .tq-top { height: clamp(60px, 11vh, 110px); }
 body.demo .ans { padding-top: 4px; padding-bottom: 4px; }
+
+.turn-pill.sm { font-size: 17px; padding: 6px 14px; align-self: center; box-shadow: 0 3px 0 rgba(0,0,0,.25); }
+.scorebar.clickable .team-chip { cursor: pointer; }

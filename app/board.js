@@ -30,6 +30,7 @@ App.screens.boardSetup = (el) => {
     Scores.resetAll(); // every new game starts at 0
     App.boardUsed = {}; // fresh game: every board's tiles start unplayed
     App.boardDD = {};   // …and gets new hidden Daily Doubles
+    App.boardTurn = 0;  // the first team picks first
     App.playedTrivia = new Set();
     App.show('boardPlay', $('#bd', el).value);
   };
@@ -57,8 +58,18 @@ App.screens.boardPlay = (el, name) => {
     return picked;
   })());
   const boardMax = Math.max(...cats.flatMap(c => c.clues.map(x => x.value)));
+  // Whose pick: right answer = that team picks next; nobody right = next team in order.
+  const teams = Scores.teams();
+  App.boardTurn = (App.boardTurn || 0) % teams.length;
+  const picker = () => teams[App.boardTurn % teams.length];
+  function setTurn(i) {
+    App.boardTurn = ((i % teams.length) + teams.length) % teams.length;
+    const t = picker(), pill = $('#bTurn');
+    Scores.setActive(t.id);
+    if (pill) { pill.style.setProperty('--tc', t.color); pill.textContent = `🎯 ${t.name}${/s$/i.test(t.name) ? "'" : "'s"} pick`; pill.classList.remove('pop'); void pill.offsetWidth; pill.classList.add('pop'); }
+  }
   App.gameBar({
-    extra: `<span style="font-size:18px;font-weight:600;align-self:center;margin-right:6px">${esc(name)} <span class="hint">(${bi + 1} of ${names.length})</span></span>`,
+    extra: `<span class="turn-pill sm" id="bTurn"></span><span style="font-size:18px;font-weight:600;align-self:center;margin:0 6px">${esc(name)} <span class="hint">(${bi + 1} of ${names.length})</span></span>`,
     back: () => App.show('boardPlay', names[bi - 1]),
     next: () => App.show('boardPlay', names[bi + 1]),
     backTitle: 'Previous board', nextTitle: 'Next board',
@@ -66,6 +77,10 @@ App.screens.boardPlay = (el, name) => {
   });
   const navNormal = () => App.setNavEnabled(bi > 0, bi < names.length - 1);
   navNormal();
+  setTurn(App.boardTurn);
+  // host can click a team on the scoreboard to make it their pick
+  App.chipClick = id => { if (!$('.clue-view')) { setTurn(teams.findIndex(t => t.id === id)); Sfx.click(); } };
+  Scores.render();
 
   function drawBoard() {
     el.innerHTML = `<div class="jb" style="grid-template-columns:repeat(${cats.length},1fr);grid-template-rows:minmax(80px,.8fr) repeat(${rows},1fr)">
@@ -86,11 +101,12 @@ App.screens.boardPlay = (el, name) => {
     const view = document.createElement('div');
     view.className = 'clue-view';
     el.appendChild(view);
-    let closed = false, onKey = () => {};
+    let closed = false, onKey = () => {}, winner = null;
     const setKeys = fn => { document.removeEventListener('keydown', onKey); onKey = fn; document.addEventListener('keydown', onKey); cleanupKey = () => document.removeEventListener('keydown', onKey); };
     function close() {
       if (closed) return; closed = true;
       view.remove(); drawBoard(); navNormal();
+      setTurn(winner ? teams.findIndex(t => t.id === winner) : App.boardTurn + 1);
       document.removeEventListener('keydown', onKey);
       if (used.size >= totalClues) setTimeout(boardDone, 400);
     }
@@ -102,10 +118,8 @@ App.screens.boardPlay = (el, name) => {
       view.classList.add('dd');
       view.innerHTML = `<div class="dd-splash">DAILY<br>DOUBLE!</div>
         <div class="meta" style="margin-top:18px">${esc(clue.category)}</div>
-        <div class="dd-step"><div class="dd-q">Which team picked this tile?</div>
-          <div class="judge">${Scores.teams().map(t => `<button class="tpick on" data-id="${t.id}" style="--tc:${t.color}">${esc(t.name)}</button>`).join('')}</div></div>`;
-      setKeys(e => { if (e.key === 'Escape') close(); });
-      $$('.tpick', view).forEach(b => b.onclick = () => askWager(Scores.teams().find(t => t.id === b.dataset.id)));
+        <div class="dd-step"></div>`;
+      askWager(picker()); // it belongs to the team whose pick it was
     }
     function askWager(t) {
       const max = Math.max(t.score, boardMax);
@@ -158,6 +172,7 @@ App.screens.boardPlay = (el, name) => {
         $('.ok', row).onclick = () => {
           if (judged[tid]) return;
           judged[tid] = 'ok'; $('.ok', row).classList.add('done');
+          winner = tid;
           Scores.add(tid, plus); Sfx.correct(); showAns();
           if (ddInfo) confetti(1800);
           setTimeout(close, ddInfo ? 2000 : 1400);
