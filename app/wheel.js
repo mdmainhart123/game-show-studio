@@ -113,9 +113,12 @@ App.screens.wheelPlay = (el, puzzles) => {
     rows = GSData.layoutPuzzle(puzzle.phrase).rows;
     shown = new Set(); usedLetters = new Set(); bank = {};
     teams.forEach(t => bank[t.id] = 0);
-    turn = pIdx % teams.length; // puzzle 1 → first team, puzzle 2 → second team, …
+    // Puzzle 1: first team. After that: the team with the most points starts
+    // (a tie goes to whichever tied team is first on the scoreboard).
+    const leader = teams.reduce((best, t, i) => (t.score > teams[best].score ? i : best), 0);
+    turn = pIdx === 0 ? 0 : leader;
     $('#wcat', el).textContent = `${puzzle.category}  ·  Puzzle ${pIdx + 1} of ${puzzles.length}`;
-    drawPuzzle(); setTurnPhase(`${esc(teams[turn].name)}, you're up — spin the wheel!`);
+    drawPuzzle(); setTurnPhase(pIdx === 0 ? `${esc(teams[turn].name)}, you're up — spin the wheel!` : `${esc(teams[turn].name)} has the most points, so you start — spin the wheel!`);
   }
   function drawPuzzle(flashLetter) {
     const R = GSData.WHEEL_ROWS, Cn = GSData.WHEEL_COLS;
