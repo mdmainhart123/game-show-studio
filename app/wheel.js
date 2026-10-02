@@ -1,5 +1,8 @@
 // 🎡 Spin & Solve — spin the wheel, call letters, solve the puzzle.
-const WEDGES = [500, 900, 700, 300, 800, 'BANKRUPT', 600, 400, 550, 'LOSE A TURN', 350, 500, 900, 300, 650, 'BANKRUPT', 700, 450, 350, 800, 600, 400, 1000, 300];
+const WEDGES = [500, 900, 700, 300, 800, 'BANKRUPT', 600, 400, 'MYSTERY', 'LOSE A TURN', 350, 500, 900, 300, 650, 'BANKRUPT', 700, 450, 350, 800, 'MYSTERY', 400, 1000, 300];
+// 🎁 Mystery wedge: plays as 1,000 per letter; after a correct consonant the team may give up
+// those points to flip it — 50/50 JACKPOT (+2,500) or BANKRUPT. Once flipped, it's a plain 1,000.
+const MYSTERY_VALUE = 1000, JACKPOT = 2500;
 const WEDGE_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#12b5cf'];
 const VOWELS = 'AEIOU';
 const SOLVE_BONUS = 500;
@@ -38,6 +41,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   const teams = Scores.teams();
   // bank[teamId] = points that team has earned on the CURRENT puzzle (only used for BANKRUPT);
   // the points themselves go straight onto the scoreboard.
+  let flipped = new Set(), mysteryIdx = null;
   let pIdx = -1, puzzle, rows, shown, usedLetters, bank, turn = 0;
   let phase, spinValue = 0, rot = Math.random() * Math.PI * 2, spinning = false, rafId;
   const N = WEDGES.length, SEG = (Math.PI * 2) / N;
@@ -82,14 +86,21 @@ App.screens.wheelPlay = (el, puzzles) => {
     WEDGES.forEach((w, i) => {
       const a0 = rot + i * SEG - Math.PI / 2;
       ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r, a0, a0 + SEG); ctx.closePath();
-      ctx.fillStyle = w === 'BANKRUPT' ? '#111' : w === 'LOSE A TURN' ? '#fff' : WEDGE_COLORS[i % WEDGE_COLORS.length];
+      const myst = w === 'MYSTERY' && !flipped.has(i);
+      if (w === 'MYSTERY' && !myst) w = MYSTERY_VALUE; // already flipped this puzzle
+      if (myst) {
+        const g = ctx.createLinearGradient(cx, cy, cx + Math.cos(a0 + SEG / 2) * r, cy + Math.sin(a0 + SEG / 2) * r);
+        g.addColorStop(0, '#5b1fa8'); g.addColorStop(1, '#c48a00');
+        ctx.fillStyle = g;
+      } else ctx.fillStyle = w === 'BANKRUPT' ? '#111' : w === 'LOSE A TURN' ? '#fff' : WEDGE_COLORS[i % WEDGE_COLORS.length];
       ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.7)'; ctx.lineWidth = 3; ctx.stroke();
       // label along the radius
       ctx.save(); ctx.translate(cx, cy); ctx.rotate(a0 + SEG / 2);
       ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
       ctx.fillStyle = w === 'LOSE A TURN' ? '#111' : '#fff';
-      const txt = String(w);
-      ctx.font = `700 ${typeof w === 'number' ? 44 : w.length > 9 ? 22 : 26}px Fredoka, sans-serif`;
+      const txt = myst ? '🎁 MYSTERY' : String(w);
+      ctx.font = `700 ${typeof w === 'number' ? 44 : txt.length > 9 ? 22 : 26}px Fredoka, sans-serif`;
+      if (myst) { ctx.fillStyle = '#ffd23f'; ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowOffsetY = 2; }
       if (typeof w === 'number') { ctx.shadowColor = 'rgba(0,0,0,.35)'; ctx.shadowOffsetY = 3; }
       ctx.fillText(txt, r - 22, 0);
       ctx.restore();
@@ -113,6 +124,8 @@ App.screens.wheelPlay = (el, puzzles) => {
     App.setNavEnabled(pIdx > 0, true);
     rows = GSData.layoutPuzzle(puzzle.phrase).rows;
     shown = new Set(); usedLetters = new Set(); bank = {};
+    flipped = new Set(); mysteryIdx = null; // Mystery wedges reset each puzzle
+    drawWheel();
     teams.forEach(t => bank[t.id] = 0);
     // Puzzle 1: first team. After that: the team with the most points starts
     // (a tie goes to whichever tied team is first on the scoreboard).
@@ -190,7 +203,13 @@ App.screens.wheelPlay = (el, puzzles) => {
     App.setNavEnabled(false, false);
     $('#spin', el).disabled = true; setLetters('none'); setActions('');
     status('Spinning…');
-    const start = rot, dist = Math.PI * 2 * (4 + Math.random() * 3) + Math.random() * Math.PI * 2;
+    const start = rot;
+    let dist = Math.PI * 2 * (4 + Math.random() * 3) + Math.random() * Math.PI * 2;
+    if (App.wheelForce != null) { // demo: land on a chosen wedge
+      const norm = (App.wheelForce + 0.3 + Math.random() * 0.4) * SEG;
+      let end = -norm; while (end < start + Math.PI * 2 * 5) end += Math.PI * 2;
+      dist = end - start; App.wheelForce = null;
+    }
     const dur = 4200 + Math.random() * 1200, t0 = performance.now();
     let lastW = wedgeAtPointer();
     const step = now => {
@@ -200,12 +219,24 @@ App.screens.wheelPlay = (el, puzzles) => {
       drawWheel();
       const w = wedgeAtPointer();
       if (w !== lastW) { lastW = w; Sfx.peg(); }
-      if (p < 1) rafId = requestAnimationFrame(step); else { spinning = false; App.setNavEnabled(pIdx > 0, true); landed(WEDGES[w]); }
+      if (p < 1) rafId = requestAnimationFrame(step); else { spinning = false; App.setNavEnabled(pIdx > 0, true); landed(w); }
     };
     rafId = requestAnimationFrame(step);
   }
-  function landed(w) {
+  function landed(wi) {
     const t = teams[turn];
+    let w = WEDGES[wi];
+    mysteryIdx = null;
+    if (w === 'MYSTERY') {
+      if (flipped.has(wi)) w = MYSTERY_VALUE;
+      else {
+        mysteryIdx = wi; spinValue = MYSTERY_VALUE; phase = 'cons';
+        Sfx.ding();
+        status(`<span class="big">🎁 MYSTERY!</span> Worth ${fmt(MYSTERY_VALUE)} — ${esc(t.name)}, call a consonant!`);
+        setLetters('cons'); setActions('');
+        return;
+      }
+    }
     if (w === 'BANKRUPT') {
       Sfx.wrong();
       const lost = Math.max(0, bank[t.id]);
@@ -244,11 +275,68 @@ App.screens.wheelPlay = (el, puzzles) => {
     bank[t.id] += earned;
     if (earned) Scores.add(t.id, earned);
     phase = 'wait';
+    const myst = !wasVowel && mysteryIdx != null ? mysteryIdx : null;
+    mysteryIdx = null;
     setTimeout(() => {
+      if (myst != null && App.current === 'wheelPlay') { offerFlip(t, earned, myst, n, L); return; }
       const done = !remaining(CONS + VOWELS).length;
       setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! ${earned ? `+${fmt(earned)}. ` : ''}${done ? 'Every letter is up — solve it!' : `${esc(t.name)}: spin, buy a vowel, or solve.`}`);
     }, Math.min(n, 4) * 350 + 400);
   }
+  // ---------- 🎁 Mystery flip ----------
+  function offerFlip(t, earned, wi, n, L) {
+    let chosen = false;
+    const keep = () => {
+      if (chosen) return; chosen = true;
+      const done = !remaining(CONS + VOWELS).length;
+      setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! +${fmt(earned)}. ${done ? 'Every letter is up — solve it!' : `${esc(t.name)}: spin, buy a vowel, or solve.`}`);
+    };
+    const m = Modal.open({
+      title: '🎁 Mystery wedge!',
+      body: `<div class="flip-wrap">
+          <div class="flip-card" id="flipCard"><div class="face front">?</div><div class="face back" id="flipBack"></div></div>
+          <div class="flip-text"><p style="font-size:22px;margin:0 0 10px"><b>${esc(t.name)}</b> just earned <b style="color:var(--green)">+${fmt(earned)}</b>.</p>
+          <p style="font-size:18px;margin:0" class="hint">Keep it — or give it up and <b>flip the card</b>:<br>💰 <b style="color:var(--yellow)">JACKPOT</b> +${fmt(JACKPOT)} &nbsp;or&nbsp; 💥 <b style="color:#ffb3bb">BANKRUPT</b> (lose everything from this puzzle). 50/50!</p></div>
+        </div>`,
+      actions: [
+        { label: `Keep +${fmt(earned)}`, cls: 'ghost', onClick: c => { c(); } },
+        { label: '🎁 Flip it!', cls: 'pink', onClick: (c, mb) => flip(c, mb) },
+      ],
+    });
+    m.onClose = keep;
+    function flip(close, mb) {
+      if (chosen) return; chosen = true;
+      $$('.modal .actions button').forEach(b => b.disabled = true);
+      // give up this spin's points, then reveal
+      Scores.add(t.id, -earned); bank[t.id] -= earned;
+      const jackpot = App.mysteryForce ? App.mysteryForce === 'jackpot' : Math.random() < 0.5;
+      App.mysteryForce = null;
+      flipped.add(wi); drawWheel();
+      const back = $('#flipBack', mb);
+      back.classList.add(jackpot ? 'jackpot' : 'bust');
+      back.innerHTML = jackpot ? `💰<br>JACKPOT<br>+${fmt(JACKPOT)}` : '💥<br>BANKRUPT';
+      Sfx.reveal();
+      setTimeout(() => $('#flipCard', mb).classList.add('flipped'), 300);
+      setTimeout(() => {
+        if (jackpot) {
+          Scores.add(t.id, JACKPOT); bank[t.id] += JACKPOT;
+          Sfx.fanfare(); confetti(2500);
+        } else {
+          const lost = Math.max(0, bank[t.id]);
+          if (lost) Scores.add(t.id, -lost);
+          bank[t.id] = 0;
+          Sfx.wrong();
+        }
+      }, 1300);
+      setTimeout(() => {
+        m.onClose = null; close();
+        if (App.current !== 'wheelPlay') return;
+        if (jackpot) setTurnPhase(`<span class="big">💰 JACKPOT!</span> ${esc(t.name)} +${fmt(JACKPOT)}! Spin, buy a vowel, or solve.`);
+        else { status(`<span class="big">💥 BANKRUPT!</span> The gamble didn't pay off.`); setTimeout(() => nextTurn('Ouch!'), 1800); }
+      }, 3600);
+    }
+  }
+
   // ---------- Solving: type the team's answer into the empty squares ----------
   let slots = [], cursor = 0;
   function solve() {

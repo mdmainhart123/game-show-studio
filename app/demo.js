@@ -197,16 +197,34 @@ const Demo = {
       $('#num').value = '1';
       await this.tap('#go');
       await this.say('The first team spins. The category is under the puzzle board.', 3000);
-      let missed = false, letters = 0, vowelDone = false;
+      let missed = false, letters = 0, vowelDone = false, mysteryShown = false;
       const hidden = () => $$('.cell.l.hide').map(c => c.textContent);
+      const bestConsonant = () => {
+        const counts = {}; hidden().filter(x => 'BCDFGHJKLMNPQRSTVWXYZ'.includes(x)).forEach(x => counts[x] = (counts[x] || 0) + 1);
+        return Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
+      };
       for (let spin = 0; spin < 10; spin++) {
         const consLeft = [...new Set(hidden())].filter(L => 'BCDFGHJKLMNPQRSTVWXYZ'.includes(L));
         if (letters >= 3 || !consLeft.length || $('#spin').disabled) break;
+        if (letters >= 1 && !mysteryShown) App.wheelForce = 8; // land on a 🎁 Mystery wedge once
         await this.tap('#spin', 700);
         await this.until(() => !/Spinning/.test($('#status').textContent), 9000);
         const st = $('#status').textContent;
         if (/BANKRUPT/.test(st)) { await this.say('💥 BANKRUPT! They lose what they earned on this puzzle, and the turn passes.', 3800); continue; }
         if (/LOSE A TURN/.test(st)) { await this.say('😬 Lose a turn — next team!', 3200); continue; }
+        if (/MYSTERY/.test(st)) {
+          mysteryShown = true;
+          await this.say('🎁 A <b>MYSTERY</b> wedge! It\'s worth 1,000 for each letter…', 3000);
+          await this.tap($(`#letters button[data-l="${bestConsonant()}"]`));
+          await this.until('.flip-card', 8000);
+          await this.say('The big choice: <b>keep</b> the points, or give them up and <b>flip the card</b> — 50/50 for a +2,500 JACKPOT or BANKRUPT!', 4400);
+          await this.tap('.modal .btn.pink');
+          await this.wait(3900);
+          const res = $('#status').textContent;
+          await this.say(/JACKPOT/.test(res) ? '💰 JACKPOT! The gamble paid off!' : '💥 BANKRUPT! The gamble didn\'t pay off — next team.', 3200);
+          letters++;
+          continue;
+        }
         await this.say('It landed on points! The team calls a <b>consonant</b>…', 2600);
         let L;
         if (!missed) {
@@ -218,8 +236,7 @@ const Demo = {
           await this.say(`No ${L}'s — the turn passes to the next team.`, 3000);
           continue;
         }
-        const counts = {}; hidden().filter(x => 'BCDFGHJKLMNPQRSTVWXYZ'.includes(x)).forEach(x => counts[x] = (counts[x] || 0) + 1);
-        L = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
+        L = bestConsonant();
         await this.tap($(`#letters button[data-l="${L}"]`));
         await this.say(`Every ${L} lights up, and they earn the points <b>for each one</b> — straight onto the scoreboard.`, 3600);
         letters++;
