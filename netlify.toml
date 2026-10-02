@@ -14,3 +14,5 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
+    # Always check for the newest version (prevents old copies after an update)
+    Cache-Control = "no-cache"

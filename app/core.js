@@ -1,3 +1,4 @@
+const APP_VERSION = '20261002-1217'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -485,6 +486,7 @@ const Menu = {
         <button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button>
         <div class="mi-row"><button class="mi" id="mBackup">💾 Back up</button><button class="mi" id="mRestore">📂 Restore</button></div>
       </section>
+      <div class="menu-ver">Version ${APP_VERSION}</div>
     </aside>`;
     document.body.appendChild(back);
     requestAnimationFrame(() => back.classList.add('open'));

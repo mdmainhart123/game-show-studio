@@ -731,3 +731,5 @@ body.theme-recovery .wg-kb .k.x { background: #2e4a48; color: rgba(255,255,255,.
 .lk.on::after { content: '✓ In use'; font-size: 11px; font-weight: 700; color: var(--yellow); }
 .menu section { padding: 10px 0 4px; }
 .mi { padding: 8px 14px; margin-bottom: 5px; font-size: 16px; }
+
+.menu-ver { text-align: center; font-size: 12px; opacity: .55; margin-top: 10px; }
