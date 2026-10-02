@@ -439,3 +439,46 @@ body.demo .menu-back { z-index: 81; }
 .mi { padding: 9px 14px; }
 
 .fs-btn { width: 46px; height: 46px; font-size: 22px; border: 2px solid var(--line); background: rgba(255,255,255,.12); }
+
+/* ---------- 4 game cards ---------- */
+.game-cards { grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1500px; }
+.game-card.words { background: linear-gradient(145deg, #2fd27a, #149a55); }
+.game-card h2 { font-size: clamp(28px, 4.2vh, 46px); }
+.mi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 6px; }
+.mi-grid .mi { margin: 0; text-align: center; font-size: 15px; padding: 10px 6px; }
+
+/* ---------- Word Guess ---------- */
+.wgame { display: grid; grid-template-columns: auto 1fr; gap: 40px; height: 100%; align-items: center; justify-content: center; max-width: 1300px; margin: 0 auto; }
+.wg-left { display: flex; justify-content: center; }
+.wg-grid { display: flex; flex-direction: column; gap: 8px; }
+.wr { display: flex; gap: 8px; align-items: center; position: relative; }
+.wr-team { width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; font-weight: 600; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.wr-team i { width: 12px; height: 12px; border-radius: 50%; background: var(--tc); display: inline-block; }
+.wt { --s: min(9vh, 78px); width: var(--s); height: var(--s); border: 3px solid rgba(255,255,255,.25); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: calc(var(--s) * .55); font-weight: 700; text-transform: uppercase; background: rgba(0,0,0,.15); }
+.wr.cur .wt { border-color: rgba(255,255,255,.45); }
+.wt.filled { border-color: #fff; background: rgba(255,255,255,.12); animation: pop .12s; }
+.wt.g { background: #22a35a; border-color: #22a35a; }
+.wt.y { background: #e0aa00; border-color: #e0aa00; }
+.wt.x { background: #4a4560; border-color: #4a4560; }
+.wt.flip { animation: wflip .55s ease both; }
+.wt.flip.pending { background: rgba(255,255,255,.12); border-color: #fff; }
+@keyframes wflip { 0% { transform: rotateX(0); } 50% { transform: rotateX(90deg); } 100% { transform: rotateX(0); } }
+.wr.shake { animation: shake .4s; }
+.wg-right { display: flex; flex-direction: column; gap: clamp(8px, 1.6vh, 16px); max-width: 640px; }
+.wg-meta { display: flex; gap: 12px; align-items: center; font-size: 20px; color: var(--muted); flex-wrap: wrap; }
+.wg-hint { font-size: 18px; padding: 6px 14px; background: rgba(255,210,63,.18); color: var(--yellow); }
+.wg-points { display: flex; gap: 6px; }
+.wg-points span { flex: 1; text-align: center; padding: 4px 0; border-radius: 8px; background: rgba(255,255,255,.08); font-weight: 600; font-size: 15px; color: var(--muted); }
+.wg-points span.on { background: var(--yellow); color: #3a1d00; }
+.wg-points span.gone { opacity: .35; text-decoration: line-through; }
+.wgame .status { text-align: left; font-size: clamp(18px, 2.7vh, 24px); min-height: 2.6em; }
+.wg-answer { display: flex; gap: 6px; margin-top: 8px; }
+.wg-answer span { width: 46px; height: 46px; border-radius: 8px; background: #22a35a; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 700; }
+.wg-kb { display: flex; flex-direction: column; gap: 6px; }
+.wg-kb .kr { display: flex; gap: 6px; justify-content: center; }
+.wg-kb .k { flex: 1; max-width: 56px; height: clamp(40px, 6.6vh, 58px); border: 0; border-radius: 8px; font-size: clamp(16px, 2.2vh, 22px); font-weight: 700; color: #fff; background: rgba(255,255,255,.2); box-shadow: 0 3px 0 rgba(0,0,0,.25); }
+.wg-kb .k.wide { max-width: 90px; flex: 1.6; font-size: 15px; }
+.wg-kb .k:hover { filter: brightness(1.2); }
+.wg-kb .k.g { background: #22a35a; } .wg-kb .k.y { background: #e0aa00; } .wg-kb .k.x { background: #2a2540; color: rgba(255,255,255,.45); }
+.wgame .wh-actions { justify-content: flex-start; }
+@media (max-height: 800px) { .wgame { gap: 28px; } .wr-team { font-size: 13px; } }

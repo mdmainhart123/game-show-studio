@@ -107,6 +107,28 @@ Before & After | Apple pie in the sky
     },
   };
 
+  TEMPLATES.words = {
+    file: 'word-guess-template.txt',
+    text: `# =============================================================
+#  WORD GUESS — word import template  (Game Show Studio)
+# =============================================================
+#  One word per line:
+#
+#    word | hint
+#
+#  - Each word must be exactly 5 letters (A–Z only).
+#  - The hint is optional (for example a category like Animal).
+#    You can switch hints on or off when you start a game.
+#  - Lines starting with # are notes and are ignored.
+# =============================================================
+
+tiger | Animal
+pizza | Food
+chair | Around the House
+beach
+`,
+  };
+
   // ================= WHEEL LAYOUT =================
   const WHEEL_COLS = 14, WHEEL_ROWS = 4;
   const WHEEL_ALLOWED = /^[A-Z0-9 '\-&?!,.:]+$/;
@@ -224,6 +246,23 @@ Before & After | Apple pie in the sky
     return { items, problems };
   }
 
+  function parseWords(text) {
+    const items = [], problems = [], seen = new Set();
+    const dict = typeof root !== 'undefined' && root.GS_WORDS5 ? new Set(root.GS_WORDS5.match(/.{5}/g)) : null;
+    lines(text).forEach((raw, i) => {
+      const n = i + 1, l = raw.trim();
+      if (!l || isComment(l)) return;
+      const [w, ...rest] = l.split('|').map(s => s.trim());
+      const word = (w || '').toUpperCase();
+      if (!/^[A-Z]{5}$/.test(word)) { problems.push(`Line ${n}: "${w}" isn't a 5-letter word (letters A–Z only)`); return; }
+      if (seen.has(word)) { problems.push(`Line ${n}: ${word} is listed twice — kept the first one`); return; }
+      seen.add(word);
+      if (dict && !dict.has(word)) problems.push(`Line ${n}: ${word} isn't in the built-in word list — it will still work as an answer`);
+      items.push({ id: uid(), word, hint: rest.join(' | ') });
+    });
+    return { items, problems };
+  }
+
   // ================= STARTER DATA =================
   function T(question, answer, wrong, category, time = 20) { return { id: uid(), question, answer, wrong, category, time }; }
   function starterData() {
@@ -290,10 +329,10 @@ CATEGORY: Around the House
       ['Event', 'Family game night'], ['Event', 'Surprise birthday party'],
       ['Before & After', 'Apple pie in the sky'], ['Fun & Games', 'Hide and seek'],
     ].map(([category, p]) => ({ id: uid(), category, phrase: layoutPuzzle(p).text }));
-    return { version: 1, trivia, board, wheel };
+    return { version: 1, trivia, board, wheel, words: [] };
   }
 
-  const api = { uid, TEMPLATES, parseTrivia, parseBoard, parseWheel, layoutPuzzle, starterData, WHEEL_COLS, WHEEL_ROWS };
+  const api = { uid, TEMPLATES, parseTrivia, parseBoard, parseWheel, parseWords, layoutPuzzle, starterData, WHEEL_COLS, WHEEL_ROWS };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.GSData = api;
 })(this);

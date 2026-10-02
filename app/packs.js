@@ -869,3 +869,140 @@ CATEGORY: Holidays
 500 | The Hindu festival of lights, celebrated each autumn | Diwali
 `,
 });
+
+window.GS_PACKS.push({
+  id: 'word-guess-starter-2026-10',
+  name: 'Word Guess Starter',
+  words: `
+tiger | Animal
+zebra | Animal
+horse | Animal
+sheep | Animal
+mouse | Animal
+otter | Animal
+eagle | Animal
+shark | Animal
+whale | Animal
+snake | Animal
+camel | Animal
+llama | Animal
+panda | Animal
+koala | Animal
+bison | Animal
+goose | Animal
+moose | Animal
+skunk | Animal
+hippo | Animal
+rhino | Animal
+trout | Animal
+robin | Animal
+crane | Animal
+puppy | Animal
+lemur | Animal
+pizza | Food
+bread | Food
+apple | Food
+lemon | Food
+mango | Food
+grape | Food
+peach | Food
+tacos | Food
+pasta | Food
+candy | Food
+salad | Food
+bacon | Food
+toast | Food
+gravy | Food
+onion | Food
+berry | Food
+olive | Food
+crepe | Food
+donut | Food
+fudge | Food
+salsa | Food
+chili | Food
+melon | Food
+bagel | Food
+sushi | Food
+chair | Around the House
+table | Around the House
+couch | Around the House
+shelf | Around the House
+clock | Around the House
+light | Around the House
+towel | Around the House
+plate | Around the House
+spoon | Around the House
+knife | Around the House
+broom | Around the House
+stove | Around the House
+sheet | Around the House
+radio | Around the House
+phone | Around the House
+quilt | Around the House
+glass | Around the House
+frame | Around the House
+dress | Around the House
+shirt | Around the House
+river | Nature
+ocean | Nature
+beach | Nature
+cloud | Nature
+storm | Nature
+grass | Nature
+plant | Nature
+earth | Nature
+creek | Nature
+field | Nature
+woods | Nature
+stone | Nature
+shore | Nature
+frost | Nature
+bloom | Nature
+tulip | Nature
+daisy | Nature
+lilac | Nature
+maple | Nature
+cedar | Nature
+dance | Things to Do
+music | Things to Do
+sport | Things to Do
+paint | Things to Do
+write | Things to Do
+smile | Things to Do
+laugh | Things to Do
+sleep | Things to Do
+climb | Things to Do
+skate | Things to Do
+chess | Things to Do
+cards | Things to Do
+bingo | Things to Do
+party | Things to Do
+movie | Things to Do
+swing | Things to Do
+float | Things to Do
+piano | Things to Do
+train | Things to Do
+games | Things to Do
+happy | Feelings
+proud | Feelings
+brave | Feelings
+peace | Feelings
+jolly | Feelings
+sunny | Feelings
+merry | Feelings
+cheer | Feelings
+lucky | Feelings
+eager | Feelings
+nurse | Jobs
+clerk | Jobs
+coach | Jobs
+judge | Jobs
+pilot | Jobs
+tutor | Jobs
+guard | Jobs
+miner | Jobs
+baker | Jobs
+mayor | Jobs
+`,
+});

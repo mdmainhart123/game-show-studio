@@ -1,0 +1,17 @@
+# =============================================================
+#  WORD GUESS — word import template  (Game Show Studio)
+# =============================================================
+#  One word per line:
+#
+#    word | hint
+#
+#  - Each word must be exactly 5 letters (A–Z only).
+#  - The hint is optional (for example a category like Animal).
+#    You can switch hints on or off when you start a game.
+#  - Lines starting with # are notes and are ignored.
+# =============================================================
+
+tiger | Animal
+pizza | Food
+chair | Around the House
+beach

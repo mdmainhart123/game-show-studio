@@ -20,6 +20,7 @@ const App = {
     try { d = window.api ? await window.api.loadData() : JSON.parse(localStorage.getItem('gss-data') || 'null'); } catch (e) { d = null; }
     const fresh = !d || !Array.isArray(d.trivia);
     if (fresh) d = GSData.starterData();
+    d.words ||= [];
     d.teams ||= [0, 1, 2].map(i => ({ id: GSData.uid(), name: DEFAULT_TEAM_NAMES[i], color: TEAM_COLORS[i], score: 0 }));
     d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250, triviaPenalty: 'half', finalRound: true }, d.settings || {});
     this.data = d;
@@ -57,7 +58,7 @@ const App = {
     (window.GS_PACKS || []).forEach(p => {
       if (d.packsApplied.includes(p.id)) return;
       const parts = [];
-      [['trivia', 'parseTrivia', 'trivia question'], ['board', 'parseBoard', 'board clue'], ['wheel', 'parseWheel', 'puzzle']].forEach(([k, fn, noun]) => {
+      [['trivia', 'parseTrivia', 'trivia question'], ['board', 'parseBoard', 'board clue'], ['wheel', 'parseWheel', 'puzzle'], ['words', 'parseWords', 'Word Guess word']].forEach(([k, fn, noun]) => {
         if (!p[k]) return;
         const r = GSData[fn](p[k]);
         if (r.problems.length) console.warn('Pack', p.id, k, r.problems);
@@ -317,6 +318,7 @@ App.screens.home = (el) => {
       <button class="game-card trivia" data-g="trivia"><div class="emoji">⚡</div><h2>Trivia Blitz</h2><p>Answer against the clock</p></button>
       <button class="game-card board" data-g="board"><div class="emoji">🎯</div><h2>Quiz Board</h2><p>Pick a category, win the points</p></button>
       <button class="game-card wheel" data-g="wheel"><div class="emoji">🎡</div><h2>Spin &amp; Solve</h2><p>Spin, guess, solve the puzzle</p></button>
+      <button class="game-card words" data-g="words"><div class="emoji">🔤</div><h2>Word Guess</h2><p>Crack the 5-letter word</p></button>
     </div>
     <div class="home-teams">${App.data.teams.map(t => `<span style="--tc:${t.color}">${esc(t.name)}</span>`).join('')}</div>
     <div class="home-hint">Host: teams, questions, settings and demos are in the <b>☰ Menu</b> (top right)</div>`;
@@ -331,6 +333,7 @@ function showHelp() {
       <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in ☰ Menu → Settings). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
       <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Click ✓ to award the points or ✗ to take them away (you can turn that off). Whoever gets it right picks next; if nobody does, the next team picks. Click a team's score box to change whose pick it is.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. Land on a <b>🎁 MYSTERY</b> wedge and it's worth 1,000 per letter; get a letter right and the team can keep the points or give them up to flip the card: 50/50 for a +2,500 JACKPOT or BANKRUPT. When a team thinks they know it, click <b>Solve it!</b>, have them say it out loud, and type it into the empty squares (keyboard or on-screen letters; ⌫ to fix). <b>Check answer</b> tells you if they got it: right = 500-point bonus, wrong = next team's turn. Points go straight onto the scoreboard at the bottom; BANKRUPT takes away whatever that team earned on the current puzzle.</p>
+      <p><b style="color:var(--green)">🔤 Word Guess</b> — guess the hidden 5-letter word in 6 tries. Teams take turns, one row each: type the team's guess and press Enter. <b style="color:#3ee08f">Green</b> = right letter, right spot; <b style="color:var(--yellow)">yellow</b> = in the word, wrong spot; gray = not in the word. Solve on row 1 for 600 points, down to 100 on row 6. The solving team starts the next word.</p>
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
       <p><b style="color:var(--yellow)">🏆 Final Round</b> — every game ends with one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, and the <b>☰ Menu</b> has 🏁 End game, 🏠 Quit to Home and ⏸ Pause. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
@@ -426,7 +429,7 @@ const Menu = {
         <button class="mi" data-go="settings">⚙️ Settings</button>
       </section>
       <section><h4>Show the group how to play</h4>
-        <div class="mi-row"><button class="mi" data-demo="trivia">🎬 ⚡ Trivia</button><button class="mi" data-demo="board">🎬 🎯 Board</button><button class="mi" data-demo="wheel">🎬 🎡 Wheel</button></div>
+        <div class="mi-grid"><button class="mi" data-demo="trivia">🎬 ⚡ Trivia</button><button class="mi" data-demo="board">🎬 🎯 Quiz Board</button><button class="mi" data-demo="wheel">🎬 🎡 Spin &amp; Solve</button><button class="mi" data-demo="words">🎬 🔤 Word Guess</button></div>
         <button class="mi" id="mHelp">❓ How to play (rules)</button>
       </section>
       <section><h4>Display &amp; data</h4>
@@ -460,7 +463,7 @@ const Menu = {
 // Backup / restore of all questions (used by the menu and the Question Manager)
 App.backup = async function () {
   const d = this.data, date = new Date().toISOString().slice(0, 10);
-  const p = await this.saveText(`game-show-backup-${date}.json`, JSON.stringify({ app: 'Game Show Studio', version: 1, trivia: d.trivia, board: d.board, wheel: d.wheel }, null, 2), [{ name: 'Backup file', extensions: ['json'] }]);
+  const p = await this.saveText(`game-show-backup-${date}.json`, JSON.stringify({ app: 'Game Show Studio', version: 2, trivia: d.trivia, board: d.board, wheel: d.wheel, words: d.words }, null, 2), [{ name: 'Backup file', extensions: ['json'] }]);
   if (p) toast('Backup saved ✓');
 };
 App.restore = async function (after) {
@@ -469,8 +472,8 @@ App.restore = async function (after) {
   let b;
   try { b = JSON.parse(f.text); } catch (e) { toast("That file isn't a backup file", true); return; }
   if (!Array.isArray(b.trivia) || !Array.isArray(b.board) || !Array.isArray(b.wheel)) { toast("That file isn't a Game Show Studio backup", true); return; }
-  if (!(await confirmBox(`Replace all questions with this backup? (${b.trivia.length} trivia, ${b.board.length} board clues, ${b.wheel.length} puzzles)`, 'Restore', true))) return;
-  Object.assign(this.data, { trivia: b.trivia, board: b.board, wheel: b.wheel });
+  if (!(await confirmBox(`Replace all questions with this backup? (${b.trivia.length} trivia, ${b.board.length} board clues, ${b.wheel.length} puzzles${Array.isArray(b.words) ? `, ${b.words.length} words` : ''})`, 'Restore', true))) return;
+  Object.assign(this.data, { trivia: b.trivia, board: b.board, wheel: b.wheel }, Array.isArray(b.words) ? { words: b.words } : {});
   this.save(true); toast('Backup restored ✓');
   after && after();
 };
