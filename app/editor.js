@@ -8,8 +8,8 @@ const TABS = {
 App.screens.editor = (el, startTab = 'trivia') => {
   const d = App.data;
   let tab = startTab, search = '', boardFilter = '';
-  App.setTopActions(`<button class="btn sm ghost" id="eBackup">💾 Back up everything</button><button class="btn sm ghost" id="eRestore">📂 Restore backup</button><button class="btn sm pink" id="eDone">Done ✓</button>`, {
-    eBackup: backup, eRestore: restore, eDone: () => App.show('home'),
+  App.setTopActions(`<button class="btn sm pink" id="eDone">Done ✓</button>`, {
+    eDone: () => App.show('home'),
   });
 
   function draw() {
@@ -247,21 +247,8 @@ App.screens.editor = (el, startTab = 'trivia') => {
   }
 
   // ---------- backup / restore ----------
-  async function backup() {
-    const date = new Date().toISOString().slice(0, 10);
-    const p = await App.saveText(`game-show-backup-${date}.json`, JSON.stringify({ app: 'Game Show Studio', version: 1, trivia: d.trivia, board: d.board, wheel: d.wheel }, null, 2), [{ name: 'Backup file', extensions: ['json'] }]);
-    if (p) toast('Backup saved ✓');
-  }
-  async function restore() {
-    const f = await App.openText('Choose a backup (.json) file');
-    if (!f) return;
-    let b;
-    try { b = JSON.parse(f.text); } catch (e) { toast("That file isn't a backup file", true); return; }
-    if (!Array.isArray(b.trivia) || !Array.isArray(b.board) || !Array.isArray(b.wheel)) { toast("That file isn't a Game Show Studio backup", true); return; }
-    if (!(await confirmBox(`Replace everything with this backup? (${b.trivia.length} trivia, ${b.board.length} board clues, ${b.wheel.length} puzzles)`, 'Restore', true))) return;
-    d.trivia = b.trivia; d.board = b.board; d.wheel = b.wheel;
-    App.save(true); draw(); toast('Backup restored ✓');
-  }
+  const backup = () => App.backup();
+  const restore = () => App.restore(draw);
 
   draw();
 };

@@ -17,9 +17,10 @@ App.screens.triviaSetup = (el) => {
             <button class="mode ${d.settings.triviaMode !== 'all' ? 'on' : ''}" data-m="turns"><b>🎯 Take turns</b><small>One team at a time. Tap their answer: right = +${d.settings.triviaPoints} and they go again; wrong = ${({ none: 'no penalty', half: '−' + Math.round(d.settings.triviaPoints / 20) * 10, full: '−' + d.settings.triviaPoints })[d.settings.triviaPenalty] || 'no penalty'} and the next team tries.</small></button>
             <button class="mode ${d.settings.triviaMode === 'all' ? 'on' : ''}" data-m="all"><b>👥 Everyone answers</b><small>All teams answer at once. Reveal, then tick every team that got it right.</small></button>
           </div></div>
-        <div class="hint">Points per question: ${d.settings.triviaPoints} (change in Teams &amp; Scores). Scores reset to 0 after each game.</div>
+        <div class="hint">Points per question: ${d.settings.triviaPoints} (change in ☰ Menu → Settings). Scores reset to 0 after each game.</div>
       </div>
-      <button class="btn xl pink" id="go">Start! ▶</button>`
+      <button class="btn xl pink" id="go">Start! ▶</button>
+      <div><button class="link-btn" id="demo">🎬 Watch a demo first</button></div>`
       : `<div class="panel empty">No trivia questions yet.<br><br><button class="btn yellow" id="add">📝 Add some questions</button></div>`}
     </div>`;
   if (!d.trivia.length) { $('#add', el).onclick = () => App.show('editor', 'trivia'); return; }
@@ -27,6 +28,7 @@ App.screens.triviaSetup = (el) => {
     d.settings.triviaMode = b.dataset.m; App.save();
     $$('.mode', el).forEach(x => x.classList.toggle('on', x === b));
   });
+  $('#demo', el).onclick = () => Demo.start('trivia');
   $('#go', el).onclick = () => {
     const cat = $('#cat', el).value;
     const pool = shuffle(d.trivia.filter(q => !cat || (q.category || 'General') === cat));
@@ -45,8 +47,7 @@ App.screens.triviaPlay = (el, questions) => {
   let idx = -1, phase, timeLeft, total, timerId, paused, picked, pts, order;
   const R = 52, C = 2 * Math.PI * R;
   App.gameBar({
-    extra: `<button class="btn sm ghost" id="tPause">⏸ Pause</button>`,
-    handlers: { tPause: () => { if (phase !== 'q') return; paused = !paused; $('#tPause').textContent = paused ? '▶ Resume' : '⏸ Pause'; } },
+    pause: { toggle: () => { if (phase !== 'q') return; paused = !paused; $('#timer', el)?.classList.toggle('paused', paused); }, get: () => paused },
     back: () => { if (phase === 'r') applyAward(true); go(idx - 1); },
     next: () => { if (phase === 'r') applyAward(true); go(idx + 1); },
     endTitle: 'Trivia Blitz', endScreen: 'triviaSetup',
@@ -63,7 +64,6 @@ App.screens.triviaPlay = (el, questions) => {
     order = rec ? rec.order : shuffle([q.answer, ...q.wrong]);
     total = timeLeft = q.time || 20;
     phase = 'q'; paused = false; picked = new Set(rec ? rec.teams : []);
-    $('#tPause') && ($('#tPause').textContent = '⏸ Pause');
     el.innerHTML = `
       <div class="tq-wrap">
         <div class="tq-top">
@@ -164,7 +164,7 @@ App.screens.triviaPlay = (el, questions) => {
 App.screens.triviaTurns = (el, questions) => {
   App.inGame = true;
   const d = App.data, teams = Scores.teams(), pts = d.settings.triviaPoints;
-  // wrong-answer penalty: none / half / full (Teams & Scores setting)
+  // wrong-answer penalty: none / half / full (☰ Menu → Settings)
   const penalty = ({ none: 0, half: Math.round(pts / 20) * 10, full: pts })[d.settings.triviaPenalty] ?? 0;
   const lostTxt = name => penalty ? `✗ ${esc(name)} −${fmt(penalty)}.` : `✗ Not quite, ${esc(name)}!`;
   const records = [];
@@ -172,8 +172,7 @@ App.screens.triviaTurns = (el, questions) => {
   const R = 52, C = 2 * Math.PI * R;
   const team = () => teams[turn % teams.length];
   App.gameBar({
-    extra: `<button class="btn sm ghost" id="tPause">⏸ Pause</button>`,
-    handlers: { tPause: () => { if (phase !== 'q') return; paused = !paused; $('#tPause').textContent = paused ? '▶ Resume' : '⏸ Pause'; } },
+    pause: { toggle: () => { if (phase !== 'q') return; paused = !paused; $('#timer', el)?.classList.toggle('paused', paused); }, get: () => paused },
     back: () => go(idx - 1),
     next: () => go(idx + 1),
     endTitle: 'Trivia Blitz', endScreen: 'triviaSetup',
@@ -236,7 +235,6 @@ App.screens.triviaTurns = (el, questions) => {
   function startTurn(msg) {
     const q = questions[idx];
     phase = 'q'; paused = false;
-    $('#tPause') && ($('#tPause').textContent = '⏸ Pause');
     setTurnUI();
     $('#tstatus', el).innerHTML = msg;
     $('#tbtns', el).innerHTML = `<button class="btn yellow" id="giveUp" title="Show the answer, no points">Reveal answer</button>`;

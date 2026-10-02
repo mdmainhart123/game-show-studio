@@ -22,10 +22,12 @@ App.screens.wheelSetup = (el) => {
           <select class="input" id="num">${[1, 3, 5, 8].map(n => `<option value="${n}" ${n === 3 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
         <div class="hint">Points go straight onto the scoreboard. Vowels cost ${d.settings.vowelCost}, solving adds a ${SOLVE_BONUS} bonus, and BANKRUPT takes away what that team earned on the current puzzle. Scores reset to 0 after each game.</div>
       </div>
-      <button class="btn xl pink" id="go">Start! ▶</button>`
+      <button class="btn xl pink" id="go">Start! ▶</button>
+      <div><button class="link-btn" id="demo">🎬 Watch a demo first</button></div>`
       : `<div class="panel empty">No puzzles yet.<br><br><button class="btn yellow" id="add">📝 Add some puzzles</button></div>`}
     </div>`;
   if (!d.wheel.length) { $('#add', el).onclick = () => App.show('editor', 'wheel'); return; }
+  $('#demo', el).onclick = () => Demo.start('wheel');
   $('#go', el).onclick = () => {
     const cat = $('#cat', el).value;
     const pool = shuffle(d.wheel.filter(p => !cat || p.category === cat));

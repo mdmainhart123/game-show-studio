@@ -47,7 +47,7 @@ const Demo = {
     $('#demoPause').onclick = () => {
       this.paused = !this.paused;
       $('#demoPause').textContent = this.paused ? '▶ Resume' : '⏸ Pause';
-      const tp = $('#tPause'); if (tp) tp.click(); // keep the trivia clock in step
+      const p = App.nav?.pause; if (p && p.get() !== this.paused) p.toggle(); // keep the trivia clock in step
     };
     $('#demoExit').onclick = () => { this.aborted = true; this.paused = false; };
   },
@@ -142,7 +142,7 @@ const Demo = {
       await this.say('New question — same team, since they got the last one right.', 2800);
       await this.tap($('.ans.right'));
       $('#stay')?.click();
-      await this.say('✅ Another one! Use ◀ Back / Next ▶ at the top to move around, or 🏁 End game to finish.', 3600);
+      await this.say('✅ Another one! Use ◀ ▶ at the top to move between questions. End game is in the ☰ Menu.', 3600);
       await this.tap('#nextQ');
       await this.finalRound();
     },
@@ -162,7 +162,7 @@ const Demo = {
       await this.tap(this.pickRandom(normal.length ? normal : $$('.tile[data-id]').filter(t => !dd.has(t.dataset.id))));
       await this.say('Read the clue out loud. Any team can answer.', 2800);
       await this.tap($('.jt:nth-child(1) .no'));
-      await this.say('❌ Wrong answers lose the points (you can turn that off in Teams & Scores)…', 3000);
+      await this.say('❌ Wrong answers lose the points (you can turn that off in ☰ Menu → Settings)…', 3000);
       await this.tap('#show');
       await this.say('Show the answer whenever you\'re ready.', 2200);
       await this.tap($('.jt:nth-child(2) .ok'));
@@ -184,7 +184,9 @@ const Demo = {
         await this.until(() => !$('.clue-view'));
       }
       await this.say('Play until the board is empty, or press 🏁 End game whenever you like.', 3000);
-      await this.tap('#navEnd');
+      await this.say('The host controls live in the <b>☰ Menu</b> — End game, Quit to Home, fixing a score, settings and more.', 3600);
+      Menu.open(); await this.wait(900);
+      await this.tap('#mEnd');
       await this.tap('.modal .btn.pink', 600);
       await this.finalRound();
     },

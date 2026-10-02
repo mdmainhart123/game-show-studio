@@ -27,12 +27,11 @@ const App = {
     this.save(true);
 
     $('#homeLink').onclick = () => this.leaveGame();
-    $('#fsBtn').onclick = () => this.toggleFullscreen();
-    $('#soundBtn').onclick = () => { d.settings.sound = !d.settings.sound; this.save(); this.syncSoundBtn(); };
-    this.syncSoundBtn();
+    $('#menuBtn').onclick = () => { if (!(typeof Demo !== 'undefined' && Demo.running)) Menu.open(); };
     document.addEventListener('keydown', e => {
       if (e.key === 'F11') { e.preventDefault(); this.toggleFullscreen(); }
       if (e.key === 'Escape' && Modal.stack.length) Modal.stack[Modal.stack.length - 1].close();
+      else if (e.key === 'Escape' && Menu.isOpen()) Menu.close();
       // ← / → move through a game (not while typing or in a pop-up)
       if (this.nav && !Modal.stack.length && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) {
         if (e.key === 'ArrowLeft' && this.nav.backOn) { e.preventDefault(); this.nav.back(); }
@@ -81,7 +80,6 @@ const App = {
     if (now) write(); else this._saveT = setTimeout(write, 250);
   },
 
-  syncSoundBtn() { $('#soundBtn').textContent = this.data.settings.sound ? '🔊' : '🔇'; },
   async toggleFullscreen() {
     if (window.api) return window.api.toggleFullscreen();
     if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen?.();
@@ -97,6 +95,7 @@ const App = {
     this.inGame = false;
     this.nav = null;
     this.chipClick = null;
+    Menu.close();
     const r = this.screens[name](el, ...args);
     if (typeof r === 'function') this.cleanup = r;
     Scores.render();
@@ -108,19 +107,18 @@ const App = {
     this.show('home');
   },
 
-  // Standard in-game buttons: ◀ Back · Next ▶ · 🏠 Home · 🏁 End game
-  gameBar({ extra = '', handlers = {}, back, next, backTitle = 'Back', nextTitle = 'Next', endTitle, endScreen }) {
-    this.nav = { back, next, backOn: true, nextOn: true };
+  // In-game top bar: just ◀ ▶ (plus any game badge). Home / End game / Pause live in the ☰ Menu.
+  gameBar({ extra = '', handlers = {}, back, next, backTitle = 'Back', nextTitle = 'Next', endTitle, endScreen, pause }) {
+    this.nav = {
+      back, next, backOn: true, nextOn: true, pause,
+      end: async () => { if (await confirmBox('End the game now?', 'End game')) this.endGame(endTitle, endScreen); },
+    };
     this.setTopActions(`${extra}
-      <button class="btn sm ghost" id="navBack" title="${backTitle} (← key)">◀ Back</button>
-      <button class="btn sm cyan" id="navNext" title="${nextTitle} (→ key)">Next ▶</button>
-      <button class="btn sm yellow" id="navHome" title="Back to the game menu">🏠 Home</button>
-      <button class="btn sm ghost" id="navEnd" title="Show final scores">🏁 End game</button>`, {
+      <button class="icon-btn nav-arrow" id="navBack" title="${backTitle} (← key)">◀</button>
+      <button class="icon-btn nav-arrow" id="navNext" title="${nextTitle} (→ key)">▶</button>`, {
       ...handlers,
       navBack: () => this.nav?.backOn && back(),
       navNext: () => this.nav?.nextOn && next(),
-      navHome: () => this.leaveGame(),
-      navEnd: async () => { if (await confirmBox('End the game now?', 'End game')) this.endGame(endTitle, endScreen); },
     });
   },
   // Every game ends here: the Final Round (if on) and then the podium.
@@ -179,19 +177,14 @@ const Scores = {
   render() {
     const bar = $('#scorebar');
     document.body.classList.toggle('many-teams', this.teams().length > 6);
-    const hide = App.current === 'editor' || App.current === 'teams';
+    const hide = !App.inGame; // the scoreboard only shows during a game
     bar.classList.toggle('hidden', hide);
     if (hide) return;
     bar.innerHTML = this.teams().map(t => `
       <div class="team-chip ${this.active === t.id ? 'active' : ''}" data-id="${t.id}" style="--tc:${t.color}">
         <div class="tname">${esc(t.name)}</div>
         <div class="tscore">${fmt(t.score)}</div>
-        <div class="adj"><button data-d="1" title="Add 100">+</button><button data-d="-1" title="Subtract 100">−</button></div>
       </div>`).join('');
-    $$('.team-chip .adj button', bar).forEach(b => b.onclick = e => {
-      e.stopPropagation();
-      this.add(b.closest('.team-chip').dataset.id, 100 * Number(b.dataset.d));
-    });
     // a game can let the host click a team box (e.g. Quiz Board: "it's your pick")
     bar.classList.toggle('clickable', !!App.chipClick);
     if (App.chipClick) $$('.team-chip', bar).forEach(ch => ch.onclick = () => App.chipClick(ch.dataset.id));
@@ -315,58 +308,31 @@ function confetti(ms = 3500) {
 App.screens.home = (el) => {
   Scores.setActive(null);
   Scores.resetAll(); // back at Home = fresh scores
-  const d = App.data;
-  const boards = new Set(d.board.map(c => c.board)).size;
   el.innerHTML = `
     <div class="home-hero">
       <h1><span class="w1">Let's</span> <span class="w2">Play</span><span class="w3">!</span></h1>
-      <p>Pick a game to put on the big screen</p>
     </div>
     <div class="game-cards">
-      <button class="game-card trivia" data-g="trivia">
-        <div class="emoji">⚡</div><h2>Trivia Blitz</h2>
-        <p>Multiple-choice questions against the clock. Teams lock in answers and score points.</p>
-        <span class="count">${d.trivia.length} questions</span>
-      </button>
-      <button class="game-card board" data-g="board">
-        <div class="emoji">🎯</div><h2>Quiz Board</h2>
-        <p>Pick a category and a point value. The harder the clue, the bigger the reward.</p>
-        <span class="count">${boards} board${boards === 1 ? '' : 's'} · ${d.board.length} clues</span>
-      </button>
-      <button class="game-card wheel" data-g="wheel">
-        <div class="emoji">🎡</div><h2>Spin &amp; Solve</h2>
-        <p>Spin the wheel, call a letter, and be the first team to solve the puzzle.</p>
-        <span class="count">${d.wheel.length} puzzles</span>
-      </button>
+      <button class="game-card trivia" data-g="trivia"><div class="emoji">⚡</div><h2>Trivia Blitz</h2><p>Answer against the clock</p></button>
+      <button class="game-card board" data-g="board"><div class="emoji">🎯</div><h2>Quiz Board</h2><p>Pick a category, win the points</p></button>
+      <button class="game-card wheel" data-g="wheel"><div class="emoji">🎡</div><h2>Spin &amp; Solve</h2><p>Spin, guess, solve the puzzle</p></button>
     </div>
-    <div class="demo-row">
-      <button class="btn sm ghost" data-demo="trivia">🎬 Watch a demo</button>
-      <button class="btn sm ghost" data-demo="board">🎬 Watch a demo</button>
-      <button class="btn sm ghost" data-demo="wheel">🎬 Watch a demo</button>
-    </div>
-    <div class="home-actions">
-      <button class="btn lg cyan" id="goTeams">👥 Teams &amp; Scores</button>
-      <button class="btn lg yellow" id="goEditor">📝 Question Manager</button>
-      <button class="btn lg ghost" id="goHelp">❓ How to play</button>
-    </div>`;
+    <div class="home-teams">${App.data.teams.map(t => `<span style="--tc:${t.color}">${esc(t.name)}</span>`).join('')}</div>
+    <div class="home-hint">Host: teams, questions, settings and demos are in the <b>☰ Menu</b> (top right)</div>`;
   $$('.game-card', el).forEach(b => b.onclick = () => { Sfx.click(); App.show(b.dataset.g + 'Setup'); });
-  $$('[data-demo]', el).forEach(b => b.onclick = () => Demo.start(b.dataset.demo));
-  $('#goTeams', el).onclick = () => App.show('teams');
-  $('#goEditor', el).onclick = () => App.show('editor');
-  $('#goHelp', el).onclick = showHelp;
 };
 
 function showHelp() {
   Modal.open({
     title: 'How to play', wide: true,
     body: `<div style="font-size:18px;line-height:1.5">
-      <p><b style="color:var(--yellow)">Before you start:</b> open <b>Teams &amp; Scores</b> to set 2–10 team names. Scores reset to 0 when a game ends or you go back Home. Use the <b>+ / −</b> buttons on the scoreboard to fix a score any time.</p>
-      <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in Teams &amp; Scores). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
+      <p><b style="color:var(--yellow)">Before you start:</b> open <b>☰ Menu → Teams</b> to set 2–10 team names. Scores reset to 0 when a game ends or you go back Home. To fix a score during a game, use <b>☰ Menu → Fix a score</b>.</p>
+      <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in ☰ Menu → Settings). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
       <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Click ✓ to award the points or ✗ to take them away (you can turn that off). Whoever gets it right picks next; if nobody does, the next team picks. Click a team's score box to change whose pick it is.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. Land on a <b>🎁 MYSTERY</b> wedge and it's worth 1,000 per letter; get a letter right and the team can keep the points or give them up to flip the card: 50/50 for a +2,500 JACKPOT or BANKRUPT. When a team thinks they know it, click <b>Solve it!</b>, have them say it out loud, and type it into the empty squares (keyboard or on-screen letters; ⌫ to fix). <b>Check answer</b> tells you if they got it: right = 500-point bonus, wrong = next team's turn. Points go straight onto the scoreboard at the bottom; BANKRUPT takes away whatever that team earned on the current puzzle.</p>
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
-      <p><b style="color:var(--yellow)">🏆 Final Round</b> — every game ends with one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in Teams &amp; Scores.</p>
-      <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, <b>🏠 Home</b> to pick a different game, and <b>🏁 End game</b> for final scores. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
+      <p><b style="color:var(--yellow)">🏆 Final Round</b> — every game ends with one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
+      <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, and the <b>☰ Menu</b> has 🏁 End game, 🏠 Quit to Home and ⏸ Pause. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Tips:</b> Press <kbd>F11</kbd> for full screen on a projector. Press <kbd>Esc</kbd> to close a pop-up.</p></div>`,
     actions: [{ label: 'Got it!', cls: 'pink' }],
   });
@@ -375,41 +341,16 @@ function showHelp() {
 // ================= TEAMS =================
 App.screens.teams = (el) => {
   const d = App.data;
+  App.setTopActions(`<button class="btn sm pink" id="tDone">Done ✓</button>`, { tDone: () => App.show('home') });
   const draw = () => {
     el.innerHTML = `
-      <div class="page-title"><h1>👥 Teams &amp; Scores</h1><div class="spacer"></div>
-        <button class="btn orange" id="resetScores">↺ Reset all scores</button>
-        <button class="btn pink lg" id="done">Done ✓</button></div>
+      <div class="page-title"><h1>👥 Teams</h1></div>
       <div class="panel">
         <div style="font-size:20px;font-weight:600;margin-bottom:12px">How many teams?</div>
         <div class="count-pick">${Array.from({ length: MAX_TEAMS - 1 }, (_, i) => i + 2).map(n => `<button data-n="${n}" class="${d.teams.length === n ? 'on' : ''}">${n}</button>`).join('')}</div>
         <div class="teams-grid">${d.teams.map((t, i) => `
-          <div class="team-edit" style="--tc:${t.color}">
-            <input data-i="${i}" value="${esc(t.name)}" maxlength="24" placeholder="Team name">
-            <div style="font-size:26px;font-weight:700;min-width:70px;text-align:right">${fmt(t.score)}</div>
-          </div>`).join('')}</div>
-        <div class="hint">Click a name to rename a team. Scores reset to 0 when a game ends or you go back Home.</div>
-      </div>
-      <div class="panel" style="margin-top:20px">
-        <div style="font-size:20px;font-weight:600;margin-bottom:12px">Game settings</div>
-        <div class="row">
-          <label class="field"><span>Trivia: points per correct answer</span>
-            <select class="input" id="sPts">${[50, 100, 200, 500, 1000].map(v => `<option ${d.settings.triviaPoints === v ? 'selected' : ''}>${v}</option>`).join('')}</select></label>
-          <label class="field"><span>Trivia (Take turns): wrong answers</span>
-            <select class="input" id="sPen">${[['none', 'No penalty — the turn just passes'], ['half', 'Lose half the points'], ['full', 'Lose the full points']].map(([v, l]) => `<option value="${v}" ${d.settings.triviaPenalty === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
-        </div>
-        <div class="row">
-          <label class="field"><span>Trivia (Everyone answers): speed bonus</span>
-            <select class="input" id="sSpeed"><option value="1">On — reveal early for up to +50%</option><option value="0" ${d.settings.speedBonus ? '' : 'selected'}>Off</option></select></label>
-          <label class="field"><span>🏆 Final wager round at the end of every game</span>
-            <select class="input" id="sFinal"><option value="1">On</option><option value="0" ${d.settings.finalRound ? '' : 'selected'}>Off</option></select></label>
-        </div>
-        <div class="row">
-          <label class="field"><span>Quiz Board: wrong answers</span>
-            <select class="input" id="sDeduct"><option value="1">Subtract the points</option><option value="0" ${d.settings.boardDeduct ? '' : 'selected'}>No penalty</option></select></label>
-          <label class="field"><span>Spin &amp; Solve: cost to buy a vowel</span>
-            <select class="input" id="sVowel">${[0, 100, 250, 500].map(v => `<option ${d.settings.vowelCost === v ? 'selected' : ''}>${v}</option>`).join('')}</select></label>
-        </div>
+          <div class="team-edit" style="--tc:${t.color}"><input data-i="${i}" value="${esc(t.name)}" maxlength="24" placeholder="Team name"></div>`).join('')}</div>
+        <div class="hint">Click a name to rename a team. The first team starts each game.</div>
       </div>`;
     $$('.count-pick button', el).forEach(b => b.onclick = () => {
       const n = +b.dataset.n;
@@ -418,16 +359,120 @@ App.screens.teams = (el) => {
       App.save(); draw();
     });
     $$('.team-edit input', el).forEach(inp => inp.oninput = () => { d.teams[inp.dataset.i].name = inp.value.trim() || 'Team ' + (+inp.dataset.i + 1); App.save(); });
-    $('#sPts', el).onchange = e => { d.settings.triviaPoints = +e.target.value; App.save(); };
-    $('#sSpeed', el).onchange = e => { d.settings.speedBonus = e.target.value === '1'; App.save(); };
-    $('#sPen', el).onchange = e => { d.settings.triviaPenalty = e.target.value; App.save(); };
-    $('#sFinal', el).onchange = e => { d.settings.finalRound = e.target.value === '1'; App.save(); };
-    $('#sDeduct', el).onchange = e => { d.settings.boardDeduct = e.target.value === '1'; App.save(); };
-    $('#sVowel', el).onchange = e => { d.settings.vowelCost = +e.target.value; App.save(); };
-    $('#resetScores', el).onclick = async () => { if (await confirmBox('Set every team back to 0 points?', 'Reset scores', true)) { Scores.resetAll(); draw(); } };
-    $('#done', el).onclick = () => App.show('home');
   };
   draw();
+};
+
+// ================= SETTINGS =================
+App.screens.settings = (el) => {
+  const d = App.data, s = d.settings;
+  App.setTopActions(`<button class="btn sm pink" id="sDone">Done ✓</button>`, { sDone: () => App.show('home') });
+  const sel = (id, opts, cur) => `<select class="input" id="${id}">${opts.map(([v, l]) => `<option value="${v}" ${String(cur) === String(v) ? 'selected' : ''}>${l}</option>`).join('')}</select>`;
+  el.innerHTML = `
+    <div class="page-title"><h1>⚙️ Settings</h1></div>
+    <div class="settings-grid">
+      <div class="panel"><h3>⚡ Trivia Blitz</h3>
+        <label class="field"><span>Points per correct answer</span>${sel('sPts', [50, 100, 200, 500, 1000].map(v => [v, v]), s.triviaPoints)}</label>
+        <label class="field"><span>Take turns: wrong answers</span>${sel('sPen', [['none', 'No penalty — the turn just passes'], ['half', 'Lose half the points'], ['full', 'Lose the full points']], s.triviaPenalty)}</label>
+        <label class="field"><span>Everyone answers: speed bonus</span>${sel('sSpeed', [[1, 'On (up to +50% for fast reveals)'], [0, 'Off']], s.speedBonus ? 1 : 0)}</label>
+      </div>
+      <div class="panel"><h3>🎯 Quiz Board</h3>
+        <label class="field"><span>Wrong answers</span>${sel('sDeduct', [[1, 'Subtract the points'], [0, 'No penalty']], s.boardDeduct ? 1 : 0)}</label>
+      </div>
+      <div class="panel"><h3>🎡 Spin &amp; Solve</h3>
+        <label class="field"><span>Cost to buy a vowel</span>${sel('sVowel', [0, 100, 250, 500].map(v => [v, v]), s.vowelCost)}</label>
+      </div>
+      <div class="panel"><h3>🏆 Every game</h3>
+        <label class="field"><span>Final wager round at the end</span>${sel('sFinal', [[1, 'On'], [0, 'Off']], s.finalRound ? 1 : 0)}</label>
+        <label class="field"><span>Sound effects</span>${sel('sSound', [[1, 'On'], [0, 'Off']], s.sound ? 1 : 0)}</label>
+      </div>
+    </div>`;
+  const on = (id, fn) => $('#' + id, el).onchange = e => { fn(e.target.value); App.save(); toast('Saved ✓'); };
+  on('sPts', v => s.triviaPoints = +v);
+  on('sPen', v => s.triviaPenalty = v);
+  on('sSpeed', v => s.speedBonus = v === '1');
+  on('sDeduct', v => s.boardDeduct = v === '1');
+  on('sVowel', v => s.vowelCost = +v);
+  on('sFinal', v => s.finalRound = v === '1');
+  on('sSound', v => s.sound = v === '1');
+};
+
+// ================= ☰ HOST MENU =================
+const Menu = {
+  isOpen() { return !!$('#menuBack'); },
+  close() { $('#menuBack')?.remove(); },
+  open() {
+    if (this.isOpen()) return;
+    const inGame = App.inGame, nav = App.nav, s = App.data.settings;
+    const back = document.createElement('div');
+    back.id = 'menuBack';
+    back.className = 'menu-back';
+    back.innerHTML = `<aside class="menu">
+      <div class="menu-head"><b>☰ Host menu</b><button class="icon-btn" id="mClose" title="Close (Esc)">✕</button></div>
+      ${inGame ? `
+      <section><h4>This game</h4>
+        ${nav?.pause ? `<button class="mi" id="mPause">${nav.pause.get() ? '▶ Resume the clock' : '⏸ Pause the clock'}</button>` : ''}
+        ${nav?.end ? `<button class="mi" id="mEnd">🏁 End game &amp; final scores</button>` : ''}
+        <button class="mi" id="mHome">🏠 Quit to Home</button>
+      </section>
+      <section><h4>Fix a score</h4>
+        <div class="fix">${Scores.teams().map(t => `<div class="fix-row" data-id="${t.id}"><span class="dot" style="--tc:${t.color}"></span><span class="fn">${esc(t.name)}</span><b class="fs">${fmt(t.score)}</b>
+          <button data-d="-100">−100</button><button data-d="100">+100</button></div>`).join('')}</div>
+      </section>` : ''}
+      <section><h4>Set up</h4>
+        <button class="mi" data-go="teams">👥 Teams</button>
+        <button class="mi" data-go="editor">📝 Questions</button>
+        <button class="mi" data-go="settings">⚙️ Settings</button>
+      </section>
+      <section><h4>Show the group how to play</h4>
+        <div class="mi-row"><button class="mi" data-demo="trivia">🎬 ⚡ Trivia</button><button class="mi" data-demo="board">🎬 🎯 Board</button><button class="mi" data-demo="wheel">🎬 🎡 Wheel</button></div>
+        <button class="mi" id="mHelp">❓ How to play (rules)</button>
+      </section>
+      <section><h4>Display &amp; data</h4>
+        <div class="mi-row"><button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button><button class="mi" id="mFull">⛶ Full screen</button></div>
+        <div class="mi-row"><button class="mi" id="mBackup">💾 Back up</button><button class="mi" id="mRestore">📂 Restore</button></div>
+      </section>
+    </aside>`;
+    document.body.appendChild(back);
+    requestAnimationFrame(() => back.classList.add('open'));
+    const q = id => $('#' + id, back);
+    back.addEventListener('mousedown', e => { if (e.target === back) this.close(); });
+    q('mClose').onclick = () => this.close();
+    // leaving a game from the menu asks first
+    const go = async fn => { this.close(); if (inGame && !(await confirmBox('Leave this game? Scores will reset to 0.', 'Leave game'))) return; fn(); };
+    if (q('mPause')) q('mPause').onclick = () => { nav.pause.toggle(); q('mPause').textContent = nav.pause.get() ? '▶ Resume the clock' : '⏸ Pause the clock'; };
+    if (q('mEnd')) q('mEnd').onclick = () => { this.close(); nav.end(); };
+    if (q('mHome')) q('mHome').onclick = () => go(() => App.show('home'));
+    $$('.fix-row', back).forEach(r => $$('button', r).forEach(b => b.onclick = () => {
+      Scores.add(r.dataset.id, +b.dataset.d);
+      $('.fs', r).textContent = fmt(Scores.teams().find(t => t.id === r.dataset.id).score);
+    }));
+    $$('[data-go]', back).forEach(b => b.onclick = () => go(() => App.show(b.dataset.go)));
+    $$('[data-demo]', back).forEach(b => b.onclick = () => go(() => Demo.start(b.dataset.demo)));
+    q('mHelp').onclick = () => { this.close(); showHelp(); };
+    q('mSound').onclick = () => { s.sound = !s.sound; App.save(); q('mSound').textContent = s.sound ? '🔊 Sound on' : '🔇 Sound off'; };
+    q('mFull').onclick = () => { this.close(); App.toggleFullscreen(); };
+    q('mBackup').onclick = () => App.backup();
+    q('mRestore').onclick = () => App.restore();
+  },
+};
+
+// Backup / restore of all questions (used by the menu and the Question Manager)
+App.backup = async function () {
+  const d = this.data, date = new Date().toISOString().slice(0, 10);
+  const p = await this.saveText(`game-show-backup-${date}.json`, JSON.stringify({ app: 'Game Show Studio', version: 1, trivia: d.trivia, board: d.board, wheel: d.wheel }, null, 2), [{ name: 'Backup file', extensions: ['json'] }]);
+  if (p) toast('Backup saved ✓');
+};
+App.restore = async function (after) {
+  const f = await this.openText('Choose a backup (.json) file');
+  if (!f) return;
+  let b;
+  try { b = JSON.parse(f.text); } catch (e) { toast("That file isn't a backup file", true); return; }
+  if (!Array.isArray(b.trivia) || !Array.isArray(b.board) || !Array.isArray(b.wheel)) { toast("That file isn't a Game Show Studio backup", true); return; }
+  if (!(await confirmBox(`Replace all questions with this backup? (${b.trivia.length} trivia, ${b.board.length} board clues, ${b.wheel.length} puzzles)`, 'Restore', true))) return;
+  Object.assign(this.data, { trivia: b.trivia, board: b.board, wheel: b.wheel });
+  this.save(true); toast('Backup restored ✓');
+  after && after();
 };
 
 // ================= RESULTS =================
