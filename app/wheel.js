@@ -27,6 +27,7 @@ App.screens.wheelSetup = (el) => {
     const cat = $('#cat', el).value;
     const pool = shuffle(d.wheel.filter(p => !cat || p.category === cat));
     Scores.resetAll(); // every new game starts at 0
+    App.playedTrivia = new Set();
     App.show('wheelPlay', pool.slice(0, +$('#num', el).value));
   };
 };
@@ -50,7 +51,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   async function navTo(i) {
     if (spinning || i < 0) return;
     if (phase !== 'solved' && usedLetters.size && !(await confirmBox('Leave this puzzle unsolved? Points already earned stay on the scoreboard.', 'Leave puzzle'))) return;
-    if (i >= puzzles.length) { App.show('results', 'Spin & Solve', 'wheelSetup'); return; }
+    if (i >= puzzles.length) { App.endGame('Spin & Solve', 'wheelSetup'); return; }
     pIdx = i - 1;
     startPuzzle();
   }
@@ -107,7 +108,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   // ---------- puzzle ----------
   function startPuzzle() {
     pIdx++;
-    if (pIdx >= puzzles.length) { App.show('results', 'Spin & Solve', 'wheelSetup'); return; }
+    if (pIdx >= puzzles.length) { App.endGame('Spin & Solve', 'wheelSetup'); return; }
     puzzle = puzzles[pIdx];
     App.setNavEnabled(pIdx > 0, true);
     rows = GSData.layoutPuzzle(puzzle.phrase).rows;

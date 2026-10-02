@@ -29,6 +29,8 @@ App.screens.boardSetup = (el) => {
   $('#go', el).onclick = () => {
     Scores.resetAll(); // every new game starts at 0
     App.boardUsed = {}; // fresh game: every board's tiles start unplayed
+    App.boardDD = {};   // …and gets new hidden Daily Doubles
+    App.playedTrivia = new Set();
     App.show('boardPlay', $('#bd', el).value);
   };
 };
@@ -41,6 +43,20 @@ App.screens.boardPlay = (el, name) => {
   const used = (App.boardUsed[name] ||= new Set()); // remembered if you switch boards and come back
   const totalClues = cats.reduce((s, c) => s + c.clues.length, 0);
   const names = boardNames(), bi = names.indexOf(name);
+  // Daily Doubles: 1 hidden tile (2 on boards with 20+ clues), never in the top row,
+  // and on different categories. Chosen once per board per game.
+  App.boardDD ||= {};
+  const dd = (App.boardDD[name] ||= (() => {
+    const want = totalClues >= 20 ? 2 : 1, picked = new Set();
+    for (const col of shuffle(cats)) {
+      const options = col.clues.slice(1);
+      if (!options.length) continue;
+      picked.add(options[Math.floor(Math.random() * options.length)].id);
+      if (picked.size >= want) break;
+    }
+    return picked;
+  })());
+  const boardMax = Math.max(...cats.flatMap(c => c.clues.map(x => x.value)));
   App.gameBar({
     extra: `<span style="font-size:18px;font-weight:600;align-self:center;margin-right:6px">${esc(name)} <span class="hint">(${bi + 1} of ${names.length})</span></span>`,
     back: () => App.show('boardPlay', names[bi - 1]),
@@ -67,54 +83,99 @@ App.screens.boardPlay = (el, name) => {
     const clue = App.data.board.find(c => c.id === id);
     used.add(id);
     App.setNavEnabled(false, false); // finish the clue before switching boards
-    Sfx.reveal();
-    const judged = {};
     const view = document.createElement('div');
     view.className = 'clue-view';
-    view.innerHTML = `
-      <div class="meta">${esc(clue.category)} · ${fmt(clue.value)}</div>
-      <div class="clue">${esc(clue.clue)}</div>
-      <div class="answer hidden" id="ans">${esc(clue.answer)}</div>
-      <div class="judge">${Scores.teams().map(t => `
-        <div class="jt" style="--tc:${t.color}" data-id="${t.id}"><span class="n">${esc(t.name)}</span>
-          <button class="ok" title="Correct: +${clue.value}">✓</button><button class="no" title="Wrong${App.data.settings.boardDeduct ? ': −' + clue.value : ''}">✗</button></div>`).join('')}</div>
-      <div class="home-actions" style="margin-top:22px">
-        <button class="btn lg yellow" id="show">Show answer <kbd>Space</kbd></button>
-        <button class="btn lg ghost" id="back">Back to board ↩</button>
-      </div>`;
     el.appendChild(view);
-    const showAns = () => { $('#ans', view).classList.remove('hidden'); $('#show', view).classList.add('hidden'); };
-    $('#show', view).onclick = showAns;
-    $('#back', view).onclick = close;
-    $$('.jt', view).forEach(row => {
-      const tid = row.dataset.id;
-      $('.ok', row).onclick = () => {
-        if (judged[tid]) return;
-        judged[tid] = 'ok'; $('.ok', row).classList.add('done');
-        Scores.add(tid, clue.value); Sfx.correct(); showAns();
-        setTimeout(close, 1400);
-      };
-      $('.no', row).onclick = () => {
-        if (judged[tid]) return;
-        judged[tid] = 'no'; $('.no', row).classList.add('done');
-        if (App.data.settings.boardDeduct) Scores.add(tid, -clue.value);
-        Sfx.wrong();
-      };
-    });
-    let closed = false;
+    let closed = false, onKey = () => {};
+    const setKeys = fn => { document.removeEventListener('keydown', onKey); onKey = fn; document.addEventListener('keydown', onKey); cleanupKey = () => document.removeEventListener('keydown', onKey); };
     function close() {
       if (closed) return; closed = true;
       view.remove(); drawBoard(); navNormal();
       document.removeEventListener('keydown', onKey);
       if (used.size >= totalClues) setTimeout(boardDone, 400);
     }
-    const onKey = e => {
-      if (Modal.stack.length) return;
-      if (e.code === 'Space') { e.preventDefault(); $('#ans', view).classList.contains('hidden') ? showAns() : close(); }
-      if (e.key === 'Escape') close();
-    };
-    document.addEventListener('keydown', onKey);
-    cleanupKey = () => document.removeEventListener('keydown', onKey);
+    if (dd.has(id)) dailyDouble(); else showClue(null);
+
+    // ---- Daily Double: splash → which team → wager → clue ----
+    function dailyDouble() {
+      Sfx.fanfare();
+      view.classList.add('dd');
+      view.innerHTML = `<div class="dd-splash">DAILY<br>DOUBLE!</div>
+        <div class="meta" style="margin-top:18px">${esc(clue.category)}</div>
+        <div class="dd-step"><div class="dd-q">Which team picked this tile?</div>
+          <div class="judge">${Scores.teams().map(t => `<button class="tpick on" data-id="${t.id}" style="--tc:${t.color}">${esc(t.name)}</button>`).join('')}</div></div>`;
+      setKeys(e => { if (e.key === 'Escape') close(); });
+      $$('.tpick', view).forEach(b => b.onclick = () => askWager(Scores.teams().find(t => t.id === b.dataset.id)));
+    }
+    function askWager(t) {
+      const max = Math.max(t.score, boardMax);
+      $('.dd-step', view).innerHTML = `
+        <div class="dd-q"><span class="dd-team" style="--tc:${t.color}">${esc(t.name)}</span>, how much do you wager?</div>
+        <div class="hint" style="font-size:18px;margin-bottom:12px">Anything from 0 to ${fmt(max)}${t.score < boardMax ? ` (you can go up to the board's top value, ${fmt(boardMax)})` : ''}</div>
+        <div class="dd-wager">
+          <input class="input" id="wager" type="number" min="0" max="${max}" step="100" value="${Math.min(max, clue.value)}">
+          <button class="btn sm ghost" data-v="${Math.round(max / 2 / 100) * 100}">Half</button>
+          <button class="btn sm orange" data-v="${max}">All in! (${fmt(max)})</button>
+        </div>
+        <div class="err" id="wErr"></div>
+        <button class="btn lg pink" id="wGo">Show the clue ▶</button>`;
+      const inp = $('#wager', view);
+      inp.focus(); inp.select();
+      $$('[data-v]', view).forEach(b => b.onclick = () => { inp.value = b.dataset.v; });
+      const go = () => {
+        const w = Math.round(+inp.value);
+        if (!(w >= 0 && w <= max)) { $('#wErr', view).textContent = `Pick a number from 0 to ${fmt(max)}`; return; }
+        view.classList.remove('dd');
+        showClue({ team: t, wager: w });
+      };
+      $('#wGo', view).onclick = go;
+      setKeys(e => { if (e.key === 'Enter') go(); if (e.key === 'Escape') close(); });
+    }
+
+    // ---- the clue itself (normal, or Daily Double for one team) ----
+    function showClue(ddInfo) {
+      if (!ddInfo) Sfx.reveal();
+      const judged = {};
+      const teams = ddInfo ? [ddInfo.team] : Scores.teams();
+      const plus = ddInfo ? ddInfo.wager : clue.value;
+      const minus = ddInfo ? ddInfo.wager : (App.data.settings.boardDeduct ? clue.value : 0);
+      view.innerHTML = `
+        <div class="meta">${esc(clue.category)} · ${ddInfo ? `🎲 Daily Double — ${esc(ddInfo.team.name)} wagered ${fmt(ddInfo.wager)}` : fmt(clue.value)}</div>
+        <div class="clue">${esc(clue.clue)}</div>
+        <div class="answer hidden" id="ans">${esc(clue.answer)}</div>
+        <div class="judge">${teams.map(t => `
+          <div class="jt" style="--tc:${t.color}" data-id="${t.id}"><span class="n">${esc(t.name)}</span>
+            <button class="ok" title="Correct: +${plus}">✓</button><button class="no" title="Wrong${minus ? ': −' + minus : ''}">✗</button></div>`).join('')}</div>
+        <div class="home-actions" style="margin-top:22px">
+          <button class="btn lg yellow" id="show">Show answer <kbd>Space</kbd></button>
+          <button class="btn lg ghost" id="back">Back to board ↩</button>
+        </div>`;
+      const showAns = () => { $('#ans', view).classList.remove('hidden'); $('#show', view).classList.add('hidden'); };
+      $('#show', view).onclick = showAns;
+      $('#back', view).onclick = close;
+      $$('.jt', view).forEach(row => {
+        const tid = row.dataset.id;
+        $('.ok', row).onclick = () => {
+          if (judged[tid]) return;
+          judged[tid] = 'ok'; $('.ok', row).classList.add('done');
+          Scores.add(tid, plus); Sfx.correct(); showAns();
+          if (ddInfo) confetti(1800);
+          setTimeout(close, ddInfo ? 2000 : 1400);
+        };
+        $('.no', row).onclick = () => {
+          if (judged[tid]) return;
+          judged[tid] = 'no'; $('.no', row).classList.add('done');
+          if (minus) Scores.add(tid, -minus);
+          Sfx.wrong();
+          if (ddInfo) { showAns(); setTimeout(close, 2600); }
+        };
+      });
+      setKeys(e => {
+        if (Modal.stack.length) return;
+        if (e.code === 'Space') { e.preventDefault(); $('#ans', view).classList.contains('hidden') ? showAns() : close(); }
+        if (e.key === 'Escape') close();
+      });
+    }
   }
   function boardDone() {
     if (App.current !== 'boardPlay') return;
@@ -124,7 +185,7 @@ App.screens.boardPlay = (el, name) => {
       title: '🎯 Board complete!',
       body: `<p style="font-size:20px;margin:0">Every clue on <b>${esc(name)}</b> has been played.${hasNext ? ` Keep going with <b>${esc(names[bi + 1])}</b>, or wrap up?` : ''}</p>`,
       actions: [
-        { label: '🏁 Final scores', cls: hasNext ? 'ghost' : 'pink', onClick: c => { c(); App.show('results', 'Quiz Board', 'boardSetup'); } },
+        { label: '🏁 Final scores', cls: hasNext ? 'ghost' : 'pink', onClick: c => { c(); App.endGame('Quiz Board', 'boardSetup'); } },
         ...(hasNext ? [{ label: 'Next board ▶', cls: 'pink', onClick: c => { c(); App.show('boardPlay', names[bi + 1]); } }] : []),
       ],
     });

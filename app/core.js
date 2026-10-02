@@ -21,7 +21,7 @@ const App = {
     const fresh = !d || !Array.isArray(d.trivia);
     if (fresh) d = GSData.starterData();
     d.teams ||= [0, 1, 2].map(i => ({ id: GSData.uid(), name: DEFAULT_TEAM_NAMES[i], color: TEAM_COLORS[i], score: 0 }));
-    d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250 }, d.settings || {});
+    d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250, triviaPenalty: 'half', finalRound: true }, d.settings || {});
     this.data = d;
     const added = this.applyPacks();
     this.save(true);
@@ -119,8 +119,13 @@ const App = {
       navBack: () => this.nav?.backOn && back(),
       navNext: () => this.nav?.nextOn && next(),
       navHome: () => this.leaveGame(),
-      navEnd: async () => { if (await confirmBox('End the game now and show final scores?', 'End game')) this.show('results', endTitle, endScreen); },
+      navEnd: async () => { if (await confirmBox('End the game now?', 'End game')) this.endGame(endTitle, endScreen); },
     });
+  },
+  // Every game ends here: the Final Round (if on) and then the podium.
+  endGame(title, againScreen) {
+    if (this.data.settings.finalRound && this.data.trivia.length) this.show('finalRound', title, againScreen);
+    else this.show('results', title, againScreen);
   },
   setNavEnabled(backOn, nextOn) {
     if (!this.nav) return;
@@ -345,9 +350,11 @@ function showHelp() {
     title: 'How to play', wide: true,
     body: `<div style="font-size:18px;line-height:1.5">
       <p><b style="color:var(--yellow)">Before you start:</b> open <b>Teams &amp; Scores</b> to set 2–10 team names. Scores reset to 0 when a game ends or you go back Home. Use the <b>+ / −</b> buttons on the scoreboard to fix a score any time.</p>
-      <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = they lose the points, that answer is crossed out, and the next team tries. <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
+      <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in Teams &amp; Scores). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
       <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — A team picks a category and value. Click the tile, read the clue, then <b>Show answer</b>. Click ✓ to award the points or ✗ to take them away (you can turn that off). Close the clue to go back to the board.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. When a team thinks they know it, click <b>Solve it!</b> and have them say it out loud. If they're right, they get a 500-point bonus. Points go straight onto the scoreboard at the bottom; BANKRUPT takes away whatever that team earned on the current puzzle.</p>
+      <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. The team that picks it bets any amount up to their score (or the board's top value), and only they answer.</p>
+      <p><b style="color:var(--yellow)">🏆 Final Round</b> — every game ends with one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in Teams &amp; Scores.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, <b>🏠 Home</b> to pick a different game, and <b>🏁 End game</b> for final scores. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Tips:</b> Press <kbd>F11</kbd> for full screen on a projector. Press <kbd>Esc</kbd> to close a pop-up.</p></div>`,
     actions: [{ label: 'Got it!', cls: 'pink' }],
@@ -377,8 +384,14 @@ App.screens.teams = (el) => {
         <div class="row">
           <label class="field"><span>Trivia: points per correct answer</span>
             <select class="input" id="sPts">${[50, 100, 200, 500, 1000].map(v => `<option ${d.settings.triviaPoints === v ? 'selected' : ''}>${v}</option>`).join('')}</select></label>
-          <label class="field"><span>Trivia: speed bonus</span>
+          <label class="field"><span>Trivia (Take turns): wrong answers</span>
+            <select class="input" id="sPen">${[['none', 'No penalty — the turn just passes'], ['half', 'Lose half the points'], ['full', 'Lose the full points']].map(([v, l]) => `<option value="${v}" ${d.settings.triviaPenalty === v ? 'selected' : ''}>${l}</option>`).join('')}</select></label>
+        </div>
+        <div class="row">
+          <label class="field"><span>Trivia (Everyone answers): speed bonus</span>
             <select class="input" id="sSpeed"><option value="1">On — reveal early for up to +50%</option><option value="0" ${d.settings.speedBonus ? '' : 'selected'}>Off</option></select></label>
+          <label class="field"><span>🏆 Final wager round at the end of every game</span>
+            <select class="input" id="sFinal"><option value="1">On</option><option value="0" ${d.settings.finalRound ? '' : 'selected'}>Off</option></select></label>
         </div>
         <div class="row">
           <label class="field"><span>Quiz Board: wrong answers</span>
@@ -396,6 +409,8 @@ App.screens.teams = (el) => {
     $$('.team-edit input', el).forEach(inp => inp.oninput = () => { d.teams[inp.dataset.i].name = inp.value.trim() || 'Team ' + (+inp.dataset.i + 1); App.save(); });
     $('#sPts', el).onchange = e => { d.settings.triviaPoints = +e.target.value; App.save(); };
     $('#sSpeed', el).onchange = e => { d.settings.speedBonus = e.target.value === '1'; App.save(); };
+    $('#sPen', el).onchange = e => { d.settings.triviaPenalty = e.target.value; App.save(); };
+    $('#sFinal', el).onchange = e => { d.settings.finalRound = e.target.value === '1'; App.save(); };
     $('#sDeduct', el).onchange = e => { d.settings.boardDeduct = e.target.value === '1'; App.save(); };
     $('#sVowel', el).onchange = e => { d.settings.vowelCost = +e.target.value; App.save(); };
     $('#resetScores', el).onclick = async () => { if (await confirmBox('Set every team back to 0 points?', 'Reset scores', true)) { Scores.resetAll(); draw(); } };
@@ -429,4 +444,112 @@ App.screens.results = (el, gameName, againScreen) => {
   Sfx.fanfare(); confetti();
   $('#again', el).onclick = () => App.show(againScreen);
   $('#home', el).onclick = () => App.show('home');
+};
+
+// ================= FINAL ROUND (wager) =================
+// Category → secret wagers → question → judge each team → podium.
+const FINAL_MIN_CAP = 1000; // teams with less than this can still wager up to it (comeback chance)
+App.screens.finalRound = (el, title, againScreen) => {
+  App.inGame = true;
+  Scores.setActive(null);
+  const teams = Scores.teams();
+  const played = App.playedTrivia || new Set();
+  const pool = App.data.trivia.filter(q => !played.has(q.id));
+  const q = shuffle(pool.length ? pool : App.data.trivia)[0];
+  const order = shuffle([q.answer, ...q.wrong]);
+  const wagers = {};
+  const cap = t => Math.max(t.score, FINAL_MIN_CAP);
+  let timerId;
+  App.setTopActions(`<button class="btn sm ghost" id="fSkip">Skip to final scores ⏭</button>`, {
+    fSkip: () => App.show('results', title, againScreen),
+  });
+  Sfx.fanfare();
+
+  // Step 1: category + secret wagers
+  el.innerHTML = `
+    <div class="final">
+      <div class="final-title">🏆 FINAL ROUND 🏆</div>
+      <div class="final-cat">Category: <b>${esc(q.category || 'General')}</b></div>
+      <p class="final-help">Each team: <b>secretly</b> write down how many points you'll bet on one last question.
+        Get it right and you <b style="color:var(--green)">win</b> your bet. Get it wrong and you <b style="color:#ffb3bb">lose</b> it.
+        Teams with less than ${fmt(FINAL_MIN_CAP)} points can still bet up to ${fmt(FINAL_MIN_CAP)}!</p>
+      <div class="wager-grid">${teams.map(t => `
+        <label class="wg" style="--tc:${t.color}"><span class="wn">${esc(t.name)}</span><span class="ws">${fmt(t.score)} pts · bet 0–${fmt(cap(t))}</span>
+          <input class="input" type="password" inputmode="numeric" data-id="${t.id}" placeholder="🔒 wager" autocomplete="off"></label>`).join('')}</div>
+      <div class="err" id="fErr" style="text-align:center"></div>
+      <div style="text-align:center"><button class="btn xl pink" id="lock">Lock in wagers 🔒</button></div>
+      <p class="hint" style="text-align:center">Host: collect the written bets and type them in. They stay hidden (🔒) until the end.</p>
+    </div>`;
+  $('#lock', el).onclick = () => {
+    const bad = [];
+    $$('.wg input', el).forEach(inp => {
+      const t = teams.find(x => x.id === inp.dataset.id);
+      const raw = inp.value.trim();
+      const w = raw === '' ? 0 : Math.round(Number(raw));
+      if (!(w >= 0 && w <= cap(t))) bad.push(`${t.name}: 0–${fmt(cap(t))}`);
+      wagers[t.id] = w;
+    });
+    if (bad.length) { $('#fErr', el).textContent = 'Check these bets — ' + bad.join(' · '); return; }
+    askQuestion();
+  };
+
+  // Step 2: the question, with a 30-second clock
+  function askQuestion() {
+    let left = 30;
+    el.innerHTML = `
+      <div class="tq-wrap">
+        <div class="tq-top"><span class="pill" style="font-size:18px;padding:6px 14px">🏆 Final Round · ${esc(q.category || 'General')}</span><div class="spacer"></div>
+          <div class="final-clock" id="fclock">${left}</div></div>
+        <div class="tq-card">${esc(q.question)}</div>
+        <div class="answers" id="answers" style="${order.length <= 2 ? 'grid-template-columns:1fr 1fr;max-height:260px' : ''}">
+          ${order.map((a, i) => `<div class="ans a${i} ${a === q.answer ? 'right' : 'wrong'}"><div class="shape"><span>${'ABCD'[i]}</span></div><div>${esc(a)}</div></div>`).join('')}
+        </div>
+        <div class="award"><span class="hint" style="font-size:18px">Every team: write down your answer!</span><div class="spacer"></div>
+          <button class="btn lg yellow" id="fReveal">Reveal answer <kbd>Space</kbd></button></div>
+      </div>`;
+    $('#fReveal', el).onclick = reveal;
+    timerId = setInterval(() => {
+      left--; const c = $('#fclock', el); if (!c) return;
+      c.textContent = left; c.classList.toggle('low', left <= 5);
+      if (left <= 5 && left > 0) Sfx.tick();
+      if (left <= 0) { Sfx.buzz(); reveal(); }
+    }, 1000);
+  }
+
+  // Step 3: reveal, then judge each team (wagers shown as each is judged)
+  function reveal() {
+    if (!timerId) return;
+    clearInterval(timerId); timerId = null;
+    Sfx.reveal();
+    // show just the correct answer, full width, so the judging row has room
+    const ans = $('#answers', el);
+    ans.classList.add('revealed');
+    $$('.ans.wrong', ans).forEach(x => x.remove());
+    ans.style.gridTemplateColumns = '1fr'; ans.style.flex = '0 0 auto';
+    $('#fclock', el).style.visibility = 'hidden';
+    const done = {};
+    $('.award', el).outerHTML = `<div class="award final-judge">
+      <span class="lbl">Did they get it?</span>
+      ${teams.map(t => `<div class="fj" style="--tc:${t.color}" data-id="${t.id}"><span class="n">${esc(t.name)}</span><span class="w">🔒</span>
+        <button class="ok">✓</button><button class="no">✗</button></div>`).join('')}
+      <div class="spacer"></div><button class="btn lg pink" id="fDone">Final scores 🏆</button></div>`;
+    $$('.fj', el).forEach(row => {
+      const t = teams.find(x => x.id === row.dataset.id), w = wagers[t.id];
+      const judge = right => {
+        if (done[t.id]) return;
+        done[t.id] = true;
+        $('.w', row).textContent = w ? (right ? '+' : '−') + fmt(w) : '0';
+        row.classList.add(right ? 'right' : 'wrong');
+        if (w) Scores.add(t.id, right ? w : -w);
+        right ? Sfx.correct() : Sfx.wrong();
+      };
+      $('.ok', row).onclick = () => judge(true);
+      $('.no', row).onclick = () => judge(false);
+    });
+    $('#fDone', el).onclick = () => App.show('results', title, againScreen);
+  }
+
+  const onKey = e => { if (!Modal.stack.length && e.code === 'Space' && timerId && !/INPUT/.test(e.target.tagName)) { e.preventDefault(); reveal(); } };
+  document.addEventListener('keydown', onKey);
+  return () => { clearInterval(timerId); document.removeEventListener('keydown', onKey); };
 };

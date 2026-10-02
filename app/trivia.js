@@ -14,7 +14,7 @@ App.screens.triviaSetup = (el) => {
           <select class="input" id="num">${[5, 10, 15, 20, 30].map(n => `<option value="${n}" ${n === 10 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
         <div class="field"><span>Play style</span>
           <div class="mode-pick">
-            <button class="mode ${d.settings.triviaMode !== 'all' ? 'on' : ''}" data-m="turns"><b>🎯 Take turns</b><small>One team at a time. Tap their answer: right = +${d.settings.triviaPoints} and they go again; wrong = −${d.settings.triviaPoints} and the next team tries.</small></button>
+            <button class="mode ${d.settings.triviaMode !== 'all' ? 'on' : ''}" data-m="turns"><b>🎯 Take turns</b><small>One team at a time. Tap their answer: right = +${d.settings.triviaPoints} and they go again; wrong = ${({ none: 'no penalty', half: '−' + Math.round(d.settings.triviaPoints / 20) * 10, full: '−' + d.settings.triviaPoints })[d.settings.triviaPenalty] || 'no penalty'} and the next team tries.</small></button>
             <button class="mode ${d.settings.triviaMode === 'all' ? 'on' : ''}" data-m="all"><b>👥 Everyone answers</b><small>All teams answer at once. Reveal, then tick every team that got it right.</small></button>
           </div></div>
         <div class="hint">Points per question: ${d.settings.triviaPoints} (change in Teams &amp; Scores). Scores reset to 0 after each game.</div>
@@ -31,7 +31,9 @@ App.screens.triviaSetup = (el) => {
     const cat = $('#cat', el).value;
     const pool = shuffle(d.trivia.filter(q => !cat || (q.category || 'General') === cat));
     Scores.resetAll(); // every new game starts at 0
-    App.show(d.settings.triviaMode === 'all' ? 'triviaPlay' : 'triviaTurns', pool.slice(0, +$('#num', el).value));
+    const chosen = pool.slice(0, +$('#num', el).value);
+    App.playedTrivia = new Set(chosen.map(q => q.id)); // the Final Round picks a question not used here
+    App.show(d.settings.triviaMode === 'all' ? 'triviaPlay' : 'triviaTurns', chosen);
   };
 };
 
@@ -53,7 +55,7 @@ App.screens.triviaPlay = (el, questions) => {
   function go(i) {
     clearInterval(timerId);
     if (App.current !== 'triviaPlay' || i < 0) return;
-    if (i >= questions.length) { App.show('results', 'Trivia Blitz', 'triviaSetup'); return; }
+    if (i >= questions.length) { App.endGame('Trivia Blitz', 'triviaSetup'); return; }
     idx = i;
     App.setNavEnabled(idx > 0, true);
     const q = questions[idx];
@@ -162,6 +164,9 @@ App.screens.triviaPlay = (el, questions) => {
 App.screens.triviaTurns = (el, questions) => {
   App.inGame = true;
   const d = App.data, teams = Scores.teams(), pts = d.settings.triviaPoints;
+  // wrong-answer penalty: none / half / full (Teams & Scores setting)
+  const penalty = ({ none: 0, half: Math.round(pts / 20) * 10, full: pts })[d.settings.triviaPenalty] ?? 0;
+  const lostTxt = name => penalty ? `✗ ${esc(name)} −${fmt(penalty)}.` : `✗ Not quite, ${esc(name)}!`;
   const records = [];
   let idx = -1, turn = 0, phase, timeLeft, total, timerId, paused, rec, advanceT, countT;
   const R = 52, C = 2 * Math.PI * R;
@@ -180,7 +185,7 @@ App.screens.triviaTurns = (el, questions) => {
     stopTimers();
     if (App.current !== 'triviaTurns' || i < 0) return;
     if (rec && !rec.done && rec.log.length) rec.done = true; // left mid-question after some guesses
-    if (i >= questions.length) { App.show('results', 'Trivia Blitz', 'triviaSetup'); return; }
+    if (i >= questions.length) { App.endGame('Trivia Blitz', 'triviaSetup'); return; }
     idx = i;
     App.setNavEnabled(idx > 0, true);
     const q = questions[idx];
@@ -268,18 +273,18 @@ App.screens.triviaTurns = (el, questions) => {
       finish(`<span style="color:var(--green)">✓ Correct!</span> ${esc(t.name)} +${fmt(pts)} — they start the next question!`, false, true);
       return;
     }
-    Scores.add(t.id, -pts);
-    rec.log.push(`✗ ${t.name} −${fmt(pts)}`);
+    if (penalty) Scores.add(t.id, -penalty);
+    rec.log.push(penalty ? `✗ ${t.name} −${fmt(penalty)}` : `✗ ${t.name}`);
     const o = { i, team: t.id };
     rec.out.push(o); markOut(o);
     Sfx.wrong();
     turn++;
     const left = rec.order.length - rec.out.length;
     if (left <= 1 || rec.tried.size >= teams.length) {
-      finish(`<span style="color:#ffb3bb">✗ ${esc(t.name)} −${fmt(pts)}.</span> ${left <= 1 ? 'Only one answer left' : 'Every team has tried'} — here it is!`);
+      finish(`<span style="color:#ffb3bb">${lostTxt(t.name)}</span> ${left <= 1 ? 'Only one answer left' : 'Every team has tried'} — here it is!`);
       return;
     }
-    startTurn(`<span style="color:#ffb3bb">✗ ${esc(t.name)} −${fmt(pts)}.</span> ${esc(team().name)}, your turn!`);
+    startTurn(`<span style="color:#ffb3bb">${lostTxt(t.name)}</span> ${esc(team().name)}, your turn!`);
   }
 
   function timeUp() {
