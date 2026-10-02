@@ -37,7 +37,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   const teams = Scores.teams();
   // bank[teamId] = points that team has earned on the CURRENT puzzle (only used for BANKRUPT);
   // the points themselves go straight onto the scoreboard.
-  let pIdx = -1, puzzle, rows, shown, usedLetters, bank, turn = Math.floor(Math.random() * teams.length) - 1;
+  let pIdx = -1, puzzle, rows, shown, usedLetters, bank, turn = 0;
   let phase, spinValue = 0, rot = Math.random() * Math.PI * 2, spinning = false, rafId;
   const N = WEDGES.length, SEG = (Math.PI * 2) / N;
 
@@ -113,7 +113,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     rows = GSData.layoutPuzzle(puzzle.phrase).rows;
     shown = new Set(); usedLetters = new Set(); bank = {};
     teams.forEach(t => bank[t.id] = 0);
-    turn = (turn + 1) % teams.length;
+    turn = pIdx % teams.length; // puzzle 1 → first team, puzzle 2 → second team, …
     $('#wcat', el).textContent = `${puzzle.category}  ·  Puzzle ${pIdx + 1} of ${puzzles.length}`;
     drawPuzzle(); setTurnPhase(`${esc(teams[turn].name)}, you're up — spin the wheel!`);
   }
