@@ -366,3 +366,10 @@ body.demo .ans { padding-top: 4px; padding-bottom: 4px; }
 
 .turn-pill.sm { font-size: 17px; padding: 6px 14px; align-self: center; box-shadow: 0 3px 0 rgba(0,0,0,.25); }
 .scorebar.clickable .team-chip { cursor: pointer; }
+
+/* Spin & Solve: typing the solve */
+.puzzle .cell.slot { background: #e6f9ff; color: #1446c8; outline: 3px solid var(--cyan); outline-offset: -3px; cursor: pointer; }
+.puzzle .cell.slot.cur { background: #fff6c7; outline-color: var(--yellow); animation: slotblink 1s infinite; }
+@keyframes slotblink { 50% { outline-color: transparent; } }
+.puzzle .cell.slot.bad { background: #ffd1d6; color: #c0142b; outline-color: var(--red); animation: shake .4s; }
+@keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }

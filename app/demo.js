@@ -237,9 +237,21 @@ const Demo = {
           }
         }
       }
-      await this.say('Think you know it? Press <b>Solve it!</b> and have the team say it out loud.', 3200);
+      const answer = $$('.cell.l.hide').map(c => c.textContent);
+      const typeIn = async letters => { for (const L of letters) { $(`#letters button[data-l="${L}"]`).click(); await this.wait(260); } };
+      await this.say('Think you know it? Press <b>Solve it!</b> and have the team say it out loud…', 3000);
       await this.tap(await this.until('#aSolve', 8000));
-      await this.tap('.modal .btn.green', 900);
+      await this.say('…then type their answer into the empty squares.', 2000);
+      const wrongL = answer.length ? (answer[answer.length - 1] === 'E' ? 'A' : 'E') : 'E';
+      await typeIn([...answer.slice(0, -1), wrongL]);
+      await this.tap('#sCheck');
+      await this.say('✗ Not quite! The guess is cleared and the <b>next team</b> gets a turn.', 3400);
+      await this.until('#aSolve', 8000);
+      await this.say('The next team knows it! Solve it!', 2200);
+      await this.tap('#aSolve');
+      await typeIn(answer);
+      await this.say('Press <b>Check answer</b>…', 1800);
+      await this.tap('#sCheck');
       await this.say('🎉 Solved! They get a 500-point bonus. The team with the most points starts the next puzzle.', 4200);
       await this.tap('#aNext');
       await this.say('🏆 Final scores! (Spin &amp; Solve, Trivia and Quiz Board all end with the podium.)', 3600);

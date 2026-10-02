@@ -223,6 +223,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     setActions('');
   }
   function pickLetter(L) {
+    if (phase === 'solving') return typeLetter(L);
     if (!(phase === 'cons' || phase === 'vowel')) return;
     const t = teams[turn];
     const wasVowel = phase === 'vowel';
@@ -248,16 +249,66 @@ App.screens.wheelPlay = (el, puzzles) => {
       setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! ${earned ? `+${fmt(earned)}. ` : ''}${done ? 'Every letter is up — solve it!' : `${esc(t.name)}: spin, buy a vowel, or solve.`}`);
     }, Math.min(n, 4) * 350 + 400);
   }
+  // ---------- Solving: type the team's answer into the empty squares ----------
+  let slots = [], cursor = 0;
   function solve() {
+    if (phase !== 'turn') return;
     const t = teams[turn];
-    Modal.open({
-      title: `Did ${t.name} solve it?`,
-      body: `<p style="font-size:22px;margin:0">Have ${esc(t.name)} say their answer out loud, then pick one.</p>`,
-      actions: [
-        { label: '✗ Wrong', cls: 'red', onClick: c => { c(); Sfx.wrong(); nextTurn(`Not quite!`); } },
-        { label: '✓ Correct!', cls: 'green', onClick: c => { c(); solved(); } },
-      ],
+    phase = 'solving';
+    App.setNavEnabled(false, false);
+    $('#spin', el).disabled = true;
+    slots = $$('.cell.l.hide', el).map((c, i) => {
+      const slot = { el: c, want: c.textContent, got: '' };
+      c.classList.remove('hide'); c.classList.add('slot'); c.textContent = '';
+      c.onclick = () => { if (phase === 'solving') { cursor = i; markCursor(); } };
+      return slot;
     });
+    cursor = 0; markCursor();
+    status(`✍️ ${esc(t.name)}, say your answer! Type it into the empty squares.`);
+    $$('#letters button', el).forEach(b => { b.disabled = false; b.classList.remove('used'); });
+    setActions(`<button class="btn ghost" id="sBack" title="Backspace">⌫ Back</button>
+      <button class="btn green" id="sCheck">Check answer ✓</button>
+      <button class="btn ghost" id="sCancel">Cancel</button>`, { sBack: backspace, sCheck: checkSolve, sCancel: cancelSolve });
+  }
+  function markCursor() {
+    slots.forEach((s, i) => s.el.classList.toggle('cur', i === cursor));
+  }
+  function typeLetter(L) {
+    if (phase !== 'solving' || cursor >= slots.length) return;
+    slots[cursor].got = L; slots[cursor].el.textContent = L;
+    cursor = Math.min(cursor + 1, slots.length);
+    markCursor(); Sfx.click();
+  }
+  function backspace() {
+    if (phase !== 'solving' || !slots.length) return;
+    if (cursor > 0 && (cursor >= slots.length || !slots[cursor].got)) cursor--;
+    slots[cursor].got = ''; slots[cursor].el.textContent = '';
+    markCursor();
+  }
+  function cancelSolve() {
+    if (phase !== 'solving') return;
+    drawPuzzle();
+    App.setNavEnabled(pIdx > 0, true);
+    setTurnPhase(`${esc(teams[turn].name)}: spin, buy a vowel, or solve.`);
+  }
+  function checkSolve() {
+    if (phase !== 'solving') return;
+    const empty = slots.filter(s => !s.got).length;
+    if (empty) { status(`Fill in every empty square first — ${empty} to go.`); return; }
+    if (slots.every(s => s.got === s.want)) { App.setNavEnabled(pIdx > 0, true); solved(); return; }
+    const t = teams[turn];
+    phase = 'wait';
+    slots.forEach(s => s.el.classList.add('bad'));
+    Sfx.wrong();
+    setActions('');
+    $$('#letters button', el).forEach(b => b.disabled = true);
+    status(`<span class="big">✗ Not quite, ${esc(t.name)}!</span>`);
+    setTimeout(() => {
+      if (App.current !== 'wheelPlay') return;
+      drawPuzzle();
+      App.setNavEnabled(pIdx > 0, true);
+      nextTurn('Wrong answer!');
+    }, 2200);
   }
   function solved() {
     const t = teams[turn];
@@ -275,7 +326,17 @@ App.screens.wheelPlay = (el, puzzles) => {
   drawWheel();
   document.fonts?.ready.then(drawWheel);
   startPuzzle();
-  const onKey = e => { if (!Modal.stack.length && e.code === 'Space' && phase === 'turn') { e.preventDefault(); spin(); } };
+  const onKey = e => {
+    if (Modal.stack.length) return;
+    if (phase === 'solving') {
+      if (/^[a-z]$/i.test(e.key)) { e.preventDefault(); typeLetter(e.key.toUpperCase()); }
+      else if (e.key === 'Backspace') { e.preventDefault(); backspace(); }
+      else if (e.key === 'Enter') { e.preventDefault(); checkSolve(); }
+      else if (e.key === 'Escape') cancelSolve();
+      return;
+    }
+    if (e.code === 'Space' && phase === 'turn') { e.preventDefault(); spin(); }
+  };
   document.addEventListener('keydown', onKey);
   return () => { cancelAnimationFrame(rafId); document.removeEventListener('keydown', onKey); Scores.setActive(null); };
 };
