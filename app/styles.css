@@ -721,3 +721,13 @@ body.theme-recovery .demo-strip { background: linear-gradient(90deg, #1f5a5c, #2
 .set-badge.rec { background: rgba(140,199,154,.25); border-color: #8cc79a; }
 body.theme-recovery [style*="--tc"] { filter: saturate(.72) brightness(1.04); }
 body.theme-recovery .wg-kb .k.x { background: #2e4a48; color: rgba(255,255,255,.45); }
+
+/* Host menu: look picker */
+.look-pick { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.lk { border: 2px solid transparent; border-radius: 12px; background: rgba(255,255,255,.08); color: #fff; padding: 8px 4px; display: flex; flex-direction: column; align-items: center; gap: 2px; font-family: inherit; }
+.lk .ic { font-size: 24px; } .lk b { font-size: 15px; } .lk small { font-size: 11px; opacity: .75; text-align: center; line-height: 1.2; }
+.lk:hover { background: rgba(255,255,255,.16); }
+.lk.on { border-color: var(--yellow); background: rgba(255,255,255,.16); }
+.lk.on::after { content: '✓ In use'; font-size: 11px; font-weight: 700; color: var(--yellow); }
+.menu section { padding: 10px 0 4px; }
+.mi { padding: 8px 14px; margin-bottom: 5px; font-size: 16px; }

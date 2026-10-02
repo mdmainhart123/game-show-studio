@@ -456,6 +456,12 @@ const Menu = {
     back.className = 'menu-back';
     back.innerHTML = `<aside class="menu">
       <div class="menu-head"><b>☰ Host menu</b><button class="icon-btn" id="mClose" title="Close (Esc)">✕</button></div>
+      <section class="looks"><h4>🎨 Choose a look</h4>
+        <div class="look-pick">
+          ${[['classic', '🎩', 'Classic', 'Navy &amp; gold'], ['playful', '🎈', 'Playful', 'Bright &amp; fun'], ['recovery', '🌿', 'Recovery', 'Mental health questions']].map(([k, ic, n, sub]) =>
+            `<button class="lk ${App.look === k ? 'on' : ''}" data-look="${k}"><span class="ic">${ic}</span><b>${n}</b><small>${sub}</small></button>`).join('')}
+        </div>
+      </section>
       ${inGame ? `
       <section><h4>This game</h4>
         ${nav?.pause ? `<button class="mi" id="mPause">${nav.pause.get() ? '▶ Resume the clock' : '⏸ Pause the clock'}</button>` : ''}
@@ -476,7 +482,7 @@ const Menu = {
         <button class="mi" id="mHelp">❓ How to play (rules)</button>
       </section>
       <section><h4>Display &amp; data</h4>
-        <div class="mi-row"><button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button><button class="mi" id="mLook">🎨 Look: ${LOOK_NAMES[App.look]}</button></div>
+        <button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button>
         <div class="mi-row"><button class="mi" id="mBackup">💾 Back up</button><button class="mi" id="mRestore">📂 Restore</button></div>
       </section>
     </aside>`;
@@ -498,12 +504,11 @@ const Menu = {
     $$('[data-demo]', back).forEach(b => b.onclick = () => go(() => Demo.start(b.dataset.demo)));
     q('mHelp').onclick = () => { this.close(); showHelp(); };
     q('mSound').onclick = () => { s.sound = !s.sound; App.save(); q('mSound').textContent = s.sound ? '🔊 Sound on' : '🔇 Sound off'; };
-    q('mLook').onclick = async () => {
-      const order = ['classic', 'playful', 'recovery'];
-      const next = order[(order.indexOf(App.look) + 1) % order.length];
+    $$('[data-look]', back).forEach(b => b.onclick = async () => {
+      if (b.dataset.look === App.look) return;
       this.close();
-      await App.setLook(next);
-    };
+      await App.setLook(b.dataset.look);
+    });
     q('mBackup').onclick = () => App.backup();
     q('mRestore').onclick = () => App.restore();
   },
