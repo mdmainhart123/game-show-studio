@@ -614,3 +614,10 @@ body.theme-classic .wg-answer span { background: #3d7a57; border-radius: 6px; }
 
 /* demo strip */
 body.theme-classic .demo-strip { background: linear-gradient(90deg, #0f1626, #1c2741 50%, #0f1626); border-bottom: 1px solid var(--gold); }
+/* Classic: keep every game's hidden/used/pending states exactly as in Playful */
+body.theme-classic .puzzle .cell.l.hide { color: transparent; }
+body.theme-classic .puzzle .cell.slot { background: #e6f9ff; color: #1446c8; }
+body.theme-classic .puzzle .cell.slot.cur { background: #fff6c7; }
+body.theme-classic .puzzle .cell.slot.bad { background: #ffd1d6; color: #c0142b; }
+body.theme-classic .jb .tile.used { color: transparent; }
+body.theme-classic .wt.flip.pending { background: rgba(255,255,255,.12); border-color: #fff; }
