@@ -22,8 +22,9 @@ const App = {
     if (fresh) d = GSData.starterData();
     d.words ||= [];
     d.teams ||= [0, 1, 2].map(i => ({ id: GSData.uid(), name: DEFAULT_TEAM_NAMES[i], color: TEAM_COLORS[i], score: 0 }));
-    d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250, triviaPenalty: 'half', finalRound: true }, d.settings || {});
+    d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250, triviaPenalty: 'half', finalRound: true, theme: 'classic' }, d.settings || {});
     this.data = d;
+    this.applyTheme();
     const added = this.applyPacks();
     this.save(true);
 
@@ -70,6 +71,12 @@ const App = {
     });
     return added;
   },
+
+  // Look: 'classic' (grown-up navy & gold) or 'playful' (original bright colours)
+  applyTheme() {
+    document.body.classList.toggle('theme-classic', this.data.settings.theme !== 'playful');
+  },
+  get classic() { return this.data?.settings.theme !== 'playful'; },
 
   save(now) {
     clearTimeout(this._saveT);
@@ -289,7 +296,7 @@ const Sfx = {
 function confetti(ms = 3500) {
   const cv = $('#confetti'), ctx = cv.getContext('2d');
   cv.width = innerWidth; cv.height = innerHeight;
-  const colors = [...TEAM_COLORS, '#ffffff', '#25d7f0'];
+  const colors = App.classic ? ['#d4af6a', '#e8d29e', '#b8913f', '#f3eee4', '#8fa7c9'] : [...TEAM_COLORS, '#ffffff', '#25d7f0'];
   const parts = Array.from({ length: 220 }, () => ({
     x: Math.random() * cv.width, y: -20 - Math.random() * cv.height * 0.6,
     vx: (Math.random() - 0.5) * 4, vy: 2 + Math.random() * 4, r: Math.random() * Math.PI, vr: (Math.random() - 0.5) * 0.3,
@@ -337,6 +344,7 @@ function showHelp() {
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
       <p><b style="color:var(--yellow)">🏆 Final Round</b> — every game ends with one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, and the <b>☰ Menu</b> has 🏁 End game, 🏠 Quit to Home and ⏸ Pause. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
+      <p><b>Look:</b> switch between <b>🎩 Classic</b> (navy &amp; gold) and <b>🎈 Playful</b> (the original bright colours) any time in <b>☰ Menu → 🎨 Look</b> or Settings. Nothing else changes.</p>
       <p><b>Tips:</b> Press <kbd>F11</kbd> for full screen on a projector. Press <kbd>Esc</kbd> to close a pop-up.</p></div>`,
     actions: [{ label: 'Got it!', cls: 'pink' }],
   });
@@ -389,6 +397,7 @@ App.screens.settings = (el) => {
       <div class="panel"><h3>🏆 Every game</h3>
         <label class="field"><span>Final wager round at the end</span>${sel('sFinal', [[1, 'On'], [0, 'Off']], s.finalRound ? 1 : 0)}</label>
         <label class="field"><span>Sound effects</span>${sel('sSound', [[1, 'On'], [0, 'Off']], s.sound ? 1 : 0)}</label>
+        <label class="field"><span>Look</span>${sel('sTheme', [['classic', '🎩 Classic — navy & gold'], ['playful', '🎈 Playful — the original bright look']], s.theme === 'playful' ? 'playful' : 'classic')}</label>
       </div>
     </div>`;
   const on = (id, fn) => $('#' + id, el).onchange = e => { fn(e.target.value); App.save(); toast('Saved ✓'); };
@@ -399,6 +408,7 @@ App.screens.settings = (el) => {
   on('sVowel', v => s.vowelCost = +v);
   on('sFinal', v => s.finalRound = v === '1');
   on('sSound', v => s.sound = v === '1');
+  on('sTheme', v => { s.theme = v; App.applyTheme(); });
 };
 
 // ================= ☰ HOST MENU =================
@@ -433,7 +443,7 @@ const Menu = {
         <button class="mi" id="mHelp">❓ How to play (rules)</button>
       </section>
       <section><h4>Display &amp; data</h4>
-        <button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button>
+        <div class="mi-row"><button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button><button class="mi" id="mLook">🎨 Look: ${s.theme === 'playful' ? 'Playful' : 'Classic'}</button></div>
         <div class="mi-row"><button class="mi" id="mBackup">💾 Back up</button><button class="mi" id="mRestore">📂 Restore</button></div>
       </section>
     </aside>`;
@@ -455,6 +465,7 @@ const Menu = {
     $$('[data-demo]', back).forEach(b => b.onclick = () => go(() => Demo.start(b.dataset.demo)));
     q('mHelp').onclick = () => { this.close(); showHelp(); };
     q('mSound').onclick = () => { s.sound = !s.sound; App.save(); q('mSound').textContent = s.sound ? '🔊 Sound on' : '🔇 Sound off'; };
+    q('mLook').onclick = () => { s.theme = s.theme === 'playful' ? 'classic' : 'playful'; App.save(); App.applyTheme(); q('mLook').textContent = `🎨 Look: ${s.theme === 'playful' ? 'Playful' : 'Classic'}`; App.redraw?.(); };
     q('mBackup').onclick = () => App.backup();
     q('mRestore').onclick = () => App.restore();
   },

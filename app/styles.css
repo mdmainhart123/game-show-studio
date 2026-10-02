@@ -483,3 +483,134 @@ body.demo .menu-back { z-index: 81; }
 .wgame .wh-actions { justify-content: flex-start; }
 @media (max-height: 800px) { .wgame { gap: 28px; } .wr-team { font-size: 13px; } }
 .wgame { grid-template-columns: auto minmax(0, 620px); gap: 56px; }
+
+/* =====================================================================
+   🎩 CLASSIC THEME — a more grown-up look. Everything below only applies
+   when <body class="theme-classic">. Switch in ☰ Menu → Look (or Settings).
+   Removing this block (or choosing "Playful") restores the original look.
+   ===================================================================== */
+@font-face { font-family: 'Oswald'; font-weight: 500; src: url(fonts/oswald-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Oswald'; font-weight: 600; src: url(fonts/oswald-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Oswald'; font-weight: 700; src: url(fonts/oswald-latin-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 400; src: url(fonts/inter-latin-400-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 500; src: url(fonts/inter-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 600; src: url(fonts/inter-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 700; src: url(fonts/inter-latin-700-normal.woff2) format('woff2'); }
+
+body.theme-classic {
+  --gold: #d4af6a; --gold-2: #b8913f; --ink: #0d1322; --navy: #141c30; --navy-2: #1c2741;
+  --panel: rgba(255,255,255,.04); --panel-2: rgba(255,255,255,.08); --line: rgba(212,175,106,.22);
+  --muted: rgba(235,230,220,.62); --text: #f1ece2;
+  --pink: #b8455f; --yellow: var(--gold); --cyan: #5f9fb0; --green: #4f9a6e; --orange: #c0773f; --purple: #7a64a8; --red: #b3433f; --blue: #3f6fb0;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; color: var(--text);
+  background: radial-gradient(1100px 700px at 50% -10%, rgba(212,175,106,.16), transparent 60%),
+              radial-gradient(900px 600px at 100% 110%, rgba(63,111,176,.14), transparent 60%),
+              linear-gradient(180deg, #111a2d, var(--ink));
+}
+body.theme-classic::before { display: none; }
+
+/* headings & big numbers */
+body.theme-classic :is(h1, h2, h3, .brand, .home-hero h1, .game-card h2, .setup h1, .page-title h1, .results h1,
+  .jb .cat, .jb .tile, .clue-view .clue, .clue-view .meta, .clue-view .answer, .final-title, .dd-splash, .wcat,
+  .team-chip .tscore, .podium .blk, .timer .num, .final-clock, .status .big, .modal h2, .turn-pill, .tq-card) {
+  font-family: 'Oswald', 'Inter', sans-serif; letter-spacing: .5px;
+}
+body.theme-classic :is(h1, h2, h3, .setup h1, .home-hero h1, .page-title h1, .results h1, .jb .cat, .wcat, .final-title, .dd-splash) { text-transform: uppercase; letter-spacing: 2px; }
+body.theme-classic :is(h1, h2, .setup h1, .results h1, .home-hero h1, .jb .tile, .clue-view .clue, .team-chip .tscore) { text-shadow: none; }
+
+/* top bar */
+body.theme-classic .topbar { background: rgba(0,0,0,.35); border-bottom: 1px solid var(--line); }
+body.theme-classic .brand { font-weight: 600; text-transform: uppercase; letter-spacing: 3px; font-size: 22px; }
+body.theme-classic .brand span b { color: var(--gold); font-weight: 600; }
+body.theme-classic .brand .logo { filter: grayscale(.6) sepia(.35) saturate(1.3); }
+
+/* buttons: flatter, slimmer, gold accents */
+body.theme-classic .btn { border-radius: 8px; box-shadow: none; font-weight: 600; letter-spacing: .3px; border: 1px solid transparent; }
+body.theme-classic .btn:active { transform: translateY(1px); }
+body.theme-classic .btn.pink, body.theme-classic .btn.yellow { background: linear-gradient(180deg, #e0bd78, var(--gold-2)); color: #1a1408; }
+body.theme-classic .btn.cyan { background: #2c4a6a; color: var(--text); }
+body.theme-classic .btn.green { background: #3d7a57; color: #fff; }
+body.theme-classic .btn.red { background: #8f3533; }
+body.theme-classic .btn.orange { background: #9c5f30; }
+body.theme-classic .btn.ghost, body.theme-classic .menu-btn, body.theme-classic .fs-btn { background: transparent; border: 1px solid var(--line); color: var(--text); }
+body.theme-classic .icon-btn { border-radius: 8px; background: rgba(255,255,255,.06); }
+body.theme-classic .link-btn { color: var(--gold); }
+
+/* home */
+body.theme-classic .home-hero h1 { font-weight: 600; font-size: clamp(48px, 8vh, 96px); }
+body.theme-classic .home-hero h1 :is(.w1, .w2, .w3) { color: var(--text); }
+body.theme-classic .home-hero h1 .w3 { color: var(--gold); }
+body.theme-classic .game-card { background: linear-gradient(180deg, var(--navy-2), var(--navy)) !important; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 20px 40px rgba(0,0,0,.4); }
+body.theme-classic .game-card::after { display: none; }
+body.theme-classic .game-card::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--accent, var(--gold)); }
+body.theme-classic .game-card.trivia { --accent: #b8455f; } body.theme-classic .game-card.board { --accent: #3f6fb0; }
+body.theme-classic .game-card.wheel { --accent: #c0773f; } body.theme-classic .game-card.words { --accent: #4f9a6e; }
+body.theme-classic .game-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+body.theme-classic .game-card .emoji { filter: grayscale(.35) drop-shadow(0 6px 10px rgba(0,0,0,.4)); }
+body.theme-classic .game-card h2 { font-weight: 500; }
+body.theme-classic .game-card p { color: var(--muted); }
+body.theme-classic .home-teams span { box-shadow: none; font-weight: 500; }
+
+/* team colours: calmer jewel tones everywhere a team colour is used */
+body.theme-classic [style*="--tc"] { filter: saturate(.62) brightness(.9); }
+body.theme-classic .team-chip { border-radius: 10px; box-shadow: none; }
+body.theme-classic .team-chip.active { outline: 2px solid var(--gold); transform: translateY(-4px); }
+
+/* panels, modals, menu */
+body.theme-classic .panel { border-radius: 12px; background: rgba(255,255,255,.035); }
+body.theme-classic .modal { background: linear-gradient(180deg, #1c2741, #121a2c); border: 1px solid var(--line); border-radius: 14px; }
+body.theme-classic .menu { background: linear-gradient(180deg, #1a2440, #0f1626); border-left: 1px solid var(--line); }
+body.theme-classic .mi { border-radius: 8px; background: rgba(255,255,255,.05); font-weight: 500; }
+body.theme-classic .input { border-radius: 8px; border-width: 1px; }
+body.theme-classic .input:focus { border-color: var(--gold); }
+body.theme-classic .toast { background: var(--gold); color: #1a1408; }
+body.theme-classic .scorebar { background: rgba(0,0,0,.4); border-top: 1px solid var(--line); }
+body.theme-classic .count-pick button { border-radius: 8px; box-shadow: none; }
+body.theme-classic .count-pick button.on { background: var(--gold); color: #1a1408; }
+body.theme-classic .tab { border-radius: 8px 8px 0 0; }
+
+/* trivia */
+body.theme-classic .tq-card { background: #f3eee4; color: #141c30; border-radius: 12px; font-weight: 500; box-shadow: 0 16px 40px rgba(0,0,0,.4); }
+body.theme-classic .ans { border-radius: 10px; box-shadow: none; font-weight: 500; }
+body.theme-classic .ans.a0 { background: #8c3a4d; } body.theme-classic .ans.a1 { background: #2f5687; }
+body.theme-classic .ans.a2 { background: #9a7a32; } body.theme-classic .ans.a3 { background: #3d7356; }
+body.theme-classic .ans .shape { border-radius: 8px; font-family: 'Oswald', sans-serif; }
+body.theme-classic .answers.revealed .ans.right { outline: 3px solid var(--gold); }
+body.theme-classic .award { border-radius: 12px; background: rgba(0,0,0,.3); }
+body.theme-classic .turn-pill { box-shadow: none; }
+
+/* quiz board: the classic navy & gold */
+body.theme-classic .jb .cat { background: #13213f; border: 1px solid var(--line); border-radius: 6px; box-shadow: none; font-weight: 500; font-size: clamp(14px, 1.5vw, 22px); }
+body.theme-classic .jb .tile { background: linear-gradient(180deg, #1d3566, #142650); border-radius: 6px; color: var(--gold); box-shadow: inset 0 0 0 1px rgba(212,175,106,.18); font-weight: 600; }
+body.theme-classic .jb .tile.used { background: rgba(255,255,255,.03); box-shadow: none; }
+body.theme-classic .clue-view { background: radial-gradient(circle at 50% 40%, #1d3566, #0e1a38); }
+body.theme-classic .clue-view .clue { font-weight: 500; }
+body.theme-classic .clue-view .answer { color: var(--gold); background: rgba(0,0,0,.3); border: 1px solid var(--line); }
+body.theme-classic .clue-view.dd { background: radial-gradient(circle at 50% 40%, #3a2c10, #120d04); }
+body.theme-classic .dd-splash { color: var(--gold); font-weight: 600; text-shadow: 0 0 40px rgba(212,175,106,.35); }
+
+/* spin & solve */
+body.theme-classic .puzzle { background: #0f2a22; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 16px 40px rgba(0,0,0,.4); }
+body.theme-classic .puzzle .cell { background: #1b4536; border-radius: 3px; }
+body.theme-classic .puzzle .cell.l { background: #f3eee4; color: #141c30; font-family: 'Oswald', sans-serif; font-weight: 600; }
+body.theme-classic .wcat { background: rgba(0,0,0,.3); border: 1px solid var(--line); border-radius: 8px; font-weight: 500; }
+body.theme-classic .letters button { border-radius: 6px; box-shadow: none; background: #24365a; }
+body.theme-classic .letters button.v { background: #5b3a52; }
+body.theme-classic .wheel-box .hub { background: radial-gradient(circle at 35% 30%, #fff6dc, var(--gold) 45%, #7a5a1c); }
+body.theme-classic .flip-card .front { background: linear-gradient(145deg, #1d3566, #6b531f); }
+
+/* final round & results */
+body.theme-classic .final-title { color: var(--gold); font-weight: 600; }
+body.theme-classic .wg, body.theme-classic .fj, body.theme-classic .judge .jt { box-shadow: none; border-radius: 10px; }
+body.theme-classic .podium .blk { border-radius: 8px 8px 0 0; box-shadow: none; }
+
+/* word guess */
+body.theme-classic .wt { border-radius: 6px; border-width: 2px; font-family: 'Oswald', sans-serif; font-weight: 600; }
+body.theme-classic .wt.g, body.theme-classic .wg-kb .k.g { background: #3d7a57; border-color: #3d7a57; }
+body.theme-classic .wt.y, body.theme-classic .wg-kb .k.y { background: #b08d3a; border-color: #b08d3a; }
+body.theme-classic .wt.x { background: #3a3f4f; border-color: #3a3f4f; }
+body.theme-classic .wg-kb .k { border-radius: 6px; box-shadow: none; background: rgba(255,255,255,.12); }
+body.theme-classic .wg-answer span { background: #3d7a57; border-radius: 6px; }
+
+/* demo strip */
+body.theme-classic .demo-strip { background: linear-gradient(90deg, #0f1626, #1c2741 50%, #0f1626); border-bottom: 1px solid var(--gold); }

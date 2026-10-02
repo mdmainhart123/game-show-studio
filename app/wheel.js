@@ -4,6 +4,7 @@ const WEDGES = [500, 900, 700, 300, 800, 'BANKRUPT', 600, 400, 'MYSTERY', 'LOSE 
 // those points to flip it — 50/50 JACKPOT (+2,500) or BANKRUPT. Once flipped, it's a plain 1,000.
 const MYSTERY_VALUE = 1000, JACKPOT = 2500;
 const WEDGE_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#12b5cf'];
+const WEDGE_COLORS_CLASSIC = ['#8c3a4d', '#2f5687', '#9a7a32', '#3d7356', '#5d4a86', '#9c5f30', '#2f6f7c'];
 const VOWELS = 'AEIOU';
 const SOLVE_BONUS = 500;
 
@@ -84,7 +85,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   function drawWheel() {
     const cx = 450, cy = 450, r = 440;
     ctx.clearRect(0, 0, 900, 900);
-    ctx.beginPath(); ctx.arc(cx, cy, r + 6, 0, Math.PI * 2); ctx.fillStyle = '#ffd23f'; ctx.fill();
+    ctx.beginPath(); ctx.arc(cx, cy, r + 6, 0, Math.PI * 2); ctx.fillStyle = App.classic ? '#d4af6a' : '#ffd23f'; ctx.fill();
     WEDGES.forEach((w, i) => {
       const a0 = rot + i * SEG - Math.PI / 2;
       ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r, a0, a0 + SEG); ctx.closePath();
@@ -92,16 +93,16 @@ App.screens.wheelPlay = (el, puzzles) => {
       if (w === 'MYSTERY' && !myst) w = MYSTERY_VALUE; // already flipped this puzzle
       if (myst) {
         const g = ctx.createLinearGradient(cx, cy, cx + Math.cos(a0 + SEG / 2) * r, cy + Math.sin(a0 + SEG / 2) * r);
-        g.addColorStop(0, '#5b1fa8'); g.addColorStop(1, '#c48a00');
+        g.addColorStop(0, App.classic ? '#1d3566' : '#5b1fa8'); g.addColorStop(1, App.classic ? '#8a6a28' : '#c48a00');
         ctx.fillStyle = g;
-      } else ctx.fillStyle = w === 'BANKRUPT' ? '#111' : w === 'LOSE A TURN' ? '#fff' : WEDGE_COLORS[i % WEDGE_COLORS.length];
+      } else ctx.fillStyle = w === 'BANKRUPT' ? '#111' : w === 'LOSE A TURN' ? (App.classic ? '#e9e1cf' : '#fff') : (App.classic ? WEDGE_COLORS_CLASSIC : WEDGE_COLORS)[i % WEDGE_COLORS.length];
       ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.7)'; ctx.lineWidth = 3; ctx.stroke();
       // label along the radius
       ctx.save(); ctx.translate(cx, cy); ctx.rotate(a0 + SEG / 2);
       ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
       ctx.fillStyle = w === 'LOSE A TURN' ? '#111' : '#fff';
       const txt = myst ? '🎁 MYSTERY' : String(w);
-      ctx.font = `700 ${typeof w === 'number' ? 44 : txt.length > 9 ? 22 : 26}px Fredoka, sans-serif`;
+      ctx.font = `${App.classic ? 600 : 700} ${typeof w === 'number' ? 44 : txt.length > 9 ? 22 : 26}px ${App.classic ? 'Oswald' : 'Fredoka'}, sans-serif`;
       if (myst) { ctx.fillStyle = '#ffd23f'; ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowOffsetY = 2; }
       if (typeof w === 'number') { ctx.shadowColor = 'rgba(0,0,0,.35)'; ctx.shadowOffsetY = 3; }
       ctx.fillText(txt, r - 22, 0);
