@@ -482,3 +482,4 @@ body.demo .menu-back { z-index: 81; }
 .wg-kb .k.g { background: #22a35a; } .wg-kb .k.y { background: #e0aa00; } .wg-kb .k.x { background: #2a2540; color: rgba(255,255,255,.45); }
 .wgame .wh-actions { justify-content: flex-start; }
 @media (max-height: 800px) { .wgame { gap: 28px; } .wr-team { font-size: 13px; } }
+.wgame { grid-template-columns: auto minmax(0, 620px); gap: 56px; }

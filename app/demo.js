@@ -278,37 +278,32 @@ const Demo = {
 
     async words() {
       const d = App.data;
-      Object.assign(d.settings, { finalRound: false });
       App.show('wordsSetup');
-      await this.say('🔤 <b>Word Guess</b> — choose how many words and whether to show a hint, then press Start.', 3200);
-      const pick = this.pickRandom(d.words.filter(w => w.hint) .length ? d.words.filter(w => w.hint) : d.words);
-      Scores.resetAll();
+      await this.say('🔤 <b>Word Guess</b> — everyone plays together. No teams, no points!', 3000);
+      const withHint = d.words.filter(w => w.hint);
+      const pick = this.pickRandom(withHint.length ? withHint : d.words);
       App.show('wordsPlay', [pick], { hints: true });
-      await this.say('Find the hidden <b>5-letter word</b> in 6 tries. Teams take turns — one row each.', 3400);
-      if (pick.hint) await this.say('The hint gives a clue about the word. 💡', 2400);
+      await this.say('Find the hidden <b>5-letter word</b> in 6 tries.' + (pick.hint ? ' The hint 💡 gives a clue.' : ''), 3200);
       const typeWord = async w => { for (const L of w) { $(`#kb .k[data-k="${L}"]`).click(); await this.wait(230); } };
-      // a not-a-word guess first, to show the check
-      await this.say('The team calls out a guess and the host types it in…', 2600);
+      await this.say('Someone shouts out a word, and the host types it in…', 2600);
       await typeWord('ABCDE');
       await this.tap($('#kb .k[data-k="ENTER"]'));
-      await this.say('Only real words count! (If a real word is missing from the list, the host can press "Use it anyway".)', 3800);
+      await this.say('Only real words count! (If a real word is missing, press "Use it anyway".)', 3400);
       for (let i = 0; i < 5; i++) { $('#kb .k[data-k="BACK"]').click(); await this.wait(90); }
       const starters = ['STORM', 'PLANT', 'HOUSE', 'LIGHT', 'BRICK', 'CHAMP'].filter(w => w !== pick.word && wgValid(w));
       await typeWord(starters[0]);
       await this.tap($('#kb .k[data-k="ENTER"]'));
       await this.wait(2400);
       await this.say('🟩 <b>Green</b> = right letter, right spot. 🟨 <b>Yellow</b> = in the word, wrong spot. ⬛ <b>Gray</b> = not in the word.', 4600);
-      await this.say('The keyboard keeps track of the colors too. Now it\'s the next team\'s turn…', 3200);
+      await this.say('The keyboard keeps track of the colors too. Next guess…', 2800);
       await typeWord(starters[1]);
       await this.tap($('#kb .k[data-k="ENTER"]'));
       await this.wait(2400);
-      await this.say('The sooner you solve it, the more it\'s worth — the yellow tag shows this row\'s points.', 3400);
+      await this.say('Somebody\'s got it…', 2000);
       await typeWord(pick.word);
       await this.tap($('#kb .k[data-k="ENTER"]'));
       await this.wait(2600);
-      await this.say('🎉 Solved! That team earns the points <b>and</b> starts the next word.', 3600);
-      await this.tap('#nextW');
-      await this.say('🏆 Final scores!', 3000);
+      await this.say('🎉 Solved! Press <b>Next word</b> to keep playing.', 3400);
     },
   },
 };
