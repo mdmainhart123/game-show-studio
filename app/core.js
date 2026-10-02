@@ -27,6 +27,7 @@ const App = {
     this.save(true);
 
     $('#homeLink').onclick = () => this.leaveGame();
+    $('#fsBtn').onclick = () => this.toggleFullscreen();
     $('#menuBtn').onclick = () => { if (!(typeof Demo !== 'undefined' && Demo.running)) Menu.open(); };
     document.addEventListener('keydown', e => {
       if (e.key === 'F11') { e.preventDefault(); this.toggleFullscreen(); }
@@ -429,7 +430,7 @@ const Menu = {
         <button class="mi" id="mHelp">❓ How to play (rules)</button>
       </section>
       <section><h4>Display &amp; data</h4>
-        <div class="mi-row"><button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button><button class="mi" id="mFull">⛶ Full screen</button></div>
+        <button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button>
         <div class="mi-row"><button class="mi" id="mBackup">💾 Back up</button><button class="mi" id="mRestore">📂 Restore</button></div>
       </section>
     </aside>`;
@@ -451,7 +452,6 @@ const Menu = {
     $$('[data-demo]', back).forEach(b => b.onclick = () => go(() => Demo.start(b.dataset.demo)));
     q('mHelp').onclick = () => { this.close(); showHelp(); };
     q('mSound').onclick = () => { s.sound = !s.sound; App.save(); q('mSound').textContent = s.sound ? '🔊 Sound on' : '🔇 Sound off'; };
-    q('mFull').onclick = () => { this.close(); App.toggleFullscreen(); };
     q('mBackup').onclick = () => App.backup();
     q('mRestore').onclick = () => App.restore();
   },

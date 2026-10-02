@@ -437,3 +437,5 @@ body.demo .menu-back { z-index: 81; }
 .settings-grid .panel { padding: 18px; }
 .home-hint { text-align: center; color: var(--muted); font-size: 15px; margin-top: 2vh; opacity: .8; }
 .mi { padding: 9px 14px; }
+
+.fs-btn { width: 46px; height: 46px; font-size: 22px; border: 2px solid var(--line); background: rgba(255,255,255,.12); }
