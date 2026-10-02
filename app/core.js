@@ -334,12 +334,18 @@ App.screens.home = (el) => {
         <span class="count">${d.wheel.length} puzzles</span>
       </button>
     </div>
+    <div class="demo-row">
+      <button class="btn sm ghost" data-demo="trivia">🎬 Watch a demo</button>
+      <button class="btn sm ghost" data-demo="board">🎬 Watch a demo</button>
+      <button class="btn sm ghost" data-demo="wheel">🎬 Watch a demo</button>
+    </div>
     <div class="home-actions">
       <button class="btn lg cyan" id="goTeams">👥 Teams &amp; Scores</button>
       <button class="btn lg yellow" id="goEditor">📝 Question Manager</button>
       <button class="btn lg ghost" id="goHelp">❓ How to play</button>
     </div>`;
   $$('.game-card', el).forEach(b => b.onclick = () => { Sfx.click(); App.show(b.dataset.g + 'Setup'); });
+  $$('[data-demo]', el).forEach(b => b.onclick = () => Demo.start(b.dataset.demo));
   $('#goTeams', el).onclick = () => App.show('teams');
   $('#goEditor', el).onclick = () => App.show('editor');
   $('#goHelp', el).onclick = showHelp;

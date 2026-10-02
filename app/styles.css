@@ -340,3 +340,26 @@ div.field > span { display: block; margin-bottom: 6px; }
 .fj button.ok:hover { background: var(--green); } .fj button.no:hover { background: var(--red); }
 .fj.right, .fj.wrong { outline: 3px solid #fff; } .fj.right button, .fj.wrong button { opacity: .3; pointer-events: none; }
 @media (max-height: 800px) { .final-help { font-size: 16px; margin-bottom: 8px; } .wg .input { padding: 4px 8px; } }
+
+/* ---------- Demo mode ---------- */
+.demo-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 1300px; margin: 14px auto 0; }
+.demo-row .btn { justify-self: center; }
+.demo-block { position: fixed; inset: 0; z-index: 80; cursor: not-allowed; }
+.demo-strip { position: relative; z-index: 83; display: flex; align-items: center; gap: 12px; padding: 0 16px; height: 62px; flex: none; background: linear-gradient(90deg, #1a0640, #2b0a5c 50%, #1a0640); border-bottom: 2px solid var(--yellow); }
+.demo-tag { font-weight: 700; color: var(--yellow); white-space: nowrap; font-size: 18px; }
+.demo-caption { flex: 1; text-align: center; font-size: clamp(16px, 2.5vh, 22px); font-weight: 500; line-height: 1.25; opacity: 0; }
+.demo-caption.show { animation: capin .35s forwards; }
+@keyframes capin { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+body.demo .wheel-box { width: min(100%, calc(100vh - 400px)); }
+.demo-ring { position: fixed; z-index: 81; border: 5px solid var(--yellow); border-radius: 18px; pointer-events: none; opacity: 0; box-shadow: 0 0 0 6px rgba(255,210,63,.3), 0 0 30px rgba(255,210,63,.6); }
+.demo-ring.on { animation: ringpulse .9s ease-out forwards; }
+@keyframes ringpulse { 0% { opacity: 0; transform: scale(1.25); } 40% { opacity: 1; transform: scale(1); } 70% { transform: scale(.96); } 100% { opacity: 1; transform: scale(1); } }
+@media (max-height: 800px) {
+  .demo-row { margin-top: 8px; }
+  .home-actions { margin-top: 16px; }
+  .game-card { min-height: 230px; }
+  .home-hero p { margin-top: 6px; }
+}
+body.demo .tq-card { min-height: 13vh; padding-top: 12px; padding-bottom: 12px; }
+body.demo .tq-top { height: clamp(60px, 11vh, 110px); }
+body.demo .ans { padding-top: 4px; padding-bottom: 4px; }
