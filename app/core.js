@@ -24,8 +24,8 @@ const App = {
     d.teams ||= [0, 1, 2].map(i => ({ id: GSData.uid(), name: DEFAULT_TEAM_NAMES[i], color: TEAM_COLORS[i], score: 0 }));
     d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250, triviaPenalty: 'half', finalRound: true, theme: 'classic' }, d.settings || {});
     this.data = d;
-    this.applyTheme();
     const added = this.applyPacks();
+    this.applyTheme();
     this.save(true);
 
     $('#homeLink').onclick = () => this.leaveGame();
@@ -63,20 +63,51 @@ const App = {
         if (!p[k]) return;
         const r = GSData[fn](p[k]);
         if (r.problems.length) console.warn('Pack', p.id, k, r.problems);
-        d[k].push(...r.items);
+        // packs can target a question set: 'standard' (default) or 'recovery'
+        const bank = p.bank || 'standard';
+        d.bank ||= 'standard';
+        if (bank === d.bank) d[k].push(...r.items);
+        else { d.banks ||= {}; const b = (d.banks[bank] ||= { trivia: [], board: [], wheel: [], words: [] }); (b[k] ||= []).push(...r.items); }
         if (r.items.length) parts.push(`${r.items.length} ${noun}${r.items.length === 1 ? '' : 's'}`);
       });
       d.packsApplied.push(p.id);
-      added.push({ name: p.name, summary: parts.join(', ') });
+      added.push({ name: p.name + (p.bank === 'recovery' ? ' (used in the 🌿 Recovery look)' : ''), summary: parts.join(', ') });
     });
     return added;
   },
 
-  // Look: 'classic' (grown-up navy & gold) or 'playful' (original bright colours)
+  // Look: 'classic' (navy & gold), 'playful' (original bright colours) or
+  // 'recovery' (friendly, calm — and switches to the Mental Health & Recovery question set)
+  get look() { const t = this.data?.settings.theme; return t === 'playful' || t === 'recovery' ? t : 'classic'; },
+  get classic() { return this.look === 'classic'; },
   applyTheme() {
-    document.body.classList.toggle('theme-classic', this.data.settings.theme !== 'playful');
+    const look = this.look;
+    document.body.classList.toggle('theme-classic', look === 'classic');
+    document.body.classList.toggle('theme-recovery', look === 'recovery');
+    this.useBank(look === 'recovery' ? 'recovery' : 'standard');
   },
-  get classic() { return this.data?.settings.theme !== 'playful'; },
+  // Swap the active question set. The other set is kept safely in data.banks.
+  useBank(name) {
+    const d = this.data;
+    d.bank ||= 'standard';
+    if (d.bank === name) return;
+    d.banks ||= {};
+    d.banks[d.bank] = { trivia: d.trivia, board: d.board, wheel: d.wheel, words: d.words };
+    const next = d.banks[name] || { trivia: [], board: [], wheel: [], words: [] };
+    Object.assign(d, { trivia: next.trivia || [], board: next.board || [], wheel: next.wheel || [], words: next.words || [] });
+    delete d.banks[name];
+    d.bank = name;
+  },
+  async setLook(look) {
+    if (look === this.look) return;
+    if (this.inGame && !(await confirmBox('Changing the look ends this game and goes back to the home screen. Continue?', 'Change look'))) return false;
+    this.data.settings.theme = look;
+    this.applyTheme();
+    this.save(true);
+    if (this.inGame || ['home', 'editor'].includes(this.current) || /Setup$/.test(this.current)) this.show(this.current === 'editor' ? 'editor' : 'home');
+    toast(look === 'recovery' ? '🌿 Recovery look — Mental Health & Recovery questions' : look === 'playful' ? '🎈 Playful look' : '🎩 Classic look');
+    return true;
+  },
 
   save(now) {
     clearTimeout(this._saveT);
@@ -296,7 +327,7 @@ const Sfx = {
 function confetti(ms = 3500) {
   const cv = $('#confetti'), ctx = cv.getContext('2d');
   cv.width = innerWidth; cv.height = innerHeight;
-  const colors = App.classic ? ['#d4af6a', '#e8d29e', '#b8913f', '#f3eee4', '#8fa7c9'] : [...TEAM_COLORS, '#ffffff', '#25d7f0'];
+  const colors = App.look === 'recovery' ? ['#e8896f', '#4fa3a5', '#f2c46d', '#7fb685', '#ffffff', '#9b8ec4'] : App.classic ? ['#d4af6a', '#e8d29e', '#b8913f', '#f3eee4', '#8fa7c9'] : [...TEAM_COLORS, '#ffffff', '#25d7f0'];
   const parts = Array.from({ length: 220 }, () => ({
     x: Math.random() * cv.width, y: -20 - Math.random() * cv.height * 0.6,
     vx: (Math.random() - 0.5) * 4, vy: 2 + Math.random() * 4, r: Math.random() * Math.PI, vr: (Math.random() - 0.5) * 0.3,
@@ -320,6 +351,7 @@ App.screens.home = (el) => {
   el.innerHTML = `
     <div class="home-hero">
       <h1><span class="w1">Let's</span> <span class="w2">Play</span><span class="w3">!</span></h1>
+      ${App.look === 'recovery' ? '<div class="edition">🌿 Mental Health &amp; Recovery Edition</div>' : ''}
     </div>
     <div class="game-cards">
       <button class="game-card trivia" data-g="trivia"><div class="emoji">⚡</div><h2>Trivia Blitz</h2><p>Answer against the clock</p></button>
@@ -344,7 +376,7 @@ function showHelp() {
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
       <p><b style="color:var(--yellow)">🏆 Final Round</b> — every game ends with one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, and the <b>☰ Menu</b> has 🏁 End game, 🏠 Quit to Home and ⏸ Pause. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
-      <p><b>Look:</b> switch between <b>🎩 Classic</b> (navy &amp; gold) and <b>🎈 Playful</b> (the original bright colours) any time in <b>☰ Menu → 🎨 Look</b> or Settings. Nothing else changes.</p>
+      <p><b>Look:</b> switch between <b>🎩 Classic</b> (navy &amp; gold), <b>🎈 Playful</b> (the original bright colours) and <b>🌿 Recovery</b> (calm and friendly) in <b>☰ Menu → 🎨 Look</b> or Settings. Recovery also switches every game to the <b>Mental Health &amp; Recovery</b> question set; Classic and Playful use your regular questions.</p>
       <p><b>Tips:</b> Press <kbd>F11</kbd> for full screen on a projector. Press <kbd>Esc</kbd> to close a pop-up.</p></div>`,
     actions: [{ label: 'Got it!', cls: 'pink' }],
   });
@@ -397,7 +429,7 @@ App.screens.settings = (el) => {
       <div class="panel"><h3>🏆 Every game</h3>
         <label class="field"><span>Final wager round at the end</span>${sel('sFinal', [[1, 'On'], [0, 'Off']], s.finalRound ? 1 : 0)}</label>
         <label class="field"><span>Sound effects</span>${sel('sSound', [[1, 'On'], [0, 'Off']], s.sound ? 1 : 0)}</label>
-        <label class="field"><span>Look</span>${sel('sTheme', [['classic', '🎩 Classic — navy & gold'], ['playful', '🎈 Playful — the original bright look']], s.theme === 'playful' ? 'playful' : 'classic')}</label>
+        <label class="field"><span>Look</span>${sel('sTheme', [['classic', '🎩 Classic — navy & gold'], ['playful', '🎈 Playful — the original bright look'], ['recovery', '🌿 Recovery — friendly look + mental health & recovery questions']], App.look)}</label>
       </div>
     </div>`;
   const on = (id, fn) => $('#' + id, el).onchange = e => { fn(e.target.value); App.save(); toast('Saved ✓'); };
@@ -408,9 +440,10 @@ App.screens.settings = (el) => {
   on('sVowel', v => s.vowelCost = +v);
   on('sFinal', v => s.finalRound = v === '1');
   on('sSound', v => s.sound = v === '1');
-  on('sTheme', v => { s.theme = v; App.applyTheme(); });
+  $('#sTheme', el).onchange = e => App.setLook(e.target.value);
 };
 
+const LOOK_NAMES = { classic: 'Classic', playful: 'Playful', recovery: 'Recovery' };
 // ================= ☰ HOST MENU =================
 const Menu = {
   isOpen() { return !!$('#menuBack'); },
@@ -443,7 +476,7 @@ const Menu = {
         <button class="mi" id="mHelp">❓ How to play (rules)</button>
       </section>
       <section><h4>Display &amp; data</h4>
-        <div class="mi-row"><button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button><button class="mi" id="mLook">🎨 Look: ${s.theme === 'playful' ? 'Playful' : 'Classic'}</button></div>
+        <div class="mi-row"><button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button><button class="mi" id="mLook">🎨 Look: ${LOOK_NAMES[App.look]}</button></div>
         <div class="mi-row"><button class="mi" id="mBackup">💾 Back up</button><button class="mi" id="mRestore">📂 Restore</button></div>
       </section>
     </aside>`;
@@ -465,7 +498,12 @@ const Menu = {
     $$('[data-demo]', back).forEach(b => b.onclick = () => go(() => Demo.start(b.dataset.demo)));
     q('mHelp').onclick = () => { this.close(); showHelp(); };
     q('mSound').onclick = () => { s.sound = !s.sound; App.save(); q('mSound').textContent = s.sound ? '🔊 Sound on' : '🔇 Sound off'; };
-    q('mLook').onclick = () => { s.theme = s.theme === 'playful' ? 'classic' : 'playful'; App.save(); App.applyTheme(); q('mLook').textContent = `🎨 Look: ${s.theme === 'playful' ? 'Playful' : 'Classic'}`; App.redraw?.(); };
+    q('mLook').onclick = async () => {
+      const order = ['classic', 'playful', 'recovery'];
+      const next = order[(order.indexOf(App.look) + 1) % order.length];
+      this.close();
+      await App.setLook(next);
+    };
     q('mBackup').onclick = () => App.backup();
     q('mRestore').onclick = () => App.restore();
   },
@@ -474,7 +512,7 @@ const Menu = {
 // Backup / restore of all questions (used by the menu and the Question Manager)
 App.backup = async function () {
   const d = this.data, date = new Date().toISOString().slice(0, 10);
-  const p = await this.saveText(`game-show-backup-${date}.json`, JSON.stringify({ app: 'Game Show Studio', version: 2, trivia: d.trivia, board: d.board, wheel: d.wheel, words: d.words }, null, 2), [{ name: 'Backup file', extensions: ['json'] }]);
+  const p = await this.saveText(`game-show-backup-${d.bank === 'recovery' ? 'recovery-' : ''}${date}.json`, JSON.stringify({ app: 'Game Show Studio', version: 2, trivia: d.trivia, board: d.board, wheel: d.wheel, words: d.words }, null, 2), [{ name: 'Backup file', extensions: ['json'] }]);
   if (p) toast('Backup saved ✓');
 };
 App.restore = async function (after) {

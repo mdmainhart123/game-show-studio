@@ -621,3 +621,103 @@ body.theme-classic .puzzle .cell.slot.cur { background: #fff6c7; }
 body.theme-classic .puzzle .cell.slot.bad { background: #ffd1d6; color: #c0142b; }
 body.theme-classic .jb .tile.used { color: transparent; }
 body.theme-classic .wt.flip.pending { background: rgba(255,255,255,.12); border-color: #fff; }
+
+/* =====================================================================
+   🌿 RECOVERY THEME — friendly and calm. Only applies when
+   <body class="theme-recovery">. Colours and fonts only — never changes
+   what a game shows or hides.
+   ===================================================================== */
+@font-face { font-family: 'Nunito'; font-weight: 500; src: url(fonts/nunito-latin-500-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Nunito'; font-weight: 600; src: url(fonts/nunito-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Nunito'; font-weight: 700; src: url(fonts/nunito-latin-700-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Nunito'; font-weight: 800; src: url(fonts/nunito-latin-800-normal.woff2) format('woff2'); }
+
+body.theme-recovery {
+  --peach: #f4a58a; --sun: #f7cf7a; --sage: #8cc79a; --teal: #4fb3b0; --sky: #8fcbe6; --lav: #b4a6e0; --cream: #fff7ea;
+  --panel: rgba(255,255,255,.08); --panel-2: rgba(255,255,255,.14); --line: rgba(255,255,255,.2); --muted: rgba(255,255,255,.75);
+  --pink: #ec8f7a; --yellow: var(--sun); --cyan: var(--teal); --green: #6dbb85; --orange: #f0a160; --purple: #9b8ec4; --red: #e07a6b; --blue: #5f9fd1;
+  font-family: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+  background: radial-gradient(900px 600px at 10% 0%, rgba(247,207,122,.22), transparent 60%),
+              radial-gradient(900px 700px at 100% 100%, rgba(244,165,138,.22), transparent 60%),
+              linear-gradient(160deg, #1f5a5c, #2c6f63 55%, #3b7a64);
+}
+body.theme-recovery::before {
+  opacity: .18;
+  background-image: radial-gradient(circle, #fff 2px, transparent 3px), radial-gradient(circle, var(--sun) 2px, transparent 3px);
+  background-size: 260px 260px, 340px 340px; background-position: 40px 60px, 180px 200px;
+}
+body.theme-recovery :is(h1, h2, h3, .brand, .game-card h2, .jb .cat, .jb .tile, .clue-view .clue, .final-title, .dd-splash, .wcat, .team-chip .tscore, .tq-card, .modal h2, .turn-pill, .timer .num) {
+  font-family: 'Nunito', sans-serif; font-weight: 800;
+}
+body.theme-recovery .topbar { background: rgba(0,0,0,.12); }
+body.theme-recovery .brand span b { color: var(--sun); }
+body.theme-recovery .home-hero h1 .w1 { color: var(--sun); } body.theme-recovery .home-hero h1 .w2 { color: #fff; } body.theme-recovery .home-hero h1 .w3 { color: var(--peach); }
+body.theme-recovery .home-hero h1 { text-shadow: 0 4px 0 rgba(0,0,0,.15); }
+body.theme-recovery .edition { display: inline-block; margin-top: 12px; background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.3); padding: 8px 20px; border-radius: 99px; font-weight: 700; font-size: clamp(16px, 2.2vh, 20px); }
+body.theme-recovery .btn { border-radius: 999px; box-shadow: 0 4px 0 rgba(0,0,0,.15); }
+body.theme-recovery .btn.pink { background: var(--peach); color: #4a2216; }
+body.theme-recovery .btn.yellow { background: var(--sun); color: #4a3510; }
+body.theme-recovery .btn.cyan { background: var(--teal); color: #0d3333; }
+body.theme-recovery .btn.green { background: var(--sage); color: #183a22; }
+body.theme-recovery .btn.ghost, body.theme-recovery .menu-btn, body.theme-recovery .fs-btn { background: rgba(255,255,255,.1); border: 2px solid rgba(255,255,255,.3); box-shadow: none; }
+body.theme-recovery .icon-btn { border-radius: 14px; }
+body.theme-recovery .link-btn { color: var(--sun); }
+body.theme-recovery .game-card { border-radius: 30px; box-shadow: 0 14px 30px rgba(0,0,0,.18); }
+body.theme-recovery .game-card.trivia { background: linear-gradient(145deg, #f4a58a, #e07a6b); }
+body.theme-recovery .game-card.board { background: linear-gradient(145deg, #6fb7d6, #4f8fc0); }
+body.theme-recovery .game-card.wheel { background: linear-gradient(145deg, #f7cf7a, #eaa95a); color: #4a3510; }
+body.theme-recovery .game-card.words { background: linear-gradient(145deg, #8cc79a, #5fa776); }
+body.theme-recovery .game-card::after { background: rgba(255,255,255,.18); }
+body.theme-recovery .team-chip { border-radius: 18px; box-shadow: 0 4px 0 rgba(0,0,0,.12); }
+body.theme-recovery .team-chip.active { outline: 4px solid var(--cream); }
+body.theme-recovery .panel { border-radius: 24px; background: rgba(255,255,255,.1); }
+body.theme-recovery .modal { background: linear-gradient(160deg, #2c6f6a, #235a56); border-radius: 26px; }
+body.theme-recovery .menu { background: linear-gradient(170deg, #2c6f6a, #1f5552); }
+body.theme-recovery .input { border-radius: 14px; }
+body.theme-recovery .input:focus { border-color: var(--sun); }
+body.theme-recovery select.input option { background: #235a56; }
+body.theme-recovery .toast { background: var(--sun); color: #4a3510; }
+body.theme-recovery .scorebar { background: rgba(0,0,0,.15); }
+body.theme-recovery .count-pick button.on { background: var(--sun); color: #4a3510; }
+/* trivia */
+body.theme-recovery .tq-card { background: var(--cream); color: #24504c; border-radius: 30px; }
+body.theme-recovery .ans { border-radius: 26px; }
+body.theme-recovery .ans.a0 { background: #e9846f; } body.theme-recovery .ans.a1 { background: #4f97c9; }
+body.theme-recovery .ans.a2 { background: #e4ae45; } body.theme-recovery .ans.a3 { background: #5ea877; }
+body.theme-recovery .ans .shape { border-radius: 50%; }
+body.theme-recovery .answers.revealed .ans.right { outline-color: var(--cream); }
+body.theme-recovery .award { border-radius: 24px; background: rgba(0,0,0,.14); }
+/* quiz board */
+body.theme-recovery .jb .cat { background: linear-gradient(180deg, #2f8c88, #237370); border-radius: 18px; font-size: clamp(14px, 1.6vw, 24px); }
+body.theme-recovery .jb .tile { background: linear-gradient(180deg, #46a6a2, #348e8a); color: var(--cream); border-radius: 18px; text-shadow: 0 3px 0 rgba(0,0,0,.2); }
+body.theme-recovery .jb .tile.used { background: rgba(0,0,0,.12); box-shadow: none; color: transparent; text-shadow: none; }
+body.theme-recovery .clue-view { background: radial-gradient(circle at 50% 35%, #3a9590, #1f5a5c); }
+body.theme-recovery .clue-view .meta, body.theme-recovery .clue-view .answer { color: var(--sun); }
+body.theme-recovery .clue-view.dd { background: radial-gradient(circle at 50% 40%, #f4a58a, #b35c4a); }
+body.theme-recovery .dd-splash { color: var(--cream); }
+/* spin & solve */
+body.theme-recovery .puzzle { background: #2b7a6c; border-radius: 26px; }
+body.theme-recovery .puzzle .cell { background: #3f9481; border-radius: 8px; }
+body.theme-recovery .puzzle .cell.l { background: var(--cream); color: #24504c; }
+body.theme-recovery .puzzle .cell.l.hide { color: transparent; }
+body.theme-recovery .puzzle .cell.slot { background: #e6f9ff; color: #1446c8; }
+body.theme-recovery .puzzle .cell.slot.cur { background: #fff6c7; }
+body.theme-recovery .puzzle .cell.slot.bad { background: #ffd1d6; color: #c0142b; }
+body.theme-recovery .letters button { background: #3a8fb8; border-radius: 12px; }
+body.theme-recovery .letters button.v { background: #e9846f; }
+body.theme-recovery .wheel-box .hub { background: radial-gradient(circle at 35% 30%, #fff, var(--sun) 50%, #d99a3a); }
+body.theme-recovery .flip-card .front { background: linear-gradient(145deg, #4fb3b0, #f4a58a); }
+/* final round, word guess */
+body.theme-recovery .final-title { color: var(--sun); }
+body.theme-recovery .wt { border-radius: 14px; }
+body.theme-recovery .wt.g, body.theme-recovery .wg-kb .k.g { background: #5ea877; border-color: #5ea877; }
+body.theme-recovery .wt.y, body.theme-recovery .wg-kb .k.y { background: #e4ae45; border-color: #e4ae45; }
+body.theme-recovery .wt.x { background: #4b6b69; border-color: #4b6b69; }
+body.theme-recovery .wt.flip.pending { background: rgba(255,255,255,.12); border-color: #fff; }
+body.theme-recovery .wg-kb .k { border-radius: 12px; }
+body.theme-recovery .demo-strip { background: linear-gradient(90deg, #1f5a5c, #2c6f6a 50%, #1f5a5c); border-bottom-color: var(--sun); }
+/* Question Manager set badge (all looks) */
+.set-badge { background: rgba(255,255,255,.12); border: 1px solid var(--line); border-radius: 99px; padding: 8px 16px; font-weight: 600; font-size: 16px; }
+.set-badge.rec { background: rgba(140,199,154,.25); border-color: #8cc79a; }
+body.theme-recovery [style*="--tc"] { filter: saturate(.72) brightness(1.04); }
+body.theme-recovery .wg-kb .k.x { background: #2e4a48; color: rgba(255,255,255,.45); }

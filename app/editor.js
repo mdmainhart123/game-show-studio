@@ -17,7 +17,9 @@ App.screens.editor = (el, startTab = 'trivia') => {
     const T = TABS[tab];
     const list = d[tab];
     el.innerHTML = `
-      <div class="page-title"><h1>📝 Question Manager</h1></div>
+      <div class="page-title"><h1>📝 Question Manager</h1><div class="spacer"></div>
+        <span class="set-badge ${d.bank === 'recovery' ? 'rec' : ''}">${d.bank === 'recovery' ? '🌿 Editing: Mental Health &amp; Recovery questions' : '📚 Editing: Regular questions'}</span></div>
+      <div class="hint" style="margin:-10px 0 14px">${d.bank === 'recovery' ? 'These are used when the Look is set to Recovery.' : 'These are used in the Classic and Playful looks. Switch the Look to Recovery (☰ Menu) to edit the recovery questions.'}</div>
       <div class="tabs">${Object.entries(TABS).map(([k, t]) => `<button class="tab ${k === tab ? 'on' : ''}" data-t="${k}" style="--tc:${t.color}">${t.label} <span class="pill">${d[k].length}</span></button>`).join('')}</div>
       <div class="toolbar">
         <button class="btn green" id="add">＋ Add ${T.noun}</button>

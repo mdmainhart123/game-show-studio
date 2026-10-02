@@ -1006,3 +1006,653 @@ baker | Jobs
 mayor | Jobs
 `,
 });
+
+// 🌿 Mental Health & Recovery pack — used when the Recovery look is on (its own question set).
+window.GS_PACKS.push({
+  id: 'recovery-starter-2026-10',
+  name: 'Mental Health & Recovery',
+  bank: 'recovery',
+  trivia: `
+Q: In the 5-4-3-2-1 grounding exercise, you start by naming 5 things you can…
+A: See
+W: Hear
+W: Smell
+W: Taste
+C: Coping Skills
+T: 25
+
+Q: Box breathing means breathing in, holding, breathing out and holding for the same count. What count is most common?
+A: 4
+W: 1
+W: 10
+W: 20
+C: Coping Skills
+T: 25
+
+Q: Which of these is a healthy way to cope with stress?
+A: Going for a walk
+W: Skipping meals
+W: Staying up all night
+W: Bottling it up
+C: Coping Skills
+T: 25
+
+Q: The reminder "HALT" asks you to check whether you are…
+A: Hungry, Angry, Lonely, Tired
+W: Happy, Alert, Loved, Thankful
+W: Hurt, Afraid, Lost, Tense
+W: Hopeful, Active, Lucky, Tough
+C: Coping Skills
+T: 25
+
+Q: Writing down your thoughts and feelings regularly is called…
+A: Journaling
+W: Ruminating
+W: Venting
+W: Debating
+C: Coping Skills
+T: 25
+
+Q: Paying attention to the present moment without judging it is called…
+A: Mindfulness
+W: Multitasking
+W: Daydreaming
+W: Procrastinating
+C: Coping Skills
+T: 25
+
+Q: A written plan listing your warning signs, coping steps and people to call is often called a…
+A: Safety plan
+W: Budget
+W: Vision board
+W: Grocery list
+C: Coping Skills
+T: 25
+
+Q: Talking to someone you trust is a healthy coping skill.
+A: True
+W: False
+C: Coping Skills
+T: 25
+
+Q: Changing an unhelpful thought into a more balanced one is called…
+A: Reframing
+W: Avoiding
+W: Catastrophizing
+W: Labeling
+C: Coping Skills
+T: 25
+
+Q: "Opposite action" is a skill that comes from which therapy?
+A: DBT (Dialectical Behavior Therapy)
+W: Hypnotherapy
+W: Art therapy
+W: Psychoanalysis
+C: Coping Skills
+T: 25
+
+Q: Tensing and then relaxing each muscle group, one at a time, is called…
+A: Progressive muscle relaxation
+W: Power napping
+W: Stretching
+W: Cardio
+C: Coping Skills
+T: 25
+
+Q: Noticing a craving rise, peak and pass like a wave — without acting on it — is called…
+A: Urge surfing
+W: Thought stopping
+W: White-knuckling
+W: Distracting
+C: Coping Skills
+T: 25
+
+Q: How many hours of sleep a night do health experts recommend for most adults?
+A: 7 or more
+W: 4 or 5
+W: 5 or 6
+W: 12 or more
+C: Self-Care
+T: 25
+
+Q: Exercise releases "feel-good" brain chemicals called…
+A: Endorphins
+W: Antibodies
+W: Calories
+W: Enzymes
+C: Self-Care
+T: 25
+
+Q: Which of these helps you sleep better?
+A: A regular bedtime
+W: Scrolling your phone in bed
+W: Coffee in the evening
+W: Napping all afternoon
+C: Self-Care
+T: 25
+
+Q: Drinking enough water can help your mood and focus.
+A: True
+W: False
+C: Self-Care
+T: 25
+
+Q: A limit you set about what you will and won't accept from others is called a…
+A: Boundary
+W: Grudge
+W: Rule book
+W: Deadline
+C: Self-Care
+T: 25
+
+Q: Saying "no" to protect your time and energy is a form of…
+A: Self-care
+W: Selfishness
+W: Rudeness
+W: Laziness
+C: Self-Care
+T: 25
+
+Q: About how many minutes of moderate activity a week do U.S. guidelines recommend for adults?
+A: 150
+W: 30
+W: 60
+W: 500
+C: Self-Care
+T: 25
+
+Q: Spending time outdoors in nature is linked to lower stress.
+A: True
+W: False
+C: Self-Care
+T: 25
+
+Q: Which choice gives steadier energy than sugary snacks?
+A: Whole grains
+W: Candy
+W: Soda
+W: Energy drinks
+C: Self-Care
+T: 25
+
+Q: Taking a planned break from screens and social media is called a…
+A: Digital detox
+W: Power outage
+W: Screen saver
+W: Data plan
+C: Self-Care
+T: 25
+
+Q: Writing down three things you're thankful for each day is a…
+A: Gratitude practice
+W: Shopping list
+W: Complaint log
+W: Diet plan
+C: Self-Care
+T: 25
+
+Q: Which is the best example of a healthy daily routine?
+A: A set wake-up time, a walk and breakfast
+W: Skipping meals to save time
+W: Sleeping until noon every day
+W: Staying busy every minute
+C: Self-Care
+T: 25
+
+Q: SAMHSA describes four dimensions that support recovery: health, home, purpose and…
+A: Community
+W: Money
+W: Fame
+W: Luck
+C: Recovery Basics
+T: 25
+
+Q: In recovery, a "trigger" is…
+A: Something that sets off cravings or difficult feelings
+W: A type of medication
+W: A support group
+W: A reward for progress
+C: Recovery Basics
+T: 25
+
+Q: A person with lived experience who is trained to support others in recovery is called a…
+A: Peer support specialist
+W: Pharmacist
+W: Nutritionist
+W: Personal trainer
+C: Recovery Basics
+T: 25
+
+Q: The slogan "One day at a time" helps you…
+A: Focus on today instead of the whole future
+W: Rush through recovery
+W: Avoid making plans
+W: Count down until it's over
+C: Recovery Basics
+T: 25
+
+Q: Recovery is often described as a…
+A: Journey
+W: Race
+W: Test you pass once
+W: Straight line
+C: Recovery Basics
+T: 25
+
+Q: Goals that are Specific, Measurable, Achievable, Relevant and Time-bound are called…
+A: SMART goals
+W: BIG goals
+W: FAST goals
+W: HARD goals
+C: Recovery Basics
+T: 25
+
+Q: A slip or setback means recovery has failed.
+A: False
+W: True
+C: Recovery Basics
+T: 25
+
+Q: Healthy routines, supportive people and coping skills are all examples of…
+A: Protective factors
+W: Risk factors
+W: Triggers
+W: Symptoms
+C: Recovery Basics
+T: 25
+
+Q: The ability to bounce back from hard times is called…
+A: Resilience
+W: Resistance
+W: Relapse
+W: Regret
+C: Recovery Basics
+T: 25
+
+Q: The brain's ability to form new connections and habits throughout life is called…
+A: Neuroplasticity
+W: Photosynthesis
+W: Hypnosis
+W: Gravity
+C: Recovery Basics
+T: 25
+
+Q: Which phrase uses person-first language?
+A: A person in recovery
+W: An addict
+W: A user
+W: A case
+C: Recovery Basics
+T: 25
+
+Q: Many mutual-help groups, like 12-step groups and SMART Recovery, are free to attend.
+A: True
+W: False
+C: Recovery Basics
+T: 25
+
+Q: Which of these is a feeling, not a thought?
+A: Anxious
+W: "I'll mess this up"
+W: "They're mad at me"
+W: "Nothing ever works"
+C: Feelings & Emotions
+T: 25
+
+Q: Putting a name to what you feel, like "I feel frustrated," is called…
+A: Labeling your emotions
+W: Bottling it up
+W: Overthinking
+W: Venting
+C: Feelings & Emotions
+T: 25
+
+Q: All emotions — even uncomfortable ones — can give us useful information.
+A: True
+W: False
+C: Feelings & Emotions
+T: 25
+
+Q: A feelings wheel is a tool that helps you…
+A: Find words for what you feel
+W: Spin for prizes
+W: Track the weather
+W: Plan meals
+C: Feelings & Emotions
+T: 25
+
+Q: Imagining the worst possible outcome is a thinking trap called…
+A: Catastrophizing
+W: Gratitude
+W: Mindfulness
+W: Problem solving
+C: Feelings & Emotions
+T: 25
+
+Q: Sweaty palms, a racing heart and fast breathing are common signs of…
+A: Anxiety
+W: Boredom
+W: Hunger
+W: Sleepiness
+C: Feelings & Emotions
+T: 25
+
+Q: Which is a healthy way to express anger?
+A: Calmly saying how you feel
+W: Yelling
+W: Breaking things
+W: The silent treatment
+C: Feelings & Emotions
+T: 25
+
+Q: A helpful "I statement" usually starts with…
+A: "I feel…"
+W: "You always…"
+W: "You never…"
+W: "Why can't you…"
+C: Feelings & Emotions
+T: 25
+
+Q: Treating yourself with kindness after a mistake is called…
+A: Self-compassion
+W: Self-pity
+W: Self-criticism
+W: Selfishness
+C: Feelings & Emotions
+T: 25
+
+Q: Feelings are temporary and change over time.
+A: True
+W: False
+C: Feelings & Emotions
+T: 25
+
+Q: "All-or-nothing thinking" means…
+A: Seeing things as either perfect or a total failure
+W: Thinking about everything at once
+W: Being very generous
+W: Planning ahead
+C: Feelings & Emotions
+T: 25
+
+Q: Which emotion often signals that one of your boundaries has been crossed?
+A: Anger
+W: Joy
+W: Boredom
+W: Surprise
+C: Feelings & Emotions
+T: 25
+
+Q: What three-digit number can you call or text in the U.S. to reach the Suicide & Crisis Lifeline?
+A: 988
+W: 411
+W: 311
+W: 555
+C: Connection & Support
+T: 25
+
+Q: The 988 Lifeline launched nationwide in which year?
+A: 2022
+W: 2010
+W: 2015
+W: 2019
+C: Connection & Support
+T: 25
+
+Q: Which month is Mental Health Awareness Month in the U.S.?
+A: May
+W: January
+W: August
+W: December
+C: Connection & Support
+T: 25
+
+Q: World Mental Health Day is observed in which month?
+A: October
+W: March
+W: June
+W: February
+C: Connection & Support
+T: 25
+
+Q: Listening without interrupting or judging is called…
+A: Active listening
+W: Lecturing
+W: Debating
+W: Multitasking
+C: Connection & Support
+T: 25
+
+Q: In many recovery programs, an experienced member who mentors a newer member is called a…
+A: Sponsor
+W: Landlord
+W: Referee
+W: Critic
+C: Connection & Support
+T: 25
+
+Q: About how many U.S. adults experience a mental illness in a given year?
+A: About 1 in 5
+W: About 1 in 100
+W: About 1 in 50
+W: About 9 in 10
+C: Connection & Support
+T: 25
+
+Q: Asking for help is a sign of…
+A: Strength
+W: Weakness
+W: Failure
+W: Laziness
+C: Connection & Support
+T: 25
+
+Q: Negative attitudes and beliefs about mental illness are called…
+A: Stigma
+W: Empathy
+W: Resilience
+W: Wellness
+C: Connection & Support
+T: 25
+
+Q: Understanding and sharing someone else's feelings is called…
+A: Empathy
+W: Apathy
+W: Envy
+W: Pride
+C: Connection & Support
+T: 25
+
+Q: Isolating from others can make depression and cravings harder to manage.
+A: True
+W: False
+C: Connection & Support
+T: 25
+
+Q: What is a good way to support a friend who is struggling?
+A: Listen and ask how you can help
+W: Tell them to "just get over it"
+W: Change the subject
+W: Avoid them until they feel better
+C: Connection & Support
+T: 25
+
+`,
+  board: `
+BOARD: Recovery Board 1
+CATEGORY: Coping Toolbox
+100 | Breathing in for 4, holding for 4, out for 4 and holding for 4 | Box breathing
+200 | Naming 5 things you see, 4 you feel, 3 you hear, 2 you smell and 1 you taste | 5-4-3-2-1 grounding
+300 | Writing your thoughts and feelings in a notebook | Journaling
+400 | Riding out a craving by noticing it rise, peak and fall | Urge surfing
+500 | Tensing and relaxing your muscles from head to toe | Progressive muscle relaxation
+CATEGORY: Healthy Habits
+100 | Most adults need at least this many hours of sleep a night | 7
+200 | Exercise releases these feel-good brain chemicals | Endorphins
+300 | Going to bed and waking up at the same time every day | A sleep routine (sleep hygiene)
+400 | U.S. guidelines suggest this many minutes of moderate activity a week | 150
+500 | A planned break from screens and social media | A digital detox
+CATEGORY: Feelings
+100 | A feeling of nervous worry about what might happen | Anxiety
+200 | A circle-shaped tool that helps you find words for your emotions | A feelings wheel
+300 | Treating yourself as kindly as you'd treat a good friend | Self-compassion
+400 | Assuming the worst will happen is this thinking trap | Catastrophizing
+500 | Seeing things as either perfect or a total failure | All-or-nothing thinking
+CATEGORY: Recovery Words
+100 | Recovery happens one ___ at a time | Day
+200 | Something that can set off a craving or a strong emotion | A trigger
+300 | The ability to bounce back after hard times | Resilience
+400 | Healthy routines and supportive people are examples of these protective ___ | Factors
+500 | SAMHSA's four dimensions of recovery are health, home, purpose and this | Community
+CATEGORY: Support & Connection
+100 | Call or text this three-digit number to reach the Suicide & Crisis Lifeline | 988
+200 | Listening fully, without interrupting or judging | Active listening
+300 | Understanding and sharing someone else's feelings | Empathy
+400 | Negative attitudes and beliefs about mental illness | Stigma
+500 | Someone with lived experience who is trained to help others in recovery | A peer support specialist
+
+BOARD: Recovery Board 2
+CATEGORY: Coping Toolbox
+100 | Counting to ten before you react | Taking a pause (time-out)
+200 | A written list of warning signs, coping steps and people to call | A safety plan
+300 | Turning "I always mess up" into "I made a mistake and I can learn from it" | Reframing
+400 | This acronym reminds you to check if you're Hungry, Angry, Lonely or Tired | HALT
+500 | The DBT skill of doing the opposite of an unhelpful urge, like reaching out when you want to isolate | Opposite action
+CATEGORY: Healthy Habits
+100 | This clear drink helps your body and brain work their best | Water
+200 | Writing down three things you're thankful for each day | Gratitude journaling
+300 | Eating regular meals keeps this steady, which helps your mood | Your energy (blood sugar)
+400 | Time in parks and green spaces is linked to lower levels of this | Stress
+500 | A daily plan for when you wake, eat, work and rest | A routine (structure)
+CATEGORY: Feelings
+100 | The opposite of sadness | Joy (happiness)
+200 | Starting with "I feel…" instead of "You always…" | An "I statement"
+300 | Naming an emotion to help calm it down: "Name it to ___ it" | Tame
+400 | Believing you know what others are thinking without asking them | Mind reading
+500 | Feeling two emotions at once, like excited and nervous | Mixed emotions
+CATEGORY: Recovery Words
+100 | A short-term stumble that doesn't erase your progress | A setback (a slip)
+200 | Goals that are Specific, Measurable, Achievable, Relevant and Time-bound | SMART goals
+300 | The brain's ability to rewire itself and build new habits | Neuroplasticity
+400 | Saying "a person in recovery" instead of using a label | Person-first language
+500 | A free mutual-help program whose name stands for Self-Management And Recovery Training | SMART Recovery
+CATEGORY: Support & Connection
+100 | Asking for help is a sign of this | Strength
+200 | In the U.S., May is Mental Health ___ Month | Awareness
+300 | World Mental Health Day is observed in this month | October
+400 | About 1 in this many U.S. adults experiences a mental illness each year | 5
+500 | Pulling away from others, which can make depression and cravings worse | Isolation
+
+BOARD: Recovery Board 3
+CATEGORY: Coping Toolbox
+100 | Putting on music you love to lift your mood | Listening to music
+200 | Getting up for a quick walk or stretch to shake off stress | Physical activity (moving your body)
+300 | Focusing fully on one simple task, like washing dishes, and noticing every sound and feeling | Mindfulness
+400 | Listing the good and bad results of acting on an urge before you decide | Pros and cons
+500 | "Playing the tape forward" means imagining this | What happens after you act on an urge (the consequences)
+CATEGORY: Healthy Habits
+100 | Saying "no" to protect your time and energy | Setting a boundary
+200 | A short afternoon rest — best kept under 30 minutes | A nap
+300 | Laughing with friends can lower this stress hormone | Cortisol
+400 | Something creative you enjoy, like drawing, cooking or gardening | A hobby
+500 | Doing something kind for someone else can boost this in you, too | Your mood (happiness)
+CATEGORY: Feelings
+100 | This emotion can show up as a clenched jaw and a hot face | Anger
+200 | A feeling of thankfulness for what you have | Gratitude
+300 | Feeling positive and expectant about the future | Hope (optimism)
+400 | Going over the same worried thoughts again and again | Ruminating
+500 | Strong feelings rise and fall like this ocean motion — so you can "ride" them | A wave
+CATEGORY: Recovery Words
+100 | Recovery is a journey, not a ___ | Race (destination)
+200 | Celebrating 30, 60 or 90 days of progress | Milestones
+300 | Your personal reasons for wanting to change | Motivation (your "why")
+400 | Making amends and rebuilding relationships helps restore this | Trust
+500 | A plan listing your warning signs and what to do if a slip happens | A relapse prevention plan
+CATEGORY: Support & Connection
+100 | A person you can call when you need encouragement | A support person (sponsor, friend or family)
+200 | Meetings where people share their experiences and support each other | Support groups
+300 | The 988 Lifeline launched nationwide in this year | 2022
+400 | "How can I help?" is a great question to ask someone who is doing this | Struggling (having a hard time)
+500 | A trusted circle of family, friends and professionals around you | A support network
+
+`,
+  wheel: `
+Phrase | One day at a time
+Phrase | Progress not perfection
+Phrase | It's okay to ask for help
+Phrase | Take a deep breath
+Phrase | You are not alone
+Phrase | Small steps count
+Phrase | Feelings are not facts
+Phrase | Be kind to yourself
+Phrase | Easy does it
+Phrase | This too shall pass
+Phrase | Keep coming back
+Phrase | One step at a time
+Coping Skill | Box breathing
+Coping Skill | Journaling
+Coping Skill | Going for a walk
+Coping Skill | Listening to music
+Coping Skill | Calling a friend
+Coping Skill | Grounding exercise
+Self-Care | A good night's sleep
+Self-Care | Drink more water
+Self-Care | Healthy boundaries
+Self-Care | Time in nature
+Recovery | Support network
+Recovery | Peer support
+Recovery | Celebrate milestones
+`,
+  words: `
+peace | Feeling
+brave | Feeling
+happy | Feeling
+proud | Feeling
+quiet | Feeling
+cheer | Feeling
+alive | Feeling
+grace | Feeling
+relax | Self-care
+sleep | Self-care
+water | Self-care
+walks | Self-care
+pause | Self-care
+break | Self-care
+music | Self-care
+paint | Self-care
+write | Self-care
+smile | Connection
+share | Connection
+laugh | Connection
+trust | Connection
+heart | Connection
+peers | Connection
+group | Connection
+unity | Connection
+speak | Connection
+voice | Connection
+cares | Connection
+focus | Coping skill
+space | Coping skill
+clear | Coping skill
+learn | Recovery
+goals | Recovery
+habit | Recovery
+steps | Recovery
+today | Recovery
+hopes | Recovery
+dream | Recovery
+shine | Recovery
+bloom | Recovery
+faith | Recovery
+light | Recovery
+worth | Recovery
+value | Recovery
+grows | Recovery
+heals | Recovery
+stand | Recovery
+start | Recovery
+sober | Recovery
+enjoy | Recovery
+`,
+});
