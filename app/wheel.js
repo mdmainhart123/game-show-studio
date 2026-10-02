@@ -17,7 +17,7 @@ App.screens.wheelSetup = (el) => {
           ${cats.map(c => `<option value="${esc(c)}">${esc(c)} (${d.wheel.filter(p => p.category === c).length})</option>`).join('')}</select></label>
         <label class="field"><span>How many puzzles?</span>
           <select class="input" id="num">${[1, 3, 5, 8].map(n => `<option value="${n}" ${n === 3 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
-        <div class="hint">Vowels cost ${d.settings.vowelCost}. Solving banks your round points + ${SOLVE_BONUS} bonus. Scores reset to 0 after each game.</div>
+        <div class="hint">Points go straight onto the scoreboard. Vowels cost ${d.settings.vowelCost}, solving adds a ${SOLVE_BONUS} bonus, and BANKRUPT takes away what that team earned on the current puzzle. Scores reset to 0 after each game.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>`
       : `<div class="panel empty">No puzzles yet.<br><br><button class="btn yellow" id="add">📝 Add some puzzles</button></div>`}
@@ -35,6 +35,8 @@ App.screens.wheelPlay = (el, puzzles) => {
   App.inGame = true;
   const d = App.data;
   const teams = Scores.teams();
+  // bank[teamId] = points that team has earned on the CURRENT puzzle (only used for BANKRUPT);
+  // the points themselves go straight onto the scoreboard.
   let pIdx = -1, puzzle, rows, shown, usedLetters, bank, turn = Math.floor(Math.random() * teams.length) - 1;
   let phase, spinValue = 0, rot = Math.random() * Math.PI * 2, spinning = false, rafId;
   const N = WEDGES.length, SEG = (Math.PI * 2) / N;
@@ -47,7 +49,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   });
   async function navTo(i) {
     if (spinning || i < 0) return;
-    if (phase !== 'solved' && usedLetters.size && !(await confirmBox('Leave this puzzle unsolved? Round points on it are lost (team totals are kept).', 'Leave puzzle'))) return;
+    if (phase !== 'solved' && usedLetters.size && !(await confirmBox('Leave this puzzle unsolved? Points already earned stay on the scoreboard.', 'Leave puzzle'))) return;
     if (i >= puzzles.length) { App.show('results', 'Spin & Solve', 'wheelSetup'); return; }
     pIdx = i - 1;
     startPuzzle();
@@ -62,7 +64,6 @@ App.screens.wheelPlay = (el, puzzles) => {
       <div class="wh-right">
         <div class="puzzle" id="puzzle"></div>
         <div class="wcat" id="wcat"></div>
-        <div class="banks" id="banks"></div>
         <div class="status" id="status"></div>
         <div class="letters" id="letters">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(L => `<button data-l="${L}" class="${VOWELS.includes(L) ? 'v' : ''}">${L}</button>`).join('')}</div>
         <div class="wh-actions" id="actions"></div>
@@ -139,8 +140,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   const remaining = set => [...new Set(puzzle.phrase.replace(/[^A-Z]/g, ''))].filter(L => set.includes(L) && !shown.has(L));
   const CONS = 'BCDFGHJKLMNPQRSTVWXYZ';
 
-  function renderBanks() {
-    $('#banks', el).innerHTML = teams.map((t, i) => `<div class="bk ${i === turn ? 'on' : ''}" style="--tc:${t.color}">${esc(t.name)}: ${fmt(bank[t.id])}</div>`).join('');
+  function renderBanks() { // highlights whose turn it is on the scoreboard
     Scores.setActive(teams[turn].id);
   }
   function status(html) { $('#status', el).innerHTML = html; }
@@ -161,7 +161,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     renderBanks();
     const t = teams[turn];
     const consLeft = remaining(CONS).length, vowLeft = remaining(VOWELS).length;
-    const canVowel = vowLeft > 0 && bank[t.id] >= d.settings.vowelCost;
+    const canVowel = vowLeft > 0 && t.score >= d.settings.vowelCost;
     status(msg + (consLeft ? '' : ' <span class="hint">(no consonants left)</span>'));
     $('#spin', el).disabled = !consLeft;
     setLetters('none');
@@ -202,7 +202,15 @@ App.screens.wheelPlay = (el, puzzles) => {
   }
   function landed(w) {
     const t = teams[turn];
-    if (w === 'BANKRUPT') { Sfx.wrong(); bank[t.id] = 0; renderBanks(); status(`<span class="big">💥 BANKRUPT!</span>`); setTimeout(() => nextTurn('Ouch!'), 1800); return; }
+    if (w === 'BANKRUPT') {
+      Sfx.wrong();
+      const lost = Math.max(0, bank[t.id]);
+      if (lost) Scores.add(t.id, -lost);
+      bank[t.id] = 0;
+      status(`<span class="big">💥 BANKRUPT!</span> ${lost ? `${esc(t.name)} loses the ${fmt(lost)} earned on this puzzle.` : ''}`);
+      setTimeout(() => nextTurn('Ouch!'), 2200);
+      return;
+    }
     if (w === 'LOSE A TURN') { Sfx.buzz(); status(`<span class="big">😬 LOSE A TURN</span>`); setTimeout(() => nextTurn('Too bad!'), 1800); return; }
     spinValue = w; phase = 'cons';
     Sfx.ding();
@@ -215,10 +223,10 @@ App.screens.wheelPlay = (el, puzzles) => {
     const t = teams[turn];
     const wasVowel = phase === 'vowel';
     usedLetters.add(L);
-    if (wasVowel) { bank[t.id] -= d.settings.vowelCost; }
+    if (wasVowel && d.settings.vowelCost) { bank[t.id] -= d.settings.vowelCost; Scores.add(t.id, -d.settings.vowelCost); }
     const n = letterCount(L);
     if (!n) {
-      Sfx.wrong(); setLetters('none'); renderBanks();
+      Sfx.wrong(); setLetters('none');
       status(`No ${L}'s 😕`);
       phase = 'wait';
       setTimeout(() => nextTurn(`No ${L}.`), 1500);
@@ -229,6 +237,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     for (let i = 0; i < n; i++) setTimeout(() => Sfx.ding(), i * 350);
     const earned = wasVowel ? 0 : spinValue * n;
     bank[t.id] += earned;
+    if (earned) Scores.add(t.id, earned);
     phase = 'wait';
     setTimeout(() => {
       const done = !remaining(CONS + VOWELS).length;
@@ -248,13 +257,12 @@ App.screens.wheelPlay = (el, puzzles) => {
   }
   function solved() {
     const t = teams[turn];
-    const won = bank[t.id] + SOLVE_BONUS;
     [...CONS + VOWELS].forEach(L => shown.add(L));
     drawPuzzle();
-    Scores.add(t.id, won);
+    Scores.add(t.id, SOLVE_BONUS);
     Sfx.fanfare(); confetti(2500);
     $('#spin', el).disabled = true; setLetters('none');
-    status(`<span class="big">🎉 ${esc(t.name)} solved it! +${fmt(won)}</span>`);
+    status(`<span class="big">🎉 ${esc(t.name)} solved it! +${fmt(SOLVE_BONUS)} bonus</span>`);
     const last = pIdx + 1 >= puzzles.length;
     setActions(`<button class="btn lg pink" id="aNext">${last ? 'Final scores 🏁' : 'Next puzzle ▶'}</button>`, { aNext: startPuzzle });
     phase = 'solved';
