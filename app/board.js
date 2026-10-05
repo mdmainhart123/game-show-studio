@@ -13,13 +13,19 @@ function boardLayout(name) {
 
 App.screens.boardSetup = (el) => {
   const names = boardNames();
+  const played = App.data.board.some(c => c.played);
+  // pre-select the first board that still has unplayed clues
+  const pick = names.find(n => boardLayout(n).flatMap(c => c.clues).some(x => !x.played)) || names[0];
   el.innerHTML = `
     <div class="setup">
       <h1>🎯 Quiz Board</h1>
       ${names.length ? `
       <div class="panel">
         <label class="field"><span>Which board?</span>
-          <select class="input" id="bd">${names.map(n => { const L = boardLayout(n); return `<option value="${esc(n)}">${esc(n)} — ${L.length} categories, ${L.reduce((s, c) => s + c.clues.length, 0)} clues</option>`; }).join('')}</select></label>
+          <select class="input" id="bd">${names.map(n => {
+            const clues = boardLayout(n).flatMap(c => c.clues), left = clues.filter(x => !x.played).length;
+            return `<option value="${esc(n)}" ${pick === n ? 'selected' : ''}>${!left ? `✓ ${esc(n)} — all played` : left < clues.length ? `${esc(n)} — ${left} of ${clues.length} clues left` : `${esc(n)} — ${clues.length} clues`}</option>`; }).join('')}</select></label>
+        ${played ? `<div class="played-note">✓ = every clue on that board has been played. <button class="link-btn sm" id="resetPlayed">Reset played marks</button></div>` : ''}
         <div class="hint">Wrong answers ${App.data.settings.boardDeduct ? 'subtract' : "don't subtract"} points (change in ☰ Menu → Settings). Scores reset to 0 after each game.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>
@@ -28,6 +34,9 @@ App.screens.boardSetup = (el) => {
     </div>`;
   if (!names.length) { $('#add', el).onclick = () => App.show('editor', 'board'); return; }
   $('#demo', el).onclick = () => Demo.start('board');
+  if ($('#resetPlayed', el)) $('#resetPlayed', el).onclick = async () => {
+    if (await confirmBox('Clear all the "played" marks so every board shows as fresh again?', 'Reset marks')) { Played.reset(App.data.board); App.show('boardSetup'); toast('Played marks cleared ✓'); }
+  };
   $('#go', el).onclick = () => {
     Scores.resetAll(); // every new game starts at 0
     App.boardUsed = {}; // fresh game: every board's tiles start unplayed
@@ -99,6 +108,7 @@ App.screens.boardPlay = (el, name) => {
   function openClue(id) {
     const clue = App.data.board.find(c => c.id === id);
     used.add(id);
+    Played.mark(clue);
     App.setNavEnabled(false, false); // finish the clue before switching boards
     const view = document.createElement('div');
     view.className = 'clue-view';

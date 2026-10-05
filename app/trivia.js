@@ -8,8 +8,9 @@ App.screens.triviaSetup = (el) => {
       ${d.trivia.length ? `
       <div class="panel">
         <label class="field"><span>Category</span>
-          <select class="input" id="cat"><option value="">🎲 All categories (${d.trivia.length})</option>
-          ${cats.map(c => `<option value="${esc(c)}">${esc(c)} (${d.trivia.filter(q => (q.category || 'General') === c).length})</option>`).join('')}</select></label>
+          <select class="input" id="cat"><option value="">🎲 All categories (${d.trivia.length}${d.trivia.some(q => q.played) ? ` · ${d.trivia.filter(q => !q.played).length} left` : ''})</option>
+          ${cats.map(c => `<option value="${esc(c)}">${esc(Played.label(c, d.trivia.filter(q => (q.category || 'General') === c)))}</option>`).join('')}</select></label>
+        ${d.trivia.some(q => q.played) ? `<div class="played-note">✓ = every question in that category has been played. New games use unplayed questions first. <button class="link-btn sm" id="resetPlayed">Reset played marks</button></div>` : ''}
         <label class="field"><span>How many questions?</span>
           <select class="input" id="num">${[5, 10, 15, 20, 30].map(n => `<option value="${n}" ${n === 10 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
         <div class="field"><span>Play style</span>
@@ -29,9 +30,12 @@ App.screens.triviaSetup = (el) => {
     $$('.mode', el).forEach(x => x.classList.toggle('on', x === b));
   });
   $('#demo', el).onclick = () => Demo.start('trivia');
+  if ($('#resetPlayed', el)) $('#resetPlayed', el).onclick = async () => {
+    if (await confirmBox('Clear all the "played" marks so every trivia category shows as fresh again?', 'Reset marks')) { Played.reset(d.trivia); App.show('triviaSetup'); toast('Played marks cleared ✓'); }
+  };
   $('#go', el).onclick = () => {
     const cat = $('#cat', el).value;
-    const pool = shuffle(d.trivia.filter(q => !cat || (q.category || 'General') === cat));
+    const pool = Played.order(d.trivia.filter(q => !cat || (q.category || 'General') === cat));
     Scores.resetAll(); // every new game starts at 0
     const chosen = pool.slice(0, +$('#num', el).value);
     App.playedTrivia = new Set(chosen.map(q => q.id)); // the Final Round picks a question not used here
@@ -60,6 +64,7 @@ App.screens.triviaPlay = (el, questions) => {
     idx = i;
     App.setNavEnabled(idx > 0, true);
     const q = questions[idx];
+    Played.mark(q);
     const rec = records[idx];
     order = rec ? rec.order : shuffle([q.answer, ...q.wrong]);
     total = timeLeft = q.time || 20;
@@ -188,6 +193,7 @@ App.screens.triviaTurns = (el, questions) => {
     idx = i;
     App.setNavEnabled(idx > 0, true);
     const q = questions[idx];
+    Played.mark(q);
     rec = records[idx] ||= { order: shuffle([q.answer, ...q.wrong]), out: [], tried: new Set(), log: [], done: false };
     el.innerHTML = `
       <div class="tq-wrap">

@@ -261,7 +261,7 @@ App.screens.editor = (el, startTab = 'trivia') => {
         { label: `Replace all ${TABS[tab].noun}s`, cls: 'red', onClick: async close => {
           if (await confirmBox(`This removes your ${d[tab].length} current ${TABS[tab].noun}s and keeps only the ${n} imported. Continue?`, 'Replace', true)) { d[tab] = items; App.save(); close(); draw(); toast(`Imported ${n} ${noun} ✓`); }
         } },
-        { label: `Add ${n} ${noun} ✓`, cls: 'green', onClick: close => { d[tab].push(...items); App.save(); close(); draw(); toast(`Imported ${n} ${noun} ✓`); } },
+        { label: `Add ${n} ${noun} ✓`, cls: 'green', onClick: close => { d[tab].forEach(x => delete x.played); d[tab].push(...items); App.save(); close(); draw(); toast(`Imported ${n} ${noun} ✓`); } },
       ],
     });
   }

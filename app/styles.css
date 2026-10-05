@@ -1047,3 +1047,6 @@ button { touch-action: manipulation; }
   .wager-grid { margin-bottom: 4px; }
   .final .btn.xl { font-size: 17px; padding: 8px 20px; }
 }
+
+.played-note { font-size: 14px; color: var(--muted); margin: -6px 0 12px; line-height: 1.4; }
+.link-btn.sm { font-size: 14px; margin: 0 0 0 4px; padding: 0; }

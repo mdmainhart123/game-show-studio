@@ -1,4 +1,4 @@
-const APP_VERSION = '20261005-1425'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261005-1442'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -67,8 +67,8 @@ const App = {
         // packs can target a question set: 'standard' (default) or 'recovery'
         const bank = p.bank || 'standard';
         d.bank ||= 'standard';
-        if (bank === d.bank) d[k].push(...r.items);
-        else { d.banks ||= {}; const b = (d.banks[bank] ||= { trivia: [], board: [], wheel: [], words: [] }); (b[k] ||= []).push(...r.items); }
+        if (bank === d.bank) { d[k].forEach(x => delete x.played); d[k].push(...r.items); }
+        else { d.banks ||= {}; const b = (d.banks[bank] ||= { trivia: [], board: [], wheel: [], words: [] }); (b[k] ||= []).forEach(x => delete x.played); b[k].push(...r.items); }
         if (r.items.length) parts.push(`${r.items.length} ${noun}${r.items.length === 1 ? '' : 's'}`);
       });
       d.packsApplied.push(p.id);
@@ -198,6 +198,23 @@ const App = {
     a.download = defaultName; a.click();
     return defaultName;
   },
+};
+
+// ================= PLAYED MARKS =================
+// Questions/clues get a 'played' flag when shown in a real game (not demos).
+// Flags live on the items, so each question set (regular / recovery) keeps its own,
+// and they reset whenever new questions are loaded (import or question pack).
+const Played = {
+  mark(item) { if (item && !(typeof Demo !== 'undefined' && Demo.running) && !item.played) { item.played = true; App.save(); } },
+  reset(list) { list.forEach(x => delete x.played); App.save(); },
+  label(name, items) {
+    const left = items.filter(x => !x.played).length;
+    if (!left) return `✓ ${name} — all played`;
+    if (left < items.length) return `${name} (${left} of ${items.length} left)`;
+    return `${name} (${items.length})`;
+  },
+  // unplayed first (shuffled), then played ones (shuffled)
+  order(items) { return [...shuffle(items.filter(x => !x.played)), ...shuffle(items.filter(x => x.played))]; },
 };
 
 // ================= SCOREBOARD =================
@@ -570,7 +587,8 @@ App.screens.finalRound = (el, title, againScreen) => {
   const teams = Scores.teams();
   const played = App.playedTrivia || new Set();
   const pool = App.data.trivia.filter(q => !played.has(q.id));
-  const q = shuffle(pool.length ? pool : App.data.trivia)[0];
+  const q = Played.order(pool.length ? pool : App.data.trivia)[0];
+  Played.mark(q);
   const order = shuffle([q.answer, ...q.wrong]);
   const wagers = {};
   const cap = t => Math.max(t.score, FINAL_MIN_CAP);
