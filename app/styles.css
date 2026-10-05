@@ -1058,10 +1058,12 @@ button { touch-action: manipulation; }
 .team-pick .tp:hover { transform: translateY(-2px); filter: brightness(1.08); }
 .bonus { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: clamp(8px, 1.6vh, 14px); }
 .bonus-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.bonus-title { font-size: clamp(30px, 5vh, 48px); font-weight: 700; color: var(--yellow); letter-spacing: 1px; animation: ddspin .8s cubic-bezier(.2,1.4,.4,1); }
+.bonus-title { font-size: clamp(26px, 4.2vh, 42px); font-weight: 700; color: var(--yellow); letter-spacing: 1px; animation: ddspin .8s cubic-bezier(.2,1.4,.4,1); }
 .bonus-sub { font-size: 20px; display: flex; align-items: center; gap: 8px; }
 .bonus .status { text-align: center; }
-.bonus-picks { text-align: center; font-size: 20px; font-weight: 600; min-height: 1.2em; }
+.bonus-picks { text-align: center; font-size: 20px; font-weight: 600; }
+.bonus-picks:empty { display: none; }
+.bonus .puzzle .cell.l { font-size: clamp(18px, min(2.2vw, 4.2vh), 40px); }
 .bonus-picks span { display: inline-block; min-width: 40px; padding: 4px 8px; margin: 0 3px; border-radius: 8px; background: rgba(255,255,255,.15); }
 .bonus-picks span.v { background: rgba(255,61,139,.3); }
 .bonus-clock { display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 50%; border: 5px solid var(--yellow); font-size: 30px; font-weight: 700; margin-right: 8px; vertical-align: middle; }
@@ -1111,3 +1113,4 @@ body.theme-recovery .bq-msg.bad, body.theme-classic .bq-msg.bad { color: #ffb3bb
 }
 @media (max-width: 760px) and (min-height: 501px) { .steal-banner { font-size: 40px; } }
 @media (max-height: 500px) { .steal-banner { font-size: 30px; margin-bottom: 4px; } }
+.bonus .puzzle .cell { height: clamp(28px, 6.4vh, 68px); }

@@ -11,6 +11,17 @@ const SPECIAL_WEDGES = {
   'PAY IT FORWARD': { label: '🤝 PAY IT FORWARD', bg: '#d36f5f' },
   'GRATITUDE': { label: '🙏 GRATITUDE', bg: '#e2ae45', fg: '#3a2a08' },
 };
+// ⌫ for the typed-answer squares: clears the square under the cursor if it has a letter,
+// otherwise the nearest filled square before it (or the last filled one). Returns the new cursor.
+function eraseSlot(slots, cursor) {
+  if (!slots.length) return cursor;
+  let i = cursor < slots.length && slots[cursor].got ? cursor : -1;
+  for (let j = Math.min(cursor, slots.length) - 1; i < 0 && j >= 0; j--) if (slots[j].got) i = j;
+  for (let j = slots.length - 1; i < 0 && j >= 0; j--) if (slots[j].got) i = j;
+  if (i < 0) return cursor;
+  slots[i].got = ''; slots[i].el.textContent = '';
+  return i;
+}
 function wedgesFor(look) {
   const w = WEDGES.slice();
   w[3] = 'FREE PLAY';                       // replaces a 300
@@ -205,12 +216,12 @@ App.screens.wheelPlay = (el, puzzles) => {
     renderBanks();
     const t = teams[turn];
     const consLeft = remaining(CONS).length, vowLeft = remaining(VOWELS).length;
-    const canVowel = vowLeft > 0 && t.score >= d.settings.vowelCost;
+    const canVowel = vowLeft > 0 && t.score >= d.settings.vowelCost; // vowLeft = vowels in the puzzle still hidden
     status(msg + (consLeft ? '' : ' <span class="hint">(no consonants left)</span>'));
     $('#spin', el).disabled = !consLeft;
     setLetters('none');
     setActions(`
-      <button class="btn cyan" id="aVowel" ${canVowel ? '' : 'disabled'}>Buy a vowel (${d.settings.vowelCost})</button>
+      <button class="btn cyan" id="aVowel" ${canVowel ? '' : 'disabled'}>${!vowLeft ? 'All vowels are up' : t.score < d.settings.vowelCost ? `Buy a vowel (needs ${fmt(d.settings.vowelCost)})` : `Buy a vowel (${d.settings.vowelCost})`}</button>
       <button class="btn green" id="aSolve">Solve it! ✓</button>
       <button class="btn ghost" id="aPass">Next team ▶</button>`, {
       aVowel: () => { phase = 'vowel'; status(`${esc(t.name)}: which vowel?`); setLetters('vowel'); $('#spin', el).disabled = true;
@@ -477,10 +488,9 @@ App.screens.wheelPlay = (el, puzzles) => {
   }
   function backspace() {
     if (phase !== 'solving' || !slots.length) return;
-    if (cursor > 0 && (cursor >= slots.length || !slots[cursor].got)) cursor--;
-    slots[cursor].got = ''; slots[cursor].el.textContent = '';
-    markCursor();
+    cursor = eraseSlot(slots, cursor); markCursor(); Sfx.click();
   }
+
   function cancelSolve() {
     if (phase !== 'solving') return;
     drawPuzzle();
@@ -645,7 +655,7 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   }
   const mark = () => slots.forEach((s, i) => s.el.classList.toggle('cur', i === cursor));
   function typeLetter(L) { if (cursor >= slots.length) return; slots[cursor].got = L; slots[cursor].el.textContent = L; cursor = Math.min(cursor + 1, slots.length); mark(); Sfx.click(); }
-  function back() { if (!slots.length) return; if (cursor > 0 && (cursor >= slots.length || !slots[cursor].got)) cursor--; slots[cursor].got = ''; slots[cursor].el.textContent = ''; mark(); }
+  function back() { cursor = eraseSlot(slots, cursor); mark(); Sfx.click(); }
   function check() {
     const empty = slots.filter(s => !s.got).length;
     if (empty) { status(`Fill in every empty square first — ${empty} to go.`); return; }
