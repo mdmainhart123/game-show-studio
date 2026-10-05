@@ -1084,9 +1084,11 @@ button { touch-action: manipulation; }
 .btimer { width: 84px; height: 84px; cursor: pointer; transform: none; }
 .btimer svg { width: 100%; height: 100%; }
 .btimer .num { font-size: 32px; }
-.steal-tag { font-size: 22px; font-weight: 700; color: var(--yellow); letter-spacing: 1px; animation: pulse .6s infinite alternate; }
+.steal-banner { font-size: clamp(40px, 8vh, 84px); font-weight: 800; color: var(--yellow); letter-spacing: 3px; text-align: center; line-height: 1; margin-bottom: 10px; text-shadow: 0 4px 0 rgba(0,0,0,.3); animation: pulse .6s infinite alternate; }
+.steal-banner.hidden { display: none; }
 .bq-msg { font-size: 22px; font-weight: 600; text-align: center; }
 .bq-msg.bad { color: #ffb3bb; }
+.bq .judge { margin-top: 4px; }
 .bq-steal-title { font-size: 24px; font-weight: 700; color: var(--yellow); text-align: center; }
 .bq-steal-title .hint { display: block; font-size: 16px; font-weight: 500; color: var(--muted); }
 .bq-steal { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
@@ -1107,3 +1109,5 @@ body.theme-recovery .bq-msg.bad, body.theme-classic .bq-msg.bad { color: #ffb3bb
   .bq-st { font-size: 14px; padding: 6px 10px; } .bq-steal-title { font-size: 16px; } .bq-steal-title .hint { font-size: 12px; } .bq-msg { font-size: 15px; }
   .bq-actions { margin-top: 6px !important; }
 }
+@media (max-width: 760px) and (min-height: 501px) { .steal-banner { font-size: 40px; } }
+@media (max-height: 500px) { .steal-banner { font-size: 30px; margin-bottom: 4px; } }

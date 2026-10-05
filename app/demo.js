@@ -165,11 +165,14 @@ const Demo = {
       await this.tap(this.pickRandom(normal.length ? normal : $$('.tile[data-id]').filter(t => !dd.has(t.dataset.id))));
       clueTimerPause();
       await this.say('Read the clue out loud. Only the team whose pick it is answers — they get <b>15 seconds</b>.', 3600);
-      await this.tap('#bNo');
-      await this.say('❌ Wrong (or out of time)? It\'s a <b>🚨 STEAL!</b> Every other team gets a chance.', 3400);
+      await this.tap('#bSteal');
+      await this.say('No answer (or a wrong one) — or the clock runs out? It\'s a <b>🚨 STEAL!</b>', 3400);
       await this.tap($('.bq-st:not(.out)'));
-      await this.say('Tap whichever team calls out first…', 2400);
-      await this.tap('#bOk');
+      clueTimerPause();
+      await this.say('Tap whichever team calls out first. They get the same 15 seconds.', 3000);
+      await this.tap('#bShow');
+      await this.say('Show the answer, then tap ✓ for whoever got it right.', 3000);
+      await this.tap($('.jt .ok'));
       await this.say('✅ They stole it! They earn the points — and they pick next.', 3200);
       await this.until(() => !$('.clue-view'));
       const ddTile = $$('.tile[data-id]').find(t => dd.has(t.dataset.id));
@@ -183,7 +186,8 @@ const Demo = {
         await this.tap('#wGo');
         clueTimerPause();
         await this.say('Only that team answers — no steals on a Daily Double.', 2800);
-        await this.tap('#bOk');
+        await this.tap('#bShow');
+        await this.tap($('.jt .ok'));
         await this.say('✅ They nailed it and win the whole bet!', 3000);
         await this.until(() => !$('.clue-view'));
       }
