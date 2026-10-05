@@ -539,7 +539,7 @@ App.screens.wheelPlay = (el, puzzles) => {
 
 // 🏁 BONUS ROUND — the leading team plays one last puzzle alone.
 // R S T L N E are given; they pick 3 more consonants and 1 vowel, then have
-// 10 seconds to say the answer. The host types it in to check it.
+// 30 seconds to say the answer. The host types it in to check it.
 App.screens.wheelBonus = (el, usedIds = []) => {
   App.inGame = true;
   const d = App.data, teams = Scores.teams();
@@ -549,7 +549,7 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   const puzzle = shuffle(pool.length ? pool : d.wheel)[0];
   const rows = GSData.layoutPuzzle(puzzle.phrase).rows;
   const shown = new Set(), picks = [];
-  let phase = 'intro', timerId, left = 10, slots = [], cursor = 0;
+  let phase = 'intro', timerId, left = 30, slots = [], cursor = 0;
   Scores.setActive(t.id);
   App.setTopActions(`<button class="btn sm ghost" id="bSkip">Skip bonus round ⏭</button>`, { bSkip: done });
 
