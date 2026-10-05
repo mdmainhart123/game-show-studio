@@ -1656,3 +1656,1070 @@ sober | Recovery
 enjoy | Recovery
 `,
 });
+
+// Tops every trivia category up to 20 questions.
+window.GS_PACKS.push({
+  id: 'trivia-twenty-each-2026-10',
+  name: 'More Trivia (every category now has 20)',
+  trivia: `
+Q: What is the chemical symbol for gold?
+A: Au
+W: Ag
+W: Gd
+W: Go
+C: Science
+T: 20
+
+Q: What is the closest star to Earth?
+A: The Sun
+W: Proxima Centauri
+W: Sirius
+W: Polaris
+C: Science
+T: 20
+
+Q: Which gas do people need to breathe in to survive?
+A: Oxygen
+W: Carbon dioxide
+W: Nitrogen
+W: Helium
+C: Science
+T: 20
+
+Q: What is the hardest natural substance?
+A: Diamond
+W: Gold
+W: Iron
+W: Quartz
+C: Science
+T: 20
+
+Q: How many planets are in our solar system?
+A: 8
+W: 7
+W: 9
+W: 10
+C: Science
+T: 20
+
+Q: Which part of a cell holds most of its DNA?
+A: The nucleus
+W: The cell wall
+W: The cytoplasm
+W: The membrane
+C: Science
+T: 20
+
+Q: Which force keeps us on the ground?
+A: Gravity
+W: Magnetism
+W: Friction
+W: Static electricity
+C: Science
+T: 20
+
+Q: At what temperature does water freeze in Celsius?
+A: 0°C
+W: 32°C
+W: 10°C
+W: -10°C
+C: Science
+T: 20
+
+Q: Which organ pumps blood around the body?
+A: The heart
+W: The lungs
+W: The liver
+W: The kidneys
+C: Science
+T: 20
+
+Q: What is H2O more commonly called?
+A: Water
+W: Salt
+W: Hydrogen peroxide
+W: Baking soda
+C: Science
+T: 20
+
+Q: Which planet is best known for its bright rings?
+A: Saturn
+W: Mars
+W: Mercury
+W: Venus
+C: Science
+T: 20
+
+Q: What kind of animal is a dolphin?
+A: A mammal
+W: A fish
+W: A reptile
+W: An amphibian
+C: Science
+T: 20
+
+Q: What sweet food do bees make?
+A: Honey
+W: Maple syrup
+W: Jam
+W: Molasses
+C: Science
+T: 20
+
+Q: The center of an atom is called the…
+A: Nucleus
+W: Electron
+W: Orbit
+W: Shell
+C: Science
+T: 20
+
+Q: Light travels faster than sound.
+A: True
+W: False
+C: Science
+T: 20
+
+Q: What is the largest ocean on Earth?
+A: Pacific
+W: Atlantic
+W: Indian
+W: Arctic
+C: Geography
+T: 20
+
+Q: What is the capital of Canada?
+A: Ottawa
+W: Toronto
+W: Vancouver
+W: Montreal
+C: Geography
+T: 20
+
+Q: What is the largest country in the world by area?
+A: Russia
+W: Canada
+W: China
+W: United States
+C: Geography
+T: 20
+
+Q: On which continent is Egypt?
+A: Africa
+W: Asia
+W: Europe
+W: South America
+C: Geography
+T: 20
+
+Q: In Pittsburgh, the Allegheny and Monongahela rivers meet to form which river?
+A: The Ohio
+W: The Mississippi
+W: The Delaware
+W: The Susquehanna
+C: Geography
+T: 20
+
+Q: What is the capital of Pennsylvania?
+A: Harrisburg
+W: Philadelphia
+W: Pittsburgh
+W: Scranton
+C: Geography
+T: 20
+
+Q: Which U.S. state is the largest by area?
+A: Alaska
+W: Texas
+W: California
+W: Montana
+C: Geography
+T: 20
+
+Q: In which country is the Eiffel Tower?
+A: France
+W: Italy
+W: Spain
+W: Belgium
+C: Geography
+T: 20
+
+Q: Mount Kilimanjaro is in which country?
+A: Tanzania
+W: Kenya
+W: Uganda
+W: South Africa
+C: Geography
+T: 20
+
+Q: What is the smallest continent by area?
+A: Australia
+W: Europe
+W: Antarctica
+W: South America
+C: Geography
+T: 20
+
+Q: What is the largest hot desert in the world?
+A: The Sahara
+W: The Gobi
+W: The Mojave
+W: The Kalahari
+C: Geography
+T: 20
+
+Q: What is the capital of Japan?
+A: Tokyo
+W: Kyoto
+W: Osaka
+W: Hiroshima
+C: Geography
+T: 20
+
+Q: Which Great Lake borders Pennsylvania?
+A: Lake Erie
+W: Lake Superior
+W: Lake Michigan
+W: Lake Huron
+C: Geography
+T: 20
+
+Q: How many continents are there?
+A: 7
+W: 5
+W: 6
+W: 8
+C: Geography
+T: 20
+
+Q: The Statue of Liberty was a gift from which country?
+A: France
+W: England
+W: Spain
+W: Italy
+C: Geography
+T: 20
+
+Q: Who painted "The Starry Night"?
+A: Vincent van Gogh
+W: Claude Monet
+W: Pablo Picasso
+W: Salvador Dalí
+C: Arts
+T: 20
+
+Q: Who wrote "Romeo and Juliet"?
+A: William Shakespeare
+W: Charles Dickens
+W: Mark Twain
+W: Jane Austen
+C: Arts
+T: 20
+
+Q: In traditional painting, what are the three primary colors?
+A: Red, yellow and blue
+W: Green, orange and purple
+W: Black, white and gray
+W: Pink, brown and teal
+C: Arts
+T: 20
+
+Q: Michelangelo painted the ceiling of which famous chapel?
+A: The Sistine Chapel
+W: Notre-Dame
+W: St. Paul's Cathedral
+W: Westminster Abbey
+C: Arts
+T: 20
+
+Q: Which Pittsburgh-born artist is famous for his soup can paintings?
+A: Andy Warhol
+W: Jackson Pollock
+W: Roy Lichtenstein
+W: Keith Haring
+C: Arts
+T: 20
+
+Q: Mixing blue and yellow paint makes which color?
+A: Green
+W: Purple
+W: Orange
+W: Brown
+C: Arts
+T: 20
+
+Q: Who wrote "The Adventures of Tom Sawyer"?
+A: Mark Twain
+W: Herman Melville
+W: Ernest Hemingway
+W: John Steinbeck
+C: Arts
+T: 20
+
+Q: A painting of a person is called a…
+A: Portrait
+W: Landscape
+W: Still life
+W: Mural
+C: Arts
+T: 20
+
+Q: The tango is a dance that comes from which country?
+A: Argentina
+W: Cuba
+W: Austria
+W: Poland
+C: Arts
+T: 20
+
+Q: Who sculpted "The Thinker"?
+A: Auguste Rodin
+W: Michelangelo
+W: Donatello
+W: Bernini
+C: Arts
+T: 20
+
+Q: In which city is the Louvre museum?
+A: Paris
+W: London
+W: Rome
+W: Madrid
+C: Arts
+T: 20
+
+Q: How many lines does a haiku have?
+A: 3
+W: 4
+W: 5
+W: 14
+C: Arts
+T: 20
+
+Q: How many lines does a sonnet have?
+A: 14
+W: 10
+W: 12
+W: 16
+C: Arts
+T: 20
+
+Q: Which instrument with pipes and pedals is often found in churches?
+A: Organ
+W: Harp
+W: Tuba
+W: Accordion
+C: Arts
+T: 20
+
+Q: Who wrote "Pride and Prejudice"?
+A: Jane Austen
+W: Charlotte Brontë
+W: Emily Dickinson
+W: Louisa May Alcott
+C: Arts
+T: 20
+
+Q: The painter Frida Kahlo was from which country?
+A: Mexico
+W: Spain
+W: Brazil
+W: Argentina
+C: Arts
+T: 20
+
+Q: A painting of fruit, flowers or objects arranged on a table is called a…
+A: Still life
+W: Portrait
+W: Landscape
+W: Self-portrait
+C: Arts
+T: 20
+
+Q: What is 12 × 12?
+A: 144
+W: 124
+W: 132
+W: 156
+C: Math
+T: 20
+
+Q: How many sides does a pentagon have?
+A: 5
+W: 4
+W: 6
+W: 8
+C: Math
+T: 20
+
+Q: What is the square root of 81?
+A: 9
+W: 8
+W: 7
+W: 18
+C: Math
+T: 20
+
+Q: How many degrees are in a right angle?
+A: 90
+W: 45
+W: 180
+W: 360
+C: Math
+T: 20
+
+Q: What is 25% of 200?
+A: 50
+W: 25
+W: 75
+W: 100
+C: Math
+T: 20
+
+Q: How many sides does an octagon have?
+A: 8
+W: 6
+W: 10
+W: 12
+C: Math
+T: 20
+
+Q: What is the next prime number after 7?
+A: 11
+W: 9
+W: 10
+W: 13
+C: Math
+T: 20
+
+Q: What is 100 ÷ 4?
+A: 25
+W: 20
+W: 24
+W: 40
+C: Math
+T: 20
+
+Q: How many inches are in a foot?
+A: 12
+W: 10
+W: 16
+W: 36
+C: Math
+T: 20
+
+Q: How many degrees are in a full circle?
+A: 360
+W: 180
+W: 90
+W: 100
+C: Math
+T: 20
+
+Q: What is 15 + 27?
+A: 42
+W: 41
+W: 43
+W: 52
+C: Math
+T: 20
+
+Q: What is pi rounded to two decimal places?
+A: 3.14
+W: 3.41
+W: 3.12
+W: 3.16
+C: Math
+T: 20
+
+Q: How many feet are in a mile?
+A: 5,280
+W: 1,000
+W: 3,280
+W: 5,820
+C: Math
+T: 20
+
+Q: What is 9 × 6?
+A: 54
+W: 56
+W: 45
+W: 63
+C: Math
+T: 20
+
+Q: How many items are in a dozen?
+A: 12
+W: 10
+W: 6
+W: 20
+C: Math
+T: 20
+
+Q: What is half of 150?
+A: 75
+W: 50
+W: 70
+W: 85
+C: Math
+T: 20
+
+Q: How many zeros are in one million?
+A: 6
+W: 5
+W: 7
+W: 9
+C: Math
+T: 20
+
+Q: The Great Wall of China can be seen from the Moon with the naked eye.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: Bats are blind.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: Koalas are a type of bear.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: Goldfish only have a three-second memory.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: Bananas grow on trees.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: Sound travels faster through water than through air.
+A: True
+W: False
+C: True or False
+T: 20
+
+Q: The Sahara is the largest desert in the world.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: People and dinosaurs lived at the same time.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: Venus is the hottest planet in our solar system.
+A: True
+W: False
+C: True or False
+T: 20
+
+Q: A group of flamingos is called a "flamboyance."
+A: True
+W: False
+C: True or False
+T: 20
+
+Q: Mount Everest is the tallest mountain on Earth above sea level.
+A: True
+W: False
+C: True or False
+T: 20
+
+Q: Cracking your knuckles causes arthritis.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: A day on Venus is longer than its year.
+A: True
+W: False
+C: True or False
+T: 20
+
+Q: Penguins live at the North Pole.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: Water boils at a lower temperature on top of a tall mountain.
+A: True
+W: False
+C: True or False
+T: 20
+
+Q: Shaving makes hair grow back thicker.
+A: False
+W: True
+C: True or False
+T: 20
+
+Q: A bolt of lightning is hotter than the surface of the Sun.
+A: True
+W: False
+C: True or False
+T: 20
+
+Q: How many points is a touchdown worth?
+A: 6
+W: 3
+W: 7
+W: 2
+C: Sports
+T: 20
+
+Q: Which sport uses a puck?
+A: Hockey
+W: Lacrosse
+W: Polo
+W: Rugby
+C: Sports
+T: 20
+
+Q: How many holes are in a standard round of golf?
+A: 18
+W: 9
+W: 12
+W: 20
+C: Sports
+T: 20
+
+Q: In which sport would you hit a home run?
+A: Baseball
+W: Tennis
+W: Golf
+W: Bowling
+C: Sports
+T: 20
+
+Q: How often are the Summer Olympics held?
+A: Every 4 years
+W: Every 2 years
+W: Every year
+W: Every 5 years
+C: Sports
+T: 20
+
+Q: What is the name of Pittsburgh's Major League Baseball team?
+A: Pirates
+W: Steelers
+W: Penguins
+W: Riverhounds
+C: Sports
+T: 20
+
+Q: How many players does each basketball team have on the court?
+A: 5
+W: 6
+W: 7
+W: 4
+C: Sports
+T: 20
+
+Q: Modern soccer rules were first written in which country?
+A: England
+W: Brazil
+W: Italy
+W: Spain
+C: Sports
+T: 20
+
+Q: In tennis, what is a score of zero called?
+A: Love
+W: Nil
+W: Zip
+W: Duck
+C: Sports
+T: 20
+
+Q: How many bases are on a baseball field, counting home plate?
+A: 4
+W: 3
+W: 5
+W: 6
+C: Sports
+T: 20
+
+Q: The Stanley Cup is the trophy for which sport?
+A: Hockey
+W: Football
+W: Basketball
+W: Baseball
+C: Sports
+T: 20
+
+Q: In bowling, three strikes in a row is called a…
+A: Turkey
+W: Hat trick
+W: Triple
+W: Eagle
+C: Sports
+T: 20
+
+Q: How long is a marathon?
+A: 26.2 miles
+W: 13.1 miles
+W: 20 miles
+W: 30 miles
+C: Sports
+T: 20
+
+Q: Which sport uses the terms "birdie" and "bogey"?
+A: Golf
+W: Tennis
+W: Bowling
+W: Baseball
+C: Sports
+T: 20
+
+Q: In which sport do players "bump, set and spike"?
+A: Volleyball
+W: Tennis
+W: Badminton
+W: Basketball
+C: Sports
+T: 20
+
+Q: How many periods are in a regulation NHL hockey game?
+A: 3
+W: 2
+W: 4
+W: 5
+C: Sports
+T: 20
+
+Q: Which race is nicknamed "The Greatest Spectacle in Racing"?
+A: The Indianapolis 500
+W: The Daytona 500
+W: The Kentucky Derby
+W: The Tour de France
+C: Sports
+T: 20
+
+`,
+});
+window.GS_PACKS.push({
+  id: 'recovery-trivia-twenty-2026-10',
+  name: 'More Recovery Trivia (every category now has 20)',
+  bank: 'recovery',
+  trivia: `
+Q: Breathing slowly in through your nose and out through your mouth to calm down is called…
+A: Deep breathing
+W: Holding your breath
+W: Panting
+W: Sighing
+C: Coping Skills
+T: 25
+
+Q: Picturing a calm, safe place in your mind is called…
+A: Guided imagery
+W: Worrying
+W: Ruminating
+W: Overthinking
+C: Coping Skills
+T: 25
+
+Q: Which is a healthy distraction when a strong urge hits?
+A: Doing a puzzle or calling a friend
+W: Isolating
+W: Starting an argument
+W: Skipping sleep
+C: Coping Skills
+T: 25
+
+Q: The DBT "STOP" skill stands for Stop, Take a step back, Observe and…
+A: Proceed mindfully
+W: Panic
+W: Pretend
+W: Push through
+C: Coping Skills
+T: 25
+
+Q: Using your senses to comfort yourself — like a warm drink or a soft blanket — is called…
+A: Self-soothing
+W: Self-sabotage
+W: Self-doubt
+W: Self-isolation
+C: Coping Skills
+T: 25
+
+Q: Breaking a big problem into small, doable steps is called…
+A: Problem solving
+W: Procrastinating
+W: Catastrophizing
+W: Avoiding
+C: Coping Skills
+T: 25
+
+Q: Saying kind, encouraging things to yourself is called…
+A: Positive self-talk
+W: Gossip
+W: Bragging
+W: Complaining
+C: Coping Skills
+T: 25
+
+Q: Coping skills work best when you practice them before you're in a crisis.
+A: True
+W: False
+C: Coping Skills
+T: 25
+
+Q: Which drink is best to limit in the evening for better sleep?
+A: Caffeinated coffee
+W: Water
+W: Herbal tea
+W: Warm milk
+C: Self-Care
+T: 25
+
+Q: Doing something you enjoy just for fun is called…
+A: A hobby
+W: A chore
+W: Overtime
+W: An errand
+C: Self-Care
+T: 25
+
+Q: Which is a sign you might need some rest?
+A: Feeling worn out and irritable
+W: Feeling energized
+W: Feeling calm
+W: Feeling focused
+C: Self-Care
+T: 25
+
+Q: Keeping your bedroom cool, dark and quiet helps with…
+A: Better sleep
+W: Better eyesight
+W: Stronger muscles
+W: Faster hair growth
+C: Self-Care
+T: 25
+
+Q: Regular check-ups with a doctor or dentist are a form of self-care.
+A: True
+W: False
+C: Self-Care
+T: 25
+
+Q: Stretching or gentle yoga can help release tension in your…
+A: Muscles
+W: Hair
+W: Nails
+W: Teeth
+C: Self-Care
+T: 25
+
+Q: Eating regular meals helps keep your energy and mood steady.
+A: True
+W: False
+C: Self-Care
+T: 25
+
+Q: Planning something to look forward to each week can boost your…
+A: Mood
+W: Height
+W: Shoe size
+W: Blood type
+C: Self-Care
+T: 25
+
+Q: A "sober support" is…
+A: A person who supports your recovery
+W: A type of medication
+W: A rule you must follow
+W: A treatment center
+C: Recovery Basics
+T: 25
+
+Q: Which is an early warning sign that someone may be heading toward a slip?
+A: Skipping meetings and isolating
+W: Calling a sponsor
+W: Sticking to a routine
+W: Going to bed on time
+C: Recovery Basics
+T: 25
+
+Q: Recovery looks the same for everyone.
+A: False
+W: True
+C: Recovery Basics
+T: 25
+
+Q: Medication-assisted treatment (MAT) combines medication with…
+A: Counseling and support
+W: Exercise only
+W: Fasting
+W: Nothing else
+C: Recovery Basics
+T: 25
+
+Q: Celebrating small wins in recovery helps build…
+A: Motivation and confidence
+W: Stress
+W: Cravings
+W: Guilt
+C: Recovery Basics
+T: 25
+
+Q: Taking an honest look at your own actions and choices is called…
+A: Self-reflection
+W: Self-pity
+W: Blaming
+W: Denial
+C: Recovery Basics
+T: 25
+
+Q: Which is a healthy way to fill free time in recovery?
+A: Volunteering or starting a new hobby
+W: Being alone all day
+W: Spending time with people who pressure you
+W: Staying up all night
+C: Recovery Basics
+T: 25
+
+Q: Practicing gratitude is often linked with better mental health.
+A: True
+W: False
+C: Recovery Basics
+T: 25
+
+Q: Which word describes a calm, settled feeling?
+A: Content
+W: Furious
+W: Jealous
+W: Panicked
+C: Feelings & Emotions
+T: 25
+
+Q: Feeling deep sadness after a loss is a normal part of…
+A: Grief
+W: Boredom
+W: Stigma
+W: Mindfulness
+C: Feelings & Emotions
+T: 25
+
+Q: Physical feelings like a tight chest or an upset stomach can be signs of stress.
+A: True
+W: False
+C: Feelings & Emotions
+T: 25
+
+Q: "Should" statements, like "I should never make mistakes," are an example of a…
+A: Thinking trap
+W: Coping skill
+W: Boundary
+W: Goal
+C: Feelings & Emotions
+T: 25
+
+Q: Predicting that something bad will happen, with no evidence, is called…
+A: Fortune telling
+W: Mindfulness
+W: Planning
+W: Gratitude
+C: Feelings & Emotions
+T: 25
+
+Q: What can help when you feel overwhelmed?
+A: Taking a short break and breathing slowly
+W: Making a big decision right away
+W: Holding it all in
+W: Yelling
+C: Feelings & Emotions
+T: 25
+
+Q: The feeling of wanting what someone else has is called…
+A: Envy
+W: Gratitude
+W: Pride
+W: Relief
+C: Feelings & Emotions
+T: 25
+
+Q: You can feel an emotion without having to act on it.
+A: True
+W: False
+C: Feelings & Emotions
+T: 25
+
+Q: Which describes a healthy relationship?
+A: One built on trust and respect
+W: One where one person controls the other
+W: One with constant put-downs
+W: One where you can't say no
+C: Connection & Support
+T: 25
+
+Q: Asking someone "How are you really doing?" shows…
+A: Care and support
+W: Nosiness
+W: Judgment
+W: Pressure
+C: Connection & Support
+T: 25
+
+Q: What does NAMI stand for?
+A: National Alliance on Mental Illness
+W: National Association of Mental Institutions
+W: North American Mental Initiative
+W: National Agency for Medical Information
+C: Connection & Support
+T: 25
+
+Q: Volunteering and helping others can improve your own well-being.
+A: True
+W: False
+C: Connection & Support
+T: 25
+
+Q: In the U.S., texting HOME to 741741 reaches which free service?
+A: Crisis Text Line
+W: A taxi service
+W: A news update line
+W: A sports score line
+C: Connection & Support
+T: 25
+
+Q: People with shared experiences who meet to help one another form a…
+A: Support group
+W: Committee
+W: Jury
+W: Board meeting
+C: Connection & Support
+T: 25
+
+Q: Which is a respectful way to talk about mental health?
+A: "She lives with depression"
+W: "She's crazy"
+W: "She's unstable"
+W: "She's a mess"
+C: Connection & Support
+T: 25
+
+Q: Spending time with people who support your goals helps build a healthy…
+A: Support network
+W: Grudge
+W: Bad habit
+W: Rivalry
+C: Connection & Support
+T: 25
+
+`,
+});
