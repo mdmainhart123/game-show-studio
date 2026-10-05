@@ -253,7 +253,7 @@ App.screens.boardPlay = (el, name) => {
           <div class="bq-steal-title">🚨 STEAL! Who wants it? <span class="hint">Tap the first team to call out.</span></div>
           <div class="bq-steal">${Scores.teams().map(x => `<button class="bq-st ${tried.has(x.id) ? 'out' : ''}" data-id="${x.id}" style="--tc:${x.color}" ${tried.has(x.id) ? 'disabled' : ''}>${tried.has(x.id) ? '✗ ' : ''}${esc(x.name)}</button>`).join('')}</div>`;
         $$('.bq-st:not(.out)', view).forEach(b => b.onclick = () => { Sfx.click(); answering(Scores.teams().find(x => x.id === b.dataset.id), true); });
-        acts(`<button class="btn lg yellow" id="bNobody">Nobody — show answer <kbd>Space</kbd></button>`, { bNobody: () => nobody('') });
+        acts(`<button class="btn lg yellow" id="bNobody">Nobody — Show Answer <kbd>Space</kbd></button>`, { bNobody: () => nobody('') });
       }
       function nobody(why) {
         stop(); phase = 'done';
