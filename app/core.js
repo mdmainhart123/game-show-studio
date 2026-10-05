@@ -1,4 +1,4 @@
-const APP_VERSION = '20261005-1900'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261005-1915'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -388,7 +388,7 @@ function showHelp() {
     body: `<div style="font-size:18px;line-height:1.5">
       <p><b style="color:var(--yellow)">Before you start:</b> open <b>☰ Menu → Teams</b> to set 2–10 team names. Scores reset to 0 when a game ends or you go back Home. To fix a score during a game, use <b>☰ Menu → Fix a score</b>.</p>
       <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. After every question the answer stays up for 15 seconds, then the next one appears (click <i>stay here</i> to pause it). Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in ☰ Menu → Settings). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
-      <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Only the team whose pick it is answers, with a 15-second clock (pause it in ☰ Menu). Clock runs out, or they miss (tap <b>Go to steals</b>)? <b>🚨 STEAL!</b> — tap whichever team calls out first; they get the same 15 seconds, and if they miss the next team can try. Click <b>Show Answer</b> any time to reveal it, then click ✓ for whoever got it right (✗ takes points away, which you can turn off). Whoever gets it right (even on a steal) picks next; if nobody does, the next team picks. Daily Doubles can't be stolen. Click a team's score box to change whose pick it is.</p>
+      <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Only the team whose pick it is answers, with a 15-second clock (pause it in ☰ Menu). The answer stays hidden on screen — check it on your printed answer key (☰ Menu → 🖨️ Answer key) and click ✓ Right or ✗ Wrong (wrong answers can cost points; you can turn that off). Wrong or out of time? <b>🚨 STEAL!</b> — tap whichever team calls out first; they get the same 15 seconds and the same ✓ / ✗. If nobody gets it, click <b>Show Answer</b>. Whoever gets it right (even on a steal) picks next; if nobody does, the next team picks. Daily Doubles can't be stolen. Click a team's score box to change whose pick it is.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. Land on a <b>🎁 MYSTERY</b> wedge and it's worth 1,000 per letter; get a letter right and the team can keep the points or give them up to flip the card: 50/50 for a +2,500 JACKPOT or BANKRUPT. When a team thinks they know it, click <b>Solve it!</b>, have them say it out loud, and type it into the empty squares (keyboard or on-screen letters; ⌫ to fix). <b>Check answer</b> tells you if they got it: right = 500-point bonus, wrong = next team's turn. Points go straight onto the scoreboard at the bottom; BANKRUPT takes away whatever that team earned on the current puzzle. <b>🔓 FREE PLAY</b>: call any letter (vowels free, consonants 500 each) and a miss doesn't cost the turn. <b>🦹 STEAL</b>: take up to 500 points from a team of your choice. In the 🌿 Recovery look, <b>🤝 PAY IT FORWARD</b> gives 300 to another team and 300 to you, and <b>🙏 GRATITUDE</b> earns 500 for sharing something you're grateful for. At the end, the leading team plays a <b>🏁 Bonus Round</b>: R S T L N E are free, they pick 3 consonants and a vowel, then have 30 seconds to say the answer for +2,000 (turn it off in Settings).</p>
       <p><b style="color:var(--green)">🔤 Word Guess</b> — everyone plays together, no teams or points. Find the hidden 5-letter word in 6 tries: type the room's guess and press Enter. <b style="color:#3ee08f">Green</b> = right letter, right spot; <b style="color:var(--yellow)">yellow</b> = in the word, wrong spot; gray = not in the word. Then press Next word.</p>
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
@@ -501,6 +501,9 @@ const Menu = {
         <div class="mi-grid"><button class="mi" data-demo="trivia">🎬 ⚡ Trivia</button><button class="mi" data-demo="board">🎬 🎯 Quiz Board</button><button class="mi" data-demo="wheel">🎬 🎡 Spin &amp; Solve</button><button class="mi" data-demo="words">🎬 🔤 Word Guess</button></div>
         <button class="mi" id="mHelp">❓ How to play (rules)</button>
       </section>
+      <section><h4>For the host</h4>
+        <button class="mi" id="mKey">🖨️ Answer key (print or save as PDF)</button>
+      </section>
       <section><h4>Display &amp; data</h4>
         <button class="mi" id="mSound">${s.sound ? '🔊 Sound on' : '🔇 Sound off'}</button>
         <div class="mi-row"><button class="mi" id="mBackup">💾 Back up</button><button class="mi" id="mRestore">📂 Restore</button></div>
@@ -524,6 +527,7 @@ const Menu = {
     $$('[data-go]', back).forEach(b => b.onclick = () => go(() => App.show(b.dataset.go)));
     $$('[data-demo]', back).forEach(b => b.onclick = () => go(() => Demo.start(b.dataset.demo)));
     q('mHelp').onclick = () => { this.close(); showHelp(); };
+    q('mKey').onclick = () => { this.close(); answerKey(); };
     q('mSound').onclick = () => { s.sound = !s.sound; App.save(); q('mSound').textContent = s.sound ? '🔊 Sound on' : '🔇 Sound off'; };
     $$('[data-look]', back).forEach(b => b.onclick = async () => {
       if (b.dataset.look === App.look) return;
@@ -688,3 +692,59 @@ App.screens.finalRound = (el, title, againScreen) => {
   document.addEventListener('keydown', onKey);
   return () => { clearInterval(timerId); document.removeEventListener('keydown', onKey); };
 };
+
+
+// 🖨️ Host answer key — prints (or saves as PDF) the clues and answers so the host
+// can judge without revealing anything on the big screen.
+function answerKey() {
+  const d = App.data;
+  const boards = [...new Set(d.board.map(c => c.board))];
+  const cats = [...new Set(d.trivia.map(q => q.category || 'General'))];
+  const opts = [
+    ...boards.map(n => [`b:${n}`, `🎯 Quiz Board — ${n}`]),
+    ...(boards.length > 1 ? [['b:*', '🎯 Quiz Board — every board']] : []),
+    ...cats.map(n => [`t:${n}`, `⚡ Trivia — ${n}`]),
+    ...(cats.length > 1 ? [['t:*', '⚡ Trivia — every category']] : []),
+    ...(d.wheel.length ? [['w:*', '🎡 Spin & Solve — every puzzle']] : []),
+  ];
+  if (!opts.length) { toast('No questions yet.'); return; }
+  const cur = App.current === 'boardPlay' && App.curBoard ? `b:${App.curBoard}` : opts[0][0];
+  Modal.open({
+    title: '🖨️ Answer key',
+    body: `<p style="font-size:18px;margin:0 0 12px">Print it (or save it as a PDF on your phone) so you can check answers without showing them on screen.</p>
+      <label class="field"><span>Which questions?</span><select class="input" id="keyPick">${opts.map(([v, l]) => `<option value="${esc(v)}" ${v === cur ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select></label>`,
+    actions: [
+      { label: 'Cancel', cls: 'ghost', onClick: c => c() },
+      { label: '🖨️ Print', cls: 'pink', onClick: c => { const v = $('#keyPick').value; c(); printKey(v); } },
+    ],
+  });
+}
+function printKey(v) {
+  const d = App.data, [kind, name] = [v[0], v.slice(2)];
+  const row = (a, b, c) => `<tr><td>${a}</td><td>${b}</td><td class="k-ans">${c}</td></tr>`;
+  let html = '';
+  if (kind === 'b') {
+    const boards = name === '*' ? [...new Set(d.board.map(c => c.board))] : [name];
+    html = boards.map(b => {
+      const clues = d.board.filter(c => c.board === b);
+      const catNames = [...new Set(clues.map(c => c.category))];
+      return `<h2>🎯 ${esc(b)}</h2>` + catNames.map(cn => `<h3>${esc(cn)}</h3><table>${clues.filter(c => c.category === cn).sort((x, y) => x.value - y.value)
+        .map(c => row(fmt(c.value), esc(c.clue), esc(c.answer))).join('')}</table>`).join('');
+    }).join('');
+  } else if (kind === 't') {
+    const cats = name === '*' ? [...new Set(d.trivia.map(q => q.category || 'General'))] : [name];
+    html = cats.map(cn => `<h2>⚡ ${esc(cn)}</h2><table>${d.trivia.filter(q => (q.category || 'General') === cn)
+      .map((q, i) => row(i + 1, esc(q.question), esc(q.answer))).join('')}</table>`).join('');
+  } else {
+    html = `<h2>🎡 Spin &amp; Solve</h2><table>${d.wheel.map((p, i) => row(i + 1, esc(p.category), esc(p.phrase))).join('')}</table>`;
+  }
+  $('#printKey')?.remove();
+  const box = document.createElement('div');
+  box.id = 'printKey';
+  box.innerHTML = `<h1>Game Show Studio — Host answer key</h1><p class="k-note">Keep this away from the players 🤫</p>${html}`;
+  document.body.appendChild(box);
+  document.body.classList.add('printing');
+  const done = () => { document.body.classList.remove('printing'); box.remove(); window.removeEventListener('afterprint', done); };
+  window.addEventListener('afterprint', done);
+  setTimeout(() => { window.print(); setTimeout(done, 1000); }, 50);
+}

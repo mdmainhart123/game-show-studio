@@ -1114,3 +1114,20 @@ body.theme-recovery .bq-msg.bad, body.theme-classic .bq-msg.bad { color: #ffb3bb
 @media (max-width: 760px) and (min-height: 501px) { .steal-banner { font-size: 40px; } }
 @media (max-height: 500px) { .steal-banner { font-size: 30px; margin-bottom: 4px; } }
 .bonus .puzzle .cell { height: clamp(28px, 6.4vh, 68px); }
+
+/* ---------- 🖨️ host answer key (print only) ---------- */
+#printKey { display: none; }
+@media print {
+  body.printing > *:not(#printKey) { display: none !important; }
+  body.printing { background: #fff !important; color: #000 !important; overflow: visible !important; height: auto !important; }
+  body.printing #printKey { display: block; font-family: Arial, sans-serif; color: #000; }
+  #printKey :is(h1, h2, h3) { color: #000 !important; -webkit-text-fill-color: #000 !important; background: none !important; text-shadow: none !important; font-family: Arial, sans-serif !important; text-transform: none !important; letter-spacing: 0 !important; display: block !important; }
+  #printKey h1 { font-size: 20px; margin: 0 0 2px; } #printKey .k-note { margin: 0 0 12px; font-size: 12px; }
+  #printKey h2 { font-size: 17px; margin: 16px 0 4px; border-bottom: 2px solid #000; break-after: avoid; }
+  #printKey h3 { font-size: 14px; margin: 10px 0 2px; break-after: avoid; }
+  #printKey table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  #printKey tr { break-inside: avoid; }
+  #printKey td { border-bottom: 1px solid #bbb; padding: 4px 6px; vertical-align: top; }
+  #printKey td:first-child { width: 48px; font-weight: bold; white-space: nowrap; }
+  #printKey td.k-ans { width: 32%; font-weight: bold; }
+}
