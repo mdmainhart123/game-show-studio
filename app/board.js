@@ -1,4 +1,5 @@
 // 🎯 Quiz Board — categories × point values.
+const CLUE_TIME = 15; // seconds the picking team gets to answer
 function boardNames() { return [...new Set(App.data.board.map(c => c.board))]; }
 function boardLayout(name) {
   const cats = [];
@@ -49,6 +50,7 @@ App.screens.boardSetup = (el) => {
 
 App.screens.boardPlay = (el, name) => {
   App.inGame = true;
+  let clueTimer = null; // the open clue's clock (for ☰ Menu → Pause)
   const cats = boardLayout(name);
   const rows = Math.max(...cats.map(c => c.clues.length));
   App.boardUsed ||= {};
@@ -85,6 +87,7 @@ App.screens.boardPlay = (el, name) => {
     next: () => App.show('boardPlay', names[bi + 1]),
     backTitle: 'Previous board', nextTitle: 'Next board',
     endTitle: 'Quiz Board', endScreen: 'boardSetup',
+    pause: { toggle: () => clueTimer?.toggle(), get: () => !!clueTimer?.paused },
   });
   const navNormal = () => App.setNavEnabled(bi > 0, bi < names.length - 1);
   navNormal();
@@ -114,9 +117,11 @@ App.screens.boardPlay = (el, name) => {
     view.className = 'clue-view';
     el.appendChild(view);
     let closed = false, onKey = () => {}, winner = null;
+    const closeHooks = [];
     const setKeys = fn => { document.removeEventListener('keydown', onKey); onKey = fn; document.addEventListener('keydown', onKey); cleanupKey = () => document.removeEventListener('keydown', onKey); };
     function close() {
       if (closed) return; closed = true;
+      closeHooks.forEach(f => f()); clueTimer = null;
       view.remove(); drawBoard(); navNormal();
       setTurn(winner ? teams.findIndex(t => t.id === winner) : App.boardTurn + 1);
       document.removeEventListener('keydown', onKey);
@@ -158,50 +163,113 @@ App.screens.boardPlay = (el, name) => {
       setKeys(e => { if (e.key === 'Enter') go(); if (e.key === 'Escape') close(); });
     }
 
-    // ---- the clue itself (normal, or Daily Double for one team) ----
+    // ---- the clue itself ----
+    // The team whose pick it is answers first, against a 15-second clock.
+    // Wrong or out of time → STEAL: any other team can try (tap whoever calls out first).
+    // Daily Doubles belong to one team only — no steals.
     function showClue(ddInfo) {
       if (!ddInfo) Sfx.reveal();
-      const judged = {};
-      const teams = ddInfo ? [ddInfo.team] : Scores.teams();
+      const owner = ddInfo ? ddInfo.team : picker();
       const plus = ddInfo ? ddInfo.wager : clue.value;
       const minus = ddInfo ? ddInfo.wager : (App.data.settings.boardDeduct ? clue.value : 0);
+      const tried = new Set();
+      const R = 40, C = 2 * Math.PI * R;
+      let timerId, left, total = CLUE_TIME, phase = 'answer';
       view.innerHTML = `
         <div class="meta">${esc(clue.category)} · ${ddInfo ? `🎲 Daily Double — ${esc(ddInfo.team.name)} wagered ${fmt(ddInfo.wager)}` : fmt(clue.value)}</div>
         <div class="clue">${esc(clue.clue)}</div>
         <div class="answer hidden" id="ans">${esc(clue.answer)}</div>
-        <div class="judge">${teams.map(t => `
-          <div class="jt" style="--tc:${t.color}" data-id="${t.id}"><span class="n">${esc(t.name)}</span>
-            <button class="ok" title="Correct: +${plus}">✓</button><button class="no" title="Wrong${minus ? ': −' + minus : ''}">✗</button></div>`).join('')}</div>
-        <div class="home-actions" style="margin-top:22px">
-          <button class="btn lg yellow" id="show">Show answer <kbd>Space</kbd></button>
-          <button class="btn lg ghost" id="back">Back to board ↩</button>
-        </div>`;
-      const showAns = () => { $('#ans', view).classList.remove('hidden'); $('#show', view).classList.add('hidden'); };
-      $('#show', view).onclick = showAns;
-      $('#back', view).onclick = close;
-      $$('.jt', view).forEach(row => {
-        const tid = row.dataset.id;
-        $('.ok', row).onclick = () => {
-          if (judged[tid]) return;
-          judged[tid] = 'ok'; $('.ok', row).classList.add('done');
-          winner = tid;
-          Scores.add(tid, plus); Sfx.correct(); showAns();
-          if (ddInfo) confetti(1800);
-          setTimeout(close, ddInfo ? 2000 : 1400);
-        };
-        $('.no', row).onclick = () => {
-          if (judged[tid]) return;
-          judged[tid] = 'no'; $('.no', row).classList.add('done');
-          if (minus) Scores.add(tid, -minus);
-          Sfx.wrong();
-          if (ddInfo) { showAns(); setTimeout(close, 2600); }
-        };
-      });
+        <div class="bq" id="bq"></div>
+        <div class="home-actions bq-actions" id="bqActs"></div>`;
+      const bq = $('#bq', view);
+      const acts = (html, hs = {}) => { $('#bqActs', view).innerHTML = html; Object.entries(hs).forEach(([id, fn]) => { const b = $('#' + id, view); if (b) b.onclick = fn; }); };
+      const showAns = () => $('#ans', view).classList.remove('hidden');
+      const stop = () => clearInterval(timerId);
+      clueTimer = { stop, get paused() { return paused; }, toggle: () => { paused = !paused; $('.btimer', view)?.classList.toggle('paused', paused); } };
+      let paused = false;
+
+      // one team answering: their name, ✓ / ✗, and (for the first try) the clock
+      function answering(t, isSteal) {
+        phase = 'answer';
+        Scores.setActive(t.id);
+        bq.innerHTML = `
+          <div class="bq-row">
+            ${isSteal ? '<span class="steal-tag">🚨 STEAL</span>' : ''}
+            <span class="bq-team" style="--tc:${t.color}">${esc(t.name)}</span>
+            ${isSteal ? '' : `<div class="timer btimer" id="btimer" title="Click to pause"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="${R}" stroke="rgba(255,255,255,.18)" stroke-width="10" fill="rgba(0,0,0,.25)"/>
+              <circle class="ring" cx="50" cy="50" r="${R}" stroke="#ffd23f" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0" style="transition:stroke-dashoffset .1s linear"/></svg><div class="num">${total}</div></div>`}
+            <button class="btn lg green bq-ok" id="bOk">✓ Right <small>+${fmt(plus)}</small></button>
+            <button class="btn lg red bq-no" id="bNo">✗ Wrong${minus ? ` <small>−${fmt(minus)}</small>` : ''}</button>
+          </div>`;
+        $('#bOk', view).onclick = () => right(t);
+        $('#bNo', view).onclick = () => wrong(t, false);
+        acts(isSteal ? `<button class="btn ghost" id="bCancel">↩ Not them — back to steals</button>` : `<button class="btn ghost" id="bBack">Back to board ↩</button>`,
+          { bCancel: stealMenu, bBack: () => { stop(); close(); } });
+        if (isSteal) return;
+        // the clock
+        left = total; paused = false;
+        const tb = $('#btimer', view);
+        tb.onclick = () => clueTimer.toggle();
+        let lastSec = total;
+        timerId = setInterval(() => {
+          if (paused || App.current !== 'boardPlay') return;
+          left = Math.max(0, left - 0.1);
+          const s = Math.ceil(left);
+          $('.num', tb).textContent = s;
+          $('.ring', tb).style.strokeDashoffset = C * (1 - left / total);
+          tb.classList.toggle('low', s <= 5);
+          if (s !== lastSec) { lastSec = s; if (s <= 5 && s > 0) Sfx.tick(); }
+          if (left <= 0) { Sfx.buzz(); wrong(t, true); }
+        }, 100);
+      }
+      function right(t) {
+        if (phase !== 'answer') return;
+        stop(); phase = 'done';
+        winner = t.id;
+        Scores.add(t.id, plus); Sfx.correct(); showAns();
+        if (ddInfo) confetti(1800);
+        bq.innerHTML = `<div class="bq-msg"><span style="color:var(--green)">✓ Correct!</span> ${esc(t.name)} +${fmt(plus)} — and they pick next.</div>`;
+        acts('');
+        setTimeout(close, ddInfo ? 2400 : 1800);
+      }
+      function wrong(t, timedOut) {
+        if (phase !== 'answer') return;
+        stop();
+        tried.add(t.id);
+        // running out the clock costs nothing; a wrong answer can (Settings)
+        if (!timedOut && minus) Scores.add(t.id, -minus);
+        if (!timedOut) Sfx.wrong();
+        const why = timedOut ? `⏰ Time's up, ${esc(t.name)}!` : `✗ Not quite, ${esc(t.name)}${minus ? ` −${fmt(minus)}` : ''}.`;
+        if (ddInfo) return nobody(why);
+        stealMenu(why);
+      }
+      function stealMenu(why) {
+        phase = 'steal';
+        Scores.setActive(null);
+        const open = Scores.teams().filter(x => !tried.has(x.id));
+        if (!open.length) return nobody(`${typeof why === 'string' ? why + ' ' : ''}Every team has tried.`);
+        bq.innerHTML = `
+          ${typeof why === 'string' ? `<div class="bq-msg bad">${why}</div>` : ''}
+          <div class="bq-steal-title">🚨 STEAL! Who wants it? <span class="hint">Tap the first team to call out.</span></div>
+          <div class="bq-steal">${Scores.teams().map(x => `<button class="bq-st ${tried.has(x.id) ? 'out' : ''}" data-id="${x.id}" style="--tc:${x.color}" ${tried.has(x.id) ? 'disabled' : ''}>${tried.has(x.id) ? '✗ ' : ''}${esc(x.name)}</button>`).join('')}</div>`;
+        $$('.bq-st:not(.out)', view).forEach(b => b.onclick = () => { Sfx.click(); answering(Scores.teams().find(x => x.id === b.dataset.id), true); });
+        acts(`<button class="btn lg yellow" id="bNobody">Nobody — show answer <kbd>Space</kbd></button>`, { bNobody: () => nobody('') });
+      }
+      function nobody(why) {
+        stop(); phase = 'done';
+        Scores.setActive(null);
+        showAns(); Sfx.reveal();
+        bq.innerHTML = `<div class="bq-msg ${why ? 'bad' : ''}">${why || 'No points this time.'} Here's the answer — the next team picks.</div>`;
+        acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
+      }
+
+      answering(owner, false);
       setKeys(e => {
-        if (Modal.stack.length) return;
-        if (e.code === 'Space') { e.preventDefault(); $('#ans', view).classList.contains('hidden') ? showAns() : close(); }
-        if (e.key === 'Escape') close();
+        if (Modal.stack.length || Menu.isOpen()) return;
+        if (e.code === 'Space') { e.preventDefault(); if (phase === 'done') close(); else if (phase === 'steal') nobody(''); }
+        if (e.key === 'Escape') { stop(); close(); }
       });
+      closeHooks.push(stop);
     }
   }
   function boardDone() {
@@ -219,5 +287,5 @@ App.screens.boardPlay = (el, name) => {
   }
   let cleanupKey = () => {};
   drawBoard();
-  return () => cleanupKey();
+  return () => { cleanupKey(); clueTimer?.stop?.(); };
 };

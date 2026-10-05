@@ -515,7 +515,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     $('#spin', el).disabled = true; setLetters('none');
     status(`<span class="big">🎉 ${esc(t.name)} solved it! +${fmt(SOLVE_BONUS)} bonus</span>`);
     const last = pIdx + 1 >= puzzles.length;
-    setActions(`<button class="btn lg pink" id="aNext">${last ? 'Final scores 🏁' : 'Next puzzle ▶'}</button>`, { aNext: startPuzzle });
+    setActions(`<button class="btn lg pink" id="aNext">${last ? (d.settings.wheelBonus !== false && !Demo.running ? 'Bonus Round 🏁' : 'Final scores 🏁') : 'Next puzzle ▶'}</button>`, { aNext: startPuzzle });
     phase = 'solved';
   }
 

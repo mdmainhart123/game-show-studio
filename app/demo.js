@@ -99,7 +99,7 @@ const Demo = {
   // ---------- Final Round (shared by Trivia and Quiz Board) ----------
   async finalRound() {
     await this.until(() => App.current === 'finalRound');
-    await this.say('🏆 Every game ends with a <b>Final Round</b>. First you see the category…', 3200);
+    await this.say('🏆 The Quiz Board ends with a <b>Final Round</b>. First you see the category…', 3200);
     await this.say('Each team <b>secretly</b> writes down a bet. The host types them in — they stay hidden 🔒', 3200);
     for (const inp of $$('.wg input')) {
       const t = Scores.teams().find(x => x.id === inp.dataset.id);
@@ -124,7 +124,7 @@ const Demo = {
   scripts: {
     async trivia() {
       const d = App.data;
-      Object.assign(d.settings, { triviaMode: 'turns', finalRound: true });
+      Object.assign(d.settings, { triviaMode: 'turns' });
       App.show('triviaSetup');
       await this.say('⚡ <b>Trivia Blitz</b> — pick a category and how many questions, then press Start.', 3200);
       const qs = shuffle(d.trivia.filter(q => q.wrong.length >= 2)).slice(0, 2).map(q => ({ ...q, time: 45 }));
@@ -143,11 +143,14 @@ const Demo = {
       await this.tap($('.ans.right'));
       $('#stay')?.click();
       await this.say('✅ Another one! Use ◀ ▶ at the top to move between questions. End game is in the ☰ Menu.', 3600);
+      await this.say('After every question the answer stays up for 15 seconds, then the next one appears by itself.', 3400);
       await this.tap('#nextQ');
-      await this.finalRound();
+      await this.until(() => App.current === 'results');
+      await this.say('🏆 The podium shows the winner. Scores reset to 0 for the next game.', 3800);
     },
 
     async board() {
+      const clueTimerPause = () => { const n = App.nav; if (n?.pause && !n.pause.get()) n.pause.toggle(); }; // keep the clock still while the demo talks
       const d = App.data;
       Object.assign(d.settings, { finalRound: true });
       App.show('boardSetup');
@@ -160,13 +163,14 @@ const Demo = {
       const dd = App.boardDD?.[name] || new Set();
       const normal = $$('.tile[data-id]').filter(t => !dd.has(t.dataset.id) && /^[23]00$/.test(t.textContent.replace(/,/g, '')));
       await this.tap(this.pickRandom(normal.length ? normal : $$('.tile[data-id]').filter(t => !dd.has(t.dataset.id))));
-      await this.say('Read the clue out loud. Any team can answer.', 2800);
-      await this.tap($('.jt:nth-child(1) .no'));
-      await this.say('❌ Wrong answers lose the points (you can turn that off in ☰ Menu → Settings)…', 3000);
-      await this.tap('#show');
-      await this.say('Show the answer whenever you\'re ready.', 2200);
-      await this.tap($('.jt:nth-child(2) .ok'));
-      await this.say('✅ Correct earns the points — and that team picks next.', 3200);
+      clueTimerPause();
+      await this.say('Read the clue out loud. Only the team whose pick it is answers — they get <b>15 seconds</b>.', 3600);
+      await this.tap('#bNo');
+      await this.say('❌ Wrong (or out of time)? It\'s a <b>🚨 STEAL!</b> Every other team gets a chance.', 3400);
+      await this.tap($('.bq-st:not(.out)'));
+      await this.say('Tap whichever team calls out first…', 2400);
+      await this.tap('#bOk');
+      await this.say('✅ They stole it! They earn the points — and they pick next.', 3200);
       await this.until(() => !$('.clue-view'));
       const ddTile = $$('.tile[data-id]').find(t => dd.has(t.dataset.id));
       if (ddTile) {
@@ -177,9 +181,9 @@ const Demo = {
         await this.tap($('.dd-wager .btn.orange'));
         await this.say('All in! 😱', 1600);
         await this.tap('#wGo');
-        await this.say('Only that team answers…', 2400);
-        await this.tap('#show');
-        await this.tap($('.jt .ok'));
+        clueTimerPause();
+        await this.say('Only that team answers — no steals on a Daily Double.', 2800);
+        await this.tap('#bOk');
         await this.say('✅ They nailed it and win the whole bet!', 3000);
         await this.until(() => !$('.clue-view'));
       }

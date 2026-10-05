@@ -1,4 +1,4 @@
-const APP_VERSION = '20261005-1745'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261005-1830'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -162,9 +162,9 @@ const App = {
       navNext: () => this.nav?.nextOn && next(),
     });
   },
-  // Every game ends here: the Final Round (if on) and then the podium.
+  // Every game ends here. Quiz Board gets the Final (wager) Round if it's on; then the podium.
   endGame(title, againScreen) {
-    if (this.data.settings.finalRound && this.data.trivia.length) this.show('finalRound', title, againScreen);
+    if (title === 'Quiz Board' && this.data.settings.finalRound && this.data.trivia.length) this.show('finalRound', title, againScreen);
     else this.show('results', title, againScreen);
   },
   setNavEnabled(backOn, nextOn) {
@@ -387,12 +387,12 @@ function showHelp() {
     title: 'How to play', wide: true,
     body: `<div style="font-size:18px;line-height:1.5">
       <p><b style="color:var(--yellow)">Before you start:</b> open <b>☰ Menu → Teams</b> to set 2–10 team names. Scores reset to 0 when a game ends or you go back Home. To fix a score during a game, use <b>☰ Menu → Fix a score</b>.</p>
-      <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in ☰ Menu → Settings). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
-      <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Click ✓ to award the points or ✗ to take them away (you can turn that off). Whoever gets it right picks next; if nobody does, the next team picks. Click a team's score box to change whose pick it is.</p>
+      <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. After every question the answer stays up for 15 seconds, then the next one appears (click <i>stay here</i> to pause it). Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in ☰ Menu → Settings). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
+      <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Only the team whose pick it is answers, with a 15-second clock (pause it in ☰ Menu). Click ✓ Right to award the points or ✗ Wrong to take them away (you can turn that off). Wrong or out of time? <b>🚨 Steal!</b> — tap whichever team calls out first; a wrong steal crosses that team out and the others can still try. Whoever gets it right (even on a steal) picks next; if nobody does, the next team picks. Daily Doubles can't be stolen. Click a team's score box to change whose pick it is.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. Land on a <b>🎁 MYSTERY</b> wedge and it's worth 1,000 per letter; get a letter right and the team can keep the points or give them up to flip the card: 50/50 for a +2,500 JACKPOT or BANKRUPT. When a team thinks they know it, click <b>Solve it!</b>, have them say it out loud, and type it into the empty squares (keyboard or on-screen letters; ⌫ to fix). <b>Check answer</b> tells you if they got it: right = 500-point bonus, wrong = next team's turn. Points go straight onto the scoreboard at the bottom; BANKRUPT takes away whatever that team earned on the current puzzle. <b>🔓 FREE PLAY</b>: call any letter (vowels free, consonants 500 each) and a miss doesn't cost the turn. <b>🦹 STEAL</b>: take up to 500 points from a team of your choice. In the 🌿 Recovery look, <b>🤝 PAY IT FORWARD</b> gives 300 to another team and 300 to you, and <b>🙏 GRATITUDE</b> earns 500 for sharing something you're grateful for. At the end, the leading team plays a <b>🏁 Bonus Round</b>: R S T L N E are free, they pick 3 consonants and a vowel, then have 30 seconds to say the answer for +2,000 (turn it off in Settings).</p>
       <p><b style="color:var(--green)">🔤 Word Guess</b> — everyone plays together, no teams or points. Find the hidden 5-letter word in 6 tries: type the room's guess and press Enter. <b style="color:#3ee08f">Green</b> = right letter, right spot; <b style="color:var(--yellow)">yellow</b> = in the word, wrong spot; gray = not in the word. Then press Next word.</p>
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
-      <p><b style="color:var(--yellow)">🏆 Final Round</b> — every game ends with one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
+      <p><b style="color:var(--yellow)">🏆 Final Round</b> — after the Quiz Board, there's one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, and the <b>☰ Menu</b> has 🏁 End game, 🏠 Quit to Home and ⏸ Pause. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Look:</b> switch between <b>🎩 Classic</b> (navy &amp; gold), <b>🎈 Playful</b> (the original bright colours) and <b>🌿 Recovery</b> (calm and friendly) in <b>☰ Menu → 🎨 Look</b> or Settings. Recovery also switches every game to the <b>Mental Health &amp; Recovery</b> question set; Classic and Playful use your regular questions.</p>
       <p><b>Tips:</b> Press <kbd>F11</kbd> for full screen on a projector. Press <kbd>Esc</kbd> to close a pop-up.</p></div>`,
@@ -439,14 +439,14 @@ App.screens.settings = (el) => {
         <label class="field"><span>Everyone answers: speed bonus</span>${sel('sSpeed', [[1, 'On (up to +50% for fast reveals)'], [0, 'Off']], s.speedBonus ? 1 : 0)}</label>
       </div>
       <div class="panel"><h3>🎯 Quiz Board</h3>
-        <label class="field"><span>Wrong answers</span>${sel('sDeduct', [[1, 'Subtract the points'], [0, 'No penalty']], s.boardDeduct ? 1 : 0)}</label>
+        <label class="field"><span>Wrong answers (and wrong steals)</span>${sel('sDeduct', [[1, 'Subtract the points'], [0, 'No penalty']], s.boardDeduct ? 1 : 0)}</label>
+        <label class="field"><span>🏆 Final wager round at the end</span>${sel('sFinal', [[1, 'On'], [0, 'Off']], s.finalRound ? 1 : 0)}</label>
       </div>
       <div class="panel"><h3>🎡 Spin &amp; Solve</h3>
         <label class="field"><span>Cost to buy a vowel</span>${sel('sVowel', [0, 100, 250, 500].map(v => [v, v]), s.vowelCost)}</label>
         <label class="field"><span>🏁 Bonus round for the leader at the end</span>${sel('sBonus', [[1, 'On'], [0, 'Off']], s.wheelBonus !== false ? 1 : 0)}</label>
       </div>
       <div class="panel"><h3>🏆 Every game</h3>
-        <label class="field"><span>Final wager round at the end</span>${sel('sFinal', [[1, 'On'], [0, 'Off']], s.finalRound ? 1 : 0)}</label>
         <label class="field"><span>Sound effects</span>${sel('sSound', [[1, 'On'], [0, 'Off']], s.sound ? 1 : 0)}</label>
         <label class="field"><span>Look</span>${sel('sTheme', [['classic', '🎩 Classic — navy & gold'], ['playful', '🎈 Playful — the original bright look'], ['recovery', '🌿 Recovery — friendly look + mental health & recovery questions']], App.look)}</label>
       </div>
