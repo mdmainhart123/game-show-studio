@@ -71,7 +71,7 @@ App.screens.boardPlay = (el, name) => {
     if (pill) { pill.style.setProperty('--tc', t.color); pill.textContent = `🎯 ${t.name}${/s$/i.test(t.name) ? "'" : "'s"} pick`; pill.classList.remove('pop'); void pill.offsetWidth; pill.classList.add('pop'); }
   }
   App.gameBar({
-    extra: `<span class="turn-pill sm" id="bTurn"></span><span style="font-size:18px;font-weight:600;align-self:center;margin:0 6px">${esc(name)} <span class="hint">(${bi + 1} of ${names.length})</span></span>`,
+    extra: `<span class="turn-pill sm" id="bTurn"></span><span class="bname" style="font-size:18px;font-weight:600;align-self:center;margin:0 6px">${esc(name)} <span class="hint">(${bi + 1} of ${names.length})</span></span>`,
     back: () => App.show('boardPlay', names[bi - 1]),
     next: () => App.show('boardPlay', names[bi + 1]),
     backTitle: 'Previous board', nextTitle: 'Next board',

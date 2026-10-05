@@ -1,4 +1,4 @@
-const APP_VERSION = '20261005-1353'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261005-1425'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -541,7 +541,7 @@ App.screens.results = (el, gameName, againScreen) => {
   Scores.resetAll();
   const order = [r[1], r[0], r[2]].filter(Boolean);
   const tied = r.filter(t => t.score === r[0].score);
-  const hs = innerHeight < 800 ? 0.6 : 1;
+  const hs = innerHeight < 500 ? 0.3 : innerWidth < 760 ? 0.45 : innerHeight < 800 ? 0.6 : 1;
   const heights = { 0: 260 * hs, 1: 190 * hs, 2: 140 * hs };
   el.innerHTML = `
     <div class="results">
