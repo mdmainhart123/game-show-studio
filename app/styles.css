@@ -1176,7 +1176,7 @@ body .award, body.theme-classic .award, body.theme-recovery .award { background:
 /* Word Guess: clearer keyboard colors + selectable squares */
 .wg-kb .k { background: rgba(255,255,255,.28); }
 body.theme-classic .wg-kb .k { background: rgba(255,255,255,.22); }
-body .wg-kb .k.x, body.theme-classic .wg-kb .k.x, body.theme-recovery .wg-kb .k.x { background: #0d0b16; color: rgba(255,255,255,.8); text-decoration: line-through; text-decoration-thickness: 3px; text-decoration-color: #ff6b6b; box-shadow: inset 0 0 0 2px rgba(255,255,255,.12); }
+body .wg-kb .k.x, body.theme-classic .wg-kb .k.x, body.theme-recovery .wg-kb .k.x { background: #0d0b16; color: rgba(255,255,255,.8); box-shadow: inset 0 0 0 2px rgba(255,255,255,.12); }
 .wg-kb .k.del { font-size: 15px; }
 .wr.cur .wt { cursor: pointer; }
 .wr.cur .wt.sel { border-color: var(--yellow) !important; box-shadow: 0 0 0 3px var(--yellow); }
