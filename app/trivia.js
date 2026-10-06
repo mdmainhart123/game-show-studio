@@ -80,6 +80,7 @@ App.screens.triviaPlay = (el, questions) => {
     App.setNavEnabled(idx > 0, true);
     const q = questions[idx];
     Played.mark(q);
+    HostView.set({ game: '⚡ Trivia Blitz', meta: `${q.category || 'General'} · Question ${idx + 1} of ${questions.length}`, prompt: q.question, answer: q.answer });
     const rec = records[idx];
     order = rec ? rec.order : shuffle([q.answer, ...q.wrong]);
     total = timeLeft = q.time || 20;
@@ -214,6 +215,7 @@ App.screens.triviaTurns = (el, questions) => {
     App.setNavEnabled(idx > 0, true);
     const q = questions[idx];
     Played.mark(q);
+    HostView.set({ game: '⚡ Trivia Blitz', meta: `${q.category || 'General'} · Question ${idx + 1} of ${questions.length}`, prompt: q.question, answer: q.answer });
     rec = records[idx] ||= { order: shuffle([q.answer, ...q.wrong]), out: [], tried: new Set(), log: [], done: false };
     el.innerHTML = `
       <div class="tq-wrap">

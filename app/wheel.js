@@ -165,6 +165,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     rows = GSData.layoutPuzzle(puzzle.phrase).rows;
     shown = new Set(); usedLetters = new Set(); bank = {};
     flipped = new Set(); mysteryIdx = null; // Mystery wedges reset each puzzle
+    HostView.set({ game: '🎡 Spin & Solve', meta: `${puzzle.category} · Puzzle ${pIdx + 1} of ${puzzles.length}`, answer: puzzle.phrase, answerLabel: 'Puzzle' });
     drawWheel();
     teams.forEach(t => bank[t.id] = 0);
     // Puzzle 1: first team. After that: the team with the most points starts
@@ -570,6 +571,7 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   const GIVEN = 'RSTLNE', CONS = 'BCDFGHJKLMNPQRSTVWXYZ';
   const pool = d.wheel.filter(p => !usedIds.includes(p.id));
   const puzzle = shuffle(pool.length ? pool : d.wheel)[0];
+  HostView.set({ game: '🏁 Bonus Round', meta: puzzle.category, answer: puzzle.phrase, answerLabel: 'Puzzle' });
   const rows = GSData.layoutPuzzle(puzzle.phrase).rows;
   const shown = new Set(), picks = [];
   let phase = 'intro', timerId, left = 30, slots = [], cursor = 0;

@@ -107,10 +107,12 @@ App.screens.boardPlay = (el, name) => {
       }).join('')).join('')}
     </div>`;
     $$('.tile[data-id]', el).forEach(b => b.onclick = () => openClue(b.dataset.id));
+    HostView.set({ game: `🎯 ${name}`, idle: 'Waiting for the next pick…' });
   }
 
   function openClue(id) {
     const clue = App.data.board.find(c => c.id === id);
+    HostView.set({ game: `🎯 ${name}`, meta: `${clue.category} · ${fmt(clue.value)}${dd.has(id) ? ' · 🎲 Daily Double' : ''}`, prompt: clue.clue, answer: clue.answer });
     used.add(id);
     Played.mark(clue);
     App.setNavEnabled(false, false); // finish the clue before switching boards

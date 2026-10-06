@@ -76,6 +76,7 @@ App.screens.wordsPlay = (el, words, opts = {}) => {
     if (i >= words.length) { words = shuffle(words); i = 0; } // loop forever through the list
     wIdx = i;
     target = words[i].word; hint = words[i].hint;
+    HostView.set({ game: '🔤 Word Guess', meta: `Word ${i + 1}${hint ? ` · Hint: ${hint}` : ''}`, answer: target, answerLabel: 'Word' });
     guesses = []; cur = Array(WG_LEN).fill(''); pos = 0; keys = {}; phase = 'guess';
     App.setNavEnabled(wIdx > 0, true);
     $('#wCount', el).textContent = `Word ${wIdx + 1}`;

@@ -1,4 +1,4 @@
-const APP_VERSION = '20261006-1725'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261006-1740'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -137,6 +137,7 @@ const App = {
     this.nav = null;
     this.chipClick = null;
     Menu.close();
+    HostView.state = { idle: name === 'home' ? 'Pick a game on the big screen.' : 'Nothing to answer right now.' };
     const r = this.screens[name](el, ...args);
     if (typeof r === 'function') this.cleanup = r;
     Scores.render();
@@ -213,6 +214,29 @@ const Played = {
 };
 
 // ================= SCOREBOARD =================
+// 🖥️ Host window: the main window tells it what's on screen (question + answer, whose turn, scores).
+const HostView = {
+  ch: ('BroadcastChannel' in window) ? new BroadcastChannel('gss-host') : null,
+  state: {},
+  set(s) { this.state = s || {}; this.send(); },
+  update(s) { Object.assign(this.state, s); this.send(); },
+  send() {
+    if (typeof Demo !== 'undefined' && Demo.running) return; // demos don't drive the host window
+    const teams = App.data?.teams || [], at = teams.find(t => t.id === Scores.active);
+    const msg = { ...this.state, look: App.look, ts: Date.now(),
+      team: this.state.team ?? (App.inGame && at ? at.name : ''), teamColor: this.state.teamColor ?? at?.color,
+      scores: App.inGame ? teams.map(t => ({ name: t.name, color: t.color, score: fmt(t.score), on: t.id === Scores.active })) : [] };
+    try { localStorage.setItem('gss-host', JSON.stringify(msg)); } catch (e) {}
+    try { this.ch?.postMessage(msg); } catch (e) {}
+  },
+  open() {
+    const w = window.open(`host.html?v=${APP_VERSION}`, 'gssHost', 'width=1000,height=640');
+    if (!w) { toast('Your browser blocked the window — allow pop-ups for this site and try again.', true); return; }
+    setTimeout(() => this.send(), 600);
+    toast('Host window opened — drag it onto your laptop screen 🖥️');
+  },
+};
+
 const Scores = {
   active: null, // highlighted team id (whose turn it is)
   teams() { return App.data.teams; },
@@ -230,6 +254,7 @@ const Scores = {
   render() {
     const bar = $('#scorebar');
     document.body.classList.toggle('many-teams', this.teams().length > 6);
+    if (typeof HostView !== 'undefined') HostView.send(); // keep the host window's scores & turn current
     const hide = !App.inGame; // the scoreboard only shows during a game
     bar.classList.toggle('hidden', hide);
     if (hide) return;
@@ -383,7 +408,7 @@ function showHelp() {
     body: `<div style="font-size:18px;line-height:1.5">
       <p><b style="color:var(--yellow)">Before you start:</b> open <b>☰ Menu → Teams</b> to set 2–10 team names. Scores reset to 0 when a game ends or you go back Home. To fix a score during a game, use <b>☰ Menu → Fix a score</b>.</p>
       <p><b style="color:var(--pink)">⚡ Trivia Blitz</b> — <b>Take turns</b> (default): the highlighted team picks an answer; tap it on screen (or press <kbd>A</kbd>–<kbd>D</kbd>). Right = they earn the points and start the next question. After every question the answer stays up for 15 seconds, then the next one appears (click <i>stay here</i> to pause it). Wrong = that answer is crossed out and the next team tries (they lose half the points by default; change it in ☰ Menu → Settings). <b>Everyone answers</b>: all teams answer at once, press <kbd>Space</kbd> to reveal, then click every team that got it right.</p>
-      <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Only the team whose pick it is answers, with a 15-second clock (pause it in ☰ Menu). The answer stays hidden on screen — check it on your printed answer key (☰ Menu → 🖨️ Answer key) and click ✓ Right or ✗ Wrong (wrong answers can cost points; you can turn that off). Wrong or out of time? <b>🚨 STEAL!</b> — tap whichever team calls out first; they get the same 15 seconds and the same ✓ / ✗. If nobody gets it, click <b>Show Answer</b>. Whoever gets it right (even on a steal) picks next; if nobody does, the next team picks. On a Daily Double, the wagering team plays for its bet; if they miss, the other teams can steal it for the clue's normal value. Click a team's score box to change whose pick it is.</p>
+      <p><b style="color:var(--cyan)">🎯 Quiz Board</b> — The highlighted team picks a category and value; click the tile and read the clue. Only the team whose pick it is answers, with a 15-second clock (pause it in ☰ Menu). The answer stays hidden on screen — check it in the 🖥️ Host window on your laptop or on your printed answer key (both in the ☰ Menu) and click ✓ Right or ✗ Wrong (wrong answers can cost points; you can turn that off). Wrong or out of time? <b>🚨 STEAL!</b> — tap whichever team calls out first; they get the same 15 seconds and the same ✓ / ✗. If nobody gets it, click <b>Show Answer</b>. Whoever gets it right (even on a steal) picks next; if nobody does, the next team picks. On a Daily Double, the wagering team plays for its bet; if they miss, the other teams can steal it for the clue's normal value. Click a team's score box to change whose pick it is.</p>
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. Land on a <b>🎁 MYSTERY</b> wedge and it's worth 1,000 per letter; get a letter right and the team can keep the points or give them up to flip the card: 50/50 for a +2,500 JACKPOT or BANKRUPT. When a team thinks they know it, click <b>Solve it!</b>, have them say it out loud, and type it into the empty squares (keyboard or on-screen letters; ⌫ to fix). <b>Check answer</b> tells you if they got it: right = 500-point bonus, wrong = next team's turn. Points go straight onto the scoreboard at the bottom; BANKRUPT takes away whatever that team earned on the current puzzle. <b>🔓 FREE PLAY</b>: call any letter (vowels free, consonants 500 each) and a miss doesn't cost the turn. <b>🦹 STEAL</b>: take up to 500 points from a team of your choice. In the 🌿 Recovery look, <b>🤝 PAY IT FORWARD</b> gives 300 to another team and 300 to you, and <b>🙏 GRATITUDE</b> earns 500 for sharing something you're grateful for. At the end, the leading team plays a <b>🏁 Bonus Round</b>: R S T L N E are free, they pick 3 consonants and a vowel, then have 30 seconds to say the answer for +2,000 (turn it off in Settings).</p>
       <p><b style="color:var(--green)">🔤 Word Guess</b> — everyone plays together, no teams or points. Find the hidden 5-letter word in 6 tries: type the room's guess and press Enter. <b style="color:#3ee08f">Green</b> = right letter, right spot; <b style="color:var(--yellow)">yellow</b> = in the word, wrong spot; gray = not in the word. Then press Next word.</p>
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
@@ -498,6 +523,7 @@ const Menu = {
         <button class="mi" id="mHelp">❓ How to play (rules)</button>
       </section>
       <section><h4>For the host</h4>
+        <button class="mi" id="mHost">🖥️ Host window (answers on your laptop)</button>
         <button class="mi" id="mKey">🖨️ Answer key (print or save as PDF)</button>
       </section>
       <section><h4>Display &amp; data</h4>
@@ -526,6 +552,7 @@ const Menu = {
     $$('[data-demo]', back).forEach(b => b.onclick = () => go(() => Demo.start(b.dataset.demo)));
     q('mHelp').onclick = () => { this.close(); showHelp(); };
     q('mKey').onclick = () => { this.close(); answerKey(); };
+    q('mHost').onclick = () => { this.close(); HostView.open(); };
     q('mSound').onclick = () => { s.sound = !s.sound; App.save(); q('mSound').textContent = s.sound ? '🔊 Sound on' : '🔇 Sound off'; };
     $$('[data-look]', back).forEach(b => b.onclick = async () => {
       if (b.dataset.look === App.look) return;
@@ -593,6 +620,7 @@ App.screens.finalRound = (el, title, againScreen) => {
   const pool = App.data.trivia.filter(q => !played.has(q.id));
   const q = Played.order(pool.length ? pool : App.data.trivia)[0];
   Played.mark(q);
+  HostView.set({ game: '🏆 Final Round', meta: q.category || 'General', prompt: q.question, answer: q.answer });
   const order = shuffle([q.answer, ...q.wrong]);
   const wagers = {};
   const cap = t => Math.max(t.score, FINAL_MIN_CAP);

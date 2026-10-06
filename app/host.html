@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Host view — Game Show Studio</title>
+  <style>
+    :root { --bg: #0e1424; --card: #18213a; --line: rgba(255,255,255,.12); --muted: #9aa6c4; --ans: #ffd23f; }
+    body.theme-classic { --bg: #0b1222; --card: #141f3a; --ans: #d4af6a; }
+    body.theme-recovery { --bg: #173c3a; --card: #1f4c49; --ans: #ffd479; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body { background: var(--bg); color: #fff; font-family: 'Segoe UI', Inter, Arial, sans-serif; display: flex; flex-direction: column; }
+    header { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--line); }
+    header .tag { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+    header .game { font-size: 20px; font-weight: 700; }
+    header .sp { flex: 1; }
+    .chip { background: var(--tc, #555); border-radius: 99px; padding: 6px 16px; font-weight: 700; font-size: 18px; }
+    main { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 18px; padding: 20px 28px; min-height: 0; }
+    .meta { color: var(--muted); font-size: 18px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .prompt { font-size: clamp(20px, 3.4vw, 34px); font-weight: 600; line-height: 1.25; }
+    .ans-box { background: var(--card); border: 2px solid var(--ans); border-radius: 18px; padding: 18px 24px; }
+    .ans-box .lbl { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .ans { font-size: clamp(30px, 6vw, 64px); font-weight: 800; color: var(--ans); line-height: 1.1; word-break: break-word; }
+    .note { color: var(--muted); font-size: 16px; }
+    .idle { color: var(--muted); font-size: 24px; text-align: center; }
+    footer { display: flex; gap: 8px; flex-wrap: wrap; padding: 10px 20px 14px; border-top: 1px solid var(--line); }
+    footer .sc { background: var(--tc); border-radius: 10px; padding: 6px 12px; font-weight: 700; font-size: 15px; }
+    footer .sc.on { outline: 3px solid #fff; }
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <header><span class="tag">🤫 Host only</span><span class="game" id="game">Game Show Studio</span><span class="sp"></span><span class="chip hidden" id="team"></span></header>
+  <main id="main"><div class="idle">Waiting for a game… Keep this window on your laptop screen and the game on the projector.</div></main>
+  <footer id="scores"></footer>
+  <script src="host.js"></script>
+</body>
+</html>
