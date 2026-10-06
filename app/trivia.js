@@ -1,5 +1,17 @@
 // ⚡ Trivia Blitz — multiple choice with timer, host awards teams.
 const NEXT_DELAY = 15; // seconds the answer stays up before the next question appears
+// Counts down inside the Next button ("Next question ▶ 15"); the small ⏸ Stay button stops it.
+// Returns the interval id so the screen can clear it.
+function countdownButton(el, label, fire) {
+  let n = NEXT_DELAY;
+  const btn = () => $('.cd-btn', el);
+  const paint = () => { const b = btn(); if (b) b.innerHTML = `${label} <span class="cd">${n}</span>`; };
+  paint();
+  const id = setInterval(() => { n--; if (n <= 0) { clearInterval(id); fire(); } else paint(); }, 1000);
+  const st = $('#stay', el);
+  if (st) st.onclick = () => { clearInterval(id); const b = btn(); if (b) b.innerHTML = label; st.remove(); };
+  return id;
+}
 App.screens.triviaSetup = (el) => {
   const d = App.data;
   const cats = [...new Set(d.trivia.map(q => q.category || 'General'))].sort();
@@ -56,16 +68,10 @@ App.screens.triviaPlay = (el, questions) => {
     back: () => { if (phase === 'r') applyAward(true); go(idx - 1); },
     next: () => { if (phase === 'r') applyAward(true); go(idx + 1); },
     endTitle: 'Trivia Blitz', endScreen: 'triviaSetup',
+    title: '⚡ Trivia Blitz', backTitle: 'Previous question', nextTitle: 'Next question',
   });
 
   let countT;
-  // After the answer is shown, count down and move on by itself ("stay here" stops it).
-  function autoNext(fire) {
-    let n = NEXT_DELAY;
-    const tickDown = () => { const c = $('#countdown', el); if (c) c.innerHTML = `Next in ${n}… <a href="#" id="stay" style="color:var(--cyan)">stay here</a>`; const st = $('#stay', el); if (st) st.onclick = e => { e.preventDefault(); clearInterval(countT); c.textContent = ''; }; };
-    tickDown();
-    countT = setInterval(() => { n--; if (n <= 0) { clearInterval(countT); fire(); } else tickDown(); }, 1000);
-  }
   function go(i) {
     clearInterval(timerId); clearInterval(countT);
     if (App.current !== 'triviaPlay' || i < 0) return;
@@ -93,7 +99,7 @@ App.screens.triviaPlay = (el, questions) => {
           ${order.map((a, i) => `<div class="ans a${i} ${a === q.answer ? 'right' : 'wrong'}"><div class="shape"><span>${'ABCD'[i]}</span></div><div>${esc(a)}</div></div>`).join('')}
         </div>
         <div class="award" id="award">
-          <span class="hint" style="font-size:18px">Teams: lock in your answer!</span><div class="spacer"></div>
+          <span class="lbl">Lock in your answers!</span><div class="spacer"></div>
           <button class="btn lg yellow" id="reveal">Reveal answer <kbd>Space</kbd></button>
         </div>
       </div>`;
@@ -134,10 +140,10 @@ App.screens.triviaPlay = (el, questions) => {
       <span class="lbl">${revisit ? 'Already scored — fix it if needed:' : 'Who got it right?'} <span style="color:var(--yellow)">+${fmt(pts)}</span></span>
       ${teams.map((t, i) => `<button class="tpick ${picked.has(t.id) ? 'on' : ''}" data-id="${t.id}" style="--tc:${t.color}" title="Key ${(i + 1) % 10}">${esc(t.name)}</button>`).join('')}
       <div class="spacer"></div>
-      ${revisit ? '' : '<span class="hint" id="countdown" style="margin-right:10px"></span>'}
-      <button class="btn lg pink" id="nextBtn">${revisit ? (last ? 'Save &amp; finish 🏁' : 'Save &amp; next ▶') : (last ? 'Award &amp; finish 🏁' : 'Award &amp; next ▶')}</button>`;
+      ${revisit ? '' : '<button class="btn sm ghost" id="stay" title="Stop the countdown">Stay here</button>'}
+      <button class="btn lg pink cd-btn" id="nextBtn">${revisit ? (last ? 'Save &amp; finish 🏁' : 'Save &amp; next ▶') : (last ? 'Award &amp; finish 🏁' : 'Award &amp; next ▶')}</button>`;
     $$('.tpick', el).forEach(b => b.onclick = () => toggle(b.dataset.id));
-    if (!revisit) autoNext(() => $('#nextBtn', el)?.click());
+    if (!revisit) countT = countdownButton(el, last ? 'Award &amp; finish 🏁' : 'Award &amp; next ▶', () => $('#nextBtn', el)?.click());
     $('#nextBtn', el).onclick = () => {
       clearInterval(countT);
       if (phase !== 'r') return;
@@ -183,7 +189,8 @@ App.screens.triviaTurns = (el, questions) => {
   const d = App.data, teams = Scores.teams(), pts = d.settings.triviaPoints;
   // wrong-answer penalty: none / half / full (☰ Menu → Settings)
   const penalty = ({ none: 0, half: Math.round(pts / 20) * 10, full: pts })[d.settings.triviaPenalty] ?? 0;
-  const lostTxt = name => penalty ? `✗ ${esc(name)} −${fmt(penalty)}.` : `✗ Not quite, ${esc(name)}!`;
+  const lostTxt = name => penalty ? `✗ ${esc(name)} −${fmt(penalty)}` : `✗ Not quite, ${esc(name)}`;
+  const bad = s => `<span class="msg-bad">${s}</span>`;
   const records = [];
   let idx = -1, turn = 0, phase, timeLeft, total, timerId, paused, rec, advanceT, countT;
   const R = 52, C = 2 * Math.PI * R;
@@ -193,6 +200,7 @@ App.screens.triviaTurns = (el, questions) => {
     back: () => go(idx - 1),
     next: () => go(idx + 1),
     endTitle: 'Trivia Blitz', endScreen: 'triviaSetup',
+    title: '⚡ Trivia Blitz', backTitle: 'Previous question', nextTitle: 'Next question',
   });
 
   function stopTimers() { clearInterval(timerId); clearTimeout(advanceT); clearInterval(countT); }
@@ -230,7 +238,7 @@ App.screens.triviaTurns = (el, questions) => {
     $$('.ans', el).forEach(b => b.onclick = () => pick(+b.dataset.i));
     rec.out.forEach(markOut);
     if (rec.done) { finish(null, true); return; }
-    startTurn(`${esc(team().name)}, pick an answer!`);
+    startTurn('');
   }
 
   function markOut(o) {
@@ -255,8 +263,8 @@ App.screens.triviaTurns = (el, questions) => {
     phase = 'q'; paused = false;
     setTurnUI();
     $('#tstatus', el).innerHTML = msg;
-    $('#tbtns', el).innerHTML = `<button class="btn yellow" id="giveUp" title="Show the answer, no points">Reveal answer</button>`;
-    $('#giveUp', el).onclick = () => { turn++; finish(`Answer revealed — no points.`); };
+    $('#tbtns', el).innerHTML = `<button class="btn ghost" id="giveUp" title="Show the answer, no points">Reveal answer</button>`;
+    $('#giveUp', el).onclick = () => { turn++; finish(`Answer revealed · no points`); };
     total = timeLeft = q.time || 20;
     $('#timer', el).style.visibility = '';
     $('#tnum').textContent = Math.ceil(timeLeft);
@@ -286,7 +294,7 @@ App.screens.triviaTurns = (el, questions) => {
       rec.log.push(`✓ ${t.name} +${fmt(pts)}`);
       Sfx.correct();
       // correct team keeps control and starts the next question
-      finish(`<span style="color:var(--green)">✓ Correct!</span> ${esc(t.name)} +${fmt(pts)} — they start the next question!`, false, true);
+      finish(`<span class="msg-good">✓ Correct!</span> ${esc(t.name)} +${fmt(pts)}`, false, true);
       return;
     }
     if (penalty) Scores.add(t.id, -penalty);
@@ -297,10 +305,10 @@ App.screens.triviaTurns = (el, questions) => {
     turn++;
     const left = rec.order.length - rec.out.length;
     if (left <= 1 || rec.tried.size >= teams.length) {
-      finish(`<span style="color:#ffb3bb">${lostTxt(t.name)}</span> ${left <= 1 ? 'Only one answer left' : 'Every team has tried'} — here it is!`);
+      finish(`${bad(lostTxt(t.name))} · ${left <= 1 ? 'only one answer left' : 'every team has tried'}`);
       return;
     }
-    startTurn(`<span style="color:#ffb3bb">${lostTxt(t.name)}</span> ${esc(team().name)}, your turn!`);
+    startTurn(`${bad(lostTxt(t.name))} · ${esc(team().name)}'s turn`);
   }
 
   function timeUp() {
@@ -310,8 +318,8 @@ App.screens.triviaTurns = (el, questions) => {
     rec.tried.add(t.id);
     rec.log.push(`⏰ ${t.name} ran out of time`);
     turn++;
-    if (rec.tried.size >= teams.length) { finish(`⏰ Time's up for ${esc(t.name)} — every team has tried!`); return; }
-    startTurn(`⏰ Time's up for ${esc(t.name)}. ${esc(team().name)}, your turn!`);
+    if (rec.tried.size >= teams.length) { finish(`${bad(`⏰ Time's up, ${esc(t.name)}`)} · every team has tried`); return; }
+    startTurn(`${bad(`⏰ Time's up, ${esc(t.name)}`)} · ${esc(team().name)}'s turn`);
   }
 
   // Show the answer, then move on (automatically after a correct answer).
@@ -327,15 +335,11 @@ App.screens.triviaTurns = (el, questions) => {
     pill.style.setProperty('--tc', team().color);
     pill.textContent = `Next up: ${team().name}`;
     const last = idx + 1 >= questions.length;
-    $('#tstatus', el).innerHTML = revisit ? (rec.log.length ? rec.log.map(esc).join(' &nbsp;·&nbsp; ') : 'Answer revealed — no points.') : msg;
-    $('#tbtns', el).innerHTML = `<span class="hint" id="countdown" style="margin-right:10px"></span><button class="btn lg pink" id="nextQ">${last ? 'Final scores 🏁' : 'Next question ▶'}</button>`;
+    $('#tstatus', el).innerHTML = revisit ? (rec.log.length ? rec.log.map(esc).join(' &nbsp;·&nbsp; ') : 'Answer revealed · no points') : msg;
+    const label = last ? 'Final scores 🏁' : 'Next question ▶';
+    $('#tbtns', el).innerHTML = `${revisit ? '' : '<button class="btn sm ghost" id="stay" title="Stop the countdown">Stay here</button>'}<button class="btn lg pink cd-btn" id="nextQ">${label}</button>`;
     $('#nextQ', el).onclick = () => go(idx + 1);
-    if (!revisit) {
-      let n = NEXT_DELAY;
-      const tickDown = () => { const c = $('#countdown', el); if (c) c.innerHTML = `Next in ${n}… <a href="#" id="stay" style="color:var(--cyan)">stay here</a>`; const st = $('#stay', el); if (st) st.onclick = e => { e.preventDefault(); clearInterval(countT); c.textContent = ''; }; };
-      tickDown();
-      countT = setInterval(() => { n--; if (n <= 0) { clearInterval(countT); go(idx + 1); } else tickDown(); }, 1000);
-    }
+    if (!revisit) countT = countdownButton(el, label, () => go(idx + 1));
   }
 
   const onKey = e => {

@@ -48,7 +48,7 @@ App.screens.wordsPlay = (el, words, opts = {}) => {
   App.gameBar({
     back: () => goWord(wIdx - 1),
     next: () => goWord(wIdx + 1),
-    backTitle: 'Previous word', nextTitle: 'Next word',
+    backTitle: 'Previous word', nextTitle: 'Next word', title: '🔤 Word Guess',
   });
 
   el.innerHTML = `

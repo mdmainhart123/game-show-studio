@@ -148,19 +148,14 @@ const App = {
     this.show('home');
   },
 
-  // In-game top bar: just ◀ ▶ (plus any game badge). Home / End game / Pause live in the ☰ Menu.
-  gameBar({ extra = '', handlers = {}, back, next, backTitle = 'Back', nextTitle = 'Next', endTitle, endScreen, pause }) {
+  // In-game top bar: the game's name (+ any badge, like whose turn it is). Previous / Next,
+  // Pause, End game and Home live in the ☰ Menu; ← → keys still move between questions.
+  gameBar({ title = '', extra = '', handlers = {}, back, next, backTitle = 'Back', nextTitle = 'Next', endTitle, endScreen, endLabel, endAction, pause }) {
     this.nav = {
-      back, next, backOn: true, nextOn: true, pause,
-      end: endTitle ? async () => { if (await confirmBox('End the game now?', 'End game')) this.endGame(endTitle, endScreen); } : null,
+      back, next, backTitle, nextTitle, backOn: true, nextOn: true, pause, endLabel,
+      end: endAction || (endTitle ? async () => { if (await confirmBox('End the game now?', 'End game')) this.endGame(endTitle, endScreen); } : null),
     };
-    this.setTopActions(`${extra}
-      <button class="icon-btn nav-arrow" id="navBack" title="${backTitle} (← key)">◀</button>
-      <button class="icon-btn nav-arrow" id="navNext" title="${nextTitle} (→ key)">▶</button>`, {
-      ...handlers,
-      navBack: () => this.nav?.backOn && back(),
-      navNext: () => this.nav?.nextOn && next(),
-    });
+    this.setTopActions(`${title ? `<span class="gb-title">${title}</span>` : ''}${extra}`, handlers);
   },
   // Every game ends here. Quiz Board gets the Final (wager) Round if it's on; then the podium.
   endGame(title, againScreen) {
@@ -484,8 +479,9 @@ const Menu = {
       </section>
       ${inGame ? `
       <section><h4>This game</h4>
+        ${nav?.back || nav?.next ? `<div class="mi-row"><button class="mi" id="mPrev" ${nav.backOn ? '' : 'disabled'}>◀ ${esc(nav.backTitle)}</button><button class="mi" id="mNext" ${nav.nextOn ? '' : 'disabled'}>${esc(nav.nextTitle)} ▶</button></div>` : ''}
         ${nav?.pause ? `<button class="mi" id="mPause">${nav.pause.get() ? '▶ Resume the clock' : '⏸ Pause the clock'}</button>` : ''}
-        ${nav?.end ? `<button class="mi" id="mEnd">🏁 End game &amp; final scores</button>` : ''}
+        ${nav?.end ? `<button class="mi" id="mEnd">${nav.endLabel || '🏁 End game &amp; final scores'}</button>` : ''}
         <button class="mi" id="mHome">🏠 Quit to Home</button>
       </section>
       <section><h4>Fix a score</h4>
@@ -518,6 +514,8 @@ const Menu = {
     // leaving a game from the menu asks first
     const go = async fn => { this.close(); if (inGame && !(await confirmBox('Leave this game? Scores will reset to 0.', 'Leave game'))) return; fn(); };
     if (q('mPause')) q('mPause').onclick = () => { nav.pause.toggle(); q('mPause').textContent = nav.pause.get() ? '▶ Resume the clock' : '⏸ Pause the clock'; };
+    if (q('mPrev')) q('mPrev').onclick = () => { this.close(); nav.backOn && nav.back(); };
+    if (q('mNext')) q('mNext').onclick = () => { this.close(); nav.nextOn && nav.next(); };
     if (q('mEnd')) q('mEnd').onclick = () => { this.close(); nav.end(); };
     if (q('mHome')) q('mHome').onclick = () => go(() => App.show('home'));
     $$('.fix-row', back).forEach(r => $$('button', r).forEach(b => b.onclick = () => {

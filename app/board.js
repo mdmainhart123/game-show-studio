@@ -83,7 +83,7 @@ App.screens.boardPlay = (el, name) => {
     if (pill) { pill.style.setProperty('--tc', t.color); pill.textContent = `🎯 ${t.name}${/s$/i.test(t.name) ? "'" : "'s"} pick`; pill.classList.remove('pop'); void pill.offsetWidth; pill.classList.add('pop'); }
   }
   App.gameBar({
-    extra: `<span class="turn-pill sm" id="bTurn"></span><span class="bname" style="font-size:18px;font-weight:600;align-self:center;margin:0 6px">${esc(name)} <span class="hint">(${bi + 1} of ${names.length})</span></span>`,
+    title: `🎯 ${esc(name)}`, extra: `<span class="turn-pill sm" id="bTurn"></span>`,
     back: () => App.show('boardPlay', names[bi - 1]),
     next: () => App.show('boardPlay', names[bi + 1]),
     backTitle: 'Previous board', nextTitle: 'Next board',
@@ -180,13 +180,23 @@ App.screens.boardPlay = (el, name) => {
       const tried = new Set();
       const R = 40, C = 2 * Math.PI * R;
       let timerId, left, total = CLUE_TIME, phase = 'answer', paused = false;
+      // three layers: category & value on top · the clue in the middle · host controls at the bottom
+      view.classList.add('cv');
       view.innerHTML = `
-        <div class="steal-banner hidden" id="stealBanner">🚨 STEAL!</div>
-        <div class="meta">${esc(clue.category)} · ${ddInfo ? `🎲 Daily Double — ${esc(ddInfo.team.name)} wagered ${fmt(ddInfo.wager)}` : fmt(clue.value)}</div>
-        <div class="clue">${esc(clue.clue)}</div>
-        <div class="answer hidden" id="ans">${esc(clue.answer)}</div>
-        <div class="bq" id="bq"></div>
-        <div class="home-actions bq-actions" id="bqActs"></div>`;
+        <button class="clue-x" id="bX" title="Back to the board (Esc)">✕</button>
+        <div class="cv-top">
+          <div class="steal-banner hidden" id="stealBanner">🚨 STEAL!</div>
+          <div class="meta">${esc(clue.category)} · ${ddInfo ? `🎲 Daily Double — ${esc(ddInfo.team.name)} wagered ${fmt(ddInfo.wager)}` : fmt(clue.value)}</div>
+        </div>
+        <div class="cv-mid">
+          <div class="clue">${esc(clue.clue)}</div>
+          <div class="answer hidden" id="ans">${esc(clue.answer)}</div>
+        </div>
+        <div class="cv-host">
+          <div class="bq" id="bq"></div>
+          <div class="home-actions bq-actions" id="bqActs"></div>
+        </div>`;
+      $('#bX', view).onclick = () => { stop(); close(); };
       const bq = $('#bq', view);
       const acts = (html, hs = {}) => { $('#bqActs', view).innerHTML = html; Object.entries(hs).forEach(([id, fn]) => { const b = $('#' + id, view); if (b) b.onclick = fn; }); };
       const stop = () => clearInterval(timerId);
@@ -206,12 +216,11 @@ App.screens.boardPlay = (el, name) => {
               <circle class="ring" cx="50" cy="50" r="${R}" stroke="#ffd23f" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0" style="transition:stroke-dashoffset .1s linear"/></svg><div class="num">${total}</div></div>
             <button class="btn lg green" id="bOk">✓ Right <small>+${fmt(plus)}</small></button>
             <button class="btn lg red" id="bNo">✗ Wrong${minus ? ` <small>−${fmt(minus)}</small>` : ''}</button>
-          </div>
-          <div class="bq-msg">${isSteal ? `${esc(t.name)}, it's your steal — answer now!` : `${esc(t.name)}, what's your answer?`}</div>`;
+          </div>`;
         $('#bOk', view).onclick = () => right(t);
         $('#bNo', view).onclick = () => wrong(t, false);
-        acts(isSteal ? `<button class="btn ghost" id="bCancel">↩ Not them — back to steals</button>` : `<button class="btn ghost" id="bBack">Back to board ↩</button>`,
-          { bCancel: () => { stop(); stealMenu(); }, bBack: () => { stop(); close(); } });
+        acts(isSteal ? `<button class="link-btn" id="bCancel">↩ Not them — pick another team</button>` : '',
+          { bCancel: () => { stop(); stealMenu(); } });
         left = total; paused = false;
         const tb = $('#btimer', view);
         tb.onclick = () => clueTimer.toggle();
@@ -235,7 +244,7 @@ App.screens.boardPlay = (el, name) => {
         banner(false);
         Scores.add(t.id, plus); Sfx.correct(); showAns();
         if (ddInfo) confetti(1800);
-        bq.innerHTML = `<div class="bq-msg"><span style="color:var(--green)">✓ Correct!</span> ${esc(t.name)} +${fmt(plus)} — and they pick next.</div>`;
+        bq.innerHTML = `<div class="bq-msg"><span class="msg-good">✓ Correct!</span> ${esc(t.name)} +${fmt(plus)}</div>`;
         acts('');
         setTimeout(close, ddInfo ? 2400 : 2000);
       }
@@ -248,7 +257,7 @@ App.screens.boardPlay = (el, name) => {
         const lose = ddInfo ? minus : timedOut ? 0 : minus;
         if (lose) Scores.add(t.id, -lose);
         if (!timedOut) Sfx.wrong();
-        const why = `${timedOut ? `⏰ Time's up, ${esc(t.name)}!` : `✗ Not quite, ${esc(t.name)}.`}${lose ? ` −${fmt(lose)}` : ''}`;
+        const why = `${timedOut ? `⏰ Time's up, ${esc(t.name)}` : `✗ ${esc(t.name)}`}${lose ? ` −${fmt(lose)}` : ''}`;
         if (ddInfo) return nobody(why);
         stealMenu(why);
       }
@@ -260,7 +269,7 @@ App.screens.boardPlay = (el, name) => {
         if (!open.length) return nobody(`${why ? why + ' ' : ''}Every team has tried.`);
         bq.innerHTML = `
           ${why ? `<div class="bq-msg bad">${why}</div>` : ''}
-          <div class="bq-steal-title">Who wants it? <span class="hint">Tap the first team to call out.</span></div>
+          <div class="bq-steal-title">Who wants it? <span class="hint">Tap the first team to call out</span></div>
           <div class="bq-steal">${Scores.teams().map(x => `<button class="bq-st ${tried.has(x.id) ? 'out' : ''}" data-id="${x.id}" style="--tc:${x.color}" ${tried.has(x.id) ? 'disabled' : ''}>${tried.has(x.id) ? '✗ ' : ''}${esc(x.name)}</button>`).join('')}</div>`;
         $$('.bq-st:not(.out)', view).forEach(b => b.onclick = () => { Sfx.click(); answering(Scores.teams().find(x => x.id === b.dataset.id), true); });
         acts(`<button class="btn lg yellow" id="bShow">Nobody — Show Answer <kbd>Space</kbd></button>`, { bShow: () => nobody('') });
@@ -270,7 +279,8 @@ App.screens.boardPlay = (el, name) => {
         banner(false);
         Scores.setActive(null);
         showAns(); Sfx.reveal();
-        bq.innerHTML = `<div class="bq-msg ${why ? 'bad' : ''}">${why || 'No points this time.'} ${ddInfo ? '' : 'The next team picks.'}</div>`;
+        $('#bX', view)?.remove();
+        bq.innerHTML = `<div class="bq-msg ${why ? 'bad' : ''}">${why || 'No points this time'}</div>`;
         acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
       }
 

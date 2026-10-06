@@ -1131,3 +1131,44 @@ body.theme-recovery .bq-msg.bad, body.theme-classic .bq-msg.bad { color: #ffb3bb
   #printKey td:first-child { width: 48px; font-weight: bold; white-space: nowrap; }
   #printKey td.k-ans { width: 32%; font-weight: bold; }
 }
+
+/* ---------- tidy in-game top bar ---------- */
+.gb-title { font-size: 20px; font-weight: 700; opacity: .9; white-space: nowrap; }
+.mi:disabled { opacity: .35; cursor: default; }
+@media (max-width: 760px) { .gb-title { display: none; } }
+
+/* ---------- cleaner host strip (bottom of each game) ---------- */
+body .award, body.theme-classic .award, body.theme-recovery .award { background: none; padding: 4px 4px 0; min-height: 64px; }
+.award .lbl { font-size: 21px; }
+.msg-good { color: var(--green); font-weight: 700; }
+.msg-bad { color: #ffb3bb; font-weight: 700; }
+.cd-btn .cd { display: inline-flex; align-items: center; justify-content: center; min-width: 1.7em; height: 1.7em; margin-left: 8px; border-radius: 99px; background: rgba(0,0,0,.18); font-size: .8em; }
+.tq-top { height: clamp(60px, 11vh, 110px); }
+
+/* Spin & Solve: keyboard only when needed */
+.letters.kb-hidden { display: none; }
+.used-strip { text-align: center; font-size: 18px; letter-spacing: 2px; min-height: 0; }
+.used-strip:empty { display: none; }
+.used-strip b { display: inline-block; min-width: 26px; margin: 0 2px; padding: 2px 4px; border-radius: 6px; background: rgba(255,255,255,.12); text-decoration: line-through; opacity: .8; letter-spacing: 0; }
+.used-strip b.v { background: rgba(255,61,139,.25); }
+.wh-right #actions { min-height: 64px; align-items: center; }
+.pass-link { flex-basis: 100%; text-align: center; font-size: 16px; margin-top: 0; }
+@media (max-width: 760px) and (min-height: 501px) { .used-strip { font-size: 14px; } .used-strip b { min-width: 20px; } }
+@media (max-height: 500px) { .used-strip { font-size: 13px; } .pass-link { font-size: 13px; } }
+
+/* Quiz Board clue: three layers + a close button in the corner */
+.clue-view.cv { justify-content: space-between; padding: clamp(14px, 3vh, 30px) 50px clamp(14px, 3vh, 26px); }
+.cv-top { display: flex; flex-direction: column; align-items: center; min-height: 40px; }
+.cv-mid { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 0; }
+.cv-host { display: flex; flex-direction: column; align-items: center; gap: 6px; min-height: clamp(90px, 16vh, 150px); justify-content: flex-end; }
+.cv-host .bq { margin-top: 0; min-height: 0; }
+.cv-host .bq-actions { margin-top: 4px !important; }
+.cv-host .bq-actions:empty { display: none; }
+.cv-host .link-btn { margin-top: 0; font-size: 16px; }
+.clue-x { position: absolute; top: 14px; right: 16px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,.35); background: rgba(0,0,0,.2); color: #fff; font-size: 20px; cursor: pointer; z-index: 2; }
+.clue-x:hover { background: rgba(0,0,0,.4); }
+.clue-view.cv .clue { margin: 10px 0; }
+.clue-view.cv .answer { margin-bottom: 0; }
+@media (max-width: 760px) and (min-height: 501px) { .clue-view.cv { padding: 14px 14px 12px; } .clue-x { top: 8px; right: 8px; width: 36px; height: 36px; font-size: 16px; } .cv-host { min-height: 0; } }
+@media (max-height: 500px) { .clue-view.cv { padding: 8px 50px 8px; } .clue-x { top: 6px; right: 8px; width: 32px; height: 32px; font-size: 14px; } .cv-host { min-height: 0; } }
+@media (max-width: 760px) and (min-height: 501px) { .cv-host .bq-row .btn { flex: 1 1 40%; justify-content: center; } }

@@ -82,6 +82,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     next: () => navTo(pIdx + 1),
     backTitle: 'Previous puzzle', nextTitle: 'Next puzzle',
     endTitle: 'Spin & Solve', endScreen: 'wheelSetup',
+    title: '🎡 Spin &amp; Solve', extra: `<span class="turn-pill sm" id="wTurn"></span>`,
   });
   async function navTo(i) {
     if (spinning || i < 0) return;
@@ -101,6 +102,7 @@ App.screens.wheelPlay = (el, puzzles) => {
         <div class="puzzle" id="puzzle"></div>
         <div class="wcat" id="wcat"></div>
         <div class="status" id="status"></div>
+        <div class="used-strip" id="used"></div>
         <div class="letters" id="letters">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(L => `<button data-l="${L}" class="${VOWELS.includes(L) ? 'v' : ''}">${L}</button>`).join('')}</div>
         <div class="wh-actions" id="actions"></div>
       </div>
@@ -170,7 +172,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     const leader = teams.reduce((best, t, i) => (t.score > teams[best].score ? i : best), 0);
     turn = pIdx === 0 ? 0 : leader;
     $('#wcat', el).textContent = `${puzzle.category}  ·  Puzzle ${pIdx + 1} of ${puzzles.length}`;
-    drawPuzzle(); setTurnPhase(pIdx === 0 ? `${esc(teams[turn].name)}, you're up — spin the wheel!` : `${esc(teams[turn].name)} has the most points, so you start — spin the wheel!`);
+    drawPuzzle(); setTurnPhase(pIdx === 0 ? `${esc(teams[turn].name)} — spin the wheel!` : `${esc(teams[turn].name)} leads, so they start — spin!`);
   }
   function drawPuzzle(flashLetter) {
     const R = GSData.WHEEL_ROWS, Cn = GSData.WHEEL_COLS;
@@ -195,8 +197,17 @@ App.screens.wheelPlay = (el, puzzles) => {
   const remaining = set => [...new Set(puzzle.phrase.replace(/[^A-Z]/g, ''))].filter(L => set.includes(L) && !shown.has(L));
   const CONS = 'BCDFGHJKLMNPQRSTVWXYZ';
 
-  function renderBanks() { // highlights whose turn it is on the scoreboard
-    Scores.setActive(teams[turn].id);
+  function renderBanks() { // whose turn it is: glowing score box + chip in the top bar
+    const t = teams[turn], pill = $('#wTurn');
+    Scores.setActive(t.id);
+    if (pill && pill.dataset.id !== t.id) { pill.dataset.id = t.id; pill.style.setProperty('--tc', t.color); pill.textContent = `🎡 ${t.name}`; pill.classList.remove('pop'); void pill.offsetWidth; pill.classList.add('pop'); }
+  }
+  // The letter keyboard only shows when a letter is being called (or typed); otherwise
+  // a thin strip lists the letters already used.
+  function showKeys(on) {
+    $('#letters', el).classList.toggle('kb-hidden', !on);
+    const u = $('#used', el), list = [...usedLetters].sort();
+    u.innerHTML = !on && list.length ? `<span class="hint">Used:</span> ${list.map(L => `<b class="${VOWELS.includes(L) ? 'v' : ''}">${L}</b>`).join('')}` : '';
   }
   function status(html) { $('#status', el).innerHTML = html; }
   function setLetters(mode) { // mode: 'cons' | 'vowel' | 'none'
@@ -205,6 +216,7 @@ App.screens.wheelPlay = (el, puzzles) => {
       b.classList.toggle('used', usedLetters.has(L));
       b.disabled = usedLetters.has(L) || mode === 'none' || (mode === 'cons' && isV) || (mode === 'vowel' && !isV); // 'free' = any letter
     });
+    showKeys(mode !== 'none');
   }
   function setActions(html, handlers) {
     $('#actions', el).innerHTML = html;
@@ -221,18 +233,18 @@ App.screens.wheelPlay = (el, puzzles) => {
     $('#spin', el).disabled = !consLeft;
     setLetters('none');
     setActions(`
-      <button class="btn cyan" id="aVowel" ${canVowel ? '' : 'disabled'}>${!vowLeft ? 'All vowels are up' : t.score < d.settings.vowelCost ? `Buy a vowel (needs ${fmt(d.settings.vowelCost)})` : `Buy a vowel (${d.settings.vowelCost})`}</button>
-      <button class="btn green" id="aSolve">Solve it! ✓</button>
-      <button class="btn ghost" id="aPass">Next team ▶</button>`, {
-      aVowel: () => { phase = 'vowel'; status(`${esc(t.name)}: which vowel?`); setLetters('vowel'); $('#spin', el).disabled = true;
-        setActions(`<button class="btn ghost" id="aCancel">Cancel</button>`, { aCancel: () => setTurnPhase(`${esc(t.name)}: spin, buy a vowel, or solve.`) }); },
+      <button class="btn lg cyan" id="aVowel" ${canVowel ? '' : 'disabled'}>${!vowLeft ? 'All vowels are up' : t.score < d.settings.vowelCost ? `Buy a vowel (needs ${fmt(d.settings.vowelCost)})` : `Buy a vowel (${d.settings.vowelCost})`}</button>
+      <button class="btn lg green" id="aSolve">Solve it! ✓</button>
+      <button class="link-btn pass-link" id="aPass">Skip to next team ▶</button>`, {
+      aVowel: () => { phase = 'vowel'; status(`Which vowel?`); setLetters('vowel'); $('#spin', el).disabled = true;
+        setActions(`<button class="btn ghost" id="aCancel">Cancel</button>`, { aCancel: () => setTurnPhase(`Spin, buy a vowel, or solve.`) }); },
       aSolve: solve,
       aPass: () => nextTurn('Next team!'),
     });
   }
   function nextTurn(msg) {
     turn = (turn + 1) % teams.length;
-    setTurnPhase(`${msg} ${esc(teams[turn].name)}, it's your turn.`);
+    setTurnPhase(`${msg} ${esc(teams[turn].name)}'s turn.`);
   }
 
   function spin() {
@@ -270,7 +282,7 @@ App.screens.wheelPlay = (el, puzzles) => {
       else {
         mysteryIdx = wi; spinValue = MYSTERY_VALUE; phase = 'cons';
         Sfx.ding();
-        status(`<span class="big">🎁 MYSTERY!</span> Worth ${fmt(MYSTERY_VALUE)} — ${esc(t.name)}, call a consonant!`);
+        status(`<span class="big">🎁 MYSTERY!</span> ${fmt(MYSTERY_VALUE)} — call a consonant!`);
         setLetters('cons'); setActions('');
         return;
       }
@@ -288,7 +300,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (w === 'FREE PLAY') {
       spinValue = FREE_PLAY_VALUE; phase = 'free';
       Sfx.ding();
-      status(`<span class="big">🔓 FREE PLAY!</span> ${esc(t.name)}: call <b>any</b> letter — vowels are free, consonants are worth ${fmt(FREE_PLAY_VALUE)}, and a miss won't cost your turn.`);
+      status(`<span class="big">🔓 FREE PLAY!</span> Any letter · vowels free · consonants ${fmt(FREE_PLAY_VALUE)} · no lost turn`);
       setLetters('free'); setActions('');
       return;
     }
@@ -297,7 +309,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (w === 'GRATITUDE') return gratitudeWedge(t);
     spinValue = w; phase = 'cons';
     Sfx.ding();
-    status(`<span class="big">${fmt(w)}</span> — ${esc(t.name)}, call a consonant!`);
+    status(`<span class="big">${fmt(w)}</span> — call a consonant!`);
     setLetters('cons');
     setActions('');
   }
@@ -334,7 +346,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     setTimeout(() => {
       if (myst != null && App.current === 'wheelPlay') { offerFlip(t, earned, myst, n, L); return; }
       const done = !remaining(CONS + VOWELS).length;
-      setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! ${earned ? `+${fmt(earned)}. ` : ''}${done ? 'Every letter is up — solve it!' : `${esc(t.name)}: spin, buy a vowel, or solve.`}`);
+      setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! ${earned ? `+${fmt(earned)}. ` : ''}${done ? 'Every letter is up — solve it!' : ''}`);
     }, Math.min(n, 4) * 350 + 400);
   }
   // ---------- 🦹 Steal · 🤝 Pay it forward · 🙏 Gratitude ----------
@@ -348,7 +360,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     $$('.tp', m.el).forEach(b => b.onclick = () => { if (done) return; done = true; m.onClose = null; m.close(); onPick(teams.find(x => x.id === b.dataset.id)); });
     m.onClose = () => { if (!done) { done = true; onNone(); } };
   }
-  const after = (t, msg) => setTurnPhase(`${msg} ${esc(t.name)}: spin, buy a vowel, or solve.`);
+  const after = (t, msg) => setTurnPhase(msg);
   function stealWedge(t) {
     phase = 'special'; Sfx.ding();
     const others = teams.filter(o => o.id !== t.id && o.score > 0);
@@ -408,7 +420,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     const keep = () => {
       if (chosen) return; chosen = true;
       const done = !remaining(CONS + VOWELS).length;
-      setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! +${fmt(earned)}. ${done ? 'Every letter is up — solve it!' : `${esc(t.name)}: spin, buy a vowel, or solve.`}`);
+      setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! +${fmt(earned)}. ${done ? 'Every letter is up — solve it!' : ''}`);
     };
     const m = Modal.open({
       title: '🎁 Mystery wedge!',
@@ -450,7 +462,7 @@ App.screens.wheelPlay = (el, puzzles) => {
       setTimeout(() => {
         m.onClose = null; close();
         if (App.current !== 'wheelPlay') return;
-        if (jackpot) setTurnPhase(`<span class="big">💰 JACKPOT!</span> ${esc(t.name)} +${fmt(JACKPOT)}! Spin, buy a vowel, or solve.`);
+        if (jackpot) setTurnPhase(`<span class="big">💰 JACKPOT!</span> ${esc(t.name)} +${fmt(JACKPOT)}!`);
         else { status(`<span class="big">💥 BANKRUPT!</span> The gamble didn't pay off.`); setTimeout(() => nextTurn('Ouch!'), 1800); }
       }, 3600);
     }
@@ -471,8 +483,9 @@ App.screens.wheelPlay = (el, puzzles) => {
       return slot;
     });
     cursor = 0; markCursor();
-    status(`✍️ ${esc(t.name)}, say your answer! Type it into the empty squares.`);
+    status(`✍️ Say it out loud — type it into the empty squares.`);
     $$('#letters button', el).forEach(b => { b.disabled = false; b.classList.remove('used'); });
+    showKeys(true);
     setActions(`<button class="btn ghost" id="sBack" title="Backspace">⌫ Back</button>
       <button class="btn green" id="sCheck">Check answer ✓</button>
       <button class="btn ghost" id="sCancel">Cancel</button>`, { sBack: backspace, sCheck: checkSolve, sCancel: cancelSolve });
@@ -495,7 +508,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (phase !== 'solving') return;
     drawPuzzle();
     App.setNavEnabled(pIdx > 0, true);
-    setTurnPhase(`${esc(teams[turn].name)}: spin, buy a vowel, or solve.`);
+    setTurnPhase(`Spin, buy a vowel, or solve.`);
   }
   function checkSolve() {
     if (phase !== 'solving') return;
@@ -561,7 +574,7 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   const shown = new Set(), picks = [];
   let phase = 'intro', timerId, left = 30, slots = [], cursor = 0;
   Scores.setActive(t.id);
-  App.setTopActions(`<button class="btn sm ghost" id="bSkip">Skip bonus round ⏭</button>`, { bSkip: done });
+  App.gameBar({ title: '🏁 Bonus Round', endLabel: '⏭ Skip the bonus round', endAction: () => done() });
 
   el.innerHTML = `
     <div class="bonus">
