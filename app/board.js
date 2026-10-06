@@ -171,12 +171,12 @@ App.screens.boardPlay = (el, name) => {
     // 2. ✓ → points, answer shown, they pick next.  ✗ or time's up → 🚨 STEAL.
     // 3. Steal: tap the team that calls out first; same clock, same ✓ / ✗.
     // 4. Nobody gets it → Show Answer, and the next team picks.
-    // Daily Doubles belong to one team only — no steals.
+    // Daily Doubles: only the wagering team plays for the wager; if they miss, others can steal for the clue's value.
     function showClue(ddInfo) {
       if (!ddInfo) Sfx.reveal();
       const owner = ddInfo ? ddInfo.team : picker();
-      const plus = ddInfo ? ddInfo.wager : clue.value;
-      const minus = ddInfo ? ddInfo.wager : (App.data.settings.boardDeduct ? clue.value : 0);
+      let plus = ddInfo ? ddInfo.wager : clue.value;
+      let minus = ddInfo ? ddInfo.wager : (App.data.settings.boardDeduct ? clue.value : 0);
       const tried = new Set();
       const R = 40, C = 2 * Math.PI * R;
       let timerId, left, total = CLUE_TIME, phase = 'answer', paused = false;
@@ -258,7 +258,11 @@ App.screens.boardPlay = (el, name) => {
         if (lose) Scores.add(t.id, -lose);
         if (!timedOut) Sfx.wrong();
         const why = `${timedOut ? `⏰ Time's up, ${esc(t.name)}` : `✗ ${esc(t.name)}`}${lose ? ` −${fmt(lose)}` : ''}`;
-        if (ddInfo) return nobody(why);
+        if (ddInfo) {
+          // the Daily Double team loses its wager; the others can still steal it for the clue's normal value
+          ddInfo = null;
+          plus = clue.value; minus = App.data.settings.boardDeduct ? clue.value : 0;
+        }
         stealMenu(why);
       }
       function stealMenu(why) {

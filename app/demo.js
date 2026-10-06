@@ -184,7 +184,7 @@ const Demo = {
         await this.say('All in! 😱', 1600);
         await this.tap('#wGo');
         clueTimerPause();
-        await this.say('Only that team answers — no steals on a Daily Double.', 2800);
+        await this.say('Only that team answers for the bet. If they miss, the others can still steal it.', 2800);
         await this.tap('#bOk');
         await this.say('✅ They nailed it and win the whole bet!', 3000);
         await this.until(() => !$('.clue-view'));
