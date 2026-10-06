@@ -44,7 +44,7 @@ App.screens.wordsSetup = (el) => {
 
 // Simple, whole-room game: no teams, no points.
 App.screens.wordsPlay = (el, words, opts = {}) => {
-  let wIdx = -1, target, hint, guesses, cur, phase, keys;
+  let wIdx = -1, target, hint, guesses, cur, pos, phase, keys; // cur = the 5 letters being typed, pos = selected square
   App.gameBar({
     back: () => goWord(wIdx - 1),
     next: () => goWord(wIdx + 1),
@@ -58,7 +58,7 @@ App.screens.wordsPlay = (el, words, opts = {}) => {
         <div class="wg-meta"><span id="wCount"></span><span id="wHint"></span></div>
         <div class="status" id="wStatus"></div>
         <div class="wg-kb" id="kb">${['QWERTYUIOP', 'ASDFGHJKL', '+ZXCVBNM-'].map(r => `<div class="kr">${[...r].map(k =>
-          k === '+' ? `<button class="k wide" data-k="ENTER">Enter</button>` : k === '-' ? `<button class="k wide" data-k="BACK">⌫</button>` : `<button class="k" data-k="${k}">${k}</button>`).join('')}</div>`).join('')}</div>
+          k === '+' ? `<button class="k wide" data-k="ENTER">Enter</button>` : k === '-' ? `<button class="k wide del" data-k="BACK" title="Delete a letter (Backspace)">⌫ Delete</button>` : `<button class="k" data-k="${k}">${k}</button>`).join('')}</div>`).join('')}</div>
         <div class="wh-actions" id="wActions"></div>
       </div>
     </div>`;
@@ -76,12 +76,12 @@ App.screens.wordsPlay = (el, words, opts = {}) => {
     if (i >= words.length) { words = shuffle(words); i = 0; } // loop forever through the list
     wIdx = i;
     target = words[i].word; hint = words[i].hint;
-    guesses = []; cur = ''; keys = {}; phase = 'guess';
+    guesses = []; cur = Array(WG_LEN).fill(''); pos = 0; keys = {}; phase = 'guess';
     App.setNavEnabled(wIdx > 0, true);
     $('#wCount', el).textContent = `Word ${wIdx + 1}`;
     $('#wHint', el).innerHTML = opts.hints && hint ? `<span class="pill wg-hint">💡 ${esc(hint)}</span>` : '';
     drawGrid(); drawKeys();
-    status('Shout out a 5-letter word! Type it in and press <b>Enter</b>.');
+    status('Shout out a 5-letter word! Type it in and press <b>Enter</b>. Tap a square to change a letter.');
     playing();
   }
 
@@ -92,10 +92,12 @@ App.screens.wordsPlay = (el, words, opts = {}) => {
       const letters = g ? g.word : isCur ? cur : '';
       return `<div class="wr ${isCur ? 'cur' : ''}" data-r="${r}">${Array.from({ length: WG_LEN }, (_, c) => {
         const L = letters[c] || '';
-        const cls = g ? (r === flipRow ? 'flip pending ' + g.res[c] : g.res[c]) : (L ? 'filled' : '');
-        return `<div class="wt ${cls}" style="${r === flipRow ? `animation-delay:${c * 0.28}s` : ''}">${esc(L)}</div>`;
+        const cls = g ? (r === flipRow ? 'flip pending ' + g.res[c] : g.res[c]) : (L ? 'filled' : '') + (isCur && c === pos ? ' sel' : '');
+        return `<div class="wt ${cls}" ${isCur ? `data-c="${c}"` : ''} style=""${r === flipRow ? `animation-delay:${c * 0.28}s` : ''}">${esc(L)}</div>`;
       }).join('')}</div>`;
     }).join('');
+    // tap a square in the current row to pick it — the next letter typed replaces it
+    $$('.wr.cur .wt', el).forEach(t => t.onclick = () => { if (phase === 'guess') { pos = +t.dataset.c; drawGrid(); } });
     if (flipRow >= 0) $$(`.wr[data-r="${flipRow}"] .wt`, el).forEach((t, c) => setTimeout(() => t.classList.remove('pending'), c * 280 + 250));
   }
   function drawKeys() {
@@ -108,8 +110,19 @@ App.screens.wordsPlay = (el, words, opts = {}) => {
   function press(k) {
     if (phase !== 'guess') return;
     if (k === 'ENTER') return submit();
-    if (k === 'BACK') { cur = cur.slice(0, -1); drawGrid(); return; }
-    if (/^[A-Z]$/.test(k) && cur.length < WG_LEN) { cur += k; drawGrid(); Sfx.click(); }
+    if (k === 'BACK') { // clear the selected square, or the one before it if it's already empty
+      if (!cur[pos] && pos > 0) pos--;
+      cur[pos] = ''; drawGrid(); return;
+    }
+    if (k === 'LEFT') { pos = Math.max(0, pos - 1); drawGrid(); return; }
+    if (k === 'RIGHT') { pos = Math.min(WG_LEN - 1, pos + 1); drawGrid(); return; }
+    if (/^[A-Z]$/.test(k)) {
+      cur[pos] = k;
+      // jump to the next empty square (or just the next one)
+      const nextEmpty = cur.findIndex((x, i) => i > pos && !x);
+      pos = nextEmpty >= 0 ? nextEmpty : Math.min(WG_LEN - 1, pos + 1);
+      drawGrid(); Sfx.click();
+    }
   }
   function shake(msg) {
     const row = $(`.wr[data-r="${guesses.length}"]`, el);
@@ -118,18 +131,19 @@ App.screens.wordsPlay = (el, words, opts = {}) => {
   }
   function submit(force) {
     if (phase !== 'guess') return;
-    if (cur.length < WG_LEN) return shake(`Not enough letters — a guess needs ${WG_LEN}.`);
-    if (!force && !wgValid(cur)) {
-      shake(`<b>${esc(cur)}</b> isn't in the word list. Try another word.`);
-      actions(`<button class="btn ghost" id="giveUp">Reveal the word</button><button class="btn orange" id="force">Use ${esc(cur)} anyway</button>`, {
+    if (cur.some(x => !x)) return shake(`Not enough letters — a guess needs ${WG_LEN}.`);
+    const typed = cur.join('');
+    if (!force && !wgValid(typed)) {
+      shake(`<b>${esc(typed)}</b> isn't in the word list. Tap a square to change a letter, or try another word.`);
+      actions(`<button class="btn ghost" id="giveUp">Reveal the word</button><button class="btn orange" id="force">Use ${esc(typed)} anyway</button>`, {
         giveUp: () => phase === 'guess' && endWord(false, 'The word was:'),
         force: () => submit(true),
       });
       return;
     }
-    const word = cur, res = wgScore(word, target);
+    const word = typed, res = wgScore(word, target);
     guesses.push({ word, res });
-    cur = ''; phase = 'flipping';
+    cur = Array(WG_LEN).fill(''); pos = 0; phase = 'flipping';
     drawGrid(guesses.length - 1);
     actions('');
     Sfx.reveal();
@@ -165,7 +179,8 @@ App.screens.wordsPlay = (el, words, opts = {}) => {
     if (Modal.stack.length || Menu.isOpen() || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
     if (phase === 'done' && (e.key === 'Enter' || e.code === 'Space')) { e.preventDefault(); $('#nextW', el)?.click(); return; }
     if (e.key === 'Enter') { e.preventDefault(); press('ENTER'); }
-    else if (e.key === 'Backspace') { e.preventDefault(); press('BACK'); }
+    else if (e.key === 'Backspace' || e.key === 'Delete') { e.preventDefault(); press('BACK'); }
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); e.stopPropagation(); press(e.key === 'ArrowLeft' ? 'LEFT' : 'RIGHT'); }
     else if (/^[a-z]$/i.test(e.key) && !e.ctrlKey && !e.metaKey) press(e.key.toUpperCase());
   };
   document.addEventListener('keydown', onKey);

@@ -1172,3 +1172,12 @@ body .award, body.theme-classic .award, body.theme-recovery .award { background:
 @media (max-width: 760px) and (min-height: 501px) { .clue-view.cv { padding: 14px 14px 12px; } .clue-x { top: 8px; right: 8px; width: 36px; height: 36px; font-size: 16px; } .cv-host { min-height: 0; } }
 @media (max-height: 500px) { .clue-view.cv { padding: 8px 50px 8px; } .clue-x { top: 6px; right: 8px; width: 32px; height: 32px; font-size: 14px; } .cv-host { min-height: 0; } }
 @media (max-width: 760px) and (min-height: 501px) { .cv-host .bq-row .btn { flex: 1 1 40%; justify-content: center; } }
+
+/* Word Guess: clearer keyboard colors + selectable squares */
+.wg-kb .k { background: rgba(255,255,255,.28); }
+body.theme-classic .wg-kb .k { background: rgba(255,255,255,.22); }
+body .wg-kb .k.x, body.theme-classic .wg-kb .k.x, body.theme-recovery .wg-kb .k.x { background: #0d0b16; color: rgba(255,255,255,.8); text-decoration: line-through; text-decoration-thickness: 3px; text-decoration-color: #ff6b6b; box-shadow: inset 0 0 0 2px rgba(255,255,255,.12); }
+.wg-kb .k.del { font-size: 15px; }
+.wr.cur .wt { cursor: pointer; }
+.wr.cur .wt.sel { border-color: var(--yellow) !important; box-shadow: 0 0 0 3px var(--yellow); }
+@media (max-width: 760px) { .wg-kb .k.del { font-size: 0; } .wg-kb .k.del::before { content: '⌫'; font-size: 18px; } }

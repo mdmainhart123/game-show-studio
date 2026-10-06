@@ -1,4 +1,4 @@
-const APP_VERSION = '20261006-0950'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261006-1705'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -37,7 +37,7 @@ const App = {
       if (e.key === 'Escape' && Modal.stack.length) Modal.stack[Modal.stack.length - 1].close();
       else if (e.key === 'Escape' && Menu.isOpen()) Menu.close();
       // ← / → move through a game (not while typing or in a pop-up)
-      if (this.nav && !Modal.stack.length && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) {
+      if (this.nav && this.current !== 'wordsPlay' && !Modal.stack.length && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) {
         if (e.key === 'ArrowLeft' && this.nav.backOn) { e.preventDefault(); this.nav.back(); }
         if (e.key === 'ArrowRight' && this.nav.nextOn) { e.preventDefault(); this.nav.next(); }
       }
