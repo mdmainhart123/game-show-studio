@@ -206,7 +206,7 @@ App.screens.boardPlay = (el, name) => {
       const showAns = () => $('#ans', view).classList.remove('hidden');
       // 👁 Reveal answer: just shows it — the clock, scores and turns carry on as normal
       // 👁 Reveal answer: while a team is answering it only stops the clock and shows the
-      // answer — you still tap ✓ Right or ✗ Wrong. On the steal screen it ends the clue.
+      // answer — you still tap ✓ Right or 🚨 Steal. On the steal screen it ends the clue.
       const revealAnswer = () => {
         if (phase === 'answer') {
           stop(); showAns();
@@ -227,7 +227,7 @@ App.screens.boardPlay = (el, name) => {
             <div class="timer btimer" id="btimer" title="Click to pause"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="${R}" stroke="rgba(255,255,255,.18)" stroke-width="10" fill="rgba(0,0,0,.25)"/>
               <circle class="ring" cx="50" cy="50" r="${R}" stroke="#ffd23f" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0" style="transition:stroke-dashoffset .1s linear"/></svg><div class="num">${total}</div></div>
             <button class="btn lg green" id="bOk">✓ Right <small>+${fmt(plus)}</small></button>
-            <button class="btn lg red" id="bNo">✗ Wrong${minus ? ` <small>−${fmt(minus)}</small>` : ''}</button>
+            <button class="btn lg red" id="bNo" title="Wrong answer — open it up for a steal">🚨 Steal${minus ? ` <small>−${fmt(minus)}</small>` : ''}</button>
           </div>`;
         $('#bOk', view).onclick = () => right(t);
         $('#bNo', view).onclick = () => wrong(t, false);
