@@ -22,7 +22,7 @@ App.screens.drawSetup = (el) => {
         </div>
         <div class="field-row">
           <label class="field"><span>Time to draw</span><select class="input" id="dTime">
-            ${[45, 60, 90, 120].map(s => `<option value="${s}" ${s === 60 ? 'selected' : ''}>${s} seconds</option>`).join('')}</select></label>
+            ${[45, 60, 90, 120].map(s => `<option value="${s}" ${s === 60 ? 'selected' : ''}>${s} seconds</option>`).join('')}<option value="0">♾️ No time limit</option></select></label>
           <label class="field" id="dRoundsF"><span>Turns per team</span><select class="input" id="dRounds">
             ${[1, 2, 3, 4, 5].map(n => `<option value="${n}" ${n === 3 ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
         </div>
@@ -131,7 +131,7 @@ App.screens.drawPlay = (el, opts) => {
       <div class="dr-big">Got it? Start drawing! ✏️</div><div class="dr-sub">Tap <b>👀 Peek</b> again if you need another look.</div></div>`);
   }
   function drawingCard() {
-    card(`<div class="dr-ready"><div class="dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div><div class="dr-big">✏️ Draw!</div><div class="dr-sub">${teamsMode ? `<b>${esc(team().name)}</b>, shout out your guesses!` : 'Everyone — shout out your guesses!'}</div></div>`);
+    card(`<div class="dr-ready">${opts.time ? `<div class="dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}<div class="dr-big">✏️ Draw!</div><div class="dr-sub">${teamsMode ? `<b>${esc(team().name)}</b>, shout out your guesses!` : 'Everyone — shout out your guesses!'}</div></div>`);
   }
 
   // 2. the clock runs while they draw and guess
@@ -140,8 +140,10 @@ App.screens.drawPlay = (el, opts) => {
     phase = 'draw'; paused = false; left = opts.time;
     drawingCard(); msg('');
     acts(`<button class="btn lg green" id="dGot">✓ Got it!${teamsMode ? ` <small>+${fmt(DRAW_POINTS[word.level] || 100)}</small>` : ''}</button>
+      ${opts.time ? '' : `<button class="btn lg red" id="dStop">✋ Stop${teamsMode ? ' — steal!' : ''}</button>`}
       <button class="btn ghost" id="dPeek2">👀 Peek</button><button class="btn ghost" id="dSkip">⏭ Skip word</button>`,
-      { dGot: () => gotIt(teamsMode ? team() : null), dPeek2: peek, dSkip: skipWord });
+      { dGot: () => gotIt(teamsMode ? team() : null), dStop: () => phase === 'draw' && timeUp(true), dPeek2: peek, dSkip: skipWord });
+    if (!opts.time) return; // ♾️ no time limit: the host taps Got it! or Stop
     showTimer(true);
     left = opts.time;
     const tb = $('#dTimer', el);
@@ -177,15 +179,16 @@ App.screens.drawPlay = (el, opts) => {
     reveal(`<span class="msg-good">✓ Got it!</span>${t ? ` ${esc(t.name)} +${fmt(DRAW_POINTS[word.level] || 100)}` : ''}`);
   }
   // 3. time's up: in team play, any other team can steal it
-  function timeUp() {
-    stop(); Sfx.buzz(); showTimer(false);
+  function timeUp(stopped) {
+    stop(); if (!stopped) Sfx.buzz(); showTimer(false);
+    const why = stopped ? '✋ Stopped' : "⏰ Time's up";
     Played.mark(word);
-    if (!teamsMode) { phase = 'reveal'; reveal(`<span class="msg-bad">⏰ Time's up!</span>`); return; }
+    if (!teamsMode) { phase = 'reveal'; reveal(`<span class="msg-bad">${why}!</span>`); return; }
     phase = 'steal';
     const others = teams.filter(x => x.id !== team().id);
     Scores.setActive(null);
     card(`<div class="steal-banner">🚨 STEAL!</div><div class="dr-sub">Did another team shout out the right answer?</div>`);
-    msg(`<span class="msg-bad">⏰ Time's up, ${esc(team().name)}</span>`);
+    msg(`<span class="msg-bad">${why}, ${esc(team().name)}</span>`);
     acts(`<div class="bq-steal">${others.map(x => `<button class="bq-st" data-id="${x.id}" style="--tc:${x.color}">${esc(x.name)}</button>`).join('')}</div>
       <button class="btn yellow" id="dNobody">Nobody — Show the word <kbd>Space</kbd></button>`, { dNobody: () => { phase = 'reveal'; reveal('No points this time'); } });
     $$('.bq-st', el).forEach(b => b.onclick = () => {

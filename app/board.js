@@ -204,6 +204,8 @@ App.screens.boardPlay = (el, name) => {
       const stop = () => clearInterval(timerId);
       const banner = on => $('#stealBanner', view).classList.toggle('hidden', !on);
       const showAns = () => $('#ans', view).classList.remove('hidden');
+      // 👁 Reveal answer: just shows it — the clock, scores and turns carry on as normal
+      const revealOnly = () => { showAns(); $('#bPeekAns', view)?.remove(); };
       clueTimer = { stop, get paused() { return paused; }, toggle: () => { paused = !paused; $('.btimer', view)?.classList.toggle('paused', paused); } };
 
       // one team answering out loud, with the clock
@@ -221,8 +223,8 @@ App.screens.boardPlay = (el, name) => {
           </div>`;
         $('#bOk', view).onclick = () => right(t);
         $('#bNo', view).onclick = () => wrong(t, false);
-        acts(isSteal ? `<button class="link-btn" id="bCancel">↩ Not them — pick another team</button>` : '',
-          { bCancel: () => { stop(); stealMenu(); } });
+        acts(`<button class="btn ghost" id="bPeekAns" title="Shows the answer on screen — doesn't change scores or turns">👁 Reveal answer</button>${isSteal ? `<button class="link-btn" id="bCancel">↩ Not them — pick another team</button>` : ''}`,
+          { bCancel: () => { stop(); stealMenu(); }, bPeekAns: revealOnly });
         left = total; paused = false;
         const tb = $('#btimer', view);
         tb.onclick = () => clueTimer.toggle();
@@ -278,7 +280,7 @@ App.screens.boardPlay = (el, name) => {
           <div class="bq-steal-title">Who wants it? <span class="hint">Tap the first team to call out</span></div>
           <div class="bq-steal">${Scores.teams().map(x => `<button class="bq-st ${tried.has(x.id) ? 'out' : ''}" data-id="${x.id}" style="--tc:${x.color}" ${tried.has(x.id) ? 'disabled' : ''}>${tried.has(x.id) ? '✗ ' : ''}${esc(x.name)}</button>`).join('')}</div>`;
         $$('.bq-st:not(.out)', view).forEach(b => b.onclick = () => { Sfx.click(); answering(Scores.teams().find(x => x.id === b.dataset.id), true); });
-        acts(`<button class="btn lg yellow" id="bShow">Nobody — Show Answer <kbd>Space</kbd></button>`, { bShow: () => nobody('') });
+        acts(`<button class="btn ghost" id="bPeekAns" title="Shows the answer on screen — doesn't change scores or turns">👁 Reveal answer</button><button class="btn lg yellow" id="bShow">Nobody — Show Answer <kbd>Space</kbd></button>`, { bShow: () => nobody(''), bPeekAns: revealOnly });
       }
       function nobody(why) {
         stop(); phase = 'done';
