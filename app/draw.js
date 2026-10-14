@@ -1,6 +1,6 @@
 // 🎨 Draw It — a Pictionary-style game. One person draws (on a whiteboard, paper or
-// easel) while their team guesses. The word is shown privately: in the 🖥️ Host window,
-// or with a quick "Peek" on the big screen while everyone else looks away.
+// easel) while their team guesses. The artist sees the word privately with a quick
+// "Peek" on the big screen while everyone else looks away.
 const DRAW_POINTS = { easy: 100, medium: 200, hard: 300 };
 const DRAW_LABEL = { easy: '🟢 Easy', medium: '🟡 Medium', hard: '🔴 Hard' };
 
@@ -26,7 +26,7 @@ App.screens.drawSetup = (el) => {
           <label class="field" id="dRoundsF"><span>Turns per team</span><select class="input" id="dRounds">
             ${[1, 2, 3, 4, 5].map(n => `<option value="${n}" ${n === 3 ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
         </div>
-        <div class="hint">Tip: open <b>☰ Menu → 🖥️ Host window</b> on your laptop — the artist can read the word there. Or use <b>👀 Peek</b> on the big screen while everyone else looks away.</div>
+        <div class="hint">Tip: the artist taps <b>👀 Peek</b> to see the word on the big screen while everyone else looks away.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>
       <div><button class="link-btn" id="demo">🎬 Watch a demo first</button></div>`
@@ -107,7 +107,7 @@ App.screens.drawPlay = (el, opts) => {
     $('#dCount', el).textContent = teamsMode ? `Turn ${turnsDone + 1} of ${totalTurns}` : `Word ${wi + 1}`;
     card(`<div class="dr-ready">${teamsMode ? `<span class="dr-team" style="--tc:${team().color}">${esc(team().name)}</span>` : ''}
       <div class="dr-big">Pick an artist! ✏️</div>
-      <div class="dr-sub">Artist: read the word on the <b>host window</b>, or tap <b>👀 Peek</b> while everyone else looks away.</div></div>`);
+      <div class="dr-sub">Artist: tap <b>👀 Peek</b> to see your word — everyone else, look away!</div></div>`);
     msg('');
     acts(`<button class="btn lg ghost" id="dPeek">👀 Peek (artist only)</button><button class="btn lg pink" id="dGo">Start drawing ▶ <kbd>Space</kbd></button>`, { dPeek: peek, dGo: startDrawing });
   }
@@ -167,7 +167,7 @@ App.screens.drawPlay = (el, opts) => {
     Played.mark(word);
     nextWord();
     Sfx.click();
-    toast('New word — check the host window or 👀 Peek');
+    toast('New word — tap 👀 Peek to see it');
     if (phase === 'ready') ready2();
   }
   function gotIt(t) {
