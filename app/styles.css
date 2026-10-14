@@ -1229,3 +1229,4 @@ body.theme-classic .dr-word { color: var(--gold); }
 .dr-top .timer { display: none; }
 .dr-clock.paused { opacity: .45; }
 .dr-clock.paused::after { content: ' ⏸'; font-size: .35em; vertical-align: middle; }
+.btimer.stopped { opacity: .4; }

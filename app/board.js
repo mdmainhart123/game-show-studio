@@ -172,7 +172,7 @@ App.screens.boardPlay = (el, name) => {
     // 1. The team whose pick it is answers against a 15-second clock: host taps ✓ or ✗.
     // 2. ✓ → points, answer shown, they pick next.  ✗ or time's up → 🚨 STEAL.
     // 3. Steal: tap the team that calls out first; same clock, same ✓ / ✗.
-    // 4. 👁 Reveal answer ends it at any point (counts as wrong for whoever is answering); the next team picks.
+    // 4. 👁 Reveal answer stops the clock and shows the answer (still judge ✓ / ✗); on the steal screen it ends the clue.
     // Daily Doubles: only the wagering team plays for the wager; if they miss, others can steal for the clue's value.
     function showClue(ddInfo) {
       if (!ddInfo) Sfx.reveal();
@@ -205,20 +205,18 @@ App.screens.boardPlay = (el, name) => {
       const banner = on => $('#stealBanner', view).classList.toggle('hidden', !on);
       const showAns = () => $('#ans', view).classList.remove('hidden');
       // 👁 Reveal answer: just shows it — the clock, scores and turns carry on as normal
-      // 👁 Reveal answer: stops the clock, shows the answer and ends the clue.
-      // If a team is answering, it counts as wrong for them (points off if that's on in Settings).
+      // 👁 Reveal answer: while a team is answering it only stops the clock and shows the
+      // answer — you still tap ✓ Right or ✗ Wrong. On the steal screen it ends the clue.
       const revealAnswer = () => {
-        if (phase === 'answer' && current) {
-          stop(); tried.add(current.id);
-          if (minus) Scores.add(current.id, -minus);
-          Sfx.wrong();
-          return nobody(`✗ ${esc(current.name)}${minus ? ` −${fmt(minus)}` : ''}`);
+        if (phase === 'answer') {
+          stop(); showAns();
+          $('#btimer', view)?.classList.add('stopped');
+          $('#bPeekAns', view)?.remove();
+          return;
         }
         if (phase === 'steal') nobody('');
       };
-      clueTimer = { stop, get paused() { return paused; }, toggle: () => { paused = !paused; $('.btimer', view)?.classList.toggle('paused', paused); } };
 
-      // one team answering out loud, with the clock
       function answering(t, isSteal) {
         phase = 'answer'; current = t;
         Scores.setActive(t.id);
@@ -233,7 +231,7 @@ App.screens.boardPlay = (el, name) => {
           </div>`;
         $('#bOk', view).onclick = () => right(t);
         $('#bNo', view).onclick = () => wrong(t, false);
-        acts(`<button class="btn ghost" id="bPeekAns" title="Stops the clock, shows the answer and counts it as wrong">👁 Reveal answer</button>${isSteal ? `<button class="link-btn" id="bCancel">↩ Not them — pick another team</button>` : ''}`,
+        acts(`<button class="btn ghost" id="bPeekAns" title="Stops the clock and shows the answer — then tap ✓ or ✗">👁 Reveal answer</button>${isSteal ? `<button class="link-btn" id="bCancel">↩ Not them — pick another team</button>` : ''}`,
           { bCancel: () => { stop(); stealMenu(); }, bPeekAns: revealAnswer });
         left = total; paused = false;
         const tb = $('#btimer', view);
