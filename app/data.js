@@ -129,6 +129,27 @@ beach
 `,
   };
 
+  TEMPLATES.draw = {
+    file: 'draw-it-template.txt',
+    text: `# =============================================================
+#  DRAW IT — word import template  (Game Show Studio)
+# =============================================================
+#  One word or short phrase per line:
+#
+#    word | level
+#
+#  - level is easy, medium or hard (optional — easy if left out).
+#    Easy = 100 points, Medium = 200, Hard = 300.
+#  - Pick things people can draw: objects, animals, actions, places.
+#  - Lines starting with # are notes and are ignored.
+# =============================================================
+
+banana | easy
+roller coaster | medium
+time flies | hard
+`,
+  };
+
   // ================= WHEEL LAYOUT =================
   const WHEEL_COLS = 14, WHEEL_ROWS = 4;
   const WHEEL_ALLOWED = /^[A-Z0-9 '\-&?!,.:]+$/;
@@ -246,6 +267,24 @@ beach
     return { items, problems };
   }
 
+  function parseDraw(text) {
+    const items = [], problems = [], seen = new Set();
+    lines(text).forEach((raw, i) => {
+      const n = i + 1, l = raw.trim();
+      if (!l || isComment(l)) return;
+      const [w, lv] = l.split('|').map(s => s.trim());
+      if (!w) { problems.push(`Line ${n}: no word`); return; }
+      if (w.length > 40) { problems.push(`Line ${n}: "${w}" is too long (40 characters max)`); return; }
+      const key = w.toLowerCase();
+      if (seen.has(key)) { problems.push(`Line ${n}: "${w}" is listed twice — kept the first one`); return; }
+      seen.add(key);
+      let level = (lv || 'easy').toLowerCase();
+      if (!['easy', 'medium', 'hard'].includes(level)) { problems.push(`Line ${n}: level "${lv}" should be easy, medium or hard — used easy`); level = 'easy'; }
+      items.push({ id: uid(), word: w, level });
+    });
+    return { items, problems };
+  }
+
   function parseWords(text) {
     const items = [], problems = [], seen = new Set();
     const dict = typeof root !== 'undefined' && root.GS_WORDS5 ? new Set(root.GS_WORDS5.match(/.{5}/g)) : null;
@@ -332,7 +371,7 @@ CATEGORY: Around the House
     return { version: 1, trivia, board, wheel, words: [] };
   }
 
-  const api = { uid, TEMPLATES, parseTrivia, parseBoard, parseWheel, parseWords, layoutPuzzle, starterData, WHEEL_COLS, WHEEL_ROWS };
+  const api = { uid, TEMPLATES, parseTrivia, parseBoard, parseWheel, parseWords, parseDraw, layoutPuzzle, starterData, WHEEL_COLS, WHEEL_ROWS };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.GSData = api;
 })(this);

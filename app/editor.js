@@ -1,10 +1,12 @@
-// 📝 Question Manager — add / edit / delete / import for all three games.
+// 📝 Question Manager — add / edit / delete / import for every game.
 const TABS = {
   trivia: { label: '⚡ Trivia', color: '#ff3d8b', noun: 'question', parse: 'parseTrivia' },
   board: { label: '🎯 Quiz Board', color: '#2f7bff', noun: 'clue', parse: 'parseBoard' },
   wheel: { label: '🎡 Spin & Solve', color: '#ff7a1f', noun: 'puzzle', parse: 'parseWheel' },
   words: { label: '🔤 Word Guess', color: '#1fb866', noun: 'word', parse: 'parseWords' },
+  draw: { label: '🎨 Draw It', color: '#a35cff', noun: 'drawing word', parse: 'parseDraw' },
 };
+const DRAW_LEVELS = { easy: '🟢 Easy', medium: '🟡 Medium', hard: '🔴 Hard' };
 
 App.screens.editor = (el, startTab = 'trivia') => {
   const d = App.data;
@@ -60,6 +62,12 @@ App.screens.editor = (el, startTab = 'trivia') => {
         <div class="qitem" data-id="${q.id}">
           <div class="qmain"><div class="qtext">${esc(q.question)}</div>
           <div class="qsub"><span class="pill">${esc(q.category || 'General')}</span><span class="pill">⏱ ${q.time || 20}s</span><b>✓ ${esc(q.answer)}</b> &nbsp;·&nbsp; ✗ ${q.wrong.map(esc).join(' · ')}</div></div>
+          <button class="btn sm ghost" data-edit>Edit</button><button class="btn sm red" data-del>🗑</button>
+        </div>`).join('')}</div>`;
+    } else if (tab === 'draw') {
+      box.innerHTML = `<div class="word-list">${items.map(w => `
+        <div class="qitem" data-id="${w.id}">
+          <div class="qmain"><div class="qtext" style="font-weight:700">${esc(w.word)}</div><div class="qsub"><span class="pill">${DRAW_LEVELS[w.level] || DRAW_LEVELS.easy}</span>${w.played ? ' <span class="hint">✓ played</span>' : ''}</div></div>
           <button class="btn sm ghost" data-edit>Edit</button><button class="btn sm red" data-del>🗑</button>
         </div>`).join('')}</div>`;
     } else if (tab === 'words') {
@@ -145,6 +153,11 @@ App.screens.editor = (el, startTab = 'trivia') => {
         <label class="field"><span>✓ Answer *</span><input class="input" id="fA" value="${esc(v.answer)}"></label>
         <div class="hint">Type a new board or category name to create one. Each board shows up to 6 categories × 6 clues.</div>
         <div class="err" id="fErr"></div>`;
+    } else if (tab === 'draw') {
+      body = `
+        <label class="field"><span>Word or phrase to draw *</span><input class="input" id="fW" value="${esc(v.word || '')}" maxlength="40" style="font-size:24px;font-weight:700"></label>
+        <label class="field"><span>Level</span><select class="input" id="fL">${Object.entries(DRAW_LEVELS).map(([k, l]) => `<option value="${k}" ${(v.level || 'easy') === k ? 'selected' : ''}>${l} — ${{ easy: 100, medium: 200, hard: 300 }[k]} points</option>`).join('')}</select></label>
+        <div class="err" id="fErr"></div>`;
     } else if (tab === 'words') {
       body = `
         <label class="field"><span>5-letter word *</span><input class="input" id="fW" value="${esc(v.word || '')}" maxlength="5" style="text-transform:uppercase;letter-spacing:8px;font-size:30px;font-weight:700;max-width:260px"></label>
@@ -158,7 +171,7 @@ App.screens.editor = (el, startTab = 'trivia') => {
         <div class="err" id="fErr" style="margin-top:8px"></div>`;
     }
     const m = Modal.open({
-      title: (isNew ? 'Add ' : 'Edit ') + TABS[tab].noun, body, wide: tab !== 'wheel' && tab !== 'words',
+      title: (isNew ? 'Add ' : 'Edit ') + TABS[tab].noun, body, wide: tab !== 'wheel' && tab !== 'words' && tab !== 'draw',
       actions: [
         ...(isNew ? [] : [{ label: '🗑 Delete', cls: 'red', onClick: async close => {
           if (await confirmBox(`Delete this ${TABS[tab].noun}?`, 'Delete', true)) { d[tab] = d[tab].filter(x => x.id !== item.id); App.save(); close(); draw(); toast('Deleted'); }
@@ -186,6 +199,7 @@ App.screens.editor = (el, startTab = 'trivia') => {
       if (tab === 'board') return { board: $('#fB', mb).value.trim(), category: $('#fC', mb).value.trim(), value: (+$('#fV', mb).value || 0) + 100 };
       if (tab === 'trivia') return { category: $('#fC', mb).value.trim(), time: +$('#fT', mb).value };
       if (tab === 'words') return { hint: $('#fH', mb).value.trim() };
+      if (tab === 'draw') return { level: $('#fL', mb).value };
       return { category: $('#fC', mb).value.trim() };
     }
     function save(mb) {
@@ -205,6 +219,11 @@ App.screens.editor = (el, startTab = 'trivia') => {
         if (!(+val('fV') > 0)) return err('Points must be a number above 0.');
         if (!val('fQ') || !val('fA')) return err('Please fill in both the clue and the answer.');
         rec = { board: val('fB'), category: val('fC'), value: Math.round(+val('fV')), clue: val('fQ'), answer: val('fA') };
+      } else if (tab === 'draw') {
+        const w = val('fW');
+        if (!w) return err('Please type a word or phrase.');
+        if (d.draw.some(x => x.word.toLowerCase() === w.toLowerCase() && x !== item)) return err(`"${w}" is already in your list.`);
+        rec = { word: w, level: $('#fL', mb).value };
       } else if (tab === 'words') {
         const w = val('fW').toUpperCase();
         if (!/^[A-Z]{5}$/.test(w)) return err('The word must be exactly 5 letters (A–Z).');

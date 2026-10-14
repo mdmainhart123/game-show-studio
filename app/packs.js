@@ -2723,3 +2723,383 @@ T: 25
 
 `,
 });
+
+// 🎨 Draw It — starter word lists (added once; edit them in 📝 Questions → 🎨 Draw It)
+window.GS_PACKS.push({
+  id: 'draw-it-starter-2026-10', name: 'Draw It starter words',
+  draw: `apple | easy
+banana | easy
+cat | easy
+dog | easy
+fish | easy
+bird | easy
+house | easy
+tree | easy
+car | easy
+sun | easy
+moon | easy
+star | easy
+cloud | easy
+rain | easy
+snowman | easy
+flower | easy
+boat | easy
+train | easy
+airplane | easy
+ball | easy
+book | easy
+cup | easy
+hat | easy
+shoe | easy
+sock | easy
+chair | easy
+table | easy
+bed | easy
+door | easy
+key | easy
+clock | easy
+phone | easy
+pizza | easy
+ice cream | easy
+cake | easy
+cookie | easy
+egg | easy
+carrot | easy
+pumpkin | easy
+snake | easy
+spider | easy
+turtle | easy
+frog | easy
+rabbit | easy
+duck | easy
+horse | easy
+cow | easy
+pig | easy
+elephant | easy
+giraffe | easy
+lion | easy
+monkey | easy
+bear | easy
+owl | easy
+butterfly | easy
+bee | easy
+ladybug | easy
+whale | easy
+shark | easy
+octopus | easy
+crab | easy
+rainbow | easy
+mountain | easy
+bridge | easy
+castle | easy
+rocket | easy
+robot | easy
+guitar | easy
+drum | easy
+umbrella | easy
+glasses | easy
+crown | easy
+ring | easy
+balloon | easy
+kite | easy
+candle | easy
+lamp | easy
+scissors | easy
+pencil | easy
+hammer | easy
+ladder | easy
+bicycle | easy
+bus | easy
+truck | easy
+tent | easy
+tooth | easy
+eye | easy
+hand | easy
+heart | easy
+ghost | easy
+pirate | easy
+dragon | easy
+cactus | easy
+mushroom | easy
+volcano | easy
+igloo | easy
+anchor | easy
+flag | easy
+envelope | easy
+toothbrush | easy
+sandwich | easy
+hamburger | easy
+hot dog | easy
+popcorn | easy
+snail | easy
+birthday party | medium
+swimming pool | medium
+roller coaster | medium
+traffic light | medium
+fire truck | medium
+lighthouse | medium
+waterfall | medium
+sandcastle | medium
+scarecrow | medium
+treasure map | medium
+haunted house | medium
+campfire | medium
+hot air balloon | medium
+ferris wheel | medium
+skateboard | medium
+snowboarding | medium
+fishing | medium
+juggling | medium
+sneezing | medium
+yawning | medium
+brushing teeth | medium
+walking the dog | medium
+mowing the lawn | medium
+washing dishes | medium
+baking cookies | medium
+taking a selfie | medium
+playing cards | medium
+karate | medium
+ballet | medium
+surfing | medium
+camping | medium
+picnic | medium
+wedding cake | medium
+alarm clock | medium
+vacuum cleaner | medium
+microwave | medium
+toaster | medium
+washing machine | medium
+refrigerator | medium
+grocery store | medium
+parking lot | medium
+mailbox | medium
+doorbell | medium
+spaghetti | medium
+pancakes | medium
+tacos | medium
+sushi | medium
+bowling | medium
+golf | medium
+basketball | medium
+baseball bat | medium
+soccer goal | medium
+tennis racket | medium
+trophy | medium
+magician | medium
+astronaut | medium
+firefighter | medium
+doctor | medium
+chef | medium
+mermaid | medium
+unicorn | medium
+superhero | medium
+vampire | medium
+cowboy | medium
+tornado | medium
+sunrise | medium
+shadow | medium
+fireworks | medium
+thunderstorm | medium
+snowball fight | medium
+sleepwalking | medium
+hiccups | medium
+homework | medium
+library | medium
+museum | medium
+zoo | medium
+airport | medium
+hospital | medium
+beehive | medium
+spider web | medium
+bird nest | medium
+piggy bank | medium
+jigsaw puzzle | medium
+video game | medium
+remote control | medium
+headphones | medium
+time flies | hard
+love | hard
+freedom | hard
+gravity | hard
+imagination | hard
+deja vu | hard
+happiness | hard
+jealousy | hard
+nightmare | hard
+daydream | hard
+echo | hard
+electricity | hard
+Wi-Fi | hard
+password | hard
+social media | hard
+recycling | hard
+breaking news | hard
+rush hour | hard
+traffic jam | hard
+bucket list | hard
+brainstorm | hard
+couch potato | hard
+early bird | hard
+cold feet | hard
+piece of cake | hard
+raining cats and dogs | hard
+break the ice | hard
+butterflies in your stomach | hard
+needle in a haystack | hard
+elephant in the room | hard
+on cloud nine | hard
+spill the beans | hard
+hit the road | hard
+the last straw | hard
+time machine | hard
+black hole | hard
+solar eclipse | hard
+friendship | hard
+curiosity | hard
+procrastination | hard
+multitasking | hard
+retirement | hard
+vacation | hard
+homesick | hard
+sunburn | hard
+jet lag | hard
+writer's block | hard
+birthday wish | hard
+first date | hard
+family reunion | hard
+job interview | hard
+road trip | hard
+hide and seek | hard
+tug of war | hard
+musical chairs | hard`,
+});
+window.GS_PACKS.push({
+  id: 'draw-it-recovery-2026-10', name: 'Draw It — recovery words', bank: 'recovery',
+  draw: `sun | easy
+heart | easy
+hug | easy
+smile | easy
+tree | easy
+flower | easy
+journal | easy
+candle | easy
+cup of tea | easy
+sunrise | easy
+rainbow | easy
+butterfly | easy
+bridge | easy
+path | easy
+mountain | easy
+anchor | easy
+compass | easy
+lighthouse | easy
+garden | easy
+seed | easy
+puppy | easy
+kitten | easy
+book | easy
+guitar | easy
+pillow | easy
+bed | easy
+clock | easy
+calendar | easy
+phone | easy
+water bottle | easy
+apple | easy
+walking shoes | easy
+bicycle | easy
+beach | easy
+waves | easy
+bird | easy
+leaf | easy
+key | easy
+door | easy
+window | easy
+umbrella | easy
+star | easy
+moon | easy
+balloon | easy
+gift | easy
+family | easy
+friends | easy
+coffee mug | easy
+deep breathing | medium
+meditation | medium
+yoga | medium
+going for a walk | medium
+support group | medium
+phone a friend | medium
+writing in a journal | medium
+drinking water | medium
+healthy meal | medium
+good night's sleep | medium
+gardening | medium
+painting | medium
+listening to music | medium
+high five | medium
+thumbs up | medium
+helping hand | medium
+coffee with a friend | medium
+group hug | medium
+campfire chat | medium
+running a race | medium
+climbing a mountain | medium
+crossing a bridge | medium
+finish line | medium
+stepping stones | medium
+puzzle pieces | medium
+toolbox | medium
+life jacket | medium
+safety net | medium
+road map | medium
+stop sign | medium
+team huddle | medium
+celebration | medium
+birthday cake | medium
+trophy | medium
+bubble bath | medium
+quiet time | medium
+nature hike | medium
+fishing trip | medium
+stretching | medium
+dancing | medium
+laughing | medium
+milestone coin | medium
+sunrise walk | medium
+reading a book | medium
+cooking dinner | medium
+petting a dog | medium
+gratitude | hard
+hope | hard
+courage | hard
+patience | hard
+kindness | hard
+trust | hard
+balance | hard
+growth | hard
+healing | hard
+strength | hard
+peace | hard
+resilience | hard
+self-care | hard
+boundaries | hard
+mindfulness | hard
+one day at a time | hard
+fresh start | hard
+comfort zone | hard
+inner peace | hard
+letting go | hard
+asking for help | hard
+turning point | hard
+light at the end of the tunnel | hard
+new chapter | hard
+progress not perfection | hard
+serenity | hard
+forgiveness | hard
+honesty | hard
+change | hard
+reflection | hard
+teamwork | hard
+a good day | hard`,
+});

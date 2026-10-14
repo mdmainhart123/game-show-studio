@@ -311,6 +311,26 @@ const Demo = {
       await this.wait(2600);
       await this.say('🎉 Solved! Press <b>Next word</b> to keep playing.', 3400);
     },
+
+    async draw() {
+      App.show('drawSetup');
+      await this.say('🎨 <b>Draw It</b> — one person draws, their team guesses. Pick the word level and the time, then Start.', 3800);
+      App.show('drawPlay', { mode: 'teams', level: 'mix', time: 60, rounds: 1 });
+      await this.say('The highlighted team picks an <b>artist</b>. Grab a whiteboard, paper or easel!', 3400);
+      await this.say('The artist reads the secret word on the <b>🖥️ Host window</b> (☰ Menu) — or taps <b>👀 Peek</b> while everyone else looks away.', 4200);
+      await this.tap('#dPeek');
+      await this.wait(7200);
+      await this.say('Ready? Press <b>Start drawing</b> to start the clock.', 2600);
+      await this.tap('#dGo');
+      const p = App.nav?.pause; if (p && !p.get()) p.toggle(); // keep the clock still while the demo talks
+      await this.say('✏️ The artist draws — <b>no letters or numbers!</b> Their team shouts out guesses.', 3600);
+      await this.say('Too tricky? <b>⏭ Skip word</b> swaps in a new one.', 2800);
+      await this.tap('#dGot');
+      await this.say('✅ Got it! Easy = 100, Medium = 200, Hard = 300 points.', 3200);
+      await this.say('If time runs out, it\'s a <b>🚨 STEAL</b> — any other team that guessed it gets the points.', 3600);
+      await this.tap('#dNext');
+      await this.say('Then the next team draws. Play as many turns as you chose, then see the final scores.', 3400);
+    },
   },
 };
 

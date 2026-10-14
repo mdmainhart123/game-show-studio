@@ -1,4 +1,4 @@
-const APP_VERSION = '20261006-1740'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261014-1830'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -22,6 +22,7 @@ const App = {
     const fresh = !d || !Array.isArray(d.trivia);
     if (fresh) d = GSData.starterData();
     d.words ||= [];
+    d.draw ||= [];
     d.teams ||= [0, 1, 2].map(i => ({ id: GSData.uid(), name: DEFAULT_TEAM_NAMES[i], color: TEAM_COLORS[i], score: 0 }));
     d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250, triviaPenalty: 'half', finalRound: true, theme: 'classic', wheelBonus: true }, d.settings || {});
     this.data = d;
@@ -60,7 +61,7 @@ const App = {
     (window.GS_PACKS || []).forEach(p => {
       if (d.packsApplied.includes(p.id)) return;
       const parts = [];
-      [['trivia', 'parseTrivia', 'trivia question'], ['board', 'parseBoard', 'board clue'], ['wheel', 'parseWheel', 'puzzle'], ['words', 'parseWords', 'Word Guess word']].forEach(([k, fn, noun]) => {
+      [['trivia', 'parseTrivia', 'trivia question'], ['board', 'parseBoard', 'board clue'], ['wheel', 'parseWheel', 'puzzle'], ['words', 'parseWords', 'Word Guess word'], ['draw', 'parseDraw', 'Draw It word']].forEach(([k, fn, noun]) => {
         if (!p[k]) return;
         const r = GSData[fn](p[k]);
         if (r.problems.length) console.warn('Pack', p.id, k, r.problems);
@@ -68,7 +69,7 @@ const App = {
         const bank = p.bank || 'standard';
         d.bank ||= 'standard';
         if (bank === d.bank) { d[k].forEach(x => delete x.played); d[k].push(...r.items); }
-        else { d.banks ||= {}; const b = (d.banks[bank] ||= { trivia: [], board: [], wheel: [], words: [] }); (b[k] ||= []).forEach(x => delete x.played); b[k].push(...r.items); }
+        else { d.banks ||= {}; const b = (d.banks[bank] ||= { trivia: [], board: [], wheel: [], words: [], draw: [] }); (b[k] ||= []).forEach(x => delete x.played); b[k].push(...r.items); }
         if (r.items.length) parts.push(`${r.items.length} ${noun}${r.items.length === 1 ? '' : 's'}`);
       });
       d.packsApplied.push(p.id);
@@ -93,9 +94,9 @@ const App = {
     d.bank ||= 'standard';
     if (d.bank === name) return;
     d.banks ||= {};
-    d.banks[d.bank] = { trivia: d.trivia, board: d.board, wheel: d.wheel, words: d.words };
-    const next = d.banks[name] || { trivia: [], board: [], wheel: [], words: [] };
-    Object.assign(d, { trivia: next.trivia || [], board: next.board || [], wheel: next.wheel || [], words: next.words || [] });
+    d.banks[d.bank] = { trivia: d.trivia, board: d.board, wheel: d.wheel, words: d.words, draw: d.draw };
+    const next = d.banks[name] || {};
+    Object.assign(d, { trivia: next.trivia || [], board: next.board || [], wheel: next.wheel || [], words: next.words || [], draw: next.draw || [] });
     delete d.banks[name];
     d.bank = name;
   },
@@ -396,6 +397,7 @@ App.screens.home = (el) => {
       <button class="game-card board" data-g="board"><div class="emoji">🎯</div><h2>Quiz Board</h2><p>Pick a category, win the points</p></button>
       <button class="game-card wheel" data-g="wheel"><div class="emoji">🎡</div><h2>Spin &amp; Solve</h2><p>Spin, guess, solve the puzzle</p></button>
       <button class="game-card words" data-g="words"><div class="emoji">🔤</div><h2>Word Guess</h2><p>Crack the 5-letter word</p></button>
+      <button class="game-card draw" data-g="draw"><div class="emoji">🎨</div><h2>Draw It</h2><p>Sketch it, guess it, beat the clock</p></button>
     </div>
     <div class="home-teams">${App.data.teams.map(t => `<span style="--tc:${t.color}">${esc(t.name)}</span>`).join('')}</div>
     <div class="home-hint">Host: teams, questions, settings and demos are in the <b>☰ Menu</b> (top right)</div>`;
@@ -412,6 +414,7 @@ function showHelp() {
       <p><b style="color:var(--orange)">🎡 Spin &amp; Solve</b> — The highlighted team clicks <b>SPIN</b>. If it lands on points, they call a consonant. Click that letter on the keyboard, and they earn the points for each time it appears and spin again. Vowels cost ${App.data.settings.vowelCost}. A miss, BANKRUPT or LOSE A TURN passes to the next team. Land on a <b>🎁 MYSTERY</b> wedge and it's worth 1,000 per letter; get a letter right and the team can keep the points or give them up to flip the card: 50/50 for a +2,500 JACKPOT or BANKRUPT. When a team thinks they know it, click <b>Solve it!</b>, have them say it out loud, and type it into the empty squares (keyboard or on-screen letters; ⌫ to fix). <b>Check answer</b> tells you if they got it: right = 500-point bonus, wrong = next team's turn. Points go straight onto the scoreboard at the bottom; BANKRUPT takes away whatever that team earned on the current puzzle. <b>🔓 FREE PLAY</b>: call any letter (vowels free, consonants 500 each) and a miss doesn't cost the turn. <b>🦹 STEAL</b>: take up to 500 points from a team of your choice. In the 🌿 Recovery look, <b>🤝 PAY IT FORWARD</b> gives 300 to another team and 300 to you, and <b>🙏 GRATITUDE</b> earns 500 for sharing something you're grateful for. At the end, the leading team plays a <b>🏁 Bonus Round</b>: R S T L N E are free, they pick 3 consonants and a vowel, then have 30 seconds to say the answer for +2,000 (turn it off in Settings).</p>
       <p><b style="color:var(--green)">🔤 Word Guess</b> — everyone plays together, no teams or points. Find the hidden 5-letter word in 6 tries: type the room's guess and press Enter. <b style="color:#3ee08f">Green</b> = right letter, right spot; <b style="color:var(--yellow)">yellow</b> = in the word, wrong spot; gray = not in the word. Then press Next word.</p>
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
+      <p><b style="color:#b98cff">🎨 Draw It</b> — One person from the highlighted team draws (whiteboard, paper or easel — no letters or numbers!) while their team guesses. The artist reads the word on the <b>🖥️ Host window</b>, or taps <b>👀 Peek</b> while everyone else looks away. Press <b>Start drawing</b> to run the clock. <b>✓ Got it!</b> = Easy 100 · Medium 200 · Hard 300 points. Out of time? <b>🚨 Steal!</b> — any other team that shouted the right answer gets the points. <b>⏭ Skip word</b> swaps in a new one. Or choose <i>Everyone guesses</i> for no-points fun.</p>
       <p><b style="color:var(--yellow)">🏆 Final Round</b> — after the Quiz Board, there's one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, and the <b>☰ Menu</b> has 🏁 End game, 🏠 Quit to Home and ⏸ Pause. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Look:</b> switch between <b>🎩 Classic</b> (navy &amp; gold), <b>🎈 Playful</b> (the original bright colours) and <b>🌿 Recovery</b> (calm and friendly) in <b>☰ Menu → 🎨 Look</b> or Settings. Recovery also switches every game to the <b>Mental Health &amp; Recovery</b> question set; Classic and Playful use your regular questions.</p>
@@ -519,7 +522,7 @@ const Menu = {
         <button class="mi" data-go="settings">⚙️ Settings</button>
       </section>
       <section><h4>Show the group how to play</h4>
-        <div class="mi-grid"><button class="mi" data-demo="trivia">🎬 ⚡ Trivia</button><button class="mi" data-demo="board">🎬 🎯 Quiz Board</button><button class="mi" data-demo="wheel">🎬 🎡 Spin &amp; Solve</button><button class="mi" data-demo="words">🎬 🔤 Word Guess</button></div>
+        <div class="mi-grid"><button class="mi" data-demo="trivia">🎬 ⚡ Trivia</button><button class="mi" data-demo="board">🎬 🎯 Quiz Board</button><button class="mi" data-demo="wheel">🎬 🎡 Spin &amp; Solve</button><button class="mi" data-demo="words">🎬 🔤 Word Guess</button><button class="mi" data-demo="draw">🎬 🎨 Draw It</button></div>
         <button class="mi" id="mHelp">❓ How to play (rules)</button>
       </section>
       <section><h4>For the host</h4>

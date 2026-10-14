@@ -1,0 +1,16 @@
+# =============================================================
+#  DRAW IT — word import template  (Game Show Studio)
+# =============================================================
+#  One word or short phrase per line:
+#
+#    word | level
+#
+#  - level is easy, medium or hard (optional — easy if left out).
+#    Easy = 100 points, Medium = 200, Hard = 300.
+#  - Pick things people can draw: objects, animals, actions, places.
+#  - Lines starting with # are notes and are ignored.
+# =============================================================
+
+banana | easy
+roller coaster | medium
+time flies | hard
