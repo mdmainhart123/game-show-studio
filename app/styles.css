@@ -1234,3 +1234,37 @@ body.theme-classic .dr-word { color: var(--gold); }
 .bq-row .btn:disabled { opacity: .3; cursor: default; filter: grayscale(.6); }
 .bq-row .btn:disabled.picked { opacity: 1; filter: none; outline: 3px solid #fff; outline-offset: 2px; }
 @media (max-width: 760px) and (min-height: 501px) { .cv-host .bq-row .btn { flex: 1 1 28%; padding: 10px 8px; font-size: 15px; } }
+
+/* ---------- Quiz Board host controls: who's answering → three equal buttons → small links ---------- */
+.bq-who { display: flex; align-items: center; justify-content: center; gap: 14px; }
+.bq-tag { font-size: 18px; font-weight: 700; color: var(--yellow); letter-spacing: 1px; }
+.bq-btns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: min(720px, 100%); }
+.bq-btns .btn { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 12px 10px; min-height: 68px; font-size: 22px; line-height: 1.1; }
+.bq-btns .btn small { font-size: 13px; font-weight: 600; opacity: .85; margin: 0; }
+.bq-btns .btn:disabled { opacity: .3; cursor: default; filter: grayscale(.6); }
+.bq-btns .btn:disabled.picked { opacity: 1; filter: none; outline: 3px solid #fff; outline-offset: 2px; }
+.cv-host .bq-actions { gap: 22px; }
+.cv-host .bq-actions .link-btn { font-size: 17px; }
+.bq-msg:empty { display: none; }
+@media (max-width: 760px) and (min-height: 501px) {
+  .bq-who { gap: 10px; } .bq-tag { font-size: 14px; }
+  .bq-btns { gap: 8px; }
+  .bq-btns .btn { font-size: 16px; min-height: 58px; padding: 8px 4px; border-radius: 14px; }
+  .bq-btns .btn small { font-size: 11px; }
+  .cv-host .bq-actions .link-btn { font-size: 15px; }
+}
+@media (max-height: 500px) {
+  .bq-who { gap: 8px; }
+  .bq-btns { gap: 8px; width: min(560px, 100%); }
+  .bq-btns .btn { font-size: 15px; min-height: 42px; padding: 4px; }
+  .bq-btns .btn small { font-size: 10px; }
+  .cv-host .bq-actions .link-btn { font-size: 13px; }
+}
+.cv-host .bq { width: 100%; align-items: center; }
+.bq-btns { margin: 0 auto; }
+.clue-view.cv .cv-host { width: 100%; }
+.cv-host .bq-steal { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; width: min(720px, 100%); margin: 0 auto; }
+.cv-host .bq-st { padding: 12px 8px; }
+/* keyboard hints mean nothing on a touch screen */
+@media (hover: none) { .btn kbd, .link-btn kbd { display: none; } }
+@media (max-width: 760px) and (min-height: 501px) { .cv-host .bq-steal { grid-template-columns: 1fr 1fr; gap: 8px; } .cv-host .bq-st { font-size: 16px; padding: 10px 6px; } }
