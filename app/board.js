@@ -271,18 +271,20 @@ App.screens.boardPlay = (el, name) => {
         $$('.bq-btns .btn', view).forEach(b => { b.disabled = true; b.classList.toggle('picked', b.id === keep); });
         $('#btimer', view)?.classList.add('stopped');
       }
-      // ✗ Wrong: points off (if that's on), answer shown, no steal — the next team picks
+      // ✗ Wrong: points off (if that's on), no steal, and the answer stays HIDDEN (it can
+      // come back later). The host can still show it with 👁 Reveal answer.
       function wrongNoSteal(t) {
         if (phase !== 'answer') return;
         stop(); phase = 'done';
         tried.add(t.id);
         if (minus) Scores.add(t.id, -minus);
-        Sfx.wrong(); showAns();
+        Sfx.wrong();
         banner(false); Scores.setActive(null);
         lockButtons('bWrong');
         $('#bX', view)?.remove();
         $('#bqMsg', view).innerHTML = `<span class="msg-bad">✗ ${esc(t.name)}${minus ? ` −${fmt(minus)}` : ''}</span>`;
-        acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
+        acts(`<button class="link-btn" id="bShowAns">👁 Reveal answer</button><button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`,
+          { bBack: close, bShowAns: () => { showAns(); $('#bShowAns', view)?.remove(); } });
       }
       function wrong(t, timedOut) {
         if (phase !== 'answer') return;
