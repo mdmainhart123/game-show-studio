@@ -172,7 +172,7 @@ App.screens.boardPlay = (el, name) => {
     // 1. The team whose pick it is answers against a 15-second clock: host taps ✓ or ✗.
     // 2. ✓ → points, answer shown, they pick next.  ✗ or time's up → 🚨 STEAL.
     // 3. Steal: tap the team that calls out first; same clock, same ✓ / ✗.
-    // 4. Nobody gets it → Show Answer, and the next team picks.
+    // 4. 👁 Reveal answer ends it at any point (counts as wrong for whoever is answering); the next team picks.
     // Daily Doubles: only the wagering team plays for the wager; if they miss, others can steal for the clue's value.
     function showClue(ddInfo) {
       if (!ddInfo) Sfx.reveal();
@@ -181,7 +181,7 @@ App.screens.boardPlay = (el, name) => {
       let minus = ddInfo ? ddInfo.wager : (App.data.settings.boardDeduct ? clue.value : 0);
       const tried = new Set();
       const R = 40, C = 2 * Math.PI * R;
-      let timerId, left, total = CLUE_TIME, phase = 'answer', paused = false;
+      let timerId, left, total = CLUE_TIME, phase = 'answer', paused = false, current = null;
       // three layers: category & value on top · the clue in the middle · host controls at the bottom
       view.classList.add('cv');
       view.innerHTML = `
@@ -205,12 +205,22 @@ App.screens.boardPlay = (el, name) => {
       const banner = on => $('#stealBanner', view).classList.toggle('hidden', !on);
       const showAns = () => $('#ans', view).classList.remove('hidden');
       // 👁 Reveal answer: just shows it — the clock, scores and turns carry on as normal
-      const revealOnly = () => { showAns(); $('#bPeekAns', view)?.remove(); };
+      // 👁 Reveal answer: stops the clock, shows the answer and ends the clue.
+      // If a team is answering, it counts as wrong for them (points off if that's on in Settings).
+      const revealAnswer = () => {
+        if (phase === 'answer' && current) {
+          stop(); tried.add(current.id);
+          if (minus) Scores.add(current.id, -minus);
+          Sfx.wrong();
+          return nobody(`✗ ${esc(current.name)}${minus ? ` −${fmt(minus)}` : ''}`);
+        }
+        if (phase === 'steal') nobody('');
+      };
       clueTimer = { stop, get paused() { return paused; }, toggle: () => { paused = !paused; $('.btimer', view)?.classList.toggle('paused', paused); } };
 
       // one team answering out loud, with the clock
       function answering(t, isSteal) {
-        phase = 'answer';
+        phase = 'answer'; current = t;
         Scores.setActive(t.id);
         banner(isSteal);
         bq.innerHTML = `
@@ -223,8 +233,8 @@ App.screens.boardPlay = (el, name) => {
           </div>`;
         $('#bOk', view).onclick = () => right(t);
         $('#bNo', view).onclick = () => wrong(t, false);
-        acts(`<button class="btn ghost" id="bPeekAns" title="Shows the answer on screen — doesn't change scores or turns">👁 Reveal answer</button>${isSteal ? `<button class="link-btn" id="bCancel">↩ Not them — pick another team</button>` : ''}`,
-          { bCancel: () => { stop(); stealMenu(); }, bPeekAns: revealOnly });
+        acts(`<button class="btn ghost" id="bPeekAns" title="Stops the clock, shows the answer and counts it as wrong">👁 Reveal answer</button>${isSteal ? `<button class="link-btn" id="bCancel">↩ Not them — pick another team</button>` : ''}`,
+          { bCancel: () => { stop(); stealMenu(); }, bPeekAns: revealAnswer });
         left = total; paused = false;
         const tb = $('#btimer', view);
         tb.onclick = () => clueTimer.toggle();
@@ -280,7 +290,7 @@ App.screens.boardPlay = (el, name) => {
           <div class="bq-steal-title">Who wants it? <span class="hint">Tap the first team to call out</span></div>
           <div class="bq-steal">${Scores.teams().map(x => `<button class="bq-st ${tried.has(x.id) ? 'out' : ''}" data-id="${x.id}" style="--tc:${x.color}" ${tried.has(x.id) ? 'disabled' : ''}>${tried.has(x.id) ? '✗ ' : ''}${esc(x.name)}</button>`).join('')}</div>`;
         $$('.bq-st:not(.out)', view).forEach(b => b.onclick = () => { Sfx.click(); answering(Scores.teams().find(x => x.id === b.dataset.id), true); });
-        acts(`<button class="btn ghost" id="bPeekAns" title="Shows the answer on screen — doesn't change scores or turns">👁 Reveal answer</button><button class="btn lg yellow" id="bShow">Nobody — Show Answer <kbd>Space</kbd></button>`, { bShow: () => nobody(''), bPeekAns: revealOnly });
+        acts(`<button class="btn lg yellow" id="bPeekAns" title="Nobody got it — show the answer">👁 Reveal answer <kbd>Space</kbd></button>`, { bPeekAns: revealAnswer });
       }
       function nobody(why) {
         stop(); phase = 'done';
