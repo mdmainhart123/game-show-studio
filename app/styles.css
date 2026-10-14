@@ -1230,3 +1230,7 @@ body.theme-classic .dr-word { color: var(--gold); }
 .dr-clock.paused { opacity: .45; }
 .dr-clock.paused::after { content: ' ⏸'; font-size: .35em; vertical-align: middle; }
 .btimer.stopped { opacity: .4; }
+/* Quiz Board: once Right or Wrong is tapped the buttons lock; the chosen one stays lit */
+.bq-row .btn:disabled { opacity: .3; cursor: default; filter: grayscale(.6); }
+.bq-row .btn:disabled.picked { opacity: 1; filter: none; outline: 3px solid #fff; outline-offset: 2px; }
+@media (max-width: 760px) and (min-height: 501px) { .cv-host .bq-row .btn { flex: 1 1 28%; padding: 10px 8px; font-size: 15px; } }

@@ -206,7 +206,7 @@ App.screens.boardPlay = (el, name) => {
       const showAns = () => $('#ans', view).classList.remove('hidden');
       // 👁 Reveal answer: just shows it — the clock, scores and turns carry on as normal
       // 👁 Reveal answer: while a team is answering it only stops the clock and shows the
-      // answer — you still tap ✓ Right or 🚨 Steal. On the steal screen it ends the clue.
+      // answer — you still tap ✓ Right, ✗ Wrong or 🚨 Steal. On the steal screen it ends the clue.
       const revealAnswer = () => {
         if (phase === 'answer') {
           stop(); showAns();
@@ -227,9 +227,12 @@ App.screens.boardPlay = (el, name) => {
             <div class="timer btimer" id="btimer" title="Click to pause"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="${R}" stroke="rgba(255,255,255,.18)" stroke-width="10" fill="rgba(0,0,0,.25)"/>
               <circle class="ring" cx="50" cy="50" r="${R}" stroke="#ffd23f" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0" style="transition:stroke-dashoffset .1s linear"/></svg><div class="num">${total}</div></div>
             <button class="btn lg green" id="bOk">✓ Right <small>+${fmt(plus)}</small></button>
-            <button class="btn lg red" id="bNo" title="Wrong answer — open it up for a steal">🚨 Steal${minus ? ` <small>−${fmt(minus)}</small>` : ''}</button>
-          </div>`;
+            <button class="btn lg red" id="bWrong" title="Wrong — no steal, the clue ends">✗ Wrong${minus ? ` <small>−${fmt(minus)}</small>` : ''}</button>
+            <button class="btn lg orange" id="bNo" title="Wrong — let the other teams steal it">🚨 Steal${minus ? ` <small>−${fmt(minus)}</small>` : ''}</button>
+          </div>
+          <div class="bq-msg" id="bqMsg"></div>`;
         $('#bOk', view).onclick = () => right(t);
+        $('#bWrong', view).onclick = () => wrongNoSteal(t);
         $('#bNo', view).onclick = () => wrong(t, false);
         acts(`<button class="btn ghost" id="bPeekAns" title="Stops the clock and shows the answer — then tap ✓ or ✗">👁 Reveal answer</button>${isSteal ? `<button class="link-btn" id="bCancel">↩ Not them — pick another team</button>` : ''}`,
           { bCancel: () => { stop(); stealMenu(); }, bPeekAns: revealAnswer });
@@ -256,9 +259,28 @@ App.screens.boardPlay = (el, name) => {
         banner(false);
         Scores.add(t.id, plus); Sfx.correct(); showAns();
         if (ddInfo) confetti(1800);
-        bq.innerHTML = `<div class="bq-msg"><span class="msg-good">✓ Correct!</span> ${esc(t.name)} +${fmt(plus)}</div>`;
+        lockButtons('bOk');
+        $('#bqMsg', view).innerHTML = `<span class="msg-good">✓ Correct!</span> ${esc(t.name)} +${fmt(plus)}`;
         acts('');
         setTimeout(close, ddInfo ? 2400 : 2000);
+      }
+      // Right or Wrong ends the clue: the buttons lock (no steal) and the one tapped stays lit
+      function lockButtons(keep) {
+        $$('.bq-row .btn', view).forEach(b => { b.disabled = true; b.classList.toggle('picked', b.id === keep); });
+        $('#btimer', view)?.classList.add('stopped');
+      }
+      // ✗ Wrong: points off (if that's on), answer shown, no steal — the next team picks
+      function wrongNoSteal(t) {
+        if (phase !== 'answer') return;
+        stop(); phase = 'done';
+        tried.add(t.id);
+        if (minus) Scores.add(t.id, -minus);
+        Sfx.wrong(); showAns();
+        banner(false); Scores.setActive(null);
+        lockButtons('bWrong');
+        $('#bX', view)?.remove();
+        $('#bqMsg', view).innerHTML = `<span class="msg-bad">✗ ${esc(t.name)}${minus ? ` −${fmt(minus)}` : ''}</span>`;
+        acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
       }
       function wrong(t, timedOut) {
         if (phase !== 'answer') return;
