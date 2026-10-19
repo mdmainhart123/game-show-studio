@@ -1,4 +1,4 @@
-const APP_VERSION = '20261014-1940'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261019-1500'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -332,26 +332,75 @@ const Sfx = {
     } catch (e) {}
   },
   tick() { this.tone(1200, 0.04, 'square', 0.05); },
-  // Wheel peg: a soft, low wooden "tock" (filtered, quick fade, gentle pitch drop).
-  // Throttled so a fast spin sounds like a smooth clatter instead of a buzz.
-  peg() {
-    if (!App.data?.settings.sound) return;
+  _ac() {
+    if (!App.data?.settings.sound) return null;
+    try { return (this.ctx ||= new (window.AudioContext || window.webkitAudioContext)()); } catch (e) { return null; }
+  },
+  // filtered white-noise burst (clacks, swooshes, applause) — shares one 2-second noise buffer
+  noise(dur, { type = 'bandpass', freq = 1000, q = 1, vol = 0.2, when = 0, attack = 0.002 } = {}) {
+    const c = this._ac(); if (!c) return;
     try {
-      this.ctx ||= new (window.AudioContext || window.webkitAudioContext)();
-      const c = this.ctx, t = c.currentTime;
-      if (this._lastPeg && t - this._lastPeg < 0.055) return;
-      this._lastPeg = t;
-      const o = c.createOscillator(), f = c.createBiquadFilter(), g = c.createGain();
-      o.type = 'triangle';
-      o.frequency.setValueAtTime(230 + Math.random() * 25, t);
-      o.frequency.exponentialRampToValueAtTime(140, t + 0.07);
-      f.type = 'lowpass'; f.frequency.value = 800;
-      g.gain.setValueAtTime(0.0001, t);
-      g.gain.linearRampToValueAtTime(0.16, t + 0.004);
-      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.09);
-      o.connect(f).connect(g).connect(c.destination);
-      o.start(t); o.stop(t + 0.1);
+      if (!this._nb) {
+        this._nb = c.createBuffer(1, c.sampleRate * 2, c.sampleRate);
+        const d = this._nb.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+      }
+      const t = c.currentTime + when, s = c.createBufferSource(), f = c.createBiquadFilter(), g = c.createGain();
+      s.buffer = this._nb; f.type = type; f.frequency.value = freq; f.Q.value = q;
+      g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(vol, t + attack); g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+      s.connect(f).connect(g).connect(c.destination); s.start(t, Math.random() * 1.2, dur + 0.05); s.stop(t + dur + 0.05);
     } catch (e) {}
+  },
+  // ---- Spin & Solve: original game-show style sounds (all generated here, nothing copied) ----
+  // Wheel clacker: a crisp plastic "clack" each time a peg passes the flapper; softer as it slows.
+  peg(speed = 1) {
+    const c = this._ac(); if (!c) return;
+    const t = c.currentTime;
+    if (this._lastPeg && t - this._lastPeg < 0.03) return;
+    this._lastPeg = t;
+    const v = Math.max(0.35, Math.min(1, speed));
+    this.noise(0.035, { freq: 2400 + Math.random() * 400, q: 5, vol: 0.32 * v });
+    this.tone(340 + Math.random() * 30, 0.045, 'square', 0.035 * v);
+  },
+  // Letter found: a bright struck-bell "ding" for each tile that lights up.
+  bell() {
+    [[1568, 0.2, 1.1], [2352, 0.05, 0.6], [3136, 0.06, 0.45], [4705, 0.02, 0.25]].forEach(([f, v, d]) => this.tone(f, d, 'sine', v));
+  },
+  tileTurn() { this.noise(0.06, { freq: 1500, q: 1.4, vol: 0.13 }); this.tone(620, 0.05, 'triangle', 0.05); },
+  // No such letter: two short low buzzes
+  noLetter() { this.tone(196, 0.26, 'square', 0.08); this.tone(185, 0.3, 'square', 0.08, 0.3); },
+  // Bankrupt: a descending "wah-wah-wah-waaah"
+  bankrupt() {
+    const c = this._ac(); if (!c) return;
+    try {
+      const t0 = c.currentTime;
+      [[392, 0, 0.38], [370, 0.42, 0.38], [349, 0.84, 0.38], [330, 1.26, 1.25]].forEach(([f, w, d], i) => {
+        const t = t0 + w, o = c.createOscillator(), lp = c.createBiquadFilter(), g = c.createGain();
+        o.type = 'sawtooth'; o.frequency.setValueAtTime(f, t); o.frequency.linearRampToValueAtTime(f * 0.97, t + d);
+        if (i === 3) { const l = c.createOscillator(), lg = c.createGain(); l.frequency.value = 6; lg.gain.value = 7; l.connect(lg).connect(o.frequency); l.start(t + 0.15); l.stop(t + d); }
+        lp.type = 'lowpass'; lp.Q.value = 6; lp.frequency.setValueAtTime(350, t); lp.frequency.linearRampToValueAtTime(1300, t + 0.12); lp.frequency.linearRampToValueAtTime(450, t + d);
+        g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(0.17, t + 0.03); g.gain.setValueAtTime(0.17, t + d - 0.1); g.gain.exponentialRampToValueAtTime(0.0001, t + d);
+        o.connect(lp).connect(g).connect(c.destination); o.start(t); o.stop(t + d + 0.02);
+      });
+    } catch (e) {}
+  },
+  loseTurn() { this.tone(523, 0.18, 'triangle', 0.15); this.tone(392, 0.4, 'triangle', 0.15, 0.2); },
+  whoosh() { this.noise(0.7, { freq: 700, q: 0.7, vol: 0.12, attack: 0.25 }); },
+  // Crowd applause: lots of tiny claps over a soft roar
+  applause(dur = 3) {
+    if (!this._ac()) return;
+    this.noise(dur, { type: 'lowpass', freq: 2500, q: 0.5, vol: 0.05, attack: 0.25 });
+    for (let i = 0; i < dur * 45; i++) {
+      const w = Math.random() * dur, fade = 1 - w / dur * 0.7;
+      this.noise(0.03 + Math.random() * 0.04, { freq: 1200 + Math.random() * 2800, q: 1.2, vol: (0.04 + Math.random() * 0.06) * fade, when: w });
+    }
+  },
+  // Puzzle solved: a short, bright original brass-style jingle, then applause
+  solve() {
+    [[523, 0], [659, 0.1], [784, 0.2], [1047, 0.32], [784, 0.5], [1047, 0.62]].forEach(([f, w], i) => {
+      const d = i === 5 ? 0.7 : 0.16;
+      this.tone(f, d, 'square', 0.06, w); this.tone(f, d, 'triangle', 0.14, w); this.tone(f / 2, d, 'triangle', 0.08, w);
+    });
+    setTimeout(() => this.applause(3.2), 350);
   },
   click() { this.tone(700, 0.05, 'triangle', 0.1); },
   ding() { this.tone(1318, 0.35, 'sine', 0.2); this.tone(1976, 0.4, 'sine', 0.1, 0.05); },

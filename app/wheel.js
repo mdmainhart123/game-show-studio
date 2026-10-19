@@ -32,8 +32,61 @@ function wedgesFor(look) {
 const WEDGE_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#12b5cf'];
 const WEDGE_COLORS_RECOVERY = ['#e8896f', '#4fa3a5', '#f2c46d', '#7fb685', '#9b8ec4', '#e5a46b', '#6fb7d6'];
 const WEDGE_COLORS_CLASSIC = ['#8c3a4d', '#2f5687', '#9a7a32', '#3d7356', '#5d4a86', '#9c5f30', '#2f6f7c'];
+// Bright TV game-show wedge colours (Classic & Playful looks)
+const WEDGE_COLORS_SHOW = ['#e3262f', '#f5c518', '#1e6fd9', '#f07c1d', '#8a3fb5', '#1fa05a', '#e23d8e', '#17a2c6'];
 const VOWELS = 'AEIOU';
 const SOLVE_BONUS = 500;
+
+// ---------- the puzzle board ----------
+// Like the TV board: 4 rows of 12 / 14 / 14 / 12 tiles (the four corners are missing).
+// Letters light up blue one at a time with a "ding", then turn over to show the letter.
+const BOARD_VOID = (r, c) => (r === 0 || r === 3) && (c === 0 || c === 13);
+function wrapRows(text, widths) {
+  const rows = []; let cur = '';
+  for (const w of text.split(' ')) {
+    const max = widths[Math.min(rows.length, widths.length - 1)];
+    if (!cur) cur = w; else if ((cur + ' ' + w).length <= max) cur += ' ' + w; else { rows.push(cur); cur = w; }
+  }
+  if (cur) rows.push(cur);
+  return rows;
+}
+function puzzleGrid(phrase) {
+  const R = GSData.WHEEL_ROWS, C = GSData.WHEEL_COLS, lay = GSData.layoutPuzzle(phrase);
+  let rows = lay.rows || [];
+  const fits = (rs, pad) => rs.every((l, i) => ((i + pad === 0 || i + pad === R - 1) ? l.length <= 12 : l.length <= C));
+  const centre = Math.floor((R - rows.length) / 2);
+  const pads = [centre, ...Array.from({ length: R - rows.length + 1 }, (_, i) => i).filter(p => p !== centre)];
+  let pad = pads.find(p => fits(rows, p)), corners = true;
+  if (pad === undefined && lay.text) { const alt = wrapRows(lay.text, [12, 14, 14, 12]); if (alt.length <= R && fits(alt, 0)) { rows = alt; pad = 0; } }
+  if (pad === undefined) { pad = centre; corners = false; } // very rare: use the corner tiles too
+  return Array.from({ length: R }, (_, r) => {
+    const line = rows[r - pad], cells = Array(C).fill(null);
+    if (line !== undefined) { const off = Math.floor((C - line.length) / 2); [...line].forEach((ch, i) => cells[off + i] = ch); }
+    return cells.map((ch, col) => ({ ch, void: corners && BOARD_VOID(r, col) }));
+  });
+}
+function renderBoard(box, grid, isShown) {
+  box.classList.add('wof');
+  box.innerHTML = grid.map(row => `<div class="prow">${row.map(({ ch, void: v }) => {
+    if (v) return '<div class="cell void"></div>';
+    if (ch === null || ch === ' ') return '<div class="cell"></div>';
+    const isL = /[A-Z]/.test(ch);
+    return `<div class="cell l ${isL && !isShown(ch) ? 'hide' : ''}" data-ch="${esc(ch)}">${esc(ch)}</div>`;
+  }).join('')}</div>`).join('');
+}
+// Light up every hidden tile for these letters (left to right, top to bottom) with a ding,
+// then turn them over one by one. Returns how long the whole thing takes, in ms.
+function revealTiles(box, letters, { gap = 650, turnGap = 320, pause = 450, quiet = false } = {}) {
+  const cells = $$('.cell.l.hide', box).filter(cl => letters.includes(cl.dataset.ch));
+  cells.forEach((cl, i) => setTimeout(() => { if (!cl.isConnected) return; cl.classList.add('lit'); if (!quiet || i % 3 === 0) Sfx.bell(); }, i * gap));
+  const t1 = cells.length * gap + pause;
+  cells.forEach((cl, i) => setTimeout(() => { if (!cl.isConnected) return; cl.classList.remove('lit', 'hide'); cl.classList.add('turn'); if (!quiet) Sfx.tileTurn(); }, t1 + i * turnGap));
+  return cells.length ? t1 + cells.length * turnGap + 300 : 0;
+}
+function boardParty(box, ms = 3500) {
+  const f = box.closest('.pz-frame'); if (!f) return;
+  f.classList.add('party'); setTimeout(() => f.classList.remove('party'), ms);
+}
 
 App.screens.wheelSetup = (el) => {
   const d = App.data;
@@ -72,8 +125,9 @@ App.screens.wheelPlay = (el, puzzles) => {
   // bank[teamId] = points that team has earned on the CURRENT puzzle (only used for BANKRUPT);
   // the points themselves go straight onto the scoreboard.
   let flipped = new Set(), mysteryIdx = null;
-  let pIdx = -1, puzzle, rows, shown, usedLetters, bank, turn = 0;
+  let pIdx = -1, puzzle, grid, shown, usedLetters, bank, turn = 0;
   let phase, spinValue = 0, rot = Math.random() * Math.PI * 2, spinning = false, rafId;
+  let bulbs = 0, glow = null; // rim-light chase step · landed-wedge highlight
   const W = wedgesFor(App.look); // the look can't change mid-game
   const N = W.length, SEG = (Math.PI * 2) / N;
 
@@ -95,11 +149,11 @@ App.screens.wheelPlay = (el, puzzles) => {
   el.innerHTML = `
     <div class="wh">
       <div class="wh-left">
-        <div class="wheel-box"><div class="pointer"></div><canvas id="wheel" width="900" height="900"></canvas><div class="hub"></div></div>
+        <div class="wheel-box"><div class="flapper" id="flapper"></div><canvas id="wheel" width="900" height="900"></canvas><div class="hub"></div></div>
         <button class="btn xl pink" id="spin">SPIN! 🎡</button>
       </div>
       <div class="wh-right">
-        <div class="puzzle" id="puzzle"></div>
+        <div class="pz-frame"><div class="puzzle" id="puzzle"></div></div>
         <div class="wcat" id="wcat"></div>
         <div class="status" id="status"></div>
         <div class="used-strip" id="used"></div>
@@ -113,9 +167,19 @@ App.screens.wheelPlay = (el, puzzles) => {
 
   // ---------- wheel drawing ----------
   function drawWheel() {
-    const cx = 450, cy = 450, r = 440;
+    const cx = 450, cy = 450, r = 408, rim = 440;
+    const pal = App.look === 'recovery' ? WEDGE_COLORS_RECOVERY : WEDGE_COLORS_SHOW;
     ctx.clearRect(0, 0, 900, 900);
-    ctx.beginPath(); ctx.arc(cx, cy, r + 6, 0, Math.PI * 2); ctx.fillStyle = App.look === 'recovery' ? '#fff3df' : App.classic ? '#d4af6a' : '#ffd23f'; ctx.fill();
+    // outer rim with a ring of light bulbs
+    const rg = ctx.createRadialGradient(cx, cy, r, cx, cy, rim);
+    rg.addColorStop(0, '#3a2a10'); rg.addColorStop(0.5, App.look === 'recovery' ? '#e9c98c' : '#d8b25a'); rg.addColorStop(1, '#5a4214');
+    ctx.beginPath(); ctx.arc(cx, cy, rim, 0, Math.PI * 2); ctx.fillStyle = rg; ctx.fill();
+    for (let b = 0; b < 48; b++) {
+      const a = (b / 48) * Math.PI * 2, on = (b + bulbs) % 2 === 0;
+      ctx.beginPath(); ctx.arc(cx + Math.cos(a) * (r + 16), cy + Math.sin(a) * (r + 16), 7, 0, Math.PI * 2);
+      ctx.fillStyle = on ? '#fff6c4' : '#7a6230'; ctx.shadowColor = on ? '#ffe680' : 'transparent'; ctx.shadowBlur = on ? 14 : 0; ctx.fill();
+    }
+    ctx.shadowBlur = 0; ctx.shadowColor = 'transparent';
     W.forEach((w, i) => {
       const a0 = rot + i * SEG - Math.PI / 2;
       ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r, a0, a0 + SEG); ctx.closePath();
@@ -123,30 +187,68 @@ App.screens.wheelPlay = (el, puzzles) => {
       if (w === 'MYSTERY' && !myst) w = MYSTERY_VALUE; // already flipped this puzzle
       if (myst) {
         const g = ctx.createLinearGradient(cx, cy, cx + Math.cos(a0 + SEG / 2) * r, cy + Math.sin(a0 + SEG / 2) * r);
-        g.addColorStop(0, App.classic ? '#1d3566' : '#5b1fa8'); g.addColorStop(1, App.classic ? '#8a6a28' : '#c48a00');
+        g.addColorStop(0, '#5b1fa8'); g.addColorStop(1, '#c48a00');
         ctx.fillStyle = g;
       } else if (SPECIAL_WEDGES[w]) ctx.fillStyle = SPECIAL_WEDGES[w].bg;
-      else ctx.fillStyle = w === 'BANKRUPT' ? '#111' : w === 'LOSE A TURN' ? (App.classic ? '#e9e1cf' : '#fff') : (App.look === 'recovery' ? WEDGE_COLORS_RECOVERY : App.classic ? WEDGE_COLORS_CLASSIC : WEDGE_COLORS)[i % WEDGE_COLORS.length];
-      ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.7)'; ctx.lineWidth = 3; ctx.stroke();
-      // label along the radius
+      else ctx.fillStyle = w === 'BANKRUPT' ? '#0d0d0d' : w === 'LOSE A TURN' ? '#f4f4f4' : pal[i % pal.length];
+      ctx.fill();
+      // a little shine toward the rim, and thin dark dividers
+      const sh = ctx.createRadialGradient(cx, cy, r * 0.25, cx, cy, r);
+      sh.addColorStop(0, 'rgba(0,0,0,.18)'); sh.addColorStop(0.7, 'rgba(255,255,255,0)'); sh.addColorStop(1, 'rgba(255,255,255,.14)');
+      ctx.fillStyle = sh; ctx.fill();
+      ctx.strokeStyle = 'rgba(0,0,0,.35)'; ctx.lineWidth = 2; ctx.stroke();
       ctx.save(); ctx.translate(cx, cy); ctx.rotate(a0 + SEG / 2);
-      ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
-      ctx.fillStyle = w === 'LOSE A TURN' ? '#111' : '#fff';
       const sp = SPECIAL_WEDGES[w];
-      if (sp) ctx.fillStyle = sp.fg || '#fff';
-      const txt = myst ? '🎁 MYSTERY' : sp ? sp.label : String(w);
-      ctx.font = `${App.classic ? 600 : 700} ${typeof w === 'number' ? 44 : txt.length > 14 ? 19 : txt.length > 9 ? 22 : 26}px ${App.classic ? 'Oswald' : App.look === 'recovery' ? 'Nunito' : 'Fredoka'}, sans-serif`;
-      if (myst) { ctx.fillStyle = '#ffd23f'; ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowOffsetY = 2; }
-      if (typeof w === 'number') { ctx.shadowColor = 'rgba(0,0,0,.35)'; ctx.shadowOffsetY = 3; }
-      ctx.fillText(txt, r - 22, 0);
+      if (typeof w === 'number') {
+        // numbers stacked one digit under another, reading from the rim toward the middle
+        const s = String(w), h = 50;
+        ctx.font = `700 54px Oswald, 'Arial Narrow', sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillStyle = '#fff'; ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowBlur = 4; ctx.shadowOffsetY = 2;
+        [...s].forEach((ch, k) => { ctx.save(); ctx.translate(r - 44 - k * h, 0); ctx.rotate(Math.PI / 2); ctx.fillText(ch, 0, 2); ctx.restore(); });
+      } else {
+        const txt = myst ? '🎁 MYSTERY' : sp ? sp.label : String(w);
+        ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+        ctx.fillStyle = w === 'LOSE A TURN' ? '#111' : myst ? '#ffd23f' : sp?.fg || '#fff';
+        ctx.font = `700 ${txt.length > 14 ? 21 : txt.length > 9 ? 25 : 30}px Oswald, 'Arial Narrow', sans-serif`;
+        if (w !== 'LOSE A TURN') { ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowBlur = 3; ctx.shadowOffsetY = 2; }
+        ctx.fillText(txt, r - 26, 0);
+      }
       ctx.restore();
     });
-    // pegs
+    // the wedge that was just landed on glows
+    if (glow && glow.a > 0) {
+      const a0 = rot + glow.i * SEG - Math.PI / 2;
+      ctx.save(); ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r, a0, a0 + SEG); ctx.closePath();
+      ctx.fillStyle = `rgba(255,255,255,${0.28 * glow.a})`; ctx.fill();
+      ctx.lineWidth = 9; ctx.strokeStyle = `rgba(255,255,200,${glow.a})`; ctx.shadowColor = '#fff6a0'; ctx.shadowBlur = 25; ctx.stroke(); ctx.restore();
+    }
+    // chrome pegs between the wedges
     for (let i = 0; i < N; i++) {
-      const a = rot + i * SEG - Math.PI / 2;
-      ctx.beginPath(); ctx.arc(cx + Math.cos(a) * (r - 8), cy + Math.sin(a) * (r - 8), 6, 0, Math.PI * 2); ctx.fillStyle = '#fff'; ctx.fill();
+      const a = rot + i * SEG - Math.PI / 2, px = cx + Math.cos(a) * (r - 9), py = cy + Math.sin(a) * (r - 9);
+      const pg = ctx.createRadialGradient(px - 2, py - 2, 1, px, py, 8);
+      pg.addColorStop(0, '#ffffff'); pg.addColorStop(0.5, '#c9ced6'); pg.addColorStop(1, '#5d6470');
+      ctx.beginPath(); ctx.arc(px, py, 7.5, 0, Math.PI * 2); ctx.fillStyle = pg; ctx.fill();
     }
   }
+  // the flapper at the top flicks each time a peg passes it
+  function kickFlapper(speed) {
+    const f = $('#flapper', el); if (!f || !f.animate) return;
+    const deg = Math.max(8, Math.min(28, 10 + speed * 18));
+    f.animate([{ rotate: '0deg' }, { rotate: `-${deg}deg`, offset: 0.35 }, { rotate: '0deg' }], { duration: Math.max(90, 220 - speed * 120), easing: 'ease-out' });
+  }
+  function glowWedge(i) {
+    glow = { i, a: 1 };
+    const t0 = performance.now();
+    const fade = now => {
+      if (!glow || glow.i !== i) return;
+      const p = (now - t0) / 2200;
+      glow.a = p < 1 ? 0.55 + 0.45 * Math.cos(p * Math.PI * 6) * (1 - p) : 0;
+      drawWheel();
+      if (p < 1) requestAnimationFrame(fade); else glow = null;
+    };
+    requestAnimationFrame(fade);
+  }
+  const bulbTimer = setInterval(() => { bulbs++; if (!spinning && !glow) drawWheel(); }, 600);
   function wedgeAtPointer() {
     const norm = ((-rot % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2);
     return Math.floor(norm / SEG) % N;
@@ -162,7 +264,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (pIdx >= puzzles.length) { finishGame(); return; }
     puzzle = puzzles[pIdx];
     App.setNavEnabled(pIdx > 0, true);
-    rows = GSData.layoutPuzzle(puzzle.phrase).rows;
+    grid = puzzleGrid(puzzle.phrase);
     shown = new Set(); usedLetters = new Set(); bank = {};
     flipped = new Set(); mysteryIdx = null; // Mystery wedges reset each puzzle
     HostView.set({ game: '🎡 Spin & Solve', meta: `${puzzle.category} · Puzzle ${pIdx + 1} of ${puzzles.length}`, answer: puzzle.phrase, answerLabel: 'Puzzle' });
@@ -175,25 +277,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     $('#wcat', el).textContent = `${puzzle.category}  ·  Puzzle ${pIdx + 1} of ${puzzles.length}`;
     drawPuzzle(); setTurnPhase(pIdx === 0 ? `${esc(teams[turn].name)} — spin the wheel!` : `${esc(teams[turn].name)} leads, so they start — spin!`);
   }
-  function drawPuzzle(flashLetter) {
-    const R = GSData.WHEEL_ROWS, Cn = GSData.WHEEL_COLS;
-    const pad = Math.floor((R - rows.length) / 2);
-    const grid = [];
-    for (let r = 0; r < R; r++) {
-      const line = rows[r - pad];
-      const cells = Array(Cn).fill(null);
-      if (line !== undefined) { const off = Math.floor((Cn - line.length) / 2); [...line].forEach((ch, i) => cells[off + i] = ch); }
-      grid.push(cells);
-    }
-    let k = 0;
-    $('#puzzle', el).innerHTML = grid.map(cells => `<div class="prow">${cells.map(ch => {
-      if (ch === null || ch === ' ') return `<div class="cell"></div>`;
-      const isL = /[A-Z]/.test(ch);
-      const vis = !isL || shown.has(ch);
-      const fl = flashLetter && ch === flashLetter;
-      return `<div class="cell l ${vis ? '' : 'hide'} ${fl ? 'flash' : ''}" ${fl ? `style="animation-delay:${(k++) * 0.35}s"` : ''}>${esc(ch)}</div>`;
-    }).join('')}</div>`).join('');
-  }
+  function drawPuzzle() { renderBoard($('#puzzle', el), grid, ch => shown.has(ch)); }
   const letterCount = L => (puzzle.phrase.match(new RegExp(L, 'g')) || []).length;
   const remaining = set => [...new Set(puzzle.phrase.replace(/[^A-Z]/g, ''))].filter(L => set.includes(L) && !shown.has(L));
   const CONS = 'BCDFGHJKLMNPQRSTVWXYZ';
@@ -261,16 +345,20 @@ App.screens.wheelPlay = (el, puzzles) => {
       let end = -norm; while (end < start + Math.PI * 2 * 5) end += Math.PI * 2;
       dist = end - start; App.wheelForce = null;
     }
-    const dur = 4200 + Math.random() * 1200, t0 = performance.now();
-    let lastW = wedgeAtPointer();
+    // a little wind-up backwards, then a long smooth slow-down
+    const back = 0.16, wind = 380, dur = 5200 + Math.random() * 1400, t0 = performance.now();
+    let lastW = wedgeAtPointer(), lastRot = rot, lastT = t0;
+    Sfx.whoosh();
     const step = now => {
-      const p = Math.min(1, (now - t0) / dur);
-      const e = 1 - Math.pow(1 - p, 3.2);
-      rot = start + dist * e;
+      const el2 = now - t0;
+      if (el2 < wind) { const q = el2 / wind; rot = start - back * Math.sin(q * Math.PI / 2); }
+      else { const p = Math.min(1, (el2 - wind) / dur); rot = start - back + (dist + back) * (1 - Math.pow(1 - p, 3.6)); }
       drawWheel();
       const w = wedgeAtPointer();
-      if (w !== lastW) { lastW = w; Sfx.peg(); }
-      if (p < 1) rafId = requestAnimationFrame(step); else { spinning = false; App.setNavEnabled(pIdx > 0, true); landed(w); }
+      const speed = Math.min(1, Math.abs(rot - lastRot) / Math.max(1, now - lastT) * 40); lastRot = rot; lastT = now;
+      if (w !== lastW) { lastW = w; Sfx.peg(speed); kickFlapper(speed); }
+      if (el2 < wind + dur) rafId = requestAnimationFrame(step);
+      else { spinning = false; App.setNavEnabled(pIdx > 0, true); glowWedge(w); landed(w); }
     };
     rafId = requestAnimationFrame(step);
   }
@@ -289,7 +377,8 @@ App.screens.wheelPlay = (el, puzzles) => {
       }
     }
     if (w === 'BANKRUPT') {
-      Sfx.wrong();
+      Sfx.bankrupt();
+      $('.wheel-box', el)?.classList.add('bust'); setTimeout(() => $('.wheel-box', el)?.classList.remove('bust'), 700);
       const lost = Math.max(0, bank[t.id]);
       if (lost) Scores.add(t.id, -lost);
       bank[t.id] = 0;
@@ -297,7 +386,7 @@ App.screens.wheelPlay = (el, puzzles) => {
       setTimeout(() => nextTurn('Ouch!'), 2200);
       return;
     }
-    if (w === 'LOSE A TURN') { Sfx.buzz(); status(`<span class="big">😬 LOSE A TURN</span>`); setTimeout(() => nextTurn('Too bad!'), 1800); return; }
+    if (w === 'LOSE A TURN') { Sfx.loseTurn(); status(`<span class="big">😬 LOSE A TURN</span>`); setTimeout(() => nextTurn('Too bad!'), 1800); return; }
     if (w === 'FREE PLAY') {
       spinValue = FREE_PLAY_VALUE; phase = 'free';
       Sfx.ding();
@@ -324,20 +413,22 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (wasVowel && !free && d.settings.vowelCost) { bank[t.id] -= d.settings.vowelCost; Scores.add(t.id, -d.settings.vowelCost); }
     const n = letterCount(L);
     if (!n && free) { // Free Play: a miss doesn't cost the turn
-      Sfx.wrong();
+      Sfx.noLetter();
       setTurnPhase(`No ${L}'s — but it's Free Play, so ${esc(t.name)} keeps the turn!`);
       return;
     }
     if (!n) {
-      Sfx.wrong(); setLetters('none');
+      Sfx.noLetter(); setLetters('none');
       status(`No ${L}'s 😕`);
       phase = 'wait';
       setTimeout(() => nextTurn(`No ${L}.`), 1500);
       return;
     }
+    drawPuzzle();
+    status(`<span class="big">${n} ${L}${n > 1 ? "'s" : ''}!</span>`);
+    const revealMs = revealTiles($('#puzzle', el), L); // light up, ding, then turn each tile
     shown.add(L);
-    drawPuzzle(L);
-    for (let i = 0; i < n; i++) setTimeout(() => Sfx.ding(), i * 350);
+    setLetters('none');
     const earned = wasVowel ? 0 : spinValue * n;
     bank[t.id] += earned;
     if (earned) Scores.add(t.id, earned);
@@ -348,7 +439,7 @@ App.screens.wheelPlay = (el, puzzles) => {
       if (myst != null && App.current === 'wheelPlay') { offerFlip(t, earned, myst, n, L); return; }
       const done = !remaining(CONS + VOWELS).length;
       setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! ${earned ? `+${fmt(earned)}. ` : ''}${done ? 'Every letter is up — solve it!' : ''}`);
-    }, Math.min(n, 4) * 350 + 400);
+    }, revealMs + 200);
   }
   // ---------- 🦹 Steal · 🤝 Pay it forward · 🙏 Gratitude ----------
   function pickTeam(title, intro, list, onPick, onNone) {
@@ -519,7 +610,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     const t = teams[turn];
     phase = 'wait';
     slots.forEach(s => s.el.classList.add('bad'));
-    Sfx.wrong();
+    Sfx.noLetter();
     setActions('');
     $$('#letters button', el).forEach(b => b.disabled = true);
     status(`<span class="big">✗ Not quite, ${esc(t.name)}!</span>`);
@@ -532,10 +623,13 @@ App.screens.wheelPlay = (el, puzzles) => {
   }
   function solved() {
     const t = teams[turn];
-    [...CONS + VOWELS].forEach(L => shown.add(L));
+    const rest = remaining(CONS + VOWELS).join('');
     drawPuzzle();
+    revealTiles($('#puzzle', el), rest, { gap: 70, turnGap: 45, pause: 200, quiet: true });
+    [...CONS + VOWELS].forEach(L => shown.add(L));
+    boardParty($('#puzzle', el));
     Scores.add(t.id, SOLVE_BONUS);
-    Sfx.fanfare(); confetti(2500);
+    Sfx.solve(); confetti(3000);
     $('#spin', el).disabled = true; setLetters('none');
     status(`<span class="big">🎉 ${esc(t.name)} solved it! +${fmt(SOLVE_BONUS)} bonus</span>`);
     const last = pIdx + 1 >= puzzles.length;
@@ -558,7 +652,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (e.code === 'Space' && phase === 'turn') { e.preventDefault(); spin(); }
   };
   document.addEventListener('keydown', onKey);
-  return () => { cancelAnimationFrame(rafId); document.removeEventListener('keydown', onKey); Scores.setActive(null); };
+  return () => { cancelAnimationFrame(rafId); clearInterval(bulbTimer); glow = null; document.removeEventListener('keydown', onKey); Scores.setActive(null); };
 };
 
 // 🏁 BONUS ROUND — the leading team plays one last puzzle alone.
@@ -572,7 +666,7 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   const pool = d.wheel.filter(p => !usedIds.includes(p.id));
   const puzzle = shuffle(pool.length ? pool : d.wheel)[0];
   HostView.set({ game: '🏁 Bonus Round', meta: puzzle.category, answer: puzzle.phrase, answerLabel: 'Puzzle' });
-  const rows = GSData.layoutPuzzle(puzzle.phrase).rows;
+  const grid = puzzleGrid(puzzle.phrase);
   const shown = new Set(), picks = [];
   let phase = 'intro', timerId, left = 30, slots = [], cursor = 0;
   Scores.setActive(t.id);
@@ -582,7 +676,7 @@ App.screens.wheelBonus = (el, usedIds = []) => {
     <div class="bonus">
       <div class="bonus-head"><span class="bonus-title">🏁 BONUS ROUND</span>
         <span class="bonus-sub"><span class="turn-pill sm" style="--tc:${t.color}">${esc(t.name)}</span> plays for <b>+${fmt(BONUS_PRIZE)}</b></span></div>
-      <div class="puzzle" id="bPuzzle"></div>
+      <div class="pz-frame"><div class="puzzle" id="bPuzzle"></div></div>
       <div class="wcat">${esc(puzzle.category)}</div>
       <div class="status" id="bStatus"></div>
       <div class="bonus-picks" id="bPicks"></div>
@@ -591,19 +685,7 @@ App.screens.wheelBonus = (el, usedIds = []) => {
     </div>`;
   $$('#bLetters button', el).forEach(b => b.onclick = () => press(b.dataset.l));
 
-  function draw(flash) {
-    const R = GSData.WHEEL_ROWS, Cn = GSData.WHEEL_COLS, pad = Math.floor((R - rows.length) / 2);
-    let k = 0;
-    $('#bPuzzle', el).innerHTML = Array.from({ length: R }, (_, r) => {
-      const line = rows[r - pad], cells = Array(Cn).fill(null);
-      if (line !== undefined) { const off = Math.floor((Cn - line.length) / 2); [...line].forEach((ch, i) => cells[off + i] = ch); }
-      return `<div class="prow">${cells.map(ch => {
-        if (ch === null || ch === ' ') return `<div class="cell"></div>`;
-        const vis = !/[A-Z]/.test(ch) || shown.has(ch), fl = flash && flash.includes(ch);
-        return `<div class="cell l ${vis ? '' : 'hide'} ${fl ? 'flash' : ''}" ${fl ? `style="animation-delay:${(k++) * 0.2}s"` : ''}>${esc(ch)}</div>`;
-      }).join('')}</div>`;
-    }).join('');
-  }
+  function draw() { renderBoard($('#bPuzzle', el), grid, ch => shown.has(ch)); }
   const status = h => { $('#bStatus', el).innerHTML = h; };
   const actions = (h, hs = {}) => { $('#bActions', el).innerHTML = h; Object.entries(hs).forEach(([id, fn]) => { const b = $('#' + id, el); if (b) b.onclick = fn; }); };
   function letters(mode) {
@@ -624,10 +706,14 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   draw(); letters('none');
   status(`<b>${esc(t.name)}</b> has the most points! Here are your free letters…`);
   actions(`<button class="btn lg pink" id="bGo">Reveal R S T L N E</button>`, { bGo: () => {
-    [...GIVEN].forEach(L => shown.add(L)); draw(GIVEN); Sfx.reveal();
-    phase = 'pick'; letters('pick'); showPicks();
-    status(`Now pick <b>3 more consonants</b> and <b>1 vowel</b>.`);
-    actions('');
+    actions(''); status('R · S · T · L · N · E');
+    draw(); const ms = revealTiles($('#bPuzzle', el), GIVEN, { gap: 260, turnGap: 140, pause: 300 });
+    [...GIVEN].forEach(L => shown.add(L));
+    setTimeout(() => {
+      if (App.current !== 'wheelBonus') return;
+      phase = 'pick'; letters('pick'); showPicks();
+      status(`Now pick <b>3 more consonants</b> and <b>1 vowel</b>.`);
+    }, ms);
   } });
 
   function press(L) {
@@ -644,11 +730,16 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   }
   function reveal() {
     const hits = picks.filter(L => puzzle.phrase.includes(L));
-    picks.forEach(L => shown.add(L)); draw(hits.join('')); Sfx.reveal();
-    phase = 'clock'; $('#bPicks', el).innerHTML = '';
-    actions(`<button class="btn lg green" id="bType">They have an answer ✍️</button>`, { bType: startTyping });
-    tick();
-    timerId = setInterval(tick, 1000);
+    phase = 'revealing'; actions(''); $('#bPicks', el).innerHTML = ''; status(hits.length ? 'Let\'s see those letters…' : 'None of those letters are in the puzzle!');
+    draw(); const ms = hits.length ? revealTiles($('#bPuzzle', el), hits.join(''), { gap: 380, turnGap: 200, pause: 300 }) : (Sfx.noLetter(), 900);
+    picks.forEach(L => shown.add(L));
+    setTimeout(() => {
+      if (App.current !== 'wheelBonus' || phase !== 'revealing') return;
+      phase = 'clock';
+      actions(`<button class="btn lg green" id="bType">They have an answer ✍️</button>`, { bType: startTyping });
+      tick();
+      timerId = setInterval(tick, 1000);
+    }, ms);
   }
   function tick() {
     status(`<span class="bonus-clock ${left <= 3 ? 'low' : ''}">${left}</span> seconds to say the answer!`);
@@ -679,9 +770,11 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   function finish(won) {
     clearInterval(timerId);
     phase = 'done'; letters('none');
-    [...puzzle.phrase].forEach(ch => /[A-Z]/.test(ch) && shown.add(ch)); draw();
-    if (won) { Scores.add(t.id, BONUS_PRIZE); Sfx.fanfare(); confetti(3000); status(`<span class="big">🎉 ${esc(t.name)} solved the bonus puzzle! +${fmt(BONUS_PRIZE)}</span>`); }
-    else { Sfx.wrong(); status(`<span class="big">So close!</span> The answer was <b>${esc(puzzle.phrase)}</b>.`); }
+    const rest = [...new Set(puzzle.phrase.replace(/[^A-Z]/g, ''))].filter(L => !shown.has(L)).join('');
+    draw(); revealTiles($('#bPuzzle', el), rest, { gap: 70, turnGap: 45, pause: 200, quiet: true });
+    [...puzzle.phrase].forEach(ch => /[A-Z]/.test(ch) && shown.add(ch));
+    if (won) { Scores.add(t.id, BONUS_PRIZE); Sfx.solve(); confetti(3500); boardParty($('#bPuzzle', el), 4500); status(`<span class="big">🎉 ${esc(t.name)} solved the bonus puzzle! +${fmt(BONUS_PRIZE)}</span>`); }
+    else { Sfx.bankrupt(); status(`<span class="big">So close!</span> The answer was <b>${esc(puzzle.phrase)}</b>.`); }
     actions(`<button class="btn lg pink" id="bDone">Final scores 🏁</button>`, { bDone: done });
   }
   function done() { clearInterval(timerId); App.endGame('Spin & Solve', 'wheelSetup'); }
