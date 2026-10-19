@@ -91,6 +91,43 @@ function revealTiles(box, letters, { gap = 650, turnGap = 320, pause = 450, quie
   cells.forEach((cl, i) => setTimeout(() => { if (!cl.isConnected) return; cl.classList.remove('lit', 'hide'); cl.classList.add('turn'); if (!quiet) Sfx.tileTurn(); }, t1 + i * turnGap));
   return cells.length ? t1 + cells.length * turnGap + 300 : 0;
 }
+// On-screen keyboard in QWERTY order (vowels tinted)
+function qwertyKeys() {
+  return ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'].map(r => `<div class="kr">${[...r].map(L => `<button data-l="${L}" class="${VOWELS.includes(L) ? 'v' : ''}">${L}</button>`).join('')}</div>`).join('');
+}
+// Contestant strip across the top: avatar, name tag and a money tag that counts up/down.
+function contestantStrip(box) {
+  const teams = Scores.teams(), shownScore = {};
+  teams.forEach(t => shownScore[t.id] = t.score);
+  box.innerHTML = teams.map(t => `
+    <div class="ct" data-id="${t.id}" style="--tc:${t.color}">
+      <div class="ct-av">${esc((t.name.match(/\p{L}|\p{N}/u) || ['?'])[0].toUpperCase())}</div>
+      <div class="ct-tag"><div class="ct-name">${esc(t.name)}</div><div class="ct-score">${fmt(t.score)}</div></div>
+      <div class="ct-bubble"></div>
+    </div>`).join('');
+  const tick = setInterval(() => {
+    teams.forEach(t => {
+      const cur = shownScore[t.id], want = t.score;
+      const node = $(`.ct[data-id="${t.id}"]`, box);
+      if (!node) return;
+      node.classList.toggle('on', Scores.active === t.id);
+      if (cur === want) return;
+      const step = Math.sign(want - cur) * Math.max(1, Math.ceil(Math.abs(want - cur) / 8));
+      shownScore[t.id] = Math.abs(want - cur) <= Math.abs(step) ? want : cur + step;
+      $('.ct-score', node).textContent = fmt(shownScore[t.id]);
+      node.classList.toggle('up', want > cur); node.classList.toggle('down', want < cur);
+      if (shownScore[t.id] === want) setTimeout(() => node.classList.remove('up', 'down'), 300);
+    });
+  }, 45);
+  return {
+    stop: () => clearInterval(tick),
+    say(id, text, ms = 1800) {
+      const b = $(`.ct[data-id="${id}"] .ct-bubble`, box); if (!b) return;
+      b.textContent = text; b.classList.remove('show'); void b.offsetWidth; b.classList.add('show');
+      clearTimeout(b._t); b._t = setTimeout(() => b.classList.remove('show'), ms);
+    },
+  };
+}
 function boardParty(box, ms = 3500) {
   const f = box.closest('.pz-frame'); if (!f) return;
   f.classList.add('party'); setTimeout(() => f.classList.remove('party'), ms);
@@ -155,21 +192,41 @@ App.screens.wheelPlay = (el, puzzles) => {
     startPuzzle();
   }
 
+  // TV-studio stage: contestants on top, the board in the middle, round buttons below.
+  // The wheel rises up from the bottom when it's time to spin.
   el.innerHTML = `
-    <div class="wh">
-      <div class="wh-left">
-        <div class="wheel-box"><div class="flapper" id="flapper"></div><canvas id="wheel" width="900" height="900"></canvas><div class="hub"></div></div>
-        <button class="btn xl pink" id="spin">SPIN! 🎡</button>
-      </div>
-      <div class="wh-right">
-        <div class="pz-frame"><div class="puzzle" id="puzzle"></div></div>
-        <div class="wcat" id="wcat"></div>
+    <div class="wf-stage">
+      <div class="wf-players" id="wfPlayers"></div>
+      <div class="wf-board">
+        <div class="pz-frame oval"><div class="puzzle" id="puzzle"></div><div class="cat-intro" id="catIntro"></div></div>
+        <div class="wf-catrow"><div class="wcat" id="wcat"></div><div class="callout" id="callout"></div></div>
         <div class="status" id="status"></div>
         <div class="used-strip" id="used"></div>
-        <div class="letters" id="letters">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(L => `<button data-l="${L}" class="${VOWELS.includes(L) ? 'v' : ''}">${L}</button>`).join('')}</div>
+      </div>
+      <div class="wf-controls">
+        <div class="turn-bar" id="turnBar">
+          <button class="rb rb-vowel" id="aVowel"><span class="ic">A</span><span class="lb">VOWEL</span><small id="vowelNote"></small></button>
+          <button class="rb rb-spin" id="spin"><span class="ic">🎡</span><span class="lb">SPIN</span></button>
+          <button class="rb rb-solve" id="aSolve"><span class="ic">💬</span><span class="lb">SOLVE</span></button>
+        </div>
+        <div class="letters qwerty kb-hidden" id="letters">${qwertyKeys()}</div>
         <div class="wh-actions" id="actions"></div>
       </div>
+      <div class="wheel-stage" id="wheelStage">
+        <div class="wheel-box"><div class="flapper" id="flapper"></div><canvas id="wheel" width="900" height="900"></canvas><div class="hub"></div></div>
+      </div>
     </div>`;
+  document.body.classList.add('wf-on');
+  const strip = contestantStrip($('#wfPlayers', el));
+  const showTurnBar = on => $('#turnBar', el).classList.toggle('hidden', !on);
+  // the vowel / solve buttons live in the turn bar
+  $('#aVowel', el).onclick = () => {
+    if (phase !== 'turn') return;
+    strip.say(teams[turn].id, "I'd like to buy a vowel!");
+    phase = 'vowel'; status('Which vowel?'); setLetters('vowel');
+    setActions(`<button class="btn ghost" id="aCancel">Cancel</button>`, { aCancel: () => setTurnPhase('Spin, buy a vowel, or solve.') });
+  };
+  $('#aSolve', el).onclick = () => { if (phase === 'turn') { strip.say(teams[turn].id, "I'd like to solve!"); solve(); } };
   const cv = $('#wheel', el), ctx = cv.getContext('2d');
   $('#spin', el).onclick = spin;
   $$('#letters button', el).forEach(b => b.onclick = () => pickLetter(b.dataset.l));
@@ -180,13 +237,13 @@ App.screens.wheelPlay = (el, puzzles) => {
     const pal = App.look === 'recovery' ? WEDGE_COLORS_RECOVERY : WEDGE_COLORS_SHOW;
     ctx.clearRect(0, 0, 900, 900);
     // outer rim with a ring of light bulbs
-    const rg = ctx.createRadialGradient(cx, cy, r, cx, cy, rim);
-    rg.addColorStop(0, '#3a2a10'); rg.addColorStop(0.5, App.look === 'recovery' ? '#e9c98c' : '#d8b25a'); rg.addColorStop(1, '#5a4214');
+    const rg = ctx.createRadialGradient(cx, cy, r, cx, cy, rim), rec = App.look === 'recovery';
+    rg.addColorStop(0, rec ? '#3a2a10' : '#1a1050'); rg.addColorStop(0.5, rec ? '#e9c98c' : '#7d6bff'); rg.addColorStop(1, rec ? '#5a4214' : '#24156b');
     ctx.beginPath(); ctx.arc(cx, cy, rim, 0, Math.PI * 2); ctx.fillStyle = rg; ctx.fill();
     for (let b = 0; b < 48; b++) {
       const a = (b / 48) * Math.PI * 2, on = (b + bulbs) % 2 === 0;
       ctx.beginPath(); ctx.arc(cx + Math.cos(a) * (r + 16), cy + Math.sin(a) * (r + 16), 7, 0, Math.PI * 2);
-      ctx.fillStyle = on ? '#fff6c4' : '#7a6230'; ctx.shadowColor = on ? '#ffe680' : 'transparent'; ctx.shadowBlur = on ? 14 : 0; ctx.fill();
+      ctx.fillStyle = on ? (rec ? '#fff6c4' : '#e6f4ff') : (rec ? '#7a6230' : '#3d2f9c'); ctx.shadowColor = on ? (rec ? '#ffe680' : '#8fd0ff') : 'transparent'; ctx.shadowBlur = on ? 14 : 0; ctx.fill();
     }
     ctx.shadowBlur = 0; ctx.shadowColor = 'transparent';
     W.forEach((w, i) => {
@@ -284,8 +341,8 @@ App.screens.wheelPlay = (el, puzzles) => {
     // (a tie goes to whichever tied team is first on the scoreboard).
     const leader = teams.reduce((best, t, i) => (t.score > teams[best].score ? i : best), 0);
     turn = pIdx === 0 ? 0 : leader;
-    $('#wcat', el).textContent = `${puzzle.category}  ·  Puzzle ${pIdx + 1} of ${puzzles.length}`;
-    drawPuzzle(); setTurnPhase(pIdx === 0 ? `${esc(teams[turn].name)} — spin the wheel!` : `${esc(teams[turn].name)} leads, so they start — spin!`);
+    $('#wcat', el).textContent = `Category: ${puzzle.category}  ·  Puzzle ${pIdx + 1} of ${puzzles.length}`;
+    drawPuzzle(); categoryIntro(); setTurnPhase(pIdx === 0 ? `${esc(teams[turn].name)} — spin the wheel!` : `${esc(teams[turn].name)} leads, so they start — spin!`);
   }
   function drawPuzzle() { renderBoard($('#puzzle', el), grid, ch => shown.has(ch)); }
   const letterCount = L => (puzzle.phrase.match(new RegExp(L, 'g')) || []).length;
@@ -301,10 +358,25 @@ App.screens.wheelPlay = (el, puzzles) => {
   // a thin strip lists the letters already used.
   function showKeys(on) {
     $('#letters', el).classList.toggle('kb-hidden', !on);
+    if (on) showTurnBar(false);
     const u = $('#used', el), list = [...usedLetters].sort();
     u.innerHTML = !on && list.length ? `<span class="hint">Used:</span> ${list.map(L => `<b class="${VOWELS.includes(L) ? 'v' : ''}">${L}</b>`).join('')}` : '';
   }
   function status(html) { $('#status', el).innerHTML = html; }
+  // the big letter tile + count bubble that pops up over the category bar
+  function callout(L, n) {
+    const co = $('#callout', el);
+    co.innerHTML = `<span class="co-l">${L}</span><span class="co-n ${n ? '' : 'zero'}">${n}</span>`;
+    co.classList.remove('show'); void co.offsetWidth; co.classList.add('show');
+    clearTimeout(co._t); co._t = setTimeout(() => co.classList.remove('show'), Math.max(1800, n * 700 + 900));
+  }
+  // "And the category is…" banner sweeping across the board
+  function categoryIntro() {
+    const ci = $('#catIntro', el);
+    ci.innerHTML = `<span>And the category is:</span> <b>${esc(puzzle.category)}</b>`;
+    ci.classList.remove('show'); void ci.offsetWidth; ci.classList.add('show');
+    Sfx.whoosh();
+  }
   function setLetters(mode) { // mode: 'cons' | 'vowel' | 'none'
     $$('#letters button', el).forEach(b => {
       const L = b.dataset.l, isV = VOWELS.includes(L);
@@ -315,6 +387,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     showKeys(mode !== 'none');
   }
   function setActions(html, handlers) {
+    showTurnBar(false);
     $('#actions', el).innerHTML = html;
     Object.entries(handlers || {}).forEach(([id, fn]) => { const b = $('#' + id, el); if (b) b.onclick = fn; });
   }
@@ -329,15 +402,14 @@ App.screens.wheelPlay = (el, puzzles) => {
     $('#spin', el).disabled = !consLeft;
     setLetters('none');
     setActions(`
-      <button class="btn lg cyan" id="aVowel" ${canVowel ? '' : 'disabled'}>${!vowLeft ? 'All vowels are up' : t.score < d.settings.vowelCost ? `Buy a vowel (needs ${fmt(d.settings.vowelCost)})` : `Buy a vowel (${d.settings.vowelCost})`}</button>
-      <button class="btn lg green" id="aSolve">Solve it! ✓</button>
       <div class="pass-link"><button class="link-btn" id="aPass">Skip to next team ▶</button>${!hintUsed && remaining(CONS + VOWELS).length > 1 ? ' &nbsp;·&nbsp; <button class="link-btn" id="aHint" title="Reveals one letter for free (once per puzzle)">💡 Hint</button>' : ''}</div>`, {
       aHint: () => { hintUsed = true; freeLetter('💡 Hint:'); },
-      aVowel: () => { phase = 'vowel'; status(`Which vowel?`); setLetters('vowel'); $('#spin', el).disabled = true;
-        setActions(`<button class="btn ghost" id="aCancel">Cancel</button>`, { aCancel: () => setTurnPhase(`Spin, buy a vowel, or solve.`) }); },
-      aSolve: solve,
       aPass: () => nextTurn('Next team!'),
     });
+    const vb = $('#aVowel', el);
+    vb.disabled = !canVowel;
+    $('#vowelNote', el).textContent = !vowLeft ? 'all up' : t.score < d.settings.vowelCost ? `needs ${fmt(d.settings.vowelCost)}` : fmt(d.settings.vowelCost);
+    showTurnBar(true);
   }
   function nextTurn(msg) {
     doubleNext = false; // a Double Play only lasts for the team's own turn
@@ -349,8 +421,10 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (spinning || phase !== 'turn') return;
     spinning = true; phase = 'spinning';
     App.setNavEnabled(false, false);
-    $('#spin', el).disabled = true; setLetters('none'); setActions('');
+    setLetters('none'); setActions('');
     status('Spinning…');
+    const stage = $('#wheelStage', el);
+    stage.classList.add('up');
     const start = rot;
     let dist = Math.PI * 2 * (4 + Math.random() * 3) + Math.random() * Math.PI * 2;
     if (App.wheelForce != null) { // demo: land on a chosen wedge
@@ -359,11 +433,12 @@ App.screens.wheelPlay = (el, puzzles) => {
       dist = end - start; App.wheelForce = null;
     }
     // a little wind-up backwards, then a long smooth slow-down
-    const back = 0.16, wind = 380, dur = 5200 + Math.random() * 1400, t0 = performance.now();
-    let lastW = wedgeAtPointer(), lastRot = rot, lastT = t0;
+    const back = 0.16, wind = 380, dur = 5200 + Math.random() * 1400, t0 = performance.now() + 650; // wait for the wheel to rise
+    let lastW = wedgeAtPointer(), lastRot = rot, lastT = t0 + 650;
     Sfx.whoosh();
     const step = now => {
       const el2 = now - t0;
+      if (el2 < 0) { rafId = requestAnimationFrame(step); return; }
       if (el2 < wind) { const q = el2 / wind; rot = start - back * Math.sin(q * Math.PI / 2); }
       else { const p = Math.min(1, (el2 - wind) / dur); rot = start - back + (dist + back) * (1 - Math.pow(1 - p, 3.6)); }
       drawWheel();
@@ -371,7 +446,14 @@ App.screens.wheelPlay = (el, puzzles) => {
       const speed = Math.min(1, Math.abs(rot - lastRot) / Math.max(1, now - lastT) * 40); lastRot = rot; lastT = now;
       if (w !== lastW) { lastW = w; Sfx.peg(speed); kickFlapper(speed); }
       if (el2 < wind + dur) rafId = requestAnimationFrame(step);
-      else { spinning = false; App.setNavEnabled(pIdx > 0, true); glowWedge(w); landed(w); }
+      else {
+        glowWedge(w);
+        // show where it landed for a moment, then the wheel sinks away and the result plays out
+        setTimeout(() => {
+          stage.classList.remove('up');
+          setTimeout(() => { if (App.current !== 'wheelPlay') return; spinning = false; App.setNavEnabled(pIdx > 0, true); landed(w); }, 450);
+        }, 1150);
+      }
     };
     rafId = requestAnimationFrame(step);
   }
@@ -437,6 +519,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     usedLetters.add(L);
     if (wasVowel && !free && d.settings.vowelCost) { bank[t.id] -= d.settings.vowelCost; Scores.add(t.id, -d.settings.vowelCost); }
     const n = letterCount(L);
+    if (!n) callout(L, 0);
     if (!n && free) { // Free Play: a miss doesn't cost the turn
       Sfx.noLetter();
       setTurnPhase(`No ${L}'s — but it's Free Play, so ${esc(t.name)} keeps the turn!`);
@@ -460,7 +543,8 @@ App.screens.wheelPlay = (el, puzzles) => {
       return;
     }
     drawPuzzle();
-    status(`<span class="big">${n} ${L}${n > 1 ? "'s" : ''}!</span>`);
+    status('');
+    callout(L, n);
     const revealMs = revealTiles($('#puzzle', el), L); // light up, ding, then turn each tile
     shown.add(L);
     setLetters('none');
@@ -495,8 +579,8 @@ App.screens.wheelPlay = (el, puzzles) => {
     $('#spin', el).disabled = true;
     status(`<span class="pill express">🚂 EXPRESS · ${fmt(EXPRESS_VALUE)} a consonant · vowels ${fmt(d.settings.vowelCost)}</span> ${msg}`);
     setLetters('express');
-    setActions(`<button class="btn lg green" id="aSolve">Solve it! ✓</button><button class="btn lg ghost" id="aOff">🛑 Get off the Express</button>`, {
-      aSolve: solve, aOff: () => setTurnPhase('Off the Express — spin, buy a vowel, or solve.'),
+    setActions(`<button class="btn lg green" id="aSolveX">Solve it! ✓</button><button class="btn lg ghost" id="aOff">🛑 Get off the Express</button>`, {
+      aSolveX: () => { phase = 'turn'; solve(); }, aOff: () => setTurnPhase('Off the Express — spin, buy a vowel, or solve.'),
     });
   }
   // ---------- 🃏 Wild Card / 💡 Hint: reveal one letter for free ----------
@@ -726,7 +810,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (e.code === 'Space' && phase === 'turn') { e.preventDefault(); spin(); }
   };
   document.addEventListener('keydown', onKey);
-  return () => { cancelAnimationFrame(rafId); clearInterval(bulbTimer); glow = null; document.removeEventListener('keydown', onKey); Scores.setActive(null); };
+  return () => { cancelAnimationFrame(rafId); clearInterval(bulbTimer); strip.stop(); document.body.classList.remove('wf-on'); glow = null; document.removeEventListener('keydown', onKey); Scores.setActive(null); };
 };
 
 // 🏁 BONUS ROUND — the leading team plays one last puzzle alone.
@@ -750,11 +834,11 @@ App.screens.wheelBonus = (el, usedIds = []) => {
     <div class="bonus">
       <div class="bonus-head"><span class="bonus-title">🏁 BONUS ROUND</span>
         <span class="bonus-sub"><span class="turn-pill sm" style="--tc:${t.color}">${esc(t.name)}</span> plays for <b>+${fmt(BONUS_PRIZE)}</b></span></div>
-      <div class="pz-frame"><div class="puzzle" id="bPuzzle"></div></div>
+      <div class="pz-frame oval"><div class="puzzle" id="bPuzzle"></div></div>
       <div class="wcat">${esc(puzzle.category)}</div>
       <div class="status" id="bStatus"></div>
       <div class="bonus-picks" id="bPicks"></div>
-      <div class="letters" id="bLetters">${'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map(L => `<button data-l="${L}" class="${VOWELS.includes(L) ? 'v' : ''}">${L}</button>`).join('')}</div>
+      <div class="letters qwerty" id="bLetters">${qwertyKeys()}</div>
       <div class="wh-actions" id="bActions"></div>
     </div>`;
   $$('#bLetters button', el).forEach(b => b.onclick = () => press(b.dataset.l));
