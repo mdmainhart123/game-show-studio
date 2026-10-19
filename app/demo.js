@@ -214,9 +214,11 @@ const Demo = {
       for (let spin = 0; spin < 10; spin++) {
         const consLeft = [...new Set(hidden())].filter(L => 'BCDFGHJKLMNPQRSTVWXYZ'.includes(L));
         if (letters >= 3 || !consLeft.length || $('#spin').disabled) break;
-        if (letters >= 1 && !mysteryShown) App.wheelForce = 8; // land on a 🎁 Mystery wedge once
+        // keep the demo simple: land on plain point wedges (and one 🎁 Mystery)
+        const nums = wedgesFor(App.look).map((w, i) => typeof w === 'number' ? i : -1).filter(i => i >= 0);
+        App.wheelForce = letters >= 1 && !mysteryShown ? 8 : this.pickRandom(nums);
         await this.tap('#spin', 700);
-        await this.until(() => !/Spinning/.test($('#status').textContent), 9000);
+        await this.until(() => !/Spinning/.test($('#status').textContent), 12000);
         const st = $('#status').textContent;
         if (/BANKRUPT/.test(st)) { await this.say('💥 BANKRUPT! They lose what they earned on this puzzle, and the turn passes.', 3800); continue; }
         if (/LOSE A TURN/.test(st)) { await this.say('😬 Lose a turn — next team!', 3200); continue; }
@@ -224,7 +226,7 @@ const Demo = {
           mysteryShown = true;
           await this.say('🎁 A <b>MYSTERY</b> wedge! It\'s worth 1,000 for each letter…', 3000);
           await this.tap($(`#letters button[data-l="${bestConsonant()}"]`));
-          await this.until('.flip-card', 8000);
+          await this.until('.flip-card', 14000);
           await this.say('The big choice: <b>keep</b> the points, or give them up and <b>flip the card</b> — 50/50 for a +2,500 JACKPOT or BANKRUPT!', 4400);
           await this.tap('.modal .btn.pink');
           await this.wait(3900);
@@ -248,7 +250,7 @@ const Demo = {
         await this.tap($(`#letters button[data-l="${L}"]`));
         await this.say(`Every ${L} lights up, and they earn the points <b>for each one</b> — straight onto the scoreboard.`, 3600);
         letters++;
-        await this.until(() => $('#aSolve'), 6000);
+        await this.until(() => $('#aSolve'), 14000);
         const vowelBtn = $('#aVowel');
         if (!vowelDone && vowelBtn && !vowelBtn.disabled) {
           const v = [...'EAOIU'].find(x => hidden().includes(x));
@@ -258,20 +260,20 @@ const Demo = {
             await this.tap($(`#letters button[data-l="${v}"]`));
             await this.say(`Bought an ${v}!`, 2600);
             vowelDone = true;
-            await this.until(() => $('#aSolve'), 6000);
+            await this.until(() => $('#aSolve'), 14000);
           }
         }
       }
       const answer = $$('.cell.l.hide').map(c => c.textContent);
       const typeIn = async letters => { for (const L of letters) { $(`#letters button[data-l="${L}"]`).click(); await this.wait(260); } };
       await this.say('Think you know it? Press <b>Solve it!</b> and have the team say it out loud…', 3000);
-      await this.tap(await this.until('#aSolve', 8000));
+      await this.tap(await this.until('#aSolve', 14000));
       await this.say('…then type their answer into the empty squares.', 2000);
       const wrongL = answer.length ? (answer[answer.length - 1] === 'E' ? 'A' : 'E') : 'E';
       await typeIn([...answer.slice(0, -1), wrongL]);
       await this.tap('#sCheck');
       await this.say('✗ Not quite! The guess is cleared and the <b>next team</b> gets a turn.', 3400);
-      await this.until('#aSolve', 8000);
+      await this.until('#aSolve', 14000);
       await this.say('The next team knows it! Solve it!', 2200);
       await this.tap('#aSolve');
       await typeIn(answer);
