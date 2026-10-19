@@ -10,7 +10,14 @@ const SPECIAL_WEDGES = {
   'STEAL': { label: '🦹 STEAL', bg: '#3b1d63' },
   'PAY IT FORWARD': { label: '🤝 PAY IT FORWARD', bg: '#d36f5f' },
   'GRATITUDE': { label: '🙏 GRATITUDE', bg: '#e2ae45', fg: '#3a2a08' },
+  'EXPRESS': { label: '🚂 EXPRESS', bg: '#56637a' },
+  'DOUBLE PLAY': { label: '✖2 DOUBLE PLAY', bg: '#0e7f8f' },
+  'JACKPOT': { label: '💰 JACKPOT', bg: '#a8770a' },
+  'WILD CARD': { label: '🃏 WILD CARD', bg: '#b0127a' },
 };
+// 🚂 Express: 1,000 per consonant without spinning (one miss = BANKRUPT) · ✖2 Double Play: next spin
+// counts double · 💰 Jackpot: instant bonus, spin again · 🃏 Wild Card: a free letter is revealed, spin again
+const EXPRESS_VALUE = 1000, JACKPOT_WEDGE = 2500;
 // ⌫ for the typed-answer squares: clears the square under the cursor if it has a letter,
 // otherwise the nearest filled square before it (or the last filled one). Returns the new cursor.
 function eraseSlot(slots, cursor) {
@@ -25,6 +32,7 @@ function eraseSlot(slots, cursor) {
 function wedgesFor(look) {
   const w = WEDGES.slice();
   w[3] = 'FREE PLAY';                       // replaces a 300
+  w[6] = 'WILD CARD'; w[11] = 'DOUBLE PLAY'; w[21] = 'JACKPOT'; w[23] = 'EXPRESS'; // replace 600, 500, 400, 300
   if (look === 'recovery') { w[18] = 'PAY IT FORWARD'; w[13] = 'GRATITUDE'; } // replace a 350 and a 300
   else w[18] = 'STEAL';                     // replaces a 350
   return w;
@@ -128,6 +136,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   let pIdx = -1, puzzle, grid, shown, usedLetters, bank, turn = 0;
   let phase, spinValue = 0, rot = Math.random() * Math.PI * 2, spinning = false, rafId;
   let bulbs = 0, glow = null; // rim-light chase step · landed-wedge highlight
+  let doubleNext = false, hintUsed = false; // ✖2 Double Play token (this turn only) · 💡 one hint per puzzle
   const W = wedgesFor(App.look); // the look can't change mid-game
   const N = W.length, SEG = (Math.PI * 2) / N;
 
@@ -267,6 +276,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     grid = puzzleGrid(puzzle.phrase);
     shown = new Set(); usedLetters = new Set(); bank = {};
     flipped = new Set(); mysteryIdx = null; // Mystery wedges reset each puzzle
+    doubleNext = false; hintUsed = false;
     HostView.set({ game: '🎡 Spin & Solve', meta: `${puzzle.category} · Puzzle ${pIdx + 1} of ${puzzles.length}`, answer: puzzle.phrase, answerLabel: 'Puzzle' });
     drawWheel();
     teams.forEach(t => bank[t.id] = 0);
@@ -299,7 +309,8 @@ App.screens.wheelPlay = (el, puzzles) => {
     $$('#letters button', el).forEach(b => {
       const L = b.dataset.l, isV = VOWELS.includes(L);
       b.classList.toggle('used', usedLetters.has(L));
-      b.disabled = usedLetters.has(L) || mode === 'none' || (mode === 'cons' && isV) || (mode === 'vowel' && !isV); // 'free' = any letter
+      const expressBlock = mode === 'express' && isV && teams[turn].score < d.settings.vowelCost; // vowels still cost on the Express
+      b.disabled = usedLetters.has(L) || mode === 'none' || (mode === 'cons' && isV) || (mode === 'vowel' && !isV) || expressBlock; // 'free' / 'express' = any letter
     });
     showKeys(mode !== 'none');
   }
@@ -314,13 +325,14 @@ App.screens.wheelPlay = (el, puzzles) => {
     const t = teams[turn];
     const consLeft = remaining(CONS).length, vowLeft = remaining(VOWELS).length;
     const canVowel = vowLeft > 0 && t.score >= d.settings.vowelCost; // vowLeft = vowels in the puzzle still hidden
-    status(msg + (consLeft ? '' : ' <span class="hint">(no consonants left)</span>'));
+    status(msg + (consLeft ? '' : ' <span class="hint">(no consonants left)</span>') + (doubleNext ? ' <span class="pill dbl">✖2 next spin counts double</span>' : ''));
     $('#spin', el).disabled = !consLeft;
     setLetters('none');
     setActions(`
       <button class="btn lg cyan" id="aVowel" ${canVowel ? '' : 'disabled'}>${!vowLeft ? 'All vowels are up' : t.score < d.settings.vowelCost ? `Buy a vowel (needs ${fmt(d.settings.vowelCost)})` : `Buy a vowel (${d.settings.vowelCost})`}</button>
       <button class="btn lg green" id="aSolve">Solve it! ✓</button>
-      <button class="link-btn pass-link" id="aPass">Skip to next team ▶</button>`, {
+      <div class="pass-link"><button class="link-btn" id="aPass">Skip to next team ▶</button>${!hintUsed && remaining(CONS + VOWELS).length > 1 ? ' &nbsp;·&nbsp; <button class="link-btn" id="aHint" title="Reveals one letter for free (once per puzzle)">💡 Hint</button>' : ''}</div>`, {
+      aHint: () => { hintUsed = true; freeLetter('💡 Hint:'); },
       aVowel: () => { phase = 'vowel'; status(`Which vowel?`); setLetters('vowel'); $('#spin', el).disabled = true;
         setActions(`<button class="btn ghost" id="aCancel">Cancel</button>`, { aCancel: () => setTurnPhase(`Spin, buy a vowel, or solve.`) }); },
       aSolve: solve,
@@ -328,6 +340,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     });
   }
   function nextTurn(msg) {
+    doubleNext = false; // a Double Play only lasts for the team's own turn
     turn = (turn + 1) % teams.length;
     setTurnPhase(`${msg} ${esc(teams[turn].name)}'s turn.`);
   }
@@ -394,27 +407,49 @@ App.screens.wheelPlay = (el, puzzles) => {
       setLetters('free'); setActions('');
       return;
     }
+    if (w === 'EXPRESS') return expressWedge(t);
+    if (w === 'DOUBLE PLAY') {
+      Sfx.bell(); doubleNext = true;
+      setTurnPhase(`<span class="big">✖2 DOUBLE PLAY!</span> Spin again — your next spin counts double.`); return;
+    }
+    if (w === 'JACKPOT') {
+      Sfx.solve(); confetti(1500);
+      Scores.add(t.id, JACKPOT_WEDGE); bank[t.id] += JACKPOT_WEDGE;
+      setTurnPhase(`<span class="big">💰 JACKPOT!</span> ${esc(t.name)} +${fmt(JACKPOT_WEDGE)} — spin again!`); return;
+    }
+    if (w === 'WILD CARD') return freeLetter('<span class="big">🃏 WILD CARD!</span>', true);
     if (w === 'STEAL') return stealWedge(t);
     if (w === 'PAY IT FORWARD') return payForwardWedge(t);
     if (w === 'GRATITUDE') return gratitudeWedge(t);
-    spinValue = w; phase = 'cons';
+    const dbl = doubleNext; doubleNext = false;
+    spinValue = dbl ? w * 2 : w; phase = 'cons';
     Sfx.ding();
-    status(`<span class="big">${fmt(w)}</span> — call a consonant!`);
+    status(dbl ? `<span class="big">${fmt(w)} ✖2 = ${fmt(spinValue)}</span> — call a consonant!` : `<span class="big">${fmt(w)}</span> — call a consonant!`);
     setLetters('cons');
     setActions('');
   }
   function pickLetter(L) {
     if (phase === 'solving') return typeLetter(L);
-    if (!(phase === 'cons' || phase === 'vowel' || phase === 'free')) return;
+    if (!(phase === 'cons' || phase === 'vowel' || phase === 'free' || phase === 'express')) return;
     const t = teams[turn];
-    const free = phase === 'free';
-    const wasVowel = phase === 'vowel' || (free && VOWELS.includes(L));
+    const free = phase === 'free', express = phase === 'express';
+    const wasVowel = phase === 'vowel' || ((free || express) && VOWELS.includes(L));
     usedLetters.add(L);
     if (wasVowel && !free && d.settings.vowelCost) { bank[t.id] -= d.settings.vowelCost; Scores.add(t.id, -d.settings.vowelCost); }
     const n = letterCount(L);
     if (!n && free) { // Free Play: a miss doesn't cost the turn
       Sfx.noLetter();
       setTurnPhase(`No ${L}'s — but it's Free Play, so ${esc(t.name)} keeps the turn!`);
+      return;
+    }
+    if (!n && express) { // a miss on the Express = BANKRUPT
+      Sfx.noLetter(); setTimeout(() => Sfx.bankrupt(), 600); setLetters('none');
+      const lost = Math.max(0, bank[t.id]);
+      if (lost) Scores.add(t.id, -lost);
+      bank[t.id] = 0;
+      status(`No ${L}'s — <span class="big">💥 the Express crashed!</span>${lost ? ` ${esc(t.name)} loses ${fmt(lost)}.` : ''}`);
+      phase = 'wait';
+      setTimeout(() => nextTurn('BANKRUPT!'), 2600);
       return;
     }
     if (!n) {
@@ -429,7 +464,7 @@ App.screens.wheelPlay = (el, puzzles) => {
     const revealMs = revealTiles($('#puzzle', el), L); // light up, ding, then turn each tile
     shown.add(L);
     setLetters('none');
-    const earned = wasVowel ? 0 : spinValue * n;
+    const earned = wasVowel ? 0 : (express ? EXPRESS_VALUE : spinValue) * n;
     bank[t.id] += earned;
     if (earned) Scores.add(t.id, earned);
     phase = 'wait';
@@ -438,8 +473,47 @@ App.screens.wheelPlay = (el, puzzles) => {
     setTimeout(() => {
       if (myst != null && App.current === 'wheelPlay') { offerFlip(t, earned, myst, n, L); return; }
       const done = !remaining(CONS + VOWELS).length;
+      if (express && !done && App.current === 'wheelPlay') { expressPhase(`${n} ${L}${n > 1 ? "'s" : ''}! ${earned ? `+${fmt(earned)}. ` : ''}Keep going!`); return; }
       setTurnPhase(`${n} ${L}${n > 1 ? "'s" : ''}! ${earned ? `+${fmt(earned)}. ` : ''}${done ? 'Every letter is up — solve it!' : ''}`);
     }, revealMs + 200);
+  }
+  // ---------- 🚂 Express ----------
+  function expressWedge(t) {
+    phase = 'special'; Sfx.bell();
+    status(`<span class="big">🚂 EXPRESS!</span>`);
+    Modal.open({
+      title: '🚂 All aboard the Express?',
+      body: `<p style="font-size:19px;margin:0">${esc(t.name)}: <b>ride the Express</b> — call consonants for ${fmt(EXPRESS_VALUE)} each and buy vowels <b>without spinning</b>, as long as you like. But one wrong letter and it's <b style="color:#ffb3bb">BANKRUPT</b>!<br><br>Or play it safe: one consonant for ${fmt(EXPRESS_VALUE)}, like a normal spin.</p>`,
+      actions: [
+        { label: 'Play it safe', cls: 'ghost', onClick: c => { c(); spinValue = EXPRESS_VALUE; phase = 'cons'; status(`<span class="big">${fmt(EXPRESS_VALUE)}</span> — call a consonant!`); setLetters('cons'); setActions(''); } },
+        { label: '🚂 All aboard!', cls: 'pink', onClick: c => { c(); Sfx.whoosh(); expressPhase('All aboard! Call a letter.'); } },
+      ],
+    });
+  }
+  function expressPhase(msg) {
+    phase = 'express'; renderBanks();
+    $('#spin', el).disabled = true;
+    status(`<span class="pill express">🚂 EXPRESS · ${fmt(EXPRESS_VALUE)} a consonant · vowels ${fmt(d.settings.vowelCost)}</span> ${msg}`);
+    setLetters('express');
+    setActions(`<button class="btn lg green" id="aSolve">Solve it! ✓</button><button class="btn lg ghost" id="aOff">🛑 Get off the Express</button>`, {
+      aSolve: solve, aOff: () => setTurnPhase('Off the Express — spin, buy a vowel, or solve.'),
+    });
+  }
+  // ---------- 🃏 Wild Card / 💡 Hint: reveal one letter for free ----------
+  function freeLetter(title, spinAgain) {
+    const pool = remaining(CONS).length ? remaining(CONS) : remaining(VOWELS);
+    if (!pool.length) return setTurnPhase(title + ' Every letter is already up — solve it!');
+    const L = pool[Math.floor(Math.random() * pool.length)];
+    phase = 'wait'; setLetters('none'); setActions('');
+    usedLetters.add(L);
+    drawPuzzle();
+    status(`${title} Here come the ${L}'s…`);
+    const ms = revealTiles($('#puzzle', el), L);
+    shown.add(L);
+    setTimeout(() => {
+      if (App.current !== 'wheelPlay') return;
+      setTurnPhase(`${title} The ${L}'s are up${spinAgain ? ' — spin again!' : '.'}`);
+    }, ms + 200);
   }
   // ---------- 🦹 Steal · 🤝 Pay it forward · 🙏 Gratitude ----------
   function pickTeam(title, intro, list, onPick, onNone) {

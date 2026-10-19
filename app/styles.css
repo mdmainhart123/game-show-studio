@@ -1310,3 +1310,7 @@ body .wheel-box .hub { width: 15%; height: 15%; background: radial-gradient(circ
 @media (max-width: 760px) and (min-height: 501px) { .pz-frame { padding: 9px; border-radius: 12px; } .pz-frame::before { padding: 4px; background-size: 10px 10px; } body .wh .wcat, body .bonus .wcat { letter-spacing: 2px; } }
 @media (max-height: 500px) { .pz-frame { padding: 7px; border-radius: 10px; } .pz-frame::before { padding: 3px; background-size: 9px 9px; } }
 body .wh .wcat, body .bonus .wcat, body.theme-recovery .wh .wcat, body.theme-recovery .bonus .wcat, body.theme-classic .wh .wcat, body.theme-classic .bonus .wcat { color: #fff; text-shadow: 0 2px 0 rgba(0,0,0,.35); opacity: 1; }
+
+.status .pill.dbl { background: #0e7f8f; color: #fff; font-size: .7em; vertical-align: middle; }
+.status .pill.express { background: #56637a; color: #fff; font-size: .65em; vertical-align: middle; }
+.pass-link .link-btn { margin-top: 0; }
