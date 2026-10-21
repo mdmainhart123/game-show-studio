@@ -1501,3 +1501,6 @@ body.theme-recovery .kq .ans.a0 { background: #d9675a; } body.theme-recovery .kq
   .kq .tq-card { font-size: 17px !important; padding: 8px 14px; }
 }
 .qz-timer svg circle:first-child { fill: color-mix(in srgb, var(--kq-bg1) 70%, #000); }
+
+.kq .answers:not(.turns):not(.revealed) .ans { cursor: pointer; }
+.kq .answers:not(.turns):not(.revealed) .ans:hover { transform: translateY(-4px) scale(1.01); filter: brightness(1.08); }

@@ -159,7 +159,7 @@ App.screens.triviaPlay = (el, questions) => {
     total = timeLeft = q.time || 20;
     phase = 'q'; paused = false; picked = new Set(rec ? rec.teams : []);
     el.innerHTML = quizLayout({ q, idx, count: questions.length, order, turns: false, R, C });
-    $('#award', el).innerHTML = `<span class="lbl">Lock in your answers!</span><div class="spacer"></div>
+    $('#award', el).innerHTML = `<span class="lbl">Lock in your answers! <span class="hint">Tap any answer (or Reveal) to show the right one.</span></span><div class="spacer"></div>
           <button class="btn lg yellow" id="reveal">Reveal answer <kbd>Space</kbd></button>`;
     if (rec) { // revisiting: show the answer and the saved picks, no timer
       $('#timer', el).style.visibility = 'hidden';
@@ -167,6 +167,8 @@ App.screens.triviaPlay = (el, questions) => {
       return;
     }
     $('#reveal', el).onclick = () => reveal();
+    // tapping any answer also reveals it (then tick the teams that got it right)
+    $$('.ans', el).forEach(b => b.onclick = () => { if (phase === 'q') reveal(); });
     phase = 'reading';
     stopRead = quizRead(el, () => { phase = 'q'; startClock(); });
   }
