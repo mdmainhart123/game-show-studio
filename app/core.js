@@ -1,4 +1,4 @@
-const APP_VERSION = '20261019-1600'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261021-1500'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -350,6 +350,10 @@ const Sfx = {
       s.connect(f).connect(g).connect(c.destination); s.start(t, Math.random() * 1.2, dur + 0.05); s.stop(t + dur + 0.05);
     } catch (e) {}
   },
+  // ---- Trivia Blitz quiz-show sounds (original) ----
+  qzCount(i) { this.tone([392, 523, 659][i - 1] || 784, 0.22, 'triangle', 0.18); this.tone(([392, 523, 659][i - 1] || 784) * 2, 0.12, 'sine', 0.05); },
+  qzQuestion() { [523, 659, 784].forEach((f, i) => this.tone(f, 0.12, 'square', 0.05, i * 0.06)); this.noise(0.25, { freq: 3000, q: 0.8, vol: 0.05 }); },
+  gong() { [110, 165, 220, 277].forEach((f, i) => this.tone(f, 1.6, 'sine', [0.2, 0.08, 0.1, 0.05][i])); this.noise(0.4, { type: 'lowpass', freq: 600, vol: 0.08 }); },
   // ---- Spin & Solve: original game-show style sounds (all generated here, nothing copied) ----
   // Wheel clacker: a crisp plastic "clack" each time a peg passes the flapper; softer as it slows.
   peg(speed = 1) {

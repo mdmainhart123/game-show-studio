@@ -12,6 +12,78 @@ function countdownButton(el, label, fire) {
   if (st) st.onclick = () => { clearInterval(id); const b = btn(); if (b) b.innerHTML = label; st.remove(); };
   return id;
 }
+// ---- quiz-show presentation helpers (shared by both play styles) ----
+const QZ_SHAPES = ['▲', '◆', '●', '■'];
+const QZ_READ_MS = 3800; // the question shows on its own for a few seconds before the answers appear
+// 3 · 2 · 1 countdown with a spinning shape, then the "Quiz" badge, then go()
+function quizIntro(el, total, done) {
+  const ov = document.createElement('div');
+  ov.className = 'qz-intro';
+  el.appendChild(ov);
+  const steps = [['3', 'sq'], ['2', 'dia'], ['1', 'sq']];
+  const quick = typeof Demo !== 'undefined' && Demo.running;
+  let i = 0;
+  const next = () => {
+    if (!ov.isConnected) return;
+    if (i < steps.length) {
+      const [n, s] = steps[i++];
+      ov.innerHTML = `<div class="qz-shape ${s}"><span>${n}</span></div>`;
+      Sfx.qzCount(i);
+      setTimeout(next, quick ? 450 : 900);
+    } else {
+      ov.innerHTML = `<div class="qz-badge"><div class="qz-logo">${QZ_SHAPES.map((s, k) => `<i class="s${k}">${s}</i>`).join('')}</div><div class="qz-word">Quiz</div><div class="qz-count">${total} questions</div></div>`;
+      Sfx.whoosh();
+      setTimeout(() => { ov.classList.add('out'); setTimeout(() => { ov.remove(); done(); }, 350); }, quick ? 600 : 1300);
+    }
+  };
+  next();
+}
+// The question alone with a filling bar, then the answer layout appears (calls ready()).
+function quizRead(el, ready) {
+  const w = $('.tq-wrap', el); if (!w) return ready();
+  const ms = typeof Demo !== 'undefined' && Demo.running ? 900 : QZ_READ_MS;
+  w.classList.add('reading');
+  w.style.setProperty('--read', ms + 'ms');
+  Sfx.qzQuestion();
+  const t = setTimeout(() => { if (!w.isConnected) return; w.classList.remove('reading'); Sfx.whoosh(); ready(); }, ms);
+  return () => clearTimeout(t);
+}
+// Big "Correct / Incorrect" banner over the answers
+function quizResult(el, ok, sub) {
+  const w = $('.tq-wrap', el); if (!w) return;
+  $('.qz-result', w)?.remove();
+  const r = document.createElement('div');
+  r.className = 'qz-result ' + (ok ? 'ok' : 'bad');
+  r.innerHTML = `<div class="qz-rbox"><b>${ok ? 'Correct' : 'Incorrect'}</b><i>${ok ? '✓' : '✕'}</i>${sub ? `<small>${sub}</small>` : ''}</div>`;
+  w.appendChild(r);
+  setTimeout(() => r.classList.add('out'), 1500);
+  setTimeout(() => r.remove(), 1900);
+}
+function quizLayout({ q, idx, count, order, turns, R, C }) {
+  return `
+      <div class="tq-wrap kq">
+        <div class="tq-top">
+          <span class="pill qz-cat">${esc(q.category || 'General')}</span>
+          <span class="qz-num">${idx + 1} / ${count}</span>
+          <div class="spacer"></div>
+          ${turns ? '<span class="turn-pill" id="turnPill"></span>' : ''}
+        </div>
+        <div class="tq-card">${esc(q.question)}</div>
+        <div class="qz-mid">
+          <div class="timer qz-timer" id="timer"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="${R}" stroke="rgba(255,255,255,.18)" stroke-width="10" fill="#46178f"/>
+            <circle id="ring" cx="60" cy="60" r="${R}" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0" style="transition:stroke-dashoffset .1s linear"/></svg>
+            <div class="num" id="tnum">${q.time || 20}</div></div>
+          <div class="qz-art"><span>${['❓', '💡', '🧠', '⭐', '🎯'][idx % 5]}</span></div>
+          <div class="qz-side" id="qzSide"></div>
+        </div>
+        <div class="qz-readbar"><i></i></div>
+        <div class="answers ${turns ? 'turns' : ''}" id="answers" style="${order.length <= 2 ? 'grid-template-columns:1fr 1fr' : ''}">
+          ${order.map((a, i) => `<${turns ? 'button' : 'div'} class="ans a${i} ${a === q.answer ? 'right' : 'wrong'}" data-i="${i}" title="Key ${'ABCD'[i]}"><div class="shape"><span>${QZ_SHAPES[i]}</span></div><div class="atext">${esc(a)}${turns ? '<div class="who"></div>' : ''}</div></${turns ? 'button' : 'div'}>`).join('')}
+        </div>
+        <div class="award" id="award">${turns ? '<span class="lbl" id="tstatus"></span><div class="spacer"></div><span id="tbtns"></span>' : ''}</div>
+      </div>`;
+}
+
 App.screens.triviaSetup = (el) => {
   const d = App.data;
   const cats = [...new Set(d.trivia.map(q => q.category || 'General'))].sort();
@@ -61,8 +133,9 @@ App.screens.triviaPlay = (el, questions) => {
   const d = App.data;
   // records[i] = { order, pts, teams:Set } once a question has been revealed
   const records = [];
-  let idx = -1, phase, timeLeft, total, timerId, paused, picked, pts, order;
-  const R = 52, C = 2 * Math.PI * R;
+  let idx = -1, phase, timeLeft, total, timerId, paused, picked, pts, order, stopRead = () => {};
+  const R = 50, C = 2 * Math.PI * R;
+  document.body.classList.add('kq-on');
   App.gameBar({
     pause: { toggle: () => { if (phase !== 'q') return; paused = !paused; $('#timer', el)?.classList.toggle('paused', paused); }, get: () => paused },
     back: () => { if (phase === 'r') applyAward(true); go(idx - 1); },
@@ -73,7 +146,7 @@ App.screens.triviaPlay = (el, questions) => {
 
   let countT;
   function go(i) {
-    clearInterval(timerId); clearInterval(countT);
+    clearInterval(timerId); clearInterval(countT); stopRead && stopRead();
     if (App.current !== 'triviaPlay' || i < 0) return;
     if (i >= questions.length) { App.endGame('Trivia Blitz', 'triviaSetup'); return; }
     idx = i;
@@ -85,31 +158,19 @@ App.screens.triviaPlay = (el, questions) => {
     order = rec ? rec.order : shuffle([q.answer, ...q.wrong]);
     total = timeLeft = q.time || 20;
     phase = 'q'; paused = false; picked = new Set(rec ? rec.teams : []);
-    el.innerHTML = `
-      <div class="tq-wrap">
-        <div class="tq-top">
-          <span class="pill" style="font-size:18px;padding:6px 14px">${esc(q.category || 'General')}</span>
-          <span>Question ${idx + 1} of ${questions.length}</span>
-          <div class="spacer"></div>
-          <div class="timer" id="timer"><svg width="120" height="120"><circle cx="60" cy="60" r="${R}" stroke="rgba(255,255,255,.18)" stroke-width="12" fill="rgba(0,0,0,.25)"/>
-            <circle id="ring" cx="60" cy="60" r="${R}" stroke="#ffd23f" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0" style="transition:stroke-dashoffset .1s linear"/></svg>
-            <div class="num" id="tnum">${timeLeft}</div></div>
-        </div>
-        <div class="tq-card">${esc(q.question)}</div>
-        <div class="answers" id="answers" style="${order.length <= 2 ? 'grid-template-columns:1fr 1fr;max-height:260px' : ''}">
-          ${order.map((a, i) => `<div class="ans a${i} ${a === q.answer ? 'right' : 'wrong'}"><div class="shape"><span>${'ABCD'[i]}</span></div><div>${esc(a)}</div></div>`).join('')}
-        </div>
-        <div class="award" id="award">
-          <span class="lbl">Lock in your answers!</span><div class="spacer"></div>
-          <button class="btn lg yellow" id="reveal">Reveal answer <kbd>Space</kbd></button>
-        </div>
-      </div>`;
+    el.innerHTML = quizLayout({ q, idx, count: questions.length, order, turns: false, R, C });
+    $('#award', el).innerHTML = `<span class="lbl">Lock in your answers!</span><div class="spacer"></div>
+          <button class="btn lg yellow" id="reveal">Reveal answer <kbd>Space</kbd></button>`;
     if (rec) { // revisiting: show the answer and the saved picks, no timer
       $('#timer', el).style.visibility = 'hidden';
       reveal(true);
       return;
     }
     $('#reveal', el).onclick = () => reveal();
+    phase = 'reading';
+    stopRead = quizRead(el, () => { phase = 'q'; startClock(); });
+  }
+  function startClock() {
     let lastSec = timeLeft;
     timerId = setInterval(() => {
       if (paused) return;
@@ -119,7 +180,7 @@ App.screens.triviaPlay = (el, questions) => {
       $('#ring').style.strokeDashoffset = C * (1 - timeLeft / total);
       $('#timer').classList.toggle('low', s <= 5);
       if (s !== lastSec) { lastSec = s; if (s <= 5 && s > 0) Sfx.tick(); }
-      if (timeLeft <= 0) { Sfx.buzz(); reveal(); }
+      if (timeLeft <= 0) { Sfx.gong(); reveal(); }
     }, 100);
   }
 
@@ -177,8 +238,8 @@ App.screens.triviaPlay = (el, questions) => {
     if (phase === 'r' && n >= 1 && n <= Scores.teams().length) toggle(Scores.teams()[n - 1].id);
   };
   document.addEventListener('keydown', onKey);
-  go(0);
-  return () => { clearInterval(timerId); clearInterval(countT); document.removeEventListener('keydown', onKey); };
+  quizIntro(el, questions.length, () => go(0));
+  return () => { clearInterval(timerId); clearInterval(countT); stopRead && stopRead(); document.body.classList.remove('kq-on'); document.removeEventListener('keydown', onKey); };
 };
 
 // 🎯 Take-turns mode: the team whose turn it is taps an answer.
@@ -193,8 +254,9 @@ App.screens.triviaTurns = (el, questions) => {
   const lostTxt = name => penalty ? `✗ ${esc(name)} −${fmt(penalty)}` : `✗ Not quite, ${esc(name)}`;
   const bad = s => `<span class="msg-bad">${s}</span>`;
   const records = [];
-  let idx = -1, turn = 0, phase, timeLeft, total, timerId, paused, rec, advanceT, countT;
-  const R = 52, C = 2 * Math.PI * R;
+  let idx = -1, turn = 0, phase, timeLeft, total, timerId, paused, rec, advanceT, countT, stopRead = () => {};
+  const R = 50, C = 2 * Math.PI * R;
+  document.body.classList.add('kq-on');
   const team = () => teams[turn % teams.length];
   App.gameBar({
     pause: { toggle: () => { if (phase !== 'q') return; paused = !paused; $('#timer', el)?.classList.toggle('paused', paused); }, get: () => paused },
@@ -204,7 +266,7 @@ App.screens.triviaTurns = (el, questions) => {
     title: '⚡ Trivia Blitz', backTitle: 'Previous question', nextTitle: 'Next question',
   });
 
-  function stopTimers() { clearInterval(timerId); clearTimeout(advanceT); clearInterval(countT); }
+  function stopTimers() { clearInterval(timerId); clearTimeout(advanceT); clearInterval(countT); stopRead && stopRead(); }
 
   function go(i) {
     stopTimers();
@@ -217,30 +279,12 @@ App.screens.triviaTurns = (el, questions) => {
     Played.mark(q);
     HostView.set({ game: '⚡ Trivia Blitz', meta: `${q.category || 'General'} · Question ${idx + 1} of ${questions.length}`, prompt: q.question, answer: q.answer });
     rec = records[idx] ||= { order: shuffle([q.answer, ...q.wrong]), out: [], tried: new Set(), log: [], done: false };
-    el.innerHTML = `
-      <div class="tq-wrap">
-        <div class="tq-top">
-          <span class="pill" style="font-size:18px;padding:6px 14px">${esc(q.category || 'General')}</span>
-          <span>Question ${idx + 1} of ${questions.length}</span>
-          <div class="spacer"></div>
-          <span class="turn-pill" id="turnPill"></span>
-          <div class="timer" id="timer"><svg width="120" height="120"><circle cx="60" cy="60" r="${R}" stroke="rgba(255,255,255,.18)" stroke-width="12" fill="rgba(0,0,0,.25)"/>
-            <circle id="ring" cx="60" cy="60" r="${R}" stroke="#ffd23f" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="0" style="transition:stroke-dashoffset .1s linear"/></svg>
-            <div class="num" id="tnum"></div></div>
-        </div>
-        <div class="tq-card">${esc(q.question)}</div>
-        <div class="answers turns" id="answers" style="${rec.order.length <= 2 ? 'grid-template-columns:1fr 1fr;max-height:260px' : ''}">
-          ${rec.order.map((a, i) => `<button class="ans a${i} ${a === q.answer ? 'right' : 'wrong'}" data-i="${i}"><div class="shape"><span>${'ABCD'[i]}</span></div><div class="atext">${esc(a)}<div class="who"></div></div></button>`).join('')}
-        </div>
-        <div class="award" id="award">
-          <span class="lbl" id="tstatus"></span><div class="spacer"></div>
-          <span id="tbtns"></span>
-        </div>
-      </div>`;
+    el.innerHTML = quizLayout({ q, idx, count: questions.length, order: rec.order, turns: true, R, C });
     $$('.ans', el).forEach(b => b.onclick = () => pick(+b.dataset.i));
     rec.out.forEach(markOut);
     if (rec.done) { finish(null, true); return; }
-    startTurn('');
+    phase = 'reading'; setTurnUI();
+    stopRead = quizRead(el, () => startTurn(''));
   }
 
   function markOut(o) {
@@ -294,7 +338,7 @@ App.screens.triviaTurns = (el, questions) => {
     if (rec.order[i] === q.answer) {
       Scores.add(t.id, pts);
       rec.log.push(`✓ ${t.name} +${fmt(pts)}`);
-      Sfx.correct();
+      Sfx.correct(); quizResult(el, true, `${esc(t.name)} +${fmt(pts)}`);
       // correct team keeps control and starts the next question
       finish(`<span class="msg-good">✓ Correct!</span> ${esc(t.name)} +${fmt(pts)}`, false, true);
       return;
@@ -303,7 +347,7 @@ App.screens.triviaTurns = (el, questions) => {
     rec.log.push(penalty ? `✗ ${t.name} −${fmt(penalty)}` : `✗ ${t.name}`);
     const o = { i, team: t.id };
     rec.out.push(o); markOut(o);
-    Sfx.wrong();
+    Sfx.wrong(); quizResult(el, false, penalty ? `${esc(t.name)} −${fmt(penalty)}` : esc(t.name));
     turn++;
     const left = rec.order.length - rec.out.length;
     if (left <= 1 || rec.tried.size >= teams.length) {
@@ -316,7 +360,7 @@ App.screens.triviaTurns = (el, questions) => {
   function timeUp() {
     clearInterval(timerId);
     const t = team();
-    Sfx.buzz();
+    Sfx.gong();
     rec.tried.add(t.id);
     rec.log.push(`⏰ ${t.name} ran out of time`);
     turn++;
@@ -352,6 +396,6 @@ App.screens.triviaTurns = (el, questions) => {
     if ((e.code === 'Space' || e.key === 'Enter') && phase === 'done') { e.preventDefault(); go(idx + 1); }
   };
   document.addEventListener('keydown', onKey);
-  go(0);
-  return () => { stopTimers(); document.removeEventListener('keydown', onKey); Scores.setActive(null); };
+  quizIntro(el, questions.length, () => go(0));
+  return () => { stopTimers(); document.body.classList.remove('kq-on'); document.removeEventListener('keydown', onKey); Scores.setActive(null); };
 };
