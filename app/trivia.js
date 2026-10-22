@@ -100,7 +100,7 @@ App.screens.triviaSetup = (el) => {
           <select class="input" id="num">${[5, 10, 15, 20, 30].map(n => `<option value="${n}" ${n === 10 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
         <div class="field"><span>Play style</span>
           <div class="mode-pick">
-            <button class="mode ${d.settings.triviaMode !== 'all' ? 'on' : ''}" data-m="turns"><b>🎯 Take turns</b><small>One team at a time. Tap their answer: right = +${d.settings.triviaPoints} and they go again; wrong = ${({ none: 'no penalty', half: '−' + Math.round(d.settings.triviaPoints / 20) * 10, full: '−' + d.settings.triviaPoints })[d.settings.triviaPenalty] || 'no penalty'} and the next team tries.</small></button>
+            <button class="mode ${d.settings.triviaMode !== 'all' ? 'on' : ''}" data-m="turns"><b>🎯 Take turns</b><small>One team at a time. Tap their answer: right = +${d.settings.triviaPoints}; wrong = ${({ none: 'no penalty', half: '−' + Math.round(d.settings.triviaPoints / 20) * 10, full: '−' + d.settings.triviaPoints })[d.settings.triviaPenalty] || 'no penalty'} and the next team tries. Each new question goes to the next team in order. With one team, everyone answers together.</small></button>
             <button class="mode ${d.settings.triviaMode === 'all' ? 'on' : ''}" data-m="all"><b>👥 Everyone answers</b><small>All teams answer at once. Reveal, then tick every team that got it right.</small></button>
           </div></div>
         <div class="hint">Points per question: ${d.settings.triviaPoints} (change in ☰ Menu → Settings). Scores reset to 0 after each game.</div>
@@ -247,7 +247,7 @@ App.screens.triviaPlay = (el, questions) => {
 // 🎯 Take-turns mode: the team whose turn it is taps an answer.
 // Right = +points, and that same team starts the next question.
 // Wrong = −points, that answer is crossed out, and the next team tries;
-// if nobody gets it, the team after the last wrong guess starts the next one.
+// each new question goes to the next team in order, whoever got the last one.
 App.screens.triviaTurns = (el, questions) => {
   App.inGame = true;
   const d = App.data, teams = Scores.teams(), pts = d.settings.triviaPoints;
@@ -260,6 +260,10 @@ App.screens.triviaTurns = (el, questions) => {
   const R = 50, C = 2 * Math.PI * R;
   document.body.classList.add('kq-on');
   const team = () => teams[turn % teams.length];
+  // Each new question goes to the next team in order (Red → Blue → Gold → Red…).
+  // With only one team, everyone plays together: a wrong answer is crossed out and the group keeps guessing.
+  const solo = teams.length === 1;
+  const starter = i => i % teams.length;
   App.gameBar({
     pause: { toggle: () => { if (phase !== 'q') return; paused = !paused; $('#timer', el)?.classList.toggle('paused', paused); }, get: () => paused },
     back: () => go(idx - 1),
@@ -281,6 +285,7 @@ App.screens.triviaTurns = (el, questions) => {
     Played.mark(q);
     HostView.set({ game: '⚡ Trivia Blitz', meta: `${q.category || 'General'} · Question ${idx + 1} of ${questions.length}`, prompt: q.question, answer: q.answer });
     rec = records[idx] ||= { order: shuffle([q.answer, ...q.wrong]), out: [], tried: new Set(), log: [], done: false };
+    if (!rec.done) turn = starter(idx);
     el.innerHTML = quizLayout({ q, idx, count: questions.length, order: rec.order, turns: true, R, C });
     $$('.ans', el).forEach(b => b.onclick = () => pick(+b.dataset.i));
     rec.out.forEach(markOut);
@@ -341,17 +346,22 @@ App.screens.triviaTurns = (el, questions) => {
       Scores.add(t.id, pts);
       rec.log.push(`✓ ${t.name} +${fmt(pts)}`);
       Sfx.correct(); quizResult(el, true, `${esc(t.name)} +${fmt(pts)}`);
-      // correct team keeps control and starts the next question
       finish(`<span class="msg-good">✓ Correct!</span> ${esc(t.name)} +${fmt(pts)}`, false, true);
       return;
     }
-    if (penalty) Scores.add(t.id, -penalty);
-    rec.log.push(penalty ? `✗ ${t.name} −${fmt(penalty)}` : `✗ ${t.name}`);
+    const pen = solo ? 0 : penalty; // playing as one group: no penalty, just keep guessing
+    if (pen) Scores.add(t.id, -pen);
+    rec.log.push(pen ? `✗ ${t.name} −${fmt(pen)}` : `✗ ${t.name}`);
     const o = { i, team: t.id };
     rec.out.push(o); markOut(o);
-    Sfx.wrong(); quizResult(el, false, penalty ? `${esc(t.name)} −${fmt(penalty)}` : esc(t.name));
-    turn++;
+    Sfx.wrong(); quizResult(el, false, pen ? `${esc(t.name)} −${fmt(pen)}` : solo ? 'Try again!' : esc(t.name));
+    if (!solo) turn++;
     const left = rec.order.length - rec.out.length;
+    if (solo) {
+      if (left <= 1) finish(`${bad('✗ Not quite')} · only one answer left`);
+      else startTurn(`${bad('✗ Not quite')} · keep guessing!`);
+      return;
+    }
     if (left <= 1 || rec.tried.size >= teams.length) {
       finish(`${bad(lostTxt(t.name))} · ${left <= 1 ? 'only one answer left' : 'every team has tried'}`);
       return;
@@ -365,8 +375,8 @@ App.screens.triviaTurns = (el, questions) => {
     Sfx.gong();
     rec.tried.add(t.id);
     rec.log.push(`⏰ ${t.name} ran out of time`);
-    turn++;
-    if (rec.tried.size >= teams.length) { finish(`${bad(`⏰ Time's up, ${esc(t.name)}`)} · every team has tried`); return; }
+    if (!solo) turn++;
+    if (solo || rec.tried.size >= teams.length) { finish(`${bad(`⏰ Time's up, ${esc(t.name)}`)} · every team has tried`); return; }
     startTurn(`${bad(`⏰ Time's up, ${esc(t.name)}`)} · ${esc(team().name)}'s turn`);
   }
 
@@ -380,8 +390,9 @@ App.screens.triviaTurns = (el, questions) => {
     if (!revisit) Sfx.reveal();
     Scores.setActive(null);
     const pill = $('#turnPill', el);
-    pill.style.setProperty('--tc', team().color);
-    pill.textContent = `Next up: ${team().name}`;
+    const nxt = teams[starter(idx + 1)];
+    pill.style.setProperty('--tc', nxt.color);
+    pill.textContent = solo ? `🎉 ${nxt.name}` : `Next up: ${nxt.name}`;
     const last = idx + 1 >= questions.length;
     $('#tstatus', el).innerHTML = revisit ? (rec.log.length ? rec.log.map(esc).join(' &nbsp;·&nbsp; ') : 'Answer revealed · no points') : msg;
     const label = last ? 'Final scores 🏁' : 'Next question ▶';

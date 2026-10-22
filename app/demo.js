@@ -137,9 +137,9 @@ const Demo = {
       await this.say('❌ Wrong! That answer is crossed out, they lose a few points, and the <b>next team</b> tries.', 3800);
       await this.tap($('.ans.right'));
       $('#stay')?.click(); // demo moves on by itself
-      await this.say('✅ Correct! They earn the points <b>and</b> start the next question.', 3200);
+      await this.say('✅ Correct! They earn the points.', 3200);
       await this.tap('#nextQ');
-      await this.say('New question — same team, since they got the last one right.', 2800);
+      await this.say('New question — and it goes to the <b>next team</b> in order.', 2800);
       await this.tap($('.ans.right'));
       $('#stay')?.click();
       await this.say('✅ Another one! Use ◀ ▶ at the top to move between questions. End game is in the ☰ Menu.', 3600);
