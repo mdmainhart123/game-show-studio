@@ -12,19 +12,19 @@ App.screens.drawSetup = (el) => {
       <h1>🎨 Draw It</h1>
       ${d.draw.length ? `
       <div class="panel">
-        <p style="font-size:20px;margin:0 0 14px">One person draws, their team guesses before time runs out. No letters or numbers in the drawing!</p>
+        <p style="font-size:20px;margin:0 0 14px">One person draws, everyone else guesses before time runs out — <b>whoever guesses it draws next!</b> No letters or numbers in the drawing.</p>
         <div class="field-row">
           <label class="field"><span>How to play</span><select class="input" id="dMode">
-            <option value="teams">Teams take turns (with points)</option>
-            <option value="all">Everyone guesses — just for fun, no points</option></select></label>
+            <option value="teams" ${d.teams.length > 1 ? 'selected' : ''}>${d.teams.length > 1 ? 'Teams (with points)' : `${esc(d.teams[0]?.name || 'Group')} (with points)`}</option>
+            <option value="all" ${d.teams.length > 1 ? '' : 'selected'}>No teams — everyone guesses, just for fun</option></select></label>
           <label class="field"><span>Words</span><select class="input" id="dLevel">
             ${['mix', 'easy', 'medium', 'hard'].map(lv => `<option value="${lv}">${lv === 'mix' ? '🎲 Mix of all levels' : DRAW_LABEL[lv]}${lv === 'mix' ? '' : ` (${DRAW_POINTS[lv]} pts)`} — ${count(lv)} words</option>`).join('')}</select></label>
         </div>
         <div class="field-row">
           <label class="field"><span>Time to draw</span><select class="input" id="dTime">
             ${[45, 60, 90, 120].map(s => `<option value="${s}" ${s === 60 ? 'selected' : ''}>${s} seconds</option>`).join('')}<option value="0">♾️ No time limit</option></select></label>
-          <label class="field" id="dRoundsF"><span>Turns per team</span><select class="input" id="dRounds">
-            ${[1, 2, 3, 4, 5].map(n => `<option value="${n}" ${n === 3 ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
+          <label class="field" id="dRoundsF"><span>How many drawings?</span><select class="input" id="dRounds">
+            ${[5, 8, 10, 15, 20].map(n => `<option value="${n}" ${n === 10 ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
         </div>
         <div class="hint">Tip: the artist taps <b>👀 Peek</b> to see the word on the big screen while everyone else looks away.</div>
       </div>
@@ -51,7 +51,9 @@ App.screens.drawPlay = (el, opts) => {
   App.inGame = teamsMode; // the scoreboard only shows when teams are playing for points
   let deck = Played.order(d.draw.filter(w => opts.level === 'mix' || w.level === opts.level));
   let wi = -1, word, turn = 0, turnsDone = 0, phase, timerId, left, paused = false, peekT;
-  const totalTurns = teamsMode ? teams.length * opts.rounds : Infinity;
+  // opts.rounds = how many drawings in the game. Whoever guesses a drawing draws the next one.
+  const totalTurns = teamsMode ? opts.rounds : Infinity;
+  const multi = teamsMode && teams.length > 1;
   const R = 52, C = 2 * Math.PI * R;
   const team = () => teams[turn % teams.length];
 
@@ -106,7 +108,7 @@ App.screens.drawPlay = (el, opts) => {
     setTurnUI(); nextWord(); showTimer(false);
     $('#dCount', el).textContent = teamsMode ? `Turn ${turnsDone + 1} of ${totalTurns}` : `Word ${wi + 1}`;
     card(`<div class="dr-ready">${teamsMode ? `<span class="dr-team" style="--tc:${team().color}">${esc(team().name)}</span>` : ''}
-      <div class="dr-big">Pick an artist! ✏️</div>
+      <div class="dr-big">${multi || !teamsMode ? 'Pick an artist! ✏️' : 'Who\'s drawing? ✏️'}</div>
       <div class="dr-sub">Artist: tap <b>👀 Peek</b> to see your word — everyone else, look away!</div></div>`);
     msg('');
     acts(`<button class="btn lg ghost" id="dPeek">👀 Peek (artist only)</button><button class="btn lg pink" id="dGo">Start drawing ▶ <kbd>Space</kbd></button>`, { dPeek: peek, dGo: startDrawing });
@@ -142,7 +144,7 @@ App.screens.drawPlay = (el, opts) => {
     acts(`<button class="btn lg green" id="dGot">✓ Got it!${teamsMode ? ` <small>+${fmt(DRAW_POINTS[word.level] || 100)}</small>` : ''}</button>
       ${opts.time ? '' : `<button class="btn lg red" id="dStop">✋ Stop${teamsMode ? ' — steal!' : ''}</button>`}
       <button class="btn ghost" id="dPeek2">👀 Peek</button><button class="btn ghost" id="dSkip">⏭ Skip word</button>`,
-      { dGot: () => gotIt(teamsMode ? team() : null), dStop: () => phase === 'draw' && timeUp(true), dPeek2: peek, dSkip: skipWord });
+      { dGot: () => (multi ? whoGuessed() : gotIt(teamsMode ? team() : null)), dStop: () => phase === 'draw' && timeUp(true), dPeek2: peek, dSkip: skipWord });
     if (!opts.time) return; // ♾️ no time limit: the host taps Got it! or Stop
     showTimer(true);
     left = opts.time;
@@ -170,20 +172,28 @@ App.screens.drawPlay = (el, opts) => {
     toast('New word — tap 👀 Peek to see it');
     if (phase === 'ready') ready2();
   }
+  // Got it! — which team guessed it? They get the points and draw next.
+  function whoGuessed() {
+    if (phase !== 'draw') return;
+    stop(); phase = 'who'; showTimer(false);
+    card(`<div class="dr-big">🎉 Who guessed it?</div><div class="dr-sub">They get the points — and they draw next!</div>`);
+    acts(`<div class="bq-steal">${teams.map(x => `<button class="bq-st" data-id="${x.id}" style="--tc:${x.color}">${esc(x.name)}</button>`).join('')}</div>`);
+    $$('.bq-st', el).forEach(b => b.onclick = () => { phase = 'draw'; gotIt(teams.find(x => x.id === b.dataset.id)); });
+  }
   function gotIt(t) {
     if (phase !== 'draw') return;
     stop(); phase = 'reveal';
     Played.mark(word);
     if (t) Scores.add(t.id, DRAW_POINTS[word.level] || 100);
     Sfx.correct(); confetti(1500);
-    reveal(`<span class="msg-good">✓ Got it!</span>${t ? ` ${esc(t.name)} +${fmt(DRAW_POINTS[word.level] || 100)}` : ''}`);
+    reveal(`<span class="msg-good">✓ Got it!</span>${t ? ` ${esc(t.name)} +${fmt(DRAW_POINTS[word.level] || 100)}` : ''}${multi ? '' : ' — whoever guessed it draws next!'}`, t);
   }
   // 3. time's up: in team play, any other team can steal it
   function timeUp(stopped) {
     stop(); if (!stopped) Sfx.buzz(); showTimer(false);
     const why = stopped ? '✋ Stopped' : "⏰ Time's up";
     Played.mark(word);
-    if (!teamsMode) { phase = 'reveal'; reveal(`<span class="msg-bad">${why}!</span>`); return; }
+    if (!multi) { phase = 'reveal'; reveal(`<span class="msg-bad">${why}!</span> Pick someone new to draw.`); return; }
     phase = 'steal';
     const others = teams.filter(x => x.id !== team().id);
     Scores.setActive(null);
@@ -194,14 +204,16 @@ App.screens.drawPlay = (el, opts) => {
     $$('.bq-st', el).forEach(b => b.onclick = () => {
       const x = teams.find(tm => tm.id === b.dataset.id);
       Scores.add(x.id, DRAW_POINTS[word.level] || 100); Sfx.correct(); confetti(1200);
-      phase = 'reveal'; reveal(`<span class="msg-good">🚨 Stolen!</span> ${esc(x.name)} +${fmt(DRAW_POINTS[word.level] || 100)}`);
+      phase = 'reveal'; reveal(`<span class="msg-good">🚨 Stolen!</span> ${esc(x.name)} +${fmt(DRAW_POINTS[word.level] || 100)}`, x);
     });
   }
-  function reveal(html) {
+  // next: the team that guessed (or stole) it draws; nobody = the next team in order
+  function reveal(html, guesser) {
     showTimer(false);
     card(`<div class="dr-sub">The word was</div><div class="dr-word">${esc(word.word)}</div>`);
     msg(html);
-    turnsDone++; turn++;
+    turnsDone++;
+    if (guesser && multi) turn = teams.findIndex(x => x.id === guesser.id); else turn++;
     const last = teamsMode && turnsDone >= totalTurns;
     acts(`<button class="btn lg pink" id="dNext">${last ? 'Final scores 🏁' : teamsMode ? `Next: ${esc(team().name)} ▶` : 'Next word ▶'} <kbd>Space</kbd></button>`, { dNext: ready });
   }

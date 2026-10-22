@@ -10,7 +10,8 @@ const Demo = {
     const saved = { teams: d.teams, settings: { ...d.settings } };
     this.running = true; this.paused = false; this.aborted = false;
     // demo copies of up to 3 teams, starting at 0
-    d.teams = saved.teams.slice(0, 3).map(t => ({ ...t, id: 'demo-' + t.id, score: 0 }));
+    d.teams = (saved.teams.length > 1 ? saved.teams.slice(0, 3) : DEFAULT_TEAM_NAMES.slice(0, 3).map((name, i) => ({ id: 'g' + i, name, color: TEAM_COLORS[i] })))
+      .map(t => ({ ...t, id: 'demo-' + t.id, score: 0 }));
     this.mountUI();
     try {
       await this.scripts[game].call(this);
@@ -317,7 +318,7 @@ const Demo = {
     async draw() {
       App.show('drawSetup');
       await this.say('🎨 <b>Draw It</b> — one person draws, their team guesses. Pick the word level and the time, then Start.', 3800);
-      App.show('drawPlay', { mode: 'teams', level: 'mix', time: 60, rounds: 1 });
+      App.show('drawPlay', { mode: 'teams', level: 'mix', time: 60, rounds: 5 });
       await this.say('The highlighted team picks an <b>artist</b>. Grab a whiteboard, paper or easel!', 3400);
       await this.say('The artist taps <b>👀 Peek</b> to see the secret word while everyone else looks away.', 4200);
       await this.tap('#dPeek');
@@ -328,10 +329,12 @@ const Demo = {
       await this.say('✏️ The artist draws — <b>no letters or numbers!</b> Their team shouts out guesses.', 3600);
       await this.say('Too tricky? <b>⏭ Skip word</b> swaps in a new one.', 2800);
       await this.tap('#dGot');
-      await this.say('✅ Got it! Easy = 100, Medium = 200, Hard = 300 points.', 3200);
+      await this.say('✅ Got it! Tap the team that guessed it…', 2600);
+      await this.tap($$('.bq-st')[1]);
+      await this.say('They get the points (Easy 100 · Medium 200 · Hard 300) — and <b>whoever guessed it draws next!</b>', 3800);
       await this.say('If time runs out, it\'s a <b>🚨 STEAL</b> — any other team that guessed it gets the points.', 3600);
       await this.tap('#dNext');
-      await this.say('Then the next team draws. Play as many turns as you chose, then see the final scores.', 3400);
+      await this.say('Play as many drawings as you chose, then see the final scores.', 3400);
     },
   },
 };

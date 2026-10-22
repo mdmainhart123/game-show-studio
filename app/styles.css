@@ -1504,3 +1504,7 @@ body.theme-recovery .kq .ans.a0 { background: #d9675a; } body.theme-recovery .kq
 
 .kq .answers:not(.turns):not(.revealed) .ans { cursor: pointer; }
 .kq .answers:not(.turns):not(.revealed) .ans:hover { transform: translateY(-4px) scale(1.01); filter: brightness(1.08); }
+
+.group-note { font-size: 20px; padding: 16px 18px; border-radius: 14px; background: rgba(122,92,255,.18); border: 2px solid rgba(122,92,255,.5); margin-top: 6px; }
+.count-pick button:first-child { padding-left: 14px; padding-right: 14px; width: auto; }
+.bq-btns { grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); }

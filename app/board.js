@@ -230,12 +230,12 @@ App.screens.boardPlay = (el, name) => {
           <div class="bq-btns">
             <button class="btn green" id="bOk"><span class="bl">✓ Right</span><small>+${fmt(plus)}</small></button>
             <button class="btn red" id="bWrong" title="Wrong — no steal, the clue ends"><span class="bl">✗ Wrong</span><small>${minus ? `−${fmt(minus)} · ` : ''}no steal</small></button>
-            <button class="btn orange" id="bNo" title="Wrong — let the other teams steal it"><span class="bl">🚨 Steal</span><small>${minus ? `−${fmt(minus)} · ` : ''}others try</small></button>
+            ${Scores.teams().length > 1 ? '' : '<!--'}<button class="btn orange" id="bNo" title="Wrong — let the other teams steal it"><span class="bl">🚨 Steal</span><small>${minus ? `−${fmt(minus)} · ` : ''}others try</small></button>${Scores.teams().length > 1 ? '' : '-->'}
           </div>
           <div class="bq-msg" id="bqMsg"></div>`;
         $('#bOk', view).onclick = () => right(t);
         $('#bWrong', view).onclick = () => wrongNoSteal(t);
-        $('#bNo', view).onclick = () => wrong(t, false);
+        if ($('#bNo', view)) $('#bNo', view).onclick = () => wrong(t, false);
         acts(`<button class="link-btn" id="bPeekAns" title="Stops the clock and shows the answer — then tap a button above">👁 Reveal answer</button>${isSteal ? `<button class="link-btn" id="bCancel">↩ Not them</button>` : ''}`,
           { bCancel: () => { stop(); stealMenu(); }, bPeekAns: revealAnswer });
         left = total; paused = false;
