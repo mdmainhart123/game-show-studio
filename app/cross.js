@@ -318,15 +318,18 @@ function printCrossword(puzzle, cw) {
   const g = Array.from({ length: cw.rows }, () => Array(cw.cols).fill(null));
   cw.placed.forEach(p => { for (let k = 0; k < p.w.length; k++) g[p.r + (p.dir === 'd' ? k : 0)][p.c + (p.dir === 'a' ? k : 0)] = p.w[k]; });
   const nums = {}; cw.placed.forEach(p => nums[p.r + ',' + p.c] = p.num);
-  const size = Math.max(14, Math.min(34, Math.floor(640 / Math.max(cw.cols, cw.rows))));
+  // laid out like a classic printable crossword: big centred title, the grid filling the page width,
+  // then Across and Down clues in two columns (answer key on its own page at the end)
+  const size = Math.floor(Math.max(16, Math.min(40, 680 / cw.cols, 620 / cw.rows)));
   const table = answers => `<table class="pk-cw" style="--s:${size}px">${g.map((row, r) => `<tr>${row.map((ch, c) => ch ? `<td>${nums[r + ',' + c] ? `<i>${nums[r + ',' + c]}</i>` : ''}${answers ? ch : ''}</td>` : '<td class="x"></td>').join('')}</tr>`).join('')}</table>`;
-  const clues = d0 => cw.placed.filter(p => p.dir === d0).sort((a, b) => a.num - b.num).map(p => `<li><b>${p.num}.</b> ${esc(p.entry.clue)} (${cwLens(p.entry.word)})</li>`).join('');
+  const clues = d0 => cw.placed.filter(p => p.dir === d0).sort((a, b) => a.num - b.num).map(p => `<li><b>${p.num}.</b> ${esc(p.entry.clue)}</li>`).join('');
   $('#printKey')?.remove();
   const box = document.createElement('div');
   box.id = 'printKey';
-  box.innerHTML = `<h1>${esc(puzzle.title)}</h1><p class="k-note">Name: ______________________</p>${table(false)}
+  box.className = 'pk-cross';
+  box.innerHTML = `<h1 class="pk-title">${esc(puzzle.title)}</h1>${table(false)}
     <div class="pk-clues"><div><h3>Across</h3><ol>${clues('a')}</ol></div><div><h3>Down</h3><ol>${clues('d')}</ol></div></div>
-    <div class="pk-break"><h1>${esc(puzzle.title)} — Answer key</h1>${table(true)}</div>`;
+    <div class="pk-break"><h1 class="pk-title">${esc(puzzle.title)} — Answer Key</h1>${table(true)}</div>`;
   document.body.appendChild(box);
   document.body.classList.add('printing');
   const done = () => { document.body.classList.remove('printing'); box.remove(); window.removeEventListener('afterprint', done); };
