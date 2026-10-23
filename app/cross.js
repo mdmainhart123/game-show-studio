@@ -174,7 +174,7 @@ App.screens.crossSetup = (el) => {
 App.screens.crossPlay = (el, puzzle) => {
   let cw = buildCrossword(puzzle.entries);
   if (!cw || cw.placed.length < 2) { toast('Those words don\'t cross — try adding more words.', true); App.show('crossSetup'); return; }
-  let grid, fill, sel = null, dir = 'a', t0 = Date.now(), tick, done = false, flash = [];
+  let grid, fill, sel = null, dir = 'a', t0 = Date.now(), tick, done = false, flash = [], flashBad = [];
   App.gameBar({ title: '🧩 Crossword', next: () => newLayout(), nextTitle: 'Shuffle a new layout' });
 
   function setup() {
@@ -220,8 +220,9 @@ App.screens.crossPlay = (el, puzzle) => {
       if (!cell) return '<div class="cwc x"></div>';
       const inCur = cur && (cur.dir === 'a' ? r === cur.r && c >= cur.c && c < cur.c + cur.w.length : c === cur.c && r >= cur.r && r < cur.r + cur.w.length);
       const isSel = sel.r === r && sel.c === c;
-      const fl = flash.findIndex(([fr, fc]) => fr === r && fc === c);
-      return `<div class="cwc ${inCur ? 'hl' : ''} ${isSel ? 'sel' : ''} ${cell.bad ? 'bad' : ''} ${cell.shown ? 'shown' : ''} ${fl >= 0 ? 'win' : ''}" ${fl >= 0 ? `style="animation-delay:${fl * 70}ms"` : ''} data-r="${r}" data-c="${c}">${cell.num ? `<i>${cell.num}</i>` : ''}<b>${fill[r][c]}</b></div>`;
+      const fl = flash.findIndex(([fr, fc]) => fr === r && fc === c), fb = flashBad.findIndex(([fr, fc]) => fr === r && fc === c);
+      const fx = fl >= 0 ? 'win' : fb >= 0 ? 'lose' : '', fi = Math.max(fl, fb);
+      return `<div class="cwc ${inCur ? 'hl' : ''} ${isSel ? 'sel' : ''} ${cell.bad ? 'bad' : ''} ${cell.shown ? 'shown' : ''} ${fx}" ${fx ? `style="animation-delay:${fi * 70}ms"` : ''} data-r="${r}" data-c="${c}">${cell.num ? `<i>${cell.num}</i>` : ''}<b>${fill[r][c]}</b></div>`;
     }).join('')).join('');
     $$('.cwc[data-r]', g).forEach(x => x.onclick = () => {
       const r = +x.dataset.r, c = +x.dataset.c;
@@ -266,13 +267,15 @@ App.screens.crossPlay = (el, puzzle) => {
     dir = curWord().dir;
     const at = { ...sel };
     step(1);
-    // a word just filled in correctly? flash it green
+    // a word just filled in? flash it green if it's right, red if it's not
     Object.values(grid[at.r][at.c].words).forEach(p => {
       if (p.ok) return;
-      const cs = wordCells(p);
-      if (cs.every(([r, c]) => fill[r][c] === grid[r][c].ch)) { p.ok = true; flash.push(...cs); Sfx.bell(); }
+      const cs = wordCells(p), got = cs.map(([r, c]) => fill[r][c]).join('');
+      if (got.length < cs.length) return; // not full yet
+      if (got === p.w) { p.ok = true; flash.push(...cs); Sfx.bell(); }
+      else if (got !== p.lastBad) { p.lastBad = got; flashBad.push(...cs); Sfx.noLetter(); }
     });
-    render(); flash = []; checkDone();
+    render(); flash = []; flashBad = []; checkDone();
   }
   function back() {
     if (done) return;
