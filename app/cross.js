@@ -123,6 +123,7 @@ App.screens.crossSetup = (el) => {
               <button class="cw-play" data-play="${p.id}"><b>${esc(p.title)}</b><small>${p.entries.length} words</small></button>
               <button class="btn sm ghost" data-edit="${p.id}" title="Edit">✏️</button>
               <button class="btn sm ghost" data-print="${p.id}" title="Print">🖨️</button>
+              <button class="btn sm ghost" data-export="${p.id}" title="Save as a text file">📤</button>
             </div>`).join('')}</div>` : '<div class="hint">No puzzles yet — make one below.</div>'}
           <div class="cw-new">
             <button class="btn green" id="cwNew">＋ Make a new crossword</button>
@@ -131,7 +132,7 @@ App.screens.crossSetup = (el) => {
           <div class="cw-new cw-files">
             <button class="btn yellow" id="cwImp">📥 Import from text file</button>
             <button class="btn ghost" id="cwTpl">📄 Save blank template</button>
-            ${d.cross.length ? '<button class="btn ghost" id="cwExp">📤 Export my crosswords</button>' : ''}
+            ${d.cross.length ? '<button class="btn ghost" id="cwExp">📤 Export all</button>' : ''}
           </div>
         </div>
         <div><button class="link-btn" id="demo">🎬 Watch a demo first</button></div>
@@ -141,10 +142,16 @@ App.screens.crossSetup = (el) => {
     $$('[data-edit]', el).forEach(b => b.onclick = () => editPuzzle(d.cross.find(p => p.id === b.dataset.edit)));
     $$('[data-print]', el).forEach(b => b.onclick = () => printMenu(d.cross.find(p => p.id === b.dataset.print)));
     $('#cwNew', el).onclick = () => editPuzzle(null);
+    // one puzzle → "crossword - <title>.txt"
+    $$('[data-export]', el).forEach(b => b.onclick = async () => {
+      const p = d.cross.find(x => x.id === b.dataset.export);
+      const txt = `== ${p.title}\n${p.entries.map(e => `${e.word} | ${e.clue}`).join('\n')}\n`;
+      if (await App.saveText(`crossword - ${p.title.replace(/[\\/:*?"<>|]+/g, '').trim() || 'puzzle'}.txt`, txt.replace(/\n/g, '\r\n'))) toast('Saved ✓');
+    });
     $('#cwTpl', el).onclick = async () => { if (await App.saveText(GSData.TEMPLATES.cross.file, GSData.TEMPLATES.cross.text.replace(/\n/g, '\r\n'))) toast('Template saved ✓'); };
     if ($('#cwExp', el)) $('#cwExp', el).onclick = async () => {
       const txt = d.cross.map(p => `== ${p.title}\n${p.entries.map(e => `${e.word} | ${e.clue}`).join('\n')}`).join('\n\n') + '\n';
-      if (await App.saveText('my-crosswords.txt', txt.replace(/\n/g, '\r\n'))) toast('Crosswords exported ✓');
+      if (await App.saveText('crossword - All puzzles.txt', txt.replace(/\n/g, '\r\n'))) toast('Crosswords exported ✓');
     };
     // 📥 Import: read the file, add each puzzle in it, and open the crossword right away
     $('#cwImp', el).onclick = async () => {
