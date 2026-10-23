@@ -134,7 +134,7 @@ App.screens.crossSetup = (el) => {
     $('#demo', el).onclick = () => Demo.start('cross');
     $$('[data-play]', el).forEach(b => b.onclick = () => App.show('crossPlay', d.cross.find(p => p.id === b.dataset.play)));
     $$('[data-edit]', el).forEach(b => b.onclick = () => editPuzzle(d.cross.find(p => p.id === b.dataset.edit)));
-    $$('[data-print]', el).forEach(b => b.onclick = () => printCrossword(d.cross.find(p => p.id === b.dataset.print)));
+    $$('[data-print]', el).forEach(b => b.onclick = () => printMenu(d.cross.find(p => p.id === b.dataset.print)));
     $('#cwNew', el).onclick = () => editPuzzle(null);
     if ($('#cwQuick', el)) $('#cwQuick', el).onclick = () => {
       // short, single-word trivia answers make good crossword entries
@@ -174,7 +174,7 @@ App.screens.crossSetup = (el) => {
 App.screens.crossPlay = (el, puzzle) => {
   let cw = buildCrossword(puzzle.entries);
   if (!cw || cw.placed.length < 2) { toast('Those words don\'t cross — try adding more words.', true); App.show('crossSetup'); return; }
-  let grid, fill, sel = null, dir = 'a', t0 = Date.now(), tick, done = false;
+  let grid, fill, sel = null, dir = 'a', t0 = Date.now(), tick, done = false, flash = [];
   App.gameBar({ title: '🧩 Crossword', next: () => newLayout(), nextTitle: 'Shuffle a new layout' });
 
   function setup() {
@@ -186,7 +186,9 @@ App.screens.crossPlay = (el, puzzle) => {
     sel = { r: first.r, c: first.c }; dir = first.dir;
     done = false; t0 = Date.now();
   }
-  function newLayout() { cw = buildCrossword(puzzle.entries) || cw; setup(); render(); toast('New layout 🔀'); }
+  function newLayout() { cw = buildCrossword(puzzle.entries) || cw; savePrint(); setup(); render(); toast('New layout 🔀'); }
+  // the printed puzzle and its answer key always match the layout on screen
+  function savePrint() { const p = App.data.cross.find(x => x.id === puzzle.id); if (p) { p.layout = packLayout(cw); App.save(); } }
   const wordAt = (r, c, d0) => grid[r]?.[c]?.words[d0];
   const curWord = () => wordAt(sel.r, sel.c, dir) || wordAt(sel.r, sel.c, dir === 'a' ? 'd' : 'a');
 
@@ -211,13 +213,15 @@ App.screens.crossPlay = (el, puzzle) => {
   function render() {
     const cur = curWord();
     const g = $('#cwGrid', el);
-    g.style.gridTemplateColumns = `repeat(${cw.cols}, 1fr)`;
+    g.style.gridTemplateColumns = `repeat(${cw.cols}, minmax(0, 1fr))`;
+    g.style.gridTemplateRows = `repeat(${cw.rows}, minmax(0, 1fr))`; // every square the same size, filled or not
     g.style.setProperty('--cols', cw.cols); g.style.setProperty('--rows', cw.rows);
     g.innerHTML = grid.map((row, r) => row.map((cell, c) => {
       if (!cell) return '<div class="cwc x"></div>';
       const inCur = cur && (cur.dir === 'a' ? r === cur.r && c >= cur.c && c < cur.c + cur.w.length : c === cur.c && r >= cur.r && r < cur.r + cur.w.length);
       const isSel = sel.r === r && sel.c === c;
-      return `<div class="cwc ${inCur ? 'hl' : ''} ${isSel ? 'sel' : ''} ${cell.bad ? 'bad' : ''} ${cell.shown ? 'shown' : ''}" data-r="${r}" data-c="${c}">${cell.num ? `<i>${cell.num}</i>` : ''}<b>${fill[r][c]}</b></div>`;
+      const fl = flash.findIndex(([fr, fc]) => fr === r && fc === c);
+      return `<div class="cwc ${inCur ? 'hl' : ''} ${isSel ? 'sel' : ''} ${cell.bad ? 'bad' : ''} ${cell.shown ? 'shown' : ''} ${fl >= 0 ? 'win' : ''}" ${fl >= 0 ? `style="animation-delay:${fl * 70}ms"` : ''} data-r="${r}" data-c="${c}">${cell.num ? `<i>${cell.num}</i>` : ''}<b>${fill[r][c]}</b></div>`;
     }).join('')).join('');
     $$('.cwc[data-r]', g).forEach(x => x.onclick = () => {
       const r = +x.dataset.r, c = +x.dataset.c;
@@ -260,7 +264,15 @@ App.screens.crossPlay = (el, puzzle) => {
     const cell = grid[sel.r][sel.c]; if (cell.shown) { step(1); render(); return; }
     fill[sel.r][sel.c] = L; cell.bad = false; Sfx.click();
     dir = curWord().dir;
-    step(1); render(); checkDone();
+    const at = { ...sel };
+    step(1);
+    // a word just filled in correctly? flash it green
+    Object.values(grid[at.r][at.c].words).forEach(p => {
+      if (p.ok) return;
+      const cs = wordCells(p);
+      if (cs.every(([r, c]) => fill[r][c] === grid[r][c].ch)) { p.ok = true; flash.push(...cs); Sfx.bell(); }
+    });
+    render(); flash = []; checkDone();
   }
   function back() {
     if (done) return;
@@ -273,7 +285,7 @@ App.screens.crossPlay = (el, puzzle) => {
     while (r >= 0 && c >= 0 && r < cw.rows && c < cw.cols) { if (grid[r][c]) { sel = { r, c }; if (!grid[r][c].words[dir]) dir = dir === 'a' ? 'd' : 'a'; break; } r += dr; c += dc; }
     render();
   }
-  function reveal(cells) { cells.forEach(([r, c]) => { if (fill[r][c] !== grid[r][c].ch) { fill[r][c] = grid[r][c].ch; grid[r][c].shown = true; grid[r][c].bad = false; } }); Sfx.reveal(); render(); checkDone(); }
+  function reveal(cells) { cw.placed.forEach(p => { if (wordCells(p).every(([r, c]) => cells.some(x => x[0] === r && x[1] === c) || fill[r][c] === grid[r][c].ch)) p.ok = true; }); cells.forEach(([r, c]) => { if (fill[r][c] !== grid[r][c].ch) { fill[r][c] = grid[r][c].ch; grid[r][c].shown = true; grid[r][c].bad = false; } }); Sfx.reveal(); render(); checkDone(); }
   const wordCells = p => Array.from({ length: p.w.length }, (_, k) => [p.r + (p.dir === 'd' ? k : 0), p.c + (p.dir === 'a' ? k : 0)]);
   function checkDone() {
     const ok = grid.every((row, r) => row.every((cell, c) => !cell || fill[r][c] === cell.ch));
@@ -295,7 +307,7 @@ App.screens.crossPlay = (el, puzzle) => {
   $('#cwLetter', el).onclick = () => reveal([[sel.r, sel.c]]);
   $('#cwWord', el).onclick = () => { const p = curWord(); if (p) reveal(wordCells(p)); };
   $('#cwAll', el).onclick = async () => { if (await confirmBox('Reveal the whole crossword?', 'Reveal all')) reveal(cw.placed.flatMap(wordCells)); };
-  $('#cwPrint', el).onclick = () => printCrossword(puzzle, cw);
+  $('#cwPrint', el).onclick = () => printMenu(puzzle, cw);
   const onKey = e => {
     if (Modal.stack.length || Menu.isOpen() || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
     if (/^[a-z]$/i.test(e.key) && !e.ctrlKey && !e.metaKey) { e.preventDefault(); type(e.key.toUpperCase()); }
@@ -306,13 +318,38 @@ App.screens.crossPlay = (el, puzzle) => {
   };
   document.addEventListener('keydown', onKey, true);
   tick = setInterval(() => { const s = Math.floor((Date.now() - t0) / 1000); const t = $('#cwTime', el); if (t) t.textContent = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; }, 1000);
-  setup(); render();
+  savePrint(); setup(); render();
   App._cwAnswer = () => curWord()?.w || ''; // used by the demo
   return () => { clearInterval(tick); document.removeEventListener('keydown', onKey, true); };
 };
 
-// ---------- print (puzzle + clues, and an answer key on its own page) ----------
-function printCrossword(puzzle, cw) {
+// ---------- print: the blank puzzle and its answer key are separate printouts ----------
+// The layout is saved with the puzzle, so the answer key printed later matches the puzzle handed out.
+function packLayout(cw) { return { rows: cw.rows, cols: cw.cols, placed: cw.placed.map(p => [p.i, p.r, p.c, p.dir]) }; }
+function unpackLayout(puzzle) {
+  const L = puzzle.layout; if (!L) return null;
+  const placed = L.placed.map(([i, r, c, dir]) => ({ i, r, c, dir, w: cwClean(puzzle.entries[i]?.word), entry: puzzle.entries[i] }));
+  if (placed.some(p => !p.entry || !p.w)) return null; // the words were edited since — make a new layout
+  const starts = [...new Set(placed.map(p => p.r * 1000 + p.c))].sort((a, b) => a - b);
+  placed.forEach(p => p.num = starts.indexOf(p.r * 1000 + p.c) + 1);
+  return { rows: L.rows, cols: L.cols, placed };
+}
+function printMenu(puzzle, cw) {
+  const saved = App.data.cross.find(x => x.id === puzzle.id);
+  cw ||= unpackLayout(puzzle);
+  const fresh = () => { const n = buildCrossword(puzzle.entries); if (saved && n) { saved.layout = packLayout(n); App.save(); } return n; };
+  Modal.open({
+    title: '🖨️ Print — ' + esc(puzzle.title),
+    body: `<p style="font-size:18px;margin:0 0 6px">Print the blank puzzle to hand out, and the answer key separately. ${cw ? 'Both use the same layout.' : ''}</p>
+      <div class="hint">Tip: choose “Save as PDF” in the print window to keep a file.</div>`,
+    actions: [
+      { label: 'Cancel', cls: 'ghost' },
+      { label: '🔑 Answers', cls: 'cyan', onClick: c => { c(); printCrossword(puzzle, cw || fresh(), true); } },
+      { label: '📄 Blank puzzle', cls: 'pink', onClick: c => { c(); cw ||= fresh(); printCrossword(puzzle, cw, false); } },
+    ],
+  });
+}
+function printCrossword(puzzle, cw, answers = false) {
   cw ||= buildCrossword(puzzle.entries);
   if (!cw) return;
   const g = Array.from({ length: cw.rows }, () => Array(cw.cols).fill(null));
@@ -327,12 +364,12 @@ function printCrossword(puzzle, cw) {
   const box = document.createElement('div');
   box.id = 'printKey';
   box.className = 'pk-cross';
-  box.innerHTML = `<h1 class="pk-title">${esc(puzzle.title)}</h1>${table(false)}
-    <div class="pk-clues"><div><h3>Across</h3><ol>${clues('a')}</ol></div><div><h3>Down</h3><ol>${clues('d')}</ol></div></div>
-    <div class="pk-break"><h1 class="pk-title">${esc(puzzle.title)} — Answer Key</h1>${table(true)}</div>`;
+  box.innerHTML = `<h1 class="pk-title">${esc(puzzle.title)}${answers ? ' — Answers' : ''}</h1>${table(answers)}
+    <div class="pk-clues"><div><h3>Across</h3><ol>${clues('a')}</ol></div><div><h3>Down</h3><ol>${clues('d')}</ol></div></div>`;
+  const oldTitle = document.title; document.title = puzzle.title + (answers ? ' - Answers' : ''); // becomes the PDF file name
   document.body.appendChild(box);
   document.body.classList.add('printing');
-  const done = () => { document.body.classList.remove('printing'); box.remove(); window.removeEventListener('afterprint', done); };
+  const done = () => { document.title = oldTitle; document.body.classList.remove('printing'); box.remove(); window.removeEventListener('afterprint', done); };
   window.addEventListener('afterprint', done);
   setTimeout(() => { window.print(); setTimeout(done, 1000); }, 50);
 }

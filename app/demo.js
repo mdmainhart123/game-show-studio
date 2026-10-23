@@ -354,7 +354,7 @@ const Demo = {
       await this.tap('#cwCheck');
       await this.say('Stuck? <b>Reveal letter</b>, <b>Reveal word</b> or <b>Check</b> (wrong letters turn red).', 3600);
       await this.tap('#cwWord');
-      await this.say('<b>🖨️ Print</b> makes a paper copy with the clues — plus an answer key on its own page.', 3600);
+      await this.say('<b>🖨️ Print</b> gives you the blank puzzle to hand out — and the <b>answers</b> as a separate printout.', 3600);
     },
   },
 };
