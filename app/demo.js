@@ -181,7 +181,7 @@ const Demo = {
         await this.tap(ddTile);
         await this.say('🎲 <b>DAILY DOUBLE!</b> It belongs to the team whose pick it was.', 3200);
         await this.say('They bet as much as they want — up to their score or the board\'s top value.', 3200);
-        await this.tap($('.dd-wager .btn.orange'));
+        await this.tap($('.dd-chips .btn.orange'));
         await this.say('All in! 😱', 1600);
         await this.tap('#wGo');
         clueTimerPause();

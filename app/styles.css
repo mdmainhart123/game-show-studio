@@ -1508,3 +1508,47 @@ body.theme-recovery .kq .ans.a0 { background: #d9675a; } body.theme-recovery .kq
 .group-note { font-size: 20px; padding: 16px 18px; border-radius: 14px; background: rgba(122,92,255,.18); border: 2px solid rgba(122,92,255,.5); margin-top: 6px; }
 .count-pick button:first-child { padding-left: 14px; padding-right: 14px; width: auto; }
 .bq-btns { grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); }
+
+/* =================== 🎯 Quiz Board: tidier clue screen =================== */
+.clue-view.cv .cv-host { background: rgba(0,0,0,.28); border: 1px solid rgba(255,255,255,.14); border-radius: 18px; padding: clamp(10px, 1.8vh, 18px) clamp(12px, 2vw, 24px); width: min(820px, 100%); min-height: 0; align-self: center; gap: 10px; backdrop-filter: blur(4px); }
+.clue-view.cv .cv-host .bq { gap: clamp(8px, 1.4vh, 14px); }
+.bq-who .bq-team { font-size: clamp(20px, 3vh, 30px); padding: 8px 26px; }
+.btimer { width: clamp(64px, 9vh, 90px); height: auto; aspect-ratio: 1; }
+.bq-btns { width: 100%; gap: clamp(8px, 1vw, 14px); }
+.bq-btns .btn { min-height: clamp(64px, 10vh, 92px); font-size: clamp(20px, 3vh, 28px); border-radius: 14px; }
+.bq-btns .btn small { font-size: clamp(12px, 1.6vh, 15px); }
+.cv-host .bq-actions { gap: 24px; }
+.cv-host .link-btn kbd { font-size: 12px; }
+.bq-out { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; font-size: clamp(22px, 3.4vh, 34px); animation: qzPop .35s cubic-bezier(.2,1.5,.4,1); }
+.bq-out.ok b { color: #7dff9e; } .bq-out.bad b { color: #ffb3bb; }
+.bq-out .bq-team { font-size: .8em; padding: 6px 20px; }
+.bq-pts { font-weight: 800; background: rgba(0,0,0,.3); border-radius: 99px; padding: 2px 14px; }
+.bq-why { font-size: 17px; color: #ffb3bb; font-weight: 700; text-align: center; }
+.bq-steal-title { font-size: clamp(20px, 3vh, 28px); }
+.cv-host .bq-steal { width: 100%; }
+.cv-host .bq-st { min-height: clamp(52px, 8vh, 72px); font-size: clamp(18px, 2.6vh, 24px); border-radius: 14px; }
+/* Daily Double wager */
+.dd-wager2 { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 10px 0 18px; }
+.dd-num { width: 220px; font-size: clamp(44px, 8vh, 72px); font-weight: 800; text-align: center; color: #fff; background: rgba(0,0,0,.35); border: 3px solid rgba(255,255,255,.6); border-radius: 18px; padding: 4px 10px; font-family: inherit; -moz-appearance: textfield; }
+.dd-num::-webkit-outer-spin-button, .dd-num::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.dd-num:focus { outline: none; border-color: #ffe36b; }
+.dd-chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.dd-chips .btn { font-size: 18px; padding: 10px 18px; }
+.dd-q { font-size: clamp(20px, 3vh, 30px); }
+@media (max-width: 760px) and (min-height: 501px) {
+  .clue-view.cv .cv-host { padding: 10px; border-radius: 14px; }
+  .bq-btns .btn { min-height: 58px; font-size: 17px; }
+  .bq-steal-title { font-size: 18px; } .bq-out { font-size: 20px; }
+  .dd-num { width: 170px; font-size: 44px; } .dd-chips .btn { font-size: 15px; padding: 8px 12px; }
+}
+@media (max-height: 500px) {
+  .clue-view.cv .cv-host { padding: 6px 10px; gap: 4px; }
+  .bq-btns .btn { min-height: 42px; font-size: 15px; } .bq-btns .btn small { font-size: 10px; }
+  .bq-who .bq-team { font-size: 16px; padding: 4px 14px; } .btimer { width: 46px; }
+  .bq-steal-title { font-size: 16px; } .cv-host .bq-st { min-height: 38px; font-size: 15px; }
+  .bq-out { font-size: 18px; }
+  .dd-num { font-size: 32px; width: 140px; } .dd-wager2 { gap: 6px; margin: 4px 0 8px; }
+}
+.clue-view.dd { overflow-y: auto; justify-content: safe center; }
+@media (max-height: 500px) { .clue-view.dd .dd-splash { font-size: 34px !important; line-height: 1; } .clue-view.dd .meta { margin-top: 4px !important; font-size: 14px; } .dd-q { font-size: 16px; } .dd-wager2 .hint { display: none; } .clue-view.dd #wGo { padding: 8px 18px; font-size: 16px; } }
+@media (max-width: 760px) and (min-height: 501px) { .clue-view.dd .dd-splash { font-size: 54px !important; } }

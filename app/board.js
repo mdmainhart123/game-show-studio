@@ -144,18 +144,17 @@ App.screens.boardPlay = (el, name) => {
     function askWager(t) {
       const max = Math.max(t.score, boardMax);
       $('.dd-step', view).innerHTML = `
-        <div class="dd-q"><span class="dd-team" style="--tc:${t.color}">${esc(t.name)}</span>, how much do you wager?</div>
-        <div class="hint" style="font-size:18px;margin-bottom:12px">Anything from 0 to ${fmt(max)}${t.score < boardMax ? ` (you can go up to the board's top value, ${fmt(boardMax)})` : ''}</div>
-        <div class="dd-wager">
-          <input class="input" id="wager" type="number" min="0" max="${max}" step="100" value="${Math.min(max, clue.value)}">
-          <button class="btn sm ghost" data-v="${Math.round(max / 2 / 100) * 100}">Half</button>
-          <button class="btn sm orange" data-v="${max}">All in! (${fmt(max)})</button>
+        <div class="dd-q"><span class="dd-team" style="--tc:${t.color}">${esc(t.name)}</span> — how much will you bet?</div>
+        <div class="dd-wager2">
+          <input class="dd-num" id="wager" type="number" min="0" max="${max}" step="100" value="${Math.min(max, clue.value)}" aria-label="Wager">
+          <div class="dd-chips">${[...new Set([100, 200, Math.round(max / 2 / 100) * 100].filter(v => v > 0 && v < max))].sort((a, b) => a - b).map(v => `<button class="btn ghost" data-v="${v}">${v === Math.round(max / 2 / 100) * 100 ? 'Half · ' : ''}${fmt(v)}</button>`).join('')}<button class="btn orange" data-v="${max}">All in · ${fmt(max)}</button></div>
+          <div class="hint">Up to ${fmt(max)}</div>
         </div>
         <div class="err" id="wErr"></div>
         <button class="btn lg pink" id="wGo">Show the clue ▶</button>`;
       const inp = $('#wager', view);
       inp.focus(); inp.select();
-      $$('[data-v]', view).forEach(b => b.onclick = () => { inp.value = b.dataset.v; });
+      $$('[data-v]', view).forEach(b => b.onclick = () => { inp.value = b.dataset.v; Sfx.click(); });
       const go = () => {
         const w = Math.round(+inp.value);
         if (!(w >= 0 && w <= max)) { $('#wErr', view).textContent = `Pick a number from 0 to ${fmt(max)}`; return; }
@@ -188,7 +187,7 @@ App.screens.boardPlay = (el, name) => {
         <button class="clue-x" id="bX" title="Back to the board (Esc)">✕</button>
         <div class="cv-top">
           <div class="steal-banner hidden" id="stealBanner">🚨 STEAL!</div>
-          <div class="meta">${esc(clue.category)} · ${ddInfo ? `🎲 Daily Double — ${esc(ddInfo.team.name)} wagered ${fmt(ddInfo.wager)}` : fmt(clue.value)}</div>
+          <div class="meta">${esc(clue.category)} · ${ddInfo ? `🎲 Daily Double · bet ${fmt(ddInfo.wager)}` : fmt(clue.value)}</div>
         </div>
         <div class="cv-mid">
           <div class="clue">${esc(clue.clue)}</div>
@@ -229,10 +228,10 @@ App.screens.boardPlay = (el, name) => {
           </div>
           <div class="bq-btns">
             <button class="btn green" id="bOk"><span class="bl">✓ Right</span><small>+${fmt(plus)}</small></button>
-            <button class="btn red" id="bWrong" title="Wrong — no steal, the clue ends"><span class="bl">✗ Wrong</span><small>${minus ? `−${fmt(minus)} · ` : ''}no steal</small></button>
+            <button class="btn red" id="bWrong" title="Wrong — no steal, the clue ends"><span class="bl">✗ Wrong</span><small>${minus ? `−${fmt(minus)}` : 'show answer'}</small></button>
             ${Scores.teams().length > 1 ? '' : '<!--'}<button class="btn orange" id="bNo" title="Wrong — let the other teams steal it"><span class="bl">🚨 Steal</span><small>${minus ? `−${fmt(minus)} · ` : ''}others try</small></button>${Scores.teams().length > 1 ? '' : '-->'}
           </div>
-          <div class="bq-msg" id="bqMsg"></div>`;
+          `;
         $('#bOk', view).onclick = () => right(t);
         $('#bWrong', view).onclick = () => wrongNoSteal(t);
         if ($('#bNo', view)) $('#bNo', view).onclick = () => wrong(t, false);
@@ -261,15 +260,13 @@ App.screens.boardPlay = (el, name) => {
         banner(false);
         Scores.add(t.id, plus); Sfx.correct(); showAns();
         if (ddInfo) confetti(1800);
-        lockButtons('bOk');
-        $('#bqMsg', view).innerHTML = `<span class="msg-good">✓ Correct!</span> ${esc(t.name)} +${fmt(plus)}`;
+        outcome(true, t, `+${fmt(plus)}`);
         acts('');
         setTimeout(close, ddInfo ? 2400 : 2000);
       }
-      // Right or Wrong ends the clue: the buttons lock (no steal) and the one tapped stays lit
-      function lockButtons(keep) {
-        $$('.bq-btns .btn', view).forEach(b => { b.disabled = true; b.classList.toggle('picked', b.id === keep); });
-        $('#btimer', view)?.classList.add('stopped');
+      // Right or Wrong ends the clue: the controls give way to one clear result line
+      function outcome(ok, t, pts) {
+        bq.innerHTML = `<div class="bq-out ${ok ? 'ok' : 'bad'}"><span class="bq-team" style="--tc:${t.color}">${esc(t.name)}</span><b>${ok ? '✓ Correct!' : '✗ Not quite'}</b>${pts ? `<span class="bq-pts">${pts}</span>` : ''}</div>`;
       }
       // ✗ Wrong: points off (if that's on), no steal, and the answer is shown.
       // (🚨 Steal keeps the answer hidden so the next team gets a fair try.)
@@ -280,10 +277,9 @@ App.screens.boardPlay = (el, name) => {
         if (minus) Scores.add(t.id, -minus);
         Sfx.wrong();
         banner(false); Scores.setActive(null);
-        lockButtons('bWrong');
         $('#bX', view)?.remove();
         showAns(); // no steal, so the clue is over — show the answer
-        $('#bqMsg', view).innerHTML = `<span class="msg-bad">✗ ${esc(t.name)}${minus ? ` −${fmt(minus)}` : ''}</span>`;
+        outcome(false, t, minus ? `−${fmt(minus)}` : '');
         acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
       }
       function wrong(t, timedOut) {
@@ -310,11 +306,11 @@ App.screens.boardPlay = (el, name) => {
         const open = Scores.teams().filter(x => !tried.has(x.id));
         if (!open.length) return nobody(`${why ? why + ' ' : ''}Every team has tried.`);
         bq.innerHTML = `
-          ${why ? `<div class="bq-msg bad">${why}</div>` : ''}
-          <div class="bq-steal-title">Who wants it? <span class="hint">Tap the first team to call out</span></div>
+          ${why ? `<div class="bq-why">${why}</div>` : ''}
+          <div class="bq-steal-title">Who wants to steal it? <span class="hint">Tap the first team to call out</span></div>
           <div class="bq-steal">${Scores.teams().map(x => `<button class="bq-st ${tried.has(x.id) ? 'out' : ''}" data-id="${x.id}" style="--tc:${x.color}" ${tried.has(x.id) ? 'disabled' : ''}>${tried.has(x.id) ? '✗ ' : ''}${esc(x.name)}</button>`).join('')}</div>`;
         $$('.bq-st:not(.out)', view).forEach(b => b.onclick = () => { Sfx.click(); answering(Scores.teams().find(x => x.id === b.dataset.id), true); });
-        acts(`<button class="btn lg yellow" id="bPeekAns" title="Nobody got it — show the answer">👁 Reveal answer <kbd>Space</kbd></button>`, { bPeekAns: revealAnswer });
+        acts(`<button class="link-btn" id="bPeekAns" title="Nobody got it — show the answer">Nobody? 👁 Reveal answer <kbd>Space</kbd></button>`, { bPeekAns: revealAnswer });
       }
       function nobody(why) {
         stop(); phase = 'done';
@@ -322,7 +318,7 @@ App.screens.boardPlay = (el, name) => {
         Scores.setActive(null);
         showAns(); Sfx.reveal();
         $('#bX', view)?.remove();
-        bq.innerHTML = `<div class="bq-msg ${why ? 'bad' : ''}">${why || 'No points this time'}</div>`;
+        bq.innerHTML = `<div class="bq-out bad"><b>${why || 'No points this time'}</b></div>`;
         acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
       }
 
