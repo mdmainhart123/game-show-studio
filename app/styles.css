@@ -1661,3 +1661,4 @@ body.theme-classic .cw-tag { background: var(--gold); }
 
 .cwc.lose { animation: cwLose 1.1s ease-out backwards; }
 @keyframes cwLose { 0% { background: #e0233d; color: #fff; transform: scale(1); } 25% { background: #e0233d; color: #fff; transform: scale(1.18); z-index: 2; } 60% { background: #f2788a; transform: scale(1); } 100% { background: #fff; color: #111; } }
+.cw-files { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }

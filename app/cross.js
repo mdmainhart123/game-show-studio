@@ -128,6 +128,11 @@ App.screens.crossSetup = (el) => {
             <button class="btn green" id="cwNew">＋ Make a new crossword</button>
             ${d.trivia.length ? '<button class="btn cyan" id="cwQuick">⚡ Quick crossword from your trivia answers</button>' : ''}
           </div>
+          <div class="cw-new cw-files">
+            <button class="btn yellow" id="cwImp">📥 Import from text file</button>
+            <button class="btn ghost" id="cwTpl">📄 Save blank template</button>
+            ${d.cross.length ? '<button class="btn ghost" id="cwExp">📤 Export my crosswords</button>' : ''}
+          </div>
         </div>
         <div><button class="link-btn" id="demo">🎬 Watch a demo first</button></div>
       </div>`;
@@ -136,6 +141,26 @@ App.screens.crossSetup = (el) => {
     $$('[data-edit]', el).forEach(b => b.onclick = () => editPuzzle(d.cross.find(p => p.id === b.dataset.edit)));
     $$('[data-print]', el).forEach(b => b.onclick = () => printMenu(d.cross.find(p => p.id === b.dataset.print)));
     $('#cwNew', el).onclick = () => editPuzzle(null);
+    $('#cwTpl', el).onclick = async () => { if (await App.saveText(GSData.TEMPLATES.cross.file, GSData.TEMPLATES.cross.text.replace(/\n/g, '\r\n'))) toast('Template saved ✓'); };
+    if ($('#cwExp', el)) $('#cwExp', el).onclick = async () => {
+      const txt = d.cross.map(p => `== ${p.title}\n${p.entries.map(e => `${e.word} | ${e.clue}`).join('\n')}`).join('\n\n') + '\n';
+      if (await App.saveText('my-crosswords.txt', txt.replace(/\n/g, '\r\n'))) toast('Crosswords exported ✓');
+    };
+    // 📥 Import: read the file, add each puzzle in it, and open the crossword right away
+    $('#cwImp', el).onclick = async () => {
+      const f = await App.openText('Choose a crossword text file');
+      if (!f) return;
+      let { items, problems } = GSData.parseCross(f.text);
+      if (!items.length) { // no "== Title" line? use the whole file as one puzzle named after the file
+        const r = cwParseLines(f.text);
+        if (r.entries.length >= 3) items = [{ id: GSData.uid(), title: f.name.replace(/\.[^.]+$/, '').replace(/[-_]+/g, ' '), entries: r.entries }];
+        problems = r.problems;
+      }
+      if (!items.length) { Modal.open({ title: 'Nothing to import', body: `<p style="font-size:19px">No crossword words were found in <b>${esc(f.name)}</b>. Each line should look like <b>word | clue</b> (at least 3 words). Press <b>📄 Save blank template</b> for an example.</p>`, actions: [{ label: 'OK', cls: 'pink' }] }); return; }
+      d.cross.push(...items); App.save();
+      toast(`Imported ${items.length === 1 ? `"${items[0].title}"` : items.length + ' crosswords'} ✓`);
+      if (items.length === 1) App.show('crossPlay', items[0]); else draw();
+    };
     if ($('#cwQuick', el)) $('#cwQuick', el).onclick = () => {
       // short, single-word trivia answers make good crossword entries
       const pool = shuffle(d.trivia.filter(q => /^[A-Za-z]{3,12}$/.test(q.answer.trim())));

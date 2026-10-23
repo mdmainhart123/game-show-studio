@@ -150,6 +150,39 @@ time flies | hard
 `,
   };
 
+  TEMPLATES.cross = {
+    file: 'crossword-template.txt',
+    text: `# =============================================================
+#  CROSSWORD — import template  (Game Show Studio)
+# =============================================================
+#  1. Put the puzzle's title on a line starting with ==
+#  2. Then one word per line, a | and its clue:
+#
+#       word | clue
+#
+#  - 8 to 20 words works best. Longer words cross more easily.
+#  - Phrases are fine ("peanut butter") — spaces and punctuation
+#    are left out of the grid.
+#  - You can put several puzzles in one file: just start each
+#    one with its own == Title line.
+#  - Lines starting with # are notes and are ignored.
+#
+#  Save the file, then on the Crossword screen press
+#  "Import from text file" — the crossword is built for you.
+# =============================================================
+
+== Fall Fun
+pumpkin | Big orange squash carved at Halloween
+acorn | A squirrel's favorite snack
+leaves | They change color and fall in autumn
+scarecrow | Straw figure that guards the crops
+apple | Picked in orchards and baked into pies
+sweater | Cozy knit top for chilly days
+harvest | Gathering the crops
+football | Popular fall sport
+`,
+  };
+
   // ================= WHEEL LAYOUT =================
   const WHEEL_COLS = 14, WHEEL_ROWS = 4;
   const WHEEL_ALLOWED = /^[A-Z0-9 '\-&?!,.:]+$/;
