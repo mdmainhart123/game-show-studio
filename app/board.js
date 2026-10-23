@@ -235,7 +235,7 @@ App.screens.boardPlay = (el, name) => {
         $('#bOk', view).onclick = () => right(t);
         $('#bWrong', view).onclick = () => wrongNoSteal(t);
         if ($('#bNo', view)) $('#bNo', view).onclick = () => wrong(t, false);
-        acts(`<button class="link-btn" id="bPeekAns" title="Stops the clock and shows the answer — then tap a button above">👁 Reveal answer</button>${isSteal ? `<button class="link-btn" id="bCancel">↩ Not them</button>` : ''}`,
+        acts(`<button class="btn yellow" id="bPeekAns" title="Stops the clock and shows the answer — then tap a button above">👁 Reveal answer</button>${isSteal ? `<button class="btn ghost" id="bCancel">↩ Not them</button>` : ''}`,
           { bCancel: () => { stop(); stealMenu(); }, bPeekAns: revealAnswer });
         left = total; paused = false;
         const tb = $('#btimer', view);
@@ -310,7 +310,7 @@ App.screens.boardPlay = (el, name) => {
           <div class="bq-steal-title">Who wants to steal it? <span class="hint">Tap the first team to call out</span></div>
           <div class="bq-steal">${Scores.teams().map(x => `<button class="bq-st ${tried.has(x.id) ? 'out' : ''}" data-id="${x.id}" style="--tc:${x.color}" ${tried.has(x.id) ? 'disabled' : ''}>${tried.has(x.id) ? '✗ ' : ''}${esc(x.name)}</button>`).join('')}</div>`;
         $$('.bq-st:not(.out)', view).forEach(b => b.onclick = () => { Sfx.click(); answering(Scores.teams().find(x => x.id === b.dataset.id), true); });
-        acts(`<button class="link-btn" id="bPeekAns" title="Nobody got it — show the answer">Nobody? 👁 Reveal answer <kbd>Space</kbd></button>`, { bPeekAns: revealAnswer });
+        acts(`<button class="btn yellow" id="bPeekAns" title="Nobody got it — show the answer">👁 Nobody — Reveal answer</button>`, { bPeekAns: revealAnswer });
       }
       function nobody(why) {
         stop(); phase = 'done';

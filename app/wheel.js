@@ -14,7 +14,9 @@ const SPECIAL_WEDGES = {
   'DOUBLE PLAY': { label: '✖2 DOUBLE PLAY', bg: '#0e7f8f' },
   'JACKPOT': { label: '💰 JACKPOT', bg: '#a8770a' },
   'WILD CARD': { label: '🃏 WILD CARD', bg: '#b0127a' },
+  'BONUS': { label: '🎉 BONUS', bg: '#c2410c' },
 };
+const BONUS_WEDGE = 1000; // 🎉 Bonus: +1,000 and spin again (replaces Steal / Pay It Forward when there's only one team)
 // 🚂 Express: 1,000 per consonant without spinning (one miss = BANKRUPT) · ✖2 Double Play: next spin
 // counts double · 💰 Jackpot: instant bonus, spin again · 🃏 Wild Card: a free letter is revealed, spin again
 const EXPRESS_VALUE = 1000, JACKPOT_WEDGE = 2500;
@@ -29,12 +31,13 @@ function eraseSlot(slots, cursor) {
   slots[i].got = ''; slots[i].el.textContent = '';
   return i;
 }
-function wedgesFor(look) {
+function wedgesFor(look, teamCount = 2) {
   const w = WEDGES.slice();
   w[3] = 'FREE PLAY';                       // replaces a 300
   w[6] = 'WILD CARD'; w[11] = 'DOUBLE PLAY'; w[21] = 'JACKPOT'; w[23] = 'EXPRESS'; // replace 600, 500, 400, 300
   if (look === 'recovery') { w[18] = 'PAY IT FORWARD'; w[13] = 'GRATITUDE'; } // replace a 350 and a 300
   else w[18] = 'STEAL';                     // replaces a 350
+  if (teamCount < 2) w.forEach((x, k) => { if (x === 'STEAL' || x === 'PAY IT FORWARD') w[k] = 'BONUS'; }); // no one to steal from or give to
   return w;
 }
 const WEDGE_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#12b5cf'];
@@ -174,7 +177,7 @@ App.screens.wheelPlay = (el, puzzles) => {
   let phase, spinValue = 0, rot = Math.random() * Math.PI * 2, spinning = false, rafId;
   let bulbs = 0, glow = null; // rim-light chase step · landed-wedge highlight
   let doubleNext = false, hintUsed = false; // ✖2 Double Play token (this turn only) · 💡 one hint per puzzle
-  const W = wedgesFor(App.look); // the look can't change mid-game
+  const W = wedgesFor(App.look, teams.length); // the look can't change mid-game
   const N = W.length, SEG = (Math.PI * 2) / N;
 
   App.gameBar({
@@ -498,6 +501,11 @@ App.screens.wheelPlay = (el, puzzles) => {
       Sfx.solve(); confetti(1500);
       Scores.add(t.id, JACKPOT_WEDGE); bank[t.id] += JACKPOT_WEDGE;
       setTurnPhase(`<span class="big">💰 JACKPOT!</span> ${esc(t.name)} +${fmt(JACKPOT_WEDGE)} — spin again!`); return;
+    }
+    if (w === 'BONUS') {
+      Sfx.solve(); confetti(1200);
+      Scores.add(t.id, BONUS_WEDGE); bank[t.id] += BONUS_WEDGE;
+      setTurnPhase(`<span class="big">🎉 BONUS!</span> ${esc(t.name)} +${fmt(BONUS_WEDGE)} — spin again!`); return;
     }
     if (w === 'WILD CARD') return freeLetter('<span class="big">🃏 WILD CARD!</span>', true);
     if (w === 'STEAL') return stealWedge(t);

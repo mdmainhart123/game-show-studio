@@ -216,7 +216,7 @@ const Demo = {
         const consLeft = [...new Set(hidden())].filter(L => 'BCDFGHJKLMNPQRSTVWXYZ'.includes(L));
         if (letters >= 3 || !consLeft.length || $('#spin').disabled) break;
         // keep the demo simple: land on plain point wedges (and one 🎁 Mystery)
-        const nums = wedgesFor(App.look).map((w, i) => typeof w === 'number' ? i : -1).filter(i => i >= 0);
+        const nums = wedgesFor(App.look, Scores.teams().length).map((w, i) => typeof w === 'number' ? i : -1).filter(i => i >= 0);
         App.wheelForce = letters >= 1 && !mysteryShown ? 8 : this.pickRandom(nums);
         await this.tap('#spin', 700);
         await this.until(() => !/Spinning/.test($('#status').textContent), 12000);

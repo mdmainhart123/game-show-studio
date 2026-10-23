@@ -207,6 +207,7 @@ App.screens.triviaPlay = (el, questions) => {
       if (!revisit) {
         const right = chosen != null && order[chosen] === questions[idx].answer;
         picked = new Set(right ? [g.id] : []);
+        syncAward(); // the group's score updates right away
         if (chosen != null) { quizResult(el, right, right ? `${esc(g.name)} +${fmt(pts)}` : esc(g.name)); if (!right) Sfx.wrong(); }
       }
       const got = picked.has(g.id);
@@ -238,18 +239,23 @@ App.screens.triviaPlay = (el, questions) => {
   function toggle(id) {
     picked.has(id) ? picked.delete(id) : picked.add(id);
     $$('.tpick', el).forEach(b => b.classList.toggle('on', picked.has(b.dataset.id)));
+    syncAward(); // the scoreboard updates straight away
     Sfx.click();
+  }
+  // Makes the scoreboard match the teams ticked for this question (adds/removes points).
+  function syncAward() {
+    const rec = records[idx]; let gained = false;
+    picked.forEach(id => { if (!rec.teams.has(id)) { Scores.add(id, rec.pts); gained = true; } });
+    rec.teams.forEach(id => { if (!picked.has(id)) Scores.add(id, -rec.pts); });
+    rec.teams = new Set(picked);
+    return gained;
   }
   // Adds points for newly-picked teams and removes them from un-picked ones.
   // Returns true if anyone gained points (to pause for the cheer).
   function applyAward(quiet) {
     if (phase !== 'r') return false;
     phase = 'done';
-    const rec = records[idx];
-    let gained = false;
-    picked.forEach(id => { if (!rec.teams.has(id)) { Scores.add(id, rec.pts); gained = true; } });
-    rec.teams.forEach(id => { if (!picked.has(id)) Scores.add(id, -rec.pts); });
-    rec.teams = new Set(picked);
+    const gained = syncAward();
     if (gained && !quiet) Sfx.correct();
     return gained && !quiet;
   }

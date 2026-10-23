@@ -1552,3 +1552,7 @@ body.theme-recovery .kq .ans.a0 { background: #d9675a; } body.theme-recovery .kq
 .clue-view.dd { overflow-y: auto; justify-content: safe center; }
 @media (max-height: 500px) { .clue-view.dd .dd-splash { font-size: 34px !important; line-height: 1; } .clue-view.dd .meta { margin-top: 4px !important; font-size: 14px; } .dd-q { font-size: 16px; } .dd-wager2 .hint { display: none; } .clue-view.dd #wGo { padding: 8px 18px; font-size: 16px; } }
 @media (max-width: 760px) and (min-height: 501px) { .clue-view.dd .dd-splash { font-size: 54px !important; } }
+
+/* keyboard hints (Space, Enter…) are implied — don't show them on buttons */
+.btn kbd, .link-btn kbd { display: none !important; }
+.cv-host .bq-actions .btn { font-size: clamp(16px, 2.2vh, 20px); padding: 10px 22px; }
