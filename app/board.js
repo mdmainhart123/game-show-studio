@@ -271,8 +271,8 @@ App.screens.boardPlay = (el, name) => {
         $$('.bq-btns .btn', view).forEach(b => { b.disabled = true; b.classList.toggle('picked', b.id === keep); });
         $('#btimer', view)?.classList.add('stopped');
       }
-      // ✗ Wrong: points off (if that's on), no steal, and the answer stays HIDDEN (it can
-      // come back later). The host can still show it with 👁 Reveal answer.
+      // ✗ Wrong: points off (if that's on), no steal, and the answer is shown.
+      // (🚨 Steal keeps the answer hidden so the next team gets a fair try.)
       function wrongNoSteal(t) {
         if (phase !== 'answer') return;
         stop(); phase = 'done';
@@ -282,9 +282,9 @@ App.screens.boardPlay = (el, name) => {
         banner(false); Scores.setActive(null);
         lockButtons('bWrong');
         $('#bX', view)?.remove();
+        showAns(); // no steal, so the clue is over — show the answer
         $('#bqMsg', view).innerHTML = `<span class="msg-bad">✗ ${esc(t.name)}${minus ? ` −${fmt(minus)}` : ''}</span>`;
-        acts(`<button class="link-btn" id="bShowAns">👁 Reveal answer</button><button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`,
-          { bBack: close, bShowAns: () => { showAns(); $('#bShowAns', view)?.remove(); } });
+        acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
       }
       function wrong(t, timedOut) {
         if (phase !== 'answer') return;
