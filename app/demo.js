@@ -351,9 +351,9 @@ const Demo = {
       for (const L of answer.slice(0, -1)) { key(L); await this.wait(300); }
       await this.say('Type a wrong letter and press <b>Check</b> to see it turn red…', 3000);
       key('Q'); await this.wait(400);
-      await this.tap('#cwCheck');
-      await this.say('Stuck? <b>Reveal letter</b>, <b>Reveal word</b> or <b>Check</b> (wrong letters turn red).', 3600);
-      await this.tap('#cwWord');
+      $('#cwOpt').click(); await this.wait(600); await this.tap($('#cwOpts [data-o="check"]'));
+      await this.say('The <b>☰ Options</b> menu has Check, Reveal letter / word / all, Print — and you can <b>zoom in</b> with − Fit ＋ or hide the clue list for a bigger grid.', 4400);
+      $('#cwOpt').click(); await this.wait(300); await this.tap($('#cwOpts [data-o="word"]'));
       await this.say('<b>🖨️ Print</b> gives you the blank puzzle to hand out — and the <b>answers</b> as a separate printout.', 3600);
     },
   },

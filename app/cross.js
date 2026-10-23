@@ -227,17 +227,25 @@ App.screens.crossPlay = (el, puzzle) => {
   el.innerHTML = `
     <div class="cw">
       <div class="cw-main">
-        <div class="cw-top"><b class="cw-title">${esc(puzzle.title)}</b><span class="cw-time" id="cwTime">0:00</span><span class="cw-prog" id="cwProg"></span></div>
+        <div class="cw-top"><b class="cw-title">${esc(puzzle.title)}</b><span class="cw-time" id="cwTime">0:00</span><span class="cw-prog" id="cwProg"></span>
+          <div class="spacer"></div>
+          <div class="cw-zoom"><button class="btn sm ghost" id="cwZout" title="Zoom out (−)">−</button><button class="btn sm ghost" id="cwZfit" title="Fit the whole crossword">Fit</button><button class="btn sm ghost" id="cwZin" title="Zoom in (+)">＋</button></div>
+          <div class="cw-optwrap"><button class="btn sm yellow" id="cwOpt">☰ Options</button>
+            <div class="cw-opts hidden" id="cwOpts">
+              <button data-o="check">✓ Check answers</button>
+              <button data-o="letter">Reveal letter</button>
+              <button data-o="word">Reveal word</button>
+              <button data-o="all">Reveal all</button>
+              <hr>
+              <button data-o="clues" id="cwOClues"></button>
+              <button data-o="text" id="cwOText"></button>
+              <button data-o="layout">🔀 New layout</button>
+              <button data-o="print">🖨️ Print</button>
+            </div></div>
+        </div>
         <div class="cw-cur" id="cwCur"></div>
         <div class="cw-gridwrap"><div class="cw-grid" id="cwGrid"></div></div>
         <div class="letters qwerty cw-keys" id="cwKeys">${qwertyKeys()}<div class="kr"><button data-l="BACK" class="wide">⌫</button></div></div>
-        <div class="wh-actions cw-acts">
-          <button class="btn ghost" id="cwCheck">✓ Check</button>
-          <button class="btn ghost" id="cwLetter">Reveal letter</button>
-          <button class="btn ghost" id="cwWord">Reveal word</button>
-          <button class="btn ghost" id="cwAll">Reveal all</button>
-          <button class="btn ghost" id="cwPrint">🖨️ Print</button>
-        </div>
       </div>
       <div class="cw-clues" id="cwClues"></div>
     </div>`;
@@ -256,6 +264,7 @@ App.screens.crossPlay = (el, puzzle) => {
       const fx = fl >= 0 ? 'win' : fb >= 0 ? 'lose' : '', fi = Math.max(fl, fb);
       return `<div class="cwc ${inCur ? 'hl' : ''} ${isSel ? 'sel' : ''} ${cell.bad ? 'bad' : ''} ${cell.shown ? 'shown' : ''} ${fx}" ${fx ? `style="animation-delay:${fi * 70}ms"` : ''} data-r="${r}" data-c="${c}">${cell.num ? `<i>${cell.num}</i>` : ''}<b>${fill[r][c]}</b></div>`;
     }).join('')).join('');
+    if (typeof zoom !== 'undefined' && zoom > 1) requestAnimationFrame(() => $('.cwc.sel', el)?.scrollIntoView({ block: 'nearest', inline: 'nearest' }));
     $$('.cwc[data-r]', g).forEach(x => x.onclick = () => {
       const r = +x.dataset.r, c = +x.dataset.c;
       if (sel.r === r && sel.c === c && grid[r][c].words[dir === 'a' ? 'd' : 'a']) dir = dir === 'a' ? 'd' : 'a';
@@ -332,19 +341,52 @@ App.screens.crossPlay = (el, puzzle) => {
     }
   }
   $$('#cwKeys button', el).forEach(b => b.onclick = () => (b.dataset.l === 'BACK' ? back() : type(b.dataset.l)));
-  $('#cwCheck', el).onclick = () => {
+  function checkAll() {
     let wrong = 0;
     grid.forEach((row, r) => row.forEach((cell, c) => { if (cell && fill[r][c] && fill[r][c] !== cell.ch) { cell.bad = true; wrong++; } }));
     render();
     toast(wrong ? `${wrong} letter${wrong > 1 ? 's' : ''} to fix (in red)` : 'Everything so far is right ✓', !!wrong);
     wrong ? Sfx.noLetter() : Sfx.correct();
-  };
-  $('#cwLetter', el).onclick = () => reveal([[sel.r, sel.c]]);
-  $('#cwWord', el).onclick = () => { const p = curWord(); if (p) reveal(wordCells(p)); };
-  $('#cwAll', el).onclick = async () => { if (await confirmBox('Reveal the whole crossword?', 'Reveal all')) reveal(cw.placed.flatMap(wordCells)); };
-  $('#cwPrint', el).onclick = () => printMenu(puzzle, cw);
+  }
+  // ---- view options (remembered on this device): zoom, clue list, big text ----
+  const pref = (k, v) => { try { if (v === undefined) return JSON.parse(localStorage.getItem('gss-cw-' + k)); localStorage.setItem('gss-cw-' + k, JSON.stringify(v)); } catch (e) { return null; } };
+  let zoom = 1, showClues = pref('clues') ?? true, bigText = pref('big') ?? false;
+  const wrapEl = $('.cw-gridwrap', el), cwEl = $('.cw', el);
+  function applyView() {
+    $('#cwGrid', el).style.setProperty('--z', zoom);
+    wrapEl.classList.toggle('zoomed', zoom > 1);
+    cwEl.classList.toggle('no-clues', !showClues);
+    cwEl.classList.toggle('big-text', bigText);
+    $('#cwZfit', el).textContent = zoom === 1 ? 'Fit' : Math.round(zoom * 100) + '%';
+    $('#cwOClues', el).textContent = showClues ? '📋 Hide clue list (bigger grid)' : '📋 Show clue list';
+    $('#cwOText', el).textContent = bigText ? '🔠 Normal text' : '🔠 Large text';
+    requestAnimationFrame(() => { const s = $('.cwc.sel', el); if (s && zoom > 1) s.scrollIntoView({ block: 'nearest', inline: 'nearest' }); });
+  }
+  const setZoom = z => { zoom = Math.max(1, Math.min(3, Math.round(z * 4) / 4)); applyView(); };
+  $('#cwZin', el).onclick = () => setZoom(zoom + 0.25);
+  $('#cwZout', el).onclick = () => setZoom(zoom - 0.25);
+  $('#cwZfit', el).onclick = () => setZoom(1);
+  const opts = $('#cwOpts', el);
+  $('#cwOpt', el).onclick = e => { e.stopPropagation(); opts.classList.toggle('hidden'); };
+  const closeOpts = e => { if (!opts.contains(e.target)) opts.classList.add('hidden'); };
+  document.addEventListener('click', closeOpts);
+  $$('[data-o]', opts).forEach(b => b.onclick = async () => {
+    const o = b.dataset.o;
+    if (o !== 'clues' && o !== 'text') opts.classList.add('hidden');
+    if (o === 'check') checkAll();
+    if (o === 'letter') reveal([[sel.r, sel.c]]);
+    if (o === 'word') { const p = curWord(); if (p) reveal(wordCells(p)); }
+    if (o === 'all' && await confirmBox('Reveal the whole crossword?', 'Reveal all')) reveal(cw.placed.flatMap(wordCells));
+    if (o === 'clues') { showClues = !showClues; pref('clues', showClues); applyView(); }
+    if (o === 'text') { bigText = !bigText; pref('big', bigText); applyView(); }
+    if (o === 'layout') newLayout();
+    if (o === 'print') printMenu(puzzle, cw);
+  });
+  applyView();
   const onKey = e => {
     if (Modal.stack.length || Menu.isOpen() || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+    if ((e.key === '+' || e.key === '=') && !e.ctrlKey && !e.metaKey) { e.preventDefault(); $('#cwZin', el).click(); return; }
+    if ((e.key === '-' || e.key === '_') && !e.ctrlKey && !e.metaKey) { e.preventDefault(); $('#cwZout', el).click(); return; }
     if (/^[a-z]$/i.test(e.key) && !e.ctrlKey && !e.metaKey) { e.preventDefault(); type(e.key.toUpperCase()); }
     else if (e.key === 'Backspace') { e.preventDefault(); back(); }
     else if (e.key === 'ArrowLeft') { e.preventDefault(); move(0, -1); } else if (e.key === 'ArrowRight') { e.preventDefault(); move(0, 1); }
@@ -355,7 +397,7 @@ App.screens.crossPlay = (el, puzzle) => {
   tick = setInterval(() => { const s = Math.floor((Date.now() - t0) / 1000); const t = $('#cwTime', el); if (t) t.textContent = `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; }, 1000);
   savePrint(); setup(); render();
   App._cwAnswer = () => curWord()?.w || ''; // used by the demo
-  return () => { clearInterval(tick); document.removeEventListener('keydown', onKey, true); };
+  return () => { clearInterval(tick); document.removeEventListener('keydown', onKey, true); document.removeEventListener('click', closeOpts); };
 };
 
 // ---------- print: the blank puzzle and its answer key are separate printouts ----------
