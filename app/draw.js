@@ -15,8 +15,8 @@ App.screens.drawSetup = (el) => {
         <p style="font-size:20px;margin:0 0 14px">One person draws, everyone else guesses before time runs out — <b>whoever guesses it draws next!</b> No letters or numbers in the drawing.</p>
         <div class="field-row">
           <label class="field"><span>How to play</span><select class="input" id="dMode">
-            <option value="teams" ${d.teams.length > 1 ? 'selected' : ''}>${d.teams.length > 1 ? 'Teams (with points)' : `${esc(d.teams[0]?.name || 'Group')} (with points)`}</option>
-            <option value="all" ${d.teams.length > 1 ? '' : 'selected'}>No teams — everyone guesses, just for fun</option></select></label>
+            <option value="teams" selected>${d.teams.length > 1 ? 'Teams (with points)' : `${esc(d.teams[0]?.name || 'Group')} (with points)`}</option>
+            <option value="all">No teams — everyone guesses, just for fun</option></select></label>
           <label class="field"><span>Words</span><select class="input" id="dLevel">
             ${['mix', 'easy', 'medium', 'hard'].map(lv => `<option value="${lv}">${lv === 'mix' ? '🎲 Mix of all levels' : DRAW_LABEL[lv]}${lv === 'mix' ? '' : ` (${DRAW_POINTS[lv]} pts)`} — ${count(lv)} words</option>`).join('')}</select></label>
         </div>

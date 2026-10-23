@@ -135,6 +135,7 @@ App.screens.triviaPlay = (el, questions) => {
   const records = [];
   let idx = -1, phase, timeLeft, total, timerId, paused, picked, pts, order, stopRead = () => {};
   const R = 50, C = 2 * Math.PI * R;
+  const solo = Scores.teams().length === 1; // Group / one team: no "who got it right?" — tap the group's answer
   document.body.classList.add('kq-on');
   App.gameBar({
     pause: { toggle: () => { if (phase !== 'q') return; paused = !paused; $('#timer', el)?.classList.toggle('paused', paused); }, get: () => paused },
@@ -159,7 +160,7 @@ App.screens.triviaPlay = (el, questions) => {
     total = timeLeft = q.time || 20;
     phase = 'q'; paused = false; picked = new Set(rec ? rec.teams : []);
     el.innerHTML = quizLayout({ q, idx, count: questions.length, order, turns: false, R, C });
-    $('#award', el).innerHTML = `<span class="lbl">Lock in your answers! <span class="hint">Tap any answer (or Reveal) to show the right one.</span></span><div class="spacer"></div>
+    $('#award', el).innerHTML = `<span class="lbl">${solo ? 'What\'s the group\'s answer? <span class="hint">Tap it to lock it in.</span>' : 'Lock in your answers! <span class="hint">Tap any answer (or Reveal) to show the right one.</span>'}</span><div class="spacer"></div>
           <button class="btn lg yellow" id="reveal">Reveal answer <kbd>Space</kbd></button>`;
     if (rec) { // revisiting: show the answer and the saved picks, no timer
       $('#timer', el).style.visibility = 'hidden';
@@ -168,7 +169,8 @@ App.screens.triviaPlay = (el, questions) => {
     }
     $('#reveal', el).onclick = () => reveal();
     // tapping any answer also reveals it (then tick the teams that got it right)
-    $$('.ans', el).forEach(b => b.onclick = () => { if (phase === 'q') reveal(); });
+    // one team / Group: the answer tapped IS the group's answer — points go to the group automatically
+    $$('.ans', el).forEach(b => b.onclick = () => { if (phase === 'q') reveal(false, solo ? +b.dataset.i : undefined); });
     phase = 'reading';
     stopRead = quizRead(el, () => { phase = 'q'; startClock(); });
   }
@@ -186,7 +188,7 @@ App.screens.triviaPlay = (el, questions) => {
     }, 100);
   }
 
-  function reveal(revisit) {
+  function reveal(revisit, chosen) {
     if (phase !== 'q') return;
     clearInterval(timerId);
     phase = 'r';
@@ -200,6 +202,24 @@ App.screens.triviaPlay = (el, questions) => {
     $('#answers', el).classList.add('revealed');
     const teams = Scores.teams();
     const last = idx + 1 >= questions.length;
+    if (solo) {
+      const g = teams[0];
+      if (!revisit) {
+        const right = chosen != null && order[chosen] === questions[idx].answer;
+        picked = new Set(right ? [g.id] : []);
+        if (chosen != null) { quizResult(el, right, right ? `${esc(g.name)} +${fmt(pts)}` : esc(g.name)); if (!right) Sfx.wrong(); }
+      }
+      const got = picked.has(g.id);
+      const label = last ? 'Final scores 🏁' : 'Next question ▶';
+      $('#award', el).innerHTML = `
+        <span class="lbl">${got ? `<span class="msg-good">✓ Correct!</span> ${esc(g.name)} +${fmt(pts)}` : chosen == null && !revisit ? 'No answer — no points' : `<span class="msg-bad">✗ Not this time</span>`}</span>
+        <div class="spacer"></div>
+        ${revisit ? '' : '<button class="btn sm ghost" id="stay" title="Stop the countdown">Stay here</button>'}
+        <button class="btn lg pink cd-btn" id="nextBtn">${label}</button>`;
+      if (!revisit) countT = countdownButton(el, label, () => $('#nextBtn', el)?.click());
+      $('#nextBtn', el).onclick = () => { clearInterval(countT); if (phase !== 'r') return; applyAward(true); if (got && !revisit) Sfx.correct(); go(idx + 1); };
+      return;
+    }
     $('#award', el).innerHTML = `
       <span class="lbl">${revisit ? 'Already scored — fix it if needed:' : 'Who got it right?'} <span style="color:var(--yellow)">+${fmt(pts)}</span></span>
       ${teams.map((t, i) => `<button class="tpick ${picked.has(t.id) ? 'on' : ''}" data-id="${t.id}" style="--tc:${t.color}" title="Key ${(i + 1) % 10}">${esc(t.name)}</button>`).join('')}
