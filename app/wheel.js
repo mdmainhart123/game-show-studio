@@ -38,6 +38,7 @@ function wedgesFor(look, teamCount = 2) {
   if (look === 'recovery') { w[18] = 'PAY IT FORWARD'; w[13] = 'GRATITUDE'; } // replace a 350 and a 300
   else w[18] = 'STEAL';                     // replaces a 350
   if (teamCount < 2) w.forEach((x, k) => { if (x === 'STEAL' || x === 'PAY IT FORWARD') w[k] = 'BONUS'; }); // no one to steal from or give to
+  if (teamCount < 2) w[w.indexOf('LOSE A TURN')] = 2500; // no one to pass the turn to: a big-money wedge instead
   return w;
 }
 const WEDGE_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#12b5cf'];
