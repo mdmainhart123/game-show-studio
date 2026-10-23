@@ -267,6 +267,22 @@ time flies | hard
     return { items, problems };
   }
 
+  // Crossword packs: "== Title" starts a puzzle, then "word | clue" lines
+  function parseCross(text) {
+    const items = [], problems = [];
+    let cur = null;
+    lines(text).forEach(raw => {
+      const l = raw.trim();
+      if (!l || isComment(l)) return;
+      const t = l.match(/^==\s*(.+)$/);
+      if (t) { cur = { id: uid(), title: t[1].trim(), entries: [] }; items.push(cur); return; }
+      const [w, ...rest] = l.split('|').map(s => s.trim());
+      if (!cur || !w || !rest.length) { problems.push(`"${l}" skipped`); return; }
+      cur.entries.push({ word: w, clue: rest.join(' | ') });
+    });
+    return { items: items.filter(p => p.entries.length >= 3), problems };
+  }
+
   function parseDraw(text) {
     const items = [], problems = [], seen = new Set();
     lines(text).forEach((raw, i) => {
@@ -371,7 +387,7 @@ CATEGORY: Around the House
     return { version: 1, trivia, board, wheel, words: [] };
   }
 
-  const api = { uid, TEMPLATES, parseTrivia, parseBoard, parseWheel, parseWords, parseDraw, layoutPuzzle, starterData, WHEEL_COLS, WHEEL_ROWS };
+  const api = { uid, TEMPLATES, parseTrivia, parseBoard, parseWheel, parseWords, parseDraw, parseCross, layoutPuzzle, starterData, WHEEL_COLS, WHEEL_ROWS };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.GSData = api;
 })(this);

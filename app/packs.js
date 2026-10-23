@@ -3103,3 +3103,90 @@ reflection | hard
 teamwork | hard
 a good day | hard`,
 });
+
+// 🧩 Crossword starter puzzles (added once; edit them on the Crossword screen)
+window.GS_PACKS.push({
+  id: 'crossword-starter-2026-10', name: 'Crossword starter puzzles',
+  cross: `== Around the House
+refrigerator | Keeps your food cold
+pillow | Soft place to rest your head
+toaster | Makes bread crispy and brown
+blanket | Keeps you warm on the couch
+mirror | You see yourself in it
+lamp | Turn it on to read at night
+broom | Sweeps the floor
+oven | Bake cookies in it
+sofa | Another word for couch
+window | Glass you look out of
+doorbell | Ring it when you visit
+faucet | Water comes out of it
+== Animal Kingdom
+elephant | Largest land animal
+giraffe | Tallest animal
+penguin | Bird that can't fly but swims well
+kangaroo | Australian animal with a pouch
+octopus | Has eight arms
+cheetah | Fastest land animal
+dolphin | Smart sea mammal that clicks and whistles
+owl | Night bird that hoots
+zebra | Striped horse-like animal
+turtle | Carries its home on its back
+squirrel | Bushy-tailed nut collector
+koala | Eucalyptus-eating Australian animal
+== Food Favorites
+pizza | Cheesy pie from Italy
+pancake | Flat breakfast treat with syrup
+banana | Long yellow fruit
+spaghetti | Long thin pasta
+taco | Folded shell with fillings
+popcorn | Movie-time snack
+cheese | Made from milk; cheddar is one
+carrot | Orange vegetable rabbits love
+cookie | Sweet baked treat with chips
+avocado | Main ingredient in guacamole
+sandwich | Two slices of bread with fillings
+lemonade | Sour-sweet summer drink`,
+});
+window.GS_PACKS.push({
+  id: 'crossword-recovery-2026-10', name: 'Crossword — recovery puzzles', bank: 'recovery',
+  cross: `== Coping Skills
+breathe | Slowly in and out to calm down
+journal | Write your thoughts in it
+walk | Simple exercise outdoors
+music | Listening to it can lift your mood
+meditate | Sit quietly and focus your mind
+stretch | Loosen up your muscles
+hobby | Something you enjoy doing in free time
+grounding | 5-4-3-2-1 is this kind of exercise
+sleep | Good rest each night
+water | Stay hydrated with this
+gratitude | Being thankful
+call | Reach out to a friend by phone
+== Recovery Words
+hope | Belief that things can get better
+courage | Being brave when it's hard
+sponsor | A mentor in a twelve-step program
+meeting | Where a support group gathers
+honesty | Telling the truth
+patience | Waiting calmly
+balance | Keeping life steady and even
+trigger | Something that sets off a craving
+boundary | A healthy limit you set
+support | Help from others
+serenity | Peace and calm
+progress | Not perfection
+growth | Change for the better over time
+== Self-Care
+rest | Take a break and recharge
+smile | Turn that frown upside down
+nature | Fresh air and green spaces
+routine | A regular daily schedule
+kindness | Being good to yourself and others
+laughter | The best medicine
+friends | People who care about you
+healthy | Eating well and feeling good
+mindful | Paying attention to the present
+peace | Inner calm
+affirmation | A positive statement you tell yourself
+selfcare | Taking care of your own needs`,
+});

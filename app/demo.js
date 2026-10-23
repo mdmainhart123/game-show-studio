@@ -336,6 +336,26 @@ const Demo = {
       await this.tap('#dNext');
       await this.say('Play as many drawings as you chose, then see the final scores.', 3400);
     },
+
+    async cross() {
+      App.show('crossSetup');
+      await this.say('🧩 <b>Crossword</b> — pick a puzzle, or make your own: just type <b>word | clue</b>, one per line.', 3600);
+      const p = App.data.cross[0] || { title: 'Demo', entries: [{ word: 'apple', clue: 'A red fruit' }, { word: 'pear', clue: 'A green fruit' }, { word: 'grape', clue: 'Comes in bunches' }, { word: 'lemon', clue: 'Sour and yellow' }] };
+      App.show('crossPlay', p);
+      await this.say('The app builds a fresh crossword from the words every time. The clue you\'re on is shown big at the top.', 3800);
+      await this.say('Click a square (click again to switch Across / Down) or a clue in the list — then type the letters the room calls out.', 4000);
+      // type the first answer (the demo peeks at the grid so it gets it right)
+      const cells = $$('.cwc.hl');
+      const key = L => document.dispatchEvent(new KeyboardEvent('keydown', { key: L, bubbles: true }));
+      const answer = App._cwAnswer ? App._cwAnswer() : '';
+      for (const L of answer.slice(0, -1)) { key(L); await this.wait(300); }
+      await this.say('Type a wrong letter and press <b>Check</b> to see it turn red…', 3000);
+      key('Q'); await this.wait(400);
+      await this.tap('#cwCheck');
+      await this.say('Stuck? <b>Reveal letter</b>, <b>Reveal word</b> or <b>Check</b> (wrong letters turn red).', 3600);
+      await this.tap('#cwWord');
+      await this.say('<b>🖨️ Print</b> makes a paper copy with the clues — plus an answer key on its own page.', 3600);
+    },
   },
 };
 
