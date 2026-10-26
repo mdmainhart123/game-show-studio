@@ -1,4 +1,4 @@
-const APP_VERSION = '20261023-1645'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261026-1230'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -28,6 +28,8 @@ const App = {
     d.settings = Object.assign({ sound: true, triviaPoints: 100, speedBonus: true, boardDeduct: true, vowelCost: 250, triviaPenalty: 'half', finalRound: true, theme: 'classic', wheelBonus: true }, d.settings || {});
     this.data = d;
     const added = this.applyPacks();
+    const mine = this.applyMyContent();
+    if (mine) added.push(mine);
     this.applyTheme();
     this.save(true);
 
@@ -77,6 +79,29 @@ const App = {
       added.push({ name: p.name + (p.bank === 'recovery' ? ' (used in the 🌿 Recovery look)' : ''), summary: parts.join(', ') });
     });
     return added;
+  },
+
+  // Built-in copy of Matt's own material (app/mycontent.js), merged in once per version.
+  applyMyContent() {
+    const c = window.GS_MY_CONTENT, d = this.data;
+    if (!c || !c.id || d.myContentApplied === c.id) return null;
+    const KEYS = ['trivia', 'board', 'wheel', 'words', 'draw', 'cross'];
+    const sig = x => { const o = { ...x }; delete o.id; delete o.played; delete o.layout; return JSON.stringify(o); };
+    let n = 0;
+    d.bank ||= 'standard';
+    Object.entries(c.banks || {}).forEach(([bank, set]) => {
+      const tgt = bank === d.bank ? d : ((d.banks ||= {})[bank] ||= {});
+      KEYS.forEach(k => {
+        const list = (tgt[k] ||= []), ids = new Set(list.map(x => x.id)), sigs = new Set(list.map(sig));
+        (set[k] || []).forEach(x => {
+          if (ids.has(x.id) || sigs.has(sig(x))) return;
+          const y = JSON.parse(JSON.stringify(x)); delete y.played;
+          list.push(y); ids.add(y.id); sigs.add(sig(y)); n++;
+        });
+      });
+    });
+    d.myContentApplied = c.id;
+    return n ? { name: 'Your saved material', summary: `${n} item${n === 1 ? '' : 's'} from your built-in collection` } : null;
   },
 
   // Look: 'classic' (navy & gold), 'playful' (original bright colours) or
@@ -628,14 +653,33 @@ const Menu = {
 // Backup / restore of all questions (used by the menu and the Question Manager)
 App.backup = async function () {
   const d = this.data, date = new Date().toISOString().slice(0, 10);
-  const p = await this.saveText(`game-show-backup-${d.bank === 'recovery' ? 'recovery-' : ''}${date}.json`, JSON.stringify({ app: 'Game Show Studio', version: 2, trivia: d.trivia, board: d.board, wheel: d.wheel, words: d.words }, null, 2), [{ name: 'Backup file', extensions: ['json'] }]);
+  const p = await this.saveText(`game-show-backup-${date}.json`, JSON.stringify({ app: 'Game Show Studio', version: 3, banks: this.allBanks() }, null, 2), [{ name: 'Backup file', extensions: ['json'] }]);
   if (p) toast('Backup saved ✓');
+};
+const BANK_KEYS = ['trivia', 'board', 'wheel', 'words', 'draw', 'cross'];
+const pick = (o) => Object.fromEntries(BANK_KEYS.map(k => [k, (o && o[k]) || []]));
+// Both question sets (Standard + Recovery), every game.
+App.allBanks = function () {
+  const d = this.data, out = { [d.bank || 'standard']: pick(d) };
+  Object.entries(d.banks || {}).forEach(([b, set]) => { if (!out[b]) out[b] = pick(set); });
+  return out;
 };
 App.restore = async function (after) {
   const f = await this.openText('Choose a backup (.json) file');
   if (!f) return;
   let b;
   try { b = JSON.parse(f.text); } catch (e) { toast("That file isn't a backup file", true); return; }
+  if (b && b.banks && typeof b.banks === 'object') {
+    const cnt = Object.values(b.banks).reduce((n, s) => n + BANK_KEYS.reduce((m, k) => m + ((s && s[k]) || []).length, 0), 0);
+    if (!(await confirmBox(`Replace all questions, words and puzzles with this backup? (${cnt} items, both question sets)`, 'Restore', true))) return;
+    const d = this.data, cur = d.bank || 'standard';
+    d.banks = {};
+    Object.entries(b.banks).forEach(([name, set]) => { if (name === cur) Object.assign(d, pick(set)); else d.banks[name] = pick(set); });
+    if (!b.banks[cur]) Object.assign(d, pick({}));
+    this.save(true); toast('Backup restored ✓');
+    after && after();
+    return;
+  }
   if (!Array.isArray(b.trivia) || !Array.isArray(b.board) || !Array.isArray(b.wheel)) { toast("That file isn't a Game Show Studio backup", true); return; }
   if (!(await confirmBox(`Replace all questions with this backup? (${b.trivia.length} trivia, ${b.board.length} board clues, ${b.wheel.length} puzzles${Array.isArray(b.words) ? `, ${b.words.length} words` : ''})`, 'Restore', true))) return;
   Object.assign(this.data, { trivia: b.trivia, board: b.board, wheel: b.wheel }, Array.isArray(b.words) ? { words: b.words } : {});
