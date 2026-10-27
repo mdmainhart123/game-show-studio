@@ -1,14 +1,29 @@
 # =============================================================
 #  WORD GUESS — word import template  (Game Show Studio)
 # =============================================================
-#  One word per line:
+#  Secret words for a guess-the-word game (players get 6 tries
+#  to guess a 5-letter word). One word per line:
 #
 #    word | hint
 #
-#  - Each word must be exactly 5 letters (A–Z only).
-#  - The hint is optional (for example a category like Animal).
-#    You can switch hints on or off when you start a game.
-#  - Lines starting with # are notes and are ignored.
+#  Rules:
+#  - Every word must be EXACTLY 5 letters, A to Z only
+#    (no spaces, hyphens, numbers or accents).
+#  - Use common, everyday English words. Avoid plurals and names.
+#  - Don't list the same word twice.
+#  - The hint is optional — a short category like Animal, Food
+#    or Around the House. Hints can be switched on or off in the game.
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (```), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 tiger | Animal

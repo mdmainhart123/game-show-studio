@@ -1,14 +1,31 @@
 # =============================================================
 #  SPIN & SOLVE — puzzle import template  (Game Show Studio)
 # =============================================================
-#  One puzzle per line:
+#  Word puzzles that players solve letter by letter (like a
+#  famous wheel-spinning TV game show). One puzzle per line:
 #
 #    category | puzzle
 #
-#  - Letters, numbers, spaces and  ' - & ? ! , . :  are allowed.
-#  - The board is 4 rows of 14 squares, so keep puzzles short
-#    (about 45 characters max, and no single word over 14 letters).
-#  - Lines starting with # are notes and are ignored.
+#  Rules:
+#  - Category is shown as the hint, e.g. Phrase, Place, Person,
+#    Thing, Food & Drink, Before & After, Song Title, Event.
+#  - The board is 4 rows of 14 squares:
+#      * no single word longer than 14 letters
+#      * the whole puzzle about 45 characters or less
+#  - Only letters, numbers, spaces and  ' - & ? ! , . :  are allowed
+#    (no accents, quotes or other symbols).
+#  - Common phrases, sayings, places and things work best.
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (```), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 Phrase | Better late than never

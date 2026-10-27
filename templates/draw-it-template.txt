@@ -1,14 +1,31 @@
 # =============================================================
 #  DRAW IT — word import template  (Game Show Studio)
 # =============================================================
-#  One word or short phrase per line:
+#  Words for a drawing game: one person draws on a whiteboard or
+#  paper while everyone else guesses. One word or phrase per line:
 #
 #    word | level
 #
-#  - level is easy, medium or hard (optional — easy if left out).
+#  Rules:
+#  - Level is easy, medium or hard (if left off, easy is used).
 #    Easy = 100 points, Medium = 200, Hard = 300.
-#  - Pick things people can draw: objects, animals, actions, places.
-#  - Lines starting with # are notes and are ignored.
+#      easy   = simple objects and animals (banana, cat, house)
+#      medium = things or actions with more detail (roller coaster)
+#      hard   = ideas, sayings or tricky phrases (time flies)
+#  - Pick things that can be drawn without letters or numbers.
+#  - Keep each entry short: 40 characters or less.
+#  - Don't list the same word twice.
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (```), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 banana | easy

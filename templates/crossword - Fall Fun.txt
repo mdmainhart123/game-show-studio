@@ -1,3 +1,35 @@
+# =============================================================
+#  CROSSWORD — puzzle import template  (Game Show Studio)
+# =============================================================
+#  The app builds the crossword grid automatically from a list
+#  of answers and clues.
+#
+#    == Puzzle title                       (starts a new puzzle)
+#    answer | clue                          (one answer per line)
+#
+#  Rules:
+#  - Start each puzzle with a line beginning with  ==  and its title.
+#  - Give each puzzle 8 to 15 answers (at least 3 are required).
+#  - Answers are 2 to 20 letters. Multi-word answers are fine
+#    (e.g. peanut butter); spaces and punctuation are dropped in the
+#    grid and the clue shows the word lengths, e.g. (6,6).
+#  - Use words that share common letters so they can cross.
+#  - Don't repeat an answer within the same puzzle.
+#  - Clues should be short (one line) and must not contain the answer.
+#  - You can put several puzzles in one file, each starting with ==
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (```), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
+# =============================================================
+
 == Fall Fun
 pumpkin | Big orange squash carved at Halloween
 acorn | A squirrel's favorite snack

@@ -1,21 +1,33 @@
 # =============================================================
-#  TRIVIA — question import template  (Game Show Studio)
+#  TRIVIA BLITZ — question import template  (Game Show Studio)
 # =============================================================
-#  Each question is a small block of lines:
+#  Multiple-choice questions. Each question is a block of lines:
 #
-#    Q:  the question                          (required)
-#    A:  the CORRECT answer                    (required)
-#    W:  a wrong answer — add 1 to 3 of these  (required, at least 1)
-#    C:  category                              (optional)
-#    T:  seconds on the timer                  (optional, default 20)
+#    Q:  the question                              (required)
+#    A:  the CORRECT answer                        (required)
+#    W:  a wrong answer — write 3 of these         (at least 1, max 3)
+#    C:  category, e.g. Science, History, Music    (optional)
+#    T:  seconds on the timer, 5 to 120            (optional, default 20)
 #
-#  - Leave a blank line between questions.
-#  - Answers are shuffled automatically when the game is played,
-#    so it's fine that the correct one is always listed first.
-#  - For True/False, use  A: True  and  W: False
-#  - Lines starting with # are notes and are ignored.
-#  - Delete these examples and add your own, then save the file
-#    and use "Import from text file" in the Question Manager.
+#  Rules:
+#  - Put ONE blank line between questions.
+#  - Always list the correct answer on the A: line. The app shuffles
+#    the answers when the game is played.
+#  - Wrong answers should be believable but clearly wrong.
+#  - Keep answers short (a few words) so they fit on the buttons.
+#  - True/False question: use  A: True  and  W: False  (or the reverse).
+#  - Questions with the same C: category are grouped together.
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (```), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 Q: What planet is known as the Red Planet?

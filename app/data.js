@@ -7,23 +7,35 @@
     trivia: {
       file: 'trivia-template.txt',
       text: `# =============================================================
-#  TRIVIA — question import template  (Game Show Studio)
+#  TRIVIA BLITZ — question import template  (Game Show Studio)
 # =============================================================
-#  Each question is a small block of lines:
+#  Multiple-choice questions. Each question is a block of lines:
 #
-#    Q:  the question                          (required)
-#    A:  the CORRECT answer                    (required)
-#    W:  a wrong answer — add 1 to 3 of these  (required, at least 1)
-#    C:  category                              (optional)
-#    T:  seconds on the timer                  (optional, default 20)
+#    Q:  the question                              (required)
+#    A:  the CORRECT answer                        (required)
+#    W:  a wrong answer — write 3 of these         (at least 1, max 3)
+#    C:  category, e.g. Science, History, Music    (optional)
+#    T:  seconds on the timer, 5 to 120            (optional, default 20)
 #
-#  - Leave a blank line between questions.
-#  - Answers are shuffled automatically when the game is played,
-#    so it's fine that the correct one is always listed first.
-#  - For True/False, use  A: True  and  W: False
-#  - Lines starting with # are notes and are ignored.
-#  - Delete these examples and add your own, then save the file
-#    and use "Import from text file" in the Question Manager.
+#  Rules:
+#  - Put ONE blank line between questions.
+#  - Always list the correct answer on the A: line. The app shuffles
+#    the answers when the game is played.
+#  - Wrong answers should be believable but clearly wrong.
+#  - Keep answers short (a few words) so they fit on the buttons.
+#  - True/False question: use  A: True  and  W: False  (or the reverse).
+#  - Questions with the same C: category are grouped together.
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (\`\`\`), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 Q: What planet is known as the Red Planet?
@@ -53,17 +65,34 @@ T: 15
       text: `# =============================================================
 #  QUIZ BOARD — clue import template  (Game Show Studio)
 # =============================================================
-#  A board is a grid of categories (columns) and point values.
+#  A board is a grid of categories (columns) with point values.
+#  The host reads a clue and the team gives the answer.
 #
 #    BOARD: name of the game board        (starts a new board)
 #    CATEGORY: name of the category        (starts a new column)
 #    points | clue | answer                 (one clue per line)
 #
-#  - Up to 6 categories per board and up to 6 clues per category
-#    are shown (5 is the classic layout).
-#  - Put a | (the "pipe" key, Shift + \\ ) between each part.
-#  - Lines starting with # are notes and are ignored.
-#  - You can put several boards in one file.
+#  Rules:
+#  - Each board should have 5 categories (6 max).
+#  - Each category should have 5 clues (6 max) worth
+#    100, 200, 300, 400 and 500 points — easiest clue = 100,
+#    hardest = 500.
+#  - Separate the three parts with the | character.
+#  - Points are a number only (no "pts" or "$").
+#  - Answers should be short: a word, a name or a short phrase.
+#  - Put a blank line before each CATEGORY: line.
+#  - You can put several boards in one file; each starts with BOARD:
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (\`\`\`), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 BOARD: Sample Board
@@ -88,14 +117,31 @@ CATEGORY: Geography
       text: `# =============================================================
 #  SPIN & SOLVE — puzzle import template  (Game Show Studio)
 # =============================================================
-#  One puzzle per line:
+#  Word puzzles that players solve letter by letter (like a
+#  famous wheel-spinning TV game show). One puzzle per line:
 #
 #    category | puzzle
 #
-#  - Letters, numbers, spaces and  ' - & ? ! , . :  are allowed.
-#  - The board is 4 rows of 14 squares, so keep puzzles short
-#    (about 45 characters max, and no single word over 14 letters).
-#  - Lines starting with # are notes and are ignored.
+#  Rules:
+#  - Category is shown as the hint, e.g. Phrase, Place, Person,
+#    Thing, Food & Drink, Before & After, Song Title, Event.
+#  - The board is 4 rows of 14 squares:
+#      * no single word longer than 14 letters
+#      * the whole puzzle about 45 characters or less
+#  - Only letters, numbers, spaces and  ' - & ? ! , . :  are allowed
+#    (no accents, quotes or other symbols).
+#  - Common phrases, sayings, places and things work best.
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (\`\`\`), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 Phrase | Better late than never
@@ -112,14 +158,29 @@ Before & After | Apple pie in the sky
     text: `# =============================================================
 #  WORD GUESS — word import template  (Game Show Studio)
 # =============================================================
-#  One word per line:
+#  Secret words for a guess-the-word game (players get 6 tries
+#  to guess a 5-letter word). One word per line:
 #
 #    word | hint
 #
-#  - Each word must be exactly 5 letters (A–Z only).
-#  - The hint is optional (for example a category like Animal).
-#    You can switch hints on or off when you start a game.
-#  - Lines starting with # are notes and are ignored.
+#  Rules:
+#  - Every word must be EXACTLY 5 letters, A to Z only
+#    (no spaces, hyphens, numbers or accents).
+#  - Use common, everyday English words. Avoid plurals and names.
+#  - Don't list the same word twice.
+#  - The hint is optional — a short category like Animal, Food
+#    or Around the House. Hints can be switched on or off in the game.
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (\`\`\`), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 tiger | Animal
@@ -134,14 +195,31 @@ beach
     text: `# =============================================================
 #  DRAW IT — word import template  (Game Show Studio)
 # =============================================================
-#  One word or short phrase per line:
+#  Words for a drawing game: one person draws on a whiteboard or
+#  paper while everyone else guesses. One word or phrase per line:
 #
 #    word | level
 #
-#  - level is easy, medium or hard (optional — easy if left out).
+#  Rules:
+#  - Level is easy, medium or hard (if left off, easy is used).
 #    Easy = 100 points, Medium = 200, Hard = 300.
-#  - Pick things people can draw: objects, animals, actions, places.
-#  - Lines starting with # are notes and are ignored.
+#      easy   = simple objects and animals (banana, cat, house)
+#      medium = things or actions with more detail (roller coaster)
+#      hard   = ideas, sayings or tricky phrases (time flies)
+#  - Pick things that can be drawn without letters or numbers.
+#  - Keep each entry short: 40 characters or less.
+#  - Don't list the same word twice.
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (\`\`\`), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 banana | easy
@@ -152,7 +230,39 @@ time flies | hard
 
   TEMPLATES.cross = {
     file: 'crossword - Fall Fun.txt',
-    text: `== Fall Fun
+    text: `# =============================================================
+#  CROSSWORD — puzzle import template  (Game Show Studio)
+# =============================================================
+#  The app builds the crossword grid automatically from a list
+#  of answers and clues.
+#
+#    == Puzzle title                       (starts a new puzzle)
+#    answer | clue                          (one answer per line)
+#
+#  Rules:
+#  - Start each puzzle with a line beginning with  ==  and its title.
+#  - Give each puzzle 8 to 15 answers (at least 3 are required).
+#  - Answers are 2 to 20 letters. Multi-word answers are fine
+#    (e.g. peanut butter); spaces and punctuation are dropped in the
+#    grid and the clue shows the word lengths, e.g. (6,6).
+#  - Use words that share common letters so they can cross.
+#  - Don't repeat an answer within the same puzzle.
+#  - Clues should be short (one line) and must not contain the answer.
+#  - You can put several puzzles in one file, each starting with ==
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (\`\`\`), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
+# =============================================================
+
+== Fall Fun
 pumpkin | Big orange squash carved at Halloween
 acorn | A squirrel's favorite snack
 leaves | They change color and fall in autumn

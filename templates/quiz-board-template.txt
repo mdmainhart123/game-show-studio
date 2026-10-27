@@ -1,17 +1,34 @@
 # =============================================================
 #  QUIZ BOARD — clue import template  (Game Show Studio)
 # =============================================================
-#  A board is a grid of categories (columns) and point values.
+#  A board is a grid of categories (columns) with point values.
+#  The host reads a clue and the team gives the answer.
 #
 #    BOARD: name of the game board        (starts a new board)
 #    CATEGORY: name of the category        (starts a new column)
 #    points | clue | answer                 (one clue per line)
 #
-#  - Up to 6 categories per board and up to 6 clues per category
-#    are shown (5 is the classic layout).
-#  - Put a | (the "pipe" key, Shift + \ ) between each part.
-#  - Lines starting with # are notes and are ignored.
-#  - You can put several boards in one file.
+#  Rules:
+#  - Each board should have 5 categories (6 max).
+#  - Each category should have 5 clues (6 max) worth
+#    100, 200, 300, 400 and 500 points — easiest clue = 100,
+#    hardest = 500.
+#  - Separate the three parts with the | character.
+#  - Points are a number only (no "pts" or "$").
+#  - Answers should be short: a word, a name or a short phrase.
+#  - Put a blank line before each CATEGORY: line.
+#  - You can put several boards in one file; each starts with BOARD:
+#
+#  NOTE FOR AN AI ASSISTANT making this file:
+#  - Reply with plain text only, in exactly the format below.
+#  - No markdown, no code fences (```), no bullet points, no numbering,
+#    no headings and no extra commentary before or after.
+#  - Do not use the | character inside a question, clue or answer.
+#  - Keep content friendly and appropriate for adult group settings.
+#
+#  Lines starting with # are notes and are ignored by the app.
+#  Delete the examples and add your own, then save as a .txt file
+#  and press 📥 Import on the game's start screen.
 # =============================================================
 
 BOARD: Sample Board
