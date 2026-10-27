@@ -39,7 +39,7 @@ App.screens.wordsSetup = (el) => {
     </div>`;
   if (!d.words.length) { $('#add', el).onclick = () => App.show('editor', 'words'); return; }
   $('#demo', el).onclick = () => Demo.start('words');
-  $('#go', el).onclick = () => App.show('wordsPlay', shuffle(d.words), { hints: $('#hints', el).value === '1' });
+  $('#go', el).onclick = () => App.show('wordsPlay', shuffle(GameFiles.pick('words')), { hints: $('#hints', el).value === '1' });
 };
 
 // Simple, whole-room game: no teams, no points.

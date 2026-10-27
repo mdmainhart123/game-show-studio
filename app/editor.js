@@ -257,6 +257,7 @@ App.screens.editor = (el, startTab = 'trivia') => {
 
   // ---------- import ----------
   async function importFile() {
+    if (GameFiles.info[tab]) return GameFiles.import(tab, draw); // same as the game's start screen: adds new items and saves the file as a named set
     const f = await App.openText(`Choose a ${TABS[tab].label.slice(2).trim()} text file`);
     if (!f) return;
     const { items, problems } = GSData[TABS[tab].parse](f.text);

@@ -1,4 +1,4 @@
-const APP_VERSION = '20261027-1020'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261027-1115'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -86,17 +86,19 @@ const App = {
     const c = window.GS_MY_CONTENT, d = this.data;
     if (!c || !c.id || d.myContentApplied === c.id) return null;
     const KEYS = ['trivia', 'board', 'wheel', 'words', 'draw', 'cross'];
-    const sig = x => { const o = { ...x }; delete o.id; delete o.played; delete o.layout; return JSON.stringify(o); };
+    const sig = x => { const o = { ...x }; delete o.id; delete o.played; delete o.layout; delete o.sets; return JSON.stringify(o); };
     let n = 0;
     d.bank ||= 'standard';
     Object.entries(c.banks || {}).forEach(([bank, set]) => {
       const tgt = bank === d.bank ? d : ((d.banks ||= {})[bank] ||= {});
       KEYS.forEach(k => {
-        const list = (tgt[k] ||= []), ids = new Set(list.map(x => x.id)), sigs = new Set(list.map(sig));
+        const key = (GameFiles.info[k] && GameFiles.info[k].key) || sig;
+        const list = (tgt[k] ||= []), byId = new Map(list.map(x => [x.id, x])), byKey = new Map(list.map(x => [key(x), x]));
         (set[k] || []).forEach(x => {
-          if (ids.has(x.id) || sigs.has(sig(x))) return;
+          const old = byId.get(x.id) || byKey.get(key(x));
+          if (old) { (x.sets || []).forEach(s => { old.sets ||= []; if (!old.sets.includes(s)) old.sets.push(s); }); return; }
           const y = JSON.parse(JSON.stringify(x)); delete y.played;
-          list.push(y); ids.add(y.id); sigs.add(sig(y)); n++;
+          list.push(y); byId.set(y.id, y); byKey.set(key(y), y); n++;
         });
       });
     });
@@ -667,8 +669,26 @@ const GameFiles = {
     draw: { parse: 'parseDraw', noun: 'word', file: 'draw it', key: x => x.word.toLowerCase(),
       out: list => list.map(x => `${x.word} | ${x.level || 'easy'}`).join('\n') },
   },
+  // Imported files become named sets (e.g. "Halloween Easy") you can pick on the start screen.
+  setName(file) {
+    let n = String(file || '').replace(/\.[^.]+$/, '').replace(/^[0-9a-f]{8}-/i, '').replace(/[_]+/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2');
+    n = n.replace(/^\s*(trivia( blitz)?|quiz ?board|spin ?(and|&)? ?solve|word ?guess|draw ?it|crossword)\b[\s-]*/i, '').replace(/\btemplate\b/ig, '').replace(/\s*-\s*$/, '').replace(/\s+/g, ' ').trim();
+    return n || 'Imported';
+  },
+  sets(k) { const m = new Map(); (App.data[k] || []).forEach(x => (x.sets || []).forEach(s => m.set(s, (m.get(s) || 0) + 1))); return m; },
+  chosen(k) { const c = (App.data.settings.setPick || {})[k] || ''; return c && this.sets(k).has(c) ? c : ''; },
+  // The questions/words/puzzles the next game should use (all, or just the chosen set)
+  pick(k) { const c = this.chosen(k), all = App.data[k] || []; return c ? all.filter(x => (x.sets || []).includes(c)) : all; },
   attach(el, k) {
     const host = $('.setup', el); if (!host) return;
+    const sets = this.sets(k), panel = $('.setup > .panel:not(.empty)', el);
+    if (sets.size && panel) {
+      const cur = this.chosen(k), f = document.createElement('label');
+      f.className = 'field gf-set';
+      f.innerHTML = `<span>Question set</span><select class="input" id="gfSet"><option value="">📚 Everything (${App.data[k].length})</option>${[...sets].sort((a, b) => a[0].localeCompare(b[0])).map(([s, c]) => `<option value="${esc(s)}" ${s === cur ? 'selected' : ''}>${esc(s)} (${c})</option>`).join('')}</select>`;
+      panel.prepend(f);
+      $('#gfSet', f).onchange = e => { (App.data.settings.setPick ||= {})[k] = e.target.value; App.save(); App.show(App.current); };
+    }
     const d = App.data, I = this.info[k], n = d[k].length;
     const bar = document.createElement('div');
     bar.className = 'cw-new gf-files';
@@ -680,15 +700,20 @@ const GameFiles = {
     if (n) $('[data-f="exp"]', bar).onclick = async () => { if (await App.saveText(`${I.file} - My ${I.noun}s.txt`, (I.out(d[k]) + '\n').replace(/\n/g, '\r\n'))) toast('Saved ✓'); };
     $('[data-f="imp"]', bar).onclick = () => this.import(k);
   },
-  async import(k) {
+  async import(k, after) {
     const d = App.data, I = this.info[k], screen = App.current;
     const f = await App.openText('Choose a text file');
     if (!f) return;
-    const { items, problems } = GSData[I.parse](f.text);
-    const have = new Set(d[k].map(I.key));
-    const fresh = items.filter(x => { const key = I.key(x); if (have.has(key)) return false; have.add(key); return true; });
+    let { items, problems } = GSData[I.parse](f.text);
+    const set = this.setName(f.name);
+    if (k === 'board' && items.some(c => c.board === 'Imported Board')) { items.forEach(c => { if (c.board === 'Imported Board') c.board = set; }); problems = problems.filter(p => !/No BOARD: line/.test(p)); }
+    const have = new Map(d[k].map(x => [I.key(x), x]));
+    const tag = x => { if (k !== 'board') { x.sets ||= []; if (!x.sets.includes(set)) x.sets.push(set); } };
+    const fresh = items.filter(x => { const key = I.key(x), old = have.get(key); if (old) { tag(old); return false; } tag(x); have.set(key, x); return true; });
     const dup = items.length - fresh.length, pl = (c, w) => `${c} ${w}${c === 1 ? '' : 's'}`;
-    if (fresh.length) { d[k].push(...fresh); App.save(true); }
+    if (fresh.length) d[k].push(...fresh);
+    if (items.length && k !== 'board') (d.settings.setPick ||= {})[k] = set;
+    if (items.length) App.save(true);
     let extra = '';
     if (k === 'board' && fresh.length) extra = `<p class="hint">Board${new Set(fresh.map(c => c.board)).size > 1 ? 's' : ''}: ${[...new Set(fresh.map(c => c.board))].map(esc).join(', ')}</p>`;
     if (k === 'draw' && fresh.length) extra = `<p class="hint">${['easy', 'medium', 'hard'].map(l => [l, fresh.filter(w => w.level === l).length]).filter(x => x[1]).map(([l, c]) => `${DRAW_LABEL[l]} ${c}`).join(' · ')}</p>`;
@@ -696,9 +721,10 @@ const GameFiles = {
       title: fresh.length ? `📥 Added ${pl(fresh.length, I.noun)}!` : `No new ${I.noun}s added`,
       body: `<div style="font-size:19px;line-height:1.6">
         <p style="margin:0">${fresh.length ? `From <b>${esc(f.name)}</b>.` : `No new ${I.noun}s were found in <b>${esc(f.name)}</b>.${items.length ? '' : ' Is it the right kind of file for this game? <b>📄 Save blank template</b> shows the layout.'}`}</p>${extra}
-        ${dup ? `<p class="hint">${pl(dup, I.noun)} ${dup === 1 ? 'was' : 'were'} already in your list, so ${dup === 1 ? 'it was' : 'they were'} skipped.</p>` : ''}
+        ${dup ? `<p class="hint">${pl(dup, I.noun)} ${dup === 1 ? 'was' : 'were'} already in your list, so ${dup === 1 ? 'it was' : 'they were'} not added twice.</p>` : ''}
+        ${items.length && k !== 'board' ? `<p style="margin:12px 0 0">Saved as the set <b style="color:var(--yellow)">${esc(set)}</b> (${pl(items.length, I.noun)}) — pick it from <b>Question set</b> on the start screen.</p>` : ''}
         ${problems.length ? `<p style="margin:12px 0 4px;font-weight:600">⚠️ Things to check:</p><div class="problems">${problems.map(p => `<div>• ${esc(p)}</div>`).join('')}</div>` : ''}</div>`,
-      actions: [{ label: 'OK', cls: 'pink', onClick: close => { close(); if (fresh.length && App.current === screen) App.show(screen); } }],
+      actions: [{ label: 'OK', cls: 'pink', onClick: close => { close(); if (after) after(); else if (items.length && App.current === screen) App.show(screen); } }],
     });
   },
 };

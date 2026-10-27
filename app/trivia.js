@@ -85,16 +85,16 @@ function quizLayout({ q, idx, count, order, turns, R, C }) {
 }
 
 App.screens.triviaSetup = (el) => {
-  const d = App.data;
-  const cats = [...new Set(d.trivia.map(q => q.category || 'General'))].sort();
+  const d = App.data, L = GameFiles.pick('trivia');
+  const cats = [...new Set(L.map(q => q.category || 'General'))].sort();
   el.innerHTML = `
     <div class="setup">
       <h1>⚡ Trivia Blitz</h1>
       ${d.trivia.length ? `
       <div class="panel">
         <label class="field"><span>Category</span>
-          <select class="input" id="cat"><option value="">🎲 All categories (${d.trivia.length}${d.trivia.some(q => q.played) ? ` · ${d.trivia.filter(q => !q.played).length} left` : ''})</option>
-          ${cats.map(c => `<option value="${esc(c)}">${esc(Played.label(c, d.trivia.filter(q => (q.category || 'General') === c)))}</option>`).join('')}</select></label>
+          <select class="input" id="cat"><option value="">🎲 All categories (${L.length}${L.some(q => q.played) ? ` · ${L.filter(q => !q.played).length} left` : ''})</option>
+          ${cats.map(c => `<option value="${esc(c)}">${esc(Played.label(c, L.filter(q => (q.category || 'General') === c)))}</option>`).join('')}</select></label>
         ${d.trivia.some(q => q.played) ? `<div class="played-note">✓ = every question in that category has been played. New games use unplayed questions first. <button class="link-btn sm" id="resetPlayed">Reset played marks</button></div>` : ''}
         <label class="field"><span>How many questions?</span>
           <select class="input" id="num">${[5, 10, 15, 20, 30].map(n => `<option value="${n}" ${n === 10 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
@@ -120,7 +120,7 @@ App.screens.triviaSetup = (el) => {
   };
   $('#go', el).onclick = () => {
     const cat = $('#cat', el).value;
-    const pool = Played.order(d.trivia.filter(q => !cat || (q.category || 'General') === cat));
+    const pool = Played.order(L.filter(q => !cat || (q.category || 'General') === cat));
     Scores.resetAll(); // every new game starts at 0
     const chosen = pool.slice(0, +$('#num', el).value);
     App.playedTrivia = new Set(chosen.map(q => q.id)); // the Final Round picks a question not used here

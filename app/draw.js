@@ -6,7 +6,8 @@ const DRAW_LABEL = { easy: '🟢 Easy', medium: '🟡 Medium', hard: '🔴 Hard'
 
 App.screens.drawSetup = (el) => {
   const d = App.data;
-  const count = lv => d.draw.filter(w => lv === 'mix' || w.level === lv).length;
+  const L = GameFiles.pick('draw');
+  const count = lv => L.filter(w => lv === 'mix' || w.level === lv).length;
   el.innerHTML = `
     <div class="setup">
       <h1>🎨 Draw It</h1>
@@ -38,7 +39,7 @@ App.screens.drawSetup = (el) => {
   $('#dMode', el).onchange = syncRounds; syncRounds();
   $('#go', el).onclick = () => {
     const level = $('#dLevel', el).value;
-    const pool = d.draw.filter(w => level === 'mix' || w.level === level);
+    const pool = L.filter(w => level === 'mix' || w.level === level);
     if (!pool.length) { toast('No words at that level yet — pick another, or add some in 📝 Questions.', true); return; }
     Scores.resetAll();
     App.show('drawPlay', { mode: $('#dMode', el).value, level, time: +$('#dTime', el).value, rounds: +$('#dRounds', el).value });
@@ -49,7 +50,7 @@ App.screens.drawPlay = (el, opts) => {
   const d = App.data, teamsMode = opts.mode === 'teams';
   const teams = Scores.teams();
   App.inGame = teamsMode; // the scoreboard only shows when teams are playing for points
-  let deck = Played.order(d.draw.filter(w => opts.level === 'mix' || w.level === opts.level));
+  let deck = Played.order(GameFiles.pick('draw').filter(w => opts.level === 'mix' || w.level === opts.level));
   let wi = -1, word, turn = 0, turnsDone = 0, phase, timerId, left, paused = false, peekT;
   // opts.rounds = how many drawings in the game. Whoever guesses a drawing draws the next one.
   const totalTurns = teamsMode ? opts.rounds : Infinity;

@@ -36,6 +36,8 @@
 #  Lines starting with # are notes and are ignored by the app.
 #  Delete the examples and add your own, then save as a .txt file
 #  and press 📥 Import on the game's start screen.
+#  The file name becomes the set's name in the game, so a file called
+#  Halloween Easy.txt shows up as "Halloween Easy" under Question set.
 # =============================================================
 
 Q: What planet is known as the Red Planet?
@@ -93,6 +95,7 @@ T: 15
 #  Lines starting with # are notes and are ignored by the app.
 #  Delete the examples and add your own, then save as a .txt file
 #  and press 📥 Import on the game's start screen.
+#  The BOARD: line is the name you pick on the Quiz Board start screen.
 # =============================================================
 
 BOARD: Sample Board
@@ -142,6 +145,8 @@ CATEGORY: Geography
 #  Lines starting with # are notes and are ignored by the app.
 #  Delete the examples and add your own, then save as a .txt file
 #  and press 📥 Import on the game's start screen.
+#  The file name becomes the set's name in the game, so a file called
+#  Halloween Easy.txt shows up as "Halloween Easy" under Question set.
 # =============================================================
 
 Phrase | Better late than never
@@ -181,6 +186,8 @@ Before & After | Apple pie in the sky
 #  Lines starting with # are notes and are ignored by the app.
 #  Delete the examples and add your own, then save as a .txt file
 #  and press 📥 Import on the game's start screen.
+#  The file name becomes the set's name in the game, so a file called
+#  Halloween Easy.txt shows up as "Halloween Easy" under Question set.
 # =============================================================
 
 tiger | Animal
@@ -220,6 +227,8 @@ beach
 #  Lines starting with # are notes and are ignored by the app.
 #  Delete the examples and add your own, then save as a .txt file
 #  and press 📥 Import on the game's start screen.
+#  The file name becomes the set's name in the game, so a file called
+#  Halloween Easy.txt shows up as "Halloween Easy" under Question set.
 # =============================================================
 
 banana | easy
@@ -260,6 +269,7 @@ time flies | hard
 #  Lines starting with # are notes and are ignored by the app.
 #  Delete the examples and add your own, then save as a .txt file
 #  and press 📥 Import on the game's start screen.
+#  The == line is the puzzle name you pick on the Crossword start screen.
 # =============================================================
 
 == Fall Fun

@@ -28,6 +28,7 @@
 #  Lines starting with # are notes and are ignored by the app.
 #  Delete the examples and add your own, then save as a .txt file
 #  and press 📥 Import on the game's start screen.
+#  The == line is the puzzle name you pick on the Crossword start screen.
 # =============================================================
 
 == Fall Fun

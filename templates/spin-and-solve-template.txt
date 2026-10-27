@@ -26,6 +26,8 @@
 #  Lines starting with # are notes and are ignored by the app.
 #  Delete the examples and add your own, then save as a .txt file
 #  and press 📥 Import on the game's start screen.
+#  The file name becomes the set's name in the game, so a file called
+#  Halloween Easy.txt shows up as "Halloween Easy" under Question set.
 # =============================================================
 
 Phrase | Better late than never

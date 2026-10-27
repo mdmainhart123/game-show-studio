@@ -138,16 +138,16 @@ function boardParty(box, ms = 3500) {
 }
 
 App.screens.wheelSetup = (el) => {
-  const d = App.data;
-  const cats = [...new Set(d.wheel.map(p => p.category))].sort();
+  const d = App.data, L = GameFiles.pick('wheel');
+  const cats = [...new Set(L.map(p => p.category))].sort();
   el.innerHTML = `
     <div class="setup">
       <h1>🎡 Spin &amp; Solve</h1>
       ${d.wheel.length ? `
       <div class="panel">
         <label class="field"><span>Category</span>
-          <select class="input" id="cat"><option value="">🎲 All categories (${d.wheel.length})</option>
-          ${cats.map(c => `<option value="${esc(c)}">${esc(c)} (${d.wheel.filter(p => p.category === c).length})</option>`).join('')}</select></label>
+          <select class="input" id="cat"><option value="">🎲 All categories (${L.length})</option>
+          ${cats.map(c => `<option value="${esc(c)}">${esc(c)} (${L.filter(p => p.category === c).length})</option>`).join('')}</select></label>
         <label class="field"><span>How many puzzles?</span>
           <select class="input" id="num">${[1, 3, 5, 8].map(n => `<option value="${n}" ${n === 3 ? 'selected' : ''}>${n}</option>`).join('')}<option value="9999">All of them</option></select></label>
         <div class="hint">Points go straight onto the scoreboard. Vowels cost ${d.settings.vowelCost}, solving adds a ${SOLVE_BONUS} bonus, and BANKRUPT takes away what that team earned on the current puzzle. ${d.settings.wheelBonus !== false ? 'The leader plays a 🏁 Bonus Round at the end. ' : ''}Scores reset to 0 after each game.</div>
@@ -160,7 +160,7 @@ App.screens.wheelSetup = (el) => {
   $('#demo', el).onclick = () => Demo.start('wheel');
   $('#go', el).onclick = () => {
     const cat = $('#cat', el).value;
-    const pool = shuffle(d.wheel.filter(p => !cat || p.category === cat));
+    const pool = shuffle(L.filter(p => !cat || p.category === cat));
     Scores.resetAll(); // every new game starts at 0
     App.playedTrivia = new Set();
     App.show('wheelPlay', pool.slice(0, +$('#num', el).value));
@@ -830,8 +830,9 @@ App.screens.wheelBonus = (el, usedIds = []) => {
   const d = App.data, teams = Scores.teams();
   const t = teams.reduce((best, x) => (x.score > best.score ? x : best), teams[0]);
   const GIVEN = 'RSTLNE', CONS = 'BCDFGHJKLMNPQRSTVWXYZ';
-  const pool = d.wheel.filter(p => !usedIds.includes(p.id));
-  const puzzle = shuffle(pool.length ? pool : d.wheel)[0];
+  const all = GameFiles.pick('wheel').length ? GameFiles.pick('wheel') : d.wheel;
+  const pool = all.filter(p => !usedIds.includes(p.id));
+  const puzzle = shuffle(pool.length ? pool : all)[0];
   HostView.set({ game: '🏁 Bonus Round', meta: puzzle.category, answer: puzzle.phrase, answerLabel: 'Puzzle' });
   const grid = puzzleGrid(puzzle.phrase);
   const shown = new Set(), picks = [];
