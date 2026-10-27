@@ -1,4 +1,4 @@
-const APP_VERSION = '20261027-0940'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261027-1010'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -167,6 +167,8 @@ const App = {
     HostView.state = { idle: name === 'home' ? 'Pick a game on the big screen.' : 'Nothing to answer right now.' };
     const r = this.screens[name](el, ...args);
     if (typeof r === 'function') this.cleanup = r;
+    const fk = (name.match(/^(trivia|board|wheel|words|draw)Setup$/) || [])[1];
+    if (fk) GameFiles.attach(el, fk);
     Scores.render();
   },
 
@@ -647,6 +649,57 @@ const Menu = {
     });
     q('mBackup').onclick = () => App.backup();
     q('mRestore').onclick = () => App.restore();
+  },
+};
+
+// 📥 Import / 📄 template / 📤 export bar on each game's start screen
+// (Crossword has its own, because it works with whole puzzles.)
+const GameFiles = {
+  info: {
+    trivia: { parse: 'parseTrivia', noun: 'question', file: 'trivia', key: x => x.question.toLowerCase(),
+      out: list => list.map(q => [`Q: ${q.question}`, `A: ${q.answer}`, ...(q.wrong || []).map(w => `W: ${w}`), `C: ${q.category || 'General'}`, `T: ${q.time || 20}`].join('\n')).join('\n\n') },
+    board: { parse: 'parseBoard', noun: 'clue', file: 'quiz board', key: x => `${x.board}|${x.category}|${x.clue}`.toLowerCase(),
+      out: list => { const t = [], bo = [...new Set(list.map(x => x.board))], co = [...new Set(list.map(x => x.board + '\u0001' + x.category))]; let b, c; [...list].sort((p, q) => bo.indexOf(p.board) - bo.indexOf(q.board) || co.indexOf(p.board + '\u0001' + p.category) - co.indexOf(q.board + '\u0001' + q.category) || p.value - q.value).forEach(x => { if (x.board !== b) { b = x.board; c = null; t.push(`${t.length ? '\n' : ''}BOARD: ${b}`); } if (x.category !== c) { c = x.category; t.push(`\nCATEGORY: ${c}`); } t.push(`${x.value} | ${x.clue} | ${x.answer}`); }); return t.join('\n'); } },
+    wheel: { parse: 'parseWheel', noun: 'puzzle', file: 'spin and solve', key: x => x.phrase.toUpperCase(),
+      out: list => list.map(x => `${x.category} | ${x.phrase}`).join('\n') },
+    words: { parse: 'parseWords', noun: 'word', file: 'word guess', key: x => x.word.toUpperCase(),
+      out: list => list.map(x => x.hint ? `${x.word.toLowerCase()} | ${x.hint}` : x.word.toLowerCase()).join('\n') },
+    draw: { parse: 'parseDraw', noun: 'word', file: 'draw it', key: x => x.word.toLowerCase(),
+      out: list => list.map(x => `${x.word} | ${x.level || 'easy'}`).join('\n') },
+  },
+  attach(el, k) {
+    const host = $('.setup', el); if (!host) return;
+    const d = App.data, I = this.info[k], n = d[k].length;
+    const bar = document.createElement('div');
+    bar.className = 'cw-new gf-files';
+    bar.innerHTML = `<button class="btn yellow" data-f="imp">📥 Import ${I.noun}s from text file</button>
+      <button class="btn ghost" data-f="tpl">📄 Save blank template</button>
+      ${n ? `<button class="btn ghost" data-f="exp">📤 Export my ${I.noun}s</button>` : ''}`;
+    host.appendChild(bar);
+    $('[data-f="tpl"]', bar).onclick = async () => { const T = GSData.TEMPLATES[k]; if (await App.saveText(T.file, T.text.replace(/\n/g, '\r\n'))) toast('Template saved ✓'); };
+    if (n) $('[data-f="exp"]', bar).onclick = async () => { if (await App.saveText(`${I.file} - My ${I.noun}s.txt`, (I.out(d[k]) + '\n').replace(/\n/g, '\r\n'))) toast('Saved ✓'); };
+    $('[data-f="imp"]', bar).onclick = () => this.import(k);
+  },
+  async import(k) {
+    const d = App.data, I = this.info[k], screen = App.current;
+    const f = await App.openText('Choose a text file');
+    if (!f) return;
+    const { items, problems } = GSData[I.parse](f.text);
+    const have = new Set(d[k].map(I.key));
+    const fresh = items.filter(x => { const key = I.key(x); if (have.has(key)) return false; have.add(key); return true; });
+    const dup = items.length - fresh.length, pl = (c, w) => `${c} ${w}${c === 1 ? '' : 's'}`;
+    if (fresh.length) { d[k].push(...fresh); App.save(true); }
+    let extra = '';
+    if (k === 'board' && fresh.length) extra = `<p class="hint">Board${new Set(fresh.map(c => c.board)).size > 1 ? 's' : ''}: ${[...new Set(fresh.map(c => c.board))].map(esc).join(', ')}</p>`;
+    if (k === 'draw' && fresh.length) extra = `<p class="hint">${['easy', 'medium', 'hard'].map(l => [l, fresh.filter(w => w.level === l).length]).filter(x => x[1]).map(([l, c]) => `${DRAW_LABEL[l]} ${c}`).join(' · ')}</p>`;
+    Modal.open({
+      title: fresh.length ? `📥 Added ${pl(fresh.length, I.noun)}!` : `No new ${I.noun}s added`,
+      body: `<div style="font-size:19px;line-height:1.6">
+        <p style="margin:0">${fresh.length ? `From <b>${esc(f.name)}</b>.` : `No new ${I.noun}s were found in <b>${esc(f.name)}</b>.${items.length ? '' : ' Is it the right kind of file for this game? <b>📄 Save blank template</b> shows the layout.'}`}</p>${extra}
+        ${dup ? `<p class="hint">${pl(dup, I.noun)} ${dup === 1 ? 'was' : 'were'} already in your list, so ${dup === 1 ? 'it was' : 'they were'} skipped.</p>` : ''}
+        ${problems.length ? `<p style="margin:12px 0 4px;font-weight:600">⚠️ Things to check:</p><div class="problems">${problems.map(p => `<div>• ${esc(p)}</div>`).join('')}</div>` : ''}</div>`,
+      actions: [{ label: 'OK', cls: 'pink', onClick: close => { close(); if (fresh.length && App.current === screen) App.show(screen); } }],
+    });
   },
 };
 

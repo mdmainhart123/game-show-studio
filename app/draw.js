@@ -27,43 +27,11 @@ App.screens.drawSetup = (el) => {
             ${[5, 8, 10, 15, 20].map(n => `<option value="${n}" ${n === 10 ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
         </div>
         <div class="hint">Tip: the artist taps <b>👀 Peek</b> to see the word on the big screen while everyone else looks away.</div>
-        <div class="cw-new dr-files">
-        <button class="btn yellow" id="dImp">📥 Import words from text file</button>
-        <button class="btn ghost" id="dTpl">📄 Save blank template</button>
-        ${d.draw.length ? '<button class="btn ghost" id="dExp">📤 Export my words</button>' : ''}
-      </div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>
       <div><button class="link-btn" id="demo">🎬 Watch a demo first</button></div>`
-      : `<div class="panel empty">No drawing words yet.<br><br><button class="btn yellow" id="add">📝 Add some words</button><br><br><div class="cw-new dr-files">
-        <button class="btn yellow" id="dImp">📥 Import words from text file</button>
-        <button class="btn ghost" id="dTpl">📄 Save blank template</button>
-        ${d.draw.length ? '<button class="btn ghost" id="dExp">📤 Export my words</button>' : ''}
-      </div></div>`}
+      : `<div class="panel empty">No drawing words yet.<br><br><button class="btn yellow" id="add">📝 Add some words</button></div>`}
     </div>`;
-  $('#dTpl', el).onclick = async () => { if (await App.saveText(GSData.TEMPLATES.draw.file, GSData.TEMPLATES.draw.text.replace(/\n/g, '\r\n'))) toast('Template saved ✓'); };
-  if ($('#dExp', el)) $('#dExp', el).onclick = async () => {
-    const txt = d.draw.map(w => `${w.word} | ${w.level || 'easy'}`).join('\n') + '\n';
-    if (await App.saveText('draw it - My words.txt', txt.replace(/\n/g, '\r\n'))) toast('Saved ✓');
-  };
-  $('#dImp', el).onclick = async () => {
-    const f = await App.openText('Choose a Draw It text file');
-    if (!f) return;
-    const { items, problems } = GSData.parseDraw(f.text);
-    const have = new Set(d.draw.map(w => w.word.toLowerCase()));
-    const fresh = items.filter(w => !have.has(w.word.toLowerCase()));
-    const dup = items.length - fresh.length;
-    if (fresh.length) { d.draw.push(...fresh); App.save(true); }
-    const lv = ['easy', 'medium', 'hard'].map(l => [l, fresh.filter(w => w.level === l).length]).filter(x => x[1]);
-    Modal.open({
-      title: fresh.length ? `🎨 Added ${fresh.length} word${fresh.length === 1 ? '' : 's'}!` : 'No new words added',
-      body: `<div style="font-size:19px;line-height:1.6">
-        ${fresh.length ? `<p style="margin:0">From <b>${esc(f.name)}</b>${lv.length ? ': ' + lv.map(([l, n]) => `${DRAW_LABEL[l]} ${n}`).join(' · ') : ''}</p>` : `<p style="margin:0">No new words were found in <b>${esc(f.name)}</b>.${items.length ? '' : ' Is it a Draw It file? Put one word per line, like <b>banana | easy</b>.'}</p>`}
-        ${dup ? `<p class="hint">${dup} word${dup === 1 ? ' was' : 's were'} already in your list, so ${dup === 1 ? 'it was' : 'they were'} skipped.</p>` : ''}
-        ${problems.length ? `<p style="margin:12px 0 4px;font-weight:600">⚠️ Things to check:</p><div class="problems">${problems.map(p => `<div>• ${esc(p)}</div>`).join('')}</div>` : ''}</div>`,
-      actions: [{ label: 'OK', cls: 'pink', onClick: close => { close(); App.show('drawSetup'); } }],
-    });
-  };
   if (!d.draw.length) { $('#add', el).onclick = () => App.show('editor', 'draw'); return; }
   $('#demo', el).onclick = () => Demo.start('draw');
   const syncRounds = () => { $('#dRoundsF', el).style.display = $('#dMode', el).value === 'teams' ? '' : 'none'; };
