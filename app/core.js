@@ -1,4 +1,4 @@
-const APP_VERSION = '20261027-1115'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261027-1140'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -34,6 +34,11 @@ const App = {
     this.save(true);
 
     $('#homeLink').onclick = () => this.leaveGame();
+    $('#navBack').onclick = () => this.goBack();
+    $('#navFwd').onclick = () => this.goForward();
+    // the browser's / phone's own Back button does the same as ◀
+    try { history.replaceState({ gss: 1 }, ''); history.pushState({ gss: 2 }, ''); } catch (e) {}
+    window.addEventListener('popstate', () => { try { history.pushState({ gss: 2 }, ''); } catch (e) {} this.goBack(); });
     $('#fsBtn').onclick = () => this.toggleFullscreen();
     $('#menuBtn').onclick = () => { if (!(typeof Demo !== 'undefined' && Demo.running)) Menu.open(); };
     document.addEventListener('keydown', e => {
@@ -155,7 +160,48 @@ const App = {
     if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen?.();
   },
 
+  // ◀ ▶ screen history. Only "menu" screens (home, start screens, Question Manager,
+  // teams, settings) are remembered; a game in progress goes back to its start screen.
+  navStack: [], navFwd: [],
+  navPage: n => n === 'home' || n === 'editor' || n === 'teams' || n === 'settings' || /Setup$/.test(n),
+  async goBack() {
+    if (typeof Demo !== 'undefined' && Demo.running) return;
+    if (Modal.stack.length) { Modal.stack[Modal.stack.length - 1].close(); return; }
+    if (Menu.isOpen()) { Menu.close(); return; }
+    const inPage = this.navPage(this.current), st = this.navStack;
+    if (!inPage) {
+      const back = st[st.length - 1] || { name: 'home', args: [] };
+      const msg = this.inGame ? 'Leave this game and go back? Scores will reset to 0.' : 'Leave this game and go back?';
+      if (this.current !== 'results' && !(await confirmBox(msg, '◀ Go back'))) return;
+      this._nav = true; this.show(back.name, ...back.args); return;
+    }
+    if (st.length < 2) return;
+    this.navFwd.push(st.pop());
+    const t = st[st.length - 1];
+    this._nav = true; this.show(t.name, ...t.args);
+  },
+  async goForward() {
+    if (typeof Demo !== 'undefined' && Demo.running) return;
+    if (!this.navFwd.length || !this.navPage(this.current)) return;
+    const t = this.navFwd.pop();
+    this.navStack.push(t);
+    this._nav = true; this.show(t.name, ...t.args);
+  },
+  navTrack(name, args) {
+    const fromNav = this._nav; this._nav = false;
+    if (!this.navPage(name)) return;
+    const st = this.navStack, top = st[st.length - 1];
+    if (top && top.name === name) top.args = args;          // same screen redrawn (e.g. after a change)
+    else if (!fromNav) { st.push({ name, args }); this.navFwd = []; if (st.length > 40) st.shift(); }
+  },
+  navButtons() {
+    const b = $('#navBack'), f = $('#navFwd'); if (!b) return;
+    b.disabled = this.navPage(this.current) ? this.navStack.length < 2 : false;
+    f.disabled = !this.navFwd.length || !this.navPage(this.current);
+  },
+
   show(name, ...args) {
+    this.navTrack(name, args);
     if (this.cleanup) { try { this.cleanup(); } catch (e) {} this.cleanup = null; }
     this.current = name;
     const el = $('#screen');
@@ -172,6 +218,7 @@ const App = {
     const fk = (name.match(/^(trivia|board|wheel|words|draw)Setup$/) || [])[1];
     if (fk) GameFiles.attach(el, fk);
     Scores.render();
+    this.navButtons();
   },
 
   // Leaving a game mid-way asks first.

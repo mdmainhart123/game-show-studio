@@ -42,6 +42,9 @@ input, select, textarea { font-family: inherit; user-select: text; }
 .brand .logo { width: 42px; height: 42px; }
 .brand span b { color: var(--yellow); }
 .topbar .spacer { flex: 1; }
+.nav-btns { display: flex; gap: 8px; margin-left: 6px; }
+.nav-btn { font-size: 18px; }
+.nav-btn:disabled { opacity: .3; cursor: default; }
 
 /* ---------- buttons ---------- */
 .btn {
