@@ -169,7 +169,8 @@ App.screens.boardPlay = (el, name) => {
     // The answer stays HIDDEN while teams are answering (the host checks it on the printed
     // answer key — ☰ Menu → Answer key), so a steal is still a real steal.
     // 1. The team whose pick it is answers against a 15-second clock: host taps ✓ or ✗.
-    // 2. ✓ → points, answer shown, they pick next.  ✗ or time's up → 🚨 STEAL.
+    // 2. ✓ → points, answer shown, they pick next.  ✗ → answer shown, clue over.
+    //    Time's up → 🚨 STEAL (only with 2+ teams; otherwise the answer is shown).
     // 3. Steal: tap the team that calls out first; same clock, same ✓ / ✗.
     // 4. 👁 Reveal answer stops the clock and shows the answer (still judge ✓ / ✗); on the steal screen it ends the clue.
     // Daily Doubles: only the wagering team plays for the wager; if they miss, others can steal for the clue's value.
@@ -205,7 +206,7 @@ App.screens.boardPlay = (el, name) => {
       const showAns = () => $('#ans', view).classList.remove('hidden');
       // 👁 Reveal answer: just shows it — the clock, scores and turns carry on as normal
       // 👁 Reveal answer: while a team is answering it only stops the clock and shows the
-      // answer — you still tap ✓ Right, ✗ Wrong or 🚨 Steal. On the steal screen it ends the clue.
+      // answer — you still tap ✓ Right or ✗ Wrong. On the steal screen it ends the clue.
       const revealAnswer = () => {
         if (phase === 'answer') {
           stop(); showAns();
@@ -228,13 +229,11 @@ App.screens.boardPlay = (el, name) => {
           </div>
           <div class="bq-btns">
             <button class="btn green" id="bOk"><span class="bl">✓ Right</span><small>+${fmt(plus)}</small></button>
-            <button class="btn red" id="bWrong" title="Wrong — no steal, the clue ends"><span class="bl">✗ Wrong</span><small>${minus ? `−${fmt(minus)}` : 'show answer'}</small></button>
-            ${Scores.teams().length > 1 ? '' : '<!--'}<button class="btn orange" id="bNo" title="Wrong — let the other teams steal it"><span class="bl">🚨 Steal</span><small>${minus ? `−${fmt(minus)} · ` : ''}others try</small></button>${Scores.teams().length > 1 ? '' : '-->'}
+            <button class="btn red" id="bWrong" title="Wrong — the clue ends and the answer is shown"><span class="bl">✗ Wrong</span><small>${minus ? `−${fmt(minus)}` : 'show answer'}</small></button>
           </div>
           `;
         $('#bOk', view).onclick = () => right(t);
         $('#bWrong', view).onclick = () => wrongNoSteal(t);
-        if ($('#bNo', view)) $('#bNo', view).onclick = () => wrong(t, false);
         acts(`<button class="btn yellow" id="bPeekAns" title="Stops the clock and shows the answer — then tap a button above">👁 Reveal answer</button>${isSteal ? `<button class="btn ghost" id="bCancel">↩ Not them</button>` : ''}`,
           { bCancel: () => { stop(); stealMenu(); }, bPeekAns: revealAnswer });
         left = total; paused = false;
@@ -280,7 +279,7 @@ App.screens.boardPlay = (el, name) => {
         $('#bX', view)?.remove();
         showAns(); // no steal, so the clue is over — show the answer
         outcome(false, t, minus ? `−${fmt(minus)}` : '');
-        acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
+        acts(`<button class="btn lg pink" id="bBack">Back to board ↩</button>`, { bBack: close });
       }
       function wrong(t, timedOut) {
         if (phase !== 'answer') return;
@@ -297,6 +296,8 @@ App.screens.boardPlay = (el, name) => {
           ddInfo = null;
           plus = clue.value; minus = App.data.settings.boardDeduct ? clue.value : 0;
         }
+        // A steal only happens when the clock runs out, and only with 2+ teams playing
+        if (!timedOut || Scores.teams().length < 2) return nobody(why);
         stealMenu(why);
       }
       function stealMenu(why) {
@@ -319,9 +320,10 @@ App.screens.boardPlay = (el, name) => {
         showAns(); Sfx.reveal();
         $('#bX', view)?.remove();
         bq.innerHTML = `<div class="bq-out bad"><b>${why || 'No points this time'}</b></div>`;
-        acts(`<button class="btn lg pink" id="bBack">Back to board ↩ <kbd>Space</kbd></button>`, { bBack: close });
+        acts(`<button class="btn lg pink" id="bBack">Back to board ↩</button>`, { bBack: close });
       }
 
+      App.boardTimeUp = () => { if (phase === 'answer') { Sfx.buzz(); wrong(current, true); } }; // used by the demo
       answering(owner, false);
       setKeys(e => {
         if (Modal.stack.length || Menu.isOpen()) return;

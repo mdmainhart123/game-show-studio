@@ -9,13 +9,23 @@ const SPECIAL_WEDGES = {
   'FREE PLAY': { label: '🔓 FREE PLAY', bg: '#13a07a' },
   'STEAL': { label: '🦹 STEAL', bg: '#3b1d63' },
   'PAY IT FORWARD': { label: '🤝 PAY IT FORWARD', bg: '#d36f5f' },
-  'GRATITUDE': { label: '🙏 GRATITUDE', bg: '#e2ae45', fg: '#3a2a08' },
   'EXPRESS': { label: '🚂 EXPRESS', bg: '#56637a' },
   'DOUBLE PLAY': { label: '✖2 DOUBLE PLAY', bg: '#0e7f8f' },
   'JACKPOT': { label: '💰 JACKPOT', bg: '#a8770a' },
   'WILD CARD': { label: '🃏 WILD CARD', bg: '#b0127a' },
   'BONUS': { label: '🎉 BONUS', bg: '#c2410c' },
 };
+// 🌿 Recovery look: a wellness wedge that changes after each use — it starts as Gratitude,
+// then becomes the next prompt in this list (and loops back round).
+const WELLNESS = [
+  { key: 'GRATITUDE', label: '🙏 GRATITUDE', bg: '#e2ae45', fg: '#3a2a08', ask: "share one thing you're grateful for today — big or small", yes: 'They shared one', thanks: 'Thank you for sharing!' },
+  { key: 'SELF-CARE', label: '🌱 SELF-CARE', bg: '#5f9e6e', ask: "share one way you take care of yourself — or one thing you'll do for yourself this week", yes: 'They shared one', thanks: 'Thank you for sharing!' },
+  { key: 'COPING SKILL', label: '🧰 COPING SKILL', bg: '#4f7fb0', ask: 'name one healthy coping skill that helps you on a hard day', yes: 'They shared one', thanks: 'Great tool to have!' },
+  { key: 'STRENGTH', label: '💪 STRENGTH', bg: '#b0603c', ask: "name one personal strength — something you're good at or proud of", yes: 'They shared one', thanks: 'Be proud of that!' },
+  { key: 'KIND WORDS', label: '💬 KIND WORDS', bg: '#9a6fb0', ask: 'say something kind or encouraging to someone in the room', yes: 'They said it', thanks: 'Kindness counts!' },
+  { key: 'DEEP BREATH', label: '🌬️ DEEP BREATH', bg: '#3f9fa8', ask: 'lead the whole room in three slow, deep breaths', yes: 'We did it', thanks: 'Nice and calm.' },
+];
+WELLNESS.forEach(x => { SPECIAL_WEDGES[x.key] = { label: x.label, bg: x.bg, fg: x.fg }; });
 const BONUS_WEDGE = 1000; // 🎉 Bonus: +1,000 and spin again (replaces Steal / Pay It Forward when there's only one team)
 // 🚂 Express: 1,000 per consonant without spinning (one miss = BANKRUPT) · ✖2 Double Play: next spin
 // counts double · 💰 Jackpot: instant bonus, spin again · 🃏 Wild Card: a free letter is revealed, spin again
@@ -461,6 +471,8 @@ App.screens.wheelPlay = (el, puzzles) => {
     };
     rafId = requestAnimationFrame(step);
   }
+  App.wheelLand = wi => landed(wi); // used by tests
+  App.wheelW = W;
   function landed(wi) {
     const t = teams[turn];
     let w = W[wi];
@@ -511,7 +523,8 @@ App.screens.wheelPlay = (el, puzzles) => {
     if (w === 'WILD CARD') return freeLetter('<span class="big">🃏 WILD CARD!</span>', true);
     if (w === 'STEAL') return stealWedge(t);
     if (w === 'PAY IT FORWARD') return payForwardWedge(t);
-    if (w === 'GRATITUDE') return gratitudeWedge(t);
+    const wl = WELLNESS.find(x => x.key === w);
+    if (wl) return wellnessWedge(t, wi, wl);
     const dbl = doubleNext; doubleNext = false;
     spinValue = dbl ? w * 2 : w; phase = 'cons';
     Sfx.ding();
@@ -653,21 +666,26 @@ App.screens.wheelPlay = (el, puzzles) => {
     pickTeam('🤝 Pay it forward', `Kindness pays! <b>${esc(t.name)}</b>, choose a team to give ${fmt(PAY_FORWARD)} points to — and you'll earn ${fmt(PAY_FORWARD)} too.`,
       others.map(o => ({ t: o, note: `${fmt(o.score)} pts` })), give, () => give(others[0]));
   }
-  function gratitudeWedge(t) {
+  function wellnessWedge(t, wi, wl) {
     phase = 'special'; Sfx.ding();
-    status(`<span class="big">🙏 GRATITUDE!</span>`);
+    status(`<span class="big">${wl.label}!</span>`);
     let done = false;
     const finish = shared => {
       if (done) return; done = true;
       if (shared) { Scores.add(t.id, GRATITUDE_POINTS); bank[t.id] += GRATITUDE_POINTS; Sfx.correct(); confetti(1500); }
-      after(t, shared ? `🙏 Thank you for sharing! ${esc(t.name)} +${fmt(GRATITUDE_POINTS)}.` : 'No problem!');
+      // the wedge turns into the next wellness prompt that isn't already on the wheel
+      let k = WELLNESS.indexOf(wl);
+      do { k = (k + 1) % WELLNESS.length; } while (W.includes(WELLNESS[k].key) && WELLNESS[k] !== wl);
+      const nx = WELLNESS[k];
+      W[wi] = nx.key; drawWheel();
+      after(t, `${shared ? `${wl.label.split(' ')[0]} ${wl.thanks} ${esc(t.name)} +${fmt(GRATITUDE_POINTS)}.` : 'No problem!'} <span class="hint">That wedge is now ${nx.label}.</span>`);
     };
     const m = Modal.open({
-      title: '🙏 Gratitude',
-      body: `<p style="font-size:21px;margin:0"><b>${esc(t.name)}</b>, share one thing you're grateful for today — big or small — and earn <b>${fmt(GRATITUDE_POINTS)}</b> points.</p>`,
+      title: wl.label.replace(/^(\S+) (.*)$/, (_, e, n) => `${e} ${n.charAt(0) + n.slice(1).toLowerCase()}`),
+      body: `<p style="font-size:21px;margin:0"><b>${esc(t.name)}</b>, ${wl.ask} — and earn <b>${fmt(GRATITUDE_POINTS)}</b> points.</p>`,
       actions: [
         { label: 'Skip', cls: 'ghost', onClick: c => { m.onClose = null; c(); finish(false); } },
-        { label: `✓ They shared one (+${fmt(GRATITUDE_POINTS)})`, cls: 'green', onClick: c => { m.onClose = null; c(); finish(true); } },
+        { label: `✓ ${wl.yes} (+${fmt(GRATITUDE_POINTS)})`, cls: 'green', onClick: c => { m.onClose = null; c(); finish(true); } },
       ],
     });
     m.onClose = () => finish(false);

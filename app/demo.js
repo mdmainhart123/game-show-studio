@@ -167,13 +167,19 @@ const Demo = {
       clueTimerPause();
       await this.say('Read the clue out loud. Only the team whose pick it is answers — they get <b>15 seconds</b>.', 3600);
       await this.say('The answer stays hidden — check it on your printed answer key (☰ Menu → 🖨️ Answer key).', 3600);
-      await this.tap('#bNo');
-      await this.say('❌ Wrong (or out of time)? It\'s a <b>🚨 STEAL!</b> — and nobody has seen the answer yet.', 3600);
-      await this.tap($('.bq-st:not(.out)'));
-      clueTimerPause();
-      await this.say('Tap whichever team calls out first. They get the same 15 seconds.', 3000);
-      await this.tap('#bOk');
-      await this.say('✅ They stole it! They earn the points — and they pick next.', 3200);
+      await this.say('Right? Tap <b>✓ Right</b>. Wrong? Tap <b>✗ Wrong</b> — the answer is shown and the clue is over.', 3600);
+      App.boardTimeUp?.();
+      if ($('.bq-st:not(.out)')) {
+        await this.say('⏰ But if the clock runs out, it\'s a <b>🚨 STEAL!</b> — and nobody has seen the answer yet.', 3600);
+        await this.tap($('.bq-st:not(.out)'));
+        clueTimerPause();
+        await this.say('Tap whichever team calls out first. They get the same 15 seconds.', 3000);
+        await this.tap('#bOk');
+        await this.say('✅ They stole it! They earn the points — and they pick next.', 3200);
+      } else {
+        await this.say('⏰ Out of time — with one team (or Group) there\'s no steal, so the answer is shown.', 3600);
+        await this.tap('#bBack');
+      }
       await this.until(() => !$('.clue-view'));
       const ddTile = $$('.tile[data-id]').find(t => dd.has(t.dataset.id));
       if (ddTile) {
@@ -185,7 +191,7 @@ const Demo = {
         await this.say('All in! 😱', 1600);
         await this.tap('#wGo');
         clueTimerPause();
-        await this.say('Only that team answers for the bet. If they miss, the others can still steal it.', 2800);
+        await this.say('Only that team answers for the bet. If time runs out, the others can still steal it.', 2800);
         await this.tap('#bOk');
         await this.say('✅ They nailed it and win the whole bet!', 3000);
         await this.until(() => !$('.clue-view'));
