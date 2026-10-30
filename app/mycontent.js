@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-10-27-halloween",
+ "id": "matt-2026-10-30-halloween-hard",
  "banks": {
   "standard": {
    "cross": [
@@ -660,6 +660,72 @@ window.GS_MY_CONTENT = {
        "clue": "An outfit worn to disguise yourself on Halloween"
       }
      ]
+    },
+    {
+     "id": "fbp9vtbt7e2f",
+     "title": "Halloween Hard",
+     "entries": [
+      {
+       "word": "samhain",
+       "clue": "Ancient Celtic festival that Halloween grew from"
+      },
+      {
+       "word": "transylvania",
+       "clue": "Region of Romania tied to Dracula"
+      },
+      {
+       "word": "necromancer",
+       "clue": "Someone who claims to raise the dead"
+      },
+      {
+       "word": "poltergeist",
+       "clue": "A noisy spirit that throws objects"
+      },
+      {
+       "word": "nosferatu",
+       "clue": "1922 silent vampire film"
+      },
+      {
+       "word": "banshee",
+       "clue": "Wailing spirit of Irish folklore"
+      },
+      {
+       "word": "gargoyle",
+       "clue": "Stone creature perched on old buildings"
+      },
+      {
+       "word": "apparition",
+       "clue": "A ghostly figure that suddenly appears"
+      },
+      {
+       "word": "cemetery",
+       "clue": "Formal name for a graveyard"
+      },
+      {
+       "word": "incantation",
+       "clue": "Words spoken to cast a spell"
+      },
+      {
+       "word": "lycanthrope",
+       "clue": "Formal word for a werewolf"
+      },
+      {
+       "word": "ectoplasm",
+       "clue": "Slimy substance said to come from spirits"
+      },
+      {
+       "word": "sarcophagus",
+       "clue": "Stone coffin of ancient Egypt"
+      },
+      {
+       "word": "macabre",
+       "clue": "Gruesome and focused on death"
+      },
+      {
+       "word": "phantom",
+       "clue": "Another word for a ghost"
+      }
+     ]
     }
    ],
    "board": [
@@ -1062,6 +1128,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The West African Vodou tradition that gave us the word zombie",
      "answer": "Nzambi"
+    },
+    {
+     "id": "7ejlndvq7eva",
+     "board": "Halloween Hard",
+     "category": "Gothic Authors",
+     "value": 100,
+     "clue": "He wrote the poem \"The Raven\"",
+     "answer": "Edgar Allan Poe"
+    },
+    {
+     "id": "s2k3eu957eva",
+     "board": "Halloween Hard",
+     "category": "Gothic Authors",
+     "value": 200,
+     "clue": "She began writing Frankenstein when she was just 18",
+     "answer": "Mary Shelley"
+    },
+    {
+     "id": "ysms2qhm7eva",
+     "board": "Halloween Hard",
+     "category": "Gothic Authors",
+     "value": 300,
+     "clue": "This Irish author published Dracula in 1897",
+     "answer": "Bram Stoker"
+    },
+    {
+     "id": "xk1ghi1a7eva",
+     "board": "Halloween Hard",
+     "category": "Gothic Authors",
+     "value": 400,
+     "clue": "He wrote \"The Legend of Sleepy Hollow\"",
+     "answer": "Washington Irving"
+    },
+    {
+     "id": "n7likrti7eva",
+     "board": "Halloween Hard",
+     "category": "Gothic Authors",
+     "value": 500,
+     "clue": "She wrote \"The Haunting of Hill House\"",
+     "answer": "Shirley Jackson"
+    },
+    {
+     "id": "xbtc6bdo7eva",
+     "board": "Halloween Hard",
+     "category": "Classic Monster Movies",
+     "value": 100,
+     "clue": "He played Count Dracula in the 1931 film",
+     "answer": "Bela Lugosi"
+    },
+    {
+     "id": "gfurh21v7eva",
+     "board": "Halloween Hard",
+     "category": "Classic Monster Movies",
+     "value": 200,
+     "clue": "He played the monster in the 1931 film Frankenstein",
+     "answer": "Boris Karloff"
+    },
+    {
+     "id": "pawahkbs7eva",
+     "board": "Halloween Hard",
+     "category": "Classic Monster Movies",
+     "value": 300,
+     "clue": "In this 1935 sequel, the monster gets a mate",
+     "answer": "Bride of Frankenstein"
+    },
+    {
+     "id": "11t0vsic7eva",
+     "board": "Halloween Hard",
+     "category": "Classic Monster Movies",
+     "value": 400,
+     "clue": "This studio made the famous monster movies of the 1930s and 40s",
+     "answer": "Universal Pictures"
+    },
+    {
+     "id": "8ssqcfcx7eva",
+     "board": "Halloween Hard",
+     "category": "Classic Monster Movies",
+     "value": 500,
+     "clue": "This 1922 German silent film starred the vampire Count Orlok",
+     "answer": "Nosferatu"
+    },
+    {
+     "id": "4r81r2n87eva",
+     "board": "Halloween Hard",
+     "category": "Origins and Traditions",
+     "value": 100,
+     "clue": "The Celtic festival marking the end of the harvest",
+     "answer": "Samhain"
+    },
+    {
+     "id": "afjwqr227eva",
+     "board": "Halloween Hard",
+     "category": "Origins and Traditions",
+     "value": 200,
+     "clue": "The vegetable the Irish carved before pumpkins",
+     "answer": "Turnip"
+    },
+    {
+     "id": "9fgobctb7eva",
+     "board": "Halloween Hard",
+     "category": "Origins and Traditions",
+     "value": 300,
+     "clue": "Small pastries handed out to \"soulers\" in old Britain",
+     "answer": "Soul cakes"
+    },
+    {
+     "id": "14zt93yr7eva",
+     "board": "Halloween Hard",
+     "category": "Origins and Traditions",
+     "value": 400,
+     "clue": "The Scottish word for going door to door in disguise",
+     "answer": "Guising"
+    },
+    {
+     "id": "2xyc6kba7eva",
+     "board": "Halloween Hard",
+     "category": "Origins and Traditions",
+     "value": 500,
+     "clue": "The man in Irish legend who tricked the Devil and wanders with a lantern",
+     "answer": "Stingy Jack"
+    },
+    {
+     "id": "cr2t841s7eva",
+     "board": "Halloween Hard",
+     "category": "Phobias",
+     "value": 100,
+     "clue": "The fear of spiders",
+     "answer": "Arachnophobia"
+    },
+    {
+     "id": "x2om752u7eva",
+     "board": "Halloween Hard",
+     "category": "Phobias",
+     "value": 200,
+     "clue": "The fear of the dark",
+     "answer": "Nyctophobia"
+    },
+    {
+     "id": "gd57f6ug7eva",
+     "board": "Halloween Hard",
+     "category": "Phobias",
+     "value": 300,
+     "clue": "The fear of the number 13",
+     "answer": "Triskaidekaphobia"
+    },
+    {
+     "id": "75g7j3z17eva",
+     "board": "Halloween Hard",
+     "category": "Phobias",
+     "value": 400,
+     "clue": "The fear of ghosts",
+     "answer": "Phasmophobia"
+    },
+    {
+     "id": "h9lu88d47eva",
+     "board": "Halloween Hard",
+     "category": "Phobias",
+     "value": 500,
+     "clue": "The fear of being buried alive",
+     "answer": "Taphophobia"
+    },
+    {
+     "id": "bo7euyrd7eva",
+     "board": "Halloween Hard",
+     "category": "Witches and Legends",
+     "value": 100,
+     "clue": "The Massachusetts town famous for its 1692 witch trials",
+     "answer": "Salem"
+    },
+    {
+     "id": "tpgliyeh7eva",
+     "board": "Halloween Hard",
+     "category": "Witches and Legends",
+     "value": 200,
+     "clue": "The number of people executed in the Salem witch trials",
+     "answer": "20"
+    },
+    {
+     "id": "3w9e6d6h7eva",
+     "board": "Halloween Hard",
+     "category": "Witches and Legends",
+     "value": 300,
+     "clue": "The enslaved woman who was among the first accused at Salem",
+     "answer": "Tituba"
+    },
+    {
+     "id": "hddodh4i7eva",
+     "board": "Halloween Hard",
+     "category": "Witches and Legends",
+     "value": 400,
+     "clue": "The real ruler often linked to the legend of Dracula",
+     "answer": "Vlad the Impaler"
+    },
+    {
+     "id": "jr7n60c67eva",
+     "board": "Halloween Hard",
+     "category": "Witches and Legends",
+     "value": 500,
+     "clue": "The region of Romania where Dracula's castle is set",
+     "answer": "Transylvania"
     }
    ],
    "wheel": [
@@ -1368,6 +1634,166 @@ window.GS_MY_CONTENT = {
      "phrase": "MONSTER MASH",
      "sets": [
       "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "s6coucgh7feq",
+     "category": "Phrase",
+     "phrase": "SKELETONS IN THE CLOSET",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "35o4pi767feq",
+     "category": "Phrase",
+     "phrase": "SCARED OUT OF MY WITS",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "uj9v7tj37feq",
+     "category": "Phrase",
+     "phrase": "NOT A GHOST OF A CHANCE",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "hytd4s8e7feq",
+     "category": "Phrase",
+     "phrase": "IT'S ALIVE! IT'S ALIVE!",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "rj3d49567feq",
+     "category": "Phrase",
+     "phrase": "THE WITCHING HOUR STRIKES MIDNIGHT",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "h5i05gps7feq",
+     "category": "Phrase",
+     "phrase": "RAISING THE DEAD",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "qamy2qay7feq",
+     "category": "Phrase",
+     "phrase": "GAVE ME GOOSEBUMPS",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "57ky73dx7feq",
+     "category": "Thing",
+     "phrase": "GLOW IN THE DARK SKELETON",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "ob2g37vt7feq",
+     "category": "Thing",
+     "phrase": "HAUNTED HAYRIDE",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "lurl329h7feq",
+     "category": "Thing",
+     "phrase": "CRYSTAL BALL",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "0kc51jpb7feq",
+     "category": "Thing",
+     "phrase": "CREAKY OLD STAIRCASE",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "57rda7hw7feq",
+     "category": "Event",
+     "phrase": "HALLOWEEN COSTUME CONTEST",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "kyda7lws7feq",
+     "category": "Event",
+     "phrase": "MIDNIGHT GHOST TOUR",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "kwslekrn7feq",
+     "category": "Place",
+     "phrase": "TRANSYLVANIAN CASTLE",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "mzj89fhz7feq",
+     "category": "Place",
+     "phrase": "SPOOKY OLD LIGHTHOUSE",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "6vik90hi7feq",
+     "category": "Person",
+     "phrase": "ICHABOD CRANE",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "rom6a5oo7feq",
+     "category": "Person",
+     "phrase": "EDGAR ALLAN POE",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "tlrtw4at7feq",
+     "category": "Person",
+     "phrase": "MARY SHELLEY",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "juuskbbd7feq",
+     "category": "Before & After",
+     "phrase": "CANDY CORN ON THE COB",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "v8yo7xh67feq",
+     "category": "Before & After",
+     "phrase": "PUMPKIN PIE IN THE SKY",
+     "sets": [
+      "Halloween Hard"
      ]
     }
    ],
@@ -1691,6 +2117,166 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Halloween Intermediate"
      ]
+    },
+    {
+     "id": "2r1ruw967hji",
+     "word": "CLOAK",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "gltkrk5a7hji",
+     "word": "CREAK",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "0dbsk55v7hji",
+     "word": "GROAN",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "ze8coxy77hji",
+     "word": "SKULK",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "jtl4j7ng7hji",
+     "word": "GAUNT",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "4itms3su7hji",
+     "word": "ASHEN",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "97u88wgi7hji",
+     "word": "LURID",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "9fqtskma7hji",
+     "word": "ABYSS",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "2e4cp6zv7hji",
+     "word": "VENOM",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "sbx3oirm7hji",
+     "word": "TALON",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "61o0ms0x7hji",
+     "word": "SLIME",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "0snjwipw7hji",
+     "word": "STAKE",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "jlmn93qg7hji",
+     "word": "DRUID",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "oldfjljq7hji",
+     "word": "CHARM",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "xjbvsh3k7hji",
+     "word": "BEAST",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "9e6569ad7hji",
+     "word": "HOUND",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "cjt93wsj7hji",
+     "word": "RELIC",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "psj1mzi07hji",
+     "word": "SHADE",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "ecmmmb3l7hji",
+     "word": "SPINE",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "u6orwikp7hji",
+     "word": "MAGIC",
+     "hint": "Halloween",
+     "sets": [
+      "Halloween Hard"
+     ]
     }
    ],
    "draw": [
@@ -2010,6 +2596,1068 @@ window.GS_MY_CONTENT = {
      "id": "xkle2kkwg3zg",
      "word": "fog rolling over graves",
      "level": "medium",
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "vccnpy9i7eci",
+     "word": "skeleton in the closet",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "kqw4n92c7eci",
+     "word": "witching hour",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "jby3i7vh7eci",
+     "word": "bobbing for apples",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "f2ni1e7u7eci",
+     "word": "carving a pumpkin",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "opayse0u7eci",
+     "word": "haunted hayride",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "4mvelu9p7eci",
+     "word": "zombie apocalypse",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "lmb6ubme7eci",
+     "word": "crystal ball",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "ty9mjsl17eci",
+     "word": "fortune teller",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "684dxqhy7eci",
+     "word": "monster mash",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "f4g8hgaq7eci",
+     "word": "scared stiff",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "ekcbvgge7eci",
+     "word": "mummy's curse",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "plfjxlkp7eci",
+     "word": "costume contest",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "kph553bu7eci",
+     "word": "creepy crawlies",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "m4komvrg7eci",
+     "word": "bride of frankenstein",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "rk9a90jy7eci",
+     "word": "witch casting a spell",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "timzahym7eci",
+     "word": "howling at the moon",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "ce9pu75g7eci",
+     "word": "graveyard shift",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "kkvnmtgq7eci",
+     "word": "ghost story by a campfire",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "saqggat07eci",
+     "word": "spider crawling up a wall",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "k8ig0ix47eci",
+     "word": "things that go bump in the night",
+     "level": "hard",
+     "sets": [
+      "Halloween Hard"
+     ]
+    }
+   ],
+   "trivia": [
+    {
+     "id": "czcs8pci7fxp",
+     "question": "What is carved into a jack-o'-lantern?",
+     "answer": "Pumpkin",
+     "wrong": [
+      "Watermelon",
+      "Apple",
+      "Cabbage"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "mixr9udg7fxp",
+     "question": "What do kids say at the door on Halloween night?",
+     "answer": "Trick or treat",
+     "wrong": [
+      "Happy holidays",
+      "Knock knock",
+      "Good morning"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "sgzl12df7fxp",
+     "question": "What color is a classic witch's hat?",
+     "answer": "Black",
+     "wrong": [
+      "Green",
+      "Purple",
+      "Yellow"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "oenmel5n7fxp",
+     "question": "Which animal is said to bring bad luck if it crosses your path?",
+     "answer": "Black cat",
+     "wrong": [
+      "White rabbit",
+      "Brown dog",
+      "Gray mouse"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "rf4g9ppw7fxp",
+     "question": "In which month is Halloween?",
+     "answer": "October",
+     "wrong": [
+      "September",
+      "November",
+      "December"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "b5hjbtr17fxp",
+     "question": "What does a vampire sleep in?",
+     "answer": "A coffin",
+     "wrong": [
+      "A hammock",
+      "A bunk bed",
+      "A tent"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "ckmcda887fxp",
+     "question": "Which monster is wrapped head to toe in bandages?",
+     "answer": "Mummy",
+     "wrong": [
+      "Werewolf",
+      "Zombie",
+      "Ghost"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "8bx9is3y7fxp",
+     "question": "What do spiders spin?",
+     "answer": "Webs",
+     "wrong": [
+      "Nests",
+      "Hives",
+      "Shells"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "jgg0llco7fxp",
+     "question": "What does a witch ride through the sky?",
+     "answer": "A broomstick",
+     "wrong": [
+      "A bicycle",
+      "A skateboard",
+      "A horse"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "v6z7ixnu7fxp",
+     "question": "On what date is Halloween?",
+     "answer": "October 31",
+     "wrong": [
+      "October 13",
+      "November 1",
+      "October 1"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "e5jo6w1h7fxp",
+     "question": "Which creature turns into a wolf under a full moon?",
+     "answer": "Werewolf",
+     "wrong": [
+      "Vampire",
+      "Mummy",
+      "Scarecrow"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "352er7ll7fxp",
+     "question": "Which candy has yellow, orange and white stripes?",
+     "answer": "Candy corn",
+     "wrong": [
+      "Gumdrops",
+      "Jelly beans",
+      "Lollipops"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "kd9fjvyb7fxp",
+     "question": "What does a ghost famously say?",
+     "answer": "Boo!",
+     "wrong": [
+      "Moo!",
+      "Achoo!",
+      "Yahoo!"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "xsojg2wt7fxp",
+     "question": "How do bats usually rest?",
+     "answer": "Hanging upside down",
+     "wrong": [
+      "Standing up",
+      "Lying on their backs",
+      "Floating on water"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "rgslm0mf7fxp",
+     "question": "What do people bob for at Halloween parties?",
+     "answer": "Apples",
+     "wrong": [
+      "Oranges",
+      "Pumpkins",
+      "Grapes"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "e3vo4dcb7fxp",
+     "question": "The skull is the bony part of which body part?",
+     "answer": "The head",
+     "wrong": [
+      "The foot",
+      "The hand",
+      "The knee"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "bf3iwbb17fxp",
+     "question": "Pumpkins grow on what kind of plant?",
+     "answer": "A vine",
+     "wrong": [
+      "A tree",
+      "A cactus",
+      "A palm"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "3tgfj26h7fxp",
+     "question": "Which color goes with black as a main Halloween color?",
+     "answer": "Orange",
+     "wrong": [
+      "Blue",
+      "Pink",
+      "White"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "ngmabhu57fxp",
+     "question": "What is a scarecrow usually stuffed with?",
+     "answer": "Straw",
+     "wrong": [
+      "Feathers",
+      "Sand",
+      "Paper"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "ge7asphg7fxp",
+     "question": "A white sheet with two eyeholes is a costume of what?",
+     "answer": "A ghost",
+     "wrong": [
+      "A mummy",
+      "A wizard",
+      "A pirate"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Easy"
+     ]
+    },
+    {
+     "id": "6zvxkf967gh3",
+     "question": "In what year was John Carpenter's original \"Halloween\" movie released?",
+     "answer": "1978",
+     "wrong": [
+      "1984",
+      "1973",
+      "1990"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "7gx4t03i7gh3",
+     "question": "In what year was Bram Stoker's novel Dracula published?",
+     "answer": "1897",
+     "wrong": [
+      "1818",
+      "1931",
+      "1847"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "5al0e0ip7gh3",
+     "question": "What is the subtitle of Mary Shelley's Frankenstein?",
+     "answer": "The Modern Prometheus",
+     "wrong": [
+      "The Living Dead",
+      "The Bride of the Monster",
+      "A Gothic Tale"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "ed9am4t37gh3",
+     "question": "Which Roman goddess of fruit trees is linked to Halloween's apple traditions?",
+     "answer": "Pomona",
+     "wrong": [
+      "Diana",
+      "Juno",
+      "Minerva"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "ah0v6wtr7gh3",
+     "question": "In old Britain, poor people went \"souling\" door to door for what treats?",
+     "answer": "Soul cakes",
+     "wrong": [
+      "Mooncakes",
+      "Hot cross buns",
+      "Fruitcakes"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "urnab8oa7gh3",
+     "question": "Which Edgar Allan Poe poem repeats the word \"Nevermore\"?",
+     "answer": "The Raven",
+     "wrong": [
+      "Annabel Lee",
+      "The Bells",
+      "Lenore"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "7r4yfydj7gh3",
+     "question": "Which real ruler is often linked to the legend of Dracula?",
+     "answer": "Vlad the Impaler",
+     "wrong": [
+      "Ivan the Terrible",
+      "Attila the Hun",
+      "Genghis Khan"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "14zuh1n77gh3",
+     "question": "How many people were executed in the Salem witch trials?",
+     "answer": "20",
+     "wrong": [
+      "5",
+      "50",
+      "100"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "s5daqvc37gh3",
+     "question": "Who played Count Dracula in the 1931 film?",
+     "answer": "Bela Lugosi",
+     "wrong": [
+      "Boris Karloff",
+      "Vincent Price",
+      "Lon Chaney Jr."
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "i7lk90vw7gh3",
+     "question": "Who played the monster in the 1931 film Frankenstein?",
+     "answer": "Boris Karloff",
+     "wrong": [
+      "Bela Lugosi",
+      "Christopher Lee",
+      "Peter Lorre"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "cgiymjkz7gh3",
+     "question": "What is the fear of the number 13 called?",
+     "answer": "Triskaidekaphobia",
+     "wrong": [
+      "Claustrophobia",
+      "Agoraphobia",
+      "Nyctophobia"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "6kgyn4a57gh3",
+     "question": "Nyctophobia is the fear of what?",
+     "answer": "The dark",
+     "wrong": [
+      "Spiders",
+      "Heights",
+      "Clowns"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "tbov2un87gh3",
+     "question": "Mary Shelley began writing Frankenstein at a villa near which lake?",
+     "answer": "Lake Geneva",
+     "wrong": [
+      "Lake Como",
+      "Loch Ness",
+      "Lake Tahoe"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "b5rsvwh17gh3",
+     "question": "In the Irish legend, who did \"Stingy Jack\" trick?",
+     "answer": "The Devil",
+     "wrong": [
+      "A king",
+      "A wizard",
+      "A dragon"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "9btokfyq7gh3",
+     "question": "\"All Hallows' Eve\" means the evening before what?",
+     "answer": "All Saints' Day",
+     "wrong": [
+      "The first frost",
+      "The harvest moon",
+      "New Year's Day"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "woasajzk7gh3",
+     "question": "The jack-o'-lantern tradition came to America with immigrants from which country?",
+     "answer": "Ireland",
+     "wrong": [
+      "Germany",
+      "Italy",
+      "Poland"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "asa2nxvp7gh3",
+     "question": "In what year was \"The Rocky Horror Picture Show\" released?",
+     "answer": "1975",
+     "wrong": [
+      "1965",
+      "1985",
+      "1995"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "7dydbg1q7gh3",
+     "question": "Who wrote \"The Fall of the House of Usher\"?",
+     "answer": "Edgar Allan Poe",
+     "wrong": [
+      "H. P. Lovecraft",
+      "Shirley Jackson",
+      "Bram Stoker"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "6qtfp4we7gh3",
+     "question": "Who wrote the novel \"The Haunting of Hill House\"?",
+     "answer": "Shirley Jackson",
+     "wrong": [
+      "Stephen King",
+      "Anne Rice",
+      "Mary Shelley"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "j9pkyncl7gh3",
+     "question": "What 1922 German silent film was an early vampire classic?",
+     "answer": "Nosferatu",
+     "wrong": [
+      "Metropolis",
+      "The Golem",
+      "Faust"
+     ],
+     "category": "Halloween",
+     "time": 25,
+     "sets": [
+      "Halloween Hard"
+     ]
+    },
+    {
+     "id": "51y2h3b67h04",
+     "question": "Halloween grew out of which ancient Celtic festival?",
+     "answer": "Samhain",
+     "wrong": [
+      "Beltane",
+      "Yule",
+      "Imbolc"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "cdb5owjk7h04",
+     "question": "What holiday falls the day after Halloween, on November 1?",
+     "answer": "All Saints' Day",
+     "wrong": [
+      "Thanksgiving",
+      "Veterans Day",
+      "Groundhog Day"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "soz2v2i07h04",
+     "question": "Before pumpkins, what did people in Ireland carve into lanterns?",
+     "answer": "Turnips",
+     "wrong": [
+      "Apples",
+      "Melons",
+      "Onions"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "jujgpw847h04",
+     "question": "Who wrote the novel Dracula?",
+     "answer": "Bram Stoker",
+     "wrong": [
+      "Mary Shelley",
+      "Edgar Allan Poe",
+      "Charles Dickens"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "64v53brd7h04",
+     "question": "Who wrote the novel Frankenstein?",
+     "answer": "Mary Shelley",
+     "wrong": [
+      "Bram Stoker",
+      "Jane Austen",
+      "Charlotte Bronte"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "ek2we1zg7h04",
+     "question": "Which U.S. state grows the most pumpkins?",
+     "answer": "Illinois",
+     "wrong": [
+      "Texas",
+      "Florida",
+      "Maine"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "huozc9y57h04",
+     "question": "Which famous escape artist died on Halloween in 1926?",
+     "answer": "Harry Houdini",
+     "wrong": [
+      "P. T. Barnum",
+      "Buffalo Bill",
+      "Charles Lindbergh"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "h9dtubt07h04",
+     "question": "Who wrote \"The Legend of Sleepy Hollow\"?",
+     "answer": "Washington Irving",
+     "wrong": [
+      "Mark Twain",
+      "Edgar Allan Poe",
+      "Nathaniel Hawthorne"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "g138cbum7h04",
+     "question": "What is the schoolteacher's name in \"The Legend of Sleepy Hollow\"?",
+     "answer": "Ichabod Crane",
+     "wrong": [
+      "Rip Van Winkle",
+      "Tom Sawyer",
+      "Jack Skellington"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "8s13kuid7h04",
+     "question": "Botanically speaking, a pumpkin is a what?",
+     "answer": "Fruit",
+     "wrong": [
+      "Vegetable",
+      "Grain",
+      "Nut"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "twvyhaps7h04",
+     "question": "What is a group of witches called?",
+     "answer": "A coven",
+     "wrong": [
+      "A flock",
+      "A pack",
+      "A herd"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "q5r7wl2i7h04",
+     "question": "What do vampire bats feed on?",
+     "answer": "Blood",
+     "wrong": [
+      "Fruit",
+      "Nectar",
+      "Fish"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "3g0rz1ws7h04",
+     "question": "In which country is the region of Transylvania?",
+     "answer": "Romania",
+     "wrong": [
+      "Ireland",
+      "Egypt",
+      "Mexico"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "jpn0fy457h04",
+     "question": "In which country did Dia de los Muertos begin?",
+     "answer": "Mexico",
+     "wrong": [
+      "Spain",
+      "Brazil",
+      "Italy"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "vxydzwtl7h04",
+     "question": "In what year were the Salem witch trials?",
+     "answer": "1692",
+     "wrong": [
+      "1776",
+      "1865",
+      "1912"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "mgjcng3h7h04",
+     "question": "Count Dracula can turn himself into which animal?",
+     "answer": "A bat",
+     "wrong": [
+      "An owl",
+      "A snake",
+      "A spider"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "3jfxukqp7h04",
+     "question": "Which movie stars Jack Skellington, the Pumpkin King?",
+     "answer": "The Nightmare Before Christmas",
+     "wrong": [
+      "Hocus Pocus",
+      "Beetlejuice",
+      "Casper"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "alrmts7d7h04",
+     "question": "Which movie features the three Sanderson sisters?",
+     "answer": "Hocus Pocus",
+     "wrong": [
+      "The Addams Family",
+      "Practical Magic",
+      "Halloweentown"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "iapgsdh97h04",
+     "question": "Which Halloween song was a hit for Bobby \"Boris\" Pickett in 1962?",
+     "answer": "Monster Mash",
+     "wrong": [
+      "Thriller",
+      "Ghostbusters",
+      "Purple People Eater"
+     ],
+     "category": "Halloween",
+     "time": 20,
+     "sets": [
+      "Halloween Intermediate"
+     ]
+    },
+    {
+     "id": "9shi5npi7h04",
+     "question": "What do we call the fear of spiders?",
+     "answer": "Arachnophobia",
+     "wrong": [
+      "Claustrophobia",
+      "Acrophobia",
+      "Hydrophobia"
+     ],
+     "category": "Halloween",
+     "time": 20,
      "sets": [
       "Halloween Intermediate"
      ]

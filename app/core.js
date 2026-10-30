@@ -1,4 +1,4 @@
-const APP_VERSION = '20261029-1240'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261030-1015'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -732,7 +732,7 @@ const GameFiles = {
     if (sets.size && panel) {
       const cur = this.chosen(k), f = document.createElement('label');
       f.className = 'field gf-set';
-      f.innerHTML = `<span>Question set</span><select class="input" id="gfSet"><option value="">📚 Everything (${App.data[k].length})</option>${[...sets].sort((a, b) => a[0].localeCompare(b[0])).map(([s, c]) => `<option value="${esc(s)}" ${s === cur ? 'selected' : ''}>${esc(s)} (${c})</option>`).join('')}</select>`;
+      f.innerHTML = `<span>Question set</span><select class="input" id="gfSet"><option value="">📚 Everything (${App.data[k].length})</option>${[...sets].sort((a, b) => { const lv = n => n.replace(/\b(easy|beginner)\b/i, '1').replace(/\b(intermediate|medium)\b/i, '2').replace(/\b(hard|advanced)\b/i, '3'); return lv(a[0]).localeCompare(lv(b[0])); }).map(([s, c]) => `<option value="${esc(s)}" ${s === cur ? 'selected' : ''}>${esc(s)} (${c})</option>`).join('')}</select>`;
       panel.prepend(f);
       $('#gfSet', f).onchange = e => { (App.data.settings.setPick ||= {})[k] = e.target.value; App.save(); App.show(App.current); };
     }
