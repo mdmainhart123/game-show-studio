@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-10-30-halloween-hard",
+ "id": "matt-2026-11-02-personal-strengths",
  "banks": {
   "standard": {
    "cross": [
@@ -726,6 +726,52 @@ window.GS_MY_CONTENT = {
        "clue": "Another word for a ghost"
       }
      ]
+    },
+    {
+     "id": "u8593yerkir0",
+     "title": "Personal Strengths",
+     "entries": [
+      {
+       "word": "brave",
+       "clue": "Having the courage to face difficult situations"
+      },
+      {
+       "word": "resilient",
+       "clue": "Bouncing back after hardship or setbacks"
+      },
+      {
+       "word": "empathy",
+       "clue": "Understanding and sharing the feelings of others"
+      },
+      {
+       "word": "confident",
+       "clue": "Believing in your own abilities and worth"
+      },
+      {
+       "word": "grateful",
+       "clue": "Feeling thankful for the good things in your life"
+      },
+      {
+       "word": "honest",
+       "clue": "Being truthful with yourself and others"
+      },
+      {
+       "word": "patient",
+       "clue": "Staying calm when things take time"
+      },
+      {
+       "word": "creative",
+       "clue": "Finding new ways to solve problems"
+      },
+      {
+       "word": "humble",
+       "clue": "Knowing your value without needing to show off"
+      },
+      {
+       "word": "determined",
+       "clue": "Refusing to give up on your goals"
+      }
+     ]
     }
    ],
    "board": [
@@ -1328,6 +1374,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The region of Romania where Dracula's castle is set",
      "answer": "Transylvania"
+    },
+    {
+     "id": "tyvaddxokjjp",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 100,
+     "clue": "A strength is something you do well or a quality that helps you in life. True or false: everyone has at least one strength.",
+     "answer": "True"
+    },
+    {
+     "id": "waivwez8kjjp",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 200,
+     "clue": "This word describes a strength that helps you keep going even when things get tough",
+     "answer": "Resilience"
+    },
+    {
+     "id": "dsj61wmokjjp",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 300,
+     "clue": "Personal strengths can be used in this setting to help build relationships and support recovery",
+     "answer": "Community"
+    },
+    {
+     "id": "g61jgzcakjjp",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 400,
+     "clue": "This type of strength involves understanding how you feel and managing those emotions well",
+     "answer": "Emotional strength"
+    },
+    {
+     "id": "sbu4lxcbkjjp",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 500,
+     "clue": "Researchers who study strengths say there are this many categories of character strengths in the VIA model",
+     "answer": "24"
+    },
+    {
+     "id": "hkl3t9nnkjjp",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 100,
+     "clue": "This simple act of writing down your thoughts can help you identify your personal strengths",
+     "answer": "Journaling"
+    },
+    {
+     "id": "bf15xsu5kjjp",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 200,
+     "clue": "Asking this person who knows you well can help you discover strengths you might overlook in yourself",
+     "answer": "A trusted friend or family member"
+    },
+    {
+     "id": "hgopnhibkjjp",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 300,
+     "clue": "This strength means you keep trying even after you fail or face setbacks",
+     "answer": "Perseverance"
+    },
+    {
+     "id": "j5dbmjnzkjjp",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 400,
+     "clue": "Recognizing what you are good at and feeling confident about it is called this",
+     "answer": "Self-awareness"
+    },
+    {
+     "id": "i4nwcmk8kjjp",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 500,
+     "clue": "This psychological concept refers to believing in your own ability to succeed in specific situations",
+     "answer": "Self-efficacy"
+    },
+    {
+     "id": "75wqgj70kjjp",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 100,
+     "clue": "Using your strengths in recovery helps build this — a sense of meaning and direction in your life",
+     "answer": "Purpose"
+    },
+    {
+     "id": "1ubn4saakjjp",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 200,
+     "clue": "This strength helps you stay honest with yourself about your progress in recovery",
+     "answer": "Integrity"
+    },
+    {
+     "id": "6edwob3tkjjp",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 300,
+     "clue": "Helping others in recovery is an example of using this strength",
+     "answer": "Compassion"
+    },
+    {
+     "id": "24quenspkjjp",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 400,
+     "clue": "This strength allows you to adapt and find new ways forward when your original plan does not work",
+     "answer": "Flexibility"
+    },
+    {
+     "id": "y57zcycmkjjp",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 500,
+     "clue": "Research shows that focusing on strengths rather than weaknesses leads to greater outcomes in this area",
+     "answer": "Well-being and recovery"
+    },
+    {
+     "id": "rpajbvb8kjjp",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 100,
+     "clue": "This strength means you are kind and generous toward others",
+     "answer": "Kindness"
+    },
+    {
+     "id": "xk0ozukikjjp",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 200,
+     "clue": "Finishing what you start, even when it is difficult, shows this strength",
+     "answer": "Determination"
+    },
+    {
+     "id": "yhq4sueukjjp",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 300,
+     "clue": "This strength involves being open to new ideas and seeing things from different perspectives",
+     "answer": "Open-mindedness"
+    },
+    {
+     "id": "0x0jkx6skjjp",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 400,
+     "clue": "The ability to find humor and lightness even in hard times is considered this type of strength",
+     "answer": "Humor or playfulness"
+    },
+    {
+     "id": "praizubkkjjp",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 500,
+     "clue": "This strength involves using your talents to contribute to the greater good of your community",
+     "answer": "Leadership or citizenship"
+    },
+    {
+     "id": "0wk38sq1kjjp",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 100,
+     "clue": "Recognizing a strength and using it on purpose every day is called this",
+     "answer": "Applying your strengths"
+    },
+    {
+     "id": "j4yugoekkjjp",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 200,
+     "clue": "This happens when you use a strength so much in a situation that it starts to cause problems",
+     "answer": "Overusing a strength"
+    },
+    {
+     "id": "8n0l7k6ekjjp",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 300,
+     "clue": "Sharing your personal strengths with a group helps build this in the room",
+     "answer": "Trust and connection"
+    },
+    {
+     "id": "bxqwut6qkjjp",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 400,
+     "clue": "This practice helps you notice and appreciate the strengths you used throughout your day",
+     "answer": "Gratitude reflection"
+    },
+    {
+     "id": "ijahbcphkjjp",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 500,
+     "clue": "Psychologist Martin Seligman is known for founding this branch of psychology that focuses on strengths",
+     "answer": "Positive psychology"
     }
    ],
    "wheel": [
@@ -1794,6 +2040,134 @@ window.GS_MY_CONTENT = {
      "phrase": "PUMPKIN PIE IN THE SKY",
      "sets": [
       "Halloween Hard"
+     ]
+    },
+    {
+     "id": "u4zyrbvjkk3l",
+     "category": "Phrase",
+     "phrase": "PLAY TO YOUR STRENGTHS",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "mfws1j2akk3l",
+     "category": "Phrase",
+     "phrase": "BELIEVE IN YOURSELF",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "uzq1y0u7kk3l",
+     "category": "Phrase",
+     "phrase": "KNOW YOUR OWN WORTH",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "s89grigxkk3l",
+     "category": "Phrase",
+     "phrase": "RISE ABOVE THE CHALLENGE",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "250tke8pkk3l",
+     "category": "Phrase",
+     "phrase": "YOU ARE STRONGER THAN YOU THINK",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "3jy8x144kk3l",
+     "category": "Phrase",
+     "phrase": "EVERY DAY IS A FRESH START",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "gj1nzrpykk3l",
+     "category": "Phrase",
+     "phrase": "BUILD ON WHAT YOU DO WELL",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "sqi8wfbqkk3l",
+     "category": "Phrase",
+     "phrase": "COURAGE COMES FROM WITHIN",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "cnbmqgdhkk3l",
+     "category": "Thing",
+     "phrase": "A PERSONAL STRENGTH",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "8x27a2wzkk3l",
+     "category": "Thing",
+     "phrase": "CONFIDENCE IN YOURSELF",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ipcjqblbkk3l",
+     "category": "Thing",
+     "phrase": "INNER RESILIENCE",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "eet2c4sekk3l",
+     "category": "Thing",
+     "phrase": "A GROWTH MINDSET",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "sov09kfakk3l",
+     "category": "Thing",
+     "phrase": "CHARACTER AND VALUES",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "1uqivhwjkk3l",
+     "category": "Event",
+     "phrase": "DISCOVERING YOUR STRENGTHS",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "rpdaz7atkk3l",
+     "category": "Event",
+     "phrase": "SHARING YOUR STORY WITH OTHERS",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "n8jbeduykk3l",
+     "category": "Event",
+     "phrase": "TAKING THE FIRST STEP FORWARD",
+     "sets": [
+      "Personal Strengths"
      ]
     }
    ],
@@ -2277,6 +2651,86 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Halloween Hard"
      ]
+    },
+    {
+     "id": "aeivaf4ikhuz",
+     "word": "BRAVE",
+     "hint": "Feelings",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "zargchi0khuz",
+     "word": "PEACE",
+     "hint": "Feelings",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "tvbh2lmnkkmn",
+     "word": "GRACE",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "g34ayi5fkkmn",
+     "word": "GRITS",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "cyun43jdkkmn",
+     "word": "PRIDE",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "muvjryonkkmn",
+     "word": "TRUST",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "so3er4hjkkmn",
+     "word": "LEARN",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "x2k47al1kkmn",
+     "word": "BUILD",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "oaxybc1ikkmn",
+     "word": "WORTH",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "egalu6oskkmn",
+     "word": "GIVES",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
     }
    ],
    "draw": [
@@ -2758,6 +3212,126 @@ window.GS_MY_CONTENT = {
      "level": "hard",
      "sets": [
       "Halloween Hard"
+     ]
+    },
+    {
+     "id": "zg9r9l8bkizh",
+     "word": "helping a friend",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "cgx9qnakkizh",
+     "word": "a trophy",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "0f38pws2kizh",
+     "word": "a handshake",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "uvdqlx87kizh",
+     "word": "a heart",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "s4f4uc38kizh",
+     "word": "a ladder",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "08tjrbb4kizh",
+     "word": "someone cheering",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ediarrjqkizh",
+     "word": "planting a seed",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "8ywuz152kizh",
+     "word": "a person standing tall",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "9vvxq3r7kizh",
+     "word": "a light bulb moment",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "pmtn2dy5kizh",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "1jai27m4kizh",
+     "word": "inner strength",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "kreg24vpkizh",
+     "word": "turning over a new leaf",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "8etuh5x0kizh",
+     "word": "facing your fears",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "g5193veqkizh",
+     "word": "building a bridge",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "9bn9i98gkizh",
+     "word": "rising above challenges",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
      ]
     }
    ],
@@ -3912,6 +4486,588 @@ window.GS_MY_CONTENT = {
        "word": "forgiveness",
        "clue": "Releasing resentment for your own peace, not to excuse bad behavior"
       }
+     ]
+    },
+    {
+     "id": "buhre6pzkl5z",
+     "title": "Personal Strengths",
+     "entries": [
+      {
+       "word": "brave",
+       "clue": "Having the courage to face difficult situations"
+      },
+      {
+       "word": "resilient",
+       "clue": "Bouncing back after hardship or setbacks"
+      },
+      {
+       "word": "empathy",
+       "clue": "Understanding and sharing the feelings of others"
+      },
+      {
+       "word": "confident",
+       "clue": "Believing in your own abilities and worth"
+      },
+      {
+       "word": "grateful",
+       "clue": "Feeling thankful for the good things in your life"
+      },
+      {
+       "word": "honest",
+       "clue": "Being truthful with yourself and others"
+      },
+      {
+       "word": "patient",
+       "clue": "Staying calm when things take time"
+      },
+      {
+       "word": "creative",
+       "clue": "Finding new ways to solve problems"
+      },
+      {
+       "word": "humble",
+       "clue": "Knowing your value without needing to show off"
+      },
+      {
+       "word": "determined",
+       "clue": "Refusing to give up on your goals"
+      }
+     ]
+    }
+   ],
+   "board": [
+    {
+     "id": "fn8rhtw3klxv",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 100,
+     "clue": "A strength is something you do well or a quality that helps you in life. True or false: everyone has at least one strength.",
+     "answer": "True"
+    },
+    {
+     "id": "42svd2woklxv",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 200,
+     "clue": "This word describes a strength that helps you keep going even when things get tough",
+     "answer": "Resilience"
+    },
+    {
+     "id": "qbprh3xhklxv",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 300,
+     "clue": "Personal strengths can be used in this setting to help build relationships and support recovery",
+     "answer": "Community"
+    },
+    {
+     "id": "p64pkj8nklxv",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 400,
+     "clue": "This type of strength involves understanding how you feel and managing those emotions well",
+     "answer": "Emotional strength"
+    },
+    {
+     "id": "tot8qii6klxv",
+     "board": "Personal Strengths",
+     "category": "What Is a Strength?",
+     "value": 500,
+     "clue": "Researchers who study strengths say there are this many categories of character strengths in the VIA model",
+     "answer": "24"
+    },
+    {
+     "id": "e12iy9zhklxv",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 100,
+     "clue": "This simple act of writing down your thoughts can help you identify your personal strengths",
+     "answer": "Journaling"
+    },
+    {
+     "id": "o3u7binnklxv",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 200,
+     "clue": "Asking this person who knows you well can help you discover strengths you might overlook in yourself",
+     "answer": "A trusted friend or family member"
+    },
+    {
+     "id": "w93jaj2dklxv",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 300,
+     "clue": "This strength means you keep trying even after you fail or face setbacks",
+     "answer": "Perseverance"
+    },
+    {
+     "id": "cl84rgeqklxv",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 400,
+     "clue": "Recognizing what you are good at and feeling confident about it is called this",
+     "answer": "Self-awareness"
+    },
+    {
+     "id": "qd6i3rrwklxv",
+     "board": "Personal Strengths",
+     "category": "Knowing Yourself",
+     "value": 500,
+     "clue": "This psychological concept refers to believing in your own ability to succeed in specific situations",
+     "answer": "Self-efficacy"
+    },
+    {
+     "id": "z5la3uq5klxv",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 100,
+     "clue": "Using your strengths in recovery helps build this — a sense of meaning and direction in your life",
+     "answer": "Purpose"
+    },
+    {
+     "id": "xc6yyr7bklxv",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 200,
+     "clue": "This strength helps you stay honest with yourself about your progress in recovery",
+     "answer": "Integrity"
+    },
+    {
+     "id": "o41hiqbwklxv",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 300,
+     "clue": "Helping others in recovery is an example of using this strength",
+     "answer": "Compassion"
+    },
+    {
+     "id": "pzd1ffa4klxv",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 400,
+     "clue": "This strength allows you to adapt and find new ways forward when your original plan does not work",
+     "answer": "Flexibility"
+    },
+    {
+     "id": "nipei5q8klxv",
+     "board": "Personal Strengths",
+     "category": "Strengths in Recovery",
+     "value": 500,
+     "clue": "Research shows that focusing on strengths rather than weaknesses leads to greater outcomes in this area",
+     "answer": "Well-being and recovery"
+    },
+    {
+     "id": "2xcw7ub9klxv",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 100,
+     "clue": "This strength means you are kind and generous toward others",
+     "answer": "Kindness"
+    },
+    {
+     "id": "6jzanms1klxv",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 200,
+     "clue": "Finishing what you start, even when it is difficult, shows this strength",
+     "answer": "Determination"
+    },
+    {
+     "id": "5fny3bqvklxv",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 300,
+     "clue": "This strength involves being open to new ideas and seeing things from different perspectives",
+     "answer": "Open-mindedness"
+    },
+    {
+     "id": "kkya2rgdklxv",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 400,
+     "clue": "The ability to find humor and lightness even in hard times is considered this type of strength",
+     "answer": "Humor or playfulness"
+    },
+    {
+     "id": "e7b8oy4uklxv",
+     "board": "Personal Strengths",
+     "category": "Character Strengths",
+     "value": 500,
+     "clue": "This strength involves using your talents to contribute to the greater good of your community",
+     "answer": "Leadership or citizenship"
+    },
+    {
+     "id": "sadtwugtklxv",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 100,
+     "clue": "Recognizing a strength and using it on purpose every day is called this",
+     "answer": "Applying your strengths"
+    },
+    {
+     "id": "v643nrntklxv",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 200,
+     "clue": "This happens when you use a strength so much in a situation that it starts to cause problems",
+     "answer": "Overusing a strength"
+    },
+    {
+     "id": "tjikoj7iklxv",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 300,
+     "clue": "Sharing your personal strengths with a group helps build this in the room",
+     "answer": "Trust and connection"
+    },
+    {
+     "id": "5ntb59xwklxv",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 400,
+     "clue": "This practice helps you notice and appreciate the strengths you used throughout your day",
+     "answer": "Gratitude reflection"
+    },
+    {
+     "id": "j8rnm9rwklxv",
+     "board": "Personal Strengths",
+     "category": "Using Your Strengths",
+     "value": 500,
+     "clue": "Psychologist Martin Seligman is known for founding this branch of psychology that focuses on strengths",
+     "answer": "Positive psychology"
+    }
+   ],
+   "wheel": [
+    {
+     "id": "ay4dfmdykmh8",
+     "category": "Phrase",
+     "phrase": "PLAY TO YOUR STRENGTHS",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "x0nwbhvtkmh8",
+     "category": "Phrase",
+     "phrase": "BELIEVE IN YOURSELF",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "adbto8smkmh8",
+     "category": "Phrase",
+     "phrase": "KNOW YOUR OWN WORTH",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "bndjmnhhkmh8",
+     "category": "Phrase",
+     "phrase": "RISE ABOVE THE CHALLENGE",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "fuo75giokmh8",
+     "category": "Phrase",
+     "phrase": "YOU ARE STRONGER THAN YOU THINK",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "1f7tm6u2kmh8",
+     "category": "Phrase",
+     "phrase": "EVERY DAY IS A FRESH START",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "oakakf2dkmh8",
+     "category": "Phrase",
+     "phrase": "BUILD ON WHAT YOU DO WELL",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "e1tbgqipkmh8",
+     "category": "Phrase",
+     "phrase": "COURAGE COMES FROM WITHIN",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "r3aj9p8akmh8",
+     "category": "Thing",
+     "phrase": "A PERSONAL STRENGTH",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "uk7vyl2fkmh8",
+     "category": "Thing",
+     "phrase": "CONFIDENCE IN YOURSELF",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "dtoiizirkmh8",
+     "category": "Thing",
+     "phrase": "INNER RESILIENCE",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "3uxwnjk3kmh8",
+     "category": "Thing",
+     "phrase": "A GROWTH MINDSET",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ipaoj5plkmh8",
+     "category": "Thing",
+     "phrase": "CHARACTER AND VALUES",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "l5cheqt1kmh8",
+     "category": "Event",
+     "phrase": "DISCOVERING YOUR STRENGTHS",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "3qrymomzkmh8",
+     "category": "Event",
+     "phrase": "SHARING YOUR STORY WITH OTHERS",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "nsgtqy4ekmh8",
+     "category": "Event",
+     "phrase": "TAKING THE FIRST STEP FORWARD",
+     "sets": [
+      "Personal Strengths"
+     ]
+    }
+   ],
+   "words": [
+    {
+     "id": "e1h067l3khv9",
+     "word": "PEACE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ylwtqtztkhv9",
+     "word": "BRAVE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "iif05fsekhv9",
+     "word": "GRACE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "oz1u0yc4khv9",
+     "word": "TRUST",
+     "hint": "Connection",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ooc7r7d1khv9",
+     "word": "LEARN",
+     "hint": "Recovery",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "jcdqtccdkhv9",
+     "word": "WORTH",
+     "hint": "Recovery",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "bt1daeunkn0r",
+     "word": "GRITS",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "6xc43n1ckn0r",
+     "word": "PRIDE",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "tg7b5rpnkn0r",
+     "word": "BUILD",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "9vzensuykn0r",
+     "word": "GIVES",
+     "hint": "Strength",
+     "sets": [
+      "Personal Strengths"
+     ]
+    }
+   ],
+   "draw": [
+    {
+     "id": "b8c77prhkhvc",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "n9n1vii7klch",
+     "word": "helping a friend",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "1hs3v16eklch",
+     "word": "a trophy",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "0w071j4iklch",
+     "word": "a handshake",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "q8ry8fhiklch",
+     "word": "a heart",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "xrulgfpoklch",
+     "word": "a ladder",
+     "level": "easy",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "2k4024m1klch",
+     "word": "someone cheering",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "687gvt8cklch",
+     "word": "planting a seed",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "vzzrt1nhklch",
+     "word": "a person standing tall",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "zgisnk8qklch",
+     "word": "a light bulb moment",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "xv2qkb09klch",
+     "word": "inner strength",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "acttvp0bklch",
+     "word": "turning over a new leaf",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "biuvayqqklch",
+     "word": "facing your fears",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "kafxkw16klch",
+     "word": "building a bridge",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "4y7inighklch",
+     "word": "rising above challenges",
+     "level": "hard",
+     "sets": [
+      "Personal Strengths"
      ]
     }
    ]
