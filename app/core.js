@@ -1,4 +1,4 @@
-const APP_VERSION = '20261102-0930'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261102-1115'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -101,7 +101,17 @@ const App = {
         const list = (tgt[k] ||= []), byId = new Map(list.map(x => [x.id, x])), byKey = new Map(list.map(x => [key(x), x]));
         (set[k] || []).forEach(x => {
           const old = byId.get(x.id) || byKey.get(key(x));
-          if (old) { (x.sets || []).forEach(s => { old.sets ||= []; if (!old.sets.includes(s)) old.sets.push(s); }); return; }
+          if (old) {
+            (x.sets || []).forEach(s => { old.sets ||= []; if (!old.sets.includes(s)) old.sets.push(s); });
+            // a built-in item that was updated (higher rev) replaces its older copy
+            if (x.rev && old.id === x.id && (old.rev || 0) < x.rev) {
+              const sets = old.sets; Object.keys(old).forEach(f => { if (f !== 'id') delete old[f]; });
+              Object.assign(old, JSON.parse(JSON.stringify(x)), { id: old.id }); delete old.played;
+              if (sets) old.sets = [...new Set([...sets, ...(x.sets || [])])];
+              n++;
+            }
+            return;
+          }
           const y = JSON.parse(JSON.stringify(x)); delete y.played;
           list.push(y); byId.set(y.id, y); byKey.set(key(y), y); n++;
         });

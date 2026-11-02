@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-02-personal-strengths",
+ "id": "matt-2026-11-02-strengths-trivia-crossword",
  "banks": {
   "standard": {
    "cross": [
@@ -770,8 +770,33 @@ window.GS_MY_CONTENT = {
       {
        "word": "determined",
        "clue": "Refusing to give up on your goals"
+      },
+      {
+       "word": "hopeful",
+       "clue": "Expecting that good things can happen in the future"
+      },
+      {
+       "word": "loyal",
+       "clue": "Standing by the people who matter to you"
+      },
+      {
+       "word": "curious",
+       "clue": "Wanting to learn and explore new things"
+      },
+      {
+       "word": "generous",
+       "clue": "Freely sharing your time, help or kindness"
+      },
+      {
+       "word": "forgiving",
+       "clue": "Letting go of resentment toward someone who hurt you"
+      },
+      {
+       "word": "disciplined",
+       "clue": "Sticking to healthy habits even when it is hard"
       }
-     ]
+     ],
+     "rev": 2
     }
    ],
    "board": [
@@ -4235,6 +4260,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Halloween Intermediate"
      ]
+    },
+    {
+     "id": "4d4psmwqc440",
+     "question": "What is a personal strength?",
+     "answer": "A quality or skill that helps you do well in life",
+     "wrong": [
+      "A muscle you build at the gym",
+      "Something only famous people have",
+      "A rule you have to follow"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "lp56w8yfc440",
+     "question": "Which of these is an example of a personal strength?",
+     "answer": "Kindness",
+     "wrong": [
+      "Jealousy",
+      "Stubbornness",
+      "Impatience"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "1y5fr38qc440",
+     "question": "What is the word for bouncing back after a hard time?",
+     "answer": "Resilience",
+     "wrong": [
+      "Rejection",
+      "Reaction",
+      "Retirement"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "38ubbu2lc440",
+     "question": "Understanding and sharing the feelings of another person is called what?",
+     "answer": "Empathy",
+     "wrong": [
+      "Boredom",
+      "Apathy",
+      "Envy"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "pqdpij8dc440",
+     "question": "Which strength means you keep going even after you fail?",
+     "answer": "Perseverance",
+     "wrong": [
+      "Perfectionism",
+      "Popularity",
+      "Pessimism"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "fr6jryxsc440",
+     "question": "What simple daily habit can help you notice your strengths?",
+     "answer": "Writing in a journal",
+     "wrong": [
+      "Skipping meals",
+      "Avoiding other people",
+      "Staying up late"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "qf5g1uu7c440",
+     "question": "Who can help you see strengths you might overlook in yourself?",
+     "answer": "A trusted friend or family member",
+     "wrong": [
+      "A stranger on social media",
+      "Nobody, you have to do it alone",
+      "Only a celebrity"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "v7nwaux3c440",
+     "question": "Being truthful with yourself and others shows which strength?",
+     "answer": "Honesty",
+     "wrong": [
+      "Pride",
+      "Shyness",
+      "Speed"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ijgkmtj6c440",
+     "question": "Which strength helps you stay calm when things take longer than you want?",
+     "answer": "Patience",
+     "wrong": [
+      "Hurry",
+      "Anger",
+      "Boredom"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "l8x67nozc440",
+     "question": "Finding humor and lightness during hard times is what kind of strength?",
+     "answer": "Humor or playfulness",
+     "wrong": [
+      "Laziness",
+      "Rudeness",
+      "Forgetfulness"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "6swwrzxyc440",
+     "question": "In the VIA model, how many character strengths are there?",
+     "answer": "24",
+     "wrong": [
+      "5",
+      "10",
+      "100"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "2by9hwouc440",
+     "question": "The VIA strengths are grouped into how many core virtues?",
+     "answer": "6",
+     "wrong": [
+      "2",
+      "12",
+      "20"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "zqd7ykhrc440",
+     "question": "Which of these is one of the six VIA virtues?",
+     "answer": "Courage",
+     "wrong": [
+      "Wealth",
+      "Fame",
+      "Popularity"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "10syrj0rc440",
+     "question": "Psychologist Martin Seligman is known for helping found which field?",
+     "answer": "Positive psychology",
+     "wrong": [
+      "Sports psychology",
+      "Child psychology",
+      "Forensic psychology"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "qoqejoskc440",
+     "question": "Believing you have the ability to succeed at a specific task is called what?",
+     "answer": "Self-efficacy",
+     "wrong": [
+      "Self-pity",
+      "Self-doubt",
+      "Selfishness"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "d4yva47qc440",
+     "question": "Psychologist Carol Dweck is known for which idea about abilities?",
+     "answer": "Growth mindset",
+     "wrong": [
+      "Fixed income",
+      "Left brain thinking",
+      "Tough love"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "rhwy85wcc440",
+     "question": "Angela Duckworth wrote a book about passion and perseverance for long-term goals. What one-word title did she give it?",
+     "answer": "Grit",
+     "wrong": [
+      "Drive",
+      "Focus",
+      "Hustle"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "osbifnsxc440",
+     "question": "What can happen when you overuse a strength, like being so honest that you hurt someone?",
+     "answer": "It can start to cause problems",
+     "wrong": [
+      "It always gets stronger",
+      "It turns into a new strength",
+      "Nothing, strengths can never be overused"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "uovnycv0c440",
+     "question": "How can using your strengths help in recovery?",
+     "answer": "It builds confidence and a sense of purpose",
+     "wrong": [
+      "It means you never need support",
+      "It makes setbacks impossible",
+      "It replaces the need for coping skills"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "oja35s02c440",
+     "question": "Noticing the strengths you used each day and feeling thankful for them is called what?",
+     "answer": "Gratitude reflection",
+     "wrong": [
+      "Daydreaming",
+      "Bragging",
+      "Multitasking"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
     }
    ]
   },
@@ -4531,8 +4856,33 @@ window.GS_MY_CONTENT = {
       {
        "word": "determined",
        "clue": "Refusing to give up on your goals"
+      },
+      {
+       "word": "hopeful",
+       "clue": "Expecting that good things can happen in the future"
+      },
+      {
+       "word": "loyal",
+       "clue": "Standing by the people who matter to you"
+      },
+      {
+       "word": "curious",
+       "clue": "Wanting to learn and explore new things"
+      },
+      {
+       "word": "generous",
+       "clue": "Freely sharing your time, help or kindness"
+      },
+      {
+       "word": "forgiving",
+       "clue": "Letting go of resentment toward someone who hurt you"
+      },
+      {
+       "word": "disciplined",
+       "clue": "Sticking to healthy habits even when it is hard"
       }
-     ]
+     ],
+     "rev": 2
     }
    ],
    "board": [
@@ -5066,6 +5416,308 @@ window.GS_MY_CONTENT = {
      "id": "4y7inighklch",
      "word": "rising above challenges",
      "level": "hard",
+     "sets": [
+      "Personal Strengths"
+     ]
+    }
+   ],
+   "trivia": [
+    {
+     "id": "habcbrzhc4v8",
+     "question": "What is a personal strength?",
+     "answer": "A quality or skill that helps you do well in life",
+     "wrong": [
+      "A muscle you build at the gym",
+      "Something only famous people have",
+      "A rule you have to follow"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "jakh7bgic4v8",
+     "question": "Which of these is an example of a personal strength?",
+     "answer": "Kindness",
+     "wrong": [
+      "Jealousy",
+      "Stubbornness",
+      "Impatience"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ouo8lhq6c4v8",
+     "question": "What is the word for bouncing back after a hard time?",
+     "answer": "Resilience",
+     "wrong": [
+      "Rejection",
+      "Reaction",
+      "Retirement"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "mlhp9kgqc4v8",
+     "question": "Understanding and sharing the feelings of another person is called what?",
+     "answer": "Empathy",
+     "wrong": [
+      "Boredom",
+      "Apathy",
+      "Envy"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "1lbb1pulc4v8",
+     "question": "Which strength means you keep going even after you fail?",
+     "answer": "Perseverance",
+     "wrong": [
+      "Perfectionism",
+      "Popularity",
+      "Pessimism"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "h3iuzfhdc4v8",
+     "question": "What simple daily habit can help you notice your strengths?",
+     "answer": "Writing in a journal",
+     "wrong": [
+      "Skipping meals",
+      "Avoiding other people",
+      "Staying up late"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "3g33tcsfc4v8",
+     "question": "Who can help you see strengths you might overlook in yourself?",
+     "answer": "A trusted friend or family member",
+     "wrong": [
+      "A stranger on social media",
+      "Nobody, you have to do it alone",
+      "Only a celebrity"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "udlgxfa1c4v8",
+     "question": "Being truthful with yourself and others shows which strength?",
+     "answer": "Honesty",
+     "wrong": [
+      "Pride",
+      "Shyness",
+      "Speed"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "dvtazj4ic4v8",
+     "question": "Which strength helps you stay calm when things take longer than you want?",
+     "answer": "Patience",
+     "wrong": [
+      "Hurry",
+      "Anger",
+      "Boredom"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "crkd67idc4v8",
+     "question": "Finding humor and lightness during hard times is what kind of strength?",
+     "answer": "Humor or playfulness",
+     "wrong": [
+      "Laziness",
+      "Rudeness",
+      "Forgetfulness"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "zkh1l41sc4v8",
+     "question": "In the VIA model, how many character strengths are there?",
+     "answer": "24",
+     "wrong": [
+      "5",
+      "10",
+      "100"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "klwccyfdc4v8",
+     "question": "The VIA strengths are grouped into how many core virtues?",
+     "answer": "6",
+     "wrong": [
+      "2",
+      "12",
+      "20"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "69zfdeyac4v8",
+     "question": "Which of these is one of the six VIA virtues?",
+     "answer": "Courage",
+     "wrong": [
+      "Wealth",
+      "Fame",
+      "Popularity"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "3vk5e7gkc4v8",
+     "question": "Psychologist Martin Seligman is known for helping found which field?",
+     "answer": "Positive psychology",
+     "wrong": [
+      "Sports psychology",
+      "Child psychology",
+      "Forensic psychology"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "56j4yh39c4v8",
+     "question": "Believing you have the ability to succeed at a specific task is called what?",
+     "answer": "Self-efficacy",
+     "wrong": [
+      "Self-pity",
+      "Self-doubt",
+      "Selfishness"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "1rpwqwwvc4v8",
+     "question": "Psychologist Carol Dweck is known for which idea about abilities?",
+     "answer": "Growth mindset",
+     "wrong": [
+      "Fixed income",
+      "Left brain thinking",
+      "Tough love"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ecs08skoc4v8",
+     "question": "Angela Duckworth wrote a book about passion and perseverance for long-term goals. What one-word title did she give it?",
+     "answer": "Grit",
+     "wrong": [
+      "Drive",
+      "Focus",
+      "Hustle"
+     ],
+     "category": "Personal Strengths",
+     "time": 25,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "95kafm6ic4v8",
+     "question": "What can happen when you overuse a strength, like being so honest that you hurt someone?",
+     "answer": "It can start to cause problems",
+     "wrong": [
+      "It always gets stronger",
+      "It turns into a new strength",
+      "Nothing, strengths can never be overused"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "2kdd2lmyc4v8",
+     "question": "How can using your strengths help in recovery?",
+     "answer": "It builds confidence and a sense of purpose",
+     "wrong": [
+      "It means you never need support",
+      "It makes setbacks impossible",
+      "It replaces the need for coping skills"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
+     "sets": [
+      "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ajdbbdp8c4v8",
+     "question": "Noticing the strengths you used each day and feeling thankful for them is called what?",
+     "answer": "Gratitude reflection",
+     "wrong": [
+      "Daydreaming",
+      "Bragging",
+      "Multitasking"
+     ],
+     "category": "Personal Strengths",
+     "time": 20,
      "sets": [
       "Personal Strengths"
      ]
