@@ -197,7 +197,7 @@ App.screens.boardPlay = (el, name) => {
         <div class="cv-host">
           <div class="bq" id="bq"></div>
           <div class="home-actions bq-actions" id="bqActs"></div>
-          <div class="bq-skip" id="bSkipRow"><button class="btn ghost" id="bSkip" title="Leave this clue — no points added or taken away">↩ Back to board <small>no points</small></button></div>
+          <div class="bq-skip" id="bSkipRow"><button class="btn ghost" id="bSkip" title="Leave this clue — no points added or taken away">↩ Back to board</button></div>
         </div>`;
       $('#bX', view).onclick = () => { stop(); close(); };
       // ↩ Back to board: leave the clue with no score change; the tile is used and the next team picks
