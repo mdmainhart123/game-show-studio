@@ -1,5 +1,5 @@
 // 🎯 Quiz Board — categories × point values.
-const CLUE_TIME = 15; // seconds the picking team gets to answer
+const CLUE_TIME = 20; // seconds the picking team gets to answer
 function boardNames() { return [...new Set(App.data.board.map(c => c.board))]; }
 function boardLayout(name) {
   const cats = [];
@@ -168,7 +168,7 @@ App.screens.boardPlay = (el, name) => {
     // ---- the clue itself ----
     // The answer stays HIDDEN while teams are answering (the host checks it on the printed
     // answer key — ☰ Menu → Answer key), so a steal is still a real steal.
-    // 1. The team whose pick it is answers against a 15-second clock: host taps ✓ or ✗.
+    // 1. The team whose pick it is answers against a 20-second clock: host taps ✓ or ✗.
     // 2. ✓ → points, answer shown, they pick next.  ✗ → answer shown, clue over.
     //    Time's up → 🚨 STEAL (only with 2+ teams; otherwise the answer is shown).
     // 3. Steal: tap the team that calls out first; same clock, same ✓ / ✗.

@@ -165,7 +165,7 @@ const Demo = {
       const normal = $$('.tile[data-id]').filter(t => !dd.has(t.dataset.id) && /^[23]00$/.test(t.textContent.replace(/,/g, '')));
       await this.tap(this.pickRandom(normal.length ? normal : $$('.tile[data-id]').filter(t => !dd.has(t.dataset.id))));
       clueTimerPause();
-      await this.say('Read the clue out loud. Only the team whose pick it is answers — they get <b>15 seconds</b>.', 3600);
+      await this.say('Read the clue out loud. Only the team whose pick it is answers — they get <b>20 seconds</b>.', 3600);
       await this.say('The answer stays hidden — check it on your printed answer key (☰ Menu → 🖨️ Answer key).', 3600);
       await this.say('Right? Tap <b>✓ Right</b>. Wrong? Tap <b>✗ Wrong</b> — the answer is shown and the clue is over.', 3600);
       App.boardTimeUp?.();
@@ -173,7 +173,7 @@ const Demo = {
         await this.say('⏰ But if the clock runs out, it\'s a <b>🚨 STEAL!</b> — and nobody has seen the answer yet.', 3600);
         await this.tap($('.bq-st:not(.out)'));
         clueTimerPause();
-        await this.say('Tap whichever team calls out first. They get the same 15 seconds.', 3000);
+        await this.say('Tap whichever team calls out first. They get the same 20 seconds.', 3000);
         await this.tap('#bOk');
         await this.say('✅ They stole it! They earn the points — and they pick next.', 3200);
       } else {
