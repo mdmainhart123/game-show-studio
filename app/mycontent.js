@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-02-strengths-trivia-crossword",
+ "id": "matt-2026-11-03-handling-stress",
  "banks": {
   "standard": {
    "cross": [
@@ -797,6 +797,72 @@ window.GS_MY_CONTENT = {
       }
      ],
      "rev": 2
+    },
+    {
+     "id": "ahftqswtaxp7",
+     "title": "Handling Stress",
+     "entries": [
+      {
+       "word": "stress",
+       "clue": "Your body's automatic response to a demand or threat"
+      },
+      {
+       "word": "breathing",
+       "clue": "Box ______: in 4, hold 4, out 4, hold 4"
+      },
+      {
+       "word": "grounding",
+       "clue": "The 5-4-3-2-1 skill that brings you back to the present"
+      },
+      {
+       "word": "reframe",
+       "clue": "To ask what your stress is telling you that you care about"
+      },
+      {
+       "word": "alarm",
+       "clue": "In the session's analogy, stress is like a smoke ______"
+      },
+      {
+       "word": "toolbox",
+       "clue": "A collection of coping skills to pick from"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that sets off stress or cravings"
+      },
+      {
+       "word": "sponsor",
+       "clue": "A support person in recovery you can call"
+      },
+      {
+       "word": "oxytocin",
+       "clue": "The cuddle hormone"
+      },
+      {
+       "word": "adrenaline",
+       "clue": "A stress hormone that makes your heart race"
+      },
+      {
+       "word": "cortisol",
+       "clue": "A stress hormone that movement helps burn off"
+      },
+      {
+       "word": "walk",
+       "clue": "A short one of these helps you move through stress"
+      },
+      {
+       "word": "social",
+       "clue": "McGonigal says stress can make you more ______"
+      },
+      {
+       "word": "heart",
+       "clue": "It races when you are stressed"
+      },
+      {
+       "word": "calm",
+       "clue": "How box breathing helps your body feel"
+      }
+     ]
     }
    ],
    "board": [
@@ -1599,6 +1665,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Psychologist Martin Seligman is known for founding this branch of psychology that focuses on strengths",
      "answer": "Positive psychology"
+    },
+    {
+     "id": "954scsdmayl4",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 100,
+     "clue": "A racing heart is a sign of stress in this part of you",
+     "answer": "The body"
+    },
+    {
+     "id": "9olpg5x4ayl4",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 200,
+     "clue": "Racing thoughts and worry show up here",
+     "answer": "The mind"
+    },
+    {
+     "id": "qwdqs4esayl4",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 300,
+     "clue": "Snapping at people and pulling away are examples of this kind of stress response",
+     "answer": "Behavior"
+    },
+    {
+     "id": "jbv0tk0cayl4",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 400,
+     "clue": "This tight feeling in your upper body is a common physical sign of stress",
+     "answer": "A tight chest"
+    },
+    {
+     "id": "f90so5cgayl4",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 500,
+     "clue": "Stress often changes these two daily needs: rest and food",
+     "answer": "Sleep and appetite"
+    },
+    {
+     "id": "symdec3qayl4",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 100,
+     "clue": "Inhale 4, hold 4, exhale 4, hold 4",
+     "answer": "Box breathing"
+    },
+    {
+     "id": "5cool0ewayl4",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 200,
+     "clue": "Name 5 things you see, 4 you hear, 3 you can touch, 2 you smell and 1 you taste",
+     "answer": "5-4-3-2-1 grounding"
+    },
+    {
+     "id": "os62e5tvayl4",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 300,
+     "clue": "Even 2 minutes of walking or stretching is this kind of break",
+     "answer": "A movement break"
+    },
+    {
+     "id": "4gy2z3lqayl4",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 400,
+     "clue": "Calling or texting someone you trust is this coping tool",
+     "answer": "Reaching out"
+    },
+    {
+     "id": "0c9jtp2qayl4",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 500,
+     "clue": "Asking \"What is this stress telling me I care about?\"",
+     "answer": "Cognitive reframing"
+    },
+    {
+     "id": "bpl4vje4ayl4",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 100,
+     "clue": "True or false: people in long-term recovery never feel stress",
+     "answer": "False"
+    },
+    {
+     "id": "ql70vgm4ayl4",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 200,
+     "clue": "Stress is one of the most common of these for relapse",
+     "answer": "Triggers"
+    },
+    {
+     "id": "be271n8fayl4",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 300,
+     "clue": "Calling this support person when stressed shows healthy coping",
+     "answer": "Your sponsor"
+    },
+    {
+     "id": "4dtzjgbdayl4",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 400,
+     "clue": "Building a toolbox of skills works better than trying to do this to all stress",
+     "answer": "Avoid it"
+    },
+    {
+     "id": "2bj4ztbbayl4",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 500,
+     "clue": "Naming one coping tool you will use before next group is a concrete one of these",
+     "answer": "Commitment"
+    },
+    {
+     "id": "nn1471sjayl4",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 100,
+     "clue": "The first name of the health psychologist who gave the TED Talk \"How to Make Stress Your Friend\"",
+     "answer": "Kelly"
+    },
+    {
+     "id": "22baag0xayl4",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 200,
+     "clue": "Kelly McGonigal teaches at this California university",
+     "answer": "Stanford"
+    },
+    {
+     "id": "k8o1xva9ayl4",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 300,
+     "clue": "McGonigal says stress can make you more of this, not less",
+     "answer": "Social"
+    },
+    {
+     "id": "b5o76ehpayl4",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 400,
+     "clue": "This hormone, nicknamed the cuddle hormone, is part of the stress response",
+     "answer": "Oxytocin"
+    },
+    {
+     "id": "vjv040r8ayl4",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 500,
+     "clue": "McGonigal found stress hurt people's health most when they believed this about it",
+     "answer": "That it was harmful"
+    },
+    {
+     "id": "usrsa3vvayl4",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 100,
+     "clue": "In the session's analogy, your stress response is like this household device",
+     "answer": "A smoke alarm"
+    },
+    {
+     "id": "xqppkm1yayl4",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 200,
+     "clue": "The smoke alarm question: is there a real fire, or did someone burn this breakfast food",
+     "answer": "Toast"
+    },
+    {
+     "id": "f4h8847wayl4",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 300,
+     "clue": "No single tool works for every job, so we build one of these for coping",
+     "answer": "A toolbox"
+    },
+    {
+     "id": "gql0ecvrayl4",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 400,
+     "clue": "A hammer is great, but it can't tighten one of these",
+     "answer": "A screw"
+    },
+    {
+     "id": "7qez7tzeayl4",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 500,
+     "clue": "The session says stress doesn't mean you are failing. It means you are alive and you do this",
+     "answer": "Care"
     }
    ],
    "wheel": [
@@ -2194,6 +2460,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Personal Strengths"
      ]
+    },
+    {
+     "id": "mcgr1nipaz4i",
+     "category": "Phrase",
+     "phrase": "TAKE A DEEP BREATH",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "noyqulf4az4i",
+     "category": "Phrase",
+     "phrase": "ONE DAY AT A TIME",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "hhfhhqyvaz4i",
+     "category": "Phrase",
+     "phrase": "BREATHE IN AND BREATHE OUT",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "mpaxbacxaz4i",
+     "category": "Phrase",
+     "phrase": "STRESS MEANS YOU CARE",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "7dvnz7zmaz4i",
+     "category": "Phrase",
+     "phrase": "CHECK FOR THE FIRE",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "iifj2hyqaz4i",
+     "category": "Phrase",
+     "phrase": "YOU HAVE THE TOOLS",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "o4qw4b8vaz4i",
+     "category": "Phrase",
+     "phrase": "REACH OUT TO SOMEONE",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "sm3ul4svaz4i",
+     "category": "Phrase",
+     "phrase": "MAKE STRESS YOUR FRIEND",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "czdwsy1caz4i",
+     "category": "Thing",
+     "phrase": "BOX BREATHING",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "tfdvao66az4i",
+     "category": "Thing",
+     "phrase": "A COPING TOOLBOX",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "imy3xlcjaz4i",
+     "category": "Thing",
+     "phrase": "A SMOKE ALARM",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "w0m1pzt5az4i",
+     "category": "Thing",
+     "phrase": "THE CUDDLE HORMONE",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "p47u4ny2az4i",
+     "category": "Thing",
+     "phrase": "A RACING HEART",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "e15ckuybaz4i",
+     "category": "Thing",
+     "phrase": "GROUNDING SKILLS",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "pz1t2glbaz4i",
+     "category": "Event",
+     "phrase": "TAKING A SHORT WALK",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "9gxdbjwoaz4i",
+     "category": "Event",
+     "phrase": "CALLING YOUR SPONSOR",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "4gevud0kaz4i",
+     "category": "Event",
+     "phrase": "STRETCHING YOUR BODY",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "yyi1ppihaz4i",
+     "category": "Event",
+     "phrase": "GROUP CHECK IN",
+     "sets": [
+      "Handling Stress"
+     ]
     }
    ],
    "words": [
@@ -2722,7 +3132,8 @@ window.GS_MY_CONTENT = {
      "word": "TRUST",
      "hint": "Strength",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Handling Stress"
      ]
     },
     {
@@ -2755,6 +3166,119 @@ window.GS_MY_CONTENT = {
      "hint": "Strength",
      "sets": [
       "Personal Strengths"
+     ]
+    },
+    {
+     "id": "epxodyccawlz",
+     "word": "SMILE",
+     "hint": "Things to Do",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "2aly0h9rawlz",
+     "word": "SLEEP",
+     "hint": "Things to Do",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "fyj7d1q5awlz",
+     "word": "PEACE",
+     "hint": "Feelings",
+     "sets": [
+      "Personal Strengths",
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "xiv1s3bvb09e",
+     "word": "PAUSE",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "2qrn6m7lb09e",
+     "word": "RELAX",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "rovmyzc5b09e",
+     "word": "WORRY",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "4j8sujzab09e",
+     "word": "TENSE",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "5nr3z8zrb09e",
+     "word": "ALARM",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "irbt0prbb09e",
+     "word": "QUIET",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "msjs0b7eb09e",
+     "word": "FOCUS",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "h6lbp9zyb09e",
+     "word": "HEART",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "whybrzybb09e",
+     "word": "CHEST",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "tvdwwrm7b09e",
+     "word": "SHARE",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "hudoetnub09e",
+     "word": "CALMS",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
      ]
     }
    ],
@@ -3357,6 +3881,166 @@ window.GS_MY_CONTENT = {
      "level": "hard",
      "sets": [
       "Personal Strengths"
+     ]
+    },
+    {
+     "id": "22j9isy1ay0j",
+     "word": "a smoke alarm",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "s3j7aoajay0j",
+     "word": "a toolbox",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "m0b2k430ay0j",
+     "word": "a hammer",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "93653so5ay0j",
+     "word": "a phone call",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "1fdtc6tmay0j",
+     "word": "a clock",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "f2zd3i0hay0j",
+     "word": "a hug",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "itmol5ibay0j",
+     "word": "a beating heart",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "5dv5mk0kay0j",
+     "word": "a cup of tea",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "zwbgcoktay0j",
+     "word": "going for a walk",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "m9jwmqcsay0j",
+     "word": "a calm lake",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "qdva0x2uay0j",
+     "word": "burnt toast",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "88af051say0j",
+     "word": "taking a deep breath",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "mfsum72hay0j",
+     "word": "stretching",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "uiitkn9say0j",
+     "word": "a headache",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "dl1vwuvbay0j",
+     "word": "counting to four",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "mic4yv6gay0j",
+     "word": "a racing heart",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "zqnmwmq5ay0j",
+     "word": "someone texting a friend",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "zkg2xxsfay0j",
+     "word": "a person meditating",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "6w0z3e93ay0j",
+     "word": "a sleepless night",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "b3si92q0ay0j",
+     "word": "holding a heavy weight",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
      ]
     }
    ],
@@ -4560,6 +5244,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Personal Strengths"
      ]
+    },
+    {
+     "id": "nqnt8ufwazo3",
+     "question": "Stress is best described as what?",
+     "answer": "Your body's automatic response to a demand or threat",
+     "wrong": [
+      "A sign something is permanently wrong with you",
+      "An emotion only some people feel",
+      "A choice people make"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "aip53gleazo3",
+     "question": "Which is a common PHYSICAL sign of stress?",
+     "answer": "Racing heart or tight muscles",
+     "wrong": [
+      "Feeling grateful",
+      "Feeling calm and focused",
+      "Feeling more connected"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "y2ua7z52azo3",
+     "question": "What does \"fight-or-flight\" mean?",
+     "answer": "Your body gears up to respond to a challenge",
+     "wrong": [
+      "You must argue or leave",
+      "Your body shuts down",
+      "Stress only happens in danger"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "z69y0t24azo3",
+     "question": "Which is NOT a common behavior when someone is stressed?",
+     "answer": "Feeling deeply calm and centered",
+     "wrong": [
+      "Pulling away from others",
+      "Being short-tempered",
+      "Trouble sleeping"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "grrul1mjazo3",
+     "question": "Long-term stress without coping tools is linked to what?",
+     "answer": "Higher risk of relapse, illness and burnout",
+     "wrong": [
+      "Better health over time",
+      "No lasting effects",
+      "A stronger immune system"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "2q8gue7wazo3",
+     "question": "Why is stress a common trigger for relapse?",
+     "answer": "It activates brain pathways tied to craving and escape",
+     "wrong": [
+      "People in recovery are weaker",
+      "Programs never teach coping skills",
+      "It only affects people new to recovery"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "bm66aytgazo3",
+     "question": "Someone feels stressed and calls their sponsor. What are they showing?",
+     "answer": "Self-awareness and healthy coping",
+     "wrong": [
+      "Weakness",
+      "Relying too much on others",
+      "Avoiding the problem"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "invnwg65azo3",
+     "question": "Naming things you can see, hear and touch is which coping tool?",
+     "answer": "5-4-3-2-1 grounding",
+     "wrong": [
+      "Journaling",
+      "Cognitive reframing",
+      "Exercise"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "y9sqgup5azo3",
+     "question": "Box breathing means breathing in, holding, breathing out and holding for how many counts each?",
+     "answer": "4",
+     "wrong": [
+      "2",
+      "10",
+      "20"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "he9aafroazo3",
+     "question": "How does box breathing help?",
+     "answer": "It calms the body's nervous system",
+     "wrong": [
+      "It raises adrenaline",
+      "It makes the stressor go away",
+      "It only distracts you"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "hcynyvhsazo3",
+     "question": "Which is the best approach to stress in recovery?",
+     "answer": "Building a toolbox of coping skills",
+     "wrong": [
+      "Avoiding all stress",
+      "Waiting until stress disappears",
+      "Seeing stress as a sign recovery failed"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "v2lnsz9xazo3",
+     "question": "In the session's analogy, your stress response is like what?",
+     "answer": "A smoke alarm",
+     "wrong": [
+      "A light switch",
+      "A broken clock",
+      "A traffic jam"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "ci2num0wazo3",
+     "question": "Kelly McGonigal's TED Talk is called \"How to Make Stress Your...\" what?",
+     "answer": "Friend",
+     "wrong": [
+      "Enemy",
+      "Boss",
+      "Teacher"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "1ihkaa8mazo3",
+     "question": "What did McGonigal find about people who believed stress was harmful?",
+     "answer": "Stress hurt their health more",
+     "wrong": [
+      "They never felt stress",
+      "They lived longer",
+      "Belief made no difference"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "0lyl4onmazo3",
+     "question": "McGonigal says oxytocin is sometimes called the what?",
+     "answer": "Cuddle hormone",
+     "wrong": [
+      "Anger hormone",
+      "Sleep hormone",
+      "Hunger hormone"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "wl9oz4ydazo3",
+     "question": "McGonigal says stress can make people want to do what?",
+     "answer": "Connect with and care for others",
+     "wrong": [
+      "Be alone",
+      "Give up",
+      "Stop asking for help"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "zqoz13c0azo3",
+     "question": "What is the main message of McGonigal's talk?",
+     "answer": "How you think about stress changes how it affects you",
+     "wrong": [
+      "All stress should be eliminated",
+      "Only low-stress people stay healthy",
+      "Only therapy can help with stress"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "7l4nkeq2azo3",
+     "question": "Asking \"What is this stress telling me I care about?\" is called what?",
+     "answer": "Cognitive reframing",
+     "wrong": [
+      "Pretending it is not real",
+      "Blaming others",
+      "Ignoring it"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "6aei8g9mazo3",
+     "question": "Why does even a short walk or stretch help with stress?",
+     "answer": "It helps burn off stress hormones",
+     "wrong": [
+      "It replaces the need for support",
+      "It only works after 30 minutes",
+      "It makes you forget your problems"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "l0ax8rgrazo3",
+     "question": "What is the closing message of the Handling Stress session?",
+     "answer": "Stress is proof you care, and you have tools to handle it",
+     "wrong": [
+      "Stress means recovery is not working",
+      "The goal is zero stress",
+      "Only professionals can manage stress"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
     }
    ]
   },
@@ -4883,6 +5867,72 @@ window.GS_MY_CONTENT = {
       }
      ],
      "rev": 2
+    },
+    {
+     "id": "3nocuclvb0uq",
+     "title": "Handling Stress",
+     "entries": [
+      {
+       "word": "stress",
+       "clue": "Your body's automatic response to a demand or threat"
+      },
+      {
+       "word": "breathing",
+       "clue": "Box ______: in 4, hold 4, out 4, hold 4"
+      },
+      {
+       "word": "grounding",
+       "clue": "The 5-4-3-2-1 skill that brings you back to the present"
+      },
+      {
+       "word": "reframe",
+       "clue": "To ask what your stress is telling you that you care about"
+      },
+      {
+       "word": "alarm",
+       "clue": "In the session's analogy, stress is like a smoke ______"
+      },
+      {
+       "word": "toolbox",
+       "clue": "A collection of coping skills to pick from"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that sets off stress or cravings"
+      },
+      {
+       "word": "sponsor",
+       "clue": "A support person in recovery you can call"
+      },
+      {
+       "word": "oxytocin",
+       "clue": "The cuddle hormone"
+      },
+      {
+       "word": "adrenaline",
+       "clue": "A stress hormone that makes your heart race"
+      },
+      {
+       "word": "cortisol",
+       "clue": "A stress hormone that movement helps burn off"
+      },
+      {
+       "word": "walk",
+       "clue": "A short one of these helps you move through stress"
+      },
+      {
+       "word": "social",
+       "clue": "McGonigal says stress can make you more ______"
+      },
+      {
+       "word": "heart",
+       "clue": "It races when you are stressed"
+      },
+      {
+       "word": "calm",
+       "clue": "How box breathing helps your body feel"
+      }
+     ]
     }
    ],
    "board": [
@@ -5085,6 +6135,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Psychologist Martin Seligman is known for founding this branch of psychology that focuses on strengths",
      "answer": "Positive psychology"
+    },
+    {
+     "id": "r1ot9zw2b1ky",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 100,
+     "clue": "A racing heart is a sign of stress in this part of you",
+     "answer": "The body"
+    },
+    {
+     "id": "qs739na8b1ky",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 200,
+     "clue": "Racing thoughts and worry show up here",
+     "answer": "The mind"
+    },
+    {
+     "id": "z21taea9b1ky",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 300,
+     "clue": "Snapping at people and pulling away are examples of this kind of stress response",
+     "answer": "Behavior"
+    },
+    {
+     "id": "v61tprqzb1ky",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 400,
+     "clue": "This tight feeling in your upper body is a common physical sign of stress",
+     "answer": "A tight chest"
+    },
+    {
+     "id": "g1zym31mb1ky",
+     "board": "Handling Stress",
+     "category": "Body, Mind, Behavior",
+     "value": 500,
+     "clue": "Stress often changes these two daily needs: rest and food",
+     "answer": "Sleep and appetite"
+    },
+    {
+     "id": "kb5k39ksb1ky",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 100,
+     "clue": "Inhale 4, hold 4, exhale 4, hold 4",
+     "answer": "Box breathing"
+    },
+    {
+     "id": "t9r2pxxsb1ky",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 200,
+     "clue": "Name 5 things you see, 4 you hear, 3 you can touch, 2 you smell and 1 you taste",
+     "answer": "5-4-3-2-1 grounding"
+    },
+    {
+     "id": "eys2yqhub1ky",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 300,
+     "clue": "Even 2 minutes of walking or stretching is this kind of break",
+     "answer": "A movement break"
+    },
+    {
+     "id": "h3dqrs4vb1ky",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 400,
+     "clue": "Calling or texting someone you trust is this coping tool",
+     "answer": "Reaching out"
+    },
+    {
+     "id": "wo92yqdkb1ky",
+     "board": "Handling Stress",
+     "category": "Coping Toolbox",
+     "value": 500,
+     "clue": "Asking \"What is this stress telling me I care about?\"",
+     "answer": "Cognitive reframing"
+    },
+    {
+     "id": "6gkvoyd3b1ky",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 100,
+     "clue": "True or false: people in long-term recovery never feel stress",
+     "answer": "False"
+    },
+    {
+     "id": "9ahzm707b1ky",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 200,
+     "clue": "Stress is one of the most common of these for relapse",
+     "answer": "Triggers"
+    },
+    {
+     "id": "gfsqyfnjb1ky",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 300,
+     "clue": "Calling this support person when stressed shows healthy coping",
+     "answer": "Your sponsor"
+    },
+    {
+     "id": "1jq6uyfub1ky",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 400,
+     "clue": "Building a toolbox of skills works better than trying to do this to all stress",
+     "answer": "Avoid it"
+    },
+    {
+     "id": "495cqau0b1ky",
+     "board": "Handling Stress",
+     "category": "Stress in Recovery",
+     "value": 500,
+     "clue": "Naming one coping tool you will use before next group is a concrete one of these",
+     "answer": "Commitment"
+    },
+    {
+     "id": "2xymwaivb1ky",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 100,
+     "clue": "The first name of the health psychologist who gave the TED Talk \"How to Make Stress Your Friend\"",
+     "answer": "Kelly"
+    },
+    {
+     "id": "mb86vd4zb1ky",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 200,
+     "clue": "Kelly McGonigal teaches at this California university",
+     "answer": "Stanford"
+    },
+    {
+     "id": "8n7ufjqxb1ky",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 300,
+     "clue": "McGonigal says stress can make you more of this, not less",
+     "answer": "Social"
+    },
+    {
+     "id": "rb0ubnv0b1ky",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 400,
+     "clue": "This hormone, nicknamed the cuddle hormone, is part of the stress response",
+     "answer": "Oxytocin"
+    },
+    {
+     "id": "eotqxeurb1ky",
+     "board": "Handling Stress",
+     "category": "Make Stress Your Friend",
+     "value": 500,
+     "clue": "McGonigal found stress hurt people's health most when they believed this about it",
+     "answer": "That it was harmful"
+    },
+    {
+     "id": "udqbprywb1ky",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 100,
+     "clue": "In the session's analogy, your stress response is like this household device",
+     "answer": "A smoke alarm"
+    },
+    {
+     "id": "cyc94iy8b1ky",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 200,
+     "clue": "The smoke alarm question: is there a real fire, or did someone burn this breakfast food",
+     "answer": "Toast"
+    },
+    {
+     "id": "nmij3sutb1ky",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 300,
+     "clue": "No single tool works for every job, so we build one of these for coping",
+     "answer": "A toolbox"
+    },
+    {
+     "id": "qd2zyv8rb1ky",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 400,
+     "clue": "A hammer is great, but it can't tighten one of these",
+     "answer": "A screw"
+    },
+    {
+     "id": "ol842gw2b1ky",
+     "board": "Handling Stress",
+     "category": "Smoke Alarms and Toolboxes",
+     "value": 500,
+     "clue": "The session says stress doesn't mean you are failing. It means you are alive and you do this",
+     "answer": "Care"
     }
    ],
    "wheel": [
@@ -5215,6 +6465,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Personal Strengths"
      ]
+    },
+    {
+     "id": "e3gmu2h3awm3",
+     "category": "Phrase",
+     "phrase": "ONE DAY AT A TIME",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "9c02sfqxawm3",
+     "category": "Phrase",
+     "phrase": "TAKE A DEEP BREATH",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "kyi9mmycawm3",
+     "category": "Coping Skill",
+     "phrase": "BOX BREATHING",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "mjdmeqq5b24c",
+     "category": "Phrase",
+     "phrase": "BREATHE IN AND BREATHE OUT",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "t0fb58yrb24c",
+     "category": "Phrase",
+     "phrase": "STRESS MEANS YOU CARE",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "5sqmwl4ab24c",
+     "category": "Phrase",
+     "phrase": "CHECK FOR THE FIRE",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "rr4lnvw3b24c",
+     "category": "Phrase",
+     "phrase": "YOU HAVE THE TOOLS",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "aiwyj3sob24c",
+     "category": "Phrase",
+     "phrase": "REACH OUT TO SOMEONE",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "jfch0fxyb24c",
+     "category": "Phrase",
+     "phrase": "MAKE STRESS YOUR FRIEND",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "s5gg65udb24c",
+     "category": "Thing",
+     "phrase": "A COPING TOOLBOX",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "c4ts2kq9b24c",
+     "category": "Thing",
+     "phrase": "A SMOKE ALARM",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "fc1ooicyb24c",
+     "category": "Thing",
+     "phrase": "THE CUDDLE HORMONE",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "c4uc0ubdb24c",
+     "category": "Thing",
+     "phrase": "A RACING HEART",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "hgf5jtjzb24c",
+     "category": "Thing",
+     "phrase": "GROUNDING SKILLS",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "sdssmxgfb24c",
+     "category": "Event",
+     "phrase": "TAKING A SHORT WALK",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "vihfwpvkb24c",
+     "category": "Event",
+     "phrase": "CALLING YOUR SPONSOR",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "veri4cslb24c",
+     "category": "Event",
+     "phrase": "STRETCHING YOUR BODY",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "00gp0mqhb24c",
+     "category": "Event",
+     "phrase": "GROUP CHECK IN",
+     "sets": [
+      "Handling Stress"
+     ]
     }
    ],
    "words": [
@@ -5296,6 +6690,128 @@ window.GS_MY_CONTENT = {
      "hint": "Strength",
      "sets": [
       "Personal Strengths"
+     ]
+    },
+    {
+     "id": "asg61tbsawmc",
+     "word": "PEACE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths",
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "yopmzqtvawmc",
+     "word": "QUIET",
+     "hint": "Feeling",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "xm69tyj5awmc",
+     "word": "RELAX",
+     "hint": "Self-care",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "utg5of9mawmc",
+     "word": "SLEEP",
+     "hint": "Self-care",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "kisa6hxwawmc",
+     "word": "PAUSE",
+     "hint": "Self-care",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "l0n3npfcawmc",
+     "word": "SMILE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "hv3nvq39awmc",
+     "word": "SHARE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "xdlw5r3oawmc",
+     "word": "TRUST",
+     "hint": "Connection",
+     "sets": [
+      "Personal Strengths",
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "svec6b6hawmc",
+     "word": "HEART",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "pcq0gomcawmc",
+     "word": "FOCUS",
+     "hint": "Coping skill",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "tllze7vwb36u",
+     "word": "WORRY",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "rynrj59zb36u",
+     "word": "TENSE",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "qurb86l4b36u",
+     "word": "ALARM",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "5vvzlu09b36u",
+     "word": "CHEST",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "0v1qbnrgb36u",
+     "word": "CALMS",
+     "hint": "Handling Stress",
+     "sets": [
+      "Handling Stress"
      ]
     }
    ],
@@ -5418,6 +6934,166 @@ window.GS_MY_CONTENT = {
      "level": "hard",
      "sets": [
       "Personal Strengths"
+     ]
+    },
+    {
+     "id": "hlmfgkycawme",
+     "word": "going for a walk",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "3vxffa7cawme",
+     "word": "stretching",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "c75f73zbb11z",
+     "word": "a smoke alarm",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "9wkt6wxvb11z",
+     "word": "a toolbox",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "c52ct1kqb11z",
+     "word": "a hammer",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "vzutroyvb11z",
+     "word": "a phone call",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "psiobi4tb11z",
+     "word": "a clock",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "x5x8sp8xb11z",
+     "word": "a hug",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "ukfeaxrcb11z",
+     "word": "a beating heart",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "twf14panb11z",
+     "word": "a cup of tea",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "jr9f1iqcb11z",
+     "word": "a calm lake",
+     "level": "easy",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "2ecz00tgb11z",
+     "word": "burnt toast",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "ejbl8kk5b11z",
+     "word": "taking a deep breath",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "h5f42g0zb11z",
+     "word": "a headache",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "rlav3c2wb11z",
+     "word": "counting to four",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "0h10i0brb11z",
+     "word": "a racing heart",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "iot2chwcb11z",
+     "word": "someone texting a friend",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "fgoi0u8qb11z",
+     "word": "a person meditating",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "cb1uiiiab11z",
+     "word": "a sleepless night",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "frypiuneb11z",
+     "word": "holding a heavy weight",
+     "level": "medium",
+     "sets": [
+      "Handling Stress"
      ]
     }
    ],
@@ -5720,6 +7396,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Personal Strengths"
+     ]
+    },
+    {
+     "id": "ve76h69kb2nc",
+     "question": "Stress is best described as what?",
+     "answer": "Your body's automatic response to a demand or threat",
+     "wrong": [
+      "A sign something is permanently wrong with you",
+      "An emotion only some people feel",
+      "A choice people make"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "olbv9xl6b2nc",
+     "question": "Which is a common PHYSICAL sign of stress?",
+     "answer": "Racing heart or tight muscles",
+     "wrong": [
+      "Feeling grateful",
+      "Feeling calm and focused",
+      "Feeling more connected"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "ws0vtztub2nc",
+     "question": "What does \"fight-or-flight\" mean?",
+     "answer": "Your body gears up to respond to a challenge",
+     "wrong": [
+      "You must argue or leave",
+      "Your body shuts down",
+      "Stress only happens in danger"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "33zp5249b2nc",
+     "question": "Which is NOT a common behavior when someone is stressed?",
+     "answer": "Feeling deeply calm and centered",
+     "wrong": [
+      "Pulling away from others",
+      "Being short-tempered",
+      "Trouble sleeping"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "gqq7jecxb2nc",
+     "question": "Long-term stress without coping tools is linked to what?",
+     "answer": "Higher risk of relapse, illness and burnout",
+     "wrong": [
+      "Better health over time",
+      "No lasting effects",
+      "A stronger immune system"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "4brn58aub2nc",
+     "question": "Why is stress a common trigger for relapse?",
+     "answer": "It activates brain pathways tied to craving and escape",
+     "wrong": [
+      "People in recovery are weaker",
+      "Programs never teach coping skills",
+      "It only affects people new to recovery"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "c3u8p0vdb2nc",
+     "question": "Someone feels stressed and calls their sponsor. What are they showing?",
+     "answer": "Self-awareness and healthy coping",
+     "wrong": [
+      "Weakness",
+      "Relying too much on others",
+      "Avoiding the problem"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "1s8alx67b2nc",
+     "question": "Naming things you can see, hear and touch is which coping tool?",
+     "answer": "5-4-3-2-1 grounding",
+     "wrong": [
+      "Journaling",
+      "Cognitive reframing",
+      "Exercise"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "nyvmni73b2nc",
+     "question": "Box breathing means breathing in, holding, breathing out and holding for how many counts each?",
+     "answer": "4",
+     "wrong": [
+      "2",
+      "10",
+      "20"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "3nxbvveib2nc",
+     "question": "How does box breathing help?",
+     "answer": "It calms the body's nervous system",
+     "wrong": [
+      "It raises adrenaline",
+      "It makes the stressor go away",
+      "It only distracts you"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "qhg5x93pb2nc",
+     "question": "Which is the best approach to stress in recovery?",
+     "answer": "Building a toolbox of coping skills",
+     "wrong": [
+      "Avoiding all stress",
+      "Waiting until stress disappears",
+      "Seeing stress as a sign recovery failed"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "uboxpbpnb2nc",
+     "question": "In the session's analogy, your stress response is like what?",
+     "answer": "A smoke alarm",
+     "wrong": [
+      "A light switch",
+      "A broken clock",
+      "A traffic jam"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "s8gu4pqfb2nc",
+     "question": "Kelly McGonigal's TED Talk is called \"How to Make Stress Your...\" what?",
+     "answer": "Friend",
+     "wrong": [
+      "Enemy",
+      "Boss",
+      "Teacher"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "8bc5ttjvb2nc",
+     "question": "What did McGonigal find about people who believed stress was harmful?",
+     "answer": "Stress hurt their health more",
+     "wrong": [
+      "They never felt stress",
+      "They lived longer",
+      "Belief made no difference"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "sg82f5b2b2nc",
+     "question": "McGonigal says oxytocin is sometimes called the what?",
+     "answer": "Cuddle hormone",
+     "wrong": [
+      "Anger hormone",
+      "Sleep hormone",
+      "Hunger hormone"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "npru78jrb2nc",
+     "question": "McGonigal says stress can make people want to do what?",
+     "answer": "Connect with and care for others",
+     "wrong": [
+      "Be alone",
+      "Give up",
+      "Stop asking for help"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "9nz6vtpfb2nc",
+     "question": "What is the main message of McGonigal's talk?",
+     "answer": "How you think about stress changes how it affects you",
+     "wrong": [
+      "All stress should be eliminated",
+      "Only low-stress people stay healthy",
+      "Only therapy can help with stress"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "kca55ow4b2nc",
+     "question": "Asking \"What is this stress telling me I care about?\" is called what?",
+     "answer": "Cognitive reframing",
+     "wrong": [
+      "Pretending it is not real",
+      "Blaming others",
+      "Ignoring it"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "zvdp33mnb2nc",
+     "question": "Why does even a short walk or stretch help with stress?",
+     "answer": "It helps burn off stress hormones",
+     "wrong": [
+      "It replaces the need for support",
+      "It only works after 30 minutes",
+      "It makes you forget your problems"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
+     ]
+    },
+    {
+     "id": "ml12xsahb2nc",
+     "question": "What is the closing message of the Handling Stress session?",
+     "answer": "Stress is proof you care, and you have tools to handle it",
+     "wrong": [
+      "Stress means recovery is not working",
+      "The goal is zero stress",
+      "Only professionals can manage stress"
+     ],
+     "category": "Handling Stress",
+     "time": 20,
+     "sets": [
+      "Handling Stress"
      ]
     }
    ]
