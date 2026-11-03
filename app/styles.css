@@ -1687,3 +1687,7 @@ body.theme-recovery .cw-opts { background: #1f4c49; } body.theme-classic .cw-opt
 @media (max-height: 500px) { .cw-top { display: flex; grid-column: 2; grid-row: 4; } .cw-top .cw-title, .cw-top .cw-prog, .cw-top .cw-time { display: none; } }
 
 .gf-files { margin-top: 22px; padding-top: 16px; justify-content: center; }
+/* Quiz Board: ↩ Back to board (no points) under the host controls */
+.bq-skip { display: flex; justify-content: center; margin-top: 10px; }
+.bq-skip .btn { font-size: 1.05rem; padding: 10px 22px; }
+.bq-skip .btn small { opacity: .75; margin-left: 6px; font-size: .8em; }

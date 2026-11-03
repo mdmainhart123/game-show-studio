@@ -197,8 +197,12 @@ App.screens.boardPlay = (el, name) => {
         <div class="cv-host">
           <div class="bq" id="bq"></div>
           <div class="home-actions bq-actions" id="bqActs"></div>
+          <div class="bq-skip" id="bSkipRow"><button class="btn ghost" id="bSkip" title="Leave this clue — no points added or taken away">↩ Back to board <small>no points</small></button></div>
         </div>`;
       $('#bX', view).onclick = () => { stop(); close(); };
+      // ↩ Back to board: leave the clue with no score change; the tile is used and the next team picks
+      $('#bSkip', view).onclick = () => { stop(); close(); };
+      const clueOver = () => { $('#bX', view)?.remove(); $('#bSkipRow', view)?.remove(); };
       const bq = $('#bq', view);
       const acts = (html, hs = {}) => { $('#bqActs', view).innerHTML = html; Object.entries(hs).forEach(([id, fn]) => { const b = $('#' + id, view); if (b) b.onclick = fn; }); };
       const stop = () => clearInterval(timerId);
@@ -257,7 +261,7 @@ App.screens.boardPlay = (el, name) => {
         stop(); phase = 'done';
         winner = t.id;
         banner(false);
-        Scores.add(t.id, plus); Sfx.correct(); showAns();
+        Scores.add(t.id, plus); Sfx.correct(); showAns(); clueOver();
         if (ddInfo) confetti(1800);
         outcome(true, t, `+${fmt(plus)}`);
         acts('');
@@ -276,7 +280,7 @@ App.screens.boardPlay = (el, name) => {
         if (minus) Scores.add(t.id, -minus);
         Sfx.wrong();
         banner(false); Scores.setActive(null);
-        $('#bX', view)?.remove();
+        clueOver();
         showAns(); // no steal, so the clue is over — show the answer
         outcome(false, t, minus ? `−${fmt(minus)}` : '');
         acts(`<button class="btn lg pink" id="bBack">Back to board ↩</button>`, { bBack: close });
@@ -318,7 +322,7 @@ App.screens.boardPlay = (el, name) => {
         banner(false);
         Scores.setActive(null);
         showAns(); Sfx.reveal();
-        $('#bX', view)?.remove();
+        clueOver();
         bq.innerHTML = `<div class="bq-out bad"><b>${why || 'No points this time'}</b></div>`;
         acts(`<button class="btn lg pink" id="bBack">Back to board ↩</button>`, { bBack: close });
       }
