@@ -1,4 +1,4 @@
-const APP_VERSION = '20261104-0830'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261104-0835'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -96,6 +96,11 @@ const App = {
     d.bank ||= 'standard';
     Object.entries(c.banks || {}).forEach(([bank, set]) => {
       const tgt = bank === d.bank ? d : ((d.banks ||= {})[bank] ||= {});
+      // a built-in set that was renamed: rename it everywhere it already is (set, board, puzzle, trivia category)
+      Object.entries(c.renameSets || {}).forEach(([from, to]) => KEYS.forEach(k => (tgt[k] || []).forEach(x => {
+        if (x.sets && x.sets.includes(from)) x.sets = [...new Set(x.sets.map(s => s === from ? to : s))];
+        ['board', 'title', 'category'].forEach(f => { if (x[f] === from) x[f] = to; });
+      })));
       KEYS.forEach(k => {
         const key = (GameFiles.info[k] && GameFiles.info[k].key) || sig;
         const list = (tgt[k] ||= []), byId = new Map(list.map(x => [x.id, x])), byKey = new Map(list.map(x => [key(x), x]));
@@ -117,6 +122,7 @@ const App = {
         });
       });
     });
+    Object.entries(c.renameSets || {}).forEach(([from, to]) => { const sp = d.settings && d.settings.setPick; if (sp) Object.keys(sp).forEach(k => { if (sp[k] === from) sp[k] = to; }); });
     d.myContentApplied = c.id;
     return n ? { name: 'Your saved material', summary: `${n} item${n === 1 ? '' : 's'} from your built-in collection` } : null;
   },

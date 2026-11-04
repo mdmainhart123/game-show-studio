@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-04-how-elections-work",
+ "id": "matt-2026-11-04-elections",
  "banks": {
   "standard": {
    "cross": [
@@ -866,7 +866,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "lqpk9uqi0lpo",
-     "title": "How Elections Work",
+     "title": "Elections",
      "entries": [
       {
        "word": "ballot",
@@ -1934,7 +1934,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "r0efdhgc0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 100,
      "clue": "To vote for a choice on a paper ballot, you fill in this shape",
@@ -1942,7 +1942,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "w725lecq0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 200,
      "clue": "True or false: you must vote in every race for your ballot to count",
@@ -1950,7 +1950,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "fys1xmic0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 300,
      "clue": "The ballot says not to do these two things to a mistake, or your vote may not count",
@@ -1958,7 +1958,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "vic24ars0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 400,
      "clue": "To vote for someone not printed on the ballot, you use this",
@@ -1966,7 +1966,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "47m9l6ac0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 500,
      "clue": "\"Vote for One\" tells you this about a race",
@@ -1974,7 +1974,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "bs0kbmui0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 100,
      "clue": "The place you go to vote on Election Day",
@@ -1982,7 +1982,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "1vhc44tj0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 200,
      "clue": "The helpers who check you in and hand out ballots",
@@ -1990,7 +1990,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "xa31hu8h0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 300,
      "clue": "Your small voting area, often listed by ward and district",
@@ -1998,7 +1998,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "hvyh8qd20mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 400,
      "clue": "Election Day for a general election always falls on this day of the week",
@@ -2006,7 +2006,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "gqcg31fw0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 500,
      "clue": "In Pennsylvania, this poll worker is in charge of the polling place",
@@ -2014,7 +2014,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "7lvkam1o0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 100,
      "clue": "The top state office on Pennsylvania's ballot, the head of the state government",
@@ -2022,7 +2022,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "3adkut2k0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 200,
      "clue": "In Pennsylvania, this person runs on the same team as the Governor",
@@ -2030,7 +2030,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "2czrwrq10mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 300,
      "clue": "A U.S. Representative in Congress serves a term of this many years",
@@ -2038,7 +2038,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "zz50ihwo0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 400,
      "clue": "A Pennsylvania state Senator serves a term of this many years",
@@ -2046,7 +2046,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "krzriwxe0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 500,
      "clue": "Pennsylvania's state legislature, made up of a House and a Senate, is called this",
@@ -2054,7 +2054,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "b851hhcr0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 100,
      "clue": "A machine that helps you mark choices on a touchscreen, then prints a paper ballot",
@@ -2062,7 +2062,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "1rwpo0eu0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 200,
      "clue": "You feed your finished ballot into this machine at the polls",
@@ -2070,7 +2070,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "yc8uuhfi0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 300,
      "clue": "After it is scanned, your ballot drops into this",
@@ -2078,7 +2078,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "5iyufqsi0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 400,
      "clue": "When polls close, the scanner can print its results on this",
@@ -2086,7 +2086,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "oo2jo4wu0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 500,
      "clue": "Large stacks of mail-in ballots are counted at this kind of location",
@@ -2094,7 +2094,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "j83kryfd0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 100,
      "clue": "A ballot question is answered with one of these two words",
@@ -2102,7 +2102,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "35gjh75s0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 200,
      "clue": "Paper ballots are kept so the count can be checked in these, along with recounts",
@@ -2110,7 +2110,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "4t2agukj0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 300,
      "clue": "Counting the votes again, often when a race is very close",
@@ -2118,7 +2118,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "55tx8soq0mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 400,
      "clue": "A ballot you vote at the polls when there is a question about your eligibility, checked later",
@@ -2126,7 +2126,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "hzus5uw90mje",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 500,
      "clue": "Election workers review ballots that a machine cannot read clearly, such as some write-ins. This review is called this",
@@ -2876,7 +2876,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "EVERY VOTE COUNTS",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2884,7 +2884,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "FILL IN THE OVAL",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2892,7 +2892,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "THANK YOU FOR VOTING",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2900,7 +2900,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "VOTE FOR ONE",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2908,7 +2908,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "ASK FOR A NEW BALLOT",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2916,7 +2916,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "YOUR VOICE MATTERS",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2924,7 +2924,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A SAMPLE BALLOT",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2932,7 +2932,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A POLLING PLACE",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2940,7 +2940,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A PAPER BALLOT",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2948,7 +2948,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A BALLOT SCANNER",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2956,7 +2956,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A WRITE IN VOTE",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2964,7 +2964,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A BALLOT QUESTION",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2972,7 +2972,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "THE BALLOT BOX",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2980,7 +2980,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "ELECTION DAY",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2988,7 +2988,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "VOTING BY MAIL",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -2996,7 +2996,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "COUNTING THE VOTES",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3004,7 +3004,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "CHECKING IN AT THE POLLS",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3012,7 +3012,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "A RECOUNT",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     }
    ],
@@ -3696,7 +3696,7 @@ window.GS_MY_CONTENT = {
      "word": "PARTY",
      "hint": "Things to Do",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3704,7 +3704,7 @@ window.GS_MY_CONTENT = {
      "word": "JUDGE",
      "hint": "Jobs",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3712,7 +3712,7 @@ window.GS_MY_CONTENT = {
      "word": "MAYOR",
      "hint": "Jobs",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3720,7 +3720,7 @@ window.GS_MY_CONTENT = {
      "word": "VOTER",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3728,7 +3728,7 @@ window.GS_MY_CONTENT = {
      "word": "POLLS",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3736,7 +3736,7 @@ window.GS_MY_CONTENT = {
      "word": "PAPER",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3744,7 +3744,7 @@ window.GS_MY_CONTENT = {
      "word": "COUNT",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3752,7 +3752,7 @@ window.GS_MY_CONTENT = {
      "word": "AUDIT",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3760,7 +3760,7 @@ window.GS_MY_CONTENT = {
      "word": "CIVIC",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3768,7 +3768,7 @@ window.GS_MY_CONTENT = {
      "word": "BOOTH",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3776,7 +3776,7 @@ window.GS_MY_CONTENT = {
      "word": "STATE",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3784,7 +3784,7 @@ window.GS_MY_CONTENT = {
      "word": "TERMS",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3792,7 +3792,7 @@ window.GS_MY_CONTENT = {
      "word": "VOICE",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3800,7 +3800,7 @@ window.GS_MY_CONTENT = {
      "word": "LOCAL",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -3808,7 +3808,7 @@ window.GS_MY_CONTENT = {
      "word": "ELECT",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     }
    ],
@@ -4578,7 +4578,7 @@ window.GS_MY_CONTENT = {
      "word": "a ballot box",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4586,7 +4586,7 @@ window.GS_MY_CONTENT = {
      "word": "an I voted sticker",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4594,7 +4594,7 @@ window.GS_MY_CONTENT = {
      "word": "a pencil",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4602,7 +4602,7 @@ window.GS_MY_CONTENT = {
      "word": "a voting booth",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4610,7 +4610,7 @@ window.GS_MY_CONTENT = {
      "word": "a flag",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4618,7 +4618,7 @@ window.GS_MY_CONTENT = {
      "word": "a calendar",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4626,7 +4626,7 @@ window.GS_MY_CONTENT = {
      "word": "a check mark",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4634,7 +4634,7 @@ window.GS_MY_CONTENT = {
      "word": "a line of people",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4642,7 +4642,7 @@ window.GS_MY_CONTENT = {
      "word": "a ballot",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4650,7 +4650,7 @@ window.GS_MY_CONTENT = {
      "word": "a mailbox",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4658,7 +4658,7 @@ window.GS_MY_CONTENT = {
      "word": "filling in an oval",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4666,7 +4666,7 @@ window.GS_MY_CONTENT = {
      "word": "mailing a ballot",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4674,7 +4674,7 @@ window.GS_MY_CONTENT = {
      "word": "a poll worker",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4682,7 +4682,7 @@ window.GS_MY_CONTENT = {
      "word": "counting votes",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4690,7 +4690,7 @@ window.GS_MY_CONTENT = {
      "word": "a sign that says vote here",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4698,7 +4698,7 @@ window.GS_MY_CONTENT = {
      "word": "a voter wearing headphones",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4706,7 +4706,7 @@ window.GS_MY_CONTENT = {
      "word": "a ballot scanner",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4714,7 +4714,7 @@ window.GS_MY_CONTENT = {
      "word": "a town hall",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4722,7 +4722,7 @@ window.GS_MY_CONTENT = {
      "word": "a winner giving a speech",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -4730,7 +4730,7 @@ window.GS_MY_CONTENT = {
      "word": "shaking hands",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     }
    ],
@@ -6244,10 +6244,10 @@ window.GS_MY_CONTENT = {
       "Put a check mark anywhere",
       "Cross out the names you do not want"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6259,10 +6259,10 @@ window.GS_MY_CONTENT = {
       "Erase it hard",
       "Write a note in the margin"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6274,10 +6274,10 @@ window.GS_MY_CONTENT = {
       "Only in odd-numbered years",
       "Only if you vote by mail"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6289,10 +6289,10 @@ window.GS_MY_CONTENT = {
       "Signing your name on the ballot",
       "Voting by mail"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6304,10 +6304,10 @@ window.GS_MY_CONTENT = {
       "Your district office",
       "Your town hall meeting"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6319,10 +6319,10 @@ window.GS_MY_CONTENT = {
       "Campaign staff",
       "Candidates"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6334,10 +6334,10 @@ window.GS_MY_CONTENT = {
       "A country",
       "A party"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6349,10 +6349,10 @@ window.GS_MY_CONTENT = {
       "Saturday",
       "Sunday"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6364,10 +6364,10 @@ window.GS_MY_CONTENT = {
       "21",
       "25"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6379,10 +6379,10 @@ window.GS_MY_CONTENT = {
       "By picking a candidate",
       "With a number from 1 to 10"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6394,10 +6394,10 @@ window.GS_MY_CONTENT = {
       "6 years",
       "8 years"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6409,10 +6409,10 @@ window.GS_MY_CONTENT = {
       "6 years",
       "For life"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6424,10 +6424,10 @@ window.GS_MY_CONTENT = {
       "Only by the state legislature",
       "By the county board"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6439,10 +6439,10 @@ window.GS_MY_CONTENT = {
       "Chooses candidates for you",
       "Mails your ballot for you"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6454,10 +6454,10 @@ window.GS_MY_CONTENT = {
       "Calling a poll worker",
       "Recording your voice"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6469,10 +6469,10 @@ window.GS_MY_CONTENT = {
       "Throw your ballot away",
       "Add extra races"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6484,10 +6484,10 @@ window.GS_MY_CONTENT = {
       "At the post office",
       "At the polling place only"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6499,10 +6499,10 @@ window.GS_MY_CONTENT = {
       "To send back to voters",
       "They are thrown away right after voting"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6514,10 +6514,10 @@ window.GS_MY_CONTENT = {
       "A campaign",
       "A debate"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -6529,10 +6529,10 @@ window.GS_MY_CONTENT = {
       "Yes, but only in the afternoon",
       "Only if you bring a friend"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     }
    ]
@@ -6926,7 +6926,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "20zip6i10on9",
-     "title": "How Elections Work",
+     "title": "Elections",
      "entries": [
       {
        "word": "ballot",
@@ -7394,7 +7394,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "dj4am9rv0pco",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 100,
      "clue": "To vote for a choice on a paper ballot, you fill in this shape",
@@ -7402,7 +7402,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "a8e5nf2g0pco",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 200,
      "clue": "True or false: you must vote in every race for your ballot to count",
@@ -7410,7 +7410,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "y5vdzarm0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 300,
      "clue": "The ballot says not to do these two things to a mistake, or your vote may not count",
@@ -7418,7 +7418,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "0u4cyn360pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 400,
      "clue": "To vote for someone not printed on the ballot, you use this",
@@ -7426,7 +7426,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "wa7kkzj70pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Reading Your Ballot",
      "value": 500,
      "clue": "\"Vote for One\" tells you this about a race",
@@ -7434,7 +7434,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "h02d7px60pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 100,
      "clue": "The place you go to vote on Election Day",
@@ -7442,7 +7442,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "ubu4jv4i0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 200,
      "clue": "The helpers who check you in and hand out ballots",
@@ -7450,7 +7450,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "3sln9qsv0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 300,
      "clue": "Your small voting area, often listed by ward and district",
@@ -7458,7 +7458,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "auu1oh180pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 400,
      "clue": "Election Day for a general election always falls on this day of the week",
@@ -7466,7 +7466,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "6gwu7wzn0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "At the Polls",
      "value": 500,
      "clue": "In Pennsylvania, this poll worker is in charge of the polling place",
@@ -7474,7 +7474,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "t46bmsyr0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 100,
      "clue": "The top state office on Pennsylvania's ballot, the head of the state government",
@@ -7482,7 +7482,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "fbaqpwwk0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 200,
      "clue": "In Pennsylvania, this person runs on the same team as the Governor",
@@ -7490,7 +7490,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "2m758tth0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 300,
      "clue": "A U.S. Representative in Congress serves a term of this many years",
@@ -7498,7 +7498,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "9257c6iv0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 400,
      "clue": "A Pennsylvania state Senator serves a term of this many years",
@@ -7506,7 +7506,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "wsfhvojt0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Races and Terms",
      "value": 500,
      "clue": "Pennsylvania's state legislature, made up of a House and a Senate, is called this",
@@ -7514,7 +7514,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "pd4cmm970pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 100,
      "clue": "A machine that helps you mark choices on a touchscreen, then prints a paper ballot",
@@ -7522,7 +7522,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "41a3d8zt0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 200,
      "clue": "You feed your finished ballot into this machine at the polls",
@@ -7530,7 +7530,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "viqwph1m0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 300,
      "clue": "After it is scanned, your ballot drops into this",
@@ -7538,7 +7538,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "q5i81z820pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 400,
      "clue": "When polls close, the scanner can print its results on this",
@@ -7546,7 +7546,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "t2cg2m870pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "A Ballot's Journey",
      "value": 500,
      "clue": "Large stacks of mail-in ballots are counted at this kind of location",
@@ -7554,7 +7554,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "5xzsnxnv0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 100,
      "clue": "A ballot question is answered with one of these two words",
@@ -7562,7 +7562,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "crlaw9yu0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 200,
      "clue": "Paper ballots are kept so the count can be checked in these, along with recounts",
@@ -7570,7 +7570,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "dph8hfxp0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 300,
      "clue": "Counting the votes again, often when a race is very close",
@@ -7578,7 +7578,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "jebom6ll0pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 400,
      "clue": "A ballot you vote at the polls when there is a question about your eligibility, checked later",
@@ -7586,7 +7586,7 @@ window.GS_MY_CONTENT = {
     },
     {
      "id": "esz1kut70pcp",
-     "board": "How Elections Work",
+     "board": "Elections",
      "category": "Checks and Questions",
      "value": 500,
      "clue": "Election workers review ballots that a machine cannot read clearly, such as some write-ins. This review is called this",
@@ -7871,7 +7871,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "EVERY VOTE COUNTS",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7879,7 +7879,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "FILL IN THE OVAL",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7887,7 +7887,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "THANK YOU FOR VOTING",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7895,7 +7895,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "VOTE FOR ONE",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7903,7 +7903,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "ASK FOR A NEW BALLOT",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7911,7 +7911,7 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "YOUR VOICE MATTERS",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7919,7 +7919,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A SAMPLE BALLOT",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7927,7 +7927,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A POLLING PLACE",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7935,7 +7935,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A PAPER BALLOT",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7943,7 +7943,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A BALLOT SCANNER",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7951,7 +7951,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A WRITE IN VOTE",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7959,7 +7959,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A BALLOT QUESTION",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7967,7 +7967,7 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "THE BALLOT BOX",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7975,7 +7975,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "ELECTION DAY",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7983,7 +7983,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "VOTING BY MAIL",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7991,7 +7991,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "COUNTING THE VOTES",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -7999,7 +7999,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "CHECKING IN AT THE POLLS",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8007,7 +8007,7 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "A RECOUNT",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     }
    ],
@@ -8219,7 +8219,7 @@ window.GS_MY_CONTENT = {
      "word": "VOICE",
      "hint": "Connection",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8227,7 +8227,7 @@ window.GS_MY_CONTENT = {
      "word": "VOTER",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8235,7 +8235,7 @@ window.GS_MY_CONTENT = {
      "word": "POLLS",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8243,7 +8243,7 @@ window.GS_MY_CONTENT = {
      "word": "PAPER",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8251,7 +8251,7 @@ window.GS_MY_CONTENT = {
      "word": "COUNT",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8259,7 +8259,7 @@ window.GS_MY_CONTENT = {
      "word": "AUDIT",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8267,7 +8267,7 @@ window.GS_MY_CONTENT = {
      "word": "PARTY",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8275,7 +8275,7 @@ window.GS_MY_CONTENT = {
      "word": "JUDGE",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8283,7 +8283,7 @@ window.GS_MY_CONTENT = {
      "word": "CIVIC",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8291,7 +8291,7 @@ window.GS_MY_CONTENT = {
      "word": "BOOTH",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8299,7 +8299,7 @@ window.GS_MY_CONTENT = {
      "word": "STATE",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8307,7 +8307,7 @@ window.GS_MY_CONTENT = {
      "word": "TERMS",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8315,7 +8315,7 @@ window.GS_MY_CONTENT = {
      "word": "MAYOR",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8323,7 +8323,7 @@ window.GS_MY_CONTENT = {
      "word": "LOCAL",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8331,7 +8331,7 @@ window.GS_MY_CONTENT = {
      "word": "ELECT",
      "hint": "Elections",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     }
    ],
@@ -8621,7 +8621,7 @@ window.GS_MY_CONTENT = {
      "word": "a ballot box",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8629,7 +8629,7 @@ window.GS_MY_CONTENT = {
      "word": "an I voted sticker",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8637,7 +8637,7 @@ window.GS_MY_CONTENT = {
      "word": "a pencil",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8645,7 +8645,7 @@ window.GS_MY_CONTENT = {
      "word": "a voting booth",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8653,7 +8653,7 @@ window.GS_MY_CONTENT = {
      "word": "a flag",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8661,7 +8661,7 @@ window.GS_MY_CONTENT = {
      "word": "a calendar",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8669,7 +8669,7 @@ window.GS_MY_CONTENT = {
      "word": "a check mark",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8677,7 +8677,7 @@ window.GS_MY_CONTENT = {
      "word": "a line of people",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8685,7 +8685,7 @@ window.GS_MY_CONTENT = {
      "word": "a ballot",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8693,7 +8693,7 @@ window.GS_MY_CONTENT = {
      "word": "a mailbox",
      "level": "easy",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8701,7 +8701,7 @@ window.GS_MY_CONTENT = {
      "word": "filling in an oval",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8709,7 +8709,7 @@ window.GS_MY_CONTENT = {
      "word": "mailing a ballot",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8717,7 +8717,7 @@ window.GS_MY_CONTENT = {
      "word": "a poll worker",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8725,7 +8725,7 @@ window.GS_MY_CONTENT = {
      "word": "counting votes",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8733,7 +8733,7 @@ window.GS_MY_CONTENT = {
      "word": "a sign that says vote here",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8741,7 +8741,7 @@ window.GS_MY_CONTENT = {
      "word": "a voter wearing headphones",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8749,7 +8749,7 @@ window.GS_MY_CONTENT = {
      "word": "a ballot scanner",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8757,7 +8757,7 @@ window.GS_MY_CONTENT = {
      "word": "a town hall",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8765,7 +8765,7 @@ window.GS_MY_CONTENT = {
      "word": "a winner giving a speech",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -8773,7 +8773,7 @@ window.GS_MY_CONTENT = {
      "word": "shaking hands",
      "level": "medium",
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     }
    ],
@@ -9387,10 +9387,10 @@ window.GS_MY_CONTENT = {
       "Put a check mark anywhere",
       "Cross out the names you do not want"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9402,10 +9402,10 @@ window.GS_MY_CONTENT = {
       "Erase it hard",
       "Write a note in the margin"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9417,10 +9417,10 @@ window.GS_MY_CONTENT = {
       "Only in odd-numbered years",
       "Only if you vote by mail"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9432,10 +9432,10 @@ window.GS_MY_CONTENT = {
       "Signing your name on the ballot",
       "Voting by mail"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9447,10 +9447,10 @@ window.GS_MY_CONTENT = {
       "Your district office",
       "Your town hall meeting"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9462,10 +9462,10 @@ window.GS_MY_CONTENT = {
       "Campaign staff",
       "Candidates"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9477,10 +9477,10 @@ window.GS_MY_CONTENT = {
       "A country",
       "A party"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9492,10 +9492,10 @@ window.GS_MY_CONTENT = {
       "Saturday",
       "Sunday"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9507,10 +9507,10 @@ window.GS_MY_CONTENT = {
       "21",
       "25"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9522,10 +9522,10 @@ window.GS_MY_CONTENT = {
       "By picking a candidate",
       "With a number from 1 to 10"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9537,10 +9537,10 @@ window.GS_MY_CONTENT = {
       "6 years",
       "8 years"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9552,10 +9552,10 @@ window.GS_MY_CONTENT = {
       "6 years",
       "For life"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9567,10 +9567,10 @@ window.GS_MY_CONTENT = {
       "Only by the state legislature",
       "By the county board"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9582,10 +9582,10 @@ window.GS_MY_CONTENT = {
       "Chooses candidates for you",
       "Mails your ballot for you"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9597,10 +9597,10 @@ window.GS_MY_CONTENT = {
       "Calling a poll worker",
       "Recording your voice"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9612,10 +9612,10 @@ window.GS_MY_CONTENT = {
       "Throw your ballot away",
       "Add extra races"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9627,10 +9627,10 @@ window.GS_MY_CONTENT = {
       "At the post office",
       "At the polling place only"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9642,10 +9642,10 @@ window.GS_MY_CONTENT = {
       "To send back to voters",
       "They are thrown away right after voting"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9657,10 +9657,10 @@ window.GS_MY_CONTENT = {
       "A campaign",
       "A debate"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     },
     {
@@ -9672,13 +9672,16 @@ window.GS_MY_CONTENT = {
       "Yes, but only in the afternoon",
       "Only if you bring a friend"
      ],
-     "category": "How Elections Work",
+     "category": "Elections",
      "time": 20,
      "sets": [
-      "How Elections Work"
+      "Elections"
      ]
     }
    ]
   }
+ },
+ "renameSets": {
+  "How Elections Work": "Elections"
  }
 };
