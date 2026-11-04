@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-03-handling-stress",
+ "id": "matt-2026-11-04-how-elections-work",
  "banks": {
   "standard": {
    "cross": [
@@ -861,6 +861,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "calm",
        "clue": "How box breathing helps your body feel"
+      }
+     ]
+    },
+    {
+     "id": "lqpk9uqi0lpo",
+     "title": "How Elections Work",
+     "entries": [
+      {
+       "word": "ballot",
+       "clue": "The paper or card you use to vote"
+      },
+      {
+       "word": "oval",
+       "clue": "Fill in this shape to mark your choice"
+      },
+      {
+       "word": "precinct",
+       "clue": "Your small local voting area"
+      },
+      {
+       "word": "polls",
+       "clue": "Where people vote on Election Day"
+      },
+      {
+       "word": "candidate",
+       "clue": "A person running for office"
+      },
+      {
+       "word": "tuesday",
+       "clue": "The day of the week of a general election"
+      },
+      {
+       "word": "governor",
+       "clue": "The head of a state government"
+      },
+      {
+       "word": "congress",
+       "clue": "The U.S. House and Senate together"
+      },
+      {
+       "word": "scanner",
+       "clue": "The machine that reads your paper ballot"
+      },
+      {
+       "word": "audit",
+       "clue": "A check that the count was right"
+      },
+      {
+       "word": "recount",
+       "clue": "Counting the votes a second time"
+      },
+      {
+       "word": "provisional",
+       "clue": "A ballot that is checked later before it counts"
+      },
+      {
+       "word": "register",
+       "clue": "To sign up to vote before an election"
+      },
+      {
+       "word": "referendum",
+       "clue": "A question on the ballot that voters answer yes or no"
+      },
+      {
+       "word": "absentee",
+       "clue": "A ballot for a voter who will be away on Election Day"
       }
      ]
     }
@@ -1865,6 +1931,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The session says stress doesn't mean you are failing. It means you are alive and you do this",
      "answer": "Care"
+    },
+    {
+     "id": "r0efdhgc0mje",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 100,
+     "clue": "To vote for a choice on a paper ballot, you fill in this shape",
+     "answer": "An oval"
+    },
+    {
+     "id": "w725lecq0mje",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 200,
+     "clue": "True or false: you must vote in every race for your ballot to count",
+     "answer": "False"
+    },
+    {
+     "id": "fys1xmic0mje",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 300,
+     "clue": "The ballot says not to do these two things to a mistake, or your vote may not count",
+     "answer": "Cross out or erase"
+    },
+    {
+     "id": "vic24ars0mje",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 400,
+     "clue": "To vote for someone not printed on the ballot, you use this",
+     "answer": "A write-in"
+    },
+    {
+     "id": "47m9l6ac0mje",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 500,
+     "clue": "\"Vote for One\" tells you this about a race",
+     "answer": "You can only pick one choice"
+    },
+    {
+     "id": "bs0kbmui0mje",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 100,
+     "clue": "The place you go to vote on Election Day",
+     "answer": "Your polling place"
+    },
+    {
+     "id": "1vhc44tj0mje",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 200,
+     "clue": "The helpers who check you in and hand out ballots",
+     "answer": "Poll workers"
+    },
+    {
+     "id": "xa31hu8h0mje",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 300,
+     "clue": "Your small voting area, often listed by ward and district",
+     "answer": "Your precinct"
+    },
+    {
+     "id": "hvyh8qd20mje",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 400,
+     "clue": "Election Day for a general election always falls on this day of the week",
+     "answer": "Tuesday"
+    },
+    {
+     "id": "gqcg31fw0mje",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 500,
+     "clue": "In Pennsylvania, this poll worker is in charge of the polling place",
+     "answer": "The judge of elections"
+    },
+    {
+     "id": "7lvkam1o0mje",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 100,
+     "clue": "The top state office on Pennsylvania's ballot, the head of the state government",
+     "answer": "Governor"
+    },
+    {
+     "id": "3adkut2k0mje",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 200,
+     "clue": "In Pennsylvania, this person runs on the same team as the Governor",
+     "answer": "Lieutenant Governor"
+    },
+    {
+     "id": "2czrwrq10mje",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 300,
+     "clue": "A U.S. Representative in Congress serves a term of this many years",
+     "answer": "2"
+    },
+    {
+     "id": "zz50ihwo0mje",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 400,
+     "clue": "A Pennsylvania state Senator serves a term of this many years",
+     "answer": "4"
+    },
+    {
+     "id": "krzriwxe0mje",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 500,
+     "clue": "Pennsylvania's state legislature, made up of a House and a Senate, is called this",
+     "answer": "The General Assembly"
+    },
+    {
+     "id": "b851hhcr0mje",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 100,
+     "clue": "A machine that helps you mark choices on a touchscreen, then prints a paper ballot",
+     "answer": "A ballot-marking device"
+    },
+    {
+     "id": "1rwpo0eu0mje",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 200,
+     "clue": "You feed your finished ballot into this machine at the polls",
+     "answer": "A ballot scanner"
+    },
+    {
+     "id": "yc8uuhfi0mje",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 300,
+     "clue": "After it is scanned, your ballot drops into this",
+     "answer": "A ballot box"
+    },
+    {
+     "id": "5iyufqsi0mje",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 400,
+     "clue": "When polls close, the scanner can print its results on this",
+     "answer": "A paper tape"
+    },
+    {
+     "id": "oo2jo4wu0mje",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 500,
+     "clue": "Large stacks of mail-in ballots are counted at this kind of location",
+     "answer": "A central election office"
+    },
+    {
+     "id": "j83kryfd0mje",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 100,
+     "clue": "A ballot question is answered with one of these two words",
+     "answer": "Yes or No"
+    },
+    {
+     "id": "35gjh75s0mje",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 200,
+     "clue": "Paper ballots are kept so the count can be checked in these, along with recounts",
+     "answer": "Audits"
+    },
+    {
+     "id": "4t2agukj0mje",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 300,
+     "clue": "Counting the votes again, often when a race is very close",
+     "answer": "A recount"
+    },
+    {
+     "id": "55tx8soq0mje",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 400,
+     "clue": "A ballot you vote at the polls when there is a question about your eligibility, checked later",
+     "answer": "A provisional ballot"
+    },
+    {
+     "id": "hzus5uw90mje",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 500,
+     "clue": "Election workers review ballots that a machine cannot read clearly, such as some write-ins. This review is called this",
+     "answer": "Adjudication"
     }
    ],
    "wheel": [
@@ -2604,6 +2870,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Stress"
      ]
+    },
+    {
+     "id": "b6y82whd0n2s",
+     "category": "Phrase",
+     "phrase": "EVERY VOTE COUNTS",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "fnocp5oh0n2s",
+     "category": "Phrase",
+     "phrase": "FILL IN THE OVAL",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "zm36udwp0n2s",
+     "category": "Phrase",
+     "phrase": "THANK YOU FOR VOTING",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "rx287bks0n2s",
+     "category": "Phrase",
+     "phrase": "VOTE FOR ONE",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "tjg971160n2s",
+     "category": "Phrase",
+     "phrase": "ASK FOR A NEW BALLOT",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "i3avbprk0n2s",
+     "category": "Phrase",
+     "phrase": "YOUR VOICE MATTERS",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "30b94sw60n2s",
+     "category": "Thing",
+     "phrase": "A SAMPLE BALLOT",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "2p5eiz480n2s",
+     "category": "Thing",
+     "phrase": "A POLLING PLACE",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "25uni5vd0n2s",
+     "category": "Thing",
+     "phrase": "A PAPER BALLOT",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "mw404ena0n2s",
+     "category": "Thing",
+     "phrase": "A BALLOT SCANNER",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "1fejc7oh0n2s",
+     "category": "Thing",
+     "phrase": "A WRITE IN VOTE",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "vmyi07pp0n2s",
+     "category": "Thing",
+     "phrase": "A BALLOT QUESTION",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "ukmzh6yf0n2s",
+     "category": "Thing",
+     "phrase": "THE BALLOT BOX",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "o1alqm6d0n2s",
+     "category": "Event",
+     "phrase": "ELECTION DAY",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "16hsjuac0n2s",
+     "category": "Event",
+     "phrase": "VOTING BY MAIL",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "xkv8dnch0n2s",
+     "category": "Event",
+     "phrase": "COUNTING THE VOTES",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "ldth1qfc0n2s",
+     "category": "Event",
+     "phrase": "CHECKING IN AT THE POLLS",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "vu68j8c00n2s",
+     "category": "Event",
+     "phrase": "A RECOUNT",
+     "sets": [
+      "How Elections Work"
+     ]
     }
    ],
    "words": [
@@ -3279,6 +3689,126 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Stress",
      "sets": [
       "Handling Stress"
+     ]
+    },
+    {
+     "id": "v15fr22h0kmb",
+     "word": "PARTY",
+     "hint": "Things to Do",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "ua81xqxg0kmb",
+     "word": "JUDGE",
+     "hint": "Jobs",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "20jvgqza0kmb",
+     "word": "MAYOR",
+     "hint": "Jobs",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "jv1ettq00o4b",
+     "word": "VOTER",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "0p1bizb70o4b",
+     "word": "POLLS",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "e4kegor90o4b",
+     "word": "PAPER",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "0wf4ngec0o4b",
+     "word": "COUNT",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "8gsrb2x10o4b",
+     "word": "AUDIT",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "x5ogkopo0o4b",
+     "word": "CIVIC",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "u1cfb36r0o4b",
+     "word": "BOOTH",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "hh6s17zn0o4b",
+     "word": "STATE",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "9x59p0ra0o4b",
+     "word": "TERMS",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "2ucy2jz00o4b",
+     "word": "VOICE",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "j2z1hnjr0o4b",
+     "word": "LOCAL",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "71tbbarx0o4b",
+     "word": "ELECT",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
      ]
     }
    ],
@@ -4041,6 +4571,166 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Handling Stress"
+     ]
+    },
+    {
+     "id": "30kp2tl80lzh",
+     "word": "a ballot box",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "9925mixy0lzh",
+     "word": "an I voted sticker",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "9q8v87mi0lzh",
+     "word": "a pencil",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "2z0y52a40lzh",
+     "word": "a voting booth",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "ns6g78wo0lzh",
+     "word": "a flag",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "280xqr6v0lzh",
+     "word": "a calendar",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "wk7o1fcz0lzh",
+     "word": "a check mark",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "77jm7n6r0lzh",
+     "word": "a line of people",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "82tdzihr0lzh",
+     "word": "a ballot",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "71mz6c3l0lzh",
+     "word": "a mailbox",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "im8mxios0lzh",
+     "word": "filling in an oval",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "6xhc67e30lzh",
+     "word": "mailing a ballot",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "q6zphk380lzh",
+     "word": "a poll worker",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "12b2k0jd0lzh",
+     "word": "counting votes",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "s6d7gbpi0lzh",
+     "word": "a sign that says vote here",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "kn1fz69v0lzh",
+     "word": "a voter wearing headphones",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "5yihk4b00lzh",
+     "word": "a ballot scanner",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "057w3a6o0lzh",
+     "word": "a town hall",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "tn4g5qe00lzh",
+     "word": "a winner giving a speech",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "01up6g4z0lzh",
+     "word": "shaking hands",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
      ]
     }
    ],
@@ -5544,6 +6234,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Stress"
      ]
+    },
+    {
+     "id": "4qjap51z0nlb",
+     "question": "How do you mark your choice on a paper ballot?",
+     "answer": "Fill in the oval next to your choice",
+     "wrong": [
+      "Circle the name",
+      "Put a check mark anywhere",
+      "Cross out the names you do not want"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "tn5aw3e00nlb",
+     "question": "You make a mistake on your paper ballot. What should you do?",
+     "answer": "Ask a poll worker for a new ballot",
+     "wrong": [
+      "Cross it out and keep going",
+      "Erase it hard",
+      "Write a note in the margin"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "qemwol280nlb",
+     "question": "Do you have to vote in every race on the ballot?",
+     "answer": "No, you can skip races",
+     "wrong": [
+      "Yes, or the ballot will not count",
+      "Only in odd-numbered years",
+      "Only if you vote by mail"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "udsnlq610nlb",
+     "question": "What is a write-in vote?",
+     "answer": "Voting for someone whose name is not printed on the ballot",
+     "wrong": [
+      "Writing a letter to a candidate",
+      "Signing your name on the ballot",
+      "Voting by mail"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "k4bcji6a0nlb",
+     "question": "The place where you go to vote on Election Day is called what?",
+     "answer": "Your polling place",
+     "wrong": [
+      "Your ballot box",
+      "Your district office",
+      "Your town hall meeting"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "hsud2a9o0nlb",
+     "question": "The people who help run voting at the polls are called what?",
+     "answer": "Poll workers",
+     "wrong": [
+      "Lobbyists",
+      "Campaign staff",
+      "Candidates"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "01cbfo6f0nlb",
+     "question": "A small voting area that decides where you vote is called what?",
+     "answer": "A precinct",
+     "wrong": [
+      "A state",
+      "A country",
+      "A party"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "vwhr25pt0nlb",
+     "question": "A general election in the United States is held on which day of the week?",
+     "answer": "Tuesday",
+     "wrong": [
+      "Monday",
+      "Saturday",
+      "Sunday"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "qhmf0n8l0nlb",
+     "question": "How old do you have to be to vote in U.S. elections?",
+     "answer": "18",
+     "wrong": [
+      "16",
+      "21",
+      "25"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "z37k3rdf0nlb",
+     "question": "A ballot question asks voters to answer how?",
+     "answer": "Yes or No",
+     "wrong": [
+      "With a written essay",
+      "By picking a candidate",
+      "With a number from 1 to 10"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "tkm44izh0nlb",
+     "question": "In Pennsylvania, how long is a Governor's term?",
+     "answer": "4 years",
+     "wrong": [
+      "2 years",
+      "6 years",
+      "8 years"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "vxfh60na0nlb",
+     "question": "How long is a term for a U.S. Representative in Congress?",
+     "answer": "2 years",
+     "wrong": [
+      "4 years",
+      "6 years",
+      "For life"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "apye8ijf0nlb",
+     "question": "In Pennsylvania, the Governor and Lieutenant Governor are voted for how?",
+     "answer": "Together, as a team from one party",
+     "wrong": [
+      "In separate years",
+      "Only by the state legislature",
+      "By the county board"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "h1pxx0q50nlb",
+     "question": "What does a ballot-marking device do?",
+     "answer": "Helps you mark your choices on a screen and prints a paper ballot",
+     "wrong": [
+      "Counts every vote in the state",
+      "Chooses candidates for you",
+      "Mails your ballot for you"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "spfuvezy0nlb",
+     "question": "What do headphones and a handheld keypad on a voting machine help with?",
+     "answer": "Letting voters with different needs vote privately",
+     "wrong": [
+      "Playing music while you wait",
+      "Calling a poll worker",
+      "Recording your voice"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "pcg0b8yq0nlb",
+     "question": "If you mark too many choices in a race, what can a ballot scanner do?",
+     "answer": "Warn you so you can fix it",
+     "wrong": [
+      "Pick one for you",
+      "Throw your ballot away",
+      "Add extra races"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "8w2jx06r0nlb",
+     "question": "Where are large stacks of mail-in ballots usually counted?",
+     "answer": "At a central election office",
+     "wrong": [
+      "At each voter's home",
+      "At the post office",
+      "At the polling place only"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "r3omrb170nlb",
+     "question": "Why are paper ballots kept after an election?",
+     "answer": "So the count can be checked in audits and recounts",
+     "wrong": [
+      "To recycle later",
+      "To send back to voters",
+      "They are thrown away right after voting"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "7d52srbk0nlb",
+     "question": "Checking a sample of ballots to make sure the machine count is right is called what?",
+     "answer": "An audit",
+     "wrong": [
+      "A primary",
+      "A campaign",
+      "A debate"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "c39zini80nlb",
+     "question": "If you return your mail-in ballot on time, can you also vote at your polling place on Election Day?",
+     "answer": "No",
+     "wrong": [
+      "Yes, as many times as you like",
+      "Yes, but only in the afternoon",
+      "Only if you bring a friend"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
     }
    ]
   },
@@ -5931,6 +6921,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "calm",
        "clue": "How box breathing helps your body feel"
+      }
+     ]
+    },
+    {
+     "id": "20zip6i10on9",
+     "title": "How Elections Work",
+     "entries": [
+      {
+       "word": "ballot",
+       "clue": "The paper or card you use to vote"
+      },
+      {
+       "word": "oval",
+       "clue": "Fill in this shape to mark your choice"
+      },
+      {
+       "word": "precinct",
+       "clue": "Your small local voting area"
+      },
+      {
+       "word": "polls",
+       "clue": "Where people vote on Election Day"
+      },
+      {
+       "word": "candidate",
+       "clue": "A person running for office"
+      },
+      {
+       "word": "tuesday",
+       "clue": "The day of the week of a general election"
+      },
+      {
+       "word": "governor",
+       "clue": "The head of a state government"
+      },
+      {
+       "word": "congress",
+       "clue": "The U.S. House and Senate together"
+      },
+      {
+       "word": "scanner",
+       "clue": "The machine that reads your paper ballot"
+      },
+      {
+       "word": "audit",
+       "clue": "A check that the count was right"
+      },
+      {
+       "word": "recount",
+       "clue": "Counting the votes a second time"
+      },
+      {
+       "word": "provisional",
+       "clue": "A ballot that is checked later before it counts"
+      },
+      {
+       "word": "register",
+       "clue": "To sign up to vote before an election"
+      },
+      {
+       "word": "referendum",
+       "clue": "A question on the ballot that voters answer yes or no"
+      },
+      {
+       "word": "absentee",
+       "clue": "A ballot for a voter who will be away on Election Day"
       }
      ]
     }
@@ -6335,6 +7391,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The session says stress doesn't mean you are failing. It means you are alive and you do this",
      "answer": "Care"
+    },
+    {
+     "id": "dj4am9rv0pco",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 100,
+     "clue": "To vote for a choice on a paper ballot, you fill in this shape",
+     "answer": "An oval"
+    },
+    {
+     "id": "a8e5nf2g0pco",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 200,
+     "clue": "True or false: you must vote in every race for your ballot to count",
+     "answer": "False"
+    },
+    {
+     "id": "y5vdzarm0pcp",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 300,
+     "clue": "The ballot says not to do these two things to a mistake, or your vote may not count",
+     "answer": "Cross out or erase"
+    },
+    {
+     "id": "0u4cyn360pcp",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 400,
+     "clue": "To vote for someone not printed on the ballot, you use this",
+     "answer": "A write-in"
+    },
+    {
+     "id": "wa7kkzj70pcp",
+     "board": "How Elections Work",
+     "category": "Reading Your Ballot",
+     "value": 500,
+     "clue": "\"Vote for One\" tells you this about a race",
+     "answer": "You can only pick one choice"
+    },
+    {
+     "id": "h02d7px60pcp",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 100,
+     "clue": "The place you go to vote on Election Day",
+     "answer": "Your polling place"
+    },
+    {
+     "id": "ubu4jv4i0pcp",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 200,
+     "clue": "The helpers who check you in and hand out ballots",
+     "answer": "Poll workers"
+    },
+    {
+     "id": "3sln9qsv0pcp",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 300,
+     "clue": "Your small voting area, often listed by ward and district",
+     "answer": "Your precinct"
+    },
+    {
+     "id": "auu1oh180pcp",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 400,
+     "clue": "Election Day for a general election always falls on this day of the week",
+     "answer": "Tuesday"
+    },
+    {
+     "id": "6gwu7wzn0pcp",
+     "board": "How Elections Work",
+     "category": "At the Polls",
+     "value": 500,
+     "clue": "In Pennsylvania, this poll worker is in charge of the polling place",
+     "answer": "The judge of elections"
+    },
+    {
+     "id": "t46bmsyr0pcp",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 100,
+     "clue": "The top state office on Pennsylvania's ballot, the head of the state government",
+     "answer": "Governor"
+    },
+    {
+     "id": "fbaqpwwk0pcp",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 200,
+     "clue": "In Pennsylvania, this person runs on the same team as the Governor",
+     "answer": "Lieutenant Governor"
+    },
+    {
+     "id": "2m758tth0pcp",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 300,
+     "clue": "A U.S. Representative in Congress serves a term of this many years",
+     "answer": "2"
+    },
+    {
+     "id": "9257c6iv0pcp",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 400,
+     "clue": "A Pennsylvania state Senator serves a term of this many years",
+     "answer": "4"
+    },
+    {
+     "id": "wsfhvojt0pcp",
+     "board": "How Elections Work",
+     "category": "Races and Terms",
+     "value": 500,
+     "clue": "Pennsylvania's state legislature, made up of a House and a Senate, is called this",
+     "answer": "The General Assembly"
+    },
+    {
+     "id": "pd4cmm970pcp",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 100,
+     "clue": "A machine that helps you mark choices on a touchscreen, then prints a paper ballot",
+     "answer": "A ballot-marking device"
+    },
+    {
+     "id": "41a3d8zt0pcp",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 200,
+     "clue": "You feed your finished ballot into this machine at the polls",
+     "answer": "A ballot scanner"
+    },
+    {
+     "id": "viqwph1m0pcp",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 300,
+     "clue": "After it is scanned, your ballot drops into this",
+     "answer": "A ballot box"
+    },
+    {
+     "id": "q5i81z820pcp",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 400,
+     "clue": "When polls close, the scanner can print its results on this",
+     "answer": "A paper tape"
+    },
+    {
+     "id": "t2cg2m870pcp",
+     "board": "How Elections Work",
+     "category": "A Ballot's Journey",
+     "value": 500,
+     "clue": "Large stacks of mail-in ballots are counted at this kind of location",
+     "answer": "A central election office"
+    },
+    {
+     "id": "5xzsnxnv0pcp",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 100,
+     "clue": "A ballot question is answered with one of these two words",
+     "answer": "Yes or No"
+    },
+    {
+     "id": "crlaw9yu0pcp",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 200,
+     "clue": "Paper ballots are kept so the count can be checked in these, along with recounts",
+     "answer": "Audits"
+    },
+    {
+     "id": "dph8hfxp0pcp",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 300,
+     "clue": "Counting the votes again, often when a race is very close",
+     "answer": "A recount"
+    },
+    {
+     "id": "jebom6ll0pcp",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 400,
+     "clue": "A ballot you vote at the polls when there is a question about your eligibility, checked later",
+     "answer": "A provisional ballot"
+    },
+    {
+     "id": "esz1kut70pcp",
+     "board": "How Elections Work",
+     "category": "Checks and Questions",
+     "value": 500,
+     "clue": "Election workers review ballots that a machine cannot read clearly, such as some write-ins. This review is called this",
+     "answer": "Adjudication"
     }
    ],
    "wheel": [
@@ -6609,6 +7865,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Stress"
      ]
+    },
+    {
+     "id": "m9yo40yu0pvp",
+     "category": "Phrase",
+     "phrase": "EVERY VOTE COUNTS",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "wzzfgwky0pvp",
+     "category": "Phrase",
+     "phrase": "FILL IN THE OVAL",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "2j0r70nu0pvp",
+     "category": "Phrase",
+     "phrase": "THANK YOU FOR VOTING",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "cu44jr7u0pvp",
+     "category": "Phrase",
+     "phrase": "VOTE FOR ONE",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "2yp9to5l0pvp",
+     "category": "Phrase",
+     "phrase": "ASK FOR A NEW BALLOT",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "nxcwu1l20pvp",
+     "category": "Phrase",
+     "phrase": "YOUR VOICE MATTERS",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "ctjsntha0pvp",
+     "category": "Thing",
+     "phrase": "A SAMPLE BALLOT",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "mp8k5b110pvp",
+     "category": "Thing",
+     "phrase": "A POLLING PLACE",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "9jtk732a0pvp",
+     "category": "Thing",
+     "phrase": "A PAPER BALLOT",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "qekyfodt0pvp",
+     "category": "Thing",
+     "phrase": "A BALLOT SCANNER",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "uns76lur0pvp",
+     "category": "Thing",
+     "phrase": "A WRITE IN VOTE",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "p9xjn1080pvp",
+     "category": "Thing",
+     "phrase": "A BALLOT QUESTION",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "k6mmjzr40pvp",
+     "category": "Thing",
+     "phrase": "THE BALLOT BOX",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "nfjt8td80pvp",
+     "category": "Event",
+     "phrase": "ELECTION DAY",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "zbgczwxj0pvp",
+     "category": "Event",
+     "phrase": "VOTING BY MAIL",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "7uxxy0yv0pvp",
+     "category": "Event",
+     "phrase": "COUNTING THE VOTES",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "urg40n9j0pvp",
+     "category": "Event",
+     "phrase": "CHECKING IN AT THE POLLS",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "ddgi38ps0pvp",
+     "category": "Event",
+     "phrase": "A RECOUNT",
+     "sets": [
+      "How Elections Work"
+     ]
     }
    ],
    "words": [
@@ -6812,6 +8212,126 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Stress",
      "sets": [
       "Handling Stress"
+     ]
+    },
+    {
+     "id": "5gp3nkdz0kmf",
+     "word": "VOICE",
+     "hint": "Connection",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "emjpz3nc0qym",
+     "word": "VOTER",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "p7kf0nk10qym",
+     "word": "POLLS",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "pmayknfq0qym",
+     "word": "PAPER",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "w6k2brs60qym",
+     "word": "COUNT",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "09rq49wu0qym",
+     "word": "AUDIT",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "9t8et3of0qym",
+     "word": "PARTY",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "yasdhkf70qym",
+     "word": "JUDGE",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "aqt9hv210qym",
+     "word": "CIVIC",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "164tp7us0qym",
+     "word": "BOOTH",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "e3wicawl0qym",
+     "word": "STATE",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "1o7bq28c0qym",
+     "word": "TERMS",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "0yvwez3w0qym",
+     "word": "MAYOR",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "ju5xrypr0qym",
+     "word": "LOCAL",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "z9jy557i0qym",
+     "word": "ELECT",
+     "hint": "Elections",
+     "sets": [
+      "How Elections Work"
      ]
     }
    ],
@@ -7094,6 +8614,166 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Handling Stress"
+     ]
+    },
+    {
+     "id": "qex0j4j30ots",
+     "word": "a ballot box",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "2rppvv1h0ots",
+     "word": "an I voted sticker",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "2kpiats10ots",
+     "word": "a pencil",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "rnif5yx30ots",
+     "word": "a voting booth",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "lzw8fxzx0ots",
+     "word": "a flag",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "tg7m3j790ots",
+     "word": "a calendar",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "qzep4o0w0ots",
+     "word": "a check mark",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "n8tder0s0ots",
+     "word": "a line of people",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "wz07ldpr0ots",
+     "word": "a ballot",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "yobwarz40ots",
+     "word": "a mailbox",
+     "level": "easy",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "5l2met0s0ots",
+     "word": "filling in an oval",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "36hq9b3t0ots",
+     "word": "mailing a ballot",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "fghwo1490ots",
+     "word": "a poll worker",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "ph73wxty0ots",
+     "word": "counting votes",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "68nwo6hy0ots",
+     "word": "a sign that says vote here",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "kqz896810ots",
+     "word": "a voter wearing headphones",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "1cporcj20ots",
+     "word": "a ballot scanner",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "l3sfd7yu0ots",
+     "word": "a town hall",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "bp3tzrjl0ots",
+     "word": "a winner giving a speech",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "y71wfxt60ots",
+     "word": "shaking hands",
+     "level": "medium",
+     "sets": [
+      "How Elections Work"
      ]
     }
    ],
@@ -7696,6 +9376,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Handling Stress"
+     ]
+    },
+    {
+     "id": "lu5fjavr0qf6",
+     "question": "How do you mark your choice on a paper ballot?",
+     "answer": "Fill in the oval next to your choice",
+     "wrong": [
+      "Circle the name",
+      "Put a check mark anywhere",
+      "Cross out the names you do not want"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "vnimvpf70qf6",
+     "question": "You make a mistake on your paper ballot. What should you do?",
+     "answer": "Ask a poll worker for a new ballot",
+     "wrong": [
+      "Cross it out and keep going",
+      "Erase it hard",
+      "Write a note in the margin"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "acq6gpvm0qf6",
+     "question": "Do you have to vote in every race on the ballot?",
+     "answer": "No, you can skip races",
+     "wrong": [
+      "Yes, or the ballot will not count",
+      "Only in odd-numbered years",
+      "Only if you vote by mail"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "roblkz870qf6",
+     "question": "What is a write-in vote?",
+     "answer": "Voting for someone whose name is not printed on the ballot",
+     "wrong": [
+      "Writing a letter to a candidate",
+      "Signing your name on the ballot",
+      "Voting by mail"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "sr5oz2zr0qf6",
+     "question": "The place where you go to vote on Election Day is called what?",
+     "answer": "Your polling place",
+     "wrong": [
+      "Your ballot box",
+      "Your district office",
+      "Your town hall meeting"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "6lj7o9tj0qf6",
+     "question": "The people who help run voting at the polls are called what?",
+     "answer": "Poll workers",
+     "wrong": [
+      "Lobbyists",
+      "Campaign staff",
+      "Candidates"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "m1odz0vb0qf6",
+     "question": "A small voting area that decides where you vote is called what?",
+     "answer": "A precinct",
+     "wrong": [
+      "A state",
+      "A country",
+      "A party"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "mtp484ke0qf6",
+     "question": "A general election in the United States is held on which day of the week?",
+     "answer": "Tuesday",
+     "wrong": [
+      "Monday",
+      "Saturday",
+      "Sunday"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "40gd6sj20qf6",
+     "question": "How old do you have to be to vote in U.S. elections?",
+     "answer": "18",
+     "wrong": [
+      "16",
+      "21",
+      "25"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "427qz8h90qf6",
+     "question": "A ballot question asks voters to answer how?",
+     "answer": "Yes or No",
+     "wrong": [
+      "With a written essay",
+      "By picking a candidate",
+      "With a number from 1 to 10"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "6e3ch31w0qf6",
+     "question": "In Pennsylvania, how long is a Governor's term?",
+     "answer": "4 years",
+     "wrong": [
+      "2 years",
+      "6 years",
+      "8 years"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "bkjopv6l0qf6",
+     "question": "How long is a term for a U.S. Representative in Congress?",
+     "answer": "2 years",
+     "wrong": [
+      "4 years",
+      "6 years",
+      "For life"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "xwflqqh00qf6",
+     "question": "In Pennsylvania, the Governor and Lieutenant Governor are voted for how?",
+     "answer": "Together, as a team from one party",
+     "wrong": [
+      "In separate years",
+      "Only by the state legislature",
+      "By the county board"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "wxdgodmi0qf6",
+     "question": "What does a ballot-marking device do?",
+     "answer": "Helps you mark your choices on a screen and prints a paper ballot",
+     "wrong": [
+      "Counts every vote in the state",
+      "Chooses candidates for you",
+      "Mails your ballot for you"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "z32dc70f0qf6",
+     "question": "What do headphones and a handheld keypad on a voting machine help with?",
+     "answer": "Letting voters with different needs vote privately",
+     "wrong": [
+      "Playing music while you wait",
+      "Calling a poll worker",
+      "Recording your voice"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "7v1t164b0qf6",
+     "question": "If you mark too many choices in a race, what can a ballot scanner do?",
+     "answer": "Warn you so you can fix it",
+     "wrong": [
+      "Pick one for you",
+      "Throw your ballot away",
+      "Add extra races"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "wpsr9pyt0qf6",
+     "question": "Where are large stacks of mail-in ballots usually counted?",
+     "answer": "At a central election office",
+     "wrong": [
+      "At each voter's home",
+      "At the post office",
+      "At the polling place only"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "1oijrbj00qf6",
+     "question": "Why are paper ballots kept after an election?",
+     "answer": "So the count can be checked in audits and recounts",
+     "wrong": [
+      "To recycle later",
+      "To send back to voters",
+      "They are thrown away right after voting"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "wb530a7u0qf6",
+     "question": "Checking a sample of ballots to make sure the machine count is right is called what?",
+     "answer": "An audit",
+     "wrong": [
+      "A primary",
+      "A campaign",
+      "A debate"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
+     ]
+    },
+    {
+     "id": "dbajvjew0qf6",
+     "question": "If you return your mail-in ballot on time, can you also vote at your polling place on Election Day?",
+     "answer": "No",
+     "wrong": [
+      "Yes, as many times as you like",
+      "Yes, but only in the afternoon",
+      "Only if you bring a friend"
+     ],
+     "category": "How Elections Work",
+     "time": 20,
+     "sets": [
+      "How Elections Work"
      ]
     }
    ]
