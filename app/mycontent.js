@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-04-elections",
+ "id": "matt-2026-11-04-media-literacy",
  "banks": {
   "standard": {
    "cross": [
@@ -927,6 +927,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "absentee",
        "clue": "A ballot for a voter who will be away on Election Day"
+      }
+     ]
+    },
+    {
+     "id": "sl09upy67yni",
+     "title": "Media Literacy",
+     "entries": [
+      {
+       "word": "literacy",
+       "clue": "Media ______: the ability to analyze and evaluate media"
+      },
+      {
+       "word": "attention",
+       "clue": "What platforms sell to advertisers"
+      },
+      {
+       "word": "algorithm",
+       "clue": "The computer rules that pick what shows up in your feed"
+      },
+      {
+       "word": "stop",
+       "clue": "The first step of SIFT"
+      },
+      {
+       "word": "source",
+       "clue": "Investigate this before you read"
+      },
+      {
+       "word": "trace",
+       "clue": "Follow a claim back to the original"
+      },
+      {
+       "word": "scroll",
+       "clue": "Infinite ______ keeps you swiping"
+      },
+      {
+       "word": "autoplay",
+       "clue": "When the next video starts on its own"
+      },
+      {
+       "word": "notification",
+       "clue": "A ping that pulls you back to your phone"
+      },
+      {
+       "word": "dopamine",
+       "clue": "The brain's reward chemical"
+      },
+      {
+       "word": "viral",
+       "clue": "Spreading fast across the internet"
+      },
+      {
+       "word": "comparison",
+       "clue": "Measuring your life against someone's highlight reel"
+      },
+      {
+       "word": "hygiene",
+       "clue": "Media ______: intentional choices about what you take in"
+      },
+      {
+       "word": "netflix",
+       "clue": "The service that released The Social Dilemma"
+      },
+      {
+       "word": "bias",
+       "clue": "A slant that favors one side"
       }
      ]
     }
@@ -2131,6 +2197,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Election workers review ballots that a machine cannot read clearly, such as some write-ins. This review is called this",
      "answer": "Adjudication"
+    },
+    {
+     "id": "1gndqjti7znt",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 100,
+     "clue": "Every post, ad and meme was made by someone, for this",
+     "answer": "A reason or purpose"
+    },
+    {
+     "id": "8p3sisqa7znt",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 200,
+     "clue": "Media literacy asks who made this, why, and what they want you to do this",
+     "answer": "Feel or do"
+    },
+    {
+     "id": "u9uohmyx7znt",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 300,
+     "clue": "Platforms make money by selling this to advertisers",
+     "answer": "Your attention"
+    },
+    {
+     "id": "rojmj2zy7znt",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 400,
+     "clue": "The name for an economy built on keeping your eyes on a screen",
+     "answer": "The attention economy"
+    },
+    {
+     "id": "umvo41rm7znt",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 500,
+     "clue": "Media literacy is the ability to access, analyze, evaluate and do this with media",
+     "answer": "Create it"
+    },
+    {
+     "id": "c9kr748x7znt",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 100,
+     "clue": "The S in SIFT",
+     "answer": "Stop"
+    },
+    {
+     "id": "hankxh2i7znt",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 200,
+     "clue": "The I in SIFT",
+     "answer": "Investigate the source"
+    },
+    {
+     "id": "h50l6vr77znt",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 300,
+     "clue": "The F in SIFT",
+     "answer": "Find better coverage"
+    },
+    {
+     "id": "4gij6dc07znt",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 400,
+     "clue": "The T in SIFT",
+     "answer": "Trace claims, quotes and media"
+    },
+    {
+     "id": "zrgtubjy7znt",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 500,
+     "clue": "SIFT is meant to take about this long",
+     "answer": "60 seconds"
+    },
+    {
+     "id": "4z6vbv577znt",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 100,
+     "clue": "The streaming service that released The Social Dilemma in 2020",
+     "answer": "Netflix"
+    },
+    {
+     "id": "q2memmtu7znt",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 200,
+     "clue": "The former Google design ethicist featured in The Social Dilemma",
+     "answer": "Tristan Harris"
+    },
+    {
+     "id": "k5qq8iog7znt",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 300,
+     "clue": "The film features the engineers and designers who did this",
+     "answer": "Built the platforms"
+    },
+    {
+     "id": "vacpaubq7znt",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 400,
+     "clue": "Harris calls design that triggers our most reactive side a race to the bottom of this",
+     "answer": "The brain stem"
+    },
+    {
+     "id": "bzrky4zw7znt",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 500,
+     "clue": "Designers say content that triggers outrage, fear and envy is promoted because it maximizes this",
+     "answer": "Engagement"
+    },
+    {
+     "id": "x2rsphh77znt",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 100,
+     "clue": "Content that never ends as you swipe",
+     "answer": "Infinite scroll"
+    },
+    {
+     "id": "pavh6izv7znt",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 200,
+     "clue": "The next video starts on its own",
+     "answer": "Autoplay"
+    },
+    {
+     "id": "66kr3h3h7znt",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 300,
+     "clue": "Pings and buzzes that pull you back to your phone",
+     "answer": "Notifications"
+    },
+    {
+     "id": "6vsj3x0u7znt",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 400,
+     "clue": "Not knowing when the next \"like\" will come makes your feed work like this casino game",
+     "answer": "A slot machine"
+    },
+    {
+     "id": "rnwodl3h7znt",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 500,
+     "clue": "The brain chemical tied to reward that likes and notifications can trigger",
+     "answer": "Dopamine"
+    },
+    {
+     "id": "146yffm07znt",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 100,
+     "clue": "People post their best moments, so we see this",
+     "answer": "A highlight reel"
+    },
+    {
+     "id": "6627y99v7znt",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 200,
+     "clue": "We end up comparing our insides to other people's this",
+     "answer": "Outsides"
+    },
+    {
+     "id": "jbv5iffh7znt",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 300,
+     "clue": "Online, this kind of community offers support at 2 a.m. when there's no meeting",
+     "answer": "Recovery community"
+    },
+    {
+     "id": "hyiqpw4d7znt",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 400,
+     "clue": "Intentional choices about what media you take in",
+     "answer": "Media hygiene"
+    },
+    {
+     "id": "88zswvi87znt",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 500,
+     "clue": "One example of a realistic first boundary in the morning",
+     "answer": "No phone for the first 30 minutes"
     }
    ],
    "wheel": [
@@ -3014,6 +3280,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Elections"
      ]
+    },
+    {
+     "id": "tqu0e7pg806s",
+     "category": "Phrase",
+     "phrase": "STOP BEFORE YOU SHARE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "111uiyqf806s",
+     "category": "Phrase",
+     "phrase": "WHO MADE THIS AND WHY",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "ka4s4d30806s",
+     "category": "Phrase",
+     "phrase": "CHECK THE SOURCE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "oowd15hd806s",
+     "category": "Phrase",
+     "phrase": "FIND BETTER COVERAGE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "jo4xtcb5806s",
+     "category": "Phrase",
+     "phrase": "TRACE IT TO THE ORIGINAL",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "91vjc13z806s",
+     "category": "Phrase",
+     "phrase": "YOU ARE THE PRODUCT",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "5d8znwql806s",
+     "category": "Phrase",
+     "phrase": "NOT EVERYTHING ONLINE IS TRUE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "w42uko1c806s",
+     "category": "Phrase",
+     "phrase": "COMPARISON STEALS YOUR JOY",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "s2suyfwl806s",
+     "category": "Thing",
+     "phrase": "THE ATTENTION ECONOMY",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "dr3kxt6i806s",
+     "category": "Thing",
+     "phrase": "INFINITE SCROLL",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "oikwup4j806s",
+     "category": "Thing",
+     "phrase": "A NEWS FEED",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "pkvxmnw7806s",
+     "category": "Thing",
+     "phrase": "A HIGHLIGHT REEL",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "snod0wxx806s",
+     "category": "Thing",
+     "phrase": "PUSH NOTIFICATIONS",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "s7ygvbl5806s",
+     "category": "Thing",
+     "phrase": "A FACT CHECKING WEBSITE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "yj4hsgmd806s",
+     "category": "Thing",
+     "phrase": "MEDIA HYGIENE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "2h324a06806s",
+     "category": "Event",
+     "phrase": "GOING VIRAL",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "l3at6vuf806s",
+     "category": "Event",
+     "phrase": "DOOM SCROLLING AT MIDNIGHT",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "119fnpav806s",
+     "category": "Event",
+     "phrase": "TURNING OFF NOTIFICATIONS",
+     "sets": [
+      "Media Literacy"
+     ]
     }
    ],
    "words": [
@@ -3608,7 +4018,8 @@ window.GS_MY_CONTENT = {
      "word": "PAUSE",
      "hint": "Handling Stress",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Media Literacy"
      ]
     },
     {
@@ -3680,7 +4091,8 @@ window.GS_MY_CONTENT = {
      "word": "SHARE",
      "hint": "Handling Stress",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Media Literacy"
      ]
     },
     {
@@ -3809,6 +4221,110 @@ window.GS_MY_CONTENT = {
      "hint": "Elections",
      "sets": [
       "Elections"
+     ]
+    },
+    {
+     "id": "hw3rc0jn7xa5",
+     "word": "PHONE",
+     "hint": "Around the House",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "8mq9h4a081an",
+     "word": "MEDIA",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "23rr2v9q81an",
+     "word": "LIKES",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "g9t1ifsq81an",
+     "word": "FEEDS",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "11t3m9ub81an",
+     "word": "CLICK",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "hys1g24g81an",
+     "word": "VIRAL",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "qjg4vbny81an",
+     "word": "POSTS",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "iq4yhu3w81an",
+     "word": "TRUTH",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "lzfw0aly81an",
+     "word": "FACTS",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "tiav5hu681an",
+     "word": "VIDEO",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "8knmkh6d81an",
+     "word": "TRACE",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "arne254b81an",
+     "word": "HOOKS",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "iqi0wyy281an",
+     "word": "BLOCK",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
      ]
     }
    ],
@@ -4731,6 +5247,166 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Elections"
+     ]
+    },
+    {
+     "id": "59et04dy7z2g",
+     "word": "a smartphone",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "it8z10il7z2g",
+     "word": "a thumbs up",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "qpe9cgp97z2g",
+     "word": "a newspaper",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "gnzrnoja7z2g",
+     "word": "a television",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "mua8kcht7z2g",
+     "word": "a magnifying glass",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "shfvx7fr7z2g",
+     "word": "a stop sign",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "hknb98ul7z2g",
+     "word": "a heart notification",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "lszpvt2e7z2g",
+     "word": "a camera",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "lztd0g2x7z2g",
+     "word": "a laptop",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "2b8o0qip7z2g",
+     "word": "a megaphone",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "v2bb61sx7z2g",
+     "word": "a slot machine",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "csla14ez7z2g",
+     "word": "scrolling on a phone",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "tm3v6j7g7z2g",
+     "word": "fake news",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "8pnrndlc7z2g",
+     "word": "going viral",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "ct22f9or7z2g",
+     "word": "a selfie",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "b0fose8c7z2g",
+     "word": "a fishing hook",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "d2np2vjo7z2g",
+     "word": "a phone buzzing at night",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "gvi58o2u7z2g",
+     "word": "someone fact checking",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "ikzr06em7z2g",
+     "word": "a brain on a phone",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "pqe94afn7z2g",
+     "word": "putting the phone away",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
      ]
     }
    ],
@@ -6534,6 +7210,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Elections"
      ]
+    },
+    {
+     "id": "y1dbl6cv80qw",
+     "question": "Media literacy is best described as what?",
+     "answer": "The ability to access, analyze, evaluate and create media",
+     "wrong": [
+      "Only reading newspapers",
+      "Avoiding all social media",
+      "Knowing how to use a smartphone"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "yjw0dq2e80qw",
+     "question": "What key question does media literacy teach you to ask?",
+     "answer": "Who made this, why, and what do they want me to feel or do?",
+     "wrong": [
+      "How long is this?",
+      "Is this free?",
+      "How many people shared it?"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "866c5p3i80qw",
+     "question": "What is the \"attention economy\"?",
+     "answer": "Platforms making money by selling your attention to advertisers",
+     "wrong": [
+      "Paying attention to get discounts",
+      "A new online currency",
+      "The cost of a TV ad"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "kb50s76d80qw",
+     "question": "An MIT study found false news spreads about how much faster than true news?",
+     "answer": "About six times faster",
+     "wrong": [
+      "Twice as fast",
+      "The same speed",
+      "Half as fast"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "p0fdna6u80qw",
+     "question": "Why does false news spread faster?",
+     "answer": "It is more surprising and emotional, so people share it more",
+     "wrong": [
+      "It is shorter",
+      "Algorithms only promote lies",
+      "Everyone prefers jokes"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "h5yg5zvp80qw",
+     "question": "What does the S in SIFT stand for?",
+     "answer": "Stop",
+     "wrong": [
+      "Search",
+      "Share",
+      "Scroll"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "4b3k6aa180qw",
+     "question": "The I in SIFT means Investigate the Source. What do you do first?",
+     "answer": "Look up who made it before reading",
+     "wrong": [
+      "Read the whole article twice",
+      "Count the likes",
+      "Ask a friend"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "8k8slt3k80qw",
+     "question": "Why \"Find Better Coverage\"?",
+     "answer": "One source is never enough, so check other credible outlets",
+     "wrong": [
+      "The longest article is most accurate",
+      "Government sites are always right",
+      "Social media is newest"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "b19y6b6o80qw",
+     "question": "The T in SIFT means trace claims, quotes and media back to what?",
+     "answer": "The original source",
+     "wrong": [
+      "The most popular post",
+      "The comment section",
+      "Your news feed"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "9d6h1lw580qw",
+     "question": "A post gives you a strong emotional reaction. What should you do?",
+     "answer": "Slow down and SIFT before sharing",
+     "wrong": [
+      "Share it right away",
+      "Believe it because it feels real",
+      "Assume it is false"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "mpol32g080qw",
+     "question": "Which is a fact-checking website?",
+     "answer": "Snopes.com or FactCheck.org",
+     "wrong": [
+      "The number of shares",
+      "A popular influencer",
+      "The first search result"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "7xtuclzn80qw",
+     "question": "Which feature is designed to keep you scrolling longer?",
+     "answer": "Infinite scroll",
+     "wrong": [
+      "Profile pictures",
+      "Private messages",
+      "Location check-ins"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "vqc58qya80qw",
+     "question": "What is the \"highlight reel\" problem?",
+     "answer": "People post their best moments, and we compare our insides to their outsides",
+     "wrong": [
+      "Movie trailers are too short",
+      "Only good news is shown",
+      "Videos autoplay"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "x6vobl0d80qw",
+     "question": "Why is social media comparison risky in recovery?",
+     "answer": "It can trigger \"everyone else is moving forward and I'm not\" thoughts",
+     "wrong": [
+      "People in recovery cannot use social media",
+      "It makes people too happy",
+      "Only young people use it"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "rd3oeget80qw",
+     "question": "How CAN social media support recovery?",
+     "answer": "Online recovery communities offer support 24/7",
+     "wrong": [
+      "Following accounts that glamorize drinking",
+      "Reading news comment sections",
+      "Watching ads for alcohol"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "92addh0k80qw",
+     "question": "The Social Dilemma features people who did what?",
+     "answer": "Built and designed big tech platforms",
+     "wrong": [
+      "Never used social media",
+      "Ran for public office",
+      "Made video games"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "qmdr9i9f80qw",
+     "question": "Tristan Harris calls social media design a \"race to the bottom of the...\" what?",
+     "answer": "Brain stem",
+     "wrong": [
+      "Ocean",
+      "Price list",
+      "App store"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "vwbbnpyb80qw",
+     "question": "Social media \"likes\" and new posts work like a slot machine because the rewards are what?",
+     "answer": "Unpredictable",
+     "wrong": [
+      "Always the same",
+      "Paid in cash",
+      "Only on weekends"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "2n8you3j80qw",
+     "question": "What is \"media hygiene\"?",
+     "answer": "Making intentional choices about the media you take in",
+     "wrong": [
+      "Cleaning your phone screen",
+      "Only reading government news",
+      "Deleting every account forever"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "dly2u0x580qw",
+     "question": "Which is a realistic first media boundary?",
+     "answer": "No phone for the first 30 minutes after waking up",
+     "wrong": [
+      "Never use the internet again",
+      "Delete all social media today",
+      "Read only foreign news"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
     }
    ]
   },
@@ -6987,6 +7963,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "absentee",
        "clue": "A ballot for a voter who will be away on Election Day"
+      }
+     ]
+    },
+    {
+     "id": "1m9wptx581vx",
+     "title": "Media Literacy",
+     "entries": [
+      {
+       "word": "literacy",
+       "clue": "Media ______: the ability to analyze and evaluate media"
+      },
+      {
+       "word": "attention",
+       "clue": "What platforms sell to advertisers"
+      },
+      {
+       "word": "algorithm",
+       "clue": "The computer rules that pick what shows up in your feed"
+      },
+      {
+       "word": "stop",
+       "clue": "The first step of SIFT"
+      },
+      {
+       "word": "source",
+       "clue": "Investigate this before you read"
+      },
+      {
+       "word": "trace",
+       "clue": "Follow a claim back to the original"
+      },
+      {
+       "word": "scroll",
+       "clue": "Infinite ______ keeps you swiping"
+      },
+      {
+       "word": "autoplay",
+       "clue": "When the next video starts on its own"
+      },
+      {
+       "word": "notification",
+       "clue": "A ping that pulls you back to your phone"
+      },
+      {
+       "word": "dopamine",
+       "clue": "The brain's reward chemical"
+      },
+      {
+       "word": "viral",
+       "clue": "Spreading fast across the internet"
+      },
+      {
+       "word": "comparison",
+       "clue": "Measuring your life against someone's highlight reel"
+      },
+      {
+       "word": "hygiene",
+       "clue": "Media ______: intentional choices about what you take in"
+      },
+      {
+       "word": "netflix",
+       "clue": "The service that released The Social Dilemma"
+      },
+      {
+       "word": "bias",
+       "clue": "A slant that favors one side"
       }
      ]
     }
@@ -7591,6 +8633,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Election workers review ballots that a machine cannot read clearly, such as some write-ins. This review is called this",
      "answer": "Adjudication"
+    },
+    {
+     "id": "256tth7h82ld",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 100,
+     "clue": "Every post, ad and meme was made by someone, for this",
+     "answer": "A reason or purpose"
+    },
+    {
+     "id": "74smhp1v82ld",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 200,
+     "clue": "Media literacy asks who made this, why, and what they want you to do this",
+     "answer": "Feel or do"
+    },
+    {
+     "id": "1pkyfdgq82ld",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 300,
+     "clue": "Platforms make money by selling this to advertisers",
+     "answer": "Your attention"
+    },
+    {
+     "id": "8txokz0682ld",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 400,
+     "clue": "The name for an economy built on keeping your eyes on a screen",
+     "answer": "The attention economy"
+    },
+    {
+     "id": "54610qoz82ld",
+     "board": "Media Literacy",
+     "category": "What Is Media Literacy?",
+     "value": 500,
+     "clue": "Media literacy is the ability to access, analyze, evaluate and do this with media",
+     "answer": "Create it"
+    },
+    {
+     "id": "4u3yd5n282ld",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 100,
+     "clue": "The S in SIFT",
+     "answer": "Stop"
+    },
+    {
+     "id": "yfvzhwah82ld",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 200,
+     "clue": "The I in SIFT",
+     "answer": "Investigate the source"
+    },
+    {
+     "id": "n2zibzr782ld",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 300,
+     "clue": "The F in SIFT",
+     "answer": "Find better coverage"
+    },
+    {
+     "id": "tdchlgke82ld",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 400,
+     "clue": "The T in SIFT",
+     "answer": "Trace claims, quotes and media"
+    },
+    {
+     "id": "ra6e1xxy82ld",
+     "board": "Media Literacy",
+     "category": "SIFT It",
+     "value": 500,
+     "clue": "SIFT is meant to take about this long",
+     "answer": "60 seconds"
+    },
+    {
+     "id": "a0cuo17l82ld",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 100,
+     "clue": "The streaming service that released The Social Dilemma in 2020",
+     "answer": "Netflix"
+    },
+    {
+     "id": "520x78rd82ld",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 200,
+     "clue": "The former Google design ethicist featured in The Social Dilemma",
+     "answer": "Tristan Harris"
+    },
+    {
+     "id": "gol0424082ld",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 300,
+     "clue": "The film features the engineers and designers who did this",
+     "answer": "Built the platforms"
+    },
+    {
+     "id": "qwdbu8px82ld",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 400,
+     "clue": "Harris calls design that triggers our most reactive side a race to the bottom of this",
+     "answer": "The brain stem"
+    },
+    {
+     "id": "66kdn2d182ld",
+     "board": "Media Literacy",
+     "category": "The Social Dilemma",
+     "value": 500,
+     "clue": "Designers say content that triggers outrage, fear and envy is promoted because it maximizes this",
+     "answer": "Engagement"
+    },
+    {
+     "id": "4ryl62h882ld",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 100,
+     "clue": "Content that never ends as you swipe",
+     "answer": "Infinite scroll"
+    },
+    {
+     "id": "fzfs9nk582ld",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 200,
+     "clue": "The next video starts on its own",
+     "answer": "Autoplay"
+    },
+    {
+     "id": "fahuh52v82ld",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 300,
+     "clue": "Pings and buzzes that pull you back to your phone",
+     "answer": "Notifications"
+    },
+    {
+     "id": "itl8g8g482ld",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 400,
+     "clue": "Not knowing when the next \"like\" will come makes your feed work like this casino game",
+     "answer": "A slot machine"
+    },
+    {
+     "id": "3xkixwjr82ld",
+     "board": "Media Literacy",
+     "category": "Hooked by Design",
+     "value": 500,
+     "clue": "The brain chemical tied to reward that likes and notifications can trigger",
+     "answer": "Dopamine"
+    },
+    {
+     "id": "lctwchfb82ld",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 100,
+     "clue": "People post their best moments, so we see this",
+     "answer": "A highlight reel"
+    },
+    {
+     "id": "ec88hvj682ld",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 200,
+     "clue": "We end up comparing our insides to other people's this",
+     "answer": "Outsides"
+    },
+    {
+     "id": "6f7u710182ld",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 300,
+     "clue": "Online, this kind of community offers support at 2 a.m. when there's no meeting",
+     "answer": "Recovery community"
+    },
+    {
+     "id": "2koir0mm82ld",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 400,
+     "clue": "Intentional choices about what media you take in",
+     "answer": "Media hygiene"
+    },
+    {
+     "id": "zxijoukx82ld",
+     "board": "Media Literacy",
+     "category": "Media and Recovery",
+     "value": 500,
+     "clue": "One example of a realistic first boundary in the morning",
+     "answer": "No phone for the first 30 minutes"
     }
    ],
    "wheel": [
@@ -8009,6 +9251,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Elections"
      ]
+    },
+    {
+     "id": "jp73vvyc8358",
+     "category": "Phrase",
+     "phrase": "STOP BEFORE YOU SHARE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "wl65s5qu8358",
+     "category": "Phrase",
+     "phrase": "WHO MADE THIS AND WHY",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "ihrxrovq8358",
+     "category": "Phrase",
+     "phrase": "CHECK THE SOURCE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "ygu3dxwj8358",
+     "category": "Phrase",
+     "phrase": "FIND BETTER COVERAGE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "gl3r89jk8358",
+     "category": "Phrase",
+     "phrase": "TRACE IT TO THE ORIGINAL",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "bvbw5upo8358",
+     "category": "Phrase",
+     "phrase": "YOU ARE THE PRODUCT",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "zv5q3kn88358",
+     "category": "Phrase",
+     "phrase": "NOT EVERYTHING ONLINE IS TRUE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "0yupuvjj8358",
+     "category": "Phrase",
+     "phrase": "COMPARISON STEALS YOUR JOY",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "5yqm98768358",
+     "category": "Thing",
+     "phrase": "THE ATTENTION ECONOMY",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "bvp8hdac8358",
+     "category": "Thing",
+     "phrase": "INFINITE SCROLL",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "b42upv3s8358",
+     "category": "Thing",
+     "phrase": "A NEWS FEED",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "h9flum628358",
+     "category": "Thing",
+     "phrase": "A HIGHLIGHT REEL",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "lwyt11b28358",
+     "category": "Thing",
+     "phrase": "PUSH NOTIFICATIONS",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "oivjpsan8358",
+     "category": "Thing",
+     "phrase": "A FACT CHECKING WEBSITE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "xwtaiwv98358",
+     "category": "Thing",
+     "phrase": "MEDIA HYGIENE",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "6hnoixb48358",
+     "category": "Event",
+     "phrase": "GOING VIRAL",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "cnnv819z8358",
+     "category": "Event",
+     "phrase": "DOOM SCROLLING AT MIDNIGHT",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "a2fqk59e8358",
+     "category": "Event",
+     "phrase": "TURNING OFF NOTIFICATIONS",
+     "sets": [
+      "Media Literacy"
+     ]
     }
    ],
    "words": [
@@ -8332,6 +9718,128 @@ window.GS_MY_CONTENT = {
      "hint": "Elections",
      "sets": [
       "Elections"
+     ]
+    },
+    {
+     "id": "p3g3w7wd7xak",
+     "word": "PAUSE",
+     "hint": "Self-care",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "14p6pfc57xak",
+     "word": "SHARE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "rj0bcpc08488",
+     "word": "MEDIA",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "0snjakj98488",
+     "word": "LIKES",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "29g9sr558488",
+     "word": "FEEDS",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "zpxq0vmu8488",
+     "word": "CLICK",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "8m5ywwus8488",
+     "word": "VIRAL",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "jjki23028488",
+     "word": "POSTS",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "zxxwxqyx8488",
+     "word": "TRUTH",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "b1d80xnd8488",
+     "word": "FACTS",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "174zl5xc8488",
+     "word": "PHONE",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "t8pv23qh8488",
+     "word": "VIDEO",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "hxxys62g8488",
+     "word": "TRACE",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "fkumquij8488",
+     "word": "HOOKS",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "bgwfk12y8488",
+     "word": "BLOCK",
+     "hint": "Media Literacy",
+     "sets": [
+      "Media Literacy"
      ]
     }
    ],
@@ -8774,6 +10282,166 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Elections"
+     ]
+    },
+    {
+     "id": "39mks8g9822e",
+     "word": "a smartphone",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "irs9786q822e",
+     "word": "a thumbs up",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "6cq9c2ss822e",
+     "word": "a newspaper",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "cf3k4y5o822e",
+     "word": "a television",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "i6icd9w4822e",
+     "word": "a magnifying glass",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "5p5xrudg822e",
+     "word": "a stop sign",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "f5jvrfea822e",
+     "word": "a heart notification",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "mhr36h0l822e",
+     "word": "a camera",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "w2mfnjb9822e",
+     "word": "a laptop",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "zs0cecmr822e",
+     "word": "a megaphone",
+     "level": "easy",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "idp2h7ik822e",
+     "word": "a slot machine",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "16c4iwmw822e",
+     "word": "scrolling on a phone",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "4c5pdxkm822e",
+     "word": "fake news",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "dmva5ww6822e",
+     "word": "going viral",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "csw99urt822e",
+     "word": "a selfie",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "qd262gvt822e",
+     "word": "a fishing hook",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "zlxyc6of822e",
+     "word": "a phone buzzing at night",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "784fbv60822e",
+     "word": "someone fact checking",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "wqyi5oca822e",
+     "word": "a brain on a phone",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "7bsfcgib822e",
+     "word": "putting the phone away",
+     "level": "medium",
+     "sets": [
+      "Media Literacy"
      ]
     }
    ],
@@ -9676,6 +11344,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Elections"
+     ]
+    },
+    {
+     "id": "inrnnqvm83oq",
+     "question": "Media literacy is best described as what?",
+     "answer": "The ability to access, analyze, evaluate and create media",
+     "wrong": [
+      "Only reading newspapers",
+      "Avoiding all social media",
+      "Knowing how to use a smartphone"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "d3t0c3ri83oq",
+     "question": "What key question does media literacy teach you to ask?",
+     "answer": "Who made this, why, and what do they want me to feel or do?",
+     "wrong": [
+      "How long is this?",
+      "Is this free?",
+      "How many people shared it?"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "k5u57lu883oq",
+     "question": "What is the \"attention economy\"?",
+     "answer": "Platforms making money by selling your attention to advertisers",
+     "wrong": [
+      "Paying attention to get discounts",
+      "A new online currency",
+      "The cost of a TV ad"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "ncmop68x83oq",
+     "question": "An MIT study found false news spreads about how much faster than true news?",
+     "answer": "About six times faster",
+     "wrong": [
+      "Twice as fast",
+      "The same speed",
+      "Half as fast"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "x0dgczna83oq",
+     "question": "Why does false news spread faster?",
+     "answer": "It is more surprising and emotional, so people share it more",
+     "wrong": [
+      "It is shorter",
+      "Algorithms only promote lies",
+      "Everyone prefers jokes"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "wk9prgx083oq",
+     "question": "What does the S in SIFT stand for?",
+     "answer": "Stop",
+     "wrong": [
+      "Search",
+      "Share",
+      "Scroll"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "e641pr2583oq",
+     "question": "The I in SIFT means Investigate the Source. What do you do first?",
+     "answer": "Look up who made it before reading",
+     "wrong": [
+      "Read the whole article twice",
+      "Count the likes",
+      "Ask a friend"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "pxdh481m83oq",
+     "question": "Why \"Find Better Coverage\"?",
+     "answer": "One source is never enough, so check other credible outlets",
+     "wrong": [
+      "The longest article is most accurate",
+      "Government sites are always right",
+      "Social media is newest"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "6176e3zi83oq",
+     "question": "The T in SIFT means trace claims, quotes and media back to what?",
+     "answer": "The original source",
+     "wrong": [
+      "The most popular post",
+      "The comment section",
+      "Your news feed"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "uaaiei5j83oq",
+     "question": "A post gives you a strong emotional reaction. What should you do?",
+     "answer": "Slow down and SIFT before sharing",
+     "wrong": [
+      "Share it right away",
+      "Believe it because it feels real",
+      "Assume it is false"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "78ixztjl83oq",
+     "question": "Which is a fact-checking website?",
+     "answer": "Snopes.com or FactCheck.org",
+     "wrong": [
+      "The number of shares",
+      "A popular influencer",
+      "The first search result"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "tjcl3q5c83oq",
+     "question": "Which feature is designed to keep you scrolling longer?",
+     "answer": "Infinite scroll",
+     "wrong": [
+      "Profile pictures",
+      "Private messages",
+      "Location check-ins"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "03zgnvwp83oq",
+     "question": "What is the \"highlight reel\" problem?",
+     "answer": "People post their best moments, and we compare our insides to their outsides",
+     "wrong": [
+      "Movie trailers are too short",
+      "Only good news is shown",
+      "Videos autoplay"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "b4fttlp983oq",
+     "question": "Why is social media comparison risky in recovery?",
+     "answer": "It can trigger \"everyone else is moving forward and I'm not\" thoughts",
+     "wrong": [
+      "People in recovery cannot use social media",
+      "It makes people too happy",
+      "Only young people use it"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "hbtlluki83oq",
+     "question": "How CAN social media support recovery?",
+     "answer": "Online recovery communities offer support 24/7",
+     "wrong": [
+      "Following accounts that glamorize drinking",
+      "Reading news comment sections",
+      "Watching ads for alcohol"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "q10u6ee383oq",
+     "question": "The Social Dilemma features people who did what?",
+     "answer": "Built and designed big tech platforms",
+     "wrong": [
+      "Never used social media",
+      "Ran for public office",
+      "Made video games"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "zgis0jcu83oq",
+     "question": "Tristan Harris calls social media design a \"race to the bottom of the...\" what?",
+     "answer": "Brain stem",
+     "wrong": [
+      "Ocean",
+      "Price list",
+      "App store"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "rrnkycdl83oq",
+     "question": "Social media \"likes\" and new posts work like a slot machine because the rewards are what?",
+     "answer": "Unpredictable",
+     "wrong": [
+      "Always the same",
+      "Paid in cash",
+      "Only on weekends"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "c8b88pdv83oq",
+     "question": "What is \"media hygiene\"?",
+     "answer": "Making intentional choices about the media you take in",
+     "wrong": [
+      "Cleaning your phone screen",
+      "Only reading government news",
+      "Deleting every account forever"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
+     ]
+    },
+    {
+     "id": "8cqnpbrn83oq",
+     "question": "Which is a realistic first media boundary?",
+     "answer": "No phone for the first 30 minutes after waking up",
+     "wrong": [
+      "Never use the internet again",
+      "Delete all social media today",
+      "Read only foreign news"
+     ],
+     "category": "Media Literacy",
+     "time": 20,
+     "sets": [
+      "Media Literacy"
      ]
     }
    ]
