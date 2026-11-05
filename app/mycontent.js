@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-05-handling-disappointment",
+ "id": "matt-2026-11-05-asking-for-help",
  "banks": {
   "standard": {
    "cross": [
@@ -1059,6 +1059,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "hope",
        "clue": "Something you wish for that may or may not work out"
+      }
+     ]
+    },
+    {
+     "id": "3xfelbxtran1",
+     "title": "Asking for Help",
+     "entries": [
+      {
+       "word": "barrier",
+       "clue": "Anything that makes it harder to ask for help"
+      },
+      {
+       "word": "support",
+       "clue": "______ system: the people and resources you turn to"
+      },
+      {
+       "word": "vulnerability",
+       "clue": "The willingness to admit a need or struggle"
+      },
+      {
+       "word": "acceptance",
+       "clue": "Letting yourself receive help once you ask"
+      },
+      {
+       "word": "courage",
+       "clue": "What it takes to ask for help"
+      },
+      {
+       "word": "burden",
+       "clue": "Many people do not want to be one"
+      },
+      {
+       "word": "pride",
+       "clue": "The belief you should handle it all alone"
+      },
+      {
+       "word": "shame",
+       "clue": "Feeling embarrassed about needing help"
+      },
+      {
+       "word": "judgment",
+       "clue": "Fear of ______ keeps people from asking"
+      },
+      {
+       "word": "isolation",
+       "clue": "Recovery does not happen in this"
+      },
+      {
+       "word": "direct",
+       "clue": "Be ______: say what you need"
+      },
+      {
+       "word": "small",
+       "clue": "Start ______: you do not have to share everything"
+      },
+      {
+       "word": "skill",
+       "clue": "Asking for help is one; it gets easier with practice"
+      },
+      {
+       "word": "struggling",
+       "clue": "\"I am ______\" is enough to start"
+      },
+      {
+       "word": "trustworthy",
+       "clue": "Pick a person who is safe and ______"
       }
      ]
     }
@@ -2663,6 +2729,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The video reflection sheet ends with this, one thing you will try next time",
      "answer": "My commitment"
+    },
+    {
+     "id": "fmkv7nntrbhh",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 100,
+     "clue": "Worrying people will think you are weak is fear of this",
+     "answer": "Being judged"
+    },
+    {
+     "id": "n25nwg62rbhh",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 200,
+     "clue": "Believing you should handle everything alone comes from this",
+     "answer": "Pride"
+    },
+    {
+     "id": "l1psfonerbhh",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 300,
+     "clue": "Not wanting to be this to the people you love",
+     "answer": "A burden"
+    },
+    {
+     "id": "4w7rrz7hrbhh",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 400,
+     "clue": "Being let down before can make you afraid of this happening again",
+     "answer": "Being disappointed or let down"
+    },
+    {
+     "id": "rb0l9u0nrbhh",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 500,
+     "clue": "Feeling embarrassed about needing help is called this",
+     "answer": "Shame"
+    },
+    {
+     "id": "ncmtal0mrbhh",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 100,
+     "clue": "You do not have to share everything. Step 1 is to do this",
+     "answer": "Start small"
+    },
+    {
+     "id": "sz8zue89rbhh",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 200,
+     "clue": "Choose someone safe and trustworthy. Step 2 is to do this",
+     "answer": "Pick the right person"
+    },
+    {
+     "id": "zelq2oszrbhh",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 300,
+     "clue": "\"I need someone to talk to.\" Step 3 is to be this",
+     "answer": "Direct"
+    },
+    {
+     "id": "nsv7jrobrbhh",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 400,
+     "clue": "Staff, groups and counselors are here for you. Step 4 is to use this",
+     "answer": "What is here"
+    },
+    {
+     "id": "fk9nzt1hrbhh",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 500,
+     "clue": "Asking is only half of it. Step 5 is to do this",
+     "answer": "Accept the help"
+    },
+    {
+     "id": "fq4d0qiqrbhh",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 100,
+     "clue": "Anything that makes it harder to ask for help",
+     "answer": "A barrier"
+    },
+    {
+     "id": "phj9sud8rbhh",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 200,
+     "clue": "The network of people and resources you can turn to",
+     "answer": "A support system"
+    },
+    {
+     "id": "3xe736z4rbhh",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 300,
+     "clue": "The willingness to admit a need or struggle",
+     "answer": "Vulnerability"
+    },
+    {
+     "id": "yggg08h3rbhh",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 400,
+     "clue": "The false belief that needing help is a weakness",
+     "answer": "The self-reliance myth"
+    },
+    {
+     "id": "w2n8aoj6rbhh",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 500,
+     "clue": "Allowing yourself to receive support once you have asked",
+     "answer": "Acceptance"
+    },
+    {
+     "id": "9mhak1lirbhh",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 100,
+     "clue": "Three words that are enough to start asking for help",
+     "answer": "\"I am struggling\""
+    },
+    {
+     "id": "uirdzi1grbhh",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 200,
+     "clue": "A quick way to reach out if talking feels too hard",
+     "answer": "A text"
+    },
+    {
+     "id": "18y3ots2rbhh",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 300,
+     "clue": "Telling one of these at The Care Center that you are struggling",
+     "answer": "A staff member"
+    },
+    {
+     "id": "rfmcpq5prbhh",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 400,
+     "clue": "Going to one of these is a form of reaching out",
+     "answer": "A group or meeting"
+    },
+    {
+     "id": "tbiz4x4lrbhh",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 500,
+     "clue": "Any act of communicating a need is called this",
+     "answer": "Reaching out"
+    },
+    {
+     "id": "isjomxk2rbhh",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 100,
+     "clue": "True or false: no one recovers alone",
+     "answer": "True"
+    },
+    {
+     "id": "h43k4n8grbhh",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 200,
+     "clue": "Recovery does not happen in this",
+     "answer": "Isolation"
+    },
+    {
+     "id": "j4zeqt15rbhh",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 300,
+     "clue": "A support system is one of these for recovery",
+     "answer": "A tool"
+    },
+    {
+     "id": "97lbz39wrbhh",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 400,
+     "clue": "Asking for help is not giving up. It is this",
+     "answer": "Moving forward"
+    },
+    {
+     "id": "0uwkz9xzrbhh",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 500,
+     "clue": "It takes courage to ask for help, and that courage is this",
+     "answer": "A strength"
     }
    ],
    "wheel": [
@@ -3834,6 +4100,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Disappointment"
      ]
+    },
+    {
+     "id": "eexf5a5erc0w",
+     "category": "Phrase",
+     "phrase": "NO ONE RECOVERS ALONE",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "f14fyp6krc0w",
+     "category": "Phrase",
+     "phrase": "I AM STRUGGLING TODAY",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "3m7ms8d9rc0w",
+     "category": "Phrase",
+     "phrase": "IT TAKES COURAGE TO ASK",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "qlrl6g4erc0w",
+     "category": "Phrase",
+     "phrase": "START SMALL",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "xvtasis7rc0w",
+     "category": "Phrase",
+     "phrase": "BE DIRECT ABOUT WHAT YOU NEED",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "j0pw9rxzrc0w",
+     "category": "Phrase",
+     "phrase": "ACCEPT THE HELP",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "v0f9g7p5rc0w",
+     "category": "Phrase",
+     "phrase": "YOU ARE NOT A BURDEN",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "cstcpc3jrc0w",
+     "category": "Phrase",
+     "phrase": "ASKING IS MOVING FORWARD",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "6m13ylemrc0w",
+     "category": "Thing",
+     "phrase": "A SUPPORT SYSTEM",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "qhiwsqm3rc0w",
+     "category": "Thing",
+     "phrase": "A TRUSTED FRIEND",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "xd03hpi9rc0w",
+     "category": "Thing",
+     "phrase": "THE SELF RELIANCE MYTH",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "67lfo7oorc0w",
+     "category": "Thing",
+     "phrase": "A TEXT MESSAGE",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "hgg8wdhnrc0w",
+     "category": "Thing",
+     "phrase": "COURAGE AND TRUST",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "3j30eekbrc0w",
+     "category": "Event",
+     "phrase": "REACHING OUT",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "zfvrk9oprc0w",
+     "category": "Event",
+     "phrase": "TALKING TO A COUNSELOR",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "p0aiakrtrc0w",
+     "category": "Event",
+     "phrase": "GOING TO GROUP",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "crqwcw3rrc0w",
+     "category": "Event",
+     "phrase": "CALLING A FRIEND",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "7tqzftb2rc0w",
+     "category": "Event",
+     "phrase": "BUILDING A SUPPORT PLAN",
+     "sets": [
+      "Asking for Help"
+     ]
     }
    ],
    "words": [
@@ -4364,7 +4774,8 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Personal Strengths",
       "Handling Stress",
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Asking for Help"
      ]
     },
     {
@@ -4505,7 +4916,8 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Stress",
       "Media Literacy",
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Asking for Help"
      ]
     },
     {
@@ -4836,6 +5248,112 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Disappointment",
      "sets": [
       "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "8cgzx2l1r9rh",
+     "word": "BRAVE",
+     "hint": "Feelings",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment",
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "qrxv2yhlrd3e",
+     "word": "REACH",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "nxf48rzrrd3e",
+     "word": "STAFF",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "ht3e3qv3rd3e",
+     "word": "GROUP",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "vl268u41rd3e",
+     "word": "SPEAK",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "c8is3ui8rd3e",
+     "word": "NEEDS",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "cywgjk8nrd3e",
+     "word": "ASKED",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "xyk2lptrrd3e",
+     "word": "START",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "5eplemterd3e",
+     "word": "SMALL",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "zl9prdcprd3e",
+     "word": "PEERS",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "v1v34y7frd3e",
+     "word": "LIFTS",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "5d7xn7wbrd3e",
+     "word": "HEARD",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "5qzsaummrd3e",
+     "word": "TEXTS",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
      ]
     }
    ],
@@ -5357,7 +5875,8 @@ window.GS_MY_CONTENT = {
      "word": "a ladder",
      "level": "easy",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Asking for Help"
      ]
     },
     {
@@ -5487,7 +6006,8 @@ window.GS_MY_CONTENT = {
      "level": "easy",
      "sets": [
       "Handling Stress",
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Asking for Help"
      ]
     },
     {
@@ -5975,7 +6495,8 @@ window.GS_MY_CONTENT = {
      "word": "a bridge",
      "level": "easy",
      "sets": [
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Asking for Help"
      ]
     },
     {
@@ -6064,6 +6585,142 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ypio6vrvrawk",
+     "word": "a raised hand",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "6oe098corawk",
+     "word": "a phone",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "xan0ulbvrawk",
+     "word": "a helping hand",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "kvasu1nrrawk",
+     "word": "a life preserver",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "jaq6icy6rawk",
+     "word": "a lighthouse",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "kgdc815drawk",
+     "word": "a team",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "jytftxbsrawk",
+     "word": "a door",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "96wxk4oxrawk",
+     "word": "a text message",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "59w4m73crawk",
+     "word": "a heavy backpack",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "5heqtj46rawk",
+     "word": "a wall between two people",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "alm8q32crawk",
+     "word": "pulling someone up",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "clvxol7vrawk",
+     "word": "a group circle",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "lr3hrpzjrawk",
+     "word": "carrying a heavy load together",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "dx3pyrv9rawk",
+     "word": "knocking on a door",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "bxh2m9norawk",
+     "word": "a safety net",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "e3btcb82rawk",
+     "word": "someone holding an umbrella for a friend",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "u9819i93rawk",
+     "word": "talking to a counselor",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
      ]
     }
    ],
@@ -8467,6 +9124,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Disappointment"
      ]
+    },
+    {
+     "id": "9xab3y7trcjy",
+     "question": "Asking for help is best described as what?",
+     "answer": "A skill that gets easier with practice",
+     "wrong": [
+      "A sign of weakness",
+      "Something only some people need",
+      "Giving up"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "ny1tjy18rcjy",
+     "question": "Which is a common barrier to asking for help?",
+     "answer": "Fear of being judged",
+     "wrong": [
+      "Having too many friends",
+      "Feeling well rested",
+      "Knowing exactly who to ask"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "mfd8peivrcjy",
+     "question": "Not wanting to do this to others is a common barrier.",
+     "answer": "Be a burden",
+     "wrong": [
+      "Make them laugh",
+      "Give them a gift",
+      "Help them back"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "cubeemc2rcjy",
+     "question": "Being let down in the past can make you do what?",
+     "answer": "Hesitate to ask again",
+     "wrong": [
+      "Ask more often",
+      "Forget it happened",
+      "Never need help again"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "zy6zroh9rcjy",
+     "question": "What is a \"barrier\"?",
+     "answer": "Anything that makes it harder to ask for help",
+     "wrong": [
+      "A person who helps you",
+      "A kind of meeting",
+      "A coping skill"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "iu1n0pz2rcjy",
+     "question": "Asking for help takes courage and what?",
+     "answer": "Self-awareness",
+     "wrong": [
+      "Money",
+      "Perfect timing",
+      "A big speech"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "k6swxp14rcjy",
+     "question": "Does help have to be a big conversation?",
+     "answer": "No, \"I am struggling\" is enough to start",
+     "wrong": [
+      "Yes, always",
+      "Only in writing",
+      "Only with a counselor"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "j5vqii9prcjy",
+     "question": "Which counts as reaching out?",
+     "answer": "A text, a talk, going to group or telling staff",
+     "wrong": [
+      "Only a phone call",
+      "Only a letter",
+      "Waiting for someone to notice"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "6683e0pircjy",
+     "question": "The \"self-reliance myth\" is the belief that what?",
+     "answer": "Needing help is a weakness",
+     "wrong": [
+      "Everyone needs help",
+      "Help is free",
+      "Friends always know what you need"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "5zpe3a19rcjy",
+     "question": "What is a support system?",
+     "answer": "The people and resources you can turn to",
+     "wrong": [
+      "A computer program",
+      "A list of rules",
+      "A type of exercise"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "lccx8i9nrcjy",
+     "question": "Recovery does not happen in what?",
+     "answer": "Isolation",
+     "wrong": [
+      "Groups",
+      "Steps",
+      "Daylight"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "cujzg5r8rcjy",
+     "question": "\"Vulnerability\" means being willing to do what?",
+     "answer": "Admit a need or struggle",
+     "wrong": [
+      "Hide your feelings",
+      "Win every argument",
+      "Do it all alone"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "a9ivpzxhrcjy",
+     "question": "Step 1 of the 5 ways to ask for help is what?",
+     "answer": "Start small",
+     "wrong": [
+      "Tell everyone everything",
+      "Wait until it gets worse",
+      "Post it online"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "e9cd98djrcjy",
+     "question": "When you \"pick the right person,\" who should it be?",
+     "answer": "Someone safe and trustworthy",
+     "wrong": [
+      "The first person you see",
+      "Someone who judges you",
+      "A stranger online"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "z52mvms5rcjy",
+     "question": "\"Be direct\" means what?",
+     "answer": "Say what you need",
+     "wrong": [
+      "Drop hints",
+      "Wait for them to guess",
+      "Change the subject"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "52sq0ovqrcjy",
+     "question": "\"Use what is here\" means using what?",
+     "answer": "Staff, groups, counselors and programs",
+     "wrong": [
+      "Only your phone",
+      "Only your own willpower",
+      "Nothing, you should manage alone"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "kuyu3oh6rcjy",
+     "question": "Asking is only half of it. What is the other half?",
+     "answer": "Accepting the help",
+     "wrong": [
+      "Paying it back right away",
+      "Saying no",
+      "Forgetting about it"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "j3an8tnurcjy",
+     "question": "If a friend came to you struggling, would most people think less of them?",
+     "answer": "No, so we can treat ourselves the same way",
+     "wrong": [
+      "Yes, always",
+      "Only if they cried",
+      "Only on weekends"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "v9kne26prcjy",
+     "question": "Asking for help is not giving up. It is what?",
+     "answer": "Moving forward",
+     "wrong": [
+      "Going backward",
+      "Standing still",
+      "Quitting slowly"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "bqa7835hrcjy",
+     "question": "What is the commitment on the video reflection sheet?",
+     "answer": "One person I can reach out to this week",
+     "wrong": [
+      "One thing I will buy",
+      "One rule I will break",
+      "One person I will avoid"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
     }
    ]
   },
@@ -9052,6 +10009,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "hope",
        "clue": "Something you wish for that may or may not work out"
+      }
+     ]
+    },
+    {
+     "id": "c7zfqfovrdp9",
+     "title": "Asking for Help",
+     "entries": [
+      {
+       "word": "barrier",
+       "clue": "Anything that makes it harder to ask for help"
+      },
+      {
+       "word": "support",
+       "clue": "______ system: the people and resources you turn to"
+      },
+      {
+       "word": "vulnerability",
+       "clue": "The willingness to admit a need or struggle"
+      },
+      {
+       "word": "acceptance",
+       "clue": "Letting yourself receive help once you ask"
+      },
+      {
+       "word": "courage",
+       "clue": "What it takes to ask for help"
+      },
+      {
+       "word": "burden",
+       "clue": "Many people do not want to be one"
+      },
+      {
+       "word": "pride",
+       "clue": "The belief you should handle it all alone"
+      },
+      {
+       "word": "shame",
+       "clue": "Feeling embarrassed about needing help"
+      },
+      {
+       "word": "judgment",
+       "clue": "Fear of ______ keeps people from asking"
+      },
+      {
+       "word": "isolation",
+       "clue": "Recovery does not happen in this"
+      },
+      {
+       "word": "direct",
+       "clue": "Be ______: say what you need"
+      },
+      {
+       "word": "small",
+       "clue": "Start ______: you do not have to share everything"
+      },
+      {
+       "word": "skill",
+       "clue": "Asking for help is one; it gets easier with practice"
+      },
+      {
+       "word": "struggling",
+       "clue": "\"I am ______\" is enough to start"
+      },
+      {
+       "word": "trustworthy",
+       "clue": "Pick a person who is safe and ______"
       }
      ]
     }
@@ -10056,6 +11079,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The video reflection sheet ends with this, one thing you will try next time",
      "answer": "My commitment"
+    },
+    {
+     "id": "49k3wjwvrefz",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 100,
+     "clue": "Worrying people will think you are weak is fear of this",
+     "answer": "Being judged"
+    },
+    {
+     "id": "3d95c24rrefz",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 200,
+     "clue": "Believing you should handle everything alone comes from this",
+     "answer": "Pride"
+    },
+    {
+     "id": "p1929m5zrefz",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 300,
+     "clue": "Not wanting to be this to the people you love",
+     "answer": "A burden"
+    },
+    {
+     "id": "58nb9jo2refz",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 400,
+     "clue": "Being let down before can make you afraid of this happening again",
+     "answer": "Being disappointed or let down"
+    },
+    {
+     "id": "s4hrwgpjrefz",
+     "board": "Asking for Help",
+     "category": "Why It Feels Hard",
+     "value": 500,
+     "clue": "Feeling embarrassed about needing help is called this",
+     "answer": "Shame"
+    },
+    {
+     "id": "2fe8ee2orefz",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 100,
+     "clue": "You do not have to share everything. Step 1 is to do this",
+     "answer": "Start small"
+    },
+    {
+     "id": "u9sdgmnwrefz",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 200,
+     "clue": "Choose someone safe and trustworthy. Step 2 is to do this",
+     "answer": "Pick the right person"
+    },
+    {
+     "id": "0ku00d0orefz",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 300,
+     "clue": "\"I need someone to talk to.\" Step 3 is to be this",
+     "answer": "Direct"
+    },
+    {
+     "id": "qja8i335refz",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 400,
+     "clue": "Staff, groups and counselors are here for you. Step 4 is to use this",
+     "answer": "What is here"
+    },
+    {
+     "id": "iucaynj1refz",
+     "board": "Asking for Help",
+     "category": "5 Ways to Ask",
+     "value": 500,
+     "clue": "Asking is only half of it. Step 5 is to do this",
+     "answer": "Accept the help"
+    },
+    {
+     "id": "38jrkn09refz",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 100,
+     "clue": "Anything that makes it harder to ask for help",
+     "answer": "A barrier"
+    },
+    {
+     "id": "dyjo7ttrrefz",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 200,
+     "clue": "The network of people and resources you can turn to",
+     "answer": "A support system"
+    },
+    {
+     "id": "hu5s00oqrefz",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 300,
+     "clue": "The willingness to admit a need or struggle",
+     "answer": "Vulnerability"
+    },
+    {
+     "id": "xz8bzl3nrefz",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 400,
+     "clue": "The false belief that needing help is a weakness",
+     "answer": "The self-reliance myth"
+    },
+    {
+     "id": "nmv2qwtbrefz",
+     "board": "Asking for Help",
+     "category": "SmartBoard Terms",
+     "value": 500,
+     "clue": "Allowing yourself to receive support once you have asked",
+     "answer": "Acceptance"
+    },
+    {
+     "id": "maaul5gfrefz",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 100,
+     "clue": "Three words that are enough to start asking for help",
+     "answer": "\"I am struggling\""
+    },
+    {
+     "id": "4e5lpk7rrefz",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 200,
+     "clue": "A quick way to reach out if talking feels too hard",
+     "answer": "A text"
+    },
+    {
+     "id": "joxovkyqrefz",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 300,
+     "clue": "Telling one of these at The Care Center that you are struggling",
+     "answer": "A staff member"
+    },
+    {
+     "id": "24f3m27rrefz",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 400,
+     "clue": "Going to one of these is a form of reaching out",
+     "answer": "A group or meeting"
+    },
+    {
+     "id": "lwhkuvvgrefz",
+     "board": "Asking for Help",
+     "category": "Reaching Out",
+     "value": 500,
+     "clue": "Any act of communicating a need is called this",
+     "answer": "Reaching out"
+    },
+    {
+     "id": "3ay8o6t9refz",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 100,
+     "clue": "True or false: no one recovers alone",
+     "answer": "True"
+    },
+    {
+     "id": "0zi3l4c7refz",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 200,
+     "clue": "Recovery does not happen in this",
+     "answer": "Isolation"
+    },
+    {
+     "id": "ydrqq9mdrefz",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 300,
+     "clue": "A support system is one of these for recovery",
+     "answer": "A tool"
+    },
+    {
+     "id": "fzcqvhtqrefz",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 400,
+     "clue": "Asking for help is not giving up. It is this",
+     "answer": "Moving forward"
+    },
+    {
+     "id": "qzqawiw7refz",
+     "board": "Asking for Help",
+     "category": "Help and Recovery",
+     "value": 500,
+     "clue": "It takes courage to ask for help, and that courage is this",
+     "answer": "A strength"
     }
    ],
    "wheel": [
@@ -10762,6 +11985,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Disappointment"
      ]
+    },
+    {
+     "id": "kc6302ugr9rj",
+     "category": "Coping Skill",
+     "phrase": "CALLING A FRIEND",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "zl3e7atgreyw",
+     "category": "Phrase",
+     "phrase": "NO ONE RECOVERS ALONE",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "qsnfm8jgreyw",
+     "category": "Phrase",
+     "phrase": "I AM STRUGGLING TODAY",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "pvw5sgm4reyw",
+     "category": "Phrase",
+     "phrase": "IT TAKES COURAGE TO ASK",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "6a8un437reyw",
+     "category": "Phrase",
+     "phrase": "START SMALL",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "17mi7dbvreyw",
+     "category": "Phrase",
+     "phrase": "BE DIRECT ABOUT WHAT YOU NEED",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "56z81z07reyw",
+     "category": "Phrase",
+     "phrase": "ACCEPT THE HELP",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "fobpusr7reyw",
+     "category": "Phrase",
+     "phrase": "YOU ARE NOT A BURDEN",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "i6395aaxreyw",
+     "category": "Phrase",
+     "phrase": "ASKING IS MOVING FORWARD",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "92tql0atreyw",
+     "category": "Thing",
+     "phrase": "A SUPPORT SYSTEM",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "152y8wcvreyw",
+     "category": "Thing",
+     "phrase": "A TRUSTED FRIEND",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "iz2otlg0reyw",
+     "category": "Thing",
+     "phrase": "THE SELF RELIANCE MYTH",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "h29uigu8reyw",
+     "category": "Thing",
+     "phrase": "A TEXT MESSAGE",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "6yjk0o1vreyw",
+     "category": "Thing",
+     "phrase": "COURAGE AND TRUST",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "slppcluxreyw",
+     "category": "Event",
+     "phrase": "REACHING OUT",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "kaymykbwreyw",
+     "category": "Event",
+     "phrase": "TALKING TO A COUNSELOR",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "pfj9aq03reyw",
+     "category": "Event",
+     "phrase": "GOING TO GROUP",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "9rb5mdp5reyw",
+     "category": "Event",
+     "phrase": "BUILDING A SUPPORT PLAN",
+     "sets": [
+      "Asking for Help"
+     ]
     }
    ],
    "words": [
@@ -11335,6 +12702,134 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Disappointment"
      ]
+    },
+    {
+     "id": "q7bejd33r9ro",
+     "word": "BRAVE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment",
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "5mo5a901r9ro",
+     "word": "SHARE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy",
+      "Handling Disappointment",
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "owfpc6f1r9ro",
+     "word": "TRUST",
+     "hint": "Connection",
+     "sets": [
+      "Personal Strengths",
+      "Handling Stress",
+      "Handling Disappointment",
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "s1pd6pa8r9ro",
+     "word": "PEERS",
+     "hint": "Connection",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "5lqu8b85r9ro",
+     "word": "GROUP",
+     "hint": "Connection",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "ed03g2vpr9ro",
+     "word": "SPEAK",
+     "hint": "Connection",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "bwkiz5vwr9ro",
+     "word": "START",
+     "hint": "Recovery",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "djaw8u9drg1e",
+     "word": "REACH",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "fkug8469rg1e",
+     "word": "STAFF",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "bkgross5rg1e",
+     "word": "NEEDS",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "u18go42drg1e",
+     "word": "ASKED",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "nvb1ms6crg1e",
+     "word": "SMALL",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "8p8fo7nfrg1e",
+     "word": "LIFTS",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "iq0g2um1rg1e",
+     "word": "HEARD",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "5w43uxkdrg1e",
+     "word": "TEXTS",
+     "hint": "Asking for Help",
+     "sets": [
+      "Asking for Help"
+     ]
     }
    ],
    "draw": [
@@ -11383,7 +12878,8 @@ window.GS_MY_CONTENT = {
      "word": "a ladder",
      "level": "easy",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Asking for Help"
      ]
     },
     {
@@ -11521,7 +13017,8 @@ window.GS_MY_CONTENT = {
      "level": "easy",
      "sets": [
       "Handling Stress",
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Asking for Help"
      ]
     },
     {
@@ -11993,7 +13490,8 @@ window.GS_MY_CONTENT = {
      "word": "a bridge",
      "level": "easy",
      "sets": [
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Asking for Help"
      ]
     },
     {
@@ -12082,6 +13580,142 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "t6j1tqz4rdw2",
+     "word": "a raised hand",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "s0lsvty0rdw2",
+     "word": "a phone",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "a7rocbhmrdw2",
+     "word": "a helping hand",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "9n8p04uhrdw2",
+     "word": "a life preserver",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "uavobbyirdw2",
+     "word": "a lighthouse",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "qg3tsf4crdw2",
+     "word": "a team",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "wiwve7obrdw2",
+     "word": "a door",
+     "level": "easy",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "ffowb5w6rdw2",
+     "word": "a text message",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "7l3mdhn3rdw2",
+     "word": "a heavy backpack",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "yg48y60xrdw2",
+     "word": "a wall between two people",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "uwwqhytsrdw2",
+     "word": "pulling someone up",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "zj5mf9zzrdw2",
+     "word": "a group circle",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "ikmodac1rdw2",
+     "word": "carrying a heavy load together",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "auhb7pxxrdw2",
+     "word": "knocking on a door",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "l700w6bcrdw2",
+     "word": "a safety net",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "llc6oxr5rdw2",
+     "word": "someone holding an umbrella for a friend",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "1kdisqhxrdw2",
+     "word": "talking to a counselor",
+     "level": "medium",
+     "sets": [
+      "Asking for Help"
      ]
     }
    ],
@@ -13584,6 +15218,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "tvmog1w8rfhw",
+     "question": "Asking for help is best described as what?",
+     "answer": "A skill that gets easier with practice",
+     "wrong": [
+      "A sign of weakness",
+      "Something only some people need",
+      "Giving up"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "2he8hdvmrfhw",
+     "question": "Which is a common barrier to asking for help?",
+     "answer": "Fear of being judged",
+     "wrong": [
+      "Having too many friends",
+      "Feeling well rested",
+      "Knowing exactly who to ask"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "ic1t6t17rfhw",
+     "question": "Not wanting to do this to others is a common barrier.",
+     "answer": "Be a burden",
+     "wrong": [
+      "Make them laugh",
+      "Give them a gift",
+      "Help them back"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "dx9b796rrfhw",
+     "question": "Being let down in the past can make you do what?",
+     "answer": "Hesitate to ask again",
+     "wrong": [
+      "Ask more often",
+      "Forget it happened",
+      "Never need help again"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "8uc4h1q0rfhw",
+     "question": "What is a \"barrier\"?",
+     "answer": "Anything that makes it harder to ask for help",
+     "wrong": [
+      "A person who helps you",
+      "A kind of meeting",
+      "A coping skill"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "dd2noaozrfhw",
+     "question": "Asking for help takes courage and what?",
+     "answer": "Self-awareness",
+     "wrong": [
+      "Money",
+      "Perfect timing",
+      "A big speech"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "v94y7hvxrfhw",
+     "question": "Does help have to be a big conversation?",
+     "answer": "No, \"I am struggling\" is enough to start",
+     "wrong": [
+      "Yes, always",
+      "Only in writing",
+      "Only with a counselor"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "vhfjs1marfhw",
+     "question": "Which counts as reaching out?",
+     "answer": "A text, a talk, going to group or telling staff",
+     "wrong": [
+      "Only a phone call",
+      "Only a letter",
+      "Waiting for someone to notice"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "ovw56858rfhw",
+     "question": "The \"self-reliance myth\" is the belief that what?",
+     "answer": "Needing help is a weakness",
+     "wrong": [
+      "Everyone needs help",
+      "Help is free",
+      "Friends always know what you need"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "v3es053grfhw",
+     "question": "What is a support system?",
+     "answer": "The people and resources you can turn to",
+     "wrong": [
+      "A computer program",
+      "A list of rules",
+      "A type of exercise"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "b3hyz8jurfhw",
+     "question": "Recovery does not happen in what?",
+     "answer": "Isolation",
+     "wrong": [
+      "Groups",
+      "Steps",
+      "Daylight"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "smp4q9zjrfhw",
+     "question": "\"Vulnerability\" means being willing to do what?",
+     "answer": "Admit a need or struggle",
+     "wrong": [
+      "Hide your feelings",
+      "Win every argument",
+      "Do it all alone"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "e0c9e7idrfhw",
+     "question": "Step 1 of the 5 ways to ask for help is what?",
+     "answer": "Start small",
+     "wrong": [
+      "Tell everyone everything",
+      "Wait until it gets worse",
+      "Post it online"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "vpzyjpv8rfhw",
+     "question": "When you \"pick the right person,\" who should it be?",
+     "answer": "Someone safe and trustworthy",
+     "wrong": [
+      "The first person you see",
+      "Someone who judges you",
+      "A stranger online"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "jq85ndzxrfhw",
+     "question": "\"Be direct\" means what?",
+     "answer": "Say what you need",
+     "wrong": [
+      "Drop hints",
+      "Wait for them to guess",
+      "Change the subject"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "g63xopirrfhw",
+     "question": "\"Use what is here\" means using what?",
+     "answer": "Staff, groups, counselors and programs",
+     "wrong": [
+      "Only your phone",
+      "Only your own willpower",
+      "Nothing, you should manage alone"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "cwjdrl7qrfhw",
+     "question": "Asking is only half of it. What is the other half?",
+     "answer": "Accepting the help",
+     "wrong": [
+      "Paying it back right away",
+      "Saying no",
+      "Forgetting about it"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "wpg2oytbrfhw",
+     "question": "If a friend came to you struggling, would most people think less of them?",
+     "answer": "No, so we can treat ourselves the same way",
+     "wrong": [
+      "Yes, always",
+      "Only if they cried",
+      "Only on weekends"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "uyqzlqfzrfhw",
+     "question": "Asking for help is not giving up. It is what?",
+     "answer": "Moving forward",
+     "wrong": [
+      "Going backward",
+      "Standing still",
+      "Quitting slowly"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
+     ]
+    },
+    {
+     "id": "0olvonwsrfhw",
+     "question": "What is the commitment on the video reflection sheet?",
+     "answer": "One person I can reach out to this week",
+     "wrong": [
+      "One thing I will buy",
+      "One rule I will break",
+      "One person I will avoid"
+     ],
+     "category": "Asking for Help",
+     "time": 20,
+     "sets": [
+      "Asking for Help"
      ]
     }
    ]
