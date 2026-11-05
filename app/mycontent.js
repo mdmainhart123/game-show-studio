@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-05-asking-for-help",
+ "id": "matt-2026-11-05-music-emotions",
  "banks": {
   "standard": {
    "cross": [
@@ -1125,6 +1125,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "trustworthy",
        "clue": "Pick a person who is safe and ______"
+      }
+     ]
+    },
+    {
+     "id": "dxpzwdhmta7f",
+     "title": "Music & Emotions",
+     "entries": [
+      {
+       "word": "emotion",
+       "clue": "A felt experience like joy, sadness or anger"
+      },
+      {
+       "word": "memory",
+       "clue": "Songs carry these from times in our lives"
+      },
+      {
+       "word": "playlist",
+       "clue": "A list of songs for different moods"
+      },
+      {
+       "word": "coping",
+       "clue": "Music is a ______ tool many people already use"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that sets off a strong emotional response"
+      },
+      {
+       "word": "awareness",
+       "clue": "Emotional ______: naming what you feel"
+      },
+      {
+       "word": "therapy",
+       "clue": "Music ______: a clinical practice using music"
+      },
+      {
+       "word": "lyric",
+       "clue": "A line of words in a song"
+      },
+      {
+       "word": "mood",
+       "clue": "Upbeat music can lift this"
+      },
+      {
+       "word": "rhythm",
+       "clue": "The beat and pattern of a song"
+      },
+      {
+       "word": "melody",
+       "clue": "The tune you hum"
+      },
+      {
+       "word": "grounding",
+       "clue": "Using a familiar song to come back to the present"
+      },
+      {
+       "word": "shortcut",
+       "clue": "Music is an emotional ______"
+      },
+      {
+       "word": "ballad",
+       "clue": "A slow, emotional song"
+      },
+      {
+       "word": "headphones",
+       "clue": "You wear these to listen privately"
       }
      ]
     }
@@ -2929,6 +2995,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "It takes courage to ask for help, and that courage is this",
      "answer": "A strength"
+    },
+    {
+     "id": "i7ll5q69tayq",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 100,
+     "clue": "A feeling of happiness and delight",
+     "answer": "Joy"
+    },
+    {
+     "id": "9r9cgjoptayq",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 200,
+     "clue": "A feeling of deep loss, often after someone dies",
+     "answer": "Grief"
+    },
+    {
+     "id": "0lwphq2etayq",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 300,
+     "clue": "A strong wish for something or someone you miss",
+     "answer": "Longing"
+    },
+    {
+     "id": "ohtg8lhvtayq",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 400,
+     "clue": "Emotions are this, not problems",
+     "answer": "Information"
+    },
+    {
+     "id": "37pb4bswtayq",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 500,
+     "clue": "A felt experience like joy, sadness, anger or fear",
+     "answer": "An emotion"
+    },
+    {
+     "id": "8opg1n0atayq",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 100,
+     "clue": "When you can't find the words, music can help you do this with emotions",
+     "answer": "Process them"
+    },
+    {
+     "id": "4bogyvmjtayq",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 200,
+     "clue": "Upbeat music can lift this",
+     "answer": "Your energy or mood"
+    },
+    {
+     "id": "57fr0e4ktayq",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 300,
+     "clue": "A song that understands your pain can make you feel this way",
+     "answer": "Less alone"
+    },
+    {
+     "id": "quelmm6htayq",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 400,
+     "clue": "Music tied to a good memory can be one of these to return to when things get hard",
+     "answer": "A resource"
+    },
+    {
+     "id": "ykdddxiytayq",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 500,
+     "clue": "Putting on a familiar song when overwhelmed brings you back to the present. This is called this",
+     "answer": "Grounding"
+    },
+    {
+     "id": "8wb3azr9tayr",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 100,
+     "clue": "Something that activates a strong emotional response",
+     "answer": "A trigger"
+    },
+    {
+     "id": "iwxzsxzntayr",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 200,
+     "clue": "Any healthy strategy used to manage emotions or stress",
+     "answer": "A coping tool"
+    },
+    {
+     "id": "sdb2vkfmtayr",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 300,
+     "clue": "The ability to recognize and name what you are feeling",
+     "answer": "Emotional awareness"
+    },
+    {
+     "id": "iqp6x71ytayr",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 400,
+     "clue": "A clinical practice using music to support emotional, mental and social wellbeing",
+     "answer": "Music therapy"
+    },
+    {
+     "id": "p3p8nlhbtayr",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 500,
+     "clue": "Music can be a positive trigger by bringing up a memory or this",
+     "answer": "Comfort"
+    },
+    {
+     "id": "l62c8jn9tayr",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 100,
+     "clue": "Bill Withers' song about support and connection",
+     "answer": "\"Lean on Me\""
+    },
+    {
+     "id": "gq1ruci2tayr",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 200,
+     "clue": "The Beatles song about hope and relief that starts with \"Here Comes\"",
+     "answer": "\"Here Comes the Sun\""
+    },
+    {
+     "id": "9sxkyhq7tayr",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 300,
+     "clue": "Gloria Gaynor's song about resilience",
+     "answer": "\"I Will Survive\""
+    },
+    {
+     "id": "m5184tjwtayr",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 400,
+     "clue": "Michael Jackson's song about self-reflection and change",
+     "answer": "\"Man in the Mirror\""
+    },
+    {
+     "id": "qrv91frstayr",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 500,
+     "clue": "Andra Day's song about strength and perseverance",
+     "answer": "\"Rise Up\""
+    },
+    {
+     "id": "oq1f2gdytayr",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 100,
+     "clue": "A song for when you need this: to feel motivated or ______",
+     "answer": "Energized"
+    },
+    {
+     "id": "26f04g5mtayr",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 200,
+     "clue": "A song for when you need to calm down or slow these",
+     "answer": "Your thoughts"
+    },
+    {
+     "id": "52s7i88ftayr",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 300,
+     "clue": "A song for when you need to feel less this",
+     "answer": "Alone"
+    },
+    {
+     "id": "ky050vggtayr",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 400,
+     "clue": "A song for when you need to let yourself do this",
+     "answer": "Feel something"
+    },
+    {
+     "id": "7r1q4esntayr",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 500,
+     "clue": "The handout says you have used music to manage emotions your whole life. Now you can use it this way",
+     "answer": "On purpose"
     }
    ],
    "wheel": [
@@ -4244,6 +4510,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Asking for Help"
      ]
+    },
+    {
+     "id": "r8h28fostbhq",
+     "category": "Song Title",
+     "phrase": "LEAN ON ME",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "eqb3y9oatbhq",
+     "category": "Song Title",
+     "phrase": "HERE COMES THE SUN",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "d09e2c5stbhq",
+     "category": "Song Title",
+     "phrase": "I WILL SURVIVE",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "t048pks0tbhq",
+     "category": "Song Title",
+     "phrase": "THE CLIMB",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "hfk38wlntbhq",
+     "category": "Song Title",
+     "phrase": "RISE UP",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "5b0ufp84tbhq",
+     "category": "Song Title",
+     "phrase": "BEAUTIFUL DAY",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "sh7erqlatbhq",
+     "category": "Song Title",
+     "phrase": "MAN IN THE MIRROR",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "yuns4zwctbhq",
+     "category": "Song Title",
+     "phrase": "YOU ARE NOT ALONE",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "6kxbe7r0tbhq",
+     "category": "Phrase",
+     "phrase": "MUSIC SPEAKS WHEN WORDS FAIL",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "1l6iw6bvtbhq",
+     "category": "Phrase",
+     "phrase": "EMOTIONS ARE INFORMATION",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "g8pwosrgtbhq",
+     "category": "Phrase",
+     "phrase": "THERE ARE NO WRONG ANSWERS",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "zptk5v9ltbhq",
+     "category": "Phrase",
+     "phrase": "TURN UP THE VOLUME",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "lq2m4bxstbhq",
+     "category": "Thing",
+     "phrase": "AN EMOTIONAL PLAYLIST",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "vs74bhi1tbhq",
+     "category": "Thing",
+     "phrase": "A FAVORITE SONG",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "hkry1dcbtbhq",
+     "category": "Thing",
+     "phrase": "A PAIR OF HEADPHONES",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "jihtz9f7tbhq",
+     "category": "Event",
+     "phrase": "NAME THAT EMOTION",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ltwmokkttbhq",
+     "category": "Event",
+     "phrase": "SHARING YOUR SONG",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "e62b3j7wtbhq",
+     "category": "Event",
+     "phrase": "A SING ALONG",
+     "sets": [
+      "Music & Emotions"
+     ]
     }
    ],
    "words": [
@@ -5029,7 +5439,8 @@ window.GS_MY_CONTENT = {
      "word": "VOICE",
      "hint": "Elections",
      "sets": [
-      "Elections"
+      "Elections",
+      "Music & Emotions"
      ]
     },
     {
@@ -5345,7 +5756,8 @@ window.GS_MY_CONTENT = {
      "word": "HEARD",
      "hint": "Asking for Help",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Music & Emotions"
      ]
     },
     {
@@ -5354,6 +5766,110 @@ window.GS_MY_CONTENT = {
      "hint": "Asking for Help",
      "sets": [
       "Asking for Help"
+     ]
+    },
+    {
+     "id": "ny85f4wdt9d7",
+     "word": "RADIO",
+     "hint": "Around the House",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "vshy2ytct9d7",
+     "word": "DANCE",
+     "hint": "Things to Do",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "4utsxh1at9d7",
+     "word": "MUSIC",
+     "hint": "Things to Do",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "axhg1isqt9d7",
+     "word": "PIANO",
+     "hint": "Things to Do",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "wupuh3mytcjq",
+     "word": "SONGS",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "68gumzdctcjq",
+     "word": "TEMPO",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "g42ed4ultcjq",
+     "word": "BEATS",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "r493jujgtcjq",
+     "word": "DRUMS",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "hdy5t6kptcjq",
+     "word": "NOTES",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "wmz4rm05tcjq",
+     "word": "LYRIC",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "54w7759itcjq",
+     "word": "CHORD",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "2mfvpdy0tcjq",
+     "word": "BLUES",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "j6hias93tcjq",
+     "word": "TUNES",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
      ]
     }
    ],
@@ -6463,7 +6979,8 @@ window.GS_MY_CONTENT = {
      "word": "a sad face",
      "level": "easy",
      "sets": [
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Music & Emotions"
      ]
     },
     {
@@ -6721,6 +7238,158 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Asking for Help"
+     ]
+    },
+    {
+     "id": "ifqi8289t9dc",
+     "word": "headphones",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "hrdejfa1tafp",
+     "word": "a guitar",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "m7kobi53tafp",
+     "word": "a drum",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "crj3ejbbtafp",
+     "word": "a music note",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "nig59gx2tafp",
+     "word": "a microphone",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "rbfhhk7stafp",
+     "word": "a piano",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "9mj8grurtafp",
+     "word": "a radio",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "nppulqa6tafp",
+     "word": "a speaker",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "iydpd90rtafp",
+     "word": "a happy face",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "iy7th6ictafp",
+     "word": "Song: Here Comes the Sun",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "yxugsrb7tafp",
+     "word": "Song: Lean on Me",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "rhxuzjc6tafp",
+     "word": "Song: The Climb",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "wtkhlra9tafp",
+     "word": "Song: Blackbird",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "i1stjt0htafp",
+     "word": "Song: Rise Up",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "85ycfi5etafp",
+     "word": "Song: Man in the Mirror",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "blqqltegtafp",
+     "word": "Song: Beautiful Day",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ucln8in6tafp",
+     "word": "a dance party",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "fnq8fplztafp",
+     "word": "a concert",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ud6smfsytafp",
+     "word": "singing in the shower",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
      ]
     }
    ],
@@ -9424,6 +10093,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Asking for Help"
      ]
+    },
+    {
+     "id": "b8j17r5mtc0p",
+     "question": "Why does music hit us so fast?",
+     "answer": "It connects to the emotional part of the brain",
+     "wrong": [
+      "It is always loud",
+      "It only works with lyrics",
+      "It is a type of medicine"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "jxe0sj50tc0p",
+     "question": "The lesson calls music an emotional what?",
+     "answer": "Shortcut",
+     "wrong": [
+      "Roadblock",
+      "Accident",
+      "Distraction"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "rgn7jjwwtc0p",
+     "question": "Emotions are information, not what?",
+     "answer": "Problems",
+     "wrong": [
+      "Feelings",
+      "Memories",
+      "Songs"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "x3tkzz6itc0p",
+     "question": "Can the same song mean something different to two people?",
+     "answer": "Yes, songs carry different memories for different people",
+     "wrong": [
+      "No, everyone feels the same thing",
+      "Only if they speak different languages",
+      "Only for sad songs"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "3agdv19itc0p",
+     "question": "Upbeat music can do what?",
+     "answer": "Lift your energy",
+     "wrong": [
+      "Make you sleepy",
+      "Erase memories",
+      "Slow your heart to a stop"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "l33s1chltc0p",
+     "question": "Calming music can do what?",
+     "answer": "Slow your nervous system down",
+     "wrong": [
+      "Make you angry",
+      "Speed up your thoughts",
+      "Make you forget the song"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "1z500ajptc0p",
+     "question": "Putting on a familiar song when overwhelmed can help you do what?",
+     "answer": "Ground yourself in the present",
+     "wrong": [
+      "Avoid everyone",
+      "Stay overwhelmed",
+      "Skip group"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "okksm5xftc0p",
+     "question": "Using music on purpose to manage your mood is what?",
+     "answer": "A real recovery skill",
+     "wrong": [
+      "A waste of time",
+      "Cheating",
+      "Only for musicians"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "irwj1tudtc0p",
+     "question": "Recognizing and naming what you feel is called what?",
+     "answer": "Emotional awareness",
+     "wrong": [
+      "Music therapy",
+      "A trigger",
+      "A ballad"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "sbra8q2ptc0p",
+     "question": "A trigger is something that does what?",
+     "answer": "Activates a strong emotional response",
+     "wrong": [
+      "Plays music",
+      "Ends a song",
+      "Turns the volume down"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "to0rgnqmtc0p",
+     "question": "Can music be a positive trigger?",
+     "answer": "Yes, like bringing up comfort or a good memory",
+     "wrong": [
+      "No, triggers are always bad",
+      "Only on the radio",
+      "Only for children"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "c8vtq1tstc0p",
+     "question": "Music therapy is what?",
+     "answer": "A clinical practice using music to support wellbeing",
+     "wrong": [
+      "Taking music lessons",
+      "Going to a concert",
+      "Writing a hit song"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "5zsbek10tc0p",
+     "question": "Who sang \"Lean on Me\"?",
+     "answer": "Bill Withers",
+     "wrong": [
+      "Elvis Presley",
+      "Stevie Wonder",
+      "Johnny Cash"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "oi6u0od0tc0p",
+     "question": "Which band recorded \"Here Comes the Sun\"?",
+     "answer": "The Beatles",
+     "wrong": [
+      "U2",
+      "Pearl Jam",
+      "The Rolling Stones"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "yn5v1tgqtc0p",
+     "question": "\"I Will Survive\" is a song about what?",
+     "answer": "Resilience and getting through",
+     "wrong": [
+      "Cooking",
+      "Sports",
+      "Holidays"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "sp887j19tc0p",
+     "question": "\"This Is Me\" comes from which movie musical?",
+     "answer": "The Greatest Showman",
+     "wrong": [
+      "The Wizard of Oz",
+      "Grease",
+      "Mamma Mia"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "5cldpplvtc0p",
+     "question": "Who sang \"Man in the Mirror,\" a song about self-reflection and change?",
+     "answer": "Michael Jackson",
+     "wrong": [
+      "Prince",
+      "Bruce Springsteen",
+      "Bob Marley"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "31f9zb7ktc0p",
+     "question": "\"The Climb\" by Miley Cyrus is often tied to which theme?",
+     "answer": "The recovery journey",
+     "wrong": [
+      "Winter weather",
+      "Driving fast",
+      "Falling asleep"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ywrw3yirtc0p",
+     "question": "In the My Song round, how many answers are wrong?",
+     "answer": "None, every song and feeling is valid",
+     "wrong": [
+      "Half of them",
+      "Any sad song",
+      "Any song without lyrics"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "1bxd8h2btc0p",
+     "question": "The take-home handout asks you to build what?",
+     "answer": "An emotional playlist",
+     "wrong": [
+      "A music video",
+      "A band",
+      "A radio station"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
     }
    ]
   },
@@ -10075,6 +11044,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "trustworthy",
        "clue": "Pick a person who is safe and ______"
+      }
+     ]
+    },
+    {
+     "id": "revya87htd4f",
+     "title": "Music & Emotions",
+     "entries": [
+      {
+       "word": "emotion",
+       "clue": "A felt experience like joy, sadness or anger"
+      },
+      {
+       "word": "memory",
+       "clue": "Songs carry these from times in our lives"
+      },
+      {
+       "word": "playlist",
+       "clue": "A list of songs for different moods"
+      },
+      {
+       "word": "coping",
+       "clue": "Music is a ______ tool many people already use"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that sets off a strong emotional response"
+      },
+      {
+       "word": "awareness",
+       "clue": "Emotional ______: naming what you feel"
+      },
+      {
+       "word": "therapy",
+       "clue": "Music ______: a clinical practice using music"
+      },
+      {
+       "word": "lyric",
+       "clue": "A line of words in a song"
+      },
+      {
+       "word": "mood",
+       "clue": "Upbeat music can lift this"
+      },
+      {
+       "word": "rhythm",
+       "clue": "The beat and pattern of a song"
+      },
+      {
+       "word": "melody",
+       "clue": "The tune you hum"
+      },
+      {
+       "word": "grounding",
+       "clue": "Using a familiar song to come back to the present"
+      },
+      {
+       "word": "shortcut",
+       "clue": "Music is an emotional ______"
+      },
+      {
+       "word": "ballad",
+       "clue": "A slow, emotional song"
+      },
+      {
+       "word": "headphones",
+       "clue": "You wear these to listen privately"
       }
      ]
     }
@@ -11279,6 +12314,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "It takes courage to ask for help, and that courage is this",
      "answer": "A strength"
+    },
+    {
+     "id": "gao8sjrxtdtz",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 100,
+     "clue": "A feeling of happiness and delight",
+     "answer": "Joy"
+    },
+    {
+     "id": "3dihmbgitdtz",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 200,
+     "clue": "A feeling of deep loss, often after someone dies",
+     "answer": "Grief"
+    },
+    {
+     "id": "l4xkrfo5tdtz",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 300,
+     "clue": "A strong wish for something or someone you miss",
+     "answer": "Longing"
+    },
+    {
+     "id": "hs9266wvtdtz",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 400,
+     "clue": "Emotions are this, not problems",
+     "answer": "Information"
+    },
+    {
+     "id": "l86cqk8ltdtz",
+     "board": "Music & Emotions",
+     "category": "Name That Feeling",
+     "value": 500,
+     "clue": "A felt experience like joy, sadness, anger or fear",
+     "answer": "An emotion"
+    },
+    {
+     "id": "ipqkhlaptdtz",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 100,
+     "clue": "When you can't find the words, music can help you do this with emotions",
+     "answer": "Process them"
+    },
+    {
+     "id": "c84ai6pwtdtz",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 200,
+     "clue": "Upbeat music can lift this",
+     "answer": "Your energy or mood"
+    },
+    {
+     "id": "1zqxqdfztdtz",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 300,
+     "clue": "A song that understands your pain can make you feel this way",
+     "answer": "Less alone"
+    },
+    {
+     "id": "02hwbco0tdtz",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 400,
+     "clue": "Music tied to a good memory can be one of these to return to when things get hard",
+     "answer": "A resource"
+    },
+    {
+     "id": "nyyposr7tdtz",
+     "board": "Music & Emotions",
+     "category": "What Music Can Do",
+     "value": 500,
+     "clue": "Putting on a familiar song when overwhelmed brings you back to the present. This is called this",
+     "answer": "Grounding"
+    },
+    {
+     "id": "0s27k2bmtdtz",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 100,
+     "clue": "Something that activates a strong emotional response",
+     "answer": "A trigger"
+    },
+    {
+     "id": "0ugzz0w3tdtz",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 200,
+     "clue": "Any healthy strategy used to manage emotions or stress",
+     "answer": "A coping tool"
+    },
+    {
+     "id": "bko6gkcptdtz",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 300,
+     "clue": "The ability to recognize and name what you are feeling",
+     "answer": "Emotional awareness"
+    },
+    {
+     "id": "iiz94ly1tdtz",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 400,
+     "clue": "A clinical practice using music to support emotional, mental and social wellbeing",
+     "answer": "Music therapy"
+    },
+    {
+     "id": "6zvt8s5atdtz",
+     "board": "Music & Emotions",
+     "category": "SmartBoard Terms",
+     "value": 500,
+     "clue": "Music can be a positive trigger by bringing up a memory or this",
+     "answer": "Comfort"
+    },
+    {
+     "id": "v03nheb7tdtz",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 100,
+     "clue": "Bill Withers' song about support and connection",
+     "answer": "\"Lean on Me\""
+    },
+    {
+     "id": "uctf2ucetdtz",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 200,
+     "clue": "The Beatles song about hope and relief that starts with \"Here Comes\"",
+     "answer": "\"Here Comes the Sun\""
+    },
+    {
+     "id": "7nb2aod9tdtz",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 300,
+     "clue": "Gloria Gaynor's song about resilience",
+     "answer": "\"I Will Survive\""
+    },
+    {
+     "id": "w2ymbd2stdtz",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 400,
+     "clue": "Michael Jackson's song about self-reflection and change",
+     "answer": "\"Man in the Mirror\""
+    },
+    {
+     "id": "kgif8ht9tdtz",
+     "board": "Music & Emotions",
+     "category": "Song Bank",
+     "value": 500,
+     "clue": "Andra Day's song about strength and perseverance",
+     "answer": "\"Rise Up\""
+    },
+    {
+     "id": "adun2z4btdtz",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 100,
+     "clue": "A song for when you need this: to feel motivated or ______",
+     "answer": "Energized"
+    },
+    {
+     "id": "vml6r1urtdtz",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 200,
+     "clue": "A song for when you need to calm down or slow these",
+     "answer": "Your thoughts"
+    },
+    {
+     "id": "sasdbli4tdtz",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 300,
+     "clue": "A song for when you need to feel less this",
+     "answer": "Alone"
+    },
+    {
+     "id": "4gln07yltdtz",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 400,
+     "clue": "A song for when you need to let yourself do this",
+     "answer": "Feel something"
+    },
+    {
+     "id": "for80pyotdtz",
+     "board": "Music & Emotions",
+     "category": "Build Your Playlist",
+     "value": 500,
+     "clue": "The handout says you have used music to manage emotions your whole life. Now you can use it this way",
+     "answer": "On purpose"
     }
    ],
    "wheel": [
@@ -12129,6 +13364,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Asking for Help"
      ]
+    },
+    {
+     "id": "g8lq8lfnt9d8",
+     "category": "Phrase",
+     "phrase": "YOU ARE NOT ALONE",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "24cpil7xtedf",
+     "category": "Song Title",
+     "phrase": "LEAN ON ME",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "4t908oeutedf",
+     "category": "Song Title",
+     "phrase": "HERE COMES THE SUN",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "jmvlw12etedf",
+     "category": "Song Title",
+     "phrase": "I WILL SURVIVE",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "dc83weibtedf",
+     "category": "Song Title",
+     "phrase": "THE CLIMB",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "yaefdyw8tedf",
+     "category": "Song Title",
+     "phrase": "RISE UP",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "133pa8r8tedf",
+     "category": "Song Title",
+     "phrase": "BEAUTIFUL DAY",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "xi90b0vutedf",
+     "category": "Song Title",
+     "phrase": "MAN IN THE MIRROR",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "b3gz8kfltedf",
+     "category": "Phrase",
+     "phrase": "MUSIC SPEAKS WHEN WORDS FAIL",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ht3nl91ntedf",
+     "category": "Phrase",
+     "phrase": "EMOTIONS ARE INFORMATION",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ldh8hiwgtedf",
+     "category": "Phrase",
+     "phrase": "THERE ARE NO WRONG ANSWERS",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "jhshv9yytedf",
+     "category": "Phrase",
+     "phrase": "TURN UP THE VOLUME",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "a27bot83tedf",
+     "category": "Thing",
+     "phrase": "AN EMOTIONAL PLAYLIST",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "1rm2preetedf",
+     "category": "Thing",
+     "phrase": "A FAVORITE SONG",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "lo2zupvntedf",
+     "category": "Thing",
+     "phrase": "A PAIR OF HEADPHONES",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "y4izlbmmtedf",
+     "category": "Event",
+     "phrase": "NAME THAT EMOTION",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "tbdlkw8utedf",
+     "category": "Event",
+     "phrase": "SHARING YOUR SONG",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "rstxlpn9tedf",
+     "category": "Event",
+     "phrase": "A SING ALONG",
+     "sets": [
+      "Music & Emotions"
+     ]
     }
    ],
    "words": [
@@ -12820,7 +14199,8 @@ window.GS_MY_CONTENT = {
      "word": "HEARD",
      "hint": "Asking for Help",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Music & Emotions"
      ]
     },
     {
@@ -12829,6 +14209,119 @@ window.GS_MY_CONTENT = {
      "hint": "Asking for Help",
      "sets": [
       "Asking for Help"
+     ]
+    },
+    {
+     "id": "1ngzo6sdt9db",
+     "word": "MUSIC",
+     "hint": "Self-care",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "3tyupjxbt9db",
+     "word": "VOICE",
+     "hint": "Connection",
+     "sets": [
+      "Elections",
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ne58qcbdtfge",
+     "word": "SONGS",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "v45f23cvtfge",
+     "word": "TEMPO",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "zy9nxavmtfge",
+     "word": "BEATS",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "m4tz26nntfge",
+     "word": "DRUMS",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "u31qz7zptfge",
+     "word": "NOTES",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "rd70qd64tfge",
+     "word": "LYRIC",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "4bzb48xptfge",
+     "word": "PIANO",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "9cez1u2itfge",
+     "word": "RADIO",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "kwqwvllitfge",
+     "word": "DANCE",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ttpt1ep8tfge",
+     "word": "CHORD",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "1o69f9srtfge",
+     "word": "BLUES",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "zsgecs3atfge",
+     "word": "TUNES",
+     "hint": "Music & Emotions",
+     "sets": [
+      "Music & Emotions"
      ]
     }
    ],
@@ -13458,7 +14951,8 @@ window.GS_MY_CONTENT = {
      "word": "a sad face",
      "level": "easy",
      "sets": [
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Music & Emotions"
      ]
     },
     {
@@ -13716,6 +15210,158 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Asking for Help"
+     ]
+    },
+    {
+     "id": "xaz21zq6tdak",
+     "word": "headphones",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "b92m81jttdak",
+     "word": "a guitar",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "3tjdq8uctdak",
+     "word": "a drum",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "4nijlqqvtdak",
+     "word": "a music note",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ltvdcg2qtdak",
+     "word": "a microphone",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "tb4n0n1itdak",
+     "word": "a piano",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "i87pe4lptdak",
+     "word": "a radio",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "60wgl8yetdak",
+     "word": "a speaker",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "qpp0e32ptdak",
+     "word": "a happy face",
+     "level": "easy",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "avtd5y43tdak",
+     "word": "Song: Here Comes the Sun",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "k6vu01sstdak",
+     "word": "Song: Lean on Me",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "fz7ko3iutdak",
+     "word": "Song: The Climb",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "cfpjnv1ptdak",
+     "word": "Song: Blackbird",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "b0rl3ha5tdak",
+     "word": "Song: Rise Up",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "5q44eag0tdak",
+     "word": "Song: Man in the Mirror",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "lts88eputdak",
+     "word": "Song: Beautiful Day",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "5kxdwsr1tdak",
+     "word": "a dance party",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "pav45dv6tdak",
+     "word": "a concert",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "lgsjnrg3tdak",
+     "word": "singing in the shower",
+     "level": "medium",
+     "sets": [
+      "Music & Emotions"
      ]
     }
    ],
@@ -15518,6 +17164,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Asking for Help"
+     ]
+    },
+    {
+     "id": "dfadkhr2tewv",
+     "question": "Why does music hit us so fast?",
+     "answer": "It connects to the emotional part of the brain",
+     "wrong": [
+      "It is always loud",
+      "It only works with lyrics",
+      "It is a type of medicine"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "isuu6eobtewv",
+     "question": "The lesson calls music an emotional what?",
+     "answer": "Shortcut",
+     "wrong": [
+      "Roadblock",
+      "Accident",
+      "Distraction"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "kawb1ytntewv",
+     "question": "Emotions are information, not what?",
+     "answer": "Problems",
+     "wrong": [
+      "Feelings",
+      "Memories",
+      "Songs"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "6lmk90aktewv",
+     "question": "Can the same song mean something different to two people?",
+     "answer": "Yes, songs carry different memories for different people",
+     "wrong": [
+      "No, everyone feels the same thing",
+      "Only if they speak different languages",
+      "Only for sad songs"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "yn256eectewv",
+     "question": "Upbeat music can do what?",
+     "answer": "Lift your energy",
+     "wrong": [
+      "Make you sleepy",
+      "Erase memories",
+      "Slow your heart to a stop"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "c1zd0k26tewv",
+     "question": "Calming music can do what?",
+     "answer": "Slow your nervous system down",
+     "wrong": [
+      "Make you angry",
+      "Speed up your thoughts",
+      "Make you forget the song"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "vxugrlattewv",
+     "question": "Putting on a familiar song when overwhelmed can help you do what?",
+     "answer": "Ground yourself in the present",
+     "wrong": [
+      "Avoid everyone",
+      "Stay overwhelmed",
+      "Skip group"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "s1jwqiogtewv",
+     "question": "Using music on purpose to manage your mood is what?",
+     "answer": "A real recovery skill",
+     "wrong": [
+      "A waste of time",
+      "Cheating",
+      "Only for musicians"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "xv5bhe90tewv",
+     "question": "Recognizing and naming what you feel is called what?",
+     "answer": "Emotional awareness",
+     "wrong": [
+      "Music therapy",
+      "A trigger",
+      "A ballad"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "bbur91gytewv",
+     "question": "A trigger is something that does what?",
+     "answer": "Activates a strong emotional response",
+     "wrong": [
+      "Plays music",
+      "Ends a song",
+      "Turns the volume down"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "ev5qmkxdtewv",
+     "question": "Can music be a positive trigger?",
+     "answer": "Yes, like bringing up comfort or a good memory",
+     "wrong": [
+      "No, triggers are always bad",
+      "Only on the radio",
+      "Only for children"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "heqlomkjtewv",
+     "question": "Music therapy is what?",
+     "answer": "A clinical practice using music to support wellbeing",
+     "wrong": [
+      "Taking music lessons",
+      "Going to a concert",
+      "Writing a hit song"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "5rfi3i6stewv",
+     "question": "Who sang \"Lean on Me\"?",
+     "answer": "Bill Withers",
+     "wrong": [
+      "Elvis Presley",
+      "Stevie Wonder",
+      "Johnny Cash"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "hp5az1zstewv",
+     "question": "Which band recorded \"Here Comes the Sun\"?",
+     "answer": "The Beatles",
+     "wrong": [
+      "U2",
+      "Pearl Jam",
+      "The Rolling Stones"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "wnpk2cl2tewv",
+     "question": "\"I Will Survive\" is a song about what?",
+     "answer": "Resilience and getting through",
+     "wrong": [
+      "Cooking",
+      "Sports",
+      "Holidays"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "havdyrpptewv",
+     "question": "\"This Is Me\" comes from which movie musical?",
+     "answer": "The Greatest Showman",
+     "wrong": [
+      "The Wizard of Oz",
+      "Grease",
+      "Mamma Mia"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "26lwv184tewv",
+     "question": "Who sang \"Man in the Mirror,\" a song about self-reflection and change?",
+     "answer": "Michael Jackson",
+     "wrong": [
+      "Prince",
+      "Bruce Springsteen",
+      "Bob Marley"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "3celmvcytewv",
+     "question": "\"The Climb\" by Miley Cyrus is often tied to which theme?",
+     "answer": "The recovery journey",
+     "wrong": [
+      "Winter weather",
+      "Driving fast",
+      "Falling asleep"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "b0wrrk8mtewv",
+     "question": "In the My Song round, how many answers are wrong?",
+     "answer": "None, every song and feeling is valid",
+     "wrong": [
+      "Half of them",
+      "Any sad song",
+      "Any song without lyrics"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
+     ]
+    },
+    {
+     "id": "jm47wdl1tewv",
+     "question": "The take-home handout asks you to build what?",
+     "answer": "An emotional playlist",
+     "wrong": [
+      "A music video",
+      "A band",
+      "A radio station"
+     ],
+     "category": "Music & Emotions",
+     "time": 20,
+     "sets": [
+      "Music & Emotions"
      ]
     }
    ]
