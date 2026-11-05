@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-04-media-literacy",
+ "id": "matt-2026-11-05-handling-disappointment",
  "banks": {
   "standard": {
    "cross": [
@@ -993,6 +993,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "bias",
        "clue": "A slant that favors one side"
+      }
+     ]
+    },
+    {
+     "id": "5wubzaap3i6j",
+     "title": "Handling Disappointment",
+     "entries": [
+      {
+       "word": "expectation",
+       "clue": "What we hoped would happen"
+      },
+      {
+       "word": "reality",
+       "clue": "What actually happened"
+      },
+      {
+       "word": "gap",
+       "clue": "Disappointment is the ______ between the two"
+      },
+      {
+       "word": "universal",
+       "clue": "Felt by everyone"
+      },
+      {
+       "word": "name",
+       "clue": "\"I am disappointed\": ______ it out loud"
+      },
+      {
+       "word": "allow",
+       "clue": "Let the feeling happen instead of skipping it"
+      },
+      {
+       "word": "challenge",
+       "clue": "______ the thought: is my story true?"
+      },
+      {
+       "word": "redirect",
+       "clue": "Focus on what is still in your control"
+      },
+      {
+       "word": "compassion",
+       "clue": "Self-______: treat yourself like a friend"
+      },
+      {
+       "word": "shame",
+       "clue": "Feeling like you should not feel this way"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that can lead to unhealthy coping"
+      },
+      {
+       "word": "behaviors",
+       "clue": "Thoughts, feelings and ______"
+      },
+      {
+       "word": "share",
+       "clue": "Disappointment shrinks when you do this"
+      },
+      {
+       "word": "mattered",
+       "clue": "Disappointment means something ______ to you"
+      },
+      {
+       "word": "hope",
+       "clue": "Something you wish for that may or may not work out"
       }
      ]
     }
@@ -2397,6 +2463,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "One example of a realistic first boundary in the morning",
      "answer": "No phone for the first 30 minutes"
+    },
+    {
+     "id": "yblfk1gj3iyk",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 100,
+     "clue": "Disappointment is the gap between what we expected and this",
+     "answer": "What actually happened"
+    },
+    {
+     "id": "3vdxd4ra3iyk",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 200,
+     "clue": "True or false: everyone experiences disappointment, including people in recovery",
+     "answer": "True"
+    },
+    {
+     "id": "dscgx4n83iyk",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 300,
+     "clue": "Feeling disappointed is not weakness. It means this",
+     "answer": "Something mattered to you"
+    },
+    {
+     "id": "71wltyqb3iyk",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 400,
+     "clue": "The bigger this is, the bigger the feeling when it falls short",
+     "answer": "The expectation"
+    },
+    {
+     "id": "tt2l5mu93iyk",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 500,
+     "clue": "Disappointment can show up as sadness, anger, numbness or this feeling of being \"not good enough\"",
+     "answer": "Shame"
+    },
+    {
+     "id": "576o7o2p3iyk",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 100,
+     "clue": "Saying \"I am disappointed\" out loud",
+     "answer": "Name it"
+    },
+    {
+     "id": "fozmdj3u3iyk",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 200,
+     "clue": "Letting yourself feel it instead of skipping it",
+     "answer": "Allow it"
+    },
+    {
+     "id": "aaichz403iyk",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 300,
+     "clue": "Asking \"Is the story I am telling myself true?\"",
+     "answer": "Challenge the thought"
+    },
+    {
+     "id": "e6wjxqjb3iyk",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 400,
+     "clue": "Disappointment shrinks when you do this",
+     "answer": "Talk to someone"
+    },
+    {
+     "id": "okj0exfe3iyk",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 500,
+     "clue": "Asking \"What is one thing still in my control?\"",
+     "answer": "Redirect"
+    },
+    {
+     "id": "v54g1iu33iyk",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 100,
+     "clue": "Treating yourself the way you would treat a friend",
+     "answer": "Self-compassion"
+    },
+    {
+     "id": "k3hidw713iyk",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 200,
+     "clue": "Feeling disappointed does not mean you have done this",
+     "answer": "Failed"
+    },
+    {
+     "id": "3r9ygnrl3iyk",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 300,
+     "clue": "Some people feel this way about feeling disappointed, as if they shouldn't feel it",
+     "answer": "Ashamed"
+    },
+    {
+     "id": "rqct30gs3iyk",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 400,
+     "clue": "Disappointment can be a good sign because it shows you do this",
+     "answer": "Care"
+    },
+    {
+     "id": "1i7j72c33iyk",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 500,
+     "clue": "Trying to skip the feeling often makes it do this",
+     "answer": "Last longer"
+    },
+    {
+     "id": "cz50j33c3iyk",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 100,
+     "clue": "The video's cycle has three parts: thoughts, feelings and these",
+     "answer": "Behaviors"
+    },
+    {
+     "id": "s78yva813iyk",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 200,
+     "clue": "A thought after a disappointment can make you feel this, compared to the disappointment itself",
+     "answer": "Worse"
+    },
+    {
+     "id": "xdyzvxo63iyk",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 300,
+     "clue": "The video says our brain reacts to disappointment, so it affects us this way",
+     "answer": "Neurologically"
+    },
+    {
+     "id": "eco1nkwg3iyk",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 400,
+     "clue": "The thing you tell yourself about what happened",
+     "answer": "The story"
+    },
+    {
+     "id": "458aphw13iyk",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 500,
+     "clue": "The video's title pairs disappointment with emotional this",
+     "answer": "Dysregulation"
+    },
+    {
+     "id": "unkp7ccc3iyk",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 100,
+     "clue": "Disappointment can be one of these for unhealthy coping",
+     "answer": "A trigger"
+    },
+    {
+     "id": "ms31z1gh3iyk",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 200,
+     "clue": "Someone you trust who you can go to when you are disappointed",
+     "answer": "A support person"
+    },
+    {
+     "id": "nth4buhf3iyk",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 300,
+     "clue": "Going to one of these, or a group like this one, is a place to share a disappointment",
+     "answer": "A meeting"
+    },
+    {
+     "id": "tl3kl60e3iyk",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 400,
+     "clue": "Disappointment vs. this: one is a feeling, the other is a choice to stop",
+     "answer": "Giving up"
+    },
+    {
+     "id": "vwlfwn3s3iyk",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 500,
+     "clue": "The video reflection sheet ends with this, one thing you will try next time",
+     "answer": "My commitment"
     }
    ],
    "wheel": [
@@ -3424,6 +3690,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Media Literacy"
      ]
+    },
+    {
+     "id": "kqcsdew43jih",
+     "category": "Phrase",
+     "phrase": "NAME IT TO TAME IT",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "kubibmm53jih",
+     "category": "Phrase",
+     "phrase": "IT MEANS YOU CARED",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "3xgluq2v3jih",
+     "category": "Phrase",
+     "phrase": "ALLOW THE FEELING",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "bsb7dq7j3jih",
+     "category": "Phrase",
+     "phrase": "CHALLENGE THE THOUGHT",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "lfnzn8ny3jih",
+     "category": "Phrase",
+     "phrase": "TALK TO SOMEONE",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "29o2net03jih",
+     "category": "Phrase",
+     "phrase": "FOCUS ON WHAT YOU CONTROL",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "2mrxagom3jih",
+     "category": "Phrase",
+     "phrase": "BE KIND TO YOURSELF",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "mhank7qz3jih",
+     "category": "Phrase",
+     "phrase": "THIS FEELING WILL PASS",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "j2wtfclk3jih",
+     "category": "Thing",
+     "phrase": "SELF COMPASSION",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "w0lp7p3h3jih",
+     "category": "Thing",
+     "phrase": "EXPECTATION AND REALITY",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "31t6qdai3jih",
+     "category": "Thing",
+     "phrase": "A SUPPORT PERSON",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "c2rqdhhk3jih",
+     "category": "Thing",
+     "phrase": "THOUGHTS AND FEELINGS",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "cfe76kht3jih",
+     "category": "Thing",
+     "phrase": "A HEALTHY COPING SKILL",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "enh3siyi3jih",
+     "category": "Event",
+     "phrase": "SHARING WITH THE GROUP",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "4e4eglzl3jih",
+     "category": "Event",
+     "phrase": "LETTING GO",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "57lap6fr3jih",
+     "category": "Event",
+     "phrase": "STARTING OVER",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "nky9hbic3jih",
+     "category": "Event",
+     "phrase": "TRYING AGAIN TOMORROW",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "awp1oovj3jih",
+     "category": "Event",
+     "phrase": "A FRESH START",
+     "sets": [
+      "Handling Disappointment"
+     ]
     }
    ],
    "words": [
@@ -3953,7 +4363,8 @@ window.GS_MY_CONTENT = {
      "hint": "Strength",
      "sets": [
       "Personal Strengths",
-      "Handling Stress"
+      "Handling Stress",
+      "Handling Disappointment"
      ]
     },
     {
@@ -3961,7 +4372,8 @@ window.GS_MY_CONTENT = {
      "word": "LEARN",
      "hint": "Strength",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Handling Disappointment"
      ]
     },
     {
@@ -4092,7 +4504,8 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Stress",
      "sets": [
       "Handling Stress",
-      "Media Literacy"
+      "Media Literacy",
+      "Handling Disappointment"
      ]
     },
     {
@@ -4325,6 +4738,104 @@ window.GS_MY_CONTENT = {
      "hint": "Media Literacy",
      "sets": [
       "Media Literacy"
+     ]
+    },
+    {
+     "id": "pvr56jxv3hap",
+     "word": "SMILE",
+     "hint": "Things to Do",
+     "sets": [
+      "Handling Stress",
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ijbr7gpx3hap",
+     "word": "BRAVE",
+     "hint": "Feelings",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "pvhqvwm03kly",
+     "word": "ALLOW",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "gg2um7ru3kly",
+     "word": "CARED",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "7sgcppry3kly",
+     "word": "HOPES",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "3i00n43g3kly",
+     "word": "GRIEF",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "8shrikyd3kly",
+     "word": "SHAME",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "gs1sr5ir3kly",
+     "word": "ANGER",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "nzwg9kc53kly",
+     "word": "HEALS",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "7xz9fnwo3kly",
+     "word": "STORY",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "3xtm9fpd3kly",
+     "word": "RESET",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "l1ztxna93kly",
+     "word": "AGAIN",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
      ]
     }
    ],
@@ -4958,7 +5469,8 @@ window.GS_MY_CONTENT = {
      "word": "a phone call",
      "level": "easy",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Handling Disappointment"
      ]
     },
     {
@@ -4974,7 +5486,8 @@ window.GS_MY_CONTENT = {
      "word": "a hug",
      "level": "easy",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Handling Disappointment"
      ]
     },
     {
@@ -5407,6 +5920,150 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Media Literacy"
+     ]
+    },
+    {
+     "id": "poemfdz73iey",
+     "word": "a rain cloud",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "xzfm00xt3iey",
+     "word": "a broken heart",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "7mx3ih243iey",
+     "word": "a sad face",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "u3xrjsxu3iey",
+     "word": "a gift box",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "jseer4243iey",
+     "word": "a rainbow",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ddm2lcoe3iey",
+     "word": "a sunrise",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "zguiotpv3iey",
+     "word": "a bridge",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "l46swsqs3iey",
+     "word": "a deflated balloon",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "0qf25syx3iey",
+     "word": "a cancelled party",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "wu9l3nba3iey",
+     "word": "a missed bus",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "hft3y8wd3iey",
+     "word": "letting go of a balloon",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "tr8dc2z33iey",
+     "word": "talking to a friend",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "o5sieecg3iey",
+     "word": "a gap between two cliffs",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ilyw8pmv3iey",
+     "word": "a thought bubble",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ugw5hhlx3iey",
+     "word": "picking yourself up",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "067i1i783iey",
+     "word": "a lost game",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "jdkq0ton3iey",
+     "word": "a closed door",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "tjyxttwj3iey",
+     "word": "trying again",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
      ]
     }
    ],
@@ -7510,6 +8167,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Media Literacy"
      ]
+    },
+    {
+     "id": "fe4or9d13k1z",
+     "question": "Disappointment is best described as what?",
+     "answer": "The gap between what we expected and what happened",
+     "wrong": [
+      "A sign of weakness",
+      "Something only some people feel",
+      "The same thing as giving up"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "r2tf6nd43k1z",
+     "question": "Who experiences disappointment?",
+     "answer": "Everyone",
+     "wrong": [
+      "Only people in recovery",
+      "Only children",
+      "Only people who fail"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "zc9glkwy3k1z",
+     "question": "Feeling disappointed usually means what?",
+     "answer": "Something mattered to you",
+     "wrong": [
+      "You did something wrong",
+      "You are weak",
+      "You should stop trying"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "xgur0e2z3k1z",
+     "question": "The bigger the expectation, the bigger what?",
+     "answer": "The feeling when it falls short",
+     "wrong": [
+      "The reward",
+      "The chance it comes true",
+      "The need to hide it"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "f0mhe4ur3k1z",
+     "question": "Disappointment can show up as which feelings?",
+     "answer": "Sadness, anger, shame or numbness",
+     "wrong": [
+      "Only happiness",
+      "Only boredom",
+      "Only excitement"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "6ruiqdld3k1z",
+     "question": "Is feeling disappointed the same as failing?",
+     "answer": "No",
+     "wrong": [
+      "Yes, always",
+      "Only on bad days",
+      "Only if others see it"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "fv9usjw93k1z",
+     "question": "Saying \"I am disappointed\" out loud does what?",
+     "answer": "Reduces its power",
+     "wrong": [
+      "Makes it last longer",
+      "Makes it worse",
+      "Shows weakness"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "no7pcpv13k1z",
+     "question": "What happens when you try to skip the feeling?",
+     "answer": "It often lasts longer",
+     "wrong": [
+      "It disappears for good",
+      "It turns into joy",
+      "Nothing at all"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "x9cte04g3k1z",
+     "question": "\"Challenge the thought\" means asking what?",
+     "answer": "Is the story I am telling myself actually true?",
+     "wrong": [
+      "Who is to blame?",
+      "Why does this always happen to me?",
+      "How can I hide this?"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "xlell1c93k1z",
+     "question": "What happens to disappointment when you share it with someone?",
+     "answer": "It shrinks",
+     "wrong": [
+      "It grows",
+      "It spreads to them",
+      "It stays the same"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "3z8nu09j3k1z",
+     "question": "The \"Redirect\" strategy asks you to focus on what?",
+     "answer": "One thing still in your control",
+     "wrong": [
+      "Everything that went wrong",
+      "Other people's mistakes",
+      "The next disappointment"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "d3uioyr73k1z",
+     "question": "Self-compassion means treating yourself how?",
+     "answer": "The way you would treat a friend",
+     "wrong": [
+      "More harshly than others",
+      "Like a stranger",
+      "As if nothing happened"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "iyukgz0v3k1z",
+     "question": "The video talks about which cycle?",
+     "answer": "Thoughts, feelings and behaviors",
+     "wrong": [
+      "Eat, sleep and repeat",
+      "Wake, work and rest",
+      "Buy, use and throw away"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "b0p6x6vx3k1z",
+     "question": "In that cycle, what can a thought after a disappointment do?",
+     "answer": "Make you feel worse than the disappointment itself",
+     "wrong": [
+      "Nothing, thoughts do not affect feelings",
+      "Always make you feel better",
+      "Erase the memory"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "k8hy389y3k1z",
+     "question": "The video says disappointment affects us how?",
+     "answer": "Neurologically, our brain reacts to it",
+     "wrong": [
+      "Only in our imagination",
+      "Only in our muscles",
+      "Not at all"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "3vqlevtj3k1z",
+     "question": "Why can disappointment be risky in recovery?",
+     "answer": "It can be a trigger for unhealthy coping",
+     "wrong": [
+      "People in recovery never feel it",
+      "It always leads to relapse",
+      "It only matters in early recovery"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "oerivdvq3k1z",
+     "question": "Which is a healthy way to move through disappointment?",
+     "answer": "Name it, allow it and talk to someone",
+     "wrong": [
+      "Pretend it did not happen",
+      "Blame yourself",
+      "Keep it a secret"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "s8g86mb83k1z",
+     "question": "How is disappointment different from giving up?",
+     "answer": "You can feel disappointed and still keep going",
+     "wrong": [
+      "They are exactly the same",
+      "Disappointment always means quitting",
+      "Giving up is a feeling"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "vgzmn8n73k1z",
+     "question": "Why do we sometimes feel ashamed of being disappointed?",
+     "answer": "We think we should not feel that way",
+     "wrong": [
+      "Disappointment is against the rules",
+      "Other people never feel it",
+      "It is always our fault"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "1i9hob2k3k1z",
+     "question": "Can disappointment be a good sign?",
+     "answer": "Yes, it shows you care about something",
+     "wrong": [
+      "No, never",
+      "Only if you win",
+      "Only for other people"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
     }
    ]
   },
@@ -8029,6 +8986,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "bias",
        "clue": "A slant that favors one side"
+      }
+     ]
+    },
+    {
+     "id": "e8rsdolt3l6z",
+     "title": "Handling Disappointment",
+     "entries": [
+      {
+       "word": "expectation",
+       "clue": "What we hoped would happen"
+      },
+      {
+       "word": "reality",
+       "clue": "What actually happened"
+      },
+      {
+       "word": "gap",
+       "clue": "Disappointment is the ______ between the two"
+      },
+      {
+       "word": "universal",
+       "clue": "Felt by everyone"
+      },
+      {
+       "word": "name",
+       "clue": "\"I am disappointed\": ______ it out loud"
+      },
+      {
+       "word": "allow",
+       "clue": "Let the feeling happen instead of skipping it"
+      },
+      {
+       "word": "challenge",
+       "clue": "______ the thought: is my story true?"
+      },
+      {
+       "word": "redirect",
+       "clue": "Focus on what is still in your control"
+      },
+      {
+       "word": "compassion",
+       "clue": "Self-______: treat yourself like a friend"
+      },
+      {
+       "word": "shame",
+       "clue": "Feeling like you should not feel this way"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that can lead to unhealthy coping"
+      },
+      {
+       "word": "behaviors",
+       "clue": "Thoughts, feelings and ______"
+      },
+      {
+       "word": "share",
+       "clue": "Disappointment shrinks when you do this"
+      },
+      {
+       "word": "mattered",
+       "clue": "Disappointment means something ______ to you"
+      },
+      {
+       "word": "hope",
+       "clue": "Something you wish for that may or may not work out"
       }
      ]
     }
@@ -8833,6 +9856,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "One example of a realistic first boundary in the morning",
      "answer": "No phone for the first 30 minutes"
+    },
+    {
+     "id": "c8x8oj1m3lxg",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 100,
+     "clue": "Disappointment is the gap between what we expected and this",
+     "answer": "What actually happened"
+    },
+    {
+     "id": "ob0z4tw53lxg",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 200,
+     "clue": "True or false: everyone experiences disappointment, including people in recovery",
+     "answer": "True"
+    },
+    {
+     "id": "y2xenlgj3lxg",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 300,
+     "clue": "Feeling disappointed is not weakness. It means this",
+     "answer": "Something mattered to you"
+    },
+    {
+     "id": "ve3u4zsh3lxg",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 400,
+     "clue": "The bigger this is, the bigger the feeling when it falls short",
+     "answer": "The expectation"
+    },
+    {
+     "id": "ua4j1w8t3lxg",
+     "board": "Handling Disappointment",
+     "category": "What Is Disappointment?",
+     "value": 500,
+     "clue": "Disappointment can show up as sadness, anger, numbness or this feeling of being \"not good enough\"",
+     "answer": "Shame"
+    },
+    {
+     "id": "m9dcaq953lxg",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 100,
+     "clue": "Saying \"I am disappointed\" out loud",
+     "answer": "Name it"
+    },
+    {
+     "id": "tl8ogenv3lxg",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 200,
+     "clue": "Letting yourself feel it instead of skipping it",
+     "answer": "Allow it"
+    },
+    {
+     "id": "j0fg9sj43lxg",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 300,
+     "clue": "Asking \"Is the story I am telling myself true?\"",
+     "answer": "Challenge the thought"
+    },
+    {
+     "id": "w5mavbbg3lxg",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 400,
+     "clue": "Disappointment shrinks when you do this",
+     "answer": "Talk to someone"
+    },
+    {
+     "id": "gzx2p7543lxg",
+     "board": "Handling Disappointment",
+     "category": "Coping Strategies",
+     "value": 500,
+     "clue": "Asking \"What is one thing still in my control?\"",
+     "answer": "Redirect"
+    },
+    {
+     "id": "xcpp45c23lxg",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 100,
+     "clue": "Treating yourself the way you would treat a friend",
+     "answer": "Self-compassion"
+    },
+    {
+     "id": "euu6c61p3lxg",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 200,
+     "clue": "Feeling disappointed does not mean you have done this",
+     "answer": "Failed"
+    },
+    {
+     "id": "fyrkkf3i3lxg",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 300,
+     "clue": "Some people feel this way about feeling disappointed, as if they shouldn't feel it",
+     "answer": "Ashamed"
+    },
+    {
+     "id": "al73ufhi3lxg",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 400,
+     "clue": "Disappointment can be a good sign because it shows you do this",
+     "answer": "Care"
+    },
+    {
+     "id": "xflh30573lxg",
+     "board": "Handling Disappointment",
+     "category": "Be Kind to Yourself",
+     "value": 500,
+     "clue": "Trying to skip the feeling often makes it do this",
+     "answer": "Last longer"
+    },
+    {
+     "id": "swime0qg3lxg",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 100,
+     "clue": "The video's cycle has three parts: thoughts, feelings and these",
+     "answer": "Behaviors"
+    },
+    {
+     "id": "ln8z2jbg3lxg",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 200,
+     "clue": "A thought after a disappointment can make you feel this, compared to the disappointment itself",
+     "answer": "Worse"
+    },
+    {
+     "id": "wfiaee6y3lxg",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 300,
+     "clue": "The video says our brain reacts to disappointment, so it affects us this way",
+     "answer": "Neurologically"
+    },
+    {
+     "id": "ebmzt9ge3lxg",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 400,
+     "clue": "The thing you tell yourself about what happened",
+     "answer": "The story"
+    },
+    {
+     "id": "lj5veedd3lxg",
+     "board": "Handling Disappointment",
+     "category": "Thoughts, Feelings, Behaviors",
+     "value": 500,
+     "clue": "The video's title pairs disappointment with emotional this",
+     "answer": "Dysregulation"
+    },
+    {
+     "id": "oxg1jmkp3lxg",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 100,
+     "clue": "Disappointment can be one of these for unhealthy coping",
+     "answer": "A trigger"
+    },
+    {
+     "id": "qhlclm8c3lxg",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 200,
+     "clue": "Someone you trust who you can go to when you are disappointed",
+     "answer": "A support person"
+    },
+    {
+     "id": "e7sap2hs3lxg",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 300,
+     "clue": "Going to one of these, or a group like this one, is a place to share a disappointment",
+     "answer": "A meeting"
+    },
+    {
+     "id": "73l8o1w53lxg",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 400,
+     "clue": "Disappointment vs. this: one is a feeling, the other is a choice to stop",
+     "answer": "Giving up"
+    },
+    {
+     "id": "p68shcoj3lxg",
+     "board": "Handling Disappointment",
+     "category": "Disappointment and Recovery",
+     "value": 500,
+     "clue": "The video reflection sheet ends with this, one thing you will try next time",
+     "answer": "My commitment"
     }
    ],
    "wheel": [
@@ -9395,6 +10618,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Media Literacy"
      ]
+    },
+    {
+     "id": "o0n763ek3har",
+     "category": "Phrase",
+     "phrase": "BE KIND TO YOURSELF",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "kq8zdnlq3mgh",
+     "category": "Phrase",
+     "phrase": "NAME IT TO TAME IT",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "voodafak3mgh",
+     "category": "Phrase",
+     "phrase": "IT MEANS YOU CARED",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "h3g441oy3mgh",
+     "category": "Phrase",
+     "phrase": "ALLOW THE FEELING",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ymz8wf3o3mgh",
+     "category": "Phrase",
+     "phrase": "CHALLENGE THE THOUGHT",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "yo8nyflv3mgh",
+     "category": "Phrase",
+     "phrase": "TALK TO SOMEONE",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "a3ml3nj43mgh",
+     "category": "Phrase",
+     "phrase": "FOCUS ON WHAT YOU CONTROL",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "wf2bgamx3mgh",
+     "category": "Phrase",
+     "phrase": "THIS FEELING WILL PASS",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ff4r1ioa3mgh",
+     "category": "Thing",
+     "phrase": "SELF COMPASSION",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "5zqv3yl23mgh",
+     "category": "Thing",
+     "phrase": "EXPECTATION AND REALITY",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "6i3vqgal3mgh",
+     "category": "Thing",
+     "phrase": "A SUPPORT PERSON",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "9xpnsenl3mgh",
+     "category": "Thing",
+     "phrase": "THOUGHTS AND FEELINGS",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "va3r3ppz3mgh",
+     "category": "Thing",
+     "phrase": "A HEALTHY COPING SKILL",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "a8oa7u6q3mgh",
+     "category": "Event",
+     "phrase": "SHARING WITH THE GROUP",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "p4y3fsgo3mgh",
+     "category": "Event",
+     "phrase": "LETTING GO",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "hmokamgw3mgh",
+     "category": "Event",
+     "phrase": "STARTING OVER",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "hk57eq6f3mgh",
+     "category": "Event",
+     "phrase": "TRYING AGAIN TOMORROW",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "6ffsg1hg3mgh",
+     "category": "Event",
+     "phrase": "A FRESH START",
+     "sets": [
+      "Handling Disappointment"
+     ]
     }
    ],
    "words": [
@@ -9841,6 +11208,133 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Media Literacy"
      ]
+    },
+    {
+     "id": "3o5tlm2n3hat",
+     "word": "BRAVE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "dd4wbc8l3hat",
+     "word": "SMILE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "hcwyn5kb3hat",
+     "word": "SHARE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy",
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "kgua3ixx3hat",
+     "word": "TRUST",
+     "hint": "Connection",
+     "sets": [
+      "Personal Strengths",
+      "Handling Stress",
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "n43fucwn3hat",
+     "word": "LEARN",
+     "hint": "Recovery",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "k7aq4d8m3hat",
+     "word": "HOPES",
+     "hint": "Recovery",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "yj812xeh3hat",
+     "word": "HEALS",
+     "hint": "Recovery",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "owrnraq63niy",
+     "word": "ALLOW",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "hu4k3vz63niy",
+     "word": "CARED",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "5dtz75dg3niy",
+     "word": "GRIEF",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "rz48hl713niy",
+     "word": "SHAME",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "qfmyfw1m3niy",
+     "word": "ANGER",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "wkkmf2mh3niy",
+     "word": "STORY",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "r1mpe9jw3niy",
+     "word": "RESET",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "5f96nz283niy",
+     "word": "AGAIN",
+     "hint": "Handling Disappointment",
+     "sets": [
+      "Handling Disappointment"
+     ]
     }
    ],
    "draw": [
@@ -10009,7 +11503,8 @@ window.GS_MY_CONTENT = {
      "word": "a phone call",
      "level": "easy",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Handling Disappointment"
      ]
     },
     {
@@ -10025,7 +11520,8 @@ window.GS_MY_CONTENT = {
      "word": "a hug",
      "level": "easy",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Handling Disappointment"
      ]
     },
     {
@@ -10442,6 +11938,150 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Media Literacy"
+     ]
+    },
+    {
+     "id": "vnretpp23le2",
+     "word": "a rain cloud",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ge3m90p53le2",
+     "word": "a broken heart",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "lw0zs4313le2",
+     "word": "a sad face",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "gatmlz7a3le2",
+     "word": "a gift box",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "zjvya3553le2",
+     "word": "a rainbow",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "sfoqe2yv3le2",
+     "word": "a sunrise",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "yefwtsdy3le2",
+     "word": "a bridge",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "udn6vo1f3le2",
+     "word": "a deflated balloon",
+     "level": "easy",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "pcwuu32z3le2",
+     "word": "a cancelled party",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "gg6g1djx3le2",
+     "word": "a missed bus",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ririilmg3le2",
+     "word": "letting go of a balloon",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "817tndjd3le2",
+     "word": "talking to a friend",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "wf2x7wt33le2",
+     "word": "a gap between two cliffs",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "782q76pm3le2",
+     "word": "a thought bubble",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "mwgnfvnw3le2",
+     "word": "picking yourself up",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "0pif6m4h3le2",
+     "word": "a lost game",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "vy9u5ae43le2",
+     "word": "a closed door",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "eaijiqqh3le2",
+     "word": "trying again",
+     "level": "medium",
+     "sets": [
+      "Handling Disappointment"
      ]
     }
    ],
@@ -11644,6 +13284,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Media Literacy"
+     ]
+    },
+    {
+     "id": "j047pu9g3mzf",
+     "question": "Disappointment is best described as what?",
+     "answer": "The gap between what we expected and what happened",
+     "wrong": [
+      "A sign of weakness",
+      "Something only some people feel",
+      "The same thing as giving up"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "t4br074h3mzf",
+     "question": "Who experiences disappointment?",
+     "answer": "Everyone",
+     "wrong": [
+      "Only people in recovery",
+      "Only children",
+      "Only people who fail"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "5ib7c01y3mzf",
+     "question": "Feeling disappointed usually means what?",
+     "answer": "Something mattered to you",
+     "wrong": [
+      "You did something wrong",
+      "You are weak",
+      "You should stop trying"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "5inpo4gu3mzf",
+     "question": "The bigger the expectation, the bigger what?",
+     "answer": "The feeling when it falls short",
+     "wrong": [
+      "The reward",
+      "The chance it comes true",
+      "The need to hide it"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "s4yxdum33mzf",
+     "question": "Disappointment can show up as which feelings?",
+     "answer": "Sadness, anger, shame or numbness",
+     "wrong": [
+      "Only happiness",
+      "Only boredom",
+      "Only excitement"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "7b4x9loj3mzf",
+     "question": "Is feeling disappointed the same as failing?",
+     "answer": "No",
+     "wrong": [
+      "Yes, always",
+      "Only on bad days",
+      "Only if others see it"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "wpbxv9z03mzf",
+     "question": "Saying \"I am disappointed\" out loud does what?",
+     "answer": "Reduces its power",
+     "wrong": [
+      "Makes it last longer",
+      "Makes it worse",
+      "Shows weakness"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "lzfhqqte3mzf",
+     "question": "What happens when you try to skip the feeling?",
+     "answer": "It often lasts longer",
+     "wrong": [
+      "It disappears for good",
+      "It turns into joy",
+      "Nothing at all"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "ay6nbgy63mzf",
+     "question": "\"Challenge the thought\" means asking what?",
+     "answer": "Is the story I am telling myself actually true?",
+     "wrong": [
+      "Who is to blame?",
+      "Why does this always happen to me?",
+      "How can I hide this?"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "4ari7oxk3mzf",
+     "question": "What happens to disappointment when you share it with someone?",
+     "answer": "It shrinks",
+     "wrong": [
+      "It grows",
+      "It spreads to them",
+      "It stays the same"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "xrho0jys3mzf",
+     "question": "The \"Redirect\" strategy asks you to focus on what?",
+     "answer": "One thing still in your control",
+     "wrong": [
+      "Everything that went wrong",
+      "Other people's mistakes",
+      "The next disappointment"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "znm8vk7z3mzf",
+     "question": "Self-compassion means treating yourself how?",
+     "answer": "The way you would treat a friend",
+     "wrong": [
+      "More harshly than others",
+      "Like a stranger",
+      "As if nothing happened"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "l89ua1kr3mzf",
+     "question": "The video talks about which cycle?",
+     "answer": "Thoughts, feelings and behaviors",
+     "wrong": [
+      "Eat, sleep and repeat",
+      "Wake, work and rest",
+      "Buy, use and throw away"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "q6ziaj363mzf",
+     "question": "In that cycle, what can a thought after a disappointment do?",
+     "answer": "Make you feel worse than the disappointment itself",
+     "wrong": [
+      "Nothing, thoughts do not affect feelings",
+      "Always make you feel better",
+      "Erase the memory"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "qdrzway53mzf",
+     "question": "The video says disappointment affects us how?",
+     "answer": "Neurologically, our brain reacts to it",
+     "wrong": [
+      "Only in our imagination",
+      "Only in our muscles",
+      "Not at all"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "iukhgfdj3mzf",
+     "question": "Why can disappointment be risky in recovery?",
+     "answer": "It can be a trigger for unhealthy coping",
+     "wrong": [
+      "People in recovery never feel it",
+      "It always leads to relapse",
+      "It only matters in early recovery"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "vgeds6oa3mzf",
+     "question": "Which is a healthy way to move through disappointment?",
+     "answer": "Name it, allow it and talk to someone",
+     "wrong": [
+      "Pretend it did not happen",
+      "Blame yourself",
+      "Keep it a secret"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "8iswyh873mzf",
+     "question": "How is disappointment different from giving up?",
+     "answer": "You can feel disappointed and still keep going",
+     "wrong": [
+      "They are exactly the same",
+      "Disappointment always means quitting",
+      "Giving up is a feeling"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "9cppw4y43mzf",
+     "question": "Why do we sometimes feel ashamed of being disappointed?",
+     "answer": "We think we should not feel that way",
+     "wrong": [
+      "Disappointment is against the rules",
+      "Other people never feel it",
+      "It is always our fault"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
+     ]
+    },
+    {
+     "id": "jr57cnxh3mzf",
+     "question": "Can disappointment be a good sign?",
+     "answer": "Yes, it shows you care about something",
+     "wrong": [
+      "No, never",
+      "Only if you win",
+      "Only for other people"
+     ],
+     "category": "Handling Disappointment",
+     "time": 20,
+     "sets": [
+      "Handling Disappointment"
      ]
     }
    ]
