@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-05-music-emotions",
+ "id": "matt-2026-11-11-mindfulness",
  "banks": {
   "standard": {
    "cross": [
@@ -1191,6 +1191,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "headphones",
        "clue": "You wear these to listen privately"
+      }
+     ]
+    },
+    {
+     "id": "pzmmgn1sohsc",
+     "title": "Mindfulness",
+     "entries": [
+      {
+       "word": "present",
+       "clue": "Mindfulness pays attention to this moment"
+      },
+      {
+       "word": "judgment",
+       "clue": "Notice without this"
+      },
+      {
+       "word": "sati",
+       "clue": "Pali word for awareness"
+      },
+      {
+       "word": "amygdala",
+       "clue": "The brain's alarm system"
+      },
+      {
+       "word": "prefrontal",
+       "clue": "______ cortex: the brain's pause button"
+      },
+      {
+       "word": "cortisol",
+       "clue": "The main stress hormone"
+      },
+      {
+       "word": "neuroplastic",
+       "clue": "The brain changes based on what we practice, so it is ______"
+      },
+      {
+       "word": "imagery",
+       "clue": "Guided ______: picturing a peaceful place"
+      },
+      {
+       "word": "metta",
+       "clue": "Another name for loving-kindness"
+      },
+      {
+       "word": "kindness",
+       "clue": "Loving-______ meditation"
+      },
+      {
+       "word": "consistency",
+       "clue": "Matters more than duration"
+      },
+      {
+       "word": "craving",
+       "clue": "Mindfulness helps you notice this without acting on it"
+      },
+      {
+       "word": "breath",
+       "clue": "Notice the rise and fall of this"
+      },
+      {
+       "word": "peace",
+       "clue": "May I be at ______"
+      },
+      {
+       "word": "wander",
+       "clue": "Your mind will do this, and that is okay"
       }
      ]
     }
@@ -3195,6 +3261,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The handout says you have used music to manage emotions your whole life. Now you can use it this way",
      "answer": "On purpose"
+    },
+    {
+     "id": "cxh79g1xoikg",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 100,
+     "clue": "Mindfulness is paying attention to this moment",
+     "answer": "The present"
+    },
+    {
+     "id": "3er8940ioikg",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 200,
+     "clue": "Mindfulness means paying attention on purpose and without this",
+     "answer": "Judgment"
+    },
+    {
+     "id": "xmz3r8oqoikg",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 300,
+     "clue": "True or false: mindfulness means clearing your mind and thinking about nothing",
+     "answer": "False"
+    },
+    {
+     "id": "w3gwtvutoikg",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 400,
+     "clue": "Mindfulness does not need silence, a special room or equipment. It just needs this",
+     "answer": "Practice"
+    },
+    {
+     "id": "z7c6berboikg",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 500,
+     "clue": "When your mind wanders, noticing it and doing this is the practice",
+     "answer": "Coming back"
+    },
+    {
+     "id": "ulc8eekwoikg",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 100,
+     "clue": "Mindfulness has been practiced for over this many years",
+     "answer": "2,500"
+    },
+    {
+     "id": "28qsphdwoikg",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 200,
+     "clue": "Mindfulness began in Buddhist and Hindu traditions on this continent",
+     "answer": "Asia"
+    },
+    {
+     "id": "dvjgyv5ooikg",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 300,
+     "clue": "The word mindfulness comes from the Pali word sati, meaning this",
+     "answer": "Awareness or attention"
+    },
+    {
+     "id": "uiq2jkpuoikg",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 400,
+     "clue": "Dr. Jon Kabat-Zinn created this program, known by four letters",
+     "answer": "MBSR"
+    },
+    {
+     "id": "ccmwoz2coikg",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 500,
+     "clue": "MBSR stands for Mindfulness-Based this",
+     "answer": "Stress Reduction"
+    },
+    {
+     "id": "0qsvo1lfoikg",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 100,
+     "clue": "Your brain's \"pause button\" between a feeling and a reaction",
+     "answer": "The prefrontal cortex"
+    },
+    {
+     "id": "w8urbdwioikg",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 200,
+     "clue": "Your brain's alarm system that fires fight-or-flight",
+     "answer": "The amygdala"
+    },
+    {
+     "id": "ptdbw6r2oikg",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 300,
+     "clue": "Meditation lowers this main stress hormone",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "4qhy5qe2oikg",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 400,
+     "clue": "The brain changes based on what we practice. This is called this",
+     "answer": "Neuroplasticity"
+    },
+    {
+     "id": "dy716wsgoikg",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 500,
+     "clue": "Meditation is essentially this for the brain",
+     "answer": "Exercise"
+    },
+    {
+     "id": "xv8jxonooikg",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 100,
+     "clue": "Moving your attention from head to toe",
+     "answer": "Body scan"
+    },
+    {
+     "id": "31l5spqqoikg",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 200,
+     "clue": "Picturing a peaceful place, like a forest path and a still pond",
+     "answer": "Guided imagery"
+    },
+    {
+     "id": "jpl9wgz2oikg",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 300,
+     "clue": "Sending warm wishes to yourself and others",
+     "answer": "Loving-kindness"
+    },
+    {
+     "id": "jcnqlaq6oikg",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 400,
+     "clue": "Loving-kindness is also called this four-letter word",
+     "answer": "Metta"
+    },
+    {
+     "id": "m9ryyqb3oikg",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 500,
+     "clue": "Complete the loving-kindness phrase: \"May I be safe. May I be healthy. May I be at ____\"",
+     "answer": "Peace"
+    },
+    {
+     "id": "j2hrhseloikg",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 100,
+     "clue": "A good amount of time to start practicing each day",
+     "answer": "5 minutes"
+    },
+    {
+     "id": "xbpy3lidoikg",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 200,
+     "clue": "This matters more than how long you meditate",
+     "answer": "Consistency"
+    },
+    {
+     "id": "i2t8bds2oikg",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 300,
+     "clue": "Set one of these so you are not watching the clock",
+     "answer": "A timer"
+    },
+    {
+     "id": "i0l4sar3oikg",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 400,
+     "clue": "Mindfulness helps you observe these without acting on them right away",
+     "answer": "Cravings"
+    },
+    {
+     "id": "yqq4w9vkoikg",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 500,
+     "clue": "Name one of the free meditation apps listed on the handout",
+     "answer": "Headspace, Calm or Insight Timer"
     }
    ],
    "wheel": [
@@ -4654,6 +4920,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Music & Emotions"
      ]
+    },
+    {
+     "id": "sjjwxtfuoj3u",
+     "category": "Phrase",
+     "phrase": "BE HERE NOW",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "pcgf7hggoj3u",
+     "category": "Phrase",
+     "phrase": "NOTICE WITHOUT JUDGMENT",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "8b2bwu3noj3u",
+     "category": "Phrase",
+     "phrase": "MAY I BE AT PEACE",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "b66lb9x8oj3u",
+     "category": "Phrase",
+     "phrase": "MAY I BE SAFE",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "a4va8dp0oj3u",
+     "category": "Phrase",
+     "phrase": "BREATHE IN AND LET IT GO",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "moi4hw3koj3u",
+     "category": "Phrase",
+     "phrase": "ONE MOMENT AT A TIME",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "mgc9ocbyoj3u",
+     "category": "Phrase",
+     "phrase": "YOUR MIND WILL WANDER",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "shle466loj3u",
+     "category": "Phrase",
+     "phrase": "PRACTICE MAKES PROGRESS",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "oc6wxbovoj3u",
+     "category": "Thing",
+     "phrase": "A BODY SCAN",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "iib6xiiwoj3u",
+     "category": "Thing",
+     "phrase": "GUIDED IMAGERY",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "z22ot4uvoj3u",
+     "category": "Thing",
+     "phrase": "LOVING KINDNESS",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "r9uy9pgyoj3u",
+     "category": "Thing",
+     "phrase": "THE PAUSE BUTTON",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "seeuwm1voj3u",
+     "category": "Thing",
+     "phrase": "A STILL POND",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "bma1zompoj3u",
+     "category": "Thing",
+     "phrase": "A QUIET FOREST PATH",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "hgt3273boj3u",
+     "category": "Event",
+     "phrase": "MEDITATING FOR FIVE MINUTES",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "8iqa3d5aoj3u",
+     "category": "Event",
+     "phrase": "CLOSING YOUR EYES",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "ojugr0anoj3u",
+     "category": "Event",
+     "phrase": "TAKING A SLOW BREATH",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "ms1ctlsjoj3u",
+     "category": "Event",
+     "phrase": "COMING BACK TO THE PRESENT",
+     "sets": [
+      "Mindfulness"
+     ]
     }
    ],
    "words": [
@@ -5252,7 +5662,8 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Stress",
      "sets": [
       "Handling Stress",
-      "Media Literacy"
+      "Media Literacy",
+      "Mindfulness"
      ]
     },
     {
@@ -5260,7 +5671,8 @@ window.GS_MY_CONTENT = {
      "word": "RELAX",
      "hint": "Handling Stress",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Mindfulness"
      ]
     },
     {
@@ -5292,7 +5704,8 @@ window.GS_MY_CONTENT = {
      "word": "QUIET",
      "hint": "Handling Stress",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Mindfulness"
      ]
     },
     {
@@ -5300,7 +5713,8 @@ window.GS_MY_CONTENT = {
      "word": "FOCUS",
      "hint": "Handling Stress",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Mindfulness"
      ]
     },
     {
@@ -5308,7 +5722,8 @@ window.GS_MY_CONTENT = {
      "word": "HEART",
      "hint": "Handling Stress",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Mindfulness"
      ]
     },
     {
@@ -5335,7 +5750,8 @@ window.GS_MY_CONTENT = {
      "word": "CALMS",
      "hint": "Handling Stress",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Mindfulness"
      ]
     },
     {
@@ -5871,6 +6287,82 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Music & Emotions"
      ]
+    },
+    {
+     "id": "b7k3ym3wogyl",
+     "word": "LIGHT",
+     "hint": "Around the House",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "cr1djbdqogyl",
+     "word": "SMILE",
+     "hint": "Things to Do",
+     "sets": [
+      "Handling Stress",
+      "Handling Disappointment",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "7d3bi4oeogyl",
+     "word": "PEACE",
+     "hint": "Feelings",
+     "sets": [
+      "Personal Strengths",
+      "Handling Stress",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "3mtrm1h2ok6t",
+     "word": "AWARE",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "qrna2qk1ok6t",
+     "word": "STILL",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "7bm5gqo2ok6t",
+     "word": "SENSE",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "h36eyhyiok6t",
+     "word": "TREES",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "lf66h7kook6t",
+     "word": "MINDS",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "x2xessj2ok6t",
+     "word": "BRAIN",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
     }
    ],
    "draw": [
@@ -6383,7 +6875,8 @@ window.GS_MY_CONTENT = {
      "word": "a heart",
      "level": "easy",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Mindfulness"
      ]
     },
     {
@@ -6571,7 +7064,8 @@ window.GS_MY_CONTENT = {
      "word": "taking a deep breath",
      "level": "medium",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Mindfulness"
      ]
     },
     {
@@ -7004,7 +7498,8 @@ window.GS_MY_CONTENT = {
      "word": "a sunrise",
      "level": "easy",
      "sets": [
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Mindfulness"
      ]
     },
     {
@@ -7390,6 +7885,142 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Music & Emotions"
+     ]
+    },
+    {
+     "id": "izqmyu1joi14",
+     "word": "a brain",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "8i6278v5oi14",
+     "word": "a timer",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "u1zoblh9oi14",
+     "word": "a pond",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "91rj3rzwoi14",
+     "word": "a tree",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "6saoc178oi14",
+     "word": "a bench",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "bauhkx9qoi14",
+     "word": "a candle",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "txle17v9oi14",
+     "word": "a pause button",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "x37o6b93oi14",
+     "word": "a pillow",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "nq1qdh2joi14",
+     "word": "a forest path",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "1kt4jd7soi14",
+     "word": "a still pond",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "kj6cgqzioi14",
+     "word": "someone meditating",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "0nviyb4aoi14",
+     "word": "a body scan",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "7o1lb1bcoi14",
+     "word": "an alarm bell",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "y9h2lb9foi14",
+     "word": "sending love to a friend",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "qcu3ssfgoi14",
+     "word": "a wandering mind",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "pwh00tg4oi14",
+     "word": "sitting quietly",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "2jrv4y82oi14",
+     "word": "a calm face",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
      ]
     }
    ],
@@ -10393,6 +11024,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Music & Emotions"
      ]
+    },
+    {
+     "id": "49qd2x4gojnt",
+     "question": "Mindfulness is paying attention to the present moment how?",
+     "answer": "On purpose, without judgment",
+     "wrong": [
+      "Only with your eyes closed",
+      "While thinking about nothing",
+      "Only in a quiet room"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "qhk1vlzbojnt",
+     "question": "Is mindfulness about clearing your mind completely?",
+     "answer": "No, it is about noticing what is happening",
+     "wrong": [
+      "Yes, you must think about nothing",
+      "Only for experts",
+      "Only at night"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "bfdwn2qyojnt",
+     "question": "About how long has mindfulness been practiced?",
+     "answer": "Over 2,500 years",
+     "wrong": [
+      "About 50 years",
+      "About 200 years",
+      "Since the internet"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "rjmrkxyzojnt",
+     "question": "Mindfulness began in which traditions?",
+     "answer": "Buddhist and Hindu traditions in Asia",
+     "wrong": [
+      "Ancient Roman sports",
+      "European royal courts",
+      "American summer camps"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "x7tzpj2mojnt",
+     "question": "Who brought mindfulness into modern medicine with MBSR?",
+     "answer": "Dr. Jon Kabat-Zinn",
+     "wrong": [
+      "Sigmund Freud",
+      "Albert Einstein",
+      "Dr. Phil"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "kwhzkylcojnt",
+     "question": "What does MBSR stand for?",
+     "answer": "Mindfulness-Based Stress Reduction",
+     "wrong": [
+      "Mind, Body, Sleep, Rest",
+      "Meditation Before Starting Recovery",
+      "My Best Self Routine"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "13utenicojnt",
+     "question": "The prefrontal cortex is described as your brain's what?",
+     "answer": "Pause button",
+     "wrong": [
+      "Alarm system",
+      "Hunger switch",
+      "Memory card"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "8gi2qjx9ojnt",
+     "question": "The amygdala is described as your brain's what?",
+     "answer": "Alarm system",
+     "wrong": [
+      "Pause button",
+      "Calculator",
+      "Music player"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "zt760w85ojnt",
+     "question": "Regular meditation lowers which stress hormone?",
+     "answer": "Cortisol",
+     "wrong": [
+      "Insulin",
+      "Melatonin",
+      "Adrenaline only"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "kssmd301ojnt",
+     "question": "The brain changing based on what we practice is called what?",
+     "answer": "Neuroplasticity",
+     "wrong": [
+      "Hypnosis",
+      "Gravity",
+      "Memory loss"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "ubriq4yxojnt",
+     "question": "A body scan moves your attention how?",
+     "answer": "Slowly through the body, head to toe",
+     "wrong": [
+      "Around the room",
+      "Back and forth between people",
+      "Only to your breathing"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "fif860a4ojnt",
+     "question": "What is the goal of a body scan?",
+     "answer": "To notice, without judgment",
+     "wrong": [
+      "To fall asleep",
+      "To fix every ache",
+      "To stretch as far as you can"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "wk84ml45ojnt",
+     "question": "Guided imagery uses what to calm the mind?",
+     "answer": "Visualizing a peaceful place",
+     "wrong": [
+      "Loud music",
+      "Counting money",
+      "Reading the news"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "y5olxgx5ojnt",
+     "question": "Loving-kindness meditation is also called what?",
+     "answer": "Metta",
+     "wrong": [
+      "Yoga",
+      "Tai chi",
+      "Karate"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "awybh5l9ojnt",
+     "question": "Loving-kindness starts by sending warm wishes toward whom?",
+     "answer": "Yourself",
+     "wrong": [
+      "Only strangers",
+      "Only your enemies",
+      "No one"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "9alag1w0ojnt",
+     "question": "Which is a loving-kindness phrase?",
+     "answer": "May I be safe",
+     "wrong": [
+      "May I be rich",
+      "May I win",
+      "May I be famous"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "0gnpsehtojnt",
+     "question": "Your mind wanders during meditation. What does that mean?",
+     "answer": "Nothing is wrong. Noticing and coming back is the practice",
+     "wrong": [
+      "You failed",
+      "You should stop",
+      "Meditation is not for you"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "y7u4iy06ojnt",
+     "question": "How long is a good starting practice?",
+     "answer": "5 minutes a day",
+     "wrong": [
+      "2 hours a day",
+      "Once a year",
+      "Only on weekends"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "vnn9doooojnt",
+     "question": "Which matters more for meditation?",
+     "answer": "Consistency",
+     "wrong": [
+      "Duration",
+      "Expensive gear",
+      "A special room"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "czfb958rojnt",
+     "question": "In recovery, mindfulness helps you notice cravings without doing what?",
+     "answer": "Reacting right away",
+     "wrong": [
+      "Breathing",
+      "Talking",
+      "Sleeping"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
     }
    ]
   },
@@ -11110,6 +12041,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "headphones",
        "clue": "You wear these to listen privately"
+      }
+     ]
+    },
+    {
+     "id": "4arfb4meoksk",
+     "title": "Mindfulness",
+     "entries": [
+      {
+       "word": "present",
+       "clue": "Mindfulness pays attention to this moment"
+      },
+      {
+       "word": "judgment",
+       "clue": "Notice without this"
+      },
+      {
+       "word": "sati",
+       "clue": "Pali word for awareness"
+      },
+      {
+       "word": "amygdala",
+       "clue": "The brain's alarm system"
+      },
+      {
+       "word": "prefrontal",
+       "clue": "______ cortex: the brain's pause button"
+      },
+      {
+       "word": "cortisol",
+       "clue": "The main stress hormone"
+      },
+      {
+       "word": "neuroplastic",
+       "clue": "The brain changes based on what we practice, so it is ______"
+      },
+      {
+       "word": "imagery",
+       "clue": "Guided ______: picturing a peaceful place"
+      },
+      {
+       "word": "metta",
+       "clue": "Another name for loving-kindness"
+      },
+      {
+       "word": "kindness",
+       "clue": "Loving-______ meditation"
+      },
+      {
+       "word": "consistency",
+       "clue": "Matters more than duration"
+      },
+      {
+       "word": "craving",
+       "clue": "Mindfulness helps you notice this without acting on it"
+      },
+      {
+       "word": "breath",
+       "clue": "Notice the rise and fall of this"
+      },
+      {
+       "word": "peace",
+       "clue": "May I be at ______"
+      },
+      {
+       "word": "wander",
+       "clue": "Your mind will do this, and that is okay"
       }
      ]
     }
@@ -12514,6 +13511,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The handout says you have used music to manage emotions your whole life. Now you can use it this way",
      "answer": "On purpose"
+    },
+    {
+     "id": "1n60uk5roliv",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 100,
+     "clue": "Mindfulness is paying attention to this moment",
+     "answer": "The present"
+    },
+    {
+     "id": "w0fm8n3voliv",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 200,
+     "clue": "Mindfulness means paying attention on purpose and without this",
+     "answer": "Judgment"
+    },
+    {
+     "id": "j3r6j1ltoliv",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 300,
+     "clue": "True or false: mindfulness means clearing your mind and thinking about nothing",
+     "answer": "False"
+    },
+    {
+     "id": "88s1dq1holiv",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 400,
+     "clue": "Mindfulness does not need silence, a special room or equipment. It just needs this",
+     "answer": "Practice"
+    },
+    {
+     "id": "rtbwwl41oliv",
+     "board": "Mindfulness",
+     "category": "What Is Mindfulness?",
+     "value": 500,
+     "clue": "When your mind wanders, noticing it and doing this is the practice",
+     "answer": "Coming back"
+    },
+    {
+     "id": "9kspt669oliv",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 100,
+     "clue": "Mindfulness has been practiced for over this many years",
+     "answer": "2,500"
+    },
+    {
+     "id": "wd4qfhasoliv",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 200,
+     "clue": "Mindfulness began in Buddhist and Hindu traditions on this continent",
+     "answer": "Asia"
+    },
+    {
+     "id": "tbwelqkgoliv",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 300,
+     "clue": "The word mindfulness comes from the Pali word sati, meaning this",
+     "answer": "Awareness or attention"
+    },
+    {
+     "id": "sbtb5p4moliv",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 400,
+     "clue": "Dr. Jon Kabat-Zinn created this program, known by four letters",
+     "answer": "MBSR"
+    },
+    {
+     "id": "sk4syjokoliv",
+     "board": "Mindfulness",
+     "category": "History and Origins",
+     "value": 500,
+     "clue": "MBSR stands for Mindfulness-Based this",
+     "answer": "Stress Reduction"
+    },
+    {
+     "id": "c2wkgpxcoliv",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 100,
+     "clue": "Your brain's \"pause button\" between a feeling and a reaction",
+     "answer": "The prefrontal cortex"
+    },
+    {
+     "id": "0899x4ktoliv",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 200,
+     "clue": "Your brain's alarm system that fires fight-or-flight",
+     "answer": "The amygdala"
+    },
+    {
+     "id": "xep5mneholiv",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 300,
+     "clue": "Meditation lowers this main stress hormone",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "o4t8xgdpoliv",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 400,
+     "clue": "The brain changes based on what we practice. This is called this",
+     "answer": "Neuroplasticity"
+    },
+    {
+     "id": "j9fyoggjoliv",
+     "board": "Mindfulness",
+     "category": "Your Brain on Meditation",
+     "value": 500,
+     "clue": "Meditation is essentially this for the brain",
+     "answer": "Exercise"
+    },
+    {
+     "id": "o01g0kdkoliv",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 100,
+     "clue": "Moving your attention from head to toe",
+     "answer": "Body scan"
+    },
+    {
+     "id": "bzyts1l1oliv",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 200,
+     "clue": "Picturing a peaceful place, like a forest path and a still pond",
+     "answer": "Guided imagery"
+    },
+    {
+     "id": "s9lmpor7oliv",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 300,
+     "clue": "Sending warm wishes to yourself and others",
+     "answer": "Loving-kindness"
+    },
+    {
+     "id": "gq4uo79zoliv",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 400,
+     "clue": "Loving-kindness is also called this four-letter word",
+     "answer": "Metta"
+    },
+    {
+     "id": "c5wv6c7coliv",
+     "board": "Mindfulness",
+     "category": "Three Techniques",
+     "value": 500,
+     "clue": "Complete the loving-kindness phrase: \"May I be safe. May I be healthy. May I be at ____\"",
+     "answer": "Peace"
+    },
+    {
+     "id": "h8vluoufoliv",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 100,
+     "clue": "A good amount of time to start practicing each day",
+     "answer": "5 minutes"
+    },
+    {
+     "id": "q0jdcjaeoliv",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 200,
+     "clue": "This matters more than how long you meditate",
+     "answer": "Consistency"
+    },
+    {
+     "id": "rhr3ygv3oliv",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 300,
+     "clue": "Set one of these so you are not watching the clock",
+     "answer": "A timer"
+    },
+    {
+     "id": "m7i862dxoliv",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 400,
+     "clue": "Mindfulness helps you observe these without acting on them right away",
+     "answer": "Cravings"
+    },
+    {
+     "id": "w7e17m88oliv",
+     "board": "Mindfulness",
+     "category": "Practice and Recovery",
+     "value": 500,
+     "clue": "Name one of the free meditation apps listed on the handout",
+     "answer": "Headspace, Calm or Insight Timer"
     }
    ],
    "wheel": [
@@ -13508,6 +14705,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Music & Emotions"
      ]
+    },
+    {
+     "id": "r7l1bdqtom2c",
+     "category": "Phrase",
+     "phrase": "BE HERE NOW",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "dtqfl8ucom2c",
+     "category": "Phrase",
+     "phrase": "NOTICE WITHOUT JUDGMENT",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "qvqtt29qom2c",
+     "category": "Phrase",
+     "phrase": "MAY I BE AT PEACE",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "oiqfffaxom2c",
+     "category": "Phrase",
+     "phrase": "MAY I BE SAFE",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "bw49pwijom2c",
+     "category": "Phrase",
+     "phrase": "BREATHE IN AND LET IT GO",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "7wirj8egom2c",
+     "category": "Phrase",
+     "phrase": "ONE MOMENT AT A TIME",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "rhd89dshom2c",
+     "category": "Phrase",
+     "phrase": "YOUR MIND WILL WANDER",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "vjcn5lzrom2c",
+     "category": "Phrase",
+     "phrase": "PRACTICE MAKES PROGRESS",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "hnbxf66xom2c",
+     "category": "Thing",
+     "phrase": "A BODY SCAN",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "reih97dlom2c",
+     "category": "Thing",
+     "phrase": "GUIDED IMAGERY",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "3ti01ee7om2c",
+     "category": "Thing",
+     "phrase": "LOVING KINDNESS",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "1m5qcmgzom2c",
+     "category": "Thing",
+     "phrase": "THE PAUSE BUTTON",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "oq6zwpegom2c",
+     "category": "Thing",
+     "phrase": "A STILL POND",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "btior1qeom2c",
+     "category": "Thing",
+     "phrase": "A QUIET FOREST PATH",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "1vr8urpkom2c",
+     "category": "Event",
+     "phrase": "MEDITATING FOR FIVE MINUTES",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "gbjb0752om2c",
+     "category": "Event",
+     "phrase": "CLOSING YOUR EYES",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "7mlzzp8nom2c",
+     "category": "Event",
+     "phrase": "TAKING A SLOW BREATH",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "okohjwbxom2c",
+     "category": "Event",
+     "phrase": "COMING BACK TO THE PRESENT",
+     "sets": [
+      "Mindfulness"
+     ]
     }
    ],
    "words": [
@@ -13710,7 +15051,8 @@ window.GS_MY_CONTENT = {
      "word": "CALMS",
      "hint": "Handling Stress",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Mindfulness"
      ]
     },
     {
@@ -14323,6 +15665,128 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Music & Emotions"
      ]
+    },
+    {
+     "id": "f80fih5bogyp",
+     "word": "PEACE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths",
+      "Handling Stress",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "v1103ctvogyp",
+     "word": "QUIET",
+     "hint": "Feeling",
+     "sets": [
+      "Handling Stress",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "5feeln7nogyp",
+     "word": "RELAX",
+     "hint": "Self-care",
+     "sets": [
+      "Handling Stress",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "5ygw634zogyp",
+     "word": "PAUSE",
+     "hint": "Self-care",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "3qnncu56ogyp",
+     "word": "SMILE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Handling Disappointment",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "q8tonsiqogyp",
+     "word": "HEART",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "gp1a2jdnogyp",
+     "word": "FOCUS",
+     "hint": "Coping skill",
+     "sets": [
+      "Handling Stress",
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "53982cl3ogyp",
+     "word": "LIGHT",
+     "hint": "Recovery",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "kd0hfsizon4s",
+     "word": "AWARE",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "xjxiibi2on4s",
+     "word": "STILL",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "f3bxta8ion4s",
+     "word": "SENSE",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "tu8x5ef1on4s",
+     "word": "TREES",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "0zaviushon4s",
+     "word": "MINDS",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "3vyw58s9on4s",
+     "word": "BRAIN",
+     "hint": "Mindfulness",
+     "sets": [
+      "Mindfulness"
+     ]
     }
    ],
    "draw": [
@@ -14363,7 +15827,8 @@ window.GS_MY_CONTENT = {
      "word": "a heart",
      "level": "easy",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Mindfulness"
      ]
     },
     {
@@ -14551,7 +16016,8 @@ window.GS_MY_CONTENT = {
      "word": "taking a deep breath",
      "level": "medium",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Mindfulness"
      ]
     },
     {
@@ -14976,7 +16442,8 @@ window.GS_MY_CONTENT = {
      "word": "a sunrise",
      "level": "easy",
      "sets": [
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Mindfulness"
      ]
     },
     {
@@ -15362,6 +16829,142 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Music & Emotions"
+     ]
+    },
+    {
+     "id": "l3a1tba2okzm",
+     "word": "a brain",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "xg3guk9pokzm",
+     "word": "a timer",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "6jivm24nokzm",
+     "word": "a pond",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "or6608h4okzm",
+     "word": "a tree",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "6ic8uz14okzm",
+     "word": "a bench",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "u59vtnj8okzm",
+     "word": "a candle",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "ffay4lpgokzm",
+     "word": "a pause button",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "fhltqzv4okzm",
+     "word": "a pillow",
+     "level": "easy",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "sm9wx8dbokzm",
+     "word": "a forest path",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "jtefmgv2okzm",
+     "word": "a still pond",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "33dexocvokzm",
+     "word": "someone meditating",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "f7nffzlookzm",
+     "word": "a body scan",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "0nzeat73okzm",
+     "word": "an alarm bell",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "chzikt08okzm",
+     "word": "sending love to a friend",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "1r5sa7viokzm",
+     "word": "a wandering mind",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "up4vf0gjokzm",
+     "word": "sitting quietly",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "z68fjlm2okzm",
+     "word": "a calm face",
+     "level": "medium",
+     "sets": [
+      "Mindfulness"
      ]
     }
    ],
@@ -17464,6 +19067,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Music & Emotions"
+     ]
+    },
+    {
+     "id": "fduev8fvomlt",
+     "question": "Mindfulness is paying attention to the present moment how?",
+     "answer": "On purpose, without judgment",
+     "wrong": [
+      "Only with your eyes closed",
+      "While thinking about nothing",
+      "Only in a quiet room"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "sh8htmcfomlt",
+     "question": "Is mindfulness about clearing your mind completely?",
+     "answer": "No, it is about noticing what is happening",
+     "wrong": [
+      "Yes, you must think about nothing",
+      "Only for experts",
+      "Only at night"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "uizjp2w5omlt",
+     "question": "About how long has mindfulness been practiced?",
+     "answer": "Over 2,500 years",
+     "wrong": [
+      "About 50 years",
+      "About 200 years",
+      "Since the internet"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "36bqusg1omlt",
+     "question": "Mindfulness began in which traditions?",
+     "answer": "Buddhist and Hindu traditions in Asia",
+     "wrong": [
+      "Ancient Roman sports",
+      "European royal courts",
+      "American summer camps"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "v91rj9wyomlt",
+     "question": "Who brought mindfulness into modern medicine with MBSR?",
+     "answer": "Dr. Jon Kabat-Zinn",
+     "wrong": [
+      "Sigmund Freud",
+      "Albert Einstein",
+      "Dr. Phil"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "jq16ap3fomlt",
+     "question": "What does MBSR stand for?",
+     "answer": "Mindfulness-Based Stress Reduction",
+     "wrong": [
+      "Mind, Body, Sleep, Rest",
+      "Meditation Before Starting Recovery",
+      "My Best Self Routine"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "u7e0kyctomlt",
+     "question": "The prefrontal cortex is described as your brain's what?",
+     "answer": "Pause button",
+     "wrong": [
+      "Alarm system",
+      "Hunger switch",
+      "Memory card"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "d8619odbomlt",
+     "question": "The amygdala is described as your brain's what?",
+     "answer": "Alarm system",
+     "wrong": [
+      "Pause button",
+      "Calculator",
+      "Music player"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "xwjq9u5oomlt",
+     "question": "Regular meditation lowers which stress hormone?",
+     "answer": "Cortisol",
+     "wrong": [
+      "Insulin",
+      "Melatonin",
+      "Adrenaline only"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "ep4329jsomlt",
+     "question": "The brain changing based on what we practice is called what?",
+     "answer": "Neuroplasticity",
+     "wrong": [
+      "Hypnosis",
+      "Gravity",
+      "Memory loss"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "ry3ei3ujomlt",
+     "question": "A body scan moves your attention how?",
+     "answer": "Slowly through the body, head to toe",
+     "wrong": [
+      "Around the room",
+      "Back and forth between people",
+      "Only to your breathing"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "54pyzaavomlt",
+     "question": "What is the goal of a body scan?",
+     "answer": "To notice, without judgment",
+     "wrong": [
+      "To fall asleep",
+      "To fix every ache",
+      "To stretch as far as you can"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "kk8fuknzomlt",
+     "question": "Guided imagery uses what to calm the mind?",
+     "answer": "Visualizing a peaceful place",
+     "wrong": [
+      "Loud music",
+      "Counting money",
+      "Reading the news"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "9lk8qq37omlt",
+     "question": "Loving-kindness meditation is also called what?",
+     "answer": "Metta",
+     "wrong": [
+      "Yoga",
+      "Tai chi",
+      "Karate"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "l9qsnsbeomlt",
+     "question": "Loving-kindness starts by sending warm wishes toward whom?",
+     "answer": "Yourself",
+     "wrong": [
+      "Only strangers",
+      "Only your enemies",
+      "No one"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "71qg9d2momlt",
+     "question": "Which is a loving-kindness phrase?",
+     "answer": "May I be safe",
+     "wrong": [
+      "May I be rich",
+      "May I win",
+      "May I be famous"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "d7sew01homlt",
+     "question": "Your mind wanders during meditation. What does that mean?",
+     "answer": "Nothing is wrong. Noticing and coming back is the practice",
+     "wrong": [
+      "You failed",
+      "You should stop",
+      "Meditation is not for you"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "2sf14gesomlt",
+     "question": "How long is a good starting practice?",
+     "answer": "5 minutes a day",
+     "wrong": [
+      "2 hours a day",
+      "Once a year",
+      "Only on weekends"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "smmd7fbiomlt",
+     "question": "Which matters more for meditation?",
+     "answer": "Consistency",
+     "wrong": [
+      "Duration",
+      "Expensive gear",
+      "A special room"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
+     ]
+    },
+    {
+     "id": "zedbxv5bomlt",
+     "question": "In recovery, mindfulness helps you notice cravings without doing what?",
+     "answer": "Reacting right away",
+     "wrong": [
+      "Breathing",
+      "Talking",
+      "Sleeping"
+     ],
+     "category": "Mindfulness",
+     "time": 20,
+     "sets": [
+      "Mindfulness"
      ]
     }
    ]
