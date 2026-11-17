@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-11-mindfulness",
+ "id": "matt-2026-11-17-effective-communication",
  "banks": {
   "standard": {
    "cross": [
@@ -1257,6 +1257,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "wander",
        "clue": "Your mind will do this, and that is okay"
+      }
+     ]
+    },
+    {
+     "id": "we5melxo5rra",
+     "title": "Effective Communication",
+     "entries": [
+      {
+       "word": "verbal",
+       "clue": "Communication with words"
+      },
+      {
+       "word": "nonverbal",
+       "clue": "Communication through body language and tone"
+      },
+      {
+       "word": "listening",
+       "clue": "Active ______: being fully present"
+      },
+      {
+       "word": "assumptions",
+       "clue": "Deciding what someone means before they finish"
+      },
+      {
+       "word": "defensiveness",
+       "clue": "Shutting down or attacking when criticized"
+      },
+      {
+       "word": "flooding",
+       "clue": "Emotional ______: feelings too big to think clearly"
+      },
+      {
+       "word": "distraction",
+       "clue": "A phone or noise pulling you away"
+      },
+      {
+       "word": "interrupt",
+       "clue": "Don't do this. Let them finish"
+      },
+      {
+       "word": "reflect",
+       "clue": "______ back: \"So what I'm hearing you say is...\""
+      },
+      {
+       "word": "clarify",
+       "clue": "Ask a question to ______ what they mean"
+      },
+      {
+       "word": "posture",
+       "clue": "Arms crossed or slumped"
+      },
+      {
+       "word": "tone",
+       "clue": "\"That's fine\" said warmly or coldly"
+      },
+      {
+       "word": "silence",
+       "clue": "Knowing when not to speak"
+      },
+      {
+       "word": "statement",
+       "clue": "I-______: \"I feel ___ when ___\""
+      },
+      {
+       "word": "nail",
+       "clue": "\"It's Not About the ______\""
       }
      ]
     }
@@ -3461,6 +3527,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Name one of the free meditation apps listed on the handout",
      "answer": "Headspace, Calm or Insight Timer"
+    },
+    {
+     "id": "8a7buk205sj5",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 100,
+     "clue": "Communication with words",
+     "answer": "Verbal"
+    },
+    {
+     "id": "iwv8iq085sj5",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 200,
+     "clue": "Communication through body language, tone and facial expression",
+     "answer": "Nonverbal"
+    },
+    {
+     "id": "kru0w11t5sj5",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 300,
+     "clue": "The third type of communication, like a text or a letter",
+     "answer": "Written"
+    },
+    {
+     "id": "o3ggqzhc5sj5",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 400,
+     "clue": "Effective communication means your message is received and this, the way you meant it",
+     "answer": "Understood"
+    },
+    {
+     "id": "w11dcjyu5sj5",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 500,
+     "clue": "Most of the emotional meaning in a conversation comes from everything except this",
+     "answer": "The words"
+    },
+    {
+     "id": "j6b9ulig5sj5",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 100,
+     "clue": "Phones, noise or being mentally somewhere else",
+     "answer": "Distraction"
+    },
+    {
+     "id": "zairfxcm5sj5",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 200,
+     "clue": "Deciding what someone means before they finish",
+     "answer": "Assumptions"
+    },
+    {
+     "id": "g76btpcn5sj5",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 300,
+     "clue": "Shutting down or attacking when you feel criticized",
+     "answer": "Defensiveness"
+    },
+    {
+     "id": "5zub8h885sj5",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 400,
+     "clue": "When feelings get too big to think clearly",
+     "answer": "Emotional flooding"
+    },
+    {
+     "id": "hizroa6n5sj5",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 500,
+     "clue": "Jumping to solutions before the person feels heard",
+     "answer": "Listening to fix"
+    },
+    {
+     "id": "ou0e9svt5sj5",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 100,
+     "clue": "Eye contact, open posture and phone away",
+     "answer": "Give full attention"
+    },
+    {
+     "id": "5t7z11uc5sj5",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 200,
+     "clue": "Let them finish before you respond",
+     "answer": "Don't interrupt"
+    },
+    {
+     "id": "snyzeie95sj5",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 300,
+     "clue": "\"So what I'm hearing you say is...\"",
+     "answer": "Reflect back"
+    },
+    {
+     "id": "zpfmgi5i5sj5",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 400,
+     "clue": "\"That sounds really difficult\"",
+     "answer": "Acknowledge feelings"
+    },
+    {
+     "id": "glls3zrq5sj5",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 500,
+     "clue": "Sometimes being heard is enough, so do this",
+     "answer": "Resist the urge to fix"
+    },
+    {
+     "id": "zg26kjnv5sj5",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 100,
+     "clue": "\"That's fine\" said warmly vs. coldly shows the power of this",
+     "answer": "Tone of voice"
+    },
+    {
+     "id": "nalq7tzw5sj5",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 200,
+     "clue": "Too little can signal disinterest, too much can feel intense",
+     "answer": "Eye contact"
+    },
+    {
+     "id": "pv4wwf7h5sj5",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 300,
+     "clue": "Arms crossed, turned away or slumped",
+     "answer": "Posture"
+    },
+    {
+     "id": "h1s8ze3h5sj5",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 400,
+     "clue": "Eye rolls, sighs and smirks are examples of these",
+     "answer": "Facial expressions"
+    },
+    {
+     "id": "iwdw780j5sj5",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 500,
+     "clue": "Knowing when NOT to speak is an underrated communication skill",
+     "answer": "Silence"
+    },
+    {
+     "id": "08sphpe85sj5",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 100,
+     "clue": "An I-statement starts with these two words",
+     "answer": "\"I feel\""
+    },
+    {
+     "id": "acf63tac5sj5",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 200,
+     "clue": "In \"I feel ___ ____ ___\", this word comes right after the feeling",
+     "answer": "When"
+    },
+    {
+     "id": "6xmj6ulv5sj5",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 300,
+     "clue": "In an I-statement, this word comes right before your reason",
+     "answer": "Because"
+    },
+    {
+     "id": "jk5rsvc85sj5",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 400,
+     "clue": "The I-statement ends with \"and what I ____ is...\"",
+     "answer": "Need"
+    },
+    {
+     "id": "xye16lsy5sj5",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 500,
+     "clue": "Turn \"You never listen to me\" into this kind of statement",
+     "answer": "An I-statement"
     }
    ],
    "wheel": [
@@ -5064,6 +5330,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Mindfulness"
      ]
+    },
+    {
+     "id": "yer1655l5t30",
+     "category": "Phrase",
+     "phrase": "LISTEN TO UNDERSTAND",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "uvxn11gy5t30",
+     "category": "Phrase",
+     "phrase": "PUT THE PHONE DOWN",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "62cqdq6p5t30",
+     "category": "Phrase",
+     "phrase": "LET THEM FINISH",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "z2u166r25t30",
+     "category": "Phrase",
+     "phrase": "I FEEL HEARD",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "pyfgm2ph5t30",
+     "category": "Phrase",
+     "phrase": "TAKE A BREATH FIRST",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "06jfwewz5t30",
+     "category": "Phrase",
+     "phrase": "IT'S NOT ABOUT THE NAIL",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "mk5ufcjh5t30",
+     "category": "Phrase",
+     "phrase": "YOUR BODY TALKS TOO",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "o2djddog5t30",
+     "category": "Phrase",
+     "phrase": "WHAT DO YOU NEED FROM ME",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "egfj7rue5t30",
+     "category": "Thing",
+     "phrase": "ACTIVE LISTENING",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "vj1jj5xk5t30",
+     "category": "Thing",
+     "phrase": "AN I STATEMENT",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "she0p1cg5t30",
+     "category": "Thing",
+     "phrase": "BODY LANGUAGE",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "0lwopm9i5t30",
+     "category": "Thing",
+     "phrase": "TONE OF VOICE",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "uxkap88e5t30",
+     "category": "Thing",
+     "phrase": "EYE CONTACT",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "5eozwt0f5t30",
+     "category": "Thing",
+     "phrase": "A CLARIFYING QUESTION",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "4hcie1625t30",
+     "category": "Event",
+     "phrase": "REFLECTING BACK",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "d97xsemv5t30",
+     "category": "Event",
+     "phrase": "TAKING A BREAK TO CALM DOWN",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "9v2sa3k15t30",
+     "category": "Event",
+     "phrase": "PRACTICING WITH A PARTNER",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "idftwx5u5t30",
+     "category": "Event",
+     "phrase": "A HEART TO HEART TALK",
+     "sets": [
+      "Effective Communication"
+     ]
     }
    ],
    "words": [
@@ -5595,7 +6005,8 @@ window.GS_MY_CONTENT = {
       "Personal Strengths",
       "Handling Stress",
       "Handling Disappointment",
-      "Asking for Help"
+      "Asking for Help",
+      "Effective Communication"
      ]
     },
     {
@@ -5604,7 +6015,8 @@ window.GS_MY_CONTENT = {
      "hint": "Strength",
      "sets": [
       "Personal Strengths",
-      "Handling Disappointment"
+      "Handling Disappointment",
+      "Effective Communication"
      ]
     },
     {
@@ -5663,7 +6075,8 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Stress",
       "Media Literacy",
-      "Mindfulness"
+      "Mindfulness",
+      "Effective Communication"
      ]
     },
     {
@@ -5705,7 +6118,8 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Stress",
      "sets": [
       "Handling Stress",
-      "Mindfulness"
+      "Mindfulness",
+      "Effective Communication"
      ]
     },
     {
@@ -5714,7 +6128,8 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Stress",
      "sets": [
       "Handling Stress",
-      "Mindfulness"
+      "Mindfulness",
+      "Effective Communication"
      ]
     },
     {
@@ -5742,7 +6157,8 @@ window.GS_MY_CONTENT = {
       "Handling Stress",
       "Media Literacy",
       "Handling Disappointment",
-      "Asking for Help"
+      "Asking for Help",
+      "Effective Communication"
      ]
     },
     {
@@ -5751,7 +6167,8 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Stress",
      "sets": [
       "Handling Stress",
-      "Mindfulness"
+      "Mindfulness",
+      "Effective Communication"
      ]
     },
     {
@@ -5856,7 +6273,8 @@ window.GS_MY_CONTENT = {
      "hint": "Elections",
      "sets": [
       "Elections",
-      "Music & Emotions"
+      "Music & Emotions",
+      "Effective Communication"
      ]
     },
     {
@@ -6116,7 +6534,8 @@ window.GS_MY_CONTENT = {
      "word": "SPEAK",
      "hint": "Asking for Help",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Effective Communication"
      ]
     },
     {
@@ -6124,7 +6543,8 @@ window.GS_MY_CONTENT = {
      "word": "NEEDS",
      "hint": "Asking for Help",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Effective Communication"
      ]
     },
     {
@@ -6173,7 +6593,8 @@ window.GS_MY_CONTENT = {
      "hint": "Asking for Help",
      "sets": [
       "Asking for Help",
-      "Music & Emotions"
+      "Music & Emotions",
+      "Effective Communication"
      ]
     },
     {
@@ -6362,6 +6783,41 @@ window.GS_MY_CONTENT = {
      "hint": "Mindfulness",
      "sets": [
       "Mindfulness"
+     ]
+    },
+    {
+     "id": "xmsf9gzv5qju",
+     "word": "SMILE",
+     "hint": "Things to Do",
+     "sets": [
+      "Handling Stress",
+      "Handling Disappointment",
+      "Mindfulness",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "f64j29nm5u5h",
+     "word": "WORDS",
+     "hint": "Effective Communication",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "wu7a9aie5u5h",
+     "word": "TONES",
+     "hint": "Effective Communication",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "eosjoai45u5h",
+     "word": "TALKS",
+     "hint": "Effective Communication",
+     "sets": [
+      "Effective Communication"
      ]
     }
    ],
@@ -7337,7 +7793,8 @@ window.GS_MY_CONTENT = {
      "word": "a stop sign",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Effective Communication"
      ]
     },
     {
@@ -7612,7 +8069,8 @@ window.GS_MY_CONTENT = {
      "word": "a phone",
      "level": "easy",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Effective Communication"
      ]
     },
     {
@@ -8021,6 +8479,150 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Mindfulness"
+     ]
+    },
+    {
+     "id": "u2byd92x5rzy",
+     "word": "an ear",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "bowaxofl5rzy",
+     "word": "a mouth",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "37nlfm0u5rzy",
+     "word": "a speech bubble",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "y6e5s3nm5rzy",
+     "word": "crossed arms",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "qp6bzl7f5rzy",
+     "word": "a smile",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ov3ca1j95rzy",
+     "word": "two people talking",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "161zqqyh5rzy",
+     "word": "a nail",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "o3fijo0f5rzy",
+     "word": "a hand wave",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "p7x93v375rzy",
+     "word": "eye contact",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "1b243pps5rzy",
+     "word": "an eye roll",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "gpwv45vt5rzy",
+     "word": "interrupting someone",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "10jahu0g5rzy",
+     "word": "a nail in a forehead",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "7kpjfnb75rzy",
+     "word": "nodding your head",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "vg56l5uh5rzy",
+     "word": "leaning in to listen",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "mp10qdwm5rzy",
+     "word": "a deep breath",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "9ef0kjcf5rzy",
+     "word": "someone on their phone while you talk",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "v63dh0wg5rzy",
+     "word": "a shrug",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "gnklk5ye5rzy",
+     "word": "a heart to heart talk",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
      ]
     }
    ],
@@ -11324,6 +11926,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Mindfulness"
      ]
+    },
+    {
+     "id": "i768ga025tm3",
+     "question": "Effective communication means what?",
+     "answer": "Your message is received the way you meant it",
+     "wrong": [
+      "You talk the most",
+      "You win the argument",
+      "You use big words"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "c8yusqyu5tm3",
+     "question": "Which three ways do we communicate?",
+     "answer": "Verbal, nonverbal and written",
+     "wrong": [
+      "Loud, quiet and silent",
+      "Phone, email and text only",
+      "Fast, medium and slow"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "nya08yiw5tm3",
+     "question": "Most of the emotional meaning in a conversation comes from what?",
+     "answer": "Tone, body language and expression",
+     "wrong": [
+      "The exact words only",
+      "How long you talk",
+      "Who talks first"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "g2zrx99y5tm3",
+     "question": "Jumping to solutions before the person feels heard is called what?",
+     "answer": "Listening to fix",
+     "wrong": [
+      "Active listening",
+      "Reflecting back",
+      "An I-statement"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ds1m3w165tm3",
+     "question": "Deciding what someone means before they finish is which barrier?",
+     "answer": "Assumptions",
+     "wrong": [
+      "Silence",
+      "Eye contact",
+      "Patience"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "yjjl2xv45tm3",
+     "question": "When feelings get too big to process information clearly, it is called what?",
+     "answer": "Emotional flooding",
+     "wrong": [
+      "Active listening",
+      "Daydreaming",
+      "Brainstorming"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "gaht56q75tm3",
+     "question": "Shutting down or attacking when you feel criticized is called what?",
+     "answer": "Defensiveness",
+     "wrong": [
+      "Empathy",
+      "Honesty",
+      "Curiosity"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "n27nujmd5tm3",
+     "question": "When your body says something different than your words, it is called what?",
+     "answer": "A nonverbal mismatch",
+     "wrong": [
+      "An I-statement",
+      "A clarifying question",
+      "Reflecting back"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ezpchcr05tm3",
+     "question": "Which is a common distraction in conversations?",
+     "answer": "Your phone",
+     "wrong": [
+      "Eye contact",
+      "Nodding",
+      "Asking questions"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "86iiscti5tm3",
+     "question": "Active listening means what?",
+     "answer": "Being fully present and working to understand",
+     "wrong": [
+      "Waiting for your turn to talk",
+      "Planning your answer while they talk",
+      "Fixing the problem fast"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "wjxwo2yg5tm3",
+     "question": "\"So what I'm hearing you say is...\" is which listening skill?",
+     "answer": "Reflecting back",
+     "wrong": [
+      "Interrupting",
+      "Fixing",
+      "Defending"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "44opb6px5tm3",
+     "question": "\"Can you tell me more about what you mean?\" is an example of what?",
+     "answer": "A clarifying question",
+     "wrong": [
+      "An interruption",
+      "A put-down",
+      "An assumption"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "dv4z3ffn5tm4",
+     "question": "\"That sounds really frustrating\" is which listening skill?",
+     "answer": "Acknowledging feelings",
+     "wrong": [
+      "Giving advice",
+      "Changing the subject",
+      "Defensiveness"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "5rju66l05tm4",
+     "question": "Before giving advice, what is a good thing to ask?",
+     "answer": "\"What do you need from me right now?\"",
+     "wrong": [
+      "\"Why did you do that?\"",
+      "\"Can we talk later?\"",
+      "\"Is that all?\""
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "9b5vf6j85tm4",
+     "question": "An I-statement starts with what?",
+     "answer": "Your own feelings and experience",
+     "wrong": [
+      "What the other person did wrong",
+      "An apology",
+      "A question"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "69hx5hdn5tm4",
+     "question": "Which is an I-statement?",
+     "answer": "\"I feel unheard when I'm interrupted\"",
+     "wrong": [
+      "\"You never listen to me\"",
+      "\"You always do this\"",
+      "\"Why can't you just stop?\""
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "fbhiafuq5tm4",
+     "question": "How does an I-statement end?",
+     "answer": "\"...and what I need is ___\"",
+     "wrong": [
+      "\"...and it's your fault\"",
+      "\"...and that's final\"",
+      "\"...and I'm leaving\""
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ezqwxelg5tm4",
+     "question": "Arms crossed often signal what?",
+     "answer": "Being closed off or defensive",
+     "wrong": [
+      "Being excited",
+      "Being hungry",
+      "Agreeing"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "budnems05tm4",
+     "question": "The short film \"It's Not About the Nail\" is about what?",
+     "answer": "Listening to understand versus jumping in to fix",
+     "wrong": [
+      "Building a house",
+      "A trip to the doctor",
+      "A carpentry contest"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ppwym6hd5tm4",
+     "question": "The facilitator guide calls communication a what?",
+     "answer": "A skill, not a talent",
+     "wrong": [
+      "A talent you are born with",
+      "Something you cannot change",
+      "Only for professionals"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
     }
    ]
   },
@@ -12107,6 +13009,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "wander",
        "clue": "Your mind will do this, and that is okay"
+      }
+     ]
+    },
+    {
+     "id": "0tfivjwx5uqk",
+     "title": "Effective Communication",
+     "entries": [
+      {
+       "word": "verbal",
+       "clue": "Communication with words"
+      },
+      {
+       "word": "nonverbal",
+       "clue": "Communication through body language and tone"
+      },
+      {
+       "word": "listening",
+       "clue": "Active ______: being fully present"
+      },
+      {
+       "word": "assumptions",
+       "clue": "Deciding what someone means before they finish"
+      },
+      {
+       "word": "defensiveness",
+       "clue": "Shutting down or attacking when criticized"
+      },
+      {
+       "word": "flooding",
+       "clue": "Emotional ______: feelings too big to think clearly"
+      },
+      {
+       "word": "distraction",
+       "clue": "A phone or noise pulling you away"
+      },
+      {
+       "word": "interrupt",
+       "clue": "Don't do this. Let them finish"
+      },
+      {
+       "word": "reflect",
+       "clue": "______ back: \"So what I'm hearing you say is...\""
+      },
+      {
+       "word": "clarify",
+       "clue": "Ask a question to ______ what they mean"
+      },
+      {
+       "word": "posture",
+       "clue": "Arms crossed or slumped"
+      },
+      {
+       "word": "tone",
+       "clue": "\"That's fine\" said warmly or coldly"
+      },
+      {
+       "word": "silence",
+       "clue": "Knowing when not to speak"
+      },
+      {
+       "word": "statement",
+       "clue": "I-______: \"I feel ___ when ___\""
+      },
+      {
+       "word": "nail",
+       "clue": "\"It's Not About the ______\""
       }
      ]
     }
@@ -13711,6 +14679,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Name one of the free meditation apps listed on the handout",
      "answer": "Headspace, Calm or Insight Timer"
+    },
+    {
+     "id": "pcqqdqu65vhl",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 100,
+     "clue": "Communication with words",
+     "answer": "Verbal"
+    },
+    {
+     "id": "jjrpcpg55vhl",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 200,
+     "clue": "Communication through body language, tone and facial expression",
+     "answer": "Nonverbal"
+    },
+    {
+     "id": "u6p04nt85vhl",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 300,
+     "clue": "The third type of communication, like a text or a letter",
+     "answer": "Written"
+    },
+    {
+     "id": "gickiaxm5vhl",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 400,
+     "clue": "Effective communication means your message is received and this, the way you meant it",
+     "answer": "Understood"
+    },
+    {
+     "id": "8odbgj845vhl",
+     "board": "Effective Communication",
+     "category": "Communication Basics",
+     "value": 500,
+     "clue": "Most of the emotional meaning in a conversation comes from everything except this",
+     "answer": "The words"
+    },
+    {
+     "id": "fr0iib1h5vhl",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 100,
+     "clue": "Phones, noise or being mentally somewhere else",
+     "answer": "Distraction"
+    },
+    {
+     "id": "rwqgilth5vhl",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 200,
+     "clue": "Deciding what someone means before they finish",
+     "answer": "Assumptions"
+    },
+    {
+     "id": "s0tsowlh5vhl",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 300,
+     "clue": "Shutting down or attacking when you feel criticized",
+     "answer": "Defensiveness"
+    },
+    {
+     "id": "cqko2hlq5vhl",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 400,
+     "clue": "When feelings get too big to think clearly",
+     "answer": "Emotional flooding"
+    },
+    {
+     "id": "rt6hp3n85vhl",
+     "board": "Effective Communication",
+     "category": "Barriers",
+     "value": 500,
+     "clue": "Jumping to solutions before the person feels heard",
+     "answer": "Listening to fix"
+    },
+    {
+     "id": "53uy6s7d5vhl",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 100,
+     "clue": "Eye contact, open posture and phone away",
+     "answer": "Give full attention"
+    },
+    {
+     "id": "ngflmr9z5vhl",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 200,
+     "clue": "Let them finish before you respond",
+     "answer": "Don't interrupt"
+    },
+    {
+     "id": "p929nsjg5vhl",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 300,
+     "clue": "\"So what I'm hearing you say is...\"",
+     "answer": "Reflect back"
+    },
+    {
+     "id": "jtguvfbb5vhl",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 400,
+     "clue": "\"That sounds really difficult\"",
+     "answer": "Acknowledge feelings"
+    },
+    {
+     "id": "k7spfg3u5vhl",
+     "board": "Effective Communication",
+     "category": "Active Listening",
+     "value": 500,
+     "clue": "Sometimes being heard is enough, so do this",
+     "answer": "Resist the urge to fix"
+    },
+    {
+     "id": "e41ij72z5vhl",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 100,
+     "clue": "\"That's fine\" said warmly vs. coldly shows the power of this",
+     "answer": "Tone of voice"
+    },
+    {
+     "id": "n7gtb0yi5vhl",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 200,
+     "clue": "Too little can signal disinterest, too much can feel intense",
+     "answer": "Eye contact"
+    },
+    {
+     "id": "p75bzk0z5vhl",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 300,
+     "clue": "Arms crossed, turned away or slumped",
+     "answer": "Posture"
+    },
+    {
+     "id": "rpibfpjk5vhl",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 400,
+     "clue": "Eye rolls, sighs and smirks are examples of these",
+     "answer": "Facial expressions"
+    },
+    {
+     "id": "579023mn5vhl",
+     "board": "Effective Communication",
+     "category": "Your Body Talks Too",
+     "value": 500,
+     "clue": "Knowing when NOT to speak is an underrated communication skill",
+     "answer": "Silence"
+    },
+    {
+     "id": "mbfdtda95vhl",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 100,
+     "clue": "An I-statement starts with these two words",
+     "answer": "\"I feel\""
+    },
+    {
+     "id": "py7syehz5vhl",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 200,
+     "clue": "In \"I feel ___ ____ ___\", this word comes right after the feeling",
+     "answer": "When"
+    },
+    {
+     "id": "gtrgggd95vhl",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 300,
+     "clue": "In an I-statement, this word comes right before your reason",
+     "answer": "Because"
+    },
+    {
+     "id": "r7ilbrm95vhl",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 400,
+     "clue": "The I-statement ends with \"and what I ____ is...\"",
+     "answer": "Need"
+    },
+    {
+     "id": "9v6r4xa45vhl",
+     "board": "Effective Communication",
+     "category": "I-Statements",
+     "value": 500,
+     "clue": "Turn \"You never listen to me\" into this kind of statement",
+     "answer": "An I-statement"
     }
    ],
    "wheel": [
@@ -14849,6 +16017,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Mindfulness"
      ]
+    },
+    {
+     "id": "fx4sqa105w0k",
+     "category": "Phrase",
+     "phrase": "LISTEN TO UNDERSTAND",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "wvl3irdg5w0k",
+     "category": "Phrase",
+     "phrase": "PUT THE PHONE DOWN",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "c3a867r85w0k",
+     "category": "Phrase",
+     "phrase": "LET THEM FINISH",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ox7owdzl5w0k",
+     "category": "Phrase",
+     "phrase": "I FEEL HEARD",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "71lcon055w0k",
+     "category": "Phrase",
+     "phrase": "TAKE A BREATH FIRST",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ubhc4p2v5w0k",
+     "category": "Phrase",
+     "phrase": "IT'S NOT ABOUT THE NAIL",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "na67lp3y5w0k",
+     "category": "Phrase",
+     "phrase": "YOUR BODY TALKS TOO",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "n9jcgkyj5w0k",
+     "category": "Phrase",
+     "phrase": "WHAT DO YOU NEED FROM ME",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "6j2ti98v5w0k",
+     "category": "Thing",
+     "phrase": "ACTIVE LISTENING",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "pbnwshqw5w0k",
+     "category": "Thing",
+     "phrase": "AN I STATEMENT",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "yn2dfi275w0k",
+     "category": "Thing",
+     "phrase": "BODY LANGUAGE",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "bnl28o2b5w0k",
+     "category": "Thing",
+     "phrase": "TONE OF VOICE",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "s8vwb6o95w0k",
+     "category": "Thing",
+     "phrase": "EYE CONTACT",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "sghan32f5w0k",
+     "category": "Thing",
+     "phrase": "A CLARIFYING QUESTION",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "i4djhuj15w0k",
+     "category": "Event",
+     "phrase": "REFLECTING BACK",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "2p8c551q5w0k",
+     "category": "Event",
+     "phrase": "TAKING A BREAK TO CALM DOWN",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "2yr5f8hn5w0k",
+     "category": "Event",
+     "phrase": "PRACTICING WITH A PARTNER",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "5zv81xkk5w0k",
+     "category": "Event",
+     "phrase": "A HEART TO HEART TALK",
+     "sets": [
+      "Effective Communication"
+     ]
     }
    ],
    "words": [
@@ -15052,7 +16364,8 @@ window.GS_MY_CONTENT = {
      "hint": "Handling Stress",
      "sets": [
       "Handling Stress",
-      "Mindfulness"
+      "Mindfulness",
+      "Effective Communication"
      ]
     },
     {
@@ -15509,7 +16822,8 @@ window.GS_MY_CONTENT = {
      "word": "NEEDS",
      "hint": "Asking for Help",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Effective Communication"
      ]
     },
     {
@@ -15542,7 +16856,8 @@ window.GS_MY_CONTENT = {
      "hint": "Asking for Help",
      "sets": [
       "Asking for Help",
-      "Music & Emotions"
+      "Music & Emotions",
+      "Effective Communication"
      ]
     },
     {
@@ -15786,6 +17101,125 @@ window.GS_MY_CONTENT = {
      "hint": "Mindfulness",
      "sets": [
       "Mindfulness"
+     ]
+    },
+    {
+     "id": "8cx2drv75qk1",
+     "word": "QUIET",
+     "hint": "Feeling",
+     "sets": [
+      "Handling Stress",
+      "Mindfulness",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "1z5enu945qk1",
+     "word": "PAUSE",
+     "hint": "Self-care",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy",
+      "Mindfulness",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "njhbzuvf5qk1",
+     "word": "SMILE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Handling Disappointment",
+      "Mindfulness",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "6u3qdx555qk1",
+     "word": "SHARE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy",
+      "Handling Disappointment",
+      "Asking for Help",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "23mawl5h5qk1",
+     "word": "TRUST",
+     "hint": "Connection",
+     "sets": [
+      "Personal Strengths",
+      "Handling Stress",
+      "Handling Disappointment",
+      "Asking for Help",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "oyw4lr1n5qk1",
+     "word": "SPEAK",
+     "hint": "Connection",
+     "sets": [
+      "Asking for Help",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "q8fngqot5qk1",
+     "word": "VOICE",
+     "hint": "Connection",
+     "sets": [
+      "Elections",
+      "Music & Emotions",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "5gynfxpe5qk1",
+     "word": "FOCUS",
+     "hint": "Coping skill",
+     "sets": [
+      "Handling Stress",
+      "Mindfulness",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "965zkyl15qk1",
+     "word": "LEARN",
+     "hint": "Recovery",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment",
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "4i06d4x45x2l",
+     "word": "WORDS",
+     "hint": "Effective Communication",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "prdzcm0n5x2l",
+     "word": "TONES",
+     "hint": "Effective Communication",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "hdyppqfm5x2l",
+     "word": "TALKS",
+     "hint": "Effective Communication",
+     "sets": [
+      "Effective Communication"
      ]
     }
    ],
@@ -16281,7 +17715,8 @@ window.GS_MY_CONTENT = {
      "word": "a stop sign",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Effective Communication"
      ]
     },
     {
@@ -16556,7 +17991,8 @@ window.GS_MY_CONTENT = {
      "word": "a phone",
      "level": "easy",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Effective Communication"
      ]
     },
     {
@@ -16965,6 +18401,150 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Mindfulness"
+     ]
+    },
+    {
+     "id": "4xuyvhue5uy4",
+     "word": "an ear",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ymom2wab5uy4",
+     "word": "a mouth",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "nbpx80c15uy4",
+     "word": "a speech bubble",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "zckzik2c5uy4",
+     "word": "crossed arms",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "g81atrfg5uy4",
+     "word": "a smile",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "mq4kgvvw5uy4",
+     "word": "two people talking",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "th805lj35uy4",
+     "word": "a nail",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "v08mm1p45uy4",
+     "word": "a hand wave",
+     "level": "easy",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "9zg71x955uy4",
+     "word": "eye contact",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "zu01ls1u5uy4",
+     "word": "an eye roll",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "jtmu1zp25uy4",
+     "word": "interrupting someone",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "gvnf1f2w5uy4",
+     "word": "a nail in a forehead",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "7pbkkm3v5uy4",
+     "word": "nodding your head",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "lcv1ikx45uy4",
+     "word": "leaning in to listen",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "f2sgg0kj5uy4",
+     "word": "a deep breath",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "l0jb6j3c5uy4",
+     "word": "someone on their phone while you talk",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "w3vabt5g5uy4",
+     "word": "a shrug",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "5ibmhq4p5uy4",
+     "word": "a heart to heart talk",
+     "level": "medium",
+     "sets": [
+      "Effective Communication"
      ]
     }
    ],
@@ -19367,6 +20947,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Mindfulness"
+     ]
+    },
+    {
+     "id": "dukrvv1o5wjj",
+     "question": "Effective communication means what?",
+     "answer": "Your message is received the way you meant it",
+     "wrong": [
+      "You talk the most",
+      "You win the argument",
+      "You use big words"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "nx9ifwx45wjj",
+     "question": "Which three ways do we communicate?",
+     "answer": "Verbal, nonverbal and written",
+     "wrong": [
+      "Loud, quiet and silent",
+      "Phone, email and text only",
+      "Fast, medium and slow"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "ryqm30f75wjj",
+     "question": "Most of the emotional meaning in a conversation comes from what?",
+     "answer": "Tone, body language and expression",
+     "wrong": [
+      "The exact words only",
+      "How long you talk",
+      "Who talks first"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "p4cyd4x75wjj",
+     "question": "Jumping to solutions before the person feels heard is called what?",
+     "answer": "Listening to fix",
+     "wrong": [
+      "Active listening",
+      "Reflecting back",
+      "An I-statement"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "e8q0en8y5wjj",
+     "question": "Deciding what someone means before they finish is which barrier?",
+     "answer": "Assumptions",
+     "wrong": [
+      "Silence",
+      "Eye contact",
+      "Patience"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "qxgrrd9n5wjj",
+     "question": "When feelings get too big to process information clearly, it is called what?",
+     "answer": "Emotional flooding",
+     "wrong": [
+      "Active listening",
+      "Daydreaming",
+      "Brainstorming"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "4baupikk5wjj",
+     "question": "Shutting down or attacking when you feel criticized is called what?",
+     "answer": "Defensiveness",
+     "wrong": [
+      "Empathy",
+      "Honesty",
+      "Curiosity"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "sx9gbwny5wjj",
+     "question": "When your body says something different than your words, it is called what?",
+     "answer": "A nonverbal mismatch",
+     "wrong": [
+      "An I-statement",
+      "A clarifying question",
+      "Reflecting back"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "6n9d1nxa5wjj",
+     "question": "Which is a common distraction in conversations?",
+     "answer": "Your phone",
+     "wrong": [
+      "Eye contact",
+      "Nodding",
+      "Asking questions"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "tg2tyqh75wjj",
+     "question": "Active listening means what?",
+     "answer": "Being fully present and working to understand",
+     "wrong": [
+      "Waiting for your turn to talk",
+      "Planning your answer while they talk",
+      "Fixing the problem fast"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "74se0jis5wjj",
+     "question": "\"So what I'm hearing you say is...\" is which listening skill?",
+     "answer": "Reflecting back",
+     "wrong": [
+      "Interrupting",
+      "Fixing",
+      "Defending"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "h0y2egns5wjj",
+     "question": "\"Can you tell me more about what you mean?\" is an example of what?",
+     "answer": "A clarifying question",
+     "wrong": [
+      "An interruption",
+      "A put-down",
+      "An assumption"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "1lmlzplm5wjj",
+     "question": "\"That sounds really frustrating\" is which listening skill?",
+     "answer": "Acknowledging feelings",
+     "wrong": [
+      "Giving advice",
+      "Changing the subject",
+      "Defensiveness"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "d8ve312t5wjj",
+     "question": "Before giving advice, what is a good thing to ask?",
+     "answer": "\"What do you need from me right now?\"",
+     "wrong": [
+      "\"Why did you do that?\"",
+      "\"Can we talk later?\"",
+      "\"Is that all?\""
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "anv9yxac5wjj",
+     "question": "An I-statement starts with what?",
+     "answer": "Your own feelings and experience",
+     "wrong": [
+      "What the other person did wrong",
+      "An apology",
+      "A question"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "4x84fvpd5wjj",
+     "question": "Which is an I-statement?",
+     "answer": "\"I feel unheard when I'm interrupted\"",
+     "wrong": [
+      "\"You never listen to me\"",
+      "\"You always do this\"",
+      "\"Why can't you just stop?\""
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "9dmohmw05wjj",
+     "question": "How does an I-statement end?",
+     "answer": "\"...and what I need is ___\"",
+     "wrong": [
+      "\"...and it's your fault\"",
+      "\"...and that's final\"",
+      "\"...and I'm leaving\""
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "6bfbjz4e5wjj",
+     "question": "Arms crossed often signal what?",
+     "answer": "Being closed off or defensive",
+     "wrong": [
+      "Being excited",
+      "Being hungry",
+      "Agreeing"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "tdhhvu9o5wjj",
+     "question": "The short film \"It's Not About the Nail\" is about what?",
+     "answer": "Listening to understand versus jumping in to fix",
+     "wrong": [
+      "Building a house",
+      "A trip to the doctor",
+      "A carpentry contest"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
+     ]
+    },
+    {
+     "id": "hxof09t45wjj",
+     "question": "The facilitator guide calls communication a what?",
+     "answer": "A skill, not a talent",
+     "wrong": [
+      "A talent you are born with",
+      "Something you cannot change",
+      "Only for professionals"
+     ],
+     "category": "Effective Communication",
+     "time": 20,
+     "sets": [
+      "Effective Communication"
      ]
     }
    ]
