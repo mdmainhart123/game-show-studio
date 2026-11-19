@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-17-effective-communication",
+ "id": "matt-2026-11-19-building-confidence",
  "banks": {
   "standard": {
    "cross": [
@@ -1323,6 +1323,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "nail",
        "clue": "\"It's Not About the ______\""
+      }
+     ]
+    },
+    {
+     "id": "jatcip695gwx",
+     "title": "Building Confidence",
+     "entries": [
+      {
+       "word": "confidence",
+       "clue": "Belief in your ability to handle situations"
+      },
+      {
+       "word": "arrogance",
+       "clue": "Putting others down to feel better about yourself"
+      },
+      {
+       "word": "skill",
+       "clue": "Confidence is one; it can be learned and practiced"
+      },
+      {
+       "word": "critic",
+       "clue": "The inner ______: the negative voice in your head"
+      },
+      {
+       "word": "coach",
+       "clue": "The inner ______: the supportive voice"
+      },
+      {
+       "word": "habit",
+       "clue": "Self-talk is one, and it can change"
+      },
+      {
+       "word": "affirmation",
+       "clue": "A short, positive statement you say to yourself"
+      },
+      {
+       "word": "neuroplasticity",
+       "clue": "The brain forming new pathways through repetition"
+      },
+      {
+       "word": "believable",
+       "clue": "A good affirmation should be a stretch, but still this"
+      },
+      {
+       "word": "action",
+       "clue": "Confidence is built through this"
+      },
+      {
+       "word": "evidence",
+       "clue": "Each small step creates this"
+      },
+      {
+       "word": "comparison",
+       "clue": "Measuring yourself against others"
+      },
+      {
+       "word": "enough",
+       "clue": "\"I am ______, right now, exactly as I am\""
+      },
+      {
+       "word": "steps",
+       "clue": "Baby ______"
+      },
+      {
+       "word": "patient",
+       "clue": "Be ______ with yourself: this is a process"
       }
      ]
     }
@@ -3727,6 +3793,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Turn \"You never listen to me\" into this kind of statement",
      "answer": "An I-statement"
+    },
+    {
+     "id": "4s4mp3un5how",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 100,
+     "clue": "Your belief in your ability to handle situations and take action",
+     "answer": "Confidence"
+    },
+    {
+     "id": "kqxqnkdz5how",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 200,
+     "clue": "Your overall sense of worth as a person",
+     "answer": "Self-esteem"
+    },
+    {
+     "id": "w03g6j0l5how",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 300,
+     "clue": "Putting others down to feel better about yourself",
+     "answer": "Arrogance"
+    },
+    {
+     "id": "uqytc1bw5how",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 400,
+     "clue": "True or false: you are either born confident or you are not",
+     "answer": "False"
+    },
+    {
+     "id": "1te9hmow5how",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 500,
+     "clue": "Confidence is built through this, not the other way around",
+     "answer": "Action"
+    },
+    {
+     "id": "fdks6tf85how",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 100,
+     "clue": "The negative voice that says you are not good enough",
+     "answer": "The inner critic"
+    },
+    {
+     "id": "uoh6hqao5how",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 200,
+     "clue": "The positive, supportive voice that encourages you",
+     "answer": "The inner coach"
+    },
+    {
+     "id": "cexq1odm5how",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 300,
+     "clue": "The inner critic is not the truth. It is one of these, and it can change",
+     "answer": "A habit"
+    },
+    {
+     "id": "q6si2ctu5how",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 400,
+     "clue": "The inner coach's answer to \"I'm not good enough\"",
+     "answer": "\"I am enough, and I'm growing\""
+    },
+    {
+     "id": "45zdvym45how",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 500,
+     "clue": "The inner coach's answer to \"Everyone will judge me\"",
+     "answer": "\"I can't control what others think, only how I act\""
+    },
+    {
+     "id": "20gjuris5how",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 100,
+     "clue": "A short, positive statement you say to yourself",
+     "answer": "An affirmation"
+    },
+    {
+     "id": "9lc0q7wj5how",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 200,
+     "clue": "The brain's ability to form new pathways through repetition",
+     "answer": "Neuroplasticity"
+    },
+    {
+     "id": "isd881zl5how",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 300,
+     "clue": "A good affirmation is written in first person, starting with words like these",
+     "answer": "\"I am,\" \"I have\" or \"I can\""
+    },
+    {
+     "id": "lmvqxwms5how",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 400,
+     "clue": "A good affirmation is a stretch, but not so far it feels like a lie. It must be this",
+     "answer": "Believable"
+    },
+    {
+     "id": "vp79xj4s5how",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 500,
+     "clue": "Name 2 of the 4 rules for a good affirmation",
+     "answer": "First person, positive, believable, brief"
+    },
+    {
+     "id": "vz8l7i175how",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 100,
+     "clue": "Breaking a big goal into small, manageable actions",
+     "answer": "Baby steps"
+    },
+    {
+     "id": "zuv6dw935how",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 200,
+     "clue": "Each small step creates this, which becomes confidence",
+     "answer": "Evidence"
+    },
+    {
+     "id": "5omc10s05how",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 300,
+     "clue": "You do not wait to feel ready. This comes first",
+     "answer": "Action"
+    },
+    {
+     "id": "j844zbyp5how",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 400,
+     "clue": "The recovery saying that is a baby step in itself",
+     "answer": "One day at a time"
+    },
+    {
+     "id": "sv4buhu05how",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 500,
+     "clue": "After doing one small step, you should do this",
+     "answer": "Notice how you feel, then repeat"
+    },
+    {
+     "id": "r4ibz3jn5how",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 100,
+     "clue": "Measuring yourself against other people",
+     "answer": "Comparison"
+    },
+    {
+     "id": "9v8zh9zl5how",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 200,
+     "clue": "Being afraid of messing up or being judged",
+     "answer": "Fear of failure"
+    },
+    {
+     "id": "xy22bdac5how",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 300,
+     "clue": "Old memories of being criticized can bring up this painful feeling",
+     "answer": "Shame"
+    },
+    {
+     "id": "oc5qx5g85how",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 400,
+     "clue": "The inner critic is a form of this negative inner habit",
+     "answer": "Negative self-talk"
+    },
+    {
+     "id": "qd2dj2nq5how",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 500,
+     "clue": "Feeling like confidence is only for these people",
+     "answer": "Other people"
     }
    ],
    "wheel": [
@@ -4288,7 +4554,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A GROWTH MINDSET",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Building Confidence"
      ]
     },
     {
@@ -5474,6 +5741,142 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Effective Communication"
      ]
+    },
+    {
+     "id": "4yty8vdk5i7v",
+     "category": "Phrase",
+     "phrase": "I AM ENOUGH",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "65lhqjpl5i7v",
+     "category": "Phrase",
+     "phrase": "I CAN DO HARD THINGS",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "hcep5bbj5i7v",
+     "category": "Phrase",
+     "phrase": "ONE STEP AT A TIME",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "6ah1a8c75i7v",
+     "category": "Phrase",
+     "phrase": "ACTION BEFORE FEELING",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "cgc59ym65i7v",
+     "category": "Phrase",
+     "phrase": "I AM NOT MY PAST",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ejo7qjod5i7v",
+     "category": "Phrase",
+     "phrase": "PROGRESS NOT PERFECTION",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "hidmzzbo5i7v",
+     "category": "Phrase",
+     "phrase": "I HAVE DONE HARD THINGS BEFORE",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "o2kp0ity5i7v",
+     "category": "Phrase",
+     "phrase": "SMALL STEPS ADD UP",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ys9lgdil5i7v",
+     "category": "Thing",
+     "phrase": "THE INNER COACH",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "nf1y9jp35i7v",
+     "category": "Thing",
+     "phrase": "THE INNER CRITIC",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "u9n518o05i7v",
+     "category": "Thing",
+     "phrase": "A DAILY AFFIRMATION",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "xmkgg9ll5i7v",
+     "category": "Thing",
+     "phrase": "BABY STEPS",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "6qwfp2915i7v",
+     "category": "Thing",
+     "phrase": "POSITIVE SELF TALK",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "g0xwieti5i7v",
+     "category": "Event",
+     "phrase": "TAKING THE FIRST STEP",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "feq0jgrj5i7v",
+     "category": "Event",
+     "phrase": "CELEBRATING A SMALL WIN",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "vdhf2zgj5i7v",
+     "category": "Event",
+     "phrase": "SAYING AN AFFIRMATION OUT LOUD",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "0lv5zovp5i7v",
+     "category": "Event",
+     "phrase": "TRYING SOMETHING NEW",
+     "sets": [
+      "Building Confidence"
+     ]
     }
    ],
    "words": [
@@ -6016,7 +6419,8 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Personal Strengths",
       "Handling Disappointment",
-      "Effective Communication"
+      "Effective Communication",
+      "Building Confidence"
      ]
     },
     {
@@ -6024,7 +6428,8 @@ window.GS_MY_CONTENT = {
      "word": "BUILD",
      "hint": "Strength",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Building Confidence"
      ]
     },
     {
@@ -6032,7 +6437,8 @@ window.GS_MY_CONTENT = {
      "word": "WORTH",
      "hint": "Strength",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Building Confidence"
      ]
     },
     {
@@ -6274,7 +6680,8 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Elections",
       "Music & Emotions",
-      "Effective Communication"
+      "Effective Communication",
+      "Building Confidence"
      ]
     },
     {
@@ -6560,7 +6967,8 @@ window.GS_MY_CONTENT = {
      "word": "START",
      "hint": "Asking for Help",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Building Confidence"
      ]
     },
     {
@@ -6818,6 +7226,93 @@ window.GS_MY_CONTENT = {
      "hint": "Effective Communication",
      "sets": [
       "Effective Communication"
+     ]
+    },
+    {
+     "id": "lu25c28k5fy0",
+     "word": "SMILE",
+     "hint": "Things to Do",
+     "sets": [
+      "Handling Stress",
+      "Handling Disappointment",
+      "Mindfulness",
+      "Effective Communication",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "b2ad0hyt5fy0",
+     "word": "PROUD",
+     "hint": "Feelings",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "2e2dliso5fy0",
+     "word": "BRAVE",
+     "hint": "Feelings",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment",
+      "Asking for Help",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "vlraky7z5fy0",
+     "word": "COACH",
+     "hint": "Jobs",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "r2l6djab5j9y",
+     "word": "STEPS",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "fxol9tb05j9y",
+     "word": "HABIT",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "v8hgpl735j9y",
+     "word": "GROWS",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "y3pvtf875j9y",
+     "word": "SKILL",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "nymqur1c5j9y",
+     "word": "POWER",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "l595l2xf5j9y",
+     "word": "FAITH",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
      ]
     }
    ],
@@ -7315,7 +7810,8 @@ window.GS_MY_CONTENT = {
      "word": "a trophy",
      "level": "easy",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Building Confidence"
      ]
     },
     {
@@ -7341,7 +7837,8 @@ window.GS_MY_CONTENT = {
      "level": "easy",
      "sets": [
       "Personal Strengths",
-      "Asking for Help"
+      "Asking for Help",
+      "Building Confidence"
      ]
     },
     {
@@ -7381,7 +7878,8 @@ window.GS_MY_CONTENT = {
      "word": "climbing a mountain",
      "level": "medium",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Building Confidence"
      ]
     },
     {
@@ -7761,7 +8259,8 @@ window.GS_MY_CONTENT = {
      "word": "a thumbs up",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Building Confidence"
      ]
     },
     {
@@ -8623,6 +9122,134 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Effective Communication"
+     ]
+    },
+    {
+     "id": "13stbm8a5h61",
+     "word": "a footprint",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "zp27pups5h61",
+     "word": "a staircase",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "901y07pw5h61",
+     "word": "a mirror",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "uqhfwfmx5h61",
+     "word": "a superhero cape",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "j4edu9z55h61",
+     "word": "a mountain",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "3t6dew0k5h61",
+     "word": "a flexing arm",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ihb2qtmg5h61",
+     "word": "a star",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "qbmmethu5h61",
+     "word": "taking a small step",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "gqee028h5h61",
+     "word": "talking to yourself in a mirror",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "wtj1gq2q5h61",
+     "word": "a coach with a whistle",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "25il33lh5h61",
+     "word": "standing tall",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "1a2y3ld65h61",
+     "word": "a ribbon for a small win",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "578pq9tr5h61",
+     "word": "a seed growing into a tree",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "vh58d9t75h61",
+     "word": "a person trying something new",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "kcrhhaj25h61",
+     "word": "a little voice on your shoulder",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ld5gwdoi5h61",
+     "word": "crossing a finish line",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
      ]
     }
    ],
@@ -12226,6 +12853,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Effective Communication"
      ]
+    },
+    {
+     "id": "oxnuky155iqx",
+     "question": "What is confidence?",
+     "answer": "A skill that can be learned and built over time",
+     "wrong": [
+      "A fixed trait you are born with",
+      "Feeling better than other people",
+      "Only having it when things go perfectly"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "wiabguf25iqx",
+     "question": "Which best describes self-esteem?",
+     "answer": "Your overall sense of worth as a person",
+     "wrong": [
+      "Your belief you can do one specific thing",
+      "Never making mistakes",
+      "How confident you look to others"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ydn5omxw5iqx",
+     "question": "What is the difference between confidence and arrogance?",
+     "answer": "Confidence believes in your ability; arrogance puts others down",
+     "wrong": [
+      "There is no difference",
+      "Confidence is loud; arrogance is quiet",
+      "Arrogance is healthier"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "x7509c8g5iqx",
+     "question": "Can you feel confident in one area and not another?",
+     "answer": "Yes, confidence is specific, and that is normal",
+     "wrong": [
+      "No, it is all or nothing",
+      "Only if you are an athlete",
+      "Only after age 50"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "4qtczk695iqx",
+     "question": "What is the inner critic?",
+     "answer": "The negative voice in your head that undermines confidence",
+     "wrong": [
+      "A trusted friend with honest feedback",
+      "A professional therapist",
+      "A movie reviewer"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "jcg12lv65iqx",
+     "question": "What is the inner coach?",
+     "answer": "A positive, supportive voice that encourages you",
+     "wrong": [
+      "A paid life coach",
+      "Someone who pushes you too hard",
+      "Only for athletes"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "wynmhxwq5iqx",
+     "question": "Is the inner critic's voice the truth?",
+     "answer": "No, it is a habit, and habits can change",
+     "wrong": [
+      "Yes, always",
+      "Only when you are tired",
+      "Only on Mondays"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "nvry231f5iqx",
+     "question": "Flip the inner critic: \"I'm going to fail\" becomes what?",
+     "answer": "\"I can handle whatever happens\"",
+     "wrong": [
+      "\"Nobody can do this\"",
+      "\"I should avoid this\"",
+      "\"I'll never be ready\""
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ebrw4jv15iqx",
+     "question": "What is an affirmation?",
+     "answer": "A short, positive statement you say to yourself",
+     "wrong": [
+      "A loud argument",
+      "A type of medicine",
+      "A compliment from someone else"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "85gw3m8d5iqx",
+     "question": "Affirmations work because of what?",
+     "answer": "Neuroplasticity, the brain forming new pathways through repetition",
+     "wrong": [
+      "Wishful thinking",
+      "Magic and coincidence",
+      "Fooling yourself"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "u9ztt93h5iqx",
+     "question": "Which is a good affirmation?",
+     "answer": "\"I am capable of handling challenges that come my way\"",
+     "wrong": [
+      "\"I will never make mistakes again\"",
+      "\"Everyone else has it easy except me\"",
+      "\"I don't need to try\""
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "82ehefgz5iqx",
+     "question": "A good affirmation is written in which person?",
+     "answer": "First person, like \"I am...\" or \"I can...\"",
+     "wrong": [
+      "Third person, like \"He is...\"",
+      "As a question",
+      "In the past tense only"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "oogpfafr5iqx",
+     "question": "A good affirmation should be a stretch, but also what?",
+     "answer": "Believable",
+     "wrong": [
+      "Impossible",
+      "Very long",
+      "About someone else"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "0wdcite05iqx",
+     "question": "Affirmations feel awkward at first. What should you do?",
+     "answer": "Keep going, that is normal",
+     "wrong": [
+      "Stop right away",
+      "Only say them to others",
+      "Never try again"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "mf7wct4q5iqx",
+     "question": "What does \"baby steps\" mean?",
+     "answer": "Breaking big goals into small, manageable actions",
+     "wrong": [
+      "Taking huge leaps fast",
+      "Waiting until you feel ready",
+      "Only doing easy things"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "kj9m5uxo5iqx",
+     "question": "Which is a baby step toward a goal?",
+     "answer": "Sending one email instead of planning the whole project",
+     "wrong": [
+      "Waiting for the perfect moment",
+      "Doing nothing until you feel confident",
+      "Asking someone else to do it"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "2wldfhd25iqx",
+     "question": "Which comes first, action or the feeling of confidence?",
+     "answer": "Action, and confidence follows",
+     "wrong": [
+      "The feeling, then action",
+      "They never connect",
+      "Neither matters"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "sklt8p1r5iqx",
+     "question": "What do small steps create that builds confidence?",
+     "answer": "Evidence that you can do things",
+     "wrong": [
+      "Stress",
+      "Excuses",
+      "Arrogance"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "i22ahabv5iqx",
+     "question": "Which is a common barrier to confidence?",
+     "answer": "Comparing yourself to others",
+     "wrong": [
+      "Trying new things",
+      "Asking for help",
+      "Taking small steps"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "7bktao9q5iqx",
+     "question": "Why celebrate small steps forward?",
+     "answer": "It trains your brain to notice progress and builds momentum",
+     "wrong": [
+      "It distracts from big goals",
+      "It shows low expectations",
+      "Small steps do not matter"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
     }
    ]
   },
@@ -13075,6 +14002,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "nail",
        "clue": "\"It's Not About the ______\""
+      }
+     ]
+    },
+    {
+     "id": "jaj1sqop5juo",
+     "title": "Building Confidence",
+     "entries": [
+      {
+       "word": "confidence",
+       "clue": "Belief in your ability to handle situations"
+      },
+      {
+       "word": "arrogance",
+       "clue": "Putting others down to feel better about yourself"
+      },
+      {
+       "word": "skill",
+       "clue": "Confidence is one; it can be learned and practiced"
+      },
+      {
+       "word": "critic",
+       "clue": "The inner ______: the negative voice in your head"
+      },
+      {
+       "word": "coach",
+       "clue": "The inner ______: the supportive voice"
+      },
+      {
+       "word": "habit",
+       "clue": "Self-talk is one, and it can change"
+      },
+      {
+       "word": "affirmation",
+       "clue": "A short, positive statement you say to yourself"
+      },
+      {
+       "word": "neuroplasticity",
+       "clue": "The brain forming new pathways through repetition"
+      },
+      {
+       "word": "believable",
+       "clue": "A good affirmation should be a stretch, but still this"
+      },
+      {
+       "word": "action",
+       "clue": "Confidence is built through this"
+      },
+      {
+       "word": "evidence",
+       "clue": "Each small step creates this"
+      },
+      {
+       "word": "comparison",
+       "clue": "Measuring yourself against others"
+      },
+      {
+       "word": "enough",
+       "clue": "\"I am ______, right now, exactly as I am\""
+      },
+      {
+       "word": "steps",
+       "clue": "Baby ______"
+      },
+      {
+       "word": "patient",
+       "clue": "Be ______ with yourself: this is a process"
       }
      ]
     }
@@ -14879,6 +15872,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Turn \"You never listen to me\" into this kind of statement",
      "answer": "An I-statement"
+    },
+    {
+     "id": "dlumei3n5kl1",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 100,
+     "clue": "Your belief in your ability to handle situations and take action",
+     "answer": "Confidence"
+    },
+    {
+     "id": "il03hl0y5kl1",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 200,
+     "clue": "Your overall sense of worth as a person",
+     "answer": "Self-esteem"
+    },
+    {
+     "id": "9mnppvtn5kl1",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 300,
+     "clue": "Putting others down to feel better about yourself",
+     "answer": "Arrogance"
+    },
+    {
+     "id": "t63oxlk75kl1",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 400,
+     "clue": "True or false: you are either born confident or you are not",
+     "answer": "False"
+    },
+    {
+     "id": "kbosgdmo5kl1",
+     "board": "Building Confidence",
+     "category": "What Is Confidence?",
+     "value": 500,
+     "clue": "Confidence is built through this, not the other way around",
+     "answer": "Action"
+    },
+    {
+     "id": "1gedrky45kl1",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 100,
+     "clue": "The negative voice that says you are not good enough",
+     "answer": "The inner critic"
+    },
+    {
+     "id": "u9l66gdd5kl1",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 200,
+     "clue": "The positive, supportive voice that encourages you",
+     "answer": "The inner coach"
+    },
+    {
+     "id": "oy3fxe6b5kl1",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 300,
+     "clue": "The inner critic is not the truth. It is one of these, and it can change",
+     "answer": "A habit"
+    },
+    {
+     "id": "c77lp7th5kl1",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 400,
+     "clue": "The inner coach's answer to \"I'm not good enough\"",
+     "answer": "\"I am enough, and I'm growing\""
+    },
+    {
+     "id": "xeikxikh5kl1",
+     "board": "Building Confidence",
+     "category": "Inner Critic vs. Inner Coach",
+     "value": 500,
+     "clue": "The inner coach's answer to \"Everyone will judge me\"",
+     "answer": "\"I can't control what others think, only how I act\""
+    },
+    {
+     "id": "3wrnnwa95kl1",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 100,
+     "clue": "A short, positive statement you say to yourself",
+     "answer": "An affirmation"
+    },
+    {
+     "id": "04453und5kl1",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 200,
+     "clue": "The brain's ability to form new pathways through repetition",
+     "answer": "Neuroplasticity"
+    },
+    {
+     "id": "e4qj19o65kl1",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 300,
+     "clue": "A good affirmation is written in first person, starting with words like these",
+     "answer": "\"I am,\" \"I have\" or \"I can\""
+    },
+    {
+     "id": "ygkx5tk05kl1",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 400,
+     "clue": "A good affirmation is a stretch, but not so far it feels like a lie. It must be this",
+     "answer": "Believable"
+    },
+    {
+     "id": "kavam1pa5kl1",
+     "board": "Building Confidence",
+     "category": "Affirmations",
+     "value": 500,
+     "clue": "Name 2 of the 4 rules for a good affirmation",
+     "answer": "First person, positive, believable, brief"
+    },
+    {
+     "id": "rlhas6yq5kl1",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 100,
+     "clue": "Breaking a big goal into small, manageable actions",
+     "answer": "Baby steps"
+    },
+    {
+     "id": "rp80o6o65kl1",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 200,
+     "clue": "Each small step creates this, which becomes confidence",
+     "answer": "Evidence"
+    },
+    {
+     "id": "2wl0mlmh5kl1",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 300,
+     "clue": "You do not wait to feel ready. This comes first",
+     "answer": "Action"
+    },
+    {
+     "id": "cwt23lbo5kl1",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 400,
+     "clue": "The recovery saying that is a baby step in itself",
+     "answer": "One day at a time"
+    },
+    {
+     "id": "19vz9b6n5kl1",
+     "board": "Building Confidence",
+     "category": "Baby Steps",
+     "value": 500,
+     "clue": "After doing one small step, you should do this",
+     "answer": "Notice how you feel, then repeat"
+    },
+    {
+     "id": "ckzzknbw5kl1",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 100,
+     "clue": "Measuring yourself against other people",
+     "answer": "Comparison"
+    },
+    {
+     "id": "ru9t91c85kl1",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 200,
+     "clue": "Being afraid of messing up or being judged",
+     "answer": "Fear of failure"
+    },
+    {
+     "id": "d9e1mxvk5kl1",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 300,
+     "clue": "Old memories of being criticized can bring up this painful feeling",
+     "answer": "Shame"
+    },
+    {
+     "id": "lufoh5bc5kl1",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 400,
+     "clue": "The inner critic is a form of this negative inner habit",
+     "answer": "Negative self-talk"
+    },
+    {
+     "id": "dmchvr7s5kl1",
+     "board": "Building Confidence",
+     "category": "Barriers to Confidence",
+     "value": 500,
+     "clue": "Feeling like confidence is only for these people",
+     "answer": "Other people"
     }
    ],
    "wheel": [
@@ -14975,7 +16168,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A GROWTH MINDSET",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Building Confidence"
      ]
     },
     {
@@ -16161,6 +17355,142 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Effective Communication"
      ]
+    },
+    {
+     "id": "4z0tltzy5fy1",
+     "category": "Phrase",
+     "phrase": "PROGRESS NOT PERFECTION",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "l09b02qb5fy1",
+     "category": "Phrase",
+     "phrase": "ONE STEP AT A TIME",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "f9t6gflp5l4h",
+     "category": "Phrase",
+     "phrase": "I AM ENOUGH",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "t5oj3gi45l4h",
+     "category": "Phrase",
+     "phrase": "I CAN DO HARD THINGS",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "txbvqmvb5l4h",
+     "category": "Phrase",
+     "phrase": "ACTION BEFORE FEELING",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "q8eckrpx5l4h",
+     "category": "Phrase",
+     "phrase": "I AM NOT MY PAST",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "6wwy9cv15l4h",
+     "category": "Phrase",
+     "phrase": "I HAVE DONE HARD THINGS BEFORE",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "25q3gxru5l4h",
+     "category": "Phrase",
+     "phrase": "SMALL STEPS ADD UP",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "x63g09on5l4i",
+     "category": "Thing",
+     "phrase": "THE INNER COACH",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "73q08dkb5l4i",
+     "category": "Thing",
+     "phrase": "THE INNER CRITIC",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "lcjxm9ru5l4i",
+     "category": "Thing",
+     "phrase": "A DAILY AFFIRMATION",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "a18lzql75l4i",
+     "category": "Thing",
+     "phrase": "BABY STEPS",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "872pkonr5l4i",
+     "category": "Thing",
+     "phrase": "POSITIVE SELF TALK",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "dn0sfq625l4i",
+     "category": "Event",
+     "phrase": "TAKING THE FIRST STEP",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "dm0fr2hs5l4i",
+     "category": "Event",
+     "phrase": "CELEBRATING A SMALL WIN",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "io0n0yp65l4i",
+     "category": "Event",
+     "phrase": "SAYING AN AFFIRMATION OUT LOUD",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "pjiushxf5l4i",
+     "category": "Event",
+     "phrase": "TRYING SOMETHING NEW",
+     "sets": [
+      "Building Confidence"
+     ]
     }
    ],
    "words": [
@@ -16233,7 +17563,8 @@ window.GS_MY_CONTENT = {
      "word": "BUILD",
      "hint": "Strength",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Building Confidence"
      ]
     },
     {
@@ -17221,6 +18552,133 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Effective Communication"
      ]
+    },
+    {
+     "id": "zcrmox7s5fy3",
+     "word": "BRAVE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment",
+      "Asking for Help",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "c1k52raf5fy3",
+     "word": "PROUD",
+     "hint": "Feeling",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "9sljkifb5fy3",
+     "word": "SMILE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Handling Disappointment",
+      "Mindfulness",
+      "Effective Communication",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "zg6l9uik5fy3",
+     "word": "VOICE",
+     "hint": "Connection",
+     "sets": [
+      "Elections",
+      "Music & Emotions",
+      "Effective Communication",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "bud2syr05fy3",
+     "word": "LEARN",
+     "hint": "Recovery",
+     "sets": [
+      "Personal Strengths",
+      "Handling Disappointment",
+      "Effective Communication",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "vhg9w0ed5fy3",
+     "word": "HABIT",
+     "hint": "Recovery",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "yxyh9apl5fy3",
+     "word": "STEPS",
+     "hint": "Recovery",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "hxzofbk75fy3",
+     "word": "FAITH",
+     "hint": "Recovery",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "jdv1y9065fy3",
+     "word": "WORTH",
+     "hint": "Recovery",
+     "sets": [
+      "Personal Strengths",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "qjlb8wre5fy3",
+     "word": "GROWS",
+     "hint": "Recovery",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "4qxd4isl5fy3",
+     "word": "START",
+     "hint": "Recovery",
+     "sets": [
+      "Asking for Help",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "nrqyl6iz5m7g",
+     "word": "COACH",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "u8ar99pm5m7g",
+     "word": "SKILL",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "j6jk9kpm5m7g",
+     "word": "POWER",
+     "hint": "Building Confidence",
+     "sets": [
+      "Building Confidence"
+     ]
     }
    ],
    "draw": [
@@ -17245,7 +18703,8 @@ window.GS_MY_CONTENT = {
      "word": "a trophy",
      "level": "easy",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Building Confidence"
      ]
     },
     {
@@ -17271,7 +18730,8 @@ window.GS_MY_CONTENT = {
      "level": "easy",
      "sets": [
       "Personal Strengths",
-      "Asking for Help"
+      "Asking for Help",
+      "Building Confidence"
      ]
     },
     {
@@ -17683,7 +19143,8 @@ window.GS_MY_CONTENT = {
      "word": "a thumbs up",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Building Confidence"
      ]
     },
     {
@@ -18545,6 +20006,143 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Effective Communication"
+     ]
+    },
+    {
+     "id": "wgtkajlg5fy5",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "sets": [
+      "Personal Strengths",
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "y6pvdya35k1n",
+     "word": "a footprint",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "pdyz9s1n5k1n",
+     "word": "a staircase",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "kj0wgpbv5k1n",
+     "word": "a mirror",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "qvm7b9qo5k1n",
+     "word": "a superhero cape",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "yh1rif1h5k1n",
+     "word": "a mountain",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "mlhjk60b5k1n",
+     "word": "a flexing arm",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "r3jh4ycp5k1n",
+     "word": "a star",
+     "level": "easy",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ddo2nk985k1n",
+     "word": "taking a small step",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "wt3yes2y5k1n",
+     "word": "talking to yourself in a mirror",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "cawzga7b5k1n",
+     "word": "a coach with a whistle",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "2p5rbs9l5k1n",
+     "word": "standing tall",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ma43ycha5k1n",
+     "word": "a ribbon for a small win",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "18ufrjcf5k1n",
+     "word": "a seed growing into a tree",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "2jtvvm0c5k1n",
+     "word": "a person trying something new",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "2v9qwwzz5k1n",
+     "word": "a little voice on your shoulder",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "rihwb0q45k1n",
+     "word": "crossing a finish line",
+     "level": "medium",
+     "sets": [
+      "Building Confidence"
      ]
     }
    ],
@@ -21247,6 +22845,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Effective Communication"
+     ]
+    },
+    {
+     "id": "q3wblkd85lnx",
+     "question": "What is confidence?",
+     "answer": "A skill that can be learned and built over time",
+     "wrong": [
+      "A fixed trait you are born with",
+      "Feeling better than other people",
+      "Only having it when things go perfectly"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "j8a90zpm5lnx",
+     "question": "Which best describes self-esteem?",
+     "answer": "Your overall sense of worth as a person",
+     "wrong": [
+      "Your belief you can do one specific thing",
+      "Never making mistakes",
+      "How confident you look to others"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "6xe8b2t05lnx",
+     "question": "What is the difference between confidence and arrogance?",
+     "answer": "Confidence believes in your ability; arrogance puts others down",
+     "wrong": [
+      "There is no difference",
+      "Confidence is loud; arrogance is quiet",
+      "Arrogance is healthier"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "2lkqyft65lnx",
+     "question": "Can you feel confident in one area and not another?",
+     "answer": "Yes, confidence is specific, and that is normal",
+     "wrong": [
+      "No, it is all or nothing",
+      "Only if you are an athlete",
+      "Only after age 50"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "47tmm7dt5lnx",
+     "question": "What is the inner critic?",
+     "answer": "The negative voice in your head that undermines confidence",
+     "wrong": [
+      "A trusted friend with honest feedback",
+      "A professional therapist",
+      "A movie reviewer"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "wu23rqjv5lnx",
+     "question": "What is the inner coach?",
+     "answer": "A positive, supportive voice that encourages you",
+     "wrong": [
+      "A paid life coach",
+      "Someone who pushes you too hard",
+      "Only for athletes"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "98qxnee55lnx",
+     "question": "Is the inner critic's voice the truth?",
+     "answer": "No, it is a habit, and habits can change",
+     "wrong": [
+      "Yes, always",
+      "Only when you are tired",
+      "Only on Mondays"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ye4yfdjo5lnx",
+     "question": "Flip the inner critic: \"I'm going to fail\" becomes what?",
+     "answer": "\"I can handle whatever happens\"",
+     "wrong": [
+      "\"Nobody can do this\"",
+      "\"I should avoid this\"",
+      "\"I'll never be ready\""
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "dw8thj245lnx",
+     "question": "What is an affirmation?",
+     "answer": "A short, positive statement you say to yourself",
+     "wrong": [
+      "A loud argument",
+      "A type of medicine",
+      "A compliment from someone else"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ecj9fyab5lnx",
+     "question": "Affirmations work because of what?",
+     "answer": "Neuroplasticity, the brain forming new pathways through repetition",
+     "wrong": [
+      "Wishful thinking",
+      "Magic and coincidence",
+      "Fooling yourself"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "gdo7oy9s5lnx",
+     "question": "Which is a good affirmation?",
+     "answer": "\"I am capable of handling challenges that come my way\"",
+     "wrong": [
+      "\"I will never make mistakes again\"",
+      "\"Everyone else has it easy except me\"",
+      "\"I don't need to try\""
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "nzyw14v85lnx",
+     "question": "A good affirmation is written in which person?",
+     "answer": "First person, like \"I am...\" or \"I can...\"",
+     "wrong": [
+      "Third person, like \"He is...\"",
+      "As a question",
+      "In the past tense only"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "yytf1ta45lnx",
+     "question": "A good affirmation should be a stretch, but also what?",
+     "answer": "Believable",
+     "wrong": [
+      "Impossible",
+      "Very long",
+      "About someone else"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "s1iap1b45lnx",
+     "question": "Affirmations feel awkward at first. What should you do?",
+     "answer": "Keep going, that is normal",
+     "wrong": [
+      "Stop right away",
+      "Only say them to others",
+      "Never try again"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ssgqgepy5lnx",
+     "question": "What does \"baby steps\" mean?",
+     "answer": "Breaking big goals into small, manageable actions",
+     "wrong": [
+      "Taking huge leaps fast",
+      "Waiting until you feel ready",
+      "Only doing easy things"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "oh42oenf5lnx",
+     "question": "Which is a baby step toward a goal?",
+     "answer": "Sending one email instead of planning the whole project",
+     "wrong": [
+      "Waiting for the perfect moment",
+      "Doing nothing until you feel confident",
+      "Asking someone else to do it"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "i0r631875lnx",
+     "question": "Which comes first, action or the feeling of confidence?",
+     "answer": "Action, and confidence follows",
+     "wrong": [
+      "The feeling, then action",
+      "They never connect",
+      "Neither matters"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "6332a1gu5lnx",
+     "question": "What do small steps create that builds confidence?",
+     "answer": "Evidence that you can do things",
+     "wrong": [
+      "Stress",
+      "Excuses",
+      "Arrogance"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "vzj66jp05lnx",
+     "question": "Which is a common barrier to confidence?",
+     "answer": "Comparing yourself to others",
+     "wrong": [
+      "Trying new things",
+      "Asking for help",
+      "Taking small steps"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
+     ]
+    },
+    {
+     "id": "ses28c6w5lnx",
+     "question": "Why celebrate small steps forward?",
+     "answer": "It trains your brain to notice progress and builds momentum",
+     "wrong": [
+      "It distracts from big goals",
+      "It shows low expectations",
+      "Small steps do not matter"
+     ],
+     "category": "Building Confidence",
+     "time": 20,
+     "sets": [
+      "Building Confidence"
      ]
     }
    ]
