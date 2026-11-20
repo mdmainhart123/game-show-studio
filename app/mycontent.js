@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-19-building-confidence",
+ "id": "matt-2026-11-20-social-media-mental-health",
  "banks": {
   "standard": {
    "cross": [
@@ -1389,6 +1389,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "patient",
        "clue": "Be ______ with yourself: this is a process"
+      }
+     ]
+    },
+    {
+     "id": "dwf0seg2drap",
+     "title": "Social Media & Mental Health",
+     "entries": [
+      {
+       "word": "algorithm",
+       "clue": "Decides what you see based on engagement"
+      },
+      {
+       "word": "scroll",
+       "clue": "Infinite ______: no stopping point"
+      },
+      {
+       "word": "notifications",
+       "clue": "Alerts that pull you back to the app"
+      },
+      {
+       "word": "dopamine",
+       "clue": "The brain chemical behind the reward loop"
+      },
+      {
+       "word": "comparison",
+       "clue": "Social ______ theory"
+      },
+      {
+       "word": "highlight",
+       "clue": "______ reel: someone's best moments"
+      },
+      {
+       "word": "passive",
+       "clue": "Scrolling without interacting is this kind of use"
+      },
+      {
+       "word": "active",
+       "clue": "Messaging a friend is this kind of use"
+      },
+      {
+       "word": "fomo",
+       "clue": "Fear of missing out, for short"
+      },
+      {
+       "word": "boundary",
+       "clue": "A digital ______ is an intentional limit"
+      },
+      {
+       "word": "curate",
+       "clue": "______ your feed: unfollow what drags you down"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that can set off a craving or old feeling"
+      },
+      {
+       "word": "connection",
+       "clue": "Active use builds this"
+      },
+      {
+       "word": "awareness",
+       "clue": "This gives you a choice in how you use social media"
+      },
+      {
+       "word": "unfollow",
+       "clue": "Remove an account from your feed"
       }
      ]
     }
@@ -3993,6 +4059,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Feeling like confidence is only for these people",
      "answer": "Other people"
+    },
+    {
+     "id": "y7nybqsdds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 100,
+     "clue": "A feed with no natural stopping point",
+     "answer": "Infinite scroll"
+    },
+    {
+     "id": "hshs24c7ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 200,
+     "clue": "Pings that interrupt your day and pull you back in",
+     "answer": "Notifications"
+    },
+    {
+     "id": "pl1shm92ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 300,
+     "clue": "The system that decides what you see based on what keeps you engaged",
+     "answer": "The algorithm"
+    },
+    {
+     "id": "4jk8v1i3ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 400,
+     "clue": "Likes and reactions work like this casino game",
+     "answer": "A slot machine"
+    },
+    {
+     "id": "38ssym7pds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 500,
+     "clue": "The platform's business model is to maximize this",
+     "answer": "Time on the app"
+    },
+    {
+     "id": "upyrshj2ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 100,
+     "clue": "The edited, best-moments version of someone's life online",
+     "answer": "A highlight reel"
+    },
+    {
+     "id": "jpo08ly4ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 200,
+     "clue": "Comparing yourself to someone who seems happier or more successful",
+     "answer": "Upward comparison"
+    },
+    {
+     "id": "tctxdp63ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 300,
+     "clue": "We compare our inside experience to other people's this",
+     "answer": "Outside or highlight reel"
+    },
+    {
+     "id": "rre0ept7ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 400,
+     "clue": "This theory says we judge ourselves by comparing to others",
+     "answer": "Social comparison theory"
+    },
+    {
+     "id": "zi29r9cjds1d",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 500,
+     "clue": "The handout says the perfect photo may have taken this many takes",
+     "answer": "47"
+    },
+    {
+     "id": "cmhrr9bods1d",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 100,
+     "clue": "Scrolling and watching without interacting",
+     "answer": "Passive use"
+    },
+    {
+     "id": "pqk0jbcxds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 200,
+     "clue": "Messaging someone or commenting meaningfully",
+     "answer": "Active use"
+    },
+    {
+     "id": "b56szsfwds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 300,
+     "clue": "Passive use is linked to lower mood and more of this",
+     "answer": "Anxiety"
+    },
+    {
+     "id": "5hwcfwh4ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 400,
+     "clue": "Active use is linked to feeling more this",
+     "answer": "Connected"
+    },
+    {
+     "id": "ro4p2zwuds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 500,
+     "clue": "Same platform, different experience depending on this",
+     "answer": "How you use it"
+    },
+    {
+     "id": "cz0r0xbuds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 100,
+     "clue": "Phone-free times like meals or the first 30 minutes of the morning",
+     "answer": "No-phone zones"
+    },
+    {
+     "id": "dolidgrkds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 200,
+     "clue": "Unfollowing or muting accounts that make you feel worse",
+     "answer": "Curating your feed"
+    },
+    {
+     "id": "f7pchjllds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 300,
+     "clue": "Daily maximums you can set on specific apps",
+     "answer": "Screen time limits"
+    },
+    {
+     "id": "iidkybbods1d",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 400,
+     "clue": "Turning off most alerts so you check on your schedule",
+     "answer": "Notification batching"
+    },
+    {
+     "id": "kbbzq7ands1d",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 500,
+     "clue": "Asking yourself why you are posting before you do",
+     "answer": "Pause before you post"
+    },
+    {
+     "id": "h08l6r0fds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 100,
+     "clue": "The brain chemical behind the reward loop",
+     "answer": "Dopamine"
+    },
+    {
+     "id": "bkemear6ds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 200,
+     "clue": "The fear that everyone is having fun without you",
+     "answer": "FOMO"
+    },
+    {
+     "id": "s0j78y9yds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 300,
+     "clue": "Social media can be a trigger, an isolator or this",
+     "answer": "A support tool"
+    },
+    {
+     "id": "s58mcusids1d",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 400,
+     "clue": "Social media can expose people in recovery to these from their past",
+     "answer": "Old networks"
+    },
+    {
+     "id": "7e774i1xds1d",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 500,
+     "clue": "The key question: is my use serving my recovery or doing this",
+     "answer": "Working against it"
     }
    ],
    "wheel": [
@@ -4955,7 +5221,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "INFINITE SCROLL",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -4971,7 +5238,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A HIGHLIGHT REEL",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -5019,7 +5287,8 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "TURNING OFF NOTIFICATIONS",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -5877,6 +6146,126 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Building Confidence"
      ]
+    },
+    {
+     "id": "2ngw9w1tdsks",
+     "category": "Phrase",
+     "phrase": "DESIGNED TO BE HARD TO STOP",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "xnibzx1ndsks",
+     "category": "Phrase",
+     "phrase": "CONNECT DO NOT COMPARE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "hbxqwg3gdsks",
+     "category": "Phrase",
+     "phrase": "PAUSE BEFORE YOU POST",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "1pf3zf76dsks",
+     "category": "Phrase",
+     "phrase": "YOUR REAL LIFE MATTERS MORE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "7076jk9idsks",
+     "category": "Phrase",
+     "phrase": "CHECK ON YOUR SCHEDULE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "672itnpodsks",
+     "category": "Phrase",
+     "phrase": "BETTER OR WORSE AFTER SCROLLING",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "4cikmwmodsks",
+     "category": "Phrase",
+     "phrase": "AWARENESS GIVES YOU A CHOICE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "o2p4yawedsks",
+     "category": "Phrase",
+     "phrase": "COMPARISON IS NOT FAIR",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "osv9g7uqdsks",
+     "category": "Thing",
+     "phrase": "FEAR OF MISSING OUT",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "2enpg3yodsks",
+     "category": "Thing",
+     "phrase": "A NO PHONE ZONE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "j5dkiby3dsks",
+     "category": "Thing",
+     "phrase": "SCREEN TIME LIMITS",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "l1ou10vtdsks",
+     "category": "Thing",
+     "phrase": "THE DOPAMINE LOOP",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "xjij6vq6dsks",
+     "category": "Event",
+     "phrase": "UNFOLLOWING NEGATIVE ACCOUNTS",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "sgtsl2vrdsks",
+     "category": "Event",
+     "phrase": "CALLING A FRIEND INSTEAD",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "hfvpld7qdsks",
+     "category": "Event",
+     "phrase": "A PHONE FREE DINNER",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
     }
    ],
    "words": [
@@ -6482,7 +6871,8 @@ window.GS_MY_CONTENT = {
       "Handling Stress",
       "Media Literacy",
       "Mindfulness",
-      "Effective Communication"
+      "Effective Communication",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -6535,7 +6925,8 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Handling Stress",
       "Mindfulness",
-      "Effective Communication"
+      "Effective Communication",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -6713,7 +7104,8 @@ window.GS_MY_CONTENT = {
      "word": "MEDIA",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -6721,7 +7113,8 @@ window.GS_MY_CONTENT = {
      "word": "LIKES",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -6729,7 +7122,8 @@ window.GS_MY_CONTENT = {
      "word": "FEEDS",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -6753,7 +7147,8 @@ window.GS_MY_CONTENT = {
      "word": "POSTS",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -6793,7 +7188,8 @@ window.GS_MY_CONTENT = {
      "word": "HOOKS",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -6917,7 +7313,8 @@ window.GS_MY_CONTENT = {
      "word": "REACH",
      "hint": "Asking for Help",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -7313,6 +7710,63 @@ window.GS_MY_CONTENT = {
      "hint": "Building Confidence",
      "sets": [
       "Building Confidence"
+     ]
+    },
+    {
+     "id": "3azwz23tdqhp",
+     "word": "PHONE",
+     "hint": "Around the House",
+     "sets": [
+      "Media Literacy",
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "8lhiwvpedtn9",
+     "word": "REELS",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "u0kqxwdbdtn9",
+     "word": "LIMIT",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "or2slp56dtn9",
+     "word": "TREND",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "5nfrocybdtn9",
+     "word": "ALONE",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "cohn7l5odtn9",
+     "word": "REPLY",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "shh6ihdqdtn9",
+     "word": "MUTED",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
      ]
     }
    ],
@@ -7960,7 +8414,8 @@ window.GS_MY_CONTENT = {
      "word": "a clock",
      "level": "easy",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -8251,7 +8706,8 @@ window.GS_MY_CONTENT = {
      "word": "a smartphone",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -8260,7 +8716,8 @@ window.GS_MY_CONTENT = {
      "level": "easy",
      "sets": [
       "Media Literacy",
-      "Building Confidence"
+      "Building Confidence",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -8301,7 +8758,8 @@ window.GS_MY_CONTENT = {
      "word": "a heart notification",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -8309,7 +8767,8 @@ window.GS_MY_CONTENT = {
      "word": "a camera",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -8333,7 +8792,8 @@ window.GS_MY_CONTENT = {
      "word": "a slot machine",
      "level": "medium",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -8365,7 +8825,8 @@ window.GS_MY_CONTENT = {
      "word": "a selfie",
      "level": "medium",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -9250,6 +9711,110 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Building Confidence"
+     ]
+    },
+    {
+     "id": "n33g4a3xdrig",
+     "word": "a bed",
+     "level": "easy",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "j43up236drig",
+     "word": "a dinner table",
+     "level": "easy",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "jeqhtobwdrig",
+     "word": "a bell",
+     "level": "easy",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "pcwrf85zdrig",
+     "word": "scrolling in bed at night",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "heqsprmkdrig",
+     "word": "a fake smile in a photo",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "rx113m54drig",
+     "word": "a phone in a basket at dinner",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "7ln7rb57drig",
+     "word": "someone comparing themselves to a screen",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "sa4ha2fcdrig",
+     "word": "turning off notifications",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "e7fjt9pxdrig",
+     "word": "an endless scroll",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "s1g72mardrig",
+     "word": "a friend calling you",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "mllhixd0drig",
+     "word": "a muted account",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "oxhmew5ddrig",
+     "word": "a phone with a lock on it",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "gux7qy3idrig",
+     "word": "putting the phone down",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
      ]
     }
    ],
@@ -13153,6 +13718,306 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Building Confidence"
      ]
+    },
+    {
+     "id": "0qlm9tccdt4b",
+     "question": "What is the main business goal of social media platforms?",
+     "answer": "To keep you on the app as long as possible",
+     "wrong": [
+      "To help friends stay connected",
+      "To share news fairly",
+      "To improve mental health"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "k0ofx82bdt4b",
+     "question": "What is a social media algorithm?",
+     "answer": "A system that picks what you see based on what keeps you engaged",
+     "wrong": [
+      "A type of advertisement",
+      "A privacy setting",
+      "A tool for reporting posts"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "hglq3m5ndt4b",
+     "question": "What does \"infinite scroll\" mean?",
+     "answer": "A feed with no natural stopping point",
+     "wrong": [
+      "A feed that scrolls on its own",
+      "An ad that follows you",
+      "A privacy mode"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "hyrh9h46dt4b",
+     "question": "Notifications are designed to do what?",
+     "answer": "Interrupt your day and pull you back to the app",
+     "wrong": [
+      "Alert you only to emergencies",
+      "Help you manage your time",
+      "Block harmful content"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "qwzx5n9ldt4b",
+     "question": "Likes and reactions work like what?",
+     "answer": "A slot machine, a variable reward",
+     "wrong": [
+      "A voting system for quality",
+      "A private message",
+      "A fact checker"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "dwp54jyidt4b",
+     "question": "Which is NOT a way platforms keep you on the app?",
+     "answer": "Encouraging you to take regular breaks",
+     "wrong": [
+      "Personalized algorithms",
+      "Infinite scroll",
+      "Notifications"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "vp2birsjdt4b",
+     "question": "The social media reward loop uses the same brain system as what?",
+     "answer": "Habits and addictive behaviors",
+     "wrong": [
+      "Reading a book",
+      "Taking a walk",
+      "Watching the news"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "ab12mec3dt4b",
+     "question": "Social comparison theory says we judge ourselves by doing what?",
+     "answer": "Comparing ourselves to others",
+     "wrong": [
+      "Looking at our past",
+      "Following expert advice",
+      "Using only our own standards"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "dq8c61lpdt4b",
+     "question": "What is an \"upward comparison\"?",
+     "answer": "Comparing yourself to someone who seems happier or more successful",
+     "wrong": [
+      "Comparing yourself to someone worse off",
+      "Looking at positive news",
+      "Following inspiring accounts"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "ghsr43a4dt4b",
+     "question": "What is a \"highlight reel\" on social media?",
+     "answer": "The edited, best-moments version of someone's life",
+     "wrong": [
+      "A compilation of viral videos",
+      "A special app feature",
+      "The top posts of the week"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "iktanxkgdt4b",
+     "question": "Comparing your everyday life to someone's highlight reel is what?",
+     "answer": "An unfair comparison",
+     "wrong": [
+      "A fair comparison",
+      "A healthy habit",
+      "The best way to set goals"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "duw1s541dt4b",
+     "question": "What does FOMO stand for?",
+     "answer": "Fear of Missing Out",
+     "wrong": [
+      "Focus on My Own",
+      "Fear of Moving On",
+      "Feelings of Making Others"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "y3jbd6wpdt4b",
+     "question": "What is passive social media use?",
+     "answer": "Scrolling and watching without interacting",
+     "wrong": [
+      "Using it on a computer",
+      "Using it under an hour a day",
+      "Messaging a friend"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "0fyrlatvdt4b",
+     "question": "More passive use is linked to what?",
+     "answer": "Lower mood and more anxiety",
+     "wrong": [
+      "Better sleep",
+      "Higher self-esteem",
+      "Stronger relationships"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "vqg6sxh2dt4b",
+     "question": "Which use is linked to BETTER mental health?",
+     "answer": "Messaging someone or having a real conversation",
+     "wrong": [
+      "Scrolling your feed",
+      "Watching stories without commenting",
+      "Following as many accounts as possible"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "4yd2ned6dt4b",
+     "question": "No-phone zones during meals or before sleep are an example of what?",
+     "answer": "A digital boundary",
+     "wrong": [
+      "A punishment",
+      "Quitting forever",
+      "Something only teens need"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "0oyuhtkrdt4b",
+     "question": "What does it mean to \"curate your feed\"?",
+     "answer": "Unfollow or mute accounts that make you feel worse",
+     "wrong": [
+      "Follow as many accounts as possible",
+      "Post only perfect photos",
+      "Use a paid app"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "ac8v18usdt4b",
+     "question": "Which is NOT a helpful strategy?",
+     "answer": "Scrolling more to feel better when anxious",
+     "wrong": [
+      "Turning off most notifications",
+      "Pausing before you post",
+      "Unfollowing accounts that bring you down"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "cpbh8n43dt4b",
+     "question": "In recovery, social media can be risky because it can do what?",
+     "answer": "Expose you to old networks and triggering content",
+     "wrong": [
+      "Show too much positive content",
+      "Stop you from exercising",
+      "Make you too social"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "diwtfxaxdt4b",
+     "question": "Which statement is most accurate?",
+     "answer": "It depends on how you use it, passive or active, aware or unaware",
+     "wrong": [
+      "Social media is always harmful",
+      "Social media has no effect on mood",
+      "It is always helpful if you have many friends"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
     }
    ]
   },
@@ -14068,6 +14933,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "patient",
        "clue": "Be ______ with yourself: this is a process"
+      }
+     ]
+    },
+    {
+     "id": "7vlrx47ndu8x",
+     "title": "Social Media & Mental Health",
+     "entries": [
+      {
+       "word": "algorithm",
+       "clue": "Decides what you see based on engagement"
+      },
+      {
+       "word": "scroll",
+       "clue": "Infinite ______: no stopping point"
+      },
+      {
+       "word": "notifications",
+       "clue": "Alerts that pull you back to the app"
+      },
+      {
+       "word": "dopamine",
+       "clue": "The brain chemical behind the reward loop"
+      },
+      {
+       "word": "comparison",
+       "clue": "Social ______ theory"
+      },
+      {
+       "word": "highlight",
+       "clue": "______ reel: someone's best moments"
+      },
+      {
+       "word": "passive",
+       "clue": "Scrolling without interacting is this kind of use"
+      },
+      {
+       "word": "active",
+       "clue": "Messaging a friend is this kind of use"
+      },
+      {
+       "word": "fomo",
+       "clue": "Fear of missing out, for short"
+      },
+      {
+       "word": "boundary",
+       "clue": "A digital ______ is an intentional limit"
+      },
+      {
+       "word": "curate",
+       "clue": "______ your feed: unfollow what drags you down"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that can set off a craving or old feeling"
+      },
+      {
+       "word": "connection",
+       "clue": "Active use builds this"
+      },
+      {
+       "word": "awareness",
+       "clue": "This gives you a choice in how you use social media"
+      },
+      {
+       "word": "unfollow",
+       "clue": "Remove an account from your feed"
       }
      ]
     }
@@ -16072,6 +17003,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Feeling like confidence is only for these people",
      "answer": "Other people"
+    },
+    {
+     "id": "iav2ldnbduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 100,
+     "clue": "A feed with no natural stopping point",
+     "answer": "Infinite scroll"
+    },
+    {
+     "id": "uk44gl1fduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 200,
+     "clue": "Pings that interrupt your day and pull you back in",
+     "answer": "Notifications"
+    },
+    {
+     "id": "qh1xazjbduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 300,
+     "clue": "The system that decides what you see based on what keeps you engaged",
+     "answer": "The algorithm"
+    },
+    {
+     "id": "e5ie3ppbduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 400,
+     "clue": "Likes and reactions work like this casino game",
+     "answer": "A slot machine"
+    },
+    {
+     "id": "nnr4kk5sduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Designed to Hook You",
+     "value": 500,
+     "clue": "The platform's business model is to maximize this",
+     "answer": "Time on the app"
+    },
+    {
+     "id": "yeshk2jxduyf",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 100,
+     "clue": "The edited, best-moments version of someone's life online",
+     "answer": "A highlight reel"
+    },
+    {
+     "id": "h73huab1duyf",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 200,
+     "clue": "Comparing yourself to someone who seems happier or more successful",
+     "answer": "Upward comparison"
+    },
+    {
+     "id": "fdmyl0fwduyf",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 300,
+     "clue": "We compare our inside experience to other people's this",
+     "answer": "Outside or highlight reel"
+    },
+    {
+     "id": "hxtwz45aduyf",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 400,
+     "clue": "This theory says we judge ourselves by comparing to others",
+     "answer": "Social comparison theory"
+    },
+    {
+     "id": "hqmvgyoyduyf",
+     "board": "Social Media & Mental Health",
+     "category": "The Comparison Trap",
+     "value": 500,
+     "clue": "The handout says the perfect photo may have taken this many takes",
+     "answer": "47"
+    },
+    {
+     "id": "pszi1yn4duyf",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 100,
+     "clue": "Scrolling and watching without interacting",
+     "answer": "Passive use"
+    },
+    {
+     "id": "jybpldmjduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 200,
+     "clue": "Messaging someone or commenting meaningfully",
+     "answer": "Active use"
+    },
+    {
+     "id": "bhcaxukdduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 300,
+     "clue": "Passive use is linked to lower mood and more of this",
+     "answer": "Anxiety"
+    },
+    {
+     "id": "r1ztqhhwduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 400,
+     "clue": "Active use is linked to feeling more this",
+     "answer": "Connected"
+    },
+    {
+     "id": "747mxwtyduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Passive vs. Active",
+     "value": 500,
+     "clue": "Same platform, different experience depending on this",
+     "answer": "How you use it"
+    },
+    {
+     "id": "uksp2rlcduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 100,
+     "clue": "Phone-free times like meals or the first 30 minutes of the morning",
+     "answer": "No-phone zones"
+    },
+    {
+     "id": "rphvjcwhduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 200,
+     "clue": "Unfollowing or muting accounts that make you feel worse",
+     "answer": "Curating your feed"
+    },
+    {
+     "id": "z5ln9elyduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 300,
+     "clue": "Daily maximums you can set on specific apps",
+     "answer": "Screen time limits"
+    },
+    {
+     "id": "1twfi3epduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 400,
+     "clue": "Turning off most alerts so you check on your schedule",
+     "answer": "Notification batching"
+    },
+    {
+     "id": "jzzod1itduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Digital Boundaries",
+     "value": 500,
+     "clue": "Asking yourself why you are posting before you do",
+     "answer": "Pause before you post"
+    },
+    {
+     "id": "eis9jvz7duyf",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 100,
+     "clue": "The brain chemical behind the reward loop",
+     "answer": "Dopamine"
+    },
+    {
+     "id": "9heg0jihduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 200,
+     "clue": "The fear that everyone is having fun without you",
+     "answer": "FOMO"
+    },
+    {
+     "id": "y30w5x2oduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 300,
+     "clue": "Social media can be a trigger, an isolator or this",
+     "answer": "A support tool"
+    },
+    {
+     "id": "kv2w4idfduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 400,
+     "clue": "Social media can expose people in recovery to these from their past",
+     "answer": "Old networks"
+    },
+    {
+     "id": "tinzvwbtduyf",
+     "board": "Social Media & Mental Health",
+     "category": "Your Brain and Recovery",
+     "value": 500,
+     "clue": "The key question: is my use serving my recovery or doing this",
+     "answer": "Working against it"
     }
    ],
    "wheel": [
@@ -16569,7 +17700,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "INFINITE SCROLL",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -16585,7 +17717,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "A HIGHLIGHT REEL",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -16633,7 +17766,8 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "TURNING OFF NOTIFICATIONS",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -17491,6 +18625,126 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Building Confidence"
      ]
+    },
+    {
+     "id": "hoqo6xrrdvhe",
+     "category": "Phrase",
+     "phrase": "DESIGNED TO BE HARD TO STOP",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "vzhiy49wdvhe",
+     "category": "Phrase",
+     "phrase": "CONNECT DO NOT COMPARE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "5cnxydamdvhe",
+     "category": "Phrase",
+     "phrase": "PAUSE BEFORE YOU POST",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "5k8p3hhfdvhe",
+     "category": "Phrase",
+     "phrase": "YOUR REAL LIFE MATTERS MORE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "nv44nc2hdvhe",
+     "category": "Phrase",
+     "phrase": "CHECK ON YOUR SCHEDULE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "i156ps7gdvhe",
+     "category": "Phrase",
+     "phrase": "BETTER OR WORSE AFTER SCROLLING",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "jyykacw2dvhe",
+     "category": "Phrase",
+     "phrase": "AWARENESS GIVES YOU A CHOICE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "u19f6b6vdvhe",
+     "category": "Phrase",
+     "phrase": "COMPARISON IS NOT FAIR",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "gglhfq7xdvhe",
+     "category": "Thing",
+     "phrase": "FEAR OF MISSING OUT",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "rffi0hhfdvhe",
+     "category": "Thing",
+     "phrase": "A NO PHONE ZONE",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "ov655mxcdvhe",
+     "category": "Thing",
+     "phrase": "SCREEN TIME LIMITS",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "n3b3yasmdvhe",
+     "category": "Thing",
+     "phrase": "THE DOPAMINE LOOP",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "rxqi8l9ldvhe",
+     "category": "Event",
+     "phrase": "UNFOLLOWING NEGATIVE ACCOUNTS",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "0qt56gy8dvhe",
+     "category": "Event",
+     "phrase": "CALLING A FRIEND INSTEAD",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "x6fo5df0dvhe",
+     "category": "Event",
+     "phrase": "A PHONE FREE DINNER",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
     }
    ],
    "words": [
@@ -17842,7 +19096,8 @@ window.GS_MY_CONTENT = {
      "word": "MEDIA",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -17850,7 +19105,8 @@ window.GS_MY_CONTENT = {
      "word": "LIKES",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -17858,7 +19114,8 @@ window.GS_MY_CONTENT = {
      "word": "FEEDS",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -17882,7 +19139,8 @@ window.GS_MY_CONTENT = {
      "word": "POSTS",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -17906,7 +19164,8 @@ window.GS_MY_CONTENT = {
      "word": "PHONE",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -17930,7 +19189,8 @@ window.GS_MY_CONTENT = {
      "word": "HOOKS",
      "hint": "Media Literacy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -18137,7 +19397,8 @@ window.GS_MY_CONTENT = {
      "word": "REACH",
      "hint": "Asking for Help",
      "sets": [
-      "Asking for Help"
+      "Asking for Help",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -18679,6 +19940,77 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Building Confidence"
      ]
+    },
+    {
+     "id": "qidsu1radqhu",
+     "word": "PAUSE",
+     "hint": "Self-care",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy",
+      "Mindfulness",
+      "Effective Communication",
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "tsciybgadqhu",
+     "word": "FOCUS",
+     "hint": "Coping skill",
+     "sets": [
+      "Handling Stress",
+      "Mindfulness",
+      "Effective Communication",
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "h9olpoxrdwkb",
+     "word": "REELS",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "4kb4gj2jdwkb",
+     "word": "LIMIT",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "u6othqa4dwkb",
+     "word": "TREND",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "c7ui99vgdwkb",
+     "word": "ALONE",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "se9m5c90dwkb",
+     "word": "REPLY",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "7ntt26lfdwkb",
+     "word": "MUTED",
+     "hint": "Social Media & Mental Health",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
     }
    ],
    "draw": [
@@ -18860,7 +20192,8 @@ window.GS_MY_CONTENT = {
      "word": "a clock",
      "level": "easy",
      "sets": [
-      "Handling Stress"
+      "Handling Stress",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -19135,7 +20468,8 @@ window.GS_MY_CONTENT = {
      "word": "a smartphone",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -19144,7 +20478,8 @@ window.GS_MY_CONTENT = {
      "level": "easy",
      "sets": [
       "Media Literacy",
-      "Building Confidence"
+      "Building Confidence",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -19185,7 +20520,8 @@ window.GS_MY_CONTENT = {
      "word": "a heart notification",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -19193,7 +20529,8 @@ window.GS_MY_CONTENT = {
      "word": "a camera",
      "level": "easy",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -19217,7 +20554,8 @@ window.GS_MY_CONTENT = {
      "word": "a slot machine",
      "level": "medium",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -19249,7 +20587,8 @@ window.GS_MY_CONTENT = {
      "word": "a selfie",
      "level": "medium",
      "sets": [
-      "Media Literacy"
+      "Media Literacy",
+      "Social Media & Mental Health"
      ]
     },
     {
@@ -20143,6 +21482,110 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Building Confidence"
+     ]
+    },
+    {
+     "id": "nxwli0pddufi",
+     "word": "a bed",
+     "level": "easy",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "1tvimvu1dufi",
+     "word": "a dinner table",
+     "level": "easy",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "8z80wp4ndufi",
+     "word": "a bell",
+     "level": "easy",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "zbecfukodufi",
+     "word": "scrolling in bed at night",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "kn7uy9eodufi",
+     "word": "a fake smile in a photo",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "li6zte7adufi",
+     "word": "a phone in a basket at dinner",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "460zncnudufi",
+     "word": "someone comparing themselves to a screen",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "9ey1qysxdufi",
+     "word": "turning off notifications",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "djra1deqdufi",
+     "word": "an endless scroll",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "lpzh4ja7dufi",
+     "word": "a friend calling you",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "tjx3wrg5dufi",
+     "word": "a muted account",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "cqvf9jsjdufi",
+     "word": "a phone with a lock on it",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "rwv89ln3dufi",
+     "word": "putting the phone down",
+     "level": "medium",
+     "sets": [
+      "Social Media & Mental Health"
      ]
     }
    ],
@@ -23145,6 +24588,306 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Building Confidence"
+     ]
+    },
+    {
+     "id": "vpybv7uadw0v",
+     "question": "What is the main business goal of social media platforms?",
+     "answer": "To keep you on the app as long as possible",
+     "wrong": [
+      "To help friends stay connected",
+      "To share news fairly",
+      "To improve mental health"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "wu91s47fdw0v",
+     "question": "What is a social media algorithm?",
+     "answer": "A system that picks what you see based on what keeps you engaged",
+     "wrong": [
+      "A type of advertisement",
+      "A privacy setting",
+      "A tool for reporting posts"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "0glayuk4dw0v",
+     "question": "What does \"infinite scroll\" mean?",
+     "answer": "A feed with no natural stopping point",
+     "wrong": [
+      "A feed that scrolls on its own",
+      "An ad that follows you",
+      "A privacy mode"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "upvrxjimdw0v",
+     "question": "Notifications are designed to do what?",
+     "answer": "Interrupt your day and pull you back to the app",
+     "wrong": [
+      "Alert you only to emergencies",
+      "Help you manage your time",
+      "Block harmful content"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "5zcnueozdw0v",
+     "question": "Likes and reactions work like what?",
+     "answer": "A slot machine, a variable reward",
+     "wrong": [
+      "A voting system for quality",
+      "A private message",
+      "A fact checker"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "h3j9wtd0dw0v",
+     "question": "Which is NOT a way platforms keep you on the app?",
+     "answer": "Encouraging you to take regular breaks",
+     "wrong": [
+      "Personalized algorithms",
+      "Infinite scroll",
+      "Notifications"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "3uh5gtwhdw0v",
+     "question": "The social media reward loop uses the same brain system as what?",
+     "answer": "Habits and addictive behaviors",
+     "wrong": [
+      "Reading a book",
+      "Taking a walk",
+      "Watching the news"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "glvvttmzdw0v",
+     "question": "Social comparison theory says we judge ourselves by doing what?",
+     "answer": "Comparing ourselves to others",
+     "wrong": [
+      "Looking at our past",
+      "Following expert advice",
+      "Using only our own standards"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "4dr3syamdw0v",
+     "question": "What is an \"upward comparison\"?",
+     "answer": "Comparing yourself to someone who seems happier or more successful",
+     "wrong": [
+      "Comparing yourself to someone worse off",
+      "Looking at positive news",
+      "Following inspiring accounts"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "2izyboendw0v",
+     "question": "What is a \"highlight reel\" on social media?",
+     "answer": "The edited, best-moments version of someone's life",
+     "wrong": [
+      "A compilation of viral videos",
+      "A special app feature",
+      "The top posts of the week"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "rfg1o39rdw0v",
+     "question": "Comparing your everyday life to someone's highlight reel is what?",
+     "answer": "An unfair comparison",
+     "wrong": [
+      "A fair comparison",
+      "A healthy habit",
+      "The best way to set goals"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "45mo0mvxdw0v",
+     "question": "What does FOMO stand for?",
+     "answer": "Fear of Missing Out",
+     "wrong": [
+      "Focus on My Own",
+      "Fear of Moving On",
+      "Feelings of Making Others"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "wj7kpwxndw0v",
+     "question": "What is passive social media use?",
+     "answer": "Scrolling and watching without interacting",
+     "wrong": [
+      "Using it on a computer",
+      "Using it under an hour a day",
+      "Messaging a friend"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "abki8q46dw0v",
+     "question": "More passive use is linked to what?",
+     "answer": "Lower mood and more anxiety",
+     "wrong": [
+      "Better sleep",
+      "Higher self-esteem",
+      "Stronger relationships"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "t0ekxo85dw0v",
+     "question": "Which use is linked to BETTER mental health?",
+     "answer": "Messaging someone or having a real conversation",
+     "wrong": [
+      "Scrolling your feed",
+      "Watching stories without commenting",
+      "Following as many accounts as possible"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "1z385nsddw0v",
+     "question": "No-phone zones during meals or before sleep are an example of what?",
+     "answer": "A digital boundary",
+     "wrong": [
+      "A punishment",
+      "Quitting forever",
+      "Something only teens need"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "qm7bbswcdw0v",
+     "question": "What does it mean to \"curate your feed\"?",
+     "answer": "Unfollow or mute accounts that make you feel worse",
+     "wrong": [
+      "Follow as many accounts as possible",
+      "Post only perfect photos",
+      "Use a paid app"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "whr7lggsdw0v",
+     "question": "Which is NOT a helpful strategy?",
+     "answer": "Scrolling more to feel better when anxious",
+     "wrong": [
+      "Turning off most notifications",
+      "Pausing before you post",
+      "Unfollowing accounts that bring you down"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "or094vscdw0v",
+     "question": "In recovery, social media can be risky because it can do what?",
+     "answer": "Expose you to old networks and triggering content",
+     "wrong": [
+      "Show too much positive content",
+      "Stop you from exercising",
+      "Make you too social"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "4qfedevzdw0v",
+     "question": "Which statement is most accurate?",
+     "answer": "It depends on how you use it, passive or active, aware or unaware",
+     "wrong": [
+      "Social media is always harmful",
+      "Social media has no effect on mood",
+      "It is always helpful if you have many friends"
+     ],
+     "category": "Social Media & Mental Health",
+     "time": 20,
+     "sets": [
+      "Social Media & Mental Health"
      ]
     }
    ]
