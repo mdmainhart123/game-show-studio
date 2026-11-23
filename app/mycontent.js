@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-20-social-media-mental-health",
+ "id": "matt-2026-11-23-november-game-day",
  "banks": {
   "standard": {
    "cross": [
@@ -1455,6 +1455,80 @@ window.GS_MY_CONTENT = {
       {
        "word": "unfollow",
        "clue": "Remove an account from your feed"
+      }
+     ]
+    },
+    {
+     "id": "i0zlt6hci8wh",
+     "title": "November Game Day",
+     "entries": [
+      {
+       "word": "thanksgiving",
+       "clue": "The fourth Thursday in November"
+      },
+      {
+       "word": "turkey",
+       "clue": "The bird on most holiday tables"
+      },
+      {
+       "word": "pumpkin",
+       "clue": "Orange squash in a classic pie"
+      },
+      {
+       "word": "november",
+       "clue": "The eleventh month"
+      },
+      {
+       "word": "cranberry",
+       "clue": "A tart red berry, often made into sauce"
+      },
+      {
+       "word": "mayflower",
+       "clue": "The Pilgrims' ship"
+      },
+      {
+       "word": "harvest",
+       "clue": "Gathering crops in the fall"
+      },
+      {
+       "word": "acorn",
+       "clue": "A small nut from an oak tree"
+      },
+      {
+       "word": "scarecrow",
+       "clue": "It stands in a field to keep birds away"
+      },
+      {
+       "word": "pittsburgh",
+       "clue": "The City of Bridges"
+      },
+      {
+       "word": "jupiter",
+       "clue": "The largest planet"
+      },
+      {
+       "word": "cheetah",
+       "clue": "The fastest land animal"
+      },
+      {
+       "word": "popcorn",
+       "clue": "A classic movie snack"
+      },
+      {
+       "word": "parade",
+       "clue": "Floats and balloons march in one"
+      },
+      {
+       "word": "giraffe",
+       "clue": "The tallest animal"
+      },
+      {
+       "word": "football",
+       "clue": "A Thanksgiving Day TV tradition"
+      },
+      {
+       "word": "gratitude",
+       "clue": "Feeling thankful"
       }
      ]
     }
@@ -4259,6 +4333,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The key question: is my use serving my recovery or doing this",
      "answer": "Working against it"
+    },
+    {
+     "id": "4ougo79ci9qw",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 100,
+     "clue": "The holiday on the fourth Thursday of November",
+     "answer": "Thanksgiving"
+    },
+    {
+     "id": "j9kinwtvi9qw",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 200,
+     "clue": "The November 11 holiday that honors those who served",
+     "answer": "Veterans Day"
+    },
+    {
+     "id": "y3fysquti9qw",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 300,
+     "clue": "November's birthstone",
+     "answer": "Topaz"
+    },
+    {
+     "id": "6cuuxtqdi9qw",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 400,
+     "clue": "The number of days in November",
+     "answer": "30"
+    },
+    {
+     "id": "6mgnkvv2i9qw",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 500,
+     "clue": "The ship that carried the Pilgrims in 1620",
+     "answer": "The Mayflower"
+    },
+    {
+     "id": "tioujfyti9qw",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 100,
+     "clue": "The yellow cartoon family from Springfield",
+     "answer": "The Simpsons"
+    },
+    {
+     "id": "p5c08kxyi9qw",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 200,
+     "clue": "The cowboy toy in Toy Story",
+     "answer": "Woody"
+    },
+    {
+     "id": "i8pj1582i9qw",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 300,
+     "clue": "In this movie, \"Life is like a box of chocolates\"",
+     "answer": "Forrest Gump"
+    },
+    {
+     "id": "ebgq4lzpi9qw",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 400,
+     "clue": "The 1939 movie with a yellow brick road",
+     "answer": "The Wizard of Oz"
+    },
+    {
+     "id": "ebv1wagni9qw",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 500,
+     "clue": "The 1993 movie where dinosaurs are brought back to life",
+     "answer": "Jurassic Park"
+    },
+    {
+     "id": "hcmmnae1i9qw",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 100,
+     "clue": "The \"king of the jungle\"",
+     "answer": "The lion"
+    },
+    {
+     "id": "tg0dlzs1i9qw",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 200,
+     "clue": "A baby kangaroo",
+     "answer": "A joey"
+    },
+    {
+     "id": "g2j64ka6i9qw",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 300,
+     "clue": "The only mammal that can truly fly",
+     "answer": "The bat"
+    },
+    {
+     "id": "frtrps5ui9qw",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 400,
+     "clue": "A group of crows is called this",
+     "answer": "A murder"
+    },
+    {
+     "id": "9sllx263i9qw",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 500,
+     "clue": "The number of hearts an octopus has",
+     "answer": "3"
+    },
+    {
+     "id": "dcmwoqsli9qw",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 100,
+     "clue": "The pie made from an orange squash",
+     "answer": "Pumpkin pie"
+    },
+    {
+     "id": "sapwj3p1i9qw",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 200,
+     "clue": "The main ingredient in guacamole",
+     "answer": "Avocado"
+    },
+    {
+     "id": "sm6nf59ei9qw",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 300,
+     "clue": "The country pizza comes from",
+     "answer": "Italy"
+    },
+    {
+     "id": "t8iy3s3ei9qw",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 400,
+     "clue": "Cranberries grow in these wet fields",
+     "answer": "Bogs"
+    },
+    {
+     "id": "ey6l09qni9qw",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 500,
+     "clue": "The most popular pizza topping in America",
+     "answer": "Pepperoni"
+    },
+    {
+     "id": "na8hjpjxi9qw",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 100,
+     "clue": "Pennsylvania's capital city",
+     "answer": "Harrisburg"
+    },
+    {
+     "id": "9ajt2bzei9qw",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 200,
+     "clue": "The famous groundhog from Punxsutawney",
+     "answer": "Phil"
+    },
+    {
+     "id": "8jug8qz8i9qw",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 300,
+     "clue": "Pittsburgh's three rivers: the Allegheny, the Monongahela and this",
+     "answer": "The Ohio"
+    },
+    {
+     "id": "bonsa9vxi9qw",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 400,
+     "clue": "Pennsylvania's state nickname",
+     "answer": "The Keystone State"
+    },
+    {
+     "id": "ay6abejli9qw",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 500,
+     "clue": "This famous cracked bell is in Philadelphia",
+     "answer": "The Liberty Bell"
     }
    ],
    "wheel": [
@@ -6266,6 +6540,206 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Social Media & Mental Health"
      ]
+    },
+    {
+     "id": "4v3pab48iaas",
+     "category": "Phrase",
+     "phrase": "GIVE THANKS",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "17kwu9vaiaas",
+     "category": "Phrase",
+     "phrase": "LET THE GAMES BEGIN",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "bdx4u6ieiaas",
+     "category": "Phrase",
+     "phrase": "MAY THE BEST TEAM WIN",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "7xfurtzpiaas",
+     "category": "Phrase",
+     "phrase": "LIGHTS CAMERA ACTION",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "lzzwqcugiaas",
+     "category": "Phrase",
+     "phrase": "GOBBLE GOBBLE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "suvzgvsyiaas",
+     "category": "Phrase",
+     "phrase": "TIME FOR DESSERT",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gfhxqbb2iaas",
+     "category": "Phrase",
+     "phrase": "THANK YOU FOR PLAYING",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "61ptkhkpiaas",
+     "category": "Thing",
+     "phrase": "PUMPKIN PIE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "keefys5iiaas",
+     "category": "Thing",
+     "phrase": "MASHED POTATOES",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "hwwxm2oxiaas",
+     "category": "Thing",
+     "phrase": "CRANBERRY SAUCE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "kfjw34s8iaas",
+     "category": "Thing",
+     "phrase": "FALLING LEAVES",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "fjepbrhziaas",
+     "category": "Thing",
+     "phrase": "A COZY SWEATER",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "fuhuljdiiaas",
+     "category": "Thing",
+     "phrase": "HOT APPLE CIDER",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "4imc1m8qiaas",
+     "category": "Thing",
+     "phrase": "A WISHBONE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "8rqa4v5ciaas",
+     "category": "Thing",
+     "phrase": "POPCORN AND A MOVIE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "xjcym7kviaas",
+     "category": "Place",
+     "phrase": "STATUE OF LIBERTY",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "syie4erhiaas",
+     "category": "Place",
+     "phrase": "GRAND CANYON",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "kqv29sa2iaas",
+     "category": "Place",
+     "phrase": "NIAGARA FALLS",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gtlqhfasiaas",
+     "category": "Place",
+     "phrase": "THE LIBERTY BELL",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "2usx1cgviaas",
+     "category": "Place",
+     "phrase": "PITTSBURGH PENNSYLVANIA",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "0ksvwlaoiaas",
+     "category": "Event",
+     "phrase": "THANKSGIVING DINNER",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "0r6j972aiaas",
+     "category": "Event",
+     "phrase": "MOVIE NIGHT",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ik96w0ngiaas",
+     "category": "Event",
+     "phrase": "A FOOTBALL GAME",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ugnchgajiaas",
+     "category": "Event",
+     "phrase": "A PARADE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "8a5tu13tiaas",
+     "category": "Event",
+     "phrase": "RAKING THE LEAVES",
+     "sets": [
+      "November Game Day"
+     ]
     }
    ],
    "words": [
@@ -6402,7 +6876,8 @@ window.GS_MY_CONTENT = {
      "word": "CRISP",
      "hint": "Halloween",
      "sets": [
-      "Halloween Easy"
+      "Halloween Easy",
+      "November Game Day"
      ]
     },
     {
@@ -7767,6 +8242,202 @@ window.GS_MY_CONTENT = {
      "hint": "Social Media & Mental Health",
      "sets": [
       "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "q6d8fmvsi7ww",
+     "word": "TIGER",
+     "hint": "Animal",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "o3kw9dybi7ww",
+     "word": "OTTER",
+     "hint": "Animal",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "prnram84i7wx",
+     "word": "PIZZA",
+     "hint": "Food",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "zn4ksqali7wx",
+     "word": "BREAD",
+     "hint": "Food",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ke08wzshi7wx",
+     "word": "APPLE",
+     "hint": "Food",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "3zf3j173i7wx",
+     "word": "CANDY",
+     "hint": "Food",
+     "sets": [
+      "Halloween Easy",
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "sjewj9uii7wx",
+     "word": "GRAVY",
+     "hint": "Food",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "k3p01h4ti7wx",
+     "word": "OCEAN",
+     "hint": "Nature",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "n11ot31ui7wx",
+     "word": "BEACH",
+     "hint": "Nature",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "3jdvrflai7wx",
+     "word": "CLOUD",
+     "hint": "Nature",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "kpxgibvwi7wx",
+     "word": "FROST",
+     "hint": "Nature",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "btrlli70i7wx",
+     "word": "MAPLE",
+     "hint": "Nature",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "3hd72buoi7wx",
+     "word": "MUSIC",
+     "hint": "Things to Do",
+     "sets": [
+      "Music & Emotions",
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "c3jwzgshi7wx",
+     "word": "PARTY",
+     "hint": "Things to Do",
+     "sets": [
+      "Elections",
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "645o9utvi7wx",
+     "word": "MOVIE",
+     "hint": "Things to Do",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "sdu3mkf3i7wx",
+     "word": "PIANO",
+     "hint": "Things to Do",
+     "sets": [
+      "Music & Emotions",
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ixb1f900i7wx",
+     "word": "GAMES",
+     "hint": "Things to Do",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "zd2vui4ti7wx",
+     "word": "LUCKY",
+     "hint": "Feelings",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "68mpoja5ibdr",
+     "word": "ACORN",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "tuc1umdnibdr",
+     "word": "PECAN",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "5ervyy83ibdr",
+     "word": "FEAST",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "cn82ooa4ibdr",
+     "word": "SCARF",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "b38k6r2kibdr",
+     "word": "SNACK",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "79mcmv08ibdr",
+     "word": "THANK",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
      ]
     }
    ],
@@ -9166,7 +9837,8 @@ window.GS_MY_CONTENT = {
      "word": "a guitar",
      "level": "easy",
      "sets": [
-      "Music & Emotions"
+      "Music & Emotions",
+      "November Game Day"
      ]
     },
     {
@@ -9334,7 +10006,8 @@ window.GS_MY_CONTENT = {
      "word": "a tree",
      "level": "easy",
      "sets": [
-      "Mindfulness"
+      "Mindfulness",
+      "November Game Day"
      ]
     },
     {
@@ -9350,7 +10023,8 @@ window.GS_MY_CONTENT = {
      "word": "a candle",
      "level": "easy",
      "sets": [
-      "Mindfulness"
+      "Mindfulness",
+      "November Game Day"
      ]
     },
     {
@@ -9815,6 +10489,390 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "cfp4tkbci7x5",
+     "word": "taking a selfie",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "cfek8r0li96i",
+     "word": "a turkey",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gun54dssi96i",
+     "word": "a pumpkin",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "trta9skoi96i",
+     "word": "a leaf",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "qlyrfz0ui96i",
+     "word": "a pie",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "iropeuehi96i",
+     "word": "an acorn",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "0dn0s5c7i96i",
+     "word": "a football",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ro4xjqhni96i",
+     "word": "a sun",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "zhm6s0zki96i",
+     "word": "a house",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "wz7z2ihti96i",
+     "word": "a cat",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "okhix3ibi96i",
+     "word": "a fish",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "e92hthszi96i",
+     "word": "a car",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ngubrlehi96i",
+     "word": "a snowman",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "xtshxw7hi96i",
+     "word": "a pizza",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "z6fofmyzi96i",
+     "word": "an apple",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "pt9p5qtqi96i",
+     "word": "a hat",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "zuazfreei96i",
+     "word": "a moon",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "6z19fyqmi96i",
+     "word": "a boat",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "b2ltyj3wi96i",
+     "word": "a bicycle",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "to1lbxnhi96i",
+     "word": "an umbrella",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "0u25zuwvi96i",
+     "word": "a rocket",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "va4smleyi96i",
+     "word": "a butterfly",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "281mu1g7i96i",
+     "word": "a scarecrow",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "5lunh2dci96i",
+     "word": "an ice cream cone",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "drkc80xei96i",
+     "word": "carving a turkey",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "v6kd1y21i96i",
+     "word": "raking leaves",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "2mmq0qqsi96i",
+     "word": "a parade balloon",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "zfq8rmyei96i",
+     "word": "watching a movie",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ehgijfw7i96i",
+     "word": "a cornucopia",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "fbsswnwqi96i",
+     "word": "eating too much",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "i2h6ah40i96i",
+     "word": "a football touchdown",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gakm25oti96i",
+     "word": "a pilgrim hat",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "kgxpgttgi96i",
+     "word": "popcorn at the movies",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "un0rx8wxi96i",
+     "word": "a traffic jam",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ht9qu47yi96i",
+     "word": "a roller coaster",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "mi4d64kri96i",
+     "word": "brushing your teeth",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ijt1xr6zi96i",
+     "word": "a campfire",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "w6n9wczwi96i",
+     "word": "a fishing trip",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gleju74wi96i",
+     "word": "a birthday party",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ydp538mqi96i",
+     "word": "a snowball fight",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ihbyx927i96i",
+     "word": "a sleepy bear",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "17yi4z05i96i",
+     "word": "building a sandcastle",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "l4bl5828i96i",
+     "word": "a lighthouse in a storm",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "78osxmp9i96i",
+     "word": "a dog chasing its tail",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "eie1eh6ci96i",
+     "word": "a superhero flying",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "7mjs83wmi96i",
+     "word": "a chef cooking",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "bq4n7sdhi96i",
+     "word": "a giraffe eating leaves",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "eo8qa8syi96i",
+     "word": "a family photo",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
      ]
     }
    ],
@@ -14018,6 +15076,456 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Social Media & Mental Health"
      ]
+    },
+    {
+     "id": "64kbxq5pi7wl",
+     "question": "Who painted the Mona Lisa?",
+     "answer": "Leonardo da Vinci",
+     "wrong": [
+      "Michelangelo",
+      "Raphael",
+      "Vincent van Gogh"
+     ],
+     "category": "Arts",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "royqdepri7wl",
+     "question": "Which instrument has 88 keys?",
+     "answer": "Piano",
+     "wrong": [
+      "Organ",
+      "Accordion",
+      "Harpsichord"
+     ],
+     "category": "Arts",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "osolsxvai7wl",
+     "question": "How many sides does a hexagon have?",
+     "answer": "6",
+     "wrong": [
+      "5",
+      "7",
+      "8"
+     ],
+     "category": "Math",
+     "time": 15,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "2nrf7rgpi7wp",
+     "question": "How many legs does a spider have?",
+     "answer": "8",
+     "wrong": [
+      "6",
+      "10",
+      "12"
+     ],
+     "category": "Animals & Nature",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "deenlvlsi7x4",
+     "question": "What is the largest ocean on Earth?",
+     "answer": "Pacific",
+     "wrong": [
+      "Atlantic",
+      "Indian",
+      "Arctic"
+     ],
+     "category": "Geography",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "nark4lfsi7x4",
+     "question": "What is the capital of Pennsylvania?",
+     "answer": "Harrisburg",
+     "wrong": [
+      "Philadelphia",
+      "Pittsburgh",
+      "Scranton"
+     ],
+     "category": "Geography",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "0ly5qruvi7x4",
+     "question": "How many continents are there?",
+     "answer": "7",
+     "wrong": [
+      "5",
+      "6",
+      "8"
+     ],
+     "category": "Geography",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "hk2voop9iau9",
+     "question": "Which holiday is celebrated on the fourth Thursday of November in the U.S.?",
+     "answer": "Thanksgiving",
+     "wrong": [
+      "Veterans Day",
+      "Labor Day",
+      "Memorial Day"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "95jhpl9liau9",
+     "question": "What is November's birthstone?",
+     "answer": "Topaz",
+     "wrong": [
+      "Ruby",
+      "Emerald",
+      "Opal"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "hffpe8ppiau9",
+     "question": "How many days are in November?",
+     "answer": "30",
+     "wrong": [
+      "31",
+      "28",
+      "29"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "6fa509nuiau9",
+     "question": "Veterans Day on November 11 honors whom?",
+     "answer": "People who served in the military",
+     "wrong": [
+      "Teachers",
+      "Farmers",
+      "Presidents"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "yp2y71s4iau9",
+     "question": "In which month does Daylight Saving Time end in the U.S.?",
+     "answer": "November",
+     "wrong": [
+      "October",
+      "December",
+      "March"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "5iu2u0rjiau9",
+     "question": "The Pilgrims sailed to America on which ship?",
+     "answer": "The Mayflower",
+     "wrong": [
+      "The Titanic",
+      "The Santa Maria",
+      "The Mayflower II"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "2rpc0eysiau9",
+     "question": "In what year did the Mayflower land in America?",
+     "answer": "1620",
+     "wrong": [
+      "1492",
+      "1776",
+      "1812"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "vjwwn7c3iau9",
+     "question": "Which bird is the star of most Thanksgiving dinners?",
+     "answer": "Turkey",
+     "wrong": [
+      "Chicken",
+      "Duck",
+      "Goose"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "p7y6dme2iau9",
+     "question": "Pittsburgh is nicknamed the City of what?",
+     "answer": "Bridges",
+     "wrong": [
+      "Angels",
+      "Lights",
+      "Lakes"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ew87ohziiau9",
+     "question": "Which planet is known as the Red Planet?",
+     "answer": "Mars",
+     "wrong": [
+      "Venus",
+      "Jupiter",
+      "Saturn"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "dvq6jv18iau9",
+     "question": "What is the largest planet in our solar system?",
+     "answer": "Jupiter",
+     "wrong": [
+      "Earth",
+      "Saturn",
+      "Neptune"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "fhp954bqiau9",
+     "question": "Which planet is famous for its rings?",
+     "answer": "Saturn",
+     "wrong": [
+      "Mars",
+      "Mercury",
+      "Venus"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "l3714d0yiau9",
+     "question": "What is the smallest U.S. state?",
+     "answer": "Rhode Island",
+     "wrong": [
+      "Delaware",
+      "Connecticut",
+      "Vermont"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "xolv3x13iau9",
+     "question": "Which U.S. state is known as the Sunshine State?",
+     "answer": "Florida",
+     "wrong": [
+      "California",
+      "Arizona",
+      "Hawaii"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "rr4fpzz3iau9",
+     "question": "What is the fastest land animal?",
+     "answer": "Cheetah",
+     "wrong": [
+      "Lion",
+      "Horse",
+      "Greyhound"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "t0cqvpmgiau9",
+     "question": "What is the tallest animal in the world?",
+     "answer": "Giraffe",
+     "wrong": [
+      "Elephant",
+      "Camel",
+      "Moose"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "0w86rj4xiau9",
+     "question": "What do bees make?",
+     "answer": "Honey",
+     "wrong": [
+      "Milk",
+      "Silk",
+      "Wax only"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "cwy8dqybiau9",
+     "question": "What color do you get when you mix blue and yellow?",
+     "answer": "Green",
+     "wrong": [
+      "Purple",
+      "Orange",
+      "Brown"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "o740nf6viau9",
+     "question": "At what temperature does water freeze in Fahrenheit?",
+     "answer": "32 degrees",
+     "wrong": [
+      "0 degrees",
+      "100 degrees",
+      "212 degrees"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "qn6rb4oliau9",
+     "question": "How many players does a baseball team have on the field?",
+     "answer": "9",
+     "wrong": [
+      "11",
+      "5",
+      "7"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "f9oqem9biau9",
+     "question": "How many minutes are in one day?",
+     "answer": "1,440",
+     "wrong": [
+      "1,000",
+      "720",
+      "2,400"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "mfhx6cuciau9",
+     "question": "Which sport is a Thanksgiving Day TV tradition?",
+     "answer": "Football",
+     "wrong": [
+      "Baseball",
+      "Hockey",
+      "Golf"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "mu38e26diau9",
+     "question": "Which orange squash is used to make a classic November pie?",
+     "answer": "Pumpkin",
+     "wrong": [
+      "Zucchini",
+      "Cucumber",
+      "Eggplant"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
     }
    ]
   },
@@ -14999,6 +16507,80 @@ window.GS_MY_CONTENT = {
       {
        "word": "unfollow",
        "clue": "Remove an account from your feed"
+      }
+     ]
+    },
+    {
+     "id": "fcpxstwwic05",
+     "title": "November Game Day",
+     "entries": [
+      {
+       "word": "thanksgiving",
+       "clue": "The fourth Thursday in November"
+      },
+      {
+       "word": "turkey",
+       "clue": "The bird on most holiday tables"
+      },
+      {
+       "word": "pumpkin",
+       "clue": "Orange squash in a classic pie"
+      },
+      {
+       "word": "november",
+       "clue": "The eleventh month"
+      },
+      {
+       "word": "cranberry",
+       "clue": "A tart red berry, often made into sauce"
+      },
+      {
+       "word": "mayflower",
+       "clue": "The Pilgrims' ship"
+      },
+      {
+       "word": "harvest",
+       "clue": "Gathering crops in the fall"
+      },
+      {
+       "word": "acorn",
+       "clue": "A small nut from an oak tree"
+      },
+      {
+       "word": "scarecrow",
+       "clue": "It stands in a field to keep birds away"
+      },
+      {
+       "word": "pittsburgh",
+       "clue": "The City of Bridges"
+      },
+      {
+       "word": "jupiter",
+       "clue": "The largest planet"
+      },
+      {
+       "word": "cheetah",
+       "clue": "The fastest land animal"
+      },
+      {
+       "word": "popcorn",
+       "clue": "A classic movie snack"
+      },
+      {
+       "word": "parade",
+       "clue": "Floats and balloons march in one"
+      },
+      {
+       "word": "giraffe",
+       "clue": "The tallest animal"
+      },
+      {
+       "word": "football",
+       "clue": "A Thanksgiving Day TV tradition"
+      },
+      {
+       "word": "gratitude",
+       "clue": "Feeling thankful"
       }
      ]
     }
@@ -17203,6 +18785,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The key question: is my use serving my recovery or doing this",
      "answer": "Working against it"
+    },
+    {
+     "id": "9c3tkm8xicqa",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 100,
+     "clue": "The holiday on the fourth Thursday of November",
+     "answer": "Thanksgiving"
+    },
+    {
+     "id": "4otrm33licqa",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 200,
+     "clue": "The November 11 holiday that honors those who served",
+     "answer": "Veterans Day"
+    },
+    {
+     "id": "96yk83gkicqa",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 300,
+     "clue": "November's birthstone",
+     "answer": "Topaz"
+    },
+    {
+     "id": "jpfso6f3icqa",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 400,
+     "clue": "The number of days in November",
+     "answer": "30"
+    },
+    {
+     "id": "1ax9k8tmicqa",
+     "board": "November Game Day",
+     "category": "November Things",
+     "value": 500,
+     "clue": "The ship that carried the Pilgrims in 1620",
+     "answer": "The Mayflower"
+    },
+    {
+     "id": "5ni4gyvgicqa",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 100,
+     "clue": "The yellow cartoon family from Springfield",
+     "answer": "The Simpsons"
+    },
+    {
+     "id": "2pmzh6y2icqa",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 200,
+     "clue": "The cowboy toy in Toy Story",
+     "answer": "Woody"
+    },
+    {
+     "id": "xabcimyficqa",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 300,
+     "clue": "In this movie, \"Life is like a box of chocolates\"",
+     "answer": "Forrest Gump"
+    },
+    {
+     "id": "p5qukg3ricqa",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 400,
+     "clue": "The 1939 movie with a yellow brick road",
+     "answer": "The Wizard of Oz"
+    },
+    {
+     "id": "d89ynsi1icqa",
+     "board": "November Game Day",
+     "category": "Movies and TV",
+     "value": 500,
+     "clue": "The 1993 movie where dinosaurs are brought back to life",
+     "answer": "Jurassic Park"
+    },
+    {
+     "id": "q3inzqfjicqa",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 100,
+     "clue": "The \"king of the jungle\"",
+     "answer": "The lion"
+    },
+    {
+     "id": "rbdgbcliicqa",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 200,
+     "clue": "A baby kangaroo",
+     "answer": "A joey"
+    },
+    {
+     "id": "68j2ovw7icqa",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 300,
+     "clue": "The only mammal that can truly fly",
+     "answer": "The bat"
+    },
+    {
+     "id": "mdxzuo46icqa",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 400,
+     "clue": "A group of crows is called this",
+     "answer": "A murder"
+    },
+    {
+     "id": "r6lc3kelicqa",
+     "board": "November Game Day",
+     "category": "Animal Kingdom",
+     "value": 500,
+     "clue": "The number of hearts an octopus has",
+     "answer": "3"
+    },
+    {
+     "id": "pxm7b8whicqa",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 100,
+     "clue": "The pie made from an orange squash",
+     "answer": "Pumpkin pie"
+    },
+    {
+     "id": "5o9b4yagicqa",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 200,
+     "clue": "The main ingredient in guacamole",
+     "answer": "Avocado"
+    },
+    {
+     "id": "jbesemb1icqa",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 300,
+     "clue": "The country pizza comes from",
+     "answer": "Italy"
+    },
+    {
+     "id": "grqcwb6eicqa",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 400,
+     "clue": "Cranberries grow in these wet fields",
+     "answer": "Bogs"
+    },
+    {
+     "id": "ceqelslmicqa",
+     "board": "November Game Day",
+     "category": "Food Favorites",
+     "value": 500,
+     "clue": "The most popular pizza topping in America",
+     "answer": "Pepperoni"
+    },
+    {
+     "id": "1h7593gqicqa",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 100,
+     "clue": "Pennsylvania's capital city",
+     "answer": "Harrisburg"
+    },
+    {
+     "id": "hbup4oypicqa",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 200,
+     "clue": "The famous groundhog from Punxsutawney",
+     "answer": "Phil"
+    },
+    {
+     "id": "w6ja4ggzicqa",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 300,
+     "clue": "Pittsburgh's three rivers: the Allegheny, the Monongahela and this",
+     "answer": "The Ohio"
+    },
+    {
+     "id": "bxomeszzicqa",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 400,
+     "clue": "Pennsylvania's state nickname",
+     "answer": "The Keystone State"
+    },
+    {
+     "id": "n1w4xzjjicqa",
+     "board": "November Game Day",
+     "category": "Pennsylvania Pride",
+     "value": 500,
+     "clue": "This famous cracked bell is in Philadelphia",
+     "answer": "The Liberty Bell"
     }
    ],
    "wheel": [
@@ -18745,6 +20527,206 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Social Media & Mental Health"
      ]
+    },
+    {
+     "id": "vl678tt6id9p",
+     "category": "Phrase",
+     "phrase": "GIVE THANKS",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "najyklg1id9p",
+     "category": "Phrase",
+     "phrase": "LET THE GAMES BEGIN",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ummajxocid9p",
+     "category": "Phrase",
+     "phrase": "MAY THE BEST TEAM WIN",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "i3n0odcjid9p",
+     "category": "Phrase",
+     "phrase": "LIGHTS CAMERA ACTION",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "isx721jxid9p",
+     "category": "Phrase",
+     "phrase": "GOBBLE GOBBLE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "6stlk5viid9p",
+     "category": "Phrase",
+     "phrase": "TIME FOR DESSERT",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "e0e9qq2bid9p",
+     "category": "Phrase",
+     "phrase": "THANK YOU FOR PLAYING",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "olgu6zv5id9p",
+     "category": "Thing",
+     "phrase": "PUMPKIN PIE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "isxc67i1id9p",
+     "category": "Thing",
+     "phrase": "MASHED POTATOES",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "hzzahd5uid9p",
+     "category": "Thing",
+     "phrase": "CRANBERRY SAUCE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ix6fawsbid9p",
+     "category": "Thing",
+     "phrase": "FALLING LEAVES",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gfsfbch2id9p",
+     "category": "Thing",
+     "phrase": "A COZY SWEATER",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "z2s5x1n5id9p",
+     "category": "Thing",
+     "phrase": "HOT APPLE CIDER",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "xivvsgsiid9p",
+     "category": "Thing",
+     "phrase": "A WISHBONE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "boqixt80id9p",
+     "category": "Thing",
+     "phrase": "POPCORN AND A MOVIE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "o6an9k4oid9p",
+     "category": "Place",
+     "phrase": "STATUE OF LIBERTY",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "1fk746twid9p",
+     "category": "Place",
+     "phrase": "GRAND CANYON",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "0l8m0lpfid9p",
+     "category": "Place",
+     "phrase": "NIAGARA FALLS",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "qdyscduhid9p",
+     "category": "Place",
+     "phrase": "THE LIBERTY BELL",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "btj7jtmfid9p",
+     "category": "Place",
+     "phrase": "PITTSBURGH PENNSYLVANIA",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "3ocrnl1vid9p",
+     "category": "Event",
+     "phrase": "THANKSGIVING DINNER",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ku0he0mtid9p",
+     "category": "Event",
+     "phrase": "MOVIE NIGHT",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "jksnouvzid9p",
+     "category": "Event",
+     "phrase": "A FOOTBALL GAME",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "keisq55eid9p",
+     "category": "Event",
+     "phrase": "A PARADE",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "setmp0m2id9p",
+     "category": "Event",
+     "phrase": "RAKING THE LEAVES",
+     "sets": [
+      "November Game Day"
+     ]
     }
    ],
    "words": [
@@ -19006,7 +20988,8 @@ window.GS_MY_CONTENT = {
      "word": "PARTY",
      "hint": "Elections",
      "sets": [
-      "Elections"
+      "Elections",
+      "November Game Day"
      ]
     },
     {
@@ -19530,7 +21513,8 @@ window.GS_MY_CONTENT = {
      "word": "PIANO",
      "hint": "Music & Emotions",
      "sets": [
-      "Music & Emotions"
+      "Music & Emotions",
+      "November Game Day"
      ]
     },
     {
@@ -20010,6 +21994,191 @@ window.GS_MY_CONTENT = {
      "hint": "Social Media & Mental Health",
      "sets": [
       "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "t4w9cqqai7x4",
+     "word": "MUSIC",
+     "hint": "Self-care",
+     "sets": [
+      "Music & Emotions",
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "6xf6upnjiec7",
+     "word": "GRAVY",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "u1th2vaaiec7",
+     "word": "ACORN",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ao3z69bxiec7",
+     "word": "MAPLE",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "mina7dmuiec7",
+     "word": "PECAN",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "j6fgpd2oiec7",
+     "word": "FEAST",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "hkw104mqiec7",
+     "word": "BREAD",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "hvdi048siec7",
+     "word": "CRISP",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "jxnwtc3uiec7",
+     "word": "SCARF",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "4pwd7c1xiec7",
+     "word": "FROST",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "n3v93q3diec7",
+     "word": "MOVIE",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "etaxsanhiec7",
+     "word": "GAMES",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gl4l4u3miec7",
+     "word": "PIZZA",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ugmj8e3giec7",
+     "word": "CANDY",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "u1yml8s4iec7",
+     "word": "TIGER",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "oo4cqfd7iec7",
+     "word": "OCEAN",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ulhi1pnciec7",
+     "word": "LUCKY",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "yyhdpt5biec7",
+     "word": "SNACK",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "8s7lb5jdiec7",
+     "word": "APPLE",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "03epbjioiec7",
+     "word": "CLOUD",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "a6ft54c1iec7",
+     "word": "OTTER",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "yqnoermiiec7",
+     "word": "THANK",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "fky338wgiec7",
+     "word": "BEACH",
+     "hint": "November Game Day",
+     "sets": [
+      "November Game Day"
      ]
     }
    ],
@@ -20928,7 +23097,8 @@ window.GS_MY_CONTENT = {
      "word": "a guitar",
      "level": "easy",
      "sets": [
-      "Music & Emotions"
+      "Music & Emotions",
+      "November Game Day"
      ]
     },
     {
@@ -21096,7 +23266,8 @@ window.GS_MY_CONTENT = {
      "word": "a tree",
      "level": "easy",
      "sets": [
-      "Mindfulness"
+      "Mindfulness",
+      "November Game Day"
      ]
     },
     {
@@ -21112,7 +23283,8 @@ window.GS_MY_CONTENT = {
      "word": "a candle",
      "level": "easy",
      "sets": [
-      "Mindfulness"
+      "Mindfulness",
+      "November Game Day"
      ]
     },
     {
@@ -21586,6 +23758,390 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "2qwehe91ic7d",
+     "word": "a turkey",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ltld5nqeic7d",
+     "word": "a pumpkin",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "xlv2qzpkic7d",
+     "word": "a leaf",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "5uxnzvewic7d",
+     "word": "a pie",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "iok5vgkoic7d",
+     "word": "an acorn",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "1rcncsxwic7d",
+     "word": "a football",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "nntp5t62ic7d",
+     "word": "a sun",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "wky81vd9ic7d",
+     "word": "a house",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "dmxouqkdic7d",
+     "word": "a cat",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "47eita97ic7d",
+     "word": "a fish",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "iyfrurwpic7d",
+     "word": "a car",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "70u02y2qic7d",
+     "word": "a snowman",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "hcvneu2vic7d",
+     "word": "a pizza",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "s4ortw81ic7d",
+     "word": "an apple",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "bg433je0ic7d",
+     "word": "a hat",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "qr6yia26ic7d",
+     "word": "a moon",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "xfgvh6goic7d",
+     "word": "a boat",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "jihrxcoaic7d",
+     "word": "a bicycle",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "89dsxsegic7d",
+     "word": "an umbrella",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "1fl8nlrcic7d",
+     "word": "a rocket",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "nqfv2bvqic7d",
+     "word": "a butterfly",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "avytn41nic7d",
+     "word": "a scarecrow",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "r92q7hwnic7d",
+     "word": "an ice cream cone",
+     "level": "easy",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "z96sjlx9ic7d",
+     "word": "carving a turkey",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "fmggvs09ic7d",
+     "word": "raking leaves",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "mwojr267ic7d",
+     "word": "a parade balloon",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "kd81zz4gic7d",
+     "word": "watching a movie",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "cnvxh1nfic7d",
+     "word": "a cornucopia",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "eqj65tvaic7d",
+     "word": "eating too much",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "dp6pcqj5ic7d",
+     "word": "a football touchdown",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "nenjubpdic7d",
+     "word": "a pilgrim hat",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ijb429gdic7d",
+     "word": "popcorn at the movies",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "xrvbd12wic7d",
+     "word": "a traffic jam",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "3q8rtkkyic7d",
+     "word": "a roller coaster",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "l1kwmtc0ic7d",
+     "word": "brushing your teeth",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gbgc8jnhic7d",
+     "word": "a campfire",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "nd9ed6osic7d",
+     "word": "a fishing trip",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "9hsc8ykxic7d",
+     "word": "a birthday party",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "9lqedj5uic7d",
+     "word": "a snowball fight",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "al9xbuxkic7d",
+     "word": "a sleepy bear",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "xvnx71wvic7d",
+     "word": "building a sandcastle",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "qbqtcjt8ic7d",
+     "word": "a lighthouse in a storm",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "fplibrdaic7d",
+     "word": "a dog chasing its tail",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "oroz8vzoic7d",
+     "word": "a superhero flying",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "41aofuvxic7d",
+     "word": "taking a selfie",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ivmnv2vnic7d",
+     "word": "a chef cooking",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "oymwkk5gic7d",
+     "word": "a giraffe eating leaves",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "071wu26vic7d",
+     "word": "a family photo",
+     "level": "medium",
+     "sets": [
+      "November Game Day"
      ]
     }
    ],
@@ -24888,6 +27444,456 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "Social Media & Mental Health"
+     ]
+    },
+    {
+     "id": "hxeu7ba8idsp",
+     "question": "Which holiday is celebrated on the fourth Thursday of November in the U.S.?",
+     "answer": "Thanksgiving",
+     "wrong": [
+      "Veterans Day",
+      "Labor Day",
+      "Memorial Day"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ojmyze4zidsp",
+     "question": "What is November's birthstone?",
+     "answer": "Topaz",
+     "wrong": [
+      "Ruby",
+      "Emerald",
+      "Opal"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "8lj4nivcidsp",
+     "question": "How many days are in November?",
+     "answer": "30",
+     "wrong": [
+      "31",
+      "28",
+      "29"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "a36kyaehidsp",
+     "question": "Veterans Day on November 11 honors whom?",
+     "answer": "People who served in the military",
+     "wrong": [
+      "Teachers",
+      "Farmers",
+      "Presidents"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "34h6pq99idsp",
+     "question": "In which month does Daylight Saving Time end in the U.S.?",
+     "answer": "November",
+     "wrong": [
+      "October",
+      "December",
+      "March"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "8cazajtbidsp",
+     "question": "The Pilgrims sailed to America on which ship?",
+     "answer": "The Mayflower",
+     "wrong": [
+      "The Titanic",
+      "The Santa Maria",
+      "The Mayflower II"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ntgly72gidsp",
+     "question": "In what year did the Mayflower land in America?",
+     "answer": "1620",
+     "wrong": [
+      "1492",
+      "1776",
+      "1812"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "3mo0powxidsp",
+     "question": "Which bird is the star of most Thanksgiving dinners?",
+     "answer": "Turkey",
+     "wrong": [
+      "Chicken",
+      "Duck",
+      "Goose"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "l0bkqhg7idsp",
+     "question": "What is the capital of Pennsylvania?",
+     "answer": "Harrisburg",
+     "wrong": [
+      "Philadelphia",
+      "Pittsburgh",
+      "Erie"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "1ude2y4cidsp",
+     "question": "Pittsburgh is nicknamed the City of what?",
+     "answer": "Bridges",
+     "wrong": [
+      "Angels",
+      "Lights",
+      "Lakes"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "gy1l4mmnidsp",
+     "question": "Which planet is known as the Red Planet?",
+     "answer": "Mars",
+     "wrong": [
+      "Venus",
+      "Jupiter",
+      "Saturn"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "1bh9pyetidsp",
+     "question": "What is the largest planet in our solar system?",
+     "answer": "Jupiter",
+     "wrong": [
+      "Earth",
+      "Saturn",
+      "Neptune"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "n3tnbxfuidsp",
+     "question": "Which planet is famous for its rings?",
+     "answer": "Saturn",
+     "wrong": [
+      "Mars",
+      "Mercury",
+      "Venus"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "0ir7a41sidsp",
+     "question": "How many continents are there?",
+     "answer": "7",
+     "wrong": [
+      "5",
+      "6",
+      "8"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "7se5fp2xidsp",
+     "question": "What is the largest ocean on Earth?",
+     "answer": "Pacific",
+     "wrong": [
+      "Atlantic",
+      "Indian",
+      "Arctic"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "fmjgf47sidsp",
+     "question": "What is the smallest U.S. state?",
+     "answer": "Rhode Island",
+     "wrong": [
+      "Delaware",
+      "Connecticut",
+      "Vermont"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "kxdbqudridsp",
+     "question": "Which U.S. state is known as the Sunshine State?",
+     "answer": "Florida",
+     "wrong": [
+      "California",
+      "Arizona",
+      "Hawaii"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "kjh8nnd6idsp",
+     "question": "What is the fastest land animal?",
+     "answer": "Cheetah",
+     "wrong": [
+      "Lion",
+      "Horse",
+      "Greyhound"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "f0q3n4u9idsp",
+     "question": "What is the tallest animal in the world?",
+     "answer": "Giraffe",
+     "wrong": [
+      "Elephant",
+      "Camel",
+      "Moose"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "5m2pdmvpidsp",
+     "question": "How many legs does a spider have?",
+     "answer": "8",
+     "wrong": [
+      "6",
+      "10",
+      "4"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "zodc2735idsp",
+     "question": "What do bees make?",
+     "answer": "Honey",
+     "wrong": [
+      "Milk",
+      "Silk",
+      "Wax only"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "u0l5e0i0idsp",
+     "question": "What color do you get when you mix blue and yellow?",
+     "answer": "Green",
+     "wrong": [
+      "Purple",
+      "Orange",
+      "Brown"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "9rl7izolidsp",
+     "question": "Which instrument has 88 keys?",
+     "answer": "Piano",
+     "wrong": [
+      "Guitar",
+      "Violin",
+      "Drum"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "1g4wgmtvidsp",
+     "question": "Who painted the Mona Lisa?",
+     "answer": "Leonardo da Vinci",
+     "wrong": [
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Michelangelo"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "rnsvnxqwidsp",
+     "question": "How many sides does a hexagon have?",
+     "answer": "6",
+     "wrong": [
+      "5",
+      "7",
+      "8"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "zkr88ozzidsp",
+     "question": "At what temperature does water freeze in Fahrenheit?",
+     "answer": "32 degrees",
+     "wrong": [
+      "0 degrees",
+      "100 degrees",
+      "212 degrees"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "u0f2hy1gidsp",
+     "question": "How many players does a baseball team have on the field?",
+     "answer": "9",
+     "wrong": [
+      "11",
+      "5",
+      "7"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "ivrgaxz1idsp",
+     "question": "How many minutes are in one day?",
+     "answer": "1,440",
+     "wrong": [
+      "1,000",
+      "720",
+      "2,400"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "lpjct6cdidsp",
+     "question": "Which sport is a Thanksgiving Day TV tradition?",
+     "answer": "Football",
+     "wrong": [
+      "Baseball",
+      "Hockey",
+      "Golf"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
+     ]
+    },
+    {
+     "id": "pfuioagjidsp",
+     "question": "Which orange squash is used to make a classic November pie?",
+     "answer": "Pumpkin",
+     "wrong": [
+      "Zucchini",
+      "Cucumber",
+      "Eggplant"
+     ],
+     "category": "November Game Day",
+     "time": 20,
+     "sets": [
+      "November Game Day"
      ]
     }
    ]
