@@ -126,8 +126,15 @@ App.screens.drawPlay = (el, opts) => {
     const tick = () => {
       n--;
       if (n > 0) { look(); peekT = setTimeout(tick, 900); return; }
-      card(`<div class="dr-word">${esc(word.word)}</div><div class="dr-sub">Hiding in 4 seconds…</div>`);
-      peekT = setTimeout(() => { phase = back; back === 'draw' ? drawingCard() : ready2(); }, 4000);
+      let h = 4; // count down while the word shows
+      const showWord = () => card(`<div class="dr-word">${esc(word.word)}</div><div class="dr-sub">Hiding in ${h} second${h === 1 ? '' : 's'}…</div>`);
+      showWord();
+      const hide = () => {
+        h--;
+        if (h > 0) { showWord(); peekT = setTimeout(hide, 1000); return; }
+        phase = back; back === 'draw' ? drawingCard() : ready2();
+      };
+      peekT = setTimeout(hide, 1000);
     };
     peekT = setTimeout(tick, 900);
   }
