@@ -164,6 +164,7 @@ App.screens.drawPlay = (el, opts) => {
           <button class="btn green wb-got" id="dGot">✓ Got it!${teamsMode ? ` <small>+${fmt(DRAW_POINTS[word.level] || 100)}</small>` : ''}</button></div>
         <div class="wb-tr-row"><button class="wb-side" id="wbSkip" title="Swap in a new word">⏭ Skip word</button><button class="wb-side wb-stopbtn" id="wbStop" title="Stop this drawing">✋ Stop</button></div>
       </div>
+      <div class="wb-stop" id="wbSkipBox" hidden><div class="wb-stop-card" id="wbSkipCard"></div></div>
       <div class="wb-stop" id="wbStopBox" hidden><div class="wb-stop-card">
         <div class="dr-big">✋ Stopped</div>
         <div class="dr-sub">No points this round.</div>
@@ -219,7 +220,31 @@ App.screens.drawPlay = (el, opts) => {
     $('#wbUndo', el).onclick = () => { strokes.pop(); redraw(); };
     $('#wbClear', el).onclick = () => { strokes = []; redraw(); open(false); };
     $('#wbPeek', el).onclick = () => { open(false); peek(); };
-    $('#wbSkip', el).onclick = () => { open(false); skipWord(); };
+    // ⏭ Skip word: pause, new word, the artist peeks at it in a pop-up, then back to a clean board
+    const skipBox = $('#wbSkipBox', el), skipCard = $('#wbSkipCard', el);
+    const resume = () => { paused = false; $('#dBig', el)?.classList.remove('paused'); };
+    $('#wbSkip', el).onclick = () => {
+      if (phase !== 'draw') return;
+      open(false); paused = true; $('#dBig', el)?.classList.add('paused');
+      Played.mark(word); nextWord(); Sfx.click();
+      const pts = $('#dGot small', el); if (pts) pts.textContent = `+${fmt(DRAW_POINTS[word.level] || 100)}`;
+      strokes = []; redraw();
+      skipCard.innerHTML = `<div class="dr-big">⏭ New word</div>
+        <div class="dr-sub">Artist: tap <b>👀 Peek</b> to see your new word — everyone else, look away!</div>
+        <div class="wb-stop-btns"><button class="btn lg pink" id="wbSkipPeek">👀 Peek</button></div>`;
+      skipBox.hidden = false;
+      $('#wbSkipPeek', el).onclick = () => {
+        let n = 4;
+        const show = () => { skipCard.innerHTML = `<div class="dr-word">${esc(word.word)}</div><div class="dr-sub">Back to drawing in ${n}…</div>`; };
+        show();
+        const tick = () => {
+          n--;
+          if (n > 0) { show(); peekT = setTimeout(tick, 1000); return; }
+          skipBox.hidden = true; strokes = []; redraw(); resume();
+        };
+        peekT = setTimeout(tick, 1000);
+      };
+    };
     const stopBox = $('#wbStopBox', el);
     $('#wbStop', el).onclick = () => { if (phase !== 'draw') return; open(false); paused = true; $('#dBig', el)?.classList.add('paused'); stopBox.hidden = false; };
     $('#wbResume', el).onclick = () => { stopBox.hidden = true; paused = false; $('#dBig', el)?.classList.remove('paused'); };
