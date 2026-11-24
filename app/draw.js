@@ -226,14 +226,17 @@ App.screens.drawPlay = (el, opts) => {
     $('#wbSkip', el).onclick = () => {
       if (phase !== 'draw') return;
       open(false); paused = true; $('#dBig', el)?.classList.add('paused');
-      Played.mark(word); nextWord(); Sfx.click();
-      const pts = $('#dGot small', el); if (pts) pts.textContent = `+${fmt(DRAW_POINTS[word.level] || 100)}`;
-      strokes = []; redraw();
+      // nothing changes until Peek: ↩ Back returns to the same word and drawing
       skipCard.innerHTML = `<div class="dr-big">⏭ New word</div>
         <div class="dr-sub">Artist: tap <b>👀 Peek</b> to see your new word — everyone else, look away!</div>
-        <div class="wb-stop-btns"><button class="btn lg pink" id="wbSkipPeek">👀 Peek</button></div>`;
+        <div class="wb-stop-btns"><button class="btn lg pink" id="wbSkipPeek">👀 Peek</button>
+        <button class="btn ghost" id="wbSkipBack">↩ Back to drawing</button></div>`;
       skipBox.hidden = false;
+      $('#wbSkipBack', el).onclick = () => { skipBox.hidden = true; resume(); };
       $('#wbSkipPeek', el).onclick = () => {
+        Played.mark(word); nextWord(); Sfx.click();
+        const pts = $('#dGot small', el); if (pts) pts.textContent = `+${fmt(DRAW_POINTS[word.level] || 100)}`;
+        strokes = []; redraw();
         let n = 4;
         const show = () => { skipCard.innerHTML = `<div class="dr-word">${esc(word.word)}</div><div class="dr-sub">Back to drawing in ${n}…</div>`; };
         show();
