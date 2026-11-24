@@ -52,6 +52,8 @@ App.screens.drawPlay = (el, opts) => {
   App.inGame = teamsMode; // the scoreboard only shows when teams are playing for points
   let deck = Played.order(GameFiles.pick('draw').filter(w => opts.level === 'mix' || w.level === opts.level));
   let wi = -1, word, turn = 0, turnsDone = 0, phase, timerId, left, paused = false, peekT;
+  // on-screen whiteboard: strokes are kept (in 0..1 board coordinates) so the drawing survives a Peek or a resize
+  let strokes = [], pen = { color: '#111111', size: 6, erase: false }, boardRO = null;
   // opts.rounds = how many drawings in the game. Whoever guesses a drawing draws the next one.
   const totalTurns = teamsMode ? opts.rounds : Infinity;
   const multi = teamsMode && teams.length > 1;
@@ -82,7 +84,7 @@ App.screens.drawPlay = (el, opts) => {
       <div class="wh-actions dr-actions" id="dActs"></div>
     </div>`;
 
-  const card = html => { $('#dCard', el).innerHTML = html; };
+  const card = html => { if (!/class="wb"/.test(html)) boardOff(); $('#dCard', el).innerHTML = html; };
   const msg = html => { $('#dMsg', el).innerHTML = html; };
   const acts = (html, hs = {}) => { $('#dActs', el).innerHTML = html; Object.entries(hs).forEach(([id, fn]) => { const b = $('#' + id, el); if (b) b.onclick = fn; }); };
   const stop = () => { clearInterval(timerId); clearTimeout(peekT); };
@@ -133,14 +135,70 @@ App.screens.drawPlay = (el, opts) => {
     card(`<div class="dr-ready">${teamsMode ? `<span class="dr-team" style="--tc:${team().color}">${esc(team().name)}</span>` : ''}
       <div class="dr-big">Got it? Start drawing! ✏️</div><div class="dr-sub">Tap <b>👀 Peek</b> again if you need another look.</div></div>`);
   }
+  const COLORS = [['#111111', 'Black'], ['#e53935', 'Red'], ['#1e63d6', 'Blue'], ['#2e9d4a', 'Green'], ['#f28c18', 'Orange'], ['#8e44c9', 'Purple'], ['#8b5a2b', 'Brown']];
+  const SIZES = [[3, 'Thin'], [6, 'Medium'], [12, 'Thick']];
   function drawingCard() {
-    card(`<div class="dr-ready">${opts.time ? `<div class="dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}<div class="dr-big">✏️ Draw!</div><div class="dr-sub">${teamsMode ? `<b>${esc(team().name)}</b>, shout out your guesses!` : 'Everyone — shout out your guesses!'}</div></div>`);
+    $('#dCard', el).classList.add('wb-on'); el.querySelector('.dr').classList.add('wb-mode');
+    card(`<div class="wb">
+      <div class="wb-tools">
+        <div class="wb-group">${COLORS.map(([c, n]) => `<button class="wb-color${!pen.erase && pen.color === c ? ' on' : ''}" data-c="${c}" style="--c:${c}" title="${n}" aria-label="${n} pen"></button>`).join('')}</div>
+        <div class="wb-group">${SIZES.map(([z, n]) => `<button class="wb-size${!pen.erase && pen.size === z ? ' on' : ''}" data-z="${z}" title="${n} pen" aria-label="${n} pen"><i style="--z:${z + 4}px"></i></button>`).join('')}</div>
+        <div class="wb-group">
+          <button class="wb-btn${pen.erase ? ' on' : ''}" id="wbErase" title="Eraser">🧽 Eraser</button>
+          <button class="wb-btn" id="wbUndo" title="Undo the last line">↶ Undo</button>
+          <button class="wb-btn" id="wbClear" title="Clear the whole board">🗑 Clear</button>
+        </div>
+        ${opts.time ? `<div class="wb-clock dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}
+      </div>
+      <div class="wb-board"><canvas id="wbCanvas" aria-label="Drawing board"></canvas></div>
+    </div>`);
+    setupBoard();
   }
+  function setupBoard() {
+    const cv = $('#wbCanvas', el), box = cv.parentElement, g = cv.getContext('2d');
+    const fit = () => {
+      const r = box.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+      if (!r.width || !r.height) return;
+      cv.width = Math.round(r.width * dpr); cv.height = Math.round(r.height * dpr);
+      redraw();
+    };
+    const line = (st, from) => {
+      const W = cv.width, H = cv.height, k = W / 1000; // pen sizes scale with the board
+      g.strokeStyle = st.erase ? '#ffffff' : st.color; g.lineWidth = (st.erase ? st.size * 3 : st.size) * k;
+      g.lineCap = g.lineJoin = 'round';
+      const p = st.pts;
+      if (p.length === 1) { g.fillStyle = g.strokeStyle; g.beginPath(); g.arc(p[0][0] * W, p[0][1] * H, g.lineWidth / 2, 0, 7); g.fill(); return; }
+      g.beginPath(); const a = Math.max(0, from - 1); g.moveTo(p[a][0] * W, p[a][1] * H);
+      for (let i = a + 1; i < p.length; i++) g.lineTo(p[i][0] * W, p[i][1] * H);
+      g.stroke();
+    };
+    function redraw() { g.fillStyle = '#ffffff'; g.fillRect(0, 0, cv.width, cv.height); strokes.forEach(st => line(st, 0)); }
+    const pos = e => { const r = cv.getBoundingClientRect(); return [(e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height]; };
+    let cur = null;
+    cv.onpointerdown = e => {
+      if (phase !== 'draw') return;
+      e.preventDefault(); cv.setPointerCapture(e.pointerId);
+      cur = { color: pen.color, size: pen.size, erase: pen.erase, pts: [pos(e)] }; strokes.push(cur); line(cur, 0);
+    };
+    cv.onpointermove = e => { if (!cur) return; e.preventDefault(); cur.pts.push(pos(e)); line(cur, cur.pts.length - 1); };
+    cv.onpointerup = cv.onpointercancel = () => { cur = null; };
+    const pick = (fn) => { fn(); $$('.wb-color', el).forEach(b => b.classList.toggle('on', !pen.erase && b.dataset.c === pen.color));
+      $$('.wb-size', el).forEach(b => b.classList.toggle('on', !pen.erase && +b.dataset.z === pen.size)); $('#wbErase', el).classList.toggle('on', pen.erase); };
+    $$('.wb-color', el).forEach(b => b.onclick = () => pick(() => { pen.color = b.dataset.c; pen.erase = false; }));
+    $$('.wb-size', el).forEach(b => b.onclick = () => pick(() => { pen.size = +b.dataset.z; pen.erase = false; }));
+    $('#wbErase', el).onclick = () => pick(() => { pen.erase = !pen.erase; });
+    $('#wbUndo', el).onclick = () => { strokes.pop(); redraw(); };
+    $('#wbClear', el).onclick = () => { if (!strokes.length) return; strokes = []; redraw(); };
+    boardRO?.disconnect(); boardRO = new ResizeObserver(fit); boardRO.observe(box);
+    fit();
+  }
+  function boardOff() { boardRO?.disconnect(); boardRO = null; $('#dCard', el)?.classList.remove('wb-on'); el.querySelector('.dr')?.classList.remove('wb-mode'); }
 
   // 2. the clock runs while they draw and guess
   function startDrawing() {
     if (phase !== 'ready') return;
     phase = 'draw'; paused = false; left = opts.time;
+    strokes = []; pen = { color: '#111111', size: 6, erase: false };
     drawingCard(); msg('');
     acts(`<button class="btn lg green" id="dGot">✓ Got it!${teamsMode ? ` <small>+${fmt(DRAW_POINTS[word.level] || 100)}</small>` : ''}</button>
       ${opts.time ? '' : `<button class="btn lg red" id="dStop">✋ Stop${teamsMode ? ' — steal!' : ''}</button>`}
@@ -172,6 +230,7 @@ App.screens.drawPlay = (el, opts) => {
     Sfx.click();
     toast('New word — tap 👀 Peek to see it');
     if (phase === 'ready') ready2();
+    else if (phase === 'draw') { strokes = []; drawingCard(); }
   }
   // Got it! — which team guessed it? They get the points and draw next.
   function whoGuessed() {
@@ -229,5 +288,5 @@ App.screens.drawPlay = (el, opts) => {
   };
   document.addEventListener('keydown', onKey);
   ready();
-  return () => { stop(); document.removeEventListener('keydown', onKey); Scores.setActive(null); };
+  return () => { stop(); boardOff(); document.removeEventListener('keydown', onKey); Scores.setActive(null); };
 };

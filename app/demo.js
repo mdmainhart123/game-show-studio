@@ -325,7 +325,7 @@ const Demo = {
       App.show('drawSetup');
       await this.say('🎨 <b>Draw It</b> — one person draws, their team guesses. Pick the word level and the time, then Start.', 3800);
       App.show('drawPlay', { mode: 'teams', level: 'mix', time: 60, rounds: 5 });
-      await this.say('The highlighted team picks an <b>artist</b>. Grab a whiteboard, paper or easel!', 3400);
+      await this.say('The highlighted team picks an <b>artist</b>. They draw right on the screen, or on a whiteboard or paper!', 3400);
       await this.say('The artist taps <b>👀 Peek</b> to see the secret word while everyone else looks away.', 4200);
       await this.tap('#dPeek');
       await this.wait(7200);

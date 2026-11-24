@@ -1691,3 +1691,22 @@ body.theme-recovery .cw-opts { background: #1f4c49; } body.theme-classic .cw-opt
 .bq-skip { display: flex; justify-content: center; margin-top: 10px; }
 .bq-skip .btn { font-size: 1.05rem; padding: 10px 22px; }
 .bq-skip .btn small { opacity: .75; margin-left: 6px; font-size: .8em; }
+/* Draw It: on-screen whiteboard */
+.dr.wb-mode .dr-top { height: auto; min-height: 36px; }
+.dr.wb-mode .dr-msg:empty { display: none; }
+.dr-card.wb-on { padding: 10px; align-items: stretch; justify-content: stretch; }
+.wb { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 8px; width: 100%; }
+.wb-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 14px; }
+.wb-group { display: flex; gap: 6px; align-items: center; background: rgba(255,255,255,.08); border-radius: 14px; padding: 5px; }
+.wb-color { width: 42px; height: 42px; border-radius: 50%; border: 3px solid rgba(255,255,255,.35); background: var(--c); cursor: pointer; padding: 0; }
+.wb-color.on { border-color: #fff; box-shadow: 0 0 0 3px var(--yellow, #ffd23f); transform: scale(1.08); }
+.wb-size { width: 44px; height: 42px; border-radius: 10px; border: 2px solid transparent; background: rgba(255,255,255,.12); cursor: pointer; display: grid; place-items: center; padding: 0; }
+.wb-size i { display: block; width: var(--z); height: var(--z); border-radius: 50%; background: #fff; }
+.wb-size.on, .wb-btn.on { border-color: var(--yellow, #ffd23f); background: rgba(255,210,63,.22); }
+.wb-btn { height: 42px; padding: 0 14px; border-radius: 10px; border: 2px solid transparent; background: rgba(255,255,255,.12); color: inherit; font: inherit; font-size: 17px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.wb-btn:hover, .wb-size:hover { background: rgba(255,255,255,.2); }
+.wb-clock.dr-clock { font-size: 38px; min-width: 76px; text-align: center; padding: 0 12px; border-radius: 14px; background: rgba(0,0,0,.3); line-height: 52px; }
+.wb-clock.dr-clock.paused::after { font-size: .5em; }
+.wb-board { flex: 1; min-height: 160px; position: relative; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: inset 0 0 0 3px rgba(0,0,0,.12), 0 4px 18px rgba(0,0,0,.35); }
+.wb-board canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: crosshair; display: block; }
+@media (max-width: 760px) { .wb-color { width: 34px; height: 34px; } .wb-size { width: 36px; height: 34px; } .wb-btn { height: 34px; padding: 0 8px; font-size: 14px; } .wb-clock.dr-clock { font-size: 28px; line-height: 40px; min-width: 56px; } }
