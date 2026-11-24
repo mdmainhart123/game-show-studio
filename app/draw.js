@@ -141,7 +141,7 @@ App.screens.drawPlay = (el, opts) => {
     $('#dCard', el).classList.add('wb-on'); el.querySelector('.dr').classList.add('wb-mode'); document.body.classList.add('wb-drawing');
     card(`<div class="wb"><div class="wb-board"><canvas id="wbCanvas" aria-label="Drawing board"></canvas>
       <div class="wb-float wb-tl">
-        <button class="wb-menu-btn" id="wbMenuBtn" aria-haspopup="true" aria-expanded="false"><span class="wb-cur" id="wbCur"></span> Tools ▾</button>
+        <button class="wb-menu-btn" id="wbMenuBtn" aria-haspopup="true" aria-expanded="false"><span class="wb-cur" id="wbCur"></span> Options ▾</button>
         <div class="wb-menu" id="wbMenu" hidden>
           <div class="wb-label">Color</div>
           <div class="wb-group">${COLORS.map(([c, n]) => `<button class="wb-color" data-c="${c}" style="--c:${c}" title="${n}" aria-label="${n} pen"></button>`).join('')}</div>
@@ -152,9 +152,16 @@ App.screens.drawPlay = (el, opts) => {
             <button class="wb-btn" id="wbUndo" title="Undo the last line">↶ Undo</button>
             <button class="wb-btn" id="wbClear" title="Clear the whole board">🗑 Clear</button>
           </div>
+          <div class="wb-label">Word</div>
+          <div class="wb-group">
+            <button class="wb-btn" id="wbPeek" title="Show the word to the artist again">👀 Peek</button>
+            <button class="wb-btn" id="wbSkip" title="Swap in a new word">⏭ Skip word</button>
+            <button class="wb-btn" id="wbEnd" title="End this drawing with no points and show the word">✋ Show the word</button>
+          </div>
         </div>
       </div>
-      ${opts.time ? `<div class="wb-float wb-tr wb-clock dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}
+      <div class="wb-float wb-tr">${opts.time ? `<div class="wb-clock dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}
+        <button class="btn green wb-got" id="dGot">✓ Got it!${teamsMode ? ` <small>+${fmt(DRAW_POINTS[word.level] || 100)}</small>` : ''}</button></div>
     </div></div>`);
     setupBoard();
   }
@@ -203,6 +210,10 @@ App.screens.drawPlay = (el, opts) => {
     $('#wbErase', el).onclick = () => { pen.erase = !pen.erase; sync(); open(false); };
     $('#wbUndo', el).onclick = () => { strokes.pop(); redraw(); };
     $('#wbClear', el).onclick = () => { strokes = []; redraw(); open(false); };
+    $('#wbPeek', el).onclick = () => { open(false); peek(); };
+    $('#wbSkip', el).onclick = () => { open(false); skipWord(); };
+    $('#wbEnd', el).onclick = () => { open(false); if (phase === 'draw') timeUp(true); };
+    $('#dGot', el).onclick = () => (multi ? whoGuessed() : gotIt(teamsMode ? team() : null));
     boardRO?.disconnect(); boardRO = new ResizeObserver(fit); boardRO.observe(box);
     fit();
   }
@@ -214,11 +225,8 @@ App.screens.drawPlay = (el, opts) => {
     phase = 'draw'; paused = false; left = opts.time;
     strokes = []; pen = { color: '#111111', size: 6, erase: false };
     drawingCard(); msg('');
-    acts(`<button class="btn lg green" id="dGot">✓ Got it!${teamsMode ? ` <small>+${fmt(DRAW_POINTS[word.level] || 100)}</small>` : ''}</button>
-      ${opts.time ? '' : `<button class="btn lg red" id="dStop">✋ Stop${teamsMode ? ' — steal!' : ''}</button>`}
-      <button class="btn ghost" id="dPeek2">👀 Peek</button><button class="btn ghost" id="dSkip">⏭ Skip word</button>`,
-      { dGot: () => (multi ? whoGuessed() : gotIt(teamsMode ? team() : null)), dStop: () => phase === 'draw' && timeUp(true), dPeek2: peek, dSkip: skipWord });
-    if (!opts.time) return; // ♾️ no time limit: the host taps Got it! or Stop
+    acts(''); // everything for drawing lives on the board: ✓ Got it! and the Options menu
+    if (!opts.time) return; // ♾️ no time limit: the host taps Got it! or Options › Show the word
     showTimer(true);
     left = opts.time;
     const tb = $('#dTimer', el);
@@ -262,24 +270,12 @@ App.screens.drawPlay = (el, opts) => {
     Sfx.correct(); confetti(1500);
     reveal(`<span class="msg-good">✓ Got it!</span>${t ? ` ${esc(t.name)} +${fmt(DRAW_POINTS[word.level] || 100)}` : ''}${multi ? '' : ' — whoever guessed it draws next!'}`, t);
   }
-  // 3. time's up: in team play, any other team can steal it
+  // 3. time's up (or Options › Show the word): no points, show the word, next team draws
   function timeUp(stopped) {
     stop(); if (!stopped) Sfx.buzz(); showTimer(false);
-    const why = stopped ? '✋ Stopped' : "⏰ Time's up";
     Played.mark(word);
-    if (!multi) { phase = 'reveal'; reveal(`<span class="msg-bad">${why}!</span> Pick someone new to draw.`); return; }
-    phase = 'steal';
-    const others = teams.filter(x => x.id !== team().id);
-    Scores.setActive(null);
-    card(`<div class="steal-banner">🚨 STEAL!</div><div class="dr-sub">Did another team shout out the right answer?</div>`);
-    msg(`<span class="msg-bad">${why}, ${esc(team().name)}</span>`);
-    acts(`<div class="bq-steal">${others.map(x => `<button class="bq-st" data-id="${x.id}" style="--tc:${x.color}">${esc(x.name)}</button>`).join('')}</div>
-      <button class="btn yellow" id="dNobody">Nobody — Show the word <kbd>Space</kbd></button>`, { dNobody: () => { phase = 'reveal'; reveal('No points this time'); } });
-    $$('.bq-st', el).forEach(b => b.onclick = () => {
-      const x = teams.find(tm => tm.id === b.dataset.id);
-      Scores.add(x.id, DRAW_POINTS[word.level] || 100); Sfx.correct(); confetti(1200);
-      phase = 'reveal'; reveal(`<span class="msg-good">🚨 Stolen!</span> ${esc(x.name)} +${fmt(DRAW_POINTS[word.level] || 100)}`, x);
-    });
+    phase = 'reveal';
+    reveal(`<span class="msg-bad">${stopped ? '✋ Stopped' : "⏰ Time's up"}!</span> ${multi ? 'No points this time.' : 'Pick someone new to draw.'}`);
   }
   // next: the team that guessed (or stole) it draws; nobody = the next team in order
   function reveal(html, guesser) {
@@ -298,7 +294,6 @@ App.screens.drawPlay = (el, opts) => {
     e.preventDefault();
     if (phase === 'ready') startDrawing();
     else if (phase === 'reveal') ready();
-    else if (phase === 'steal') { phase = 'reveal'; reveal('No points this time'); }
   };
   document.addEventListener('keydown', onKey);
   ready();

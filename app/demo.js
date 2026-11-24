@@ -333,12 +333,12 @@ const Demo = {
       await this.tap('#dGo');
       const p = App.nav?.pause; if (p && !p.get()) p.toggle(); // keep the clock still while the demo talks
       await this.say('✏️ The artist draws — <b>no letters or numbers!</b> Their team shouts out guesses.', 3600);
-      await this.say('Too tricky? <b>⏭ Skip word</b> swaps in a new one.', 2800);
+      await this.say('Tap <b>Options</b> on the board for colors, pen sizes, the eraser, <b>👀 Peek</b> and <b>⏭ Skip word</b>.', 3400);
       await this.tap('#dGot');
       await this.say('✅ Got it! Tap the team that guessed it…', 2600);
       await this.tap($$('.bq-st')[1]);
       await this.say('They get the points (Easy 100 · Medium 200 · Hard 300) — and <b>whoever guessed it draws next!</b>', 3800);
-      await this.say('If time runs out, it\'s a <b>🚨 STEAL</b> — any other team that guessed it gets the points.', 3600);
+      await this.say('If time runs out, there are no points — the word is shown and the next team draws.', 3400);
       await this.tap('#dNext');
       await this.say('Play as many drawings as you chose, then see the final scores.', 3400);
     },

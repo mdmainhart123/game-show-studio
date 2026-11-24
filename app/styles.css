@@ -1721,3 +1721,8 @@ body.wb-drawing .scorebar { display: none; }
 .wb-clock.dr-clock.low { color: #ffd23f; }
 .wb-clock.dr-clock.paused::after { font-size: .5em; }
 @media (max-width: 760px) { .wb-color { width: 36px; height: 36px; } .wb-menu-btn { height: 40px; font-size: 16px; } .wb-clock.dr-clock { font-size: 30px; line-height: 44px; min-width: 60px; } }
+.dr.wb-mode .dr-actions:empty { display: none; }
+.wb-tr { display: flex; gap: 8px; align-items: stretch; }
+.wb-got.btn { height: 58px; font-size: 22px; padding: 0 22px; box-shadow: 0 3px 10px rgba(0,0,0,.3); }
+.wb-menu .wb-btn { flex: 1 1 auto; }
+@media (max-width: 760px) { .wb-got.btn { height: 44px; font-size: 17px; padding: 0 12px; } }
