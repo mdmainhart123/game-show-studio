@@ -333,7 +333,7 @@ const Demo = {
       await this.tap('#dGo');
       const p = App.nav?.pause; if (p && !p.get()) p.toggle(); // keep the clock still while the demo talks
       await this.say('✏️ The artist draws — <b>no letters or numbers!</b> Their team shouts out guesses.', 3600);
-      await this.say('Tap <b>Options</b> on the board for colors, pen sizes, the eraser, <b>👀 Peek</b> and <b>⏭ Skip word</b>.', 3400);
+      await this.say('Tap <b>Options</b> for colors, pen sizes, the eraser and <b>👀 Peek</b>. <b>⏭ Skip word</b> and <b>✋ Stop</b> are under Got it!', 3600);
       await this.tap('#dGot');
       await this.say('✅ Got it! Tap the team that guessed it…', 2600);
       await this.tap($$('.bq-st')[1]);

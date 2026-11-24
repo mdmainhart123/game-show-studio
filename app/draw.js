@@ -155,13 +155,21 @@ App.screens.drawPlay = (el, opts) => {
           <div class="wb-label">Word</div>
           <div class="wb-group">
             <button class="wb-btn" id="wbPeek" title="Show the word to the artist again">👀 Peek</button>
-            <button class="wb-btn" id="wbSkip" title="Swap in a new word">⏭ Skip word</button>
             <button class="wb-btn" id="wbEnd" title="End this drawing with no points and show the word">✋ Show the word</button>
           </div>
         </div>
       </div>
-      <div class="wb-float wb-tr">${opts.time ? `<div class="wb-clock dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}
-        <button class="btn green wb-got" id="dGot">✓ Got it!${teamsMode ? ` <small>+${fmt(DRAW_POINTS[word.level] || 100)}</small>` : ''}</button></div>
+      <div class="wb-float wb-tr">
+        <div class="wb-tr-row">${opts.time ? `<div class="wb-clock dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}
+          <button class="btn green wb-got" id="dGot">✓ Got it!${teamsMode ? ` <small>+${fmt(DRAW_POINTS[word.level] || 100)}</small>` : ''}</button></div>
+        <div class="wb-tr-row"><button class="wb-side" id="wbSkip" title="Swap in a new word">⏭ Skip word</button><button class="wb-side wb-stopbtn" id="wbStop" title="Stop this drawing">✋ Stop</button></div>
+      </div>
+      <div class="wb-stop" id="wbStopBox" hidden><div class="wb-stop-card">
+        <div class="dr-big">✋ Stopped</div>
+        <div class="dr-sub">No points this round.</div>
+        <div class="wb-stop-btns"><button class="btn lg pink" id="wbNextTeam">${multi ? 'Next team ▶' : teamsMode ? 'Next turn ▶' : 'Next word ▶'}</button>
+        <button class="btn ghost" id="wbResume">Keep drawing</button></div>
+      </div></div>
     </div></div>`);
     setupBoard();
   }
@@ -212,6 +220,10 @@ App.screens.drawPlay = (el, opts) => {
     $('#wbClear', el).onclick = () => { strokes = []; redraw(); open(false); };
     $('#wbPeek', el).onclick = () => { open(false); peek(); };
     $('#wbSkip', el).onclick = () => { open(false); skipWord(); };
+    const stopBox = $('#wbStopBox', el);
+    $('#wbStop', el).onclick = () => { if (phase !== 'draw') return; open(false); paused = true; $('#dBig', el)?.classList.add('paused'); stopBox.hidden = false; };
+    $('#wbResume', el).onclick = () => { stopBox.hidden = true; paused = false; $('#dBig', el)?.classList.remove('paused'); };
+    $('#wbNextTeam', el).onclick = () => { stopBox.hidden = true; nextTeam(); };
     $('#wbEnd', el).onclick = () => { open(false); if (phase === 'draw') timeUp(true); };
     $('#dGot', el).onclick = () => (multi ? whoGuessed() : gotIt(teamsMode ? team() : null));
     boardRO?.disconnect(); boardRO = new ResizeObserver(fit); boardRO.observe(box);
@@ -269,6 +281,14 @@ App.screens.drawPlay = (el, opts) => {
     if (t) Scores.add(t.id, DRAW_POINTS[word.level] || 100);
     Sfx.correct(); confetti(1500);
     reveal(`<span class="msg-good">✓ Got it!</span>${t ? ` ${esc(t.name)} +${fmt(DRAW_POINTS[word.level] || 100)}` : ''}${multi ? '' : ' — whoever guessed it draws next!'}`, t);
+  }
+  // ✋ Stop › Next team: no points, clear the board, next team gets a new word from the same game
+  function nextTeam() {
+    if (phase !== 'draw') return;
+    stop(); Played.mark(word); strokes = [];
+    turnsDone++; turn++;
+    Sfx.click();
+    ready();
   }
   // 3. time's up (or Options › Show the word): no points, show the word, next team draws
   function timeUp(stopped) {

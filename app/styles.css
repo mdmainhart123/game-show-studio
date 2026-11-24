@@ -1722,7 +1722,17 @@ body.wb-drawing .scorebar { display: none; }
 .wb-clock.dr-clock.paused::after { font-size: .5em; }
 @media (max-width: 760px) { .wb-color { width: 36px; height: 36px; } .wb-menu-btn { height: 40px; font-size: 16px; } .wb-clock.dr-clock { font-size: 30px; line-height: 44px; min-width: 60px; } }
 .dr.wb-mode .dr-actions:empty { display: none; }
-.wb-tr { display: flex; gap: 8px; align-items: stretch; }
+.wb-tr { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+.wb-tr-row { display: flex; gap: 8px; align-items: stretch; }
 .wb-got.btn { height: 58px; font-size: 22px; padding: 0 22px; box-shadow: 0 3px 10px rgba(0,0,0,.3); }
 .wb-menu .wb-btn { flex: 1 1 auto; }
 @media (max-width: 760px) { .wb-got.btn { height: 44px; font-size: 17px; padding: 0 12px; } }
+.wb-side { height: 44px; padding: 0 16px; border-radius: 12px; border: 0; background: rgba(20,24,40,.85); color: #fff; font: inherit; font-size: 17px; font-weight: 700; cursor: pointer; box-shadow: 0 3px 10px rgba(0,0,0,.3); white-space: nowrap; }
+.wb-side:hover { background: rgba(20,24,40,.95); }
+.wb-stopbtn { background: #c0392b; }
+.wb-stopbtn:hover { background: #a93226; }
+.wb-stop { position: absolute; inset: 0; z-index: 5; display: grid; place-items: center; background: rgba(10,14,28,.55); }
+.wb-stop[hidden] { display: none; }
+.wb-stop-card { background: #1c2236; border: 2px solid rgba(255,255,255,.15); color: #fff; border-radius: 20px; padding: 28px 36px; text-align: center; display: flex; flex-direction: column; gap: 10px; align-items: center; box-shadow: 0 12px 40px rgba(0,0,0,.5); }
+.wb-stop-btns { display: flex; gap: 12px; margin-top: 8px; flex-wrap: wrap; justify-content: center; }
+@media (max-width: 760px) { .wb-side { height: 38px; font-size: 14px; padding: 0 10px; } .wb-stop-card { padding: 18px; } }
