@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-23-november-game-day",
+ "id": "matt-2026-11-24-thanksgiving",
  "banks": {
   "standard": {
    "cross": [
@@ -1529,6 +1529,204 @@ window.GS_MY_CONTENT = {
       {
        "word": "gratitude",
        "clue": "Feeling thankful"
+      }
+     ]
+    },
+    {
+     "id": "yw2vywroq2eb",
+     "title": "Thanksgiving Easy",
+     "entries": [
+      {
+       "word": "turkey",
+       "clue": "The main bird at dinner"
+      },
+      {
+       "word": "pumpkin",
+       "clue": "Orange pie filling"
+      },
+      {
+       "word": "gravy",
+       "clue": "Brown sauce for potatoes"
+      },
+      {
+       "word": "thursday",
+       "clue": "The day of the week of Thanksgiving"
+      },
+      {
+       "word": "november",
+       "clue": "The month of Thanksgiving"
+      },
+      {
+       "word": "football",
+       "clue": "The sport on TV"
+      },
+      {
+       "word": "parade",
+       "clue": "Giant balloons float in this"
+      },
+      {
+       "word": "wishbone",
+       "clue": "Pull it and make a wish"
+      },
+      {
+       "word": "cranberry",
+       "clue": "Red berry sauce"
+      },
+      {
+       "word": "leftovers",
+       "clue": "Food for the next day"
+      },
+      {
+       "word": "family",
+       "clue": "Who many people gather with"
+      },
+      {
+       "word": "thankful",
+       "clue": "Feeling grateful"
+      },
+      {
+       "word": "stuffing",
+       "clue": "Bread cubes cooked with the turkey"
+      },
+      {
+       "word": "leaves",
+       "clue": "They fall from the trees in autumn"
+      },
+      {
+       "word": "gobble",
+       "clue": "The sound a turkey makes"
+      }
+     ]
+    },
+    {
+     "id": "x1zui8omq2g3",
+     "title": "Thanksgiving Hard",
+     "entries": [
+      {
+       "word": "lincoln",
+       "clue": "He made Thanksgiving national in 1863"
+      },
+      {
+       "word": "hale",
+       "clue": "Sarah Josepha ______"
+      },
+      {
+       "word": "franksgiving",
+       "clue": "Nickname for the 1939 holiday"
+      },
+      {
+       "word": "massasoit",
+       "clue": "Wampanoag leader at the 1621 feast"
+      },
+      {
+       "word": "compact",
+       "clue": "The Mayflower ______ of 1620"
+      },
+      {
+       "word": "poult",
+       "clue": "A baby turkey"
+      },
+      {
+       "word": "snood",
+       "clue": "The flap over a turkey's beak"
+      },
+      {
+       "word": "tryptophan",
+       "clue": "Amino acid blamed for sleepiness"
+      },
+      {
+       "word": "minnesota",
+       "clue": "The top turkey-raising state"
+      },
+      {
+       "word": "furcula",
+       "clue": "The wishbone's scientific name"
+      },
+      {
+       "word": "glean",
+       "clue": "Gather crops left after a harvest"
+      },
+      {
+       "word": "truss",
+       "clue": "Tie a turkey's legs"
+      },
+      {
+       "word": "brine",
+       "clue": "Salt water to soak a turkey in"
+      },
+      {
+       "word": "washington",
+       "clue": "First national Thanksgiving proclamation, 1789"
+      },
+      {
+       "word": "cowboys",
+       "clue": "Dallas team that plays every Thanksgiving"
+      }
+     ]
+    },
+    {
+     "id": "hfaar9b2q2hr",
+     "title": "Thanksgiving Intermediate",
+     "entries": [
+      {
+       "word": "mayflower",
+       "clue": "The Pilgrims' ship"
+      },
+      {
+       "word": "plymouth",
+       "clue": "The colony the Pilgrims built"
+      },
+      {
+       "word": "pilgrims",
+       "clue": "They arrived in 1620"
+      },
+      {
+       "word": "wampanoag",
+       "clue": "The Native nation at the 1621 feast"
+      },
+      {
+       "word": "squanto",
+       "clue": "He helped teach the Pilgrims to grow corn"
+      },
+      {
+       "word": "cornucopia",
+       "clue": "The horn of plenty"
+      },
+      {
+       "word": "casserole",
+       "clue": "Green bean ______"
+      },
+      {
+       "word": "pecan",
+       "clue": "A nut used in a holiday pie"
+      },
+      {
+       "word": "harvest",
+       "clue": "Gathering the fall crops"
+      },
+      {
+       "word": "gratitude",
+       "clue": "The feeling of being thankful"
+      },
+      {
+       "word": "tom",
+       "clue": "A male turkey"
+      },
+      {
+       "word": "hen",
+       "clue": "A female turkey"
+      },
+      {
+       "word": "wattle",
+       "clue": "The red skin under a turkey's chin"
+      },
+      {
+       "word": "lions",
+       "clue": "Detroit's Thanksgiving football team"
+      },
+      {
+       "word": "pardon",
+       "clue": "The president's turkey tradition"
       }
      ]
     }
@@ -4533,6 +4731,606 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "This famous cracked bell is in Philadelphia",
      "answer": "The Liberty Bell"
+    },
+    {
+     "id": "e9rpytw1q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 100,
+     "clue": "The sound a turkey makes",
+     "answer": "Gobble"
+    },
+    {
+     "id": "lg0ohpewq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 200,
+     "clue": "The bone two people pull to make a wish",
+     "answer": "The wishbone"
+    },
+    {
+     "id": "27e82jqwq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 300,
+     "clue": "The kitchen appliance the turkey cooks in",
+     "answer": "The oven"
+    },
+    {
+     "id": "jg148xe2q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 400,
+     "clue": "A turkey drawing made by tracing your hand",
+     "answer": "A hand turkey"
+    },
+    {
+     "id": "kf5isqkyq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 500,
+     "clue": "Slicing the turkey with a knife",
+     "answer": "Carving"
+    },
+    {
+     "id": "xukd51p0q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 100,
+     "clue": "The orange Thanksgiving pie",
+     "answer": "Pumpkin"
+    },
+    {
+     "id": "cyqvphlcq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 200,
+     "clue": "A pie made from the fruit that keeps the doctor away",
+     "answer": "Apple"
+    },
+    {
+     "id": "26dzt9vhq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 300,
+     "clue": "The fluffy white topping on pie",
+     "answer": "Whipped cream"
+    },
+    {
+     "id": "fv3eotukq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 400,
+     "clue": "A sweet pie made with nuts",
+     "answer": "Pecan pie"
+    },
+    {
+     "id": "h17t3r63q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 500,
+     "clue": "The outside layer of a pie",
+     "answer": "The crust"
+    },
+    {
+     "id": "k11pig2iq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 100,
+     "clue": "Brown sauce poured over potatoes",
+     "answer": "Gravy"
+    },
+    {
+     "id": "cf3zhpkhq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 200,
+     "clue": "The red berry side dish",
+     "answer": "Cranberry sauce"
+    },
+    {
+     "id": "hayt2iheq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 300,
+     "clue": "Potatoes that have been smashed",
+     "answer": "Mashed potatoes"
+    },
+    {
+     "id": "bmniivgqq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 400,
+     "clue": "Bread cubes and herbs cooked with the turkey",
+     "answer": "Stuffing"
+    },
+    {
+     "id": "ng2teo79q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 500,
+     "clue": "Food eaten the day after",
+     "answer": "Leftovers"
+    },
+    {
+     "id": "xfyvw75mq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 100,
+     "clue": "The season Thanksgiving is in",
+     "answer": "Fall"
+    },
+    {
+     "id": "6itziwqtq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 200,
+     "clue": "They change color and fall from the trees",
+     "answer": "Leaves"
+    },
+    {
+     "id": "j6t8zlibq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 300,
+     "clue": "The small nut from an oak tree",
+     "answer": "An acorn"
+    },
+    {
+     "id": "ns164e68q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 400,
+     "clue": "A straw figure that keeps birds away",
+     "answer": "A scarecrow"
+    },
+    {
+     "id": "e0gvdqs9q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 500,
+     "clue": "A horn-shaped basket overflowing with food",
+     "answer": "A cornucopia"
+    },
+    {
+     "id": "fejwuil1q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 100,
+     "clue": "The month of Thanksgiving",
+     "answer": "November"
+    },
+    {
+     "id": "yx87dqg1q4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 200,
+     "clue": "The day of the week of Thanksgiving",
+     "answer": "Thursday"
+    },
+    {
+     "id": "7gpzkvxpq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 300,
+     "clue": "The sport on TV all day",
+     "answer": "Football"
+    },
+    {
+     "id": "hcmn7eyiq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 400,
+     "clue": "Giant balloons float through New York City in this",
+     "answer": "A parade"
+    },
+    {
+     "id": "d5z0t3faq4d0",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 500,
+     "clue": "Saying what you're grateful for is giving these",
+     "answer": "Thanks"
+    },
+    {
+     "id": "sbq4q6z5q4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 100,
+     "clue": "The president who made Thanksgiving national in 1863",
+     "answer": "Abraham Lincoln"
+    },
+    {
+     "id": "hm1y4xz9q4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 200,
+     "clue": "The president who issued the first national proclamation in 1789",
+     "answer": "George Washington"
+    },
+    {
+     "id": "10ct9m3nq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 300,
+     "clue": "The writer who campaigned 17 years for the holiday",
+     "answer": "Sarah Josepha Hale"
+    },
+    {
+     "id": "x8nn2tjzq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 400,
+     "clue": "The nickname for FDR's earlier 1939 holiday",
+     "answer": "Franksgiving"
+    },
+    {
+     "id": "9nyweah4q4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 500,
+     "clue": "The year Congress set the fourth Thursday by law",
+     "answer": "1941"
+    },
+    {
+     "id": "suykheseq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 100,
+     "clue": "A baby turkey",
+     "answer": "A poult"
+    },
+    {
+     "id": "c0so53mnq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 200,
+     "clue": "The flap that hangs over a turkey's beak",
+     "answer": "The snood"
+    },
+    {
+     "id": "27ci9l0tq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 300,
+     "clue": "The state that raises the most turkeys",
+     "answer": "Minnesota"
+    },
+    {
+     "id": "apso56qvq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 400,
+     "clue": "The amino acid blamed for after-dinner sleepiness",
+     "answer": "Tryptophan"
+    },
+    {
+     "id": "n8qbe4odq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 500,
+     "clue": "The Founding Father who praised the turkey over the bald eagle",
+     "answer": "Benjamin Franklin"
+    },
+    {
+     "id": "acajaryzq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 100,
+     "clue": "The year of the harvest feast",
+     "answer": "1621"
+    },
+    {
+     "id": "zfmy2a91q4wt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 200,
+     "clue": "About how many days it lasted",
+     "answer": "3"
+    },
+    {
+     "id": "6o4n9llqq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 300,
+     "clue": "The Wampanoag leader who attended",
+     "answer": "Massasoit"
+    },
+    {
+     "id": "b604t585q4wt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 400,
+     "clue": "The agreement signed aboard the Mayflower in 1620",
+     "answer": "The Mayflower Compact"
+    },
+    {
+     "id": "frllx45sq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 500,
+     "clue": "Corn, beans and squash grown together",
+     "answer": "The Three Sisters"
+    },
+    {
+     "id": "24emgqr1q4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 100,
+     "clue": "The decade green bean casserole was invented",
+     "answer": "The 1950s"
+    },
+    {
+     "id": "j7jjm7mvq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 200,
+     "clue": "When Canada celebrates Thanksgiving",
+     "answer": "The second Monday in October"
+    },
+    {
+     "id": "mefjqk3eq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 300,
+     "clue": "The scientific name for the wishbone",
+     "answer": "The furcula"
+    },
+    {
+     "id": "zmrj3o4lq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 400,
+     "clue": "This tart berry is one of only a few fruits native to North America",
+     "answer": "The cranberry"
+    },
+    {
+     "id": "mjrgepp0q4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 500,
+     "clue": "She wrote the 1796 cookbook with an early pumpkin pie recipe",
+     "answer": "Amelia Simmons"
+    },
+    {
+     "id": "wqzi20zpq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 100,
+     "clue": "She wrote the poem \"Over the River and Through the Wood\"",
+     "answer": "Lydia Maria Child"
+    },
+    {
+     "id": "2d6wh061q4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 200,
+     "clue": "The meaning of the Latin word cornucopia",
+     "answer": "Horn of plenty"
+    },
+    {
+     "id": "odvm5ksqq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 300,
+     "clue": "To gather the crops left after a harvest",
+     "answer": "Glean"
+    },
+    {
+     "id": "w2gnawewq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 400,
+     "clue": "To tie a turkey's legs with string before roasting",
+     "answer": "Truss"
+    },
+    {
+     "id": "06s2zldkq4wt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 500,
+     "clue": "Soaking a turkey in salt water before cooking",
+     "answer": "Brining"
+    },
+    {
+     "id": "771qh5p5q5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 100,
+     "clue": "The Pilgrims' ship",
+     "answer": "The Mayflower"
+    },
+    {
+     "id": "l2u3s5ckq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 200,
+     "clue": "The year the Pilgrims arrived",
+     "answer": "1620"
+    },
+    {
+     "id": "haworacaq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 300,
+     "clue": "The colony the Pilgrims built",
+     "answer": "Plymouth"
+    },
+    {
+     "id": "qr3rrnrjq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 400,
+     "clue": "The Native nation at the 1621 harvest feast",
+     "answer": "Wampanoag"
+    },
+    {
+     "id": "fw75y8ylq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 500,
+     "clue": "The Patuxet man who helped the Pilgrims grow corn",
+     "answer": "Squanto"
+    },
+    {
+     "id": "m8lnvtctq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 100,
+     "clue": "A male turkey",
+     "answer": "A tom"
+    },
+    {
+     "id": "fl32z25nq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 200,
+     "clue": "A female turkey",
+     "answer": "A hen"
+    },
+    {
+     "id": "o7ei0zrrq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 300,
+     "clue": "The red skin under a turkey's chin",
+     "answer": "The wattle"
+    },
+    {
+     "id": "n7v78mhyq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 400,
+     "clue": "Only these turkeys gobble",
+     "answer": "The males"
+    },
+    {
+     "id": "avb8enmfq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 500,
+     "clue": "True or false: wild turkeys can fly",
+     "answer": "True"
+    },
+    {
+     "id": "0jwo2vbfq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 100,
+     "clue": "Green beans topped with crispy onions",
+     "answer": "Green bean casserole"
+    },
+    {
+     "id": "rfkihf54q5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 200,
+     "clue": "Orange potatoes often topped with marshmallows",
+     "answer": "Sweet potatoes"
+    },
+    {
+     "id": "dsgijhjnq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 300,
+     "clue": "Stuffing cooked outside the turkey",
+     "answer": "Dressing"
+    },
+    {
+     "id": "8vri6debq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 400,
+     "clue": "These berries are harvested by flooding bogs",
+     "answer": "Cranberries"
+    },
+    {
+     "id": "3fnyipnxq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 500,
+     "clue": "Cranberries float because they have these inside",
+     "answer": "Air pockets"
+    },
+    {
+     "id": "p0jkcbwiq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 100,
+     "clue": "New York City's big Thanksgiving parade began in this year",
+     "answer": "1924"
+    },
+    {
+     "id": "oovwlts7q5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 200,
+     "clue": "The team that plays every Thanksgiving in Detroit",
+     "answer": "The Lions"
+    },
+    {
+     "id": "14okyjq7q5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 300,
+     "clue": "The Texas team that also plays every Thanksgiving",
+     "answer": "The Dallas Cowboys"
+    },
+    {
+     "id": "v49o97z5q5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 400,
+     "clue": "Giant floating characters in the parade",
+     "answer": "Balloons"
+    },
+    {
+     "id": "aolrekejq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 500,
+     "clue": "The parade ends with the arrival of this holiday visitor",
+     "answer": "Santa Claus"
+    },
+    {
+     "id": "tqjdr7r3q5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 100,
+     "clue": "The feeling of being thankful",
+     "answer": "Gratitude"
+    },
+    {
+     "id": "m0ygf0e5q5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 200,
+     "clue": "Another name for a cornucopia",
+     "answer": "Horn of plenty"
+    },
+    {
+     "id": "9boqdka6q5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 300,
+     "clue": "Writing down what you're thankful for each day",
+     "answer": "A gratitude journal"
+    },
+    {
+     "id": "0ekeracdq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 400,
+     "clue": "A Thanksgiving morning fun run",
+     "answer": "A turkey trot"
+    },
+    {
+     "id": "b4nnyiulq5go",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 500,
+     "clue": "The president spares a turkey in this ceremony",
+     "answer": "The turkey pardon"
     }
    ],
    "wheel": [
@@ -6546,7 +7344,8 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "GIVE THANKS",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -6578,7 +7377,8 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "GOBBLE GOBBLE",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -6602,7 +7402,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "PUMPKIN PIE",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -6610,7 +7411,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "MASHED POTATOES",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -6618,7 +7420,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "CRANBERRY SAUCE",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -6706,7 +7509,8 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "THANKSGIVING DINNER",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -6722,7 +7526,8 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "A FOOTBALL GAME",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -6739,6 +7544,430 @@ window.GS_MY_CONTENT = {
      "phrase": "RAKING THE LEAVES",
      "sets": [
       "November Game Day"
+     ]
+    },
+    {
+     "id": "vctrdrsyq605",
+     "category": "Phrase",
+     "phrase": "HAPPY THANKSGIVING",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "vmzhdycvq605",
+     "category": "Phrase",
+     "phrase": "PASS THE GRAVY PLEASE",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "a2z3fam8q605",
+     "category": "Phrase",
+     "phrase": "TIME TO EAT",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "wfswzw4dq605",
+     "category": "Phrase",
+     "phrase": "THANKFUL FOR YOU",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "5sfun8h5q605",
+     "category": "Thing",
+     "phrase": "SWEET POTATOES",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "od8aafkqq605",
+     "category": "Thing",
+     "phrase": "CORN ON THE COB",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "bv0r6y4nq605",
+     "category": "Thing",
+     "phrase": "TURKEY AND STUFFING",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "llhk0351q605",
+     "category": "Thing",
+     "phrase": "APPLE PIE",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "8tck9r1qq605",
+     "category": "Thing",
+     "phrase": "WHIPPED CREAM",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "6rmvpmn0q605",
+     "category": "Event",
+     "phrase": "WATCHING THE PARADE",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "wgy23blqq605",
+     "category": "Event",
+     "phrase": "FAMILY TIME",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "qjyp8b1fq605",
+     "category": "Event",
+     "phrase": "BREAKING THE WISHBONE",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "amafgtyaq605",
+     "category": "Event",
+     "phrase": "EATING LEFTOVERS",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "883v674xq6jl",
+     "category": "Phrase",
+     "phrase": "THANKSGIVING IS THE FOURTH THURSDAY",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "q1q4fjpgq6jl",
+     "category": "Phrase",
+     "phrase": "A HORN OF PLENTY",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "7nkfzwtsq6jl",
+     "category": "Phrase",
+     "phrase": "BRINING THE TURKEY OVERNIGHT",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "5ld6iwr8q6jl",
+     "category": "Phrase",
+     "phrase": "GLEAN THE FIELDS",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "zcfzx0rgq6jl",
+     "category": "Thing",
+     "phrase": "THE MAYFLOWER COMPACT",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "wu3t697wq6jl",
+     "category": "Thing",
+     "phrase": "TRYPTOPHAN",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "6mfnxuyuq6jl",
+     "category": "Thing",
+     "phrase": "THE THREE SISTERS",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "hniqmdfzq6jl",
+     "category": "Thing",
+     "phrase": "CORN BEANS AND SQUASH",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "8xzdmucsq6jl",
+     "category": "Thing",
+     "phrase": "A TURKEY SNOOD",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "y7m398yvq6jl",
+     "category": "Thing",
+     "phrase": "A CRANBERRY BOG",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "253o5bv2q6jl",
+     "category": "Person",
+     "phrase": "ABRAHAM LINCOLN",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "eu568einq6jl",
+     "category": "Person",
+     "phrase": "SARAH JOSEPHA HALE",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "kgt36uu0q6jl",
+     "category": "Person",
+     "phrase": "MASSASOIT",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "v5wphns8q6jl",
+     "category": "Person",
+     "phrase": "BENJAMIN FRANKLIN",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "o1hjrk95q6jl",
+     "category": "Person",
+     "phrase": "FRANKLIN ROOSEVELT",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "mjf5p31mq6jl",
+     "category": "Place",
+     "phrase": "PLYMOUTH COLONY",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "o47htrtcq6jl",
+     "category": "Place",
+     "phrase": "CAPE COD",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "4su8ibt8q6jl",
+     "category": "Event",
+     "phrase": "A THREE DAY HARVEST FEAST",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "sow6vbppq6jl",
+     "category": "Event",
+     "phrase": "FRANKSGIVING",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "cc6ma086q6jl",
+     "category": "Event",
+     "phrase": "THE LIONS GAME",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "4gjrmlxrq730",
+     "category": "Phrase",
+     "phrase": "OVER THE RIVER AND THROUGH THE WOODS",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ivll0wz1q730",
+     "category": "Phrase",
+     "phrase": "COUNT YOUR BLESSINGS",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "n2b1zeliq730",
+     "category": "Phrase",
+     "phrase": "AN ATTITUDE OF GRATITUDE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "7xb5a8ulq730",
+     "category": "Phrase",
+     "phrase": "SAVE ROOM FOR DESSERT",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "2w0gjaosq730",
+     "category": "Phrase",
+     "phrase": "SECONDS PLEASE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "l6movjfhq730",
+     "category": "Phrase",
+     "phrase": "A GRATEFUL HEART",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "0g277pzpq730",
+     "category": "Thing",
+     "phrase": "GREEN BEAN CASSEROLE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "sy6u4oedq730",
+     "category": "Thing",
+     "phrase": "DINNER ROLLS",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "h968y4uzq730",
+     "category": "Thing",
+     "phrase": "PECAN PIE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "0p3kb2fwq730",
+     "category": "Thing",
+     "phrase": "THE KIDS TABLE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "pbi14pszq730",
+     "category": "Thing",
+     "phrase": "LEFTOVER SANDWICHES",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ruv6tolhq730",
+     "category": "Thing",
+     "phrase": "A CORNUCOPIA",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "rjke2bfxq730",
+     "category": "Thing",
+     "phrase": "TURKEY GRAVY",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "gk1bozolq730",
+     "category": "Thing",
+     "phrase": "THE MAYFLOWER",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ihmcx868q730",
+     "category": "Place",
+     "phrase": "PLYMOUTH ROCK",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "sqeiuxn2q730",
+     "category": "Place",
+     "phrase": "PLYMOUTH MASSACHUSETTS",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "yg3cj1h1q730",
+     "category": "Event",
+     "phrase": "BLACK FRIDAY",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "v9zq0r66q730",
+     "category": "Event",
+     "phrase": "THE TURKEY PARDON",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "npurrfz7q730",
+     "category": "Event",
+     "phrase": "CARVING THE TURKEY",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "5pgz6hlwq730",
+     "category": "Event",
+     "phrase": "A TURKEY TROT",
+     "sets": [
+      "Thanksgiving Intermediate"
      ]
     }
    ],
@@ -6877,7 +8106,8 @@ window.GS_MY_CONTENT = {
      "hint": "Halloween",
      "sets": [
       "Halloween Easy",
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -7245,7 +8475,8 @@ window.GS_MY_CONTENT = {
      "word": "GRACE",
      "hint": "Strength",
      "sets": [
-      "Personal Strengths"
+      "Personal Strengths",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -7430,7 +8661,8 @@ window.GS_MY_CONTENT = {
       "Media Literacy",
       "Handling Disappointment",
       "Asking for Help",
-      "Effective Communication"
+      "Effective Communication",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -8397,7 +9629,8 @@ window.GS_MY_CONTENT = {
      "word": "ACORN",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -8405,7 +9638,8 @@ window.GS_MY_CONTENT = {
      "word": "PECAN",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -8413,7 +9647,8 @@ window.GS_MY_CONTENT = {
      "word": "FEAST",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -8437,7 +9672,436 @@ window.GS_MY_CONTENT = {
      "word": "THANK",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "3cbu67fyq1jb",
+     "word": "BREAD",
+     "hint": "Food",
+     "sets": [
+      "November Game Day",
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "k7awdrbqq1jb",
+     "word": "APPLE",
+     "hint": "Food",
+     "sets": [
+      "November Game Day",
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "lxk8gc8sq1jb",
+     "word": "GRAVY",
+     "hint": "Food",
+     "sets": [
+      "November Game Day",
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "zup60ebaq1jb",
+     "word": "ONION",
+     "hint": "Food",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "7eyidtjnq1jb",
+     "word": "TABLE",
+     "hint": "Around the House",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "4iil68rrq1jb",
+     "word": "PLATE",
+     "hint": "Around the House",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "dbgfm9hwq1jb",
+     "word": "MAPLE",
+     "hint": "Nature",
+     "sets": [
+      "November Game Day",
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "eiph3yspq1jb",
+     "word": "HAPPY",
+     "hint": "Feelings",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "9osk1iirq99b",
+     "word": "GUEST",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "dt469wynq99b",
+     "word": "CARVE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "4ckqkqewq99b",
+     "word": "SWEET",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "vj0nh2dgq99b",
+     "word": "BAKED",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "zedaibfnq99b",
+     "word": "CREAM",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "1x7dz5gbq99b",
+     "word": "SUGAR",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "ger9gj4vq99b",
+     "word": "CRUST",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "qw0ct36xq99b",
+     "word": "HONEY",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "d4cb9i4fq9sc",
+     "word": "POULT",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "8fwpz1x0q9sc",
+     "word": "SNOOD",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "9d52its3q9sc",
+     "word": "GOURD",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "smchk6x9q9sc",
+     "word": "GLEAN",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "v8sm6aakq9sc",
+     "word": "TRUSS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "yv58swfeq9sc",
+     "word": "BRINE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "0h3lo02tq9sc",
+     "word": "TUBER",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "g0rk5ln9q9sc",
+     "word": "LADLE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "7ta5q6ugq9sc",
+     "word": "SIEVE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "xc5ytdklq9sc",
+     "word": "QUILL",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "zto6cyvoq9sc",
+     "word": "SHEAF",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "km6u9954q9sc",
+     "word": "BOUGH",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "dnui0jmjq9sc",
+     "word": "AMBER",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "68p6cgskq9sc",
+     "word": "OCHRE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "49nh2w2uq9sc",
+     "word": "SQUAB",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "7l85duanq9sc",
+     "word": "PILAF",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "q4b9p6mqq9sc",
+     "word": "ASPIC",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "iubzpcizq9sc",
+     "word": "FOWLS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "mssxzr7tq9sc",
+     "word": "FLANS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "zysi3hqvq9sc",
+     "word": "GRAIN",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "cyzb8w4gqabp",
+     "word": "ROAST",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "sk4yr3b6qabp",
+     "word": "YEAST",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "o6u5bp0vqabp",
+     "word": "FLOUR",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "a6wx018fqabp",
+     "word": "SPICE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "b7ce0i9fqabp",
+     "word": "CLOVE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "akzif0zkqabp",
+     "word": "THYME",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "rnltpt3nqabp",
+     "word": "BEANS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "b7nwga7xqabp",
+     "word": "MAIZE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "v393lbiyqabp",
+     "word": "GLAZE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "rnhuckokqabp",
+     "word": "DOUGH",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "nnn48eb0qabp",
+     "word": "WHISK",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "xcoc5irpqabp",
+     "word": "FLOCK",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "78lvmvtlqabp",
+     "word": "BASTE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "q90yowsxqabp",
+     "word": "TARTS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "knjqzdm2qabp",
+     "word": "YIELD",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "9bylj8zzqabp",
+     "word": "DINED",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "mcqisar6qabp",
+     "word": "BOWLS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
      ]
     }
    ],
@@ -10024,7 +11688,8 @@ window.GS_MY_CONTENT = {
      "level": "easy",
      "sets": [
       "Mindfulness",
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10504,7 +12169,8 @@ window.GS_MY_CONTENT = {
      "word": "a turkey",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10512,7 +12178,8 @@ window.GS_MY_CONTENT = {
      "word": "a pumpkin",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10520,7 +12187,8 @@ window.GS_MY_CONTENT = {
      "word": "a leaf",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10528,7 +12196,8 @@ window.GS_MY_CONTENT = {
      "word": "a pie",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10536,7 +12205,8 @@ window.GS_MY_CONTENT = {
      "word": "an acorn",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10544,7 +12214,8 @@ window.GS_MY_CONTENT = {
      "word": "a football",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10560,7 +12231,8 @@ window.GS_MY_CONTENT = {
      "word": "a house",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10584,7 +12256,8 @@ window.GS_MY_CONTENT = {
      "word": "a car",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10608,7 +12281,8 @@ window.GS_MY_CONTENT = {
      "word": "an apple",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10672,7 +12346,8 @@ window.GS_MY_CONTENT = {
      "word": "a scarecrow",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10688,7 +12363,8 @@ window.GS_MY_CONTENT = {
      "word": "carving a turkey",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -10696,7 +12372,8 @@ window.GS_MY_CONTENT = {
      "word": "raking leaves",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -10704,7 +12381,8 @@ window.GS_MY_CONTENT = {
      "word": "a parade balloon",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -10720,7 +12398,8 @@ window.GS_MY_CONTENT = {
      "word": "a cornucopia",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -10744,7 +12423,8 @@ window.GS_MY_CONTENT = {
      "word": "a pilgrim hat",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -10873,6 +12553,358 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "November Game Day"
+     ]
+    },
+    {
+     "id": "9aogaxfjq2pp",
+     "word": "a corn cob",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "kkfi66dgq2pp",
+     "word": "a table",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "7etewuu0q2pp",
+     "word": "a plate",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "77eru98gq2pp",
+     "word": "a fork",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "wvf5tr5zq2pp",
+     "word": "a basket",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "ytqixlr4q2pp",
+     "word": "a feather",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "x4258choq2pp",
+     "word": "a hand turkey",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "3e2hqnqoq2pp",
+     "word": "a wishbone",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "1frw8ezbq391",
+     "word": "being thankful",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "9hkmzyxlq391",
+     "word": "Black Friday shopping",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "xc4dmz6pq391",
+     "word": "a traffic jam on the way home",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "7ypi0nu6q391",
+     "word": "a turkey pardon",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "ujb6gspoq391",
+     "word": "Plymouth Rock",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "7780cq2zq391",
+     "word": "leftovers in the fridge",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "y9cfkvjgq391",
+     "word": "a food coma",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "gdonukh5q391",
+     "word": "a delay at the airport",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "l3ac877fq391",
+     "word": "over the river and through the woods",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "l6n4nqi9q391",
+     "word": "the first Thanksgiving",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "etyusnihq391",
+     "word": "breaking the wishbone",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "82062qktq391",
+     "word": "a burnt turkey",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "cl60ctkjq391",
+     "word": "a smoke alarm while cooking",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "h1majew6q391",
+     "word": "a turkey trot race",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "dmj87gelq391",
+     "word": "giving thanks around the table",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "x602e9qyq391",
+     "word": "falling asleep during the game",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "bwozn2dsq391",
+     "word": "unbuttoning your pants after dinner",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "uxysqrk5q391",
+     "word": "a cranberry bog",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "k5v50yz3q391",
+     "word": "a harvest moon",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "k2kaxjn4q391",
+     "word": "a volunteer serving food",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "4khasc9qq3sz",
+     "word": "mashed potatoes",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "mkuip54qq3sz",
+     "word": "a family dinner",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ojk4by8fq3sz",
+     "word": "saying thank you",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "011h9c86q3sz",
+     "word": "a football game on TV",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "9wb6tlr9q3sz",
+     "word": "a turkey running away",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ad6gffmzq3sz",
+     "word": "a full belly",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "9xmc9xc0q3sz",
+     "word": "the Mayflower",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "bogsh22fq3sz",
+     "word": "a pie in the oven",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "plmz26rlq3sz",
+     "word": "passing the gravy",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "fisfytgaq3sz",
+     "word": "setting the table",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "biqlf53tq3sz",
+     "word": "a turkey wearing a hat",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "3ztzof8sq3sz",
+     "word": "jumping in a leaf pile",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "krep4z0uq3sz",
+     "word": "a pumpkin patch",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "n3vkicr0q3sz",
+     "word": "napping on the couch",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "82gq232mq3sz",
+     "word": "the kids table",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "849chccdq3sz",
+     "word": "a grocery store line",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
      ]
     }
    ],
@@ -15299,7 +17331,8 @@ window.GS_MY_CONTENT = {
      "category": "November Game Day",
      "time": 20,
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -15509,7 +17542,8 @@ window.GS_MY_CONTENT = {
      "category": "November Game Day",
      "time": 20,
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -15525,6 +17559,876 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "November Game Day"
+     ]
+    },
+    {
+     "id": "iz0jusliq7my",
+     "question": "Which day of the week is Thanksgiving in the U.S.?",
+     "answer": "Thursday",
+     "wrong": [
+      "Monday",
+      "Friday",
+      "Sunday"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "kqbtgdojq7my",
+     "question": "In which month is U.S. Thanksgiving?",
+     "answer": "November",
+     "wrong": [
+      "October",
+      "December",
+      "September"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "ylz0kwhxq7my",
+     "question": "What sound does a turkey make?",
+     "answer": "Gobble",
+     "wrong": [
+      "Quack",
+      "Moo",
+      "Oink"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "3oltc5dwq7my",
+     "question": "Which orange pie is a Thanksgiving favorite?",
+     "answer": "Pumpkin",
+     "wrong": [
+      "Cherry",
+      "Lemon",
+      "Key lime"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "o29qhgvoq7my",
+     "question": "Which red berry is made into a Thanksgiving sauce?",
+     "answer": "Cranberry",
+     "wrong": [
+      "Strawberry",
+      "Raspberry",
+      "Cherry"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "34nbg1piq7my",
+     "question": "Thanksgiving is a day to give what?",
+     "answer": "Thanks",
+     "wrong": [
+      "Gifts",
+      "Cards",
+      "Speeches"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "kwtar1d1q7my",
+     "question": "How are potatoes most often served at Thanksgiving?",
+     "answer": "Mashed",
+     "wrong": [
+      "Raw",
+      "Frozen",
+      "Pickled"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "v6rz9jg8q7my",
+     "question": "What brown sauce is poured over turkey and potatoes?",
+     "answer": "Gravy",
+     "wrong": [
+      "Ketchup",
+      "Syrup",
+      "Salsa"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "6bvvlsjiq7my",
+     "question": "Which bone do two people pull to make a wish?",
+     "answer": "The wishbone",
+     "wrong": [
+      "The funny bone",
+      "The backbone",
+      "The drumstick"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "yvpqq7siq7my",
+     "question": "Which season is Thanksgiving in?",
+     "answer": "Fall",
+     "wrong": [
+      "Spring",
+      "Summer",
+      "Winter"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "8jpz0jujq7my",
+     "question": "What fluffy white topping goes on pumpkin pie?",
+     "answer": "Whipped cream",
+     "wrong": [
+      "Mustard",
+      "Mayonnaise",
+      "Sour cream"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "6z542xbbq7my",
+     "question": "What is the horn-shaped basket full of food called?",
+     "answer": "A cornucopia",
+     "wrong": [
+      "A piñata",
+      "A wreath",
+      "A sombrero"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "w106onrpq7my",
+     "question": "Leftover turkey is often made into what the next day?",
+     "answer": "Sandwiches",
+     "wrong": [
+      "Ice cream",
+      "Cereal",
+      "Smoothies"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "uq1n6udjq7my",
+     "question": "A hand turkey drawing is made by tracing what?",
+     "answer": "Your hand",
+     "wrong": [
+      "Your foot",
+      "A plate",
+      "A leaf"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "d20vpu22q7my",
+     "question": "Younger guests sometimes sit at a separate what?",
+     "answer": "Kids' table",
+     "wrong": [
+      "Bus stop",
+      "Desk",
+      "Bench"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "5pery2f1q7my",
+     "question": "What bread cubes and herbs are cooked with the turkey?",
+     "answer": "Stuffing",
+     "wrong": [
+      "Croutons only",
+      "Pancakes",
+      "Toast"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "y4wwpxsbq7my",
+     "question": "What colors are most fall leaves?",
+     "answer": "Red, orange and yellow",
+     "wrong": [
+      "Blue and purple",
+      "Pink and white",
+      "Black and gray"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "6qh8gdaaq7my",
+     "question": "Big balloons float down the street in a Thanksgiving what?",
+     "answer": "Parade",
+     "wrong": [
+      "Race",
+      "Concert",
+      "Circus"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "bv7etxbwq86c",
+     "question": "Which president made Thanksgiving a national holiday in 1863?",
+     "answer": "Abraham Lincoln",
+     "wrong": [
+      "George Washington",
+      "Thomas Jefferson",
+      "Ulysses S. Grant"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "4tir10y0q86c",
+     "question": "Which president issued the first national Thanksgiving proclamation, in 1789?",
+     "answer": "George Washington",
+     "wrong": [
+      "John Adams",
+      "Abraham Lincoln",
+      "James Madison"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "5tkoafk1q86c",
+     "question": "Which writer campaigned for about 17 years to make Thanksgiving a national holiday?",
+     "answer": "Sarah Josepha Hale",
+     "wrong": [
+      "Harriet Beecher Stowe",
+      "Louisa May Alcott",
+      "Emily Dickinson"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "2tgzt4h5q86c",
+     "question": "Sarah Josepha Hale also wrote which nursery rhyme?",
+     "answer": "Mary Had a Little Lamb",
+     "wrong": [
+      "Humpty Dumpty",
+      "Jack and Jill",
+      "Little Bo Peep"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "658mzm9pq86c",
+     "question": "When FDR moved Thanksgiving a week earlier in 1939, people nicknamed it what?",
+     "answer": "Franksgiving",
+     "wrong": [
+      "Roosevelt Day",
+      "New Deal Day",
+      "Early Feast"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "iijgzxe9q86c",
+     "question": "In what year did Congress set Thanksgiving as the fourth Thursday of November?",
+     "answer": "1941",
+     "wrong": [
+      "1863",
+      "1900",
+      "1960"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "brqhrnblq86c",
+     "question": "Who was the Wampanoag leader at the 1621 harvest feast?",
+     "answer": "Massasoit",
+     "wrong": [
+      "Squanto",
+      "Metacom",
+      "Tecumseh"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "apw5j1kbq86c",
+     "question": "About how many days did the 1621 harvest feast last?",
+     "answer": "3",
+     "wrong": [
+      "1",
+      "7",
+      "14"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "t9rbaawtq86c",
+     "question": "Which NFL team has hosted a Thanksgiving game since 1934?",
+     "answer": "Detroit Lions",
+     "wrong": [
+      "Green Bay Packers",
+      "Chicago Bears",
+      "New York Giants"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "q6hf1hofq86c",
+     "question": "Which NFL team has hosted a Thanksgiving game since 1966?",
+     "answer": "Dallas Cowboys",
+     "wrong": [
+      "Pittsburgh Steelers",
+      "Miami Dolphins",
+      "Denver Broncos"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "0oaydxlyq86c",
+     "question": "What is the fleshy flap that hangs over a turkey's beak called?",
+     "answer": "Snood",
+     "wrong": [
+      "Wattle",
+      "Comb",
+      "Crop"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "8icy50z6q86c",
+     "question": "What is a baby turkey called?",
+     "answer": "A poult",
+     "wrong": [
+      "A cub",
+      "A kid",
+      "A cygnet"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "erdkyoiiq86c",
+     "question": "Which U.S. state raises the most turkeys?",
+     "answer": "Minnesota",
+     "wrong": [
+      "Texas",
+      "Florida",
+      "Maine"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "sr1zcxwfq86c",
+     "question": "Which amino acid in turkey is often blamed for feeling sleepy?",
+     "answer": "Tryptophan",
+     "wrong": [
+      "Caffeine",
+      "Glucose",
+      "Vitamin C"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "6lehg0ruq86c",
+     "question": "Which president made the turkey pardon an official tradition in 1989?",
+     "answer": "George H. W. Bush",
+     "wrong": [
+      "Ronald Reagan",
+      "Bill Clinton",
+      "Jimmy Carter"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "fcmd5x8dq86c",
+     "question": "Which three crops make up the Native American Three Sisters?",
+     "answer": "Corn, beans and squash",
+     "wrong": [
+      "Wheat, rice and oats",
+      "Apples, pears and plums",
+      "Potatoes, carrots and onions"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "z1di7aabq86c",
+     "question": "In which decade was green bean casserole invented?",
+     "answer": "1950s",
+     "wrong": [
+      "1920s",
+      "1970s",
+      "1990s"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "gi63vinhq86c",
+     "question": "When does Canada celebrate Thanksgiving?",
+     "answer": "The second Monday in October",
+     "wrong": [
+      "The fourth Thursday in November",
+      "The first Sunday in September",
+      "December 1"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "c6nejktpq86c",
+     "question": "Who wrote the poem Over the River and Through the Wood?",
+     "answer": "Lydia Maria Child",
+     "wrong": [
+      "Robert Frost",
+      "Emily Dickinson",
+      "Walt Whitman"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "oli60gm5q86c",
+     "question": "What agreement did the Pilgrims sign aboard their ship in 1620?",
+     "answer": "The Mayflower Compact",
+     "wrong": [
+      "The Plymouth Treaty",
+      "The Bill of Rights",
+      "The Harvest Pact"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "evyf88udq8pt",
+     "question": "What ship did the Pilgrims sail on?",
+     "answer": "The Mayflower",
+     "wrong": [
+      "The Titanic",
+      "The Santa Maria",
+      "The Nina"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "j7o3ls2gq8pt",
+     "question": "In what year did the Mayflower arrive in America?",
+     "answer": "1620",
+     "wrong": [
+      "1492",
+      "1776",
+      "1700"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "0qj0tlqcq8pt",
+     "question": "The harvest feast often called the first Thanksgiving was in what year?",
+     "answer": "1621",
+     "wrong": [
+      "1620",
+      "1650",
+      "1700"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "lhk697qoq8pt",
+     "question": "Which Native nation joined the Pilgrims at the 1621 harvest feast?",
+     "answer": "Wampanoag",
+     "wrong": [
+      "Cherokee",
+      "Navajo",
+      "Sioux"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "fbn5rij4q8pt",
+     "question": "Which Patuxet man helped teach the Pilgrims to grow corn?",
+     "answer": "Squanto",
+     "wrong": [
+      "Sitting Bull",
+      "Pocahontas",
+      "Geronimo"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "cmjw0dgtq8pt",
+     "question": "Where did the Pilgrims build their colony?",
+     "answer": "Plymouth",
+     "wrong": [
+      "Boston",
+      "Jamestown",
+      "New York"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "3q6pudafq8pt",
+     "question": "New York City's famous Thanksgiving parade began in what year?",
+     "answer": "1924",
+     "wrong": [
+      "1950",
+      "1880",
+      "1970"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "twwqs0cjq8pt",
+     "question": "What is the shopping day after Thanksgiving called?",
+     "answer": "Black Friday",
+     "wrong": [
+      "Cyber Sunday",
+      "Super Saturday",
+      "Blue Monday"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "823jh0y1q8pt",
+     "question": "What is a male turkey called?",
+     "answer": "A tom",
+     "wrong": [
+      "A buck",
+      "A rooster",
+      "A drake"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "i21yzurnq8pt",
+     "question": "What is a female turkey called?",
+     "answer": "A hen",
+     "wrong": [
+      "A doe",
+      "A ewe",
+      "A mare"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "51f4fnd1q8pt",
+     "question": "Can wild turkeys fly?",
+     "answer": "Yes, in short bursts",
+     "wrong": [
+      "No, never",
+      "Only babies can",
+      "Only at night"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "d7u35ui2q8pt",
+     "question": "Which turkeys gobble?",
+     "answer": "Only the males",
+     "wrong": [
+      "Only the females",
+      "Both",
+      "Neither"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "z0cpam0mq8pt",
+     "question": "Cranberries are harvested by flooding the bogs because they do what?",
+     "answer": "Float",
+     "wrong": [
+      "Sink",
+      "Dissolve",
+      "Bounce away"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "6pne43lxq8pt",
+     "question": "What is another name for a cornucopia?",
+     "answer": "Horn of plenty",
+     "wrong": [
+      "Bread basket",
+      "Harvest hat",
+      "Fruit bowl"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "7mnlm71dq8pt",
+     "question": "What is the red skin that hangs under a turkey's chin?",
+     "answer": "The wattle",
+     "wrong": [
+      "The comb",
+      "The beak",
+      "The crest"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "l5pd4byoq8pt",
+     "question": "What is the president's yearly turkey tradition called?",
+     "answer": "The turkey pardon",
+     "wrong": [
+      "The turkey trot",
+      "The turkey toss",
+      "The turkey toast"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "lnmbeu0kq8pt",
+     "question": "Benjamin Franklin praised which bird as a much more respectable bird than the bald eagle?",
+     "answer": "The turkey",
+     "wrong": [
+      "The owl",
+      "The robin",
+      "The crow"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "fqmgdg6xq8pt",
+     "question": "Which nut is used in a classic holiday pie?",
+     "answer": "Pecan",
+     "wrong": [
+      "Peanut",
+      "Cashew",
+      "Almond"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "v2to29ieq8pt",
+     "question": "A morning fun run on Thanksgiving is called a what?",
+     "answer": "Turkey trot",
+     "wrong": [
+      "Pie race",
+      "Gobble jog",
+      "Feast dash"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "2nncb9nzq8pt",
+     "question": "What is stuffing called when it is cooked outside the turkey?",
+     "answer": "Dressing",
+     "wrong": [
+      "Coating",
+      "Filling",
+      "Topping"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
      ]
     }
    ]
@@ -16581,6 +19485,204 @@ window.GS_MY_CONTENT = {
       {
        "word": "gratitude",
        "clue": "Feeling thankful"
+      }
+     ]
+    },
+    {
+     "id": "eh46eck9qaz6",
+     "title": "Thanksgiving Easy",
+     "entries": [
+      {
+       "word": "turkey",
+       "clue": "The main bird at dinner"
+      },
+      {
+       "word": "pumpkin",
+       "clue": "Orange pie filling"
+      },
+      {
+       "word": "gravy",
+       "clue": "Brown sauce for potatoes"
+      },
+      {
+       "word": "thursday",
+       "clue": "The day of the week of Thanksgiving"
+      },
+      {
+       "word": "november",
+       "clue": "The month of Thanksgiving"
+      },
+      {
+       "word": "football",
+       "clue": "The sport on TV"
+      },
+      {
+       "word": "parade",
+       "clue": "Giant balloons float in this"
+      },
+      {
+       "word": "wishbone",
+       "clue": "Pull it and make a wish"
+      },
+      {
+       "word": "cranberry",
+       "clue": "Red berry sauce"
+      },
+      {
+       "word": "leftovers",
+       "clue": "Food for the next day"
+      },
+      {
+       "word": "family",
+       "clue": "Who many people gather with"
+      },
+      {
+       "word": "thankful",
+       "clue": "Feeling grateful"
+      },
+      {
+       "word": "stuffing",
+       "clue": "Bread cubes cooked with the turkey"
+      },
+      {
+       "word": "leaves",
+       "clue": "They fall from the trees in autumn"
+      },
+      {
+       "word": "gobble",
+       "clue": "The sound a turkey makes"
+      }
+     ]
+    },
+    {
+     "id": "03ddj33bqb0q",
+     "title": "Thanksgiving Hard",
+     "entries": [
+      {
+       "word": "lincoln",
+       "clue": "He made Thanksgiving national in 1863"
+      },
+      {
+       "word": "hale",
+       "clue": "Sarah Josepha ______"
+      },
+      {
+       "word": "franksgiving",
+       "clue": "Nickname for the 1939 holiday"
+      },
+      {
+       "word": "massasoit",
+       "clue": "Wampanoag leader at the 1621 feast"
+      },
+      {
+       "word": "compact",
+       "clue": "The Mayflower ______ of 1620"
+      },
+      {
+       "word": "poult",
+       "clue": "A baby turkey"
+      },
+      {
+       "word": "snood",
+       "clue": "The flap over a turkey's beak"
+      },
+      {
+       "word": "tryptophan",
+       "clue": "Amino acid blamed for sleepiness"
+      },
+      {
+       "word": "minnesota",
+       "clue": "The top turkey-raising state"
+      },
+      {
+       "word": "furcula",
+       "clue": "The wishbone's scientific name"
+      },
+      {
+       "word": "glean",
+       "clue": "Gather crops left after a harvest"
+      },
+      {
+       "word": "truss",
+       "clue": "Tie a turkey's legs"
+      },
+      {
+       "word": "brine",
+       "clue": "Salt water to soak a turkey in"
+      },
+      {
+       "word": "washington",
+       "clue": "First national Thanksgiving proclamation, 1789"
+      },
+      {
+       "word": "cowboys",
+       "clue": "Dallas team that plays every Thanksgiving"
+      }
+     ]
+    },
+    {
+     "id": "sxcc4iv2qb28",
+     "title": "Thanksgiving Intermediate",
+     "entries": [
+      {
+       "word": "mayflower",
+       "clue": "The Pilgrims' ship"
+      },
+      {
+       "word": "plymouth",
+       "clue": "The colony the Pilgrims built"
+      },
+      {
+       "word": "pilgrims",
+       "clue": "They arrived in 1620"
+      },
+      {
+       "word": "wampanoag",
+       "clue": "The Native nation at the 1621 feast"
+      },
+      {
+       "word": "squanto",
+       "clue": "He helped teach the Pilgrims to grow corn"
+      },
+      {
+       "word": "cornucopia",
+       "clue": "The horn of plenty"
+      },
+      {
+       "word": "casserole",
+       "clue": "Green bean ______"
+      },
+      {
+       "word": "pecan",
+       "clue": "A nut used in a holiday pie"
+      },
+      {
+       "word": "harvest",
+       "clue": "Gathering the fall crops"
+      },
+      {
+       "word": "gratitude",
+       "clue": "The feeling of being thankful"
+      },
+      {
+       "word": "tom",
+       "clue": "A male turkey"
+      },
+      {
+       "word": "hen",
+       "clue": "A female turkey"
+      },
+      {
+       "word": "wattle",
+       "clue": "The red skin under a turkey's chin"
+      },
+      {
+       "word": "lions",
+       "clue": "Detroit's Thanksgiving football team"
+      },
+      {
+       "word": "pardon",
+       "clue": "The president's turkey tradition"
       }
      ]
     }
@@ -18985,6 +22087,606 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "This famous cracked bell is in Philadelphia",
      "answer": "The Liberty Bell"
+    },
+    {
+     "id": "mbrna0lpqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 100,
+     "clue": "The sound a turkey makes",
+     "answer": "Gobble"
+    },
+    {
+     "id": "2p1v26e6qcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 200,
+     "clue": "The bone two people pull to make a wish",
+     "answer": "The wishbone"
+    },
+    {
+     "id": "e665cipxqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 300,
+     "clue": "The kitchen appliance the turkey cooks in",
+     "answer": "The oven"
+    },
+    {
+     "id": "d8lhl4e0qcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 400,
+     "clue": "A turkey drawing made by tracing your hand",
+     "answer": "A hand turkey"
+    },
+    {
+     "id": "snmygjchqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Turkey Time",
+     "value": 500,
+     "clue": "Slicing the turkey with a knife",
+     "answer": "Carving"
+    },
+    {
+     "id": "tzbxc6slqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 100,
+     "clue": "The orange Thanksgiving pie",
+     "answer": "Pumpkin"
+    },
+    {
+     "id": "040tvujoqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 200,
+     "clue": "A pie made from the fruit that keeps the doctor away",
+     "answer": "Apple"
+    },
+    {
+     "id": "wvbvn6whqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 300,
+     "clue": "The fluffy white topping on pie",
+     "answer": "Whipped cream"
+    },
+    {
+     "id": "xnagdcazqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 400,
+     "clue": "A sweet pie made with nuts",
+     "answer": "Pecan pie"
+    },
+    {
+     "id": "pi97r57pqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Pie Please",
+     "value": 500,
+     "clue": "The outside layer of a pie",
+     "answer": "The crust"
+    },
+    {
+     "id": "qm9lmjqjqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 100,
+     "clue": "Brown sauce poured over potatoes",
+     "answer": "Gravy"
+    },
+    {
+     "id": "y6aw1r3aqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 200,
+     "clue": "The red berry side dish",
+     "answer": "Cranberry sauce"
+    },
+    {
+     "id": "ryxj1judqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 300,
+     "clue": "Potatoes that have been smashed",
+     "answer": "Mashed potatoes"
+    },
+    {
+     "id": "usnw4b88qcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 400,
+     "clue": "Bread cubes and herbs cooked with the turkey",
+     "answer": "Stuffing"
+    },
+    {
+     "id": "f6h23cy4qcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Family Feast",
+     "value": 500,
+     "clue": "Food eaten the day after",
+     "answer": "Leftovers"
+    },
+    {
+     "id": "vxmm8brlqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 100,
+     "clue": "The season Thanksgiving is in",
+     "answer": "Fall"
+    },
+    {
+     "id": "y55462z7qcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 200,
+     "clue": "They change color and fall from the trees",
+     "answer": "Leaves"
+    },
+    {
+     "id": "01rk4nnxqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 300,
+     "clue": "The small nut from an oak tree",
+     "answer": "An acorn"
+    },
+    {
+     "id": "k81o0bhmqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 400,
+     "clue": "A straw figure that keeps birds away",
+     "answer": "A scarecrow"
+    },
+    {
+     "id": "bd5lctidqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Fall Favorites",
+     "value": 500,
+     "clue": "A horn-shaped basket overflowing with food",
+     "answer": "A cornucopia"
+    },
+    {
+     "id": "qjsigs06qcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 100,
+     "clue": "The month of Thanksgiving",
+     "answer": "November"
+    },
+    {
+     "id": "kxu00edlqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 200,
+     "clue": "The day of the week of Thanksgiving",
+     "answer": "Thursday"
+    },
+    {
+     "id": "35uvqm7qqcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 300,
+     "clue": "The sport on TV all day",
+     "answer": "Football"
+    },
+    {
+     "id": "2ikecah8qcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 400,
+     "clue": "Giant balloons float through New York City in this",
+     "answer": "A parade"
+    },
+    {
+     "id": "kl0ntol2qcuk",
+     "board": "Thanksgiving Easy",
+     "category": "Thanksgiving Day",
+     "value": 500,
+     "clue": "Saying what you're grateful for is giving these",
+     "answer": "Thanks"
+    },
+    {
+     "id": "q6t2u19dqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 100,
+     "clue": "The president who made Thanksgiving national in 1863",
+     "answer": "Abraham Lincoln"
+    },
+    {
+     "id": "fw8z04s5qddt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 200,
+     "clue": "The president who issued the first national proclamation in 1789",
+     "answer": "George Washington"
+    },
+    {
+     "id": "6zwooqclqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 300,
+     "clue": "The writer who campaigned 17 years for the holiday",
+     "answer": "Sarah Josepha Hale"
+    },
+    {
+     "id": "3cvg3qh3qddt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 400,
+     "clue": "The nickname for FDR's earlier 1939 holiday",
+     "answer": "Franksgiving"
+    },
+    {
+     "id": "4q6qwjohqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Thanksgiving History",
+     "value": 500,
+     "clue": "The year Congress set the fourth Thursday by law",
+     "answer": "1941"
+    },
+    {
+     "id": "yfbuh5ltqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 100,
+     "clue": "A baby turkey",
+     "answer": "A poult"
+    },
+    {
+     "id": "69vzo7riqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 200,
+     "clue": "The flap that hangs over a turkey's beak",
+     "answer": "The snood"
+    },
+    {
+     "id": "itj1ll5iqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 300,
+     "clue": "The state that raises the most turkeys",
+     "answer": "Minnesota"
+    },
+    {
+     "id": "t8iw68vqqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 400,
+     "clue": "The amino acid blamed for after-dinner sleepiness",
+     "answer": "Tryptophan"
+    },
+    {
+     "id": "z80spv2mqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Turkey Trivia",
+     "value": 500,
+     "clue": "The Founding Father who praised the turkey over the bald eagle",
+     "answer": "Benjamin Franklin"
+    },
+    {
+     "id": "rbw6vyp5qddt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 100,
+     "clue": "The year of the harvest feast",
+     "answer": "1621"
+    },
+    {
+     "id": "q7c5v7cdqddt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 200,
+     "clue": "About how many days it lasted",
+     "answer": "3"
+    },
+    {
+     "id": "h413j16rqddt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 300,
+     "clue": "The Wampanoag leader who attended",
+     "answer": "Massasoit"
+    },
+    {
+     "id": "xkv2cpoaqddt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 400,
+     "clue": "The agreement signed aboard the Mayflower in 1620",
+     "answer": "The Mayflower Compact"
+    },
+    {
+     "id": "5rhvfihdqddt",
+     "board": "Thanksgiving Hard",
+     "category": "The 1621 Feast",
+     "value": 500,
+     "clue": "Corn, beans and squash grown together",
+     "answer": "The Three Sisters"
+    },
+    {
+     "id": "ulsmizjpqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 100,
+     "clue": "The decade green bean casserole was invented",
+     "answer": "The 1950s"
+    },
+    {
+     "id": "0hx1aq8tqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 200,
+     "clue": "When Canada celebrates Thanksgiving",
+     "answer": "The second Monday in October"
+    },
+    {
+     "id": "5pnk7n6gqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 300,
+     "clue": "The scientific name for the wishbone",
+     "answer": "The furcula"
+    },
+    {
+     "id": "o87lh09oqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 400,
+     "clue": "This tart berry is one of only a few fruits native to North America",
+     "answer": "The cranberry"
+    },
+    {
+     "id": "jgi655exqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Food Firsts",
+     "value": 500,
+     "clue": "She wrote the 1796 cookbook with an early pumpkin pie recipe",
+     "answer": "Amelia Simmons"
+    },
+    {
+     "id": "6mvwqwpyqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 100,
+     "clue": "She wrote the poem \"Over the River and Through the Wood\"",
+     "answer": "Lydia Maria Child"
+    },
+    {
+     "id": "ol317pgrqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 200,
+     "clue": "The meaning of the Latin word cornucopia",
+     "answer": "Horn of plenty"
+    },
+    {
+     "id": "21lguqhnqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 300,
+     "clue": "To gather the crops left after a harvest",
+     "answer": "Glean"
+    },
+    {
+     "id": "orppcqjgqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 400,
+     "clue": "To tie a turkey's legs with string before roasting",
+     "answer": "Truss"
+    },
+    {
+     "id": "r20hejtdqddt",
+     "board": "Thanksgiving Hard",
+     "category": "Words of Thanks",
+     "value": 500,
+     "clue": "Soaking a turkey in salt water before cooking",
+     "answer": "Brining"
+    },
+    {
+     "id": "i6ba2m8vqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 100,
+     "clue": "The Pilgrims' ship",
+     "answer": "The Mayflower"
+    },
+    {
+     "id": "fwtg6xx3qdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 200,
+     "clue": "The year the Pilgrims arrived",
+     "answer": "1620"
+    },
+    {
+     "id": "uqv4lt2tqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 300,
+     "clue": "The colony the Pilgrims built",
+     "answer": "Plymouth"
+    },
+    {
+     "id": "83z9n6rkqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 400,
+     "clue": "The Native nation at the 1621 harvest feast",
+     "answer": "Wampanoag"
+    },
+    {
+     "id": "h0ao6gxgqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Pilgrims and History",
+     "value": 500,
+     "clue": "The Patuxet man who helped the Pilgrims grow corn",
+     "answer": "Squanto"
+    },
+    {
+     "id": "0v9jz01bqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 100,
+     "clue": "A male turkey",
+     "answer": "A tom"
+    },
+    {
+     "id": "pi10d59cqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 200,
+     "clue": "A female turkey",
+     "answer": "A hen"
+    },
+    {
+     "id": "z91nr7wxqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 300,
+     "clue": "The red skin under a turkey's chin",
+     "answer": "The wattle"
+    },
+    {
+     "id": "23bhnbjoqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 400,
+     "clue": "Only these turkeys gobble",
+     "answer": "The males"
+    },
+    {
+     "id": "b9c9gdvlqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Turkey Facts",
+     "value": 500,
+     "clue": "True or false: wild turkeys can fly",
+     "answer": "True"
+    },
+    {
+     "id": "zw635errqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 100,
+     "clue": "Green beans topped with crispy onions",
+     "answer": "Green bean casserole"
+    },
+    {
+     "id": "wjpq09orqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 200,
+     "clue": "Orange potatoes often topped with marshmallows",
+     "answer": "Sweet potatoes"
+    },
+    {
+     "id": "5o0rb6xbqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 300,
+     "clue": "Stuffing cooked outside the turkey",
+     "answer": "Dressing"
+    },
+    {
+     "id": "m8e07m8mqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 400,
+     "clue": "These berries are harvested by flooding bogs",
+     "answer": "Cranberries"
+    },
+    {
+     "id": "0tfd1yvbqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Side Dishes",
+     "value": 500,
+     "clue": "Cranberries float because they have these inside",
+     "answer": "Air pockets"
+    },
+    {
+     "id": "yzfyopjbqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 100,
+     "clue": "New York City's big Thanksgiving parade began in this year",
+     "answer": "1924"
+    },
+    {
+     "id": "qvsnn3axqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 200,
+     "clue": "The team that plays every Thanksgiving in Detroit",
+     "answer": "The Lions"
+    },
+    {
+     "id": "o6ovipexqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 300,
+     "clue": "The Texas team that also plays every Thanksgiving",
+     "answer": "The Dallas Cowboys"
+    },
+    {
+     "id": "v89mbpi6qdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 400,
+     "clue": "Giant floating characters in the parade",
+     "answer": "Balloons"
+    },
+    {
+     "id": "effpcof8qdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Parades and Football",
+     "value": 500,
+     "clue": "The parade ends with the arrival of this holiday visitor",
+     "answer": "Santa Claus"
+    },
+    {
+     "id": "a0jhv7irqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 100,
+     "clue": "The feeling of being thankful",
+     "answer": "Gratitude"
+    },
+    {
+     "id": "hc6tmzk8qdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 200,
+     "clue": "Another name for a cornucopia",
+     "answer": "Horn of plenty"
+    },
+    {
+     "id": "yx0r5votqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 300,
+     "clue": "Writing down what you're thankful for each day",
+     "answer": "A gratitude journal"
+    },
+    {
+     "id": "c3c6s724qdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 400,
+     "clue": "A Thanksgiving morning fun run",
+     "answer": "A turkey trot"
+    },
+    {
+     "id": "zrmq2grdqdwt",
+     "board": "Thanksgiving Intermediate",
+     "category": "Gratitude",
+     "value": 500,
+     "clue": "The president spares a turkey in this ceremony",
+     "answer": "The turkey pardon"
     }
    ],
    "wheel": [
@@ -20533,7 +24235,8 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "GIVE THANKS",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -20565,7 +24268,8 @@ window.GS_MY_CONTENT = {
      "category": "Phrase",
      "phrase": "GOBBLE GOBBLE",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -20589,7 +24293,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "PUMPKIN PIE",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -20597,7 +24302,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "MASHED POTATOES",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -20605,7 +24311,8 @@ window.GS_MY_CONTENT = {
      "category": "Thing",
      "phrase": "CRANBERRY SAUCE",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -20693,7 +24400,8 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "THANKSGIVING DINNER",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -20709,7 +24417,8 @@ window.GS_MY_CONTENT = {
      "category": "Event",
      "phrase": "A FOOTBALL GAME",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -20726,6 +24435,430 @@ window.GS_MY_CONTENT = {
      "phrase": "RAKING THE LEAVES",
      "sets": [
       "November Game Day"
+     ]
+    },
+    {
+     "id": "he111l2lqeft",
+     "category": "Phrase",
+     "phrase": "HAPPY THANKSGIVING",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "vqxjwgdkqeft",
+     "category": "Phrase",
+     "phrase": "PASS THE GRAVY PLEASE",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "j5jztkalqeft",
+     "category": "Phrase",
+     "phrase": "TIME TO EAT",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "uzjf6j6dqeft",
+     "category": "Phrase",
+     "phrase": "THANKFUL FOR YOU",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "jwjmcnyfqeft",
+     "category": "Thing",
+     "phrase": "SWEET POTATOES",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "30sw3quhqeft",
+     "category": "Thing",
+     "phrase": "CORN ON THE COB",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "r650noyjqeft",
+     "category": "Thing",
+     "phrase": "TURKEY AND STUFFING",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "unqitsk8qeft",
+     "category": "Thing",
+     "phrase": "APPLE PIE",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "phey2at6qeft",
+     "category": "Thing",
+     "phrase": "WHIPPED CREAM",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "m6h31l3zqeft",
+     "category": "Event",
+     "phrase": "WATCHING THE PARADE",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "xgth698mqeft",
+     "category": "Event",
+     "phrase": "FAMILY TIME",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "qdw5v78iqeft",
+     "category": "Event",
+     "phrase": "BREAKING THE WISHBONE",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "it28k27oqeft",
+     "category": "Event",
+     "phrase": "EATING LEFTOVERS",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "toey8gv8qeys",
+     "category": "Phrase",
+     "phrase": "THANKSGIVING IS THE FOURTH THURSDAY",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "fgfpnm1iqeys",
+     "category": "Phrase",
+     "phrase": "A HORN OF PLENTY",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "4hze6l9yqeys",
+     "category": "Phrase",
+     "phrase": "BRINING THE TURKEY OVERNIGHT",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "7lmpt3qhqeys",
+     "category": "Phrase",
+     "phrase": "GLEAN THE FIELDS",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "4iqyfr9oqeys",
+     "category": "Thing",
+     "phrase": "THE MAYFLOWER COMPACT",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "hq5mftjqqeys",
+     "category": "Thing",
+     "phrase": "TRYPTOPHAN",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "muswwdooqeys",
+     "category": "Thing",
+     "phrase": "THE THREE SISTERS",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "erpcy3gwqeys",
+     "category": "Thing",
+     "phrase": "CORN BEANS AND SQUASH",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "p1busiolqeys",
+     "category": "Thing",
+     "phrase": "A TURKEY SNOOD",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "3p0j61nwqeys",
+     "category": "Thing",
+     "phrase": "A CRANBERRY BOG",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "xqvgzavzqeys",
+     "category": "Person",
+     "phrase": "ABRAHAM LINCOLN",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "izakisorqeys",
+     "category": "Person",
+     "phrase": "SARAH JOSEPHA HALE",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "q7kz6gmfqeys",
+     "category": "Person",
+     "phrase": "MASSASOIT",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "42nc30ktqeys",
+     "category": "Person",
+     "phrase": "BENJAMIN FRANKLIN",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "um5mmekzqeys",
+     "category": "Person",
+     "phrase": "FRANKLIN ROOSEVELT",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "76pskhrrqeys",
+     "category": "Place",
+     "phrase": "PLYMOUTH COLONY",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "4mkumpp6qeys",
+     "category": "Place",
+     "phrase": "CAPE COD",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "yeg80unmqeys",
+     "category": "Event",
+     "phrase": "A THREE DAY HARVEST FEAST",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "0i465m9nqeys",
+     "category": "Event",
+     "phrase": "FRANKSGIVING",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "bxdiubppqeys",
+     "category": "Event",
+     "phrase": "THE LIONS GAME",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "p3gn9drhqfi7",
+     "category": "Phrase",
+     "phrase": "OVER THE RIVER AND THROUGH THE WOODS",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ahq5nc3oqfi7",
+     "category": "Phrase",
+     "phrase": "COUNT YOUR BLESSINGS",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "r47f08tpqfi7",
+     "category": "Phrase",
+     "phrase": "AN ATTITUDE OF GRATITUDE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "w6l2pn8fqfi7",
+     "category": "Phrase",
+     "phrase": "SAVE ROOM FOR DESSERT",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ck249qmfqfi7",
+     "category": "Phrase",
+     "phrase": "SECONDS PLEASE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "bwtooftbqfi7",
+     "category": "Phrase",
+     "phrase": "A GRATEFUL HEART",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "fgys628nqfi7",
+     "category": "Thing",
+     "phrase": "GREEN BEAN CASSEROLE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "pdz3rmv2qfi7",
+     "category": "Thing",
+     "phrase": "DINNER ROLLS",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "fywrmwdgqfi7",
+     "category": "Thing",
+     "phrase": "PECAN PIE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "oweu0qc9qfi7",
+     "category": "Thing",
+     "phrase": "THE KIDS TABLE",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ve0kpoxhqfi7",
+     "category": "Thing",
+     "phrase": "LEFTOVER SANDWICHES",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "mskz9vr8qfi7",
+     "category": "Thing",
+     "phrase": "A CORNUCOPIA",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "fo0j6t3vqfi7",
+     "category": "Thing",
+     "phrase": "TURKEY GRAVY",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "rwmnovqbqfi7",
+     "category": "Thing",
+     "phrase": "THE MAYFLOWER",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "2m6aradiqfi7",
+     "category": "Place",
+     "phrase": "PLYMOUTH ROCK",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "9y283va4qfi7",
+     "category": "Place",
+     "phrase": "PLYMOUTH MASSACHUSETTS",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "pajl2unoqfi7",
+     "category": "Event",
+     "phrase": "BLACK FRIDAY",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "kwet31ueqfi7",
+     "category": "Event",
+     "phrase": "THE TURKEY PARDON",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "fok5jtq6qfi7",
+     "category": "Event",
+     "phrase": "CARVING THE TURKEY",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "nsv3uwt8qfi7",
+     "category": "Event",
+     "phrase": "A TURKEY TROT",
+     "sets": [
+      "Thanksgiving Intermediate"
      ]
     }
    ],
@@ -22010,7 +26143,8 @@ window.GS_MY_CONTENT = {
      "word": "GRAVY",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -22018,7 +26152,8 @@ window.GS_MY_CONTENT = {
      "word": "ACORN",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -22026,7 +26161,8 @@ window.GS_MY_CONTENT = {
      "word": "MAPLE",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -22034,7 +26170,8 @@ window.GS_MY_CONTENT = {
      "word": "PECAN",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -22042,7 +26179,8 @@ window.GS_MY_CONTENT = {
      "word": "FEAST",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -22050,7 +26188,8 @@ window.GS_MY_CONTENT = {
      "word": "BREAD",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -22058,7 +26197,8 @@ window.GS_MY_CONTENT = {
      "word": "CRISP",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -22146,7 +26286,8 @@ window.GS_MY_CONTENT = {
      "word": "APPLE",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -22170,7 +26311,8 @@ window.GS_MY_CONTENT = {
      "word": "THANK",
      "hint": "November Game Day",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -22179,6 +26321,420 @@ window.GS_MY_CONTENT = {
      "hint": "November Game Day",
      "sets": [
       "November Game Day"
+     ]
+    },
+    {
+     "id": "6crtvjebq1jf",
+     "word": "HAPPY",
+     "hint": "Feeling",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "cajob4okq1jf",
+     "word": "GRACE",
+     "hint": "Feeling",
+     "sets": [
+      "Personal Strengths",
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "rzvfml39q1jf",
+     "word": "SHARE",
+     "hint": "Connection",
+     "sets": [
+      "Handling Stress",
+      "Media Literacy",
+      "Handling Disappointment",
+      "Asking for Help",
+      "Effective Communication",
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "19hbvih8qho3",
+     "word": "TABLE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "q5zq25tdqho3",
+     "word": "PLATE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "nqqqz5tiqho3",
+     "word": "GUEST",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "bc759h71qho3",
+     "word": "CARVE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "1bhpiiofqho3",
+     "word": "SWEET",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "sbw6rf29qho3",
+     "word": "BAKED",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "ugfrofwjqho3",
+     "word": "CREAM",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "anhwkewcqho3",
+     "word": "SUGAR",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "fn936obfqho3",
+     "word": "CRUST",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "00l3dzduqho3",
+     "word": "HONEY",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "8d1bffesqi84",
+     "word": "POULT",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "shk5iax3qi84",
+     "word": "SNOOD",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "iwwltd60qi84",
+     "word": "GOURD",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "ku7z0ru9qi84",
+     "word": "GLEAN",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "r47cyzzcqi84",
+     "word": "TRUSS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "5xyyef3rqi84",
+     "word": "BRINE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "1p7ww23kqi84",
+     "word": "TUBER",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "s61bzz9hqi84",
+     "word": "LADLE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "s3avfxqtqi84",
+     "word": "SIEVE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "sj8ck6moqi84",
+     "word": "QUILL",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "3tqrf6r7qi84",
+     "word": "SHEAF",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "ymfjp3i5qi84",
+     "word": "BOUGH",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "b6sj4ddyqi84",
+     "word": "AMBER",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "pmu0wj1yqi84",
+     "word": "OCHRE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "69oo3v5gqi84",
+     "word": "SQUAB",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "o4c3e3ibqi84",
+     "word": "PILAF",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "gdirkmymqi84",
+     "word": "ASPIC",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "7qxwh5hkqi84",
+     "word": "FOWLS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "ceig7ph5qi84",
+     "word": "FLANS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "vbb68mitqi84",
+     "word": "GRAIN",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "3pg51mc2qirh",
+     "word": "ROAST",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "6uqf00dqqirh",
+     "word": "YEAST",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "6ahzgwzdqirh",
+     "word": "FLOUR",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "mv96o47bqirh",
+     "word": "SPICE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "e0qppfocqirh",
+     "word": "CLOVE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "7wuatr6tqirh",
+     "word": "THYME",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "9vykh79iqirh",
+     "word": "ONION",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "7874q360qirh",
+     "word": "BEANS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "rdm4dg2kqirh",
+     "word": "MAIZE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "n6z4wj6mqirh",
+     "word": "GLAZE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "94iwq9yzqirh",
+     "word": "DOUGH",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "mgtw7lkgqirh",
+     "word": "WHISK",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "sgfm75ebqirh",
+     "word": "FLOCK",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "rkib6hriqirh",
+     "word": "BASTE",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "qg6zi69gqirh",
+     "word": "TARTS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "jc7xlgqhqirh",
+     "word": "YIELD",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ml0rgr9iqirh",
+     "word": "DINED",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "sbwfenwfqirh",
+     "word": "BOWLS",
+     "hint": "Thanksgiving",
+     "sets": [
+      "Thanksgiving Intermediate"
      ]
     }
    ],
@@ -23284,7 +27840,8 @@ window.GS_MY_CONTENT = {
      "level": "easy",
      "sets": [
       "Mindfulness",
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23765,7 +28322,8 @@ window.GS_MY_CONTENT = {
      "word": "a turkey",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23773,7 +28331,8 @@ window.GS_MY_CONTENT = {
      "word": "a pumpkin",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23781,7 +28340,8 @@ window.GS_MY_CONTENT = {
      "word": "a leaf",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23789,7 +28349,8 @@ window.GS_MY_CONTENT = {
      "word": "a pie",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23797,7 +28358,8 @@ window.GS_MY_CONTENT = {
      "word": "an acorn",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23805,7 +28367,8 @@ window.GS_MY_CONTENT = {
      "word": "a football",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23821,7 +28384,8 @@ window.GS_MY_CONTENT = {
      "word": "a house",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23845,7 +28409,8 @@ window.GS_MY_CONTENT = {
      "word": "a car",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23869,7 +28434,8 @@ window.GS_MY_CONTENT = {
      "word": "an apple",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23933,7 +28499,8 @@ window.GS_MY_CONTENT = {
      "word": "a scarecrow",
      "level": "easy",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -23949,7 +28516,8 @@ window.GS_MY_CONTENT = {
      "word": "carving a turkey",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -23957,7 +28525,8 @@ window.GS_MY_CONTENT = {
      "word": "raking leaves",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -23965,7 +28534,8 @@ window.GS_MY_CONTENT = {
      "word": "a parade balloon",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -23981,7 +28551,8 @@ window.GS_MY_CONTENT = {
      "word": "a cornucopia",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Intermediate"
      ]
     },
     {
@@ -24005,7 +28576,8 @@ window.GS_MY_CONTENT = {
      "word": "a pilgrim hat",
      "level": "medium",
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -24142,6 +28714,358 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "November Game Day"
+     ]
+    },
+    {
+     "id": "iwve4vdvqb8j",
+     "word": "a corn cob",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "0k73jiqaqb8j",
+     "word": "a table",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "5q5mexf6qb8j",
+     "word": "a plate",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "qot8c3cuqb8j",
+     "word": "a fork",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "1pyoz0k3qb8j",
+     "word": "a basket",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "4a7l24dnqb8j",
+     "word": "a feather",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "2rwihmy7qb8j",
+     "word": "a hand turkey",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "gwvsuz37qb8j",
+     "word": "a wishbone",
+     "level": "easy",
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "1bzig6bhqbrk",
+     "word": "being thankful",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "8qx6t5tkqbrk",
+     "word": "Black Friday shopping",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "o8jmecdtqbrk",
+     "word": "a traffic jam on the way home",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "rkm7biibqbrk",
+     "word": "a turkey pardon",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "pqk1bn7pqbrk",
+     "word": "Plymouth Rock",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "ym3xxf4cqbrk",
+     "word": "leftovers in the fridge",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "hrqqwzekqbrk",
+     "word": "a food coma",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "8qxerhqjqbrk",
+     "word": "a delay at the airport",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "sz4owrheqbrk",
+     "word": "over the river and through the woods",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "fv6wkoahqbrk",
+     "word": "the first Thanksgiving",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "bkcboyrjqbrk",
+     "word": "breaking the wishbone",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "43f530fcqbrk",
+     "word": "a burnt turkey",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "ygwiot87qbrk",
+     "word": "a smoke alarm while cooking",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "uhtsclfiqbrk",
+     "word": "a turkey trot race",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "w4x6pzvjqbrk",
+     "word": "giving thanks around the table",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "x4m9fdolqbrk",
+     "word": "falling asleep during the game",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "uhjtxll3qbrk",
+     "word": "unbuttoning your pants after dinner",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "540aw9rgqbrk",
+     "word": "a cranberry bog",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "8k0bomvbqbrk",
+     "word": "a harvest moon",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "gukqg6jtqbrk",
+     "word": "a volunteer serving food",
+     "level": "hard",
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "c9qgld4sqcaj",
+     "word": "mashed potatoes",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "qz91shy7qcaj",
+     "word": "a family dinner",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "x9ob9wpgqcaj",
+     "word": "saying thank you",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "mvuwsrn7qcaj",
+     "word": "a football game on TV",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "phl8ozmyqcaj",
+     "word": "a turkey running away",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "6q31a6yxqcaj",
+     "word": "a full belly",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "7dgc81dsqcaj",
+     "word": "the Mayflower",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "4jkft17nqcaj",
+     "word": "a pie in the oven",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "5zc6981uqcaj",
+     "word": "passing the gravy",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ni3q51iqqcaj",
+     "word": "setting the table",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "03t10vgmqcaj",
+     "word": "a turkey wearing a hat",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "iz51qg0zqcaj",
+     "word": "jumping in a leaf pile",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "8ag428uwqcaj",
+     "word": "a pumpkin patch",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "jmq1eu1wqcaj",
+     "word": "napping on the couch",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "921bvyi1qcaj",
+     "word": "the kids table",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "buu140siqcaj",
+     "word": "a grocery store line",
+     "level": "medium",
+     "sets": [
+      "Thanksgiving Intermediate"
      ]
     }
    ],
@@ -27563,7 +32487,8 @@ window.GS_MY_CONTENT = {
      "category": "November Game Day",
      "time": 20,
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -27878,7 +32803,8 @@ window.GS_MY_CONTENT = {
      "category": "November Game Day",
      "time": 20,
      "sets": [
-      "November Game Day"
+      "November Game Day",
+      "Thanksgiving Easy"
      ]
     },
     {
@@ -27894,6 +32820,876 @@ window.GS_MY_CONTENT = {
      "time": 20,
      "sets": [
       "November Game Day"
+     ]
+    },
+    {
+     "id": "t54kw9jrqg1o",
+     "question": "Which day of the week is Thanksgiving in the U.S.?",
+     "answer": "Thursday",
+     "wrong": [
+      "Monday",
+      "Friday",
+      "Sunday"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "v1dx30qdqg1o",
+     "question": "In which month is U.S. Thanksgiving?",
+     "answer": "November",
+     "wrong": [
+      "October",
+      "December",
+      "September"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "r6aamsj1qg1o",
+     "question": "What sound does a turkey make?",
+     "answer": "Gobble",
+     "wrong": [
+      "Quack",
+      "Moo",
+      "Oink"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "smcf25j0qg1o",
+     "question": "Which orange pie is a Thanksgiving favorite?",
+     "answer": "Pumpkin",
+     "wrong": [
+      "Cherry",
+      "Lemon",
+      "Key lime"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "a4no4eutqg1o",
+     "question": "Which red berry is made into a Thanksgiving sauce?",
+     "answer": "Cranberry",
+     "wrong": [
+      "Strawberry",
+      "Raspberry",
+      "Cherry"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "3y2nuol6qg1o",
+     "question": "Thanksgiving is a day to give what?",
+     "answer": "Thanks",
+     "wrong": [
+      "Gifts",
+      "Cards",
+      "Speeches"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "5avyxwl7qg1o",
+     "question": "How are potatoes most often served at Thanksgiving?",
+     "answer": "Mashed",
+     "wrong": [
+      "Raw",
+      "Frozen",
+      "Pickled"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "salvesb7qg1o",
+     "question": "What brown sauce is poured over turkey and potatoes?",
+     "answer": "Gravy",
+     "wrong": [
+      "Ketchup",
+      "Syrup",
+      "Salsa"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "xkvmoh02qg1o",
+     "question": "Which bone do two people pull to make a wish?",
+     "answer": "The wishbone",
+     "wrong": [
+      "The funny bone",
+      "The backbone",
+      "The drumstick"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "pkzja516qg1o",
+     "question": "Which season is Thanksgiving in?",
+     "answer": "Fall",
+     "wrong": [
+      "Spring",
+      "Summer",
+      "Winter"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "n0qqdjefqg1o",
+     "question": "What fluffy white topping goes on pumpkin pie?",
+     "answer": "Whipped cream",
+     "wrong": [
+      "Mustard",
+      "Mayonnaise",
+      "Sour cream"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "6nrtszcrqg1o",
+     "question": "What is the horn-shaped basket full of food called?",
+     "answer": "A cornucopia",
+     "wrong": [
+      "A piñata",
+      "A wreath",
+      "A sombrero"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "dpck7wvrqg1o",
+     "question": "Leftover turkey is often made into what the next day?",
+     "answer": "Sandwiches",
+     "wrong": [
+      "Ice cream",
+      "Cereal",
+      "Smoothies"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "c2skqwr4qg1o",
+     "question": "A hand turkey drawing is made by tracing what?",
+     "answer": "Your hand",
+     "wrong": [
+      "Your foot",
+      "A plate",
+      "A leaf"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "bffwqndnqg1o",
+     "question": "Younger guests sometimes sit at a separate what?",
+     "answer": "Kids' table",
+     "wrong": [
+      "Bus stop",
+      "Desk",
+      "Bench"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "ytnxpptfqg1o",
+     "question": "What bread cubes and herbs are cooked with the turkey?",
+     "answer": "Stuffing",
+     "wrong": [
+      "Croutons only",
+      "Pancakes",
+      "Toast"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "yodvhr6xqg1o",
+     "question": "What colors are most fall leaves?",
+     "answer": "Red, orange and yellow",
+     "wrong": [
+      "Blue and purple",
+      "Pink and white",
+      "Black and gray"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "y6kzf1q3qg1o",
+     "question": "Big balloons float down the street in a Thanksgiving what?",
+     "answer": "Parade",
+     "wrong": [
+      "Race",
+      "Concert",
+      "Circus"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Easy"
+     ]
+    },
+    {
+     "id": "gacsufu7qgl6",
+     "question": "Which president made Thanksgiving a national holiday in 1863?",
+     "answer": "Abraham Lincoln",
+     "wrong": [
+      "George Washington",
+      "Thomas Jefferson",
+      "Ulysses S. Grant"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "7bbk111qqgl6",
+     "question": "Which president issued the first national Thanksgiving proclamation, in 1789?",
+     "answer": "George Washington",
+     "wrong": [
+      "John Adams",
+      "Abraham Lincoln",
+      "James Madison"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "w4kzewf3qgl6",
+     "question": "Which writer campaigned for about 17 years to make Thanksgiving a national holiday?",
+     "answer": "Sarah Josepha Hale",
+     "wrong": [
+      "Harriet Beecher Stowe",
+      "Louisa May Alcott",
+      "Emily Dickinson"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "bcse5mamqgl6",
+     "question": "Sarah Josepha Hale also wrote which nursery rhyme?",
+     "answer": "Mary Had a Little Lamb",
+     "wrong": [
+      "Humpty Dumpty",
+      "Jack and Jill",
+      "Little Bo Peep"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "esqzy64xqgl6",
+     "question": "When FDR moved Thanksgiving a week earlier in 1939, people nicknamed it what?",
+     "answer": "Franksgiving",
+     "wrong": [
+      "Roosevelt Day",
+      "New Deal Day",
+      "Early Feast"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "9gv1hsm3qgl6",
+     "question": "In what year did Congress set Thanksgiving as the fourth Thursday of November?",
+     "answer": "1941",
+     "wrong": [
+      "1863",
+      "1900",
+      "1960"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "snqc086tqgl6",
+     "question": "Who was the Wampanoag leader at the 1621 harvest feast?",
+     "answer": "Massasoit",
+     "wrong": [
+      "Squanto",
+      "Metacom",
+      "Tecumseh"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "rq664ce6qgl6",
+     "question": "About how many days did the 1621 harvest feast last?",
+     "answer": "3",
+     "wrong": [
+      "1",
+      "7",
+      "14"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "g6rivp5dqgl6",
+     "question": "Which NFL team has hosted a Thanksgiving game since 1934?",
+     "answer": "Detroit Lions",
+     "wrong": [
+      "Green Bay Packers",
+      "Chicago Bears",
+      "New York Giants"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "924bpoj9qgl6",
+     "question": "Which NFL team has hosted a Thanksgiving game since 1966?",
+     "answer": "Dallas Cowboys",
+     "wrong": [
+      "Pittsburgh Steelers",
+      "Miami Dolphins",
+      "Denver Broncos"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "zj3v2u1hqgl6",
+     "question": "What is the fleshy flap that hangs over a turkey's beak called?",
+     "answer": "Snood",
+     "wrong": [
+      "Wattle",
+      "Comb",
+      "Crop"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "nclbvkdnqgl6",
+     "question": "What is a baby turkey called?",
+     "answer": "A poult",
+     "wrong": [
+      "A cub",
+      "A kid",
+      "A cygnet"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "h7bzwll5qgl6",
+     "question": "Which U.S. state raises the most turkeys?",
+     "answer": "Minnesota",
+     "wrong": [
+      "Texas",
+      "Florida",
+      "Maine"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "28epu5baqgl6",
+     "question": "Which amino acid in turkey is often blamed for feeling sleepy?",
+     "answer": "Tryptophan",
+     "wrong": [
+      "Caffeine",
+      "Glucose",
+      "Vitamin C"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "ezsazkk0qgl6",
+     "question": "Which president made the turkey pardon an official tradition in 1989?",
+     "answer": "George H. W. Bush",
+     "wrong": [
+      "Ronald Reagan",
+      "Bill Clinton",
+      "Jimmy Carter"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "ty8h4uy4qgl6",
+     "question": "Which three crops make up the Native American Three Sisters?",
+     "answer": "Corn, beans and squash",
+     "wrong": [
+      "Wheat, rice and oats",
+      "Apples, pears and plums",
+      "Potatoes, carrots and onions"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "9m3epr72qgl6",
+     "question": "In which decade was green bean casserole invented?",
+     "answer": "1950s",
+     "wrong": [
+      "1920s",
+      "1970s",
+      "1990s"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "p4459abvqgl6",
+     "question": "When does Canada celebrate Thanksgiving?",
+     "answer": "The second Monday in October",
+     "wrong": [
+      "The fourth Thursday in November",
+      "The first Sunday in September",
+      "December 1"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "keievrgcqgl6",
+     "question": "Who wrote the poem Over the River and Through the Wood?",
+     "answer": "Lydia Maria Child",
+     "wrong": [
+      "Robert Frost",
+      "Emily Dickinson",
+      "Walt Whitman"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "k493avoeqgl6",
+     "question": "What agreement did the Pilgrims sign aboard their ship in 1620?",
+     "answer": "The Mayflower Compact",
+     "wrong": [
+      "The Plymouth Treaty",
+      "The Bill of Rights",
+      "The Harvest Pact"
+     ],
+     "category": "Thanksgiving",
+     "time": 25,
+     "sets": [
+      "Thanksgiving Hard"
+     ]
+    },
+    {
+     "id": "vc00zwkoqh4l",
+     "question": "What ship did the Pilgrims sail on?",
+     "answer": "The Mayflower",
+     "wrong": [
+      "The Titanic",
+      "The Santa Maria",
+      "The Nina"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "42s2j8eqqh4l",
+     "question": "In what year did the Mayflower arrive in America?",
+     "answer": "1620",
+     "wrong": [
+      "1492",
+      "1776",
+      "1700"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "75trufslqh4l",
+     "question": "The harvest feast often called the first Thanksgiving was in what year?",
+     "answer": "1621",
+     "wrong": [
+      "1620",
+      "1650",
+      "1700"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "21w5ujrtqh4l",
+     "question": "Which Native nation joined the Pilgrims at the 1621 harvest feast?",
+     "answer": "Wampanoag",
+     "wrong": [
+      "Cherokee",
+      "Navajo",
+      "Sioux"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "z2d11mcnqh4l",
+     "question": "Which Patuxet man helped teach the Pilgrims to grow corn?",
+     "answer": "Squanto",
+     "wrong": [
+      "Sitting Bull",
+      "Pocahontas",
+      "Geronimo"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "v34mztdiqh4l",
+     "question": "Where did the Pilgrims build their colony?",
+     "answer": "Plymouth",
+     "wrong": [
+      "Boston",
+      "Jamestown",
+      "New York"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "ur368flmqh4l",
+     "question": "New York City's famous Thanksgiving parade began in what year?",
+     "answer": "1924",
+     "wrong": [
+      "1950",
+      "1880",
+      "1970"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "4gzodh8fqh4l",
+     "question": "What is the shopping day after Thanksgiving called?",
+     "answer": "Black Friday",
+     "wrong": [
+      "Cyber Sunday",
+      "Super Saturday",
+      "Blue Monday"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "5jd283shqh4l",
+     "question": "What is a male turkey called?",
+     "answer": "A tom",
+     "wrong": [
+      "A buck",
+      "A rooster",
+      "A drake"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "a7bflvnpqh4l",
+     "question": "What is a female turkey called?",
+     "answer": "A hen",
+     "wrong": [
+      "A doe",
+      "A ewe",
+      "A mare"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "4xg8y58fqh4l",
+     "question": "Can wild turkeys fly?",
+     "answer": "Yes, in short bursts",
+     "wrong": [
+      "No, never",
+      "Only babies can",
+      "Only at night"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "69t9gdgdqh4l",
+     "question": "Which turkeys gobble?",
+     "answer": "Only the males",
+     "wrong": [
+      "Only the females",
+      "Both",
+      "Neither"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "us7r2cnmqh4l",
+     "question": "Cranberries are harvested by flooding the bogs because they do what?",
+     "answer": "Float",
+     "wrong": [
+      "Sink",
+      "Dissolve",
+      "Bounce away"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "1g8vh8abqh4l",
+     "question": "What is another name for a cornucopia?",
+     "answer": "Horn of plenty",
+     "wrong": [
+      "Bread basket",
+      "Harvest hat",
+      "Fruit bowl"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "7vzz3422qh4l",
+     "question": "What is the red skin that hangs under a turkey's chin?",
+     "answer": "The wattle",
+     "wrong": [
+      "The comb",
+      "The beak",
+      "The crest"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "n4thopiqqh4l",
+     "question": "What is the president's yearly turkey tradition called?",
+     "answer": "The turkey pardon",
+     "wrong": [
+      "The turkey trot",
+      "The turkey toss",
+      "The turkey toast"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "56uep4w7qh4l",
+     "question": "Benjamin Franklin praised which bird as a much more respectable bird than the bald eagle?",
+     "answer": "The turkey",
+     "wrong": [
+      "The owl",
+      "The robin",
+      "The crow"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "3drwqt65qh4l",
+     "question": "Which nut is used in a classic holiday pie?",
+     "answer": "Pecan",
+     "wrong": [
+      "Peanut",
+      "Cashew",
+      "Almond"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "1ekzdluxqh4l",
+     "question": "A morning fun run on Thanksgiving is called a what?",
+     "answer": "Turkey trot",
+     "wrong": [
+      "Pie race",
+      "Gobble jog",
+      "Feast dash"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "659vp76fqh4l",
+     "question": "What is stuffing called when it is cooked outside the turkey?",
+     "answer": "Dressing",
+     "wrong": [
+      "Coating",
+      "Filling",
+      "Topping"
+     ],
+     "category": "Thanksgiving",
+     "time": 20,
+     "sets": [
+      "Thanksgiving Intermediate"
      ]
     }
    ]
