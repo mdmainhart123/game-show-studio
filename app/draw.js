@@ -138,20 +138,24 @@ App.screens.drawPlay = (el, opts) => {
   const COLORS = [['#111111', 'Black'], ['#e53935', 'Red'], ['#1e63d6', 'Blue'], ['#2e9d4a', 'Green'], ['#f28c18', 'Orange'], ['#8e44c9', 'Purple'], ['#8b5a2b', 'Brown']];
   const SIZES = [[3, 'Thin'], [6, 'Medium'], [12, 'Thick']];
   function drawingCard() {
-    $('#dCard', el).classList.add('wb-on'); el.querySelector('.dr').classList.add('wb-mode');
-    card(`<div class="wb">
-      <div class="wb-tools">
-        <div class="wb-group">${COLORS.map(([c, n]) => `<button class="wb-color${!pen.erase && pen.color === c ? ' on' : ''}" data-c="${c}" style="--c:${c}" title="${n}" aria-label="${n} pen"></button>`).join('')}</div>
-        <div class="wb-group">${SIZES.map(([z, n]) => `<button class="wb-size${!pen.erase && pen.size === z ? ' on' : ''}" data-z="${z}" title="${n} pen" aria-label="${n} pen"><i style="--z:${z + 4}px"></i></button>`).join('')}</div>
-        <div class="wb-group">
-          <button class="wb-btn${pen.erase ? ' on' : ''}" id="wbErase" title="Eraser">🧽 Eraser</button>
-          <button class="wb-btn" id="wbUndo" title="Undo the last line">↶ Undo</button>
-          <button class="wb-btn" id="wbClear" title="Clear the whole board">🗑 Clear</button>
+    $('#dCard', el).classList.add('wb-on'); el.querySelector('.dr').classList.add('wb-mode'); document.body.classList.add('wb-drawing');
+    card(`<div class="wb"><div class="wb-board"><canvas id="wbCanvas" aria-label="Drawing board"></canvas>
+      <div class="wb-float wb-tl">
+        <button class="wb-menu-btn" id="wbMenuBtn" aria-haspopup="true" aria-expanded="false"><span class="wb-cur" id="wbCur"></span> Tools ▾</button>
+        <div class="wb-menu" id="wbMenu" hidden>
+          <div class="wb-label">Color</div>
+          <div class="wb-group">${COLORS.map(([c, n]) => `<button class="wb-color" data-c="${c}" style="--c:${c}" title="${n}" aria-label="${n} pen"></button>`).join('')}</div>
+          <div class="wb-label">Pen size</div>
+          <div class="wb-group">${SIZES.map(([z, n]) => `<button class="wb-size" data-z="${z}" title="${n} pen" aria-label="${n} pen"><i style="--z:${z + 4}px"></i></button>`).join('')}</div>
+          <div class="wb-group wb-row">
+            <button class="wb-btn" id="wbErase" title="Eraser">🧽 Eraser</button>
+            <button class="wb-btn" id="wbUndo" title="Undo the last line">↶ Undo</button>
+            <button class="wb-btn" id="wbClear" title="Clear the whole board">🗑 Clear</button>
+          </div>
         </div>
-        ${opts.time ? `<div class="wb-clock dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}
       </div>
-      <div class="wb-board"><canvas id="wbCanvas" aria-label="Drawing board"></canvas></div>
-    </div>`);
+      ${opts.time ? `<div class="wb-float wb-tr wb-clock dr-clock" id="dBig">${Math.ceil(left ?? opts.time)}</div>` : ''}
+    </div></div>`);
     setupBoard();
   }
   function setupBoard() {
@@ -182,17 +186,27 @@ App.screens.drawPlay = (el, opts) => {
     };
     cv.onpointermove = e => { if (!cur) return; e.preventDefault(); cur.pts.push(pos(e)); line(cur, cur.pts.length - 1); };
     cv.onpointerup = cv.onpointercancel = () => { cur = null; };
-    const pick = (fn) => { fn(); $$('.wb-color', el).forEach(b => b.classList.toggle('on', !pen.erase && b.dataset.c === pen.color));
-      $$('.wb-size', el).forEach(b => b.classList.toggle('on', !pen.erase && +b.dataset.z === pen.size)); $('#wbErase', el).classList.toggle('on', pen.erase); };
-    $$('.wb-color', el).forEach(b => b.onclick = () => pick(() => { pen.color = b.dataset.c; pen.erase = false; }));
-    $$('.wb-size', el).forEach(b => b.onclick = () => pick(() => { pen.size = +b.dataset.z; pen.erase = false; }));
-    $('#wbErase', el).onclick = () => pick(() => { pen.erase = !pen.erase; });
+    const menu = $('#wbMenu', el), mbtn = $('#wbMenuBtn', el);
+    const open = on => { menu.hidden = !on; mbtn.setAttribute('aria-expanded', on); };
+    const sync = () => {
+      $$('.wb-color', el).forEach(b => b.classList.toggle('on', !pen.erase && b.dataset.c === pen.color));
+      $$('.wb-size', el).forEach(b => b.classList.toggle('on', +b.dataset.z === pen.size));
+      $('#wbErase', el).classList.toggle('on', pen.erase);
+      const cur = $('#wbCur', el); cur.style.background = pen.erase ? '#fff' : pen.color; cur.textContent = pen.erase ? '🧽' : '';
+    };
+    sync();
+    mbtn.onclick = e => { e.stopPropagation(); open(menu.hidden); };
+    menu.onclick = e => e.stopPropagation();
+    cv.addEventListener('pointerdown', () => open(false));
+    $$('.wb-color', el).forEach(b => b.onclick = () => { pen.color = b.dataset.c; pen.erase = false; sync(); open(false); });
+    $$('.wb-size', el).forEach(b => b.onclick = () => { pen.size = +b.dataset.z; sync(); open(false); });
+    $('#wbErase', el).onclick = () => { pen.erase = !pen.erase; sync(); open(false); };
     $('#wbUndo', el).onclick = () => { strokes.pop(); redraw(); };
-    $('#wbClear', el).onclick = () => { if (!strokes.length) return; strokes = []; redraw(); };
+    $('#wbClear', el).onclick = () => { strokes = []; redraw(); open(false); };
     boardRO?.disconnect(); boardRO = new ResizeObserver(fit); boardRO.observe(box);
     fit();
   }
-  function boardOff() { boardRO?.disconnect(); boardRO = null; $('#dCard', el)?.classList.remove('wb-on'); el.querySelector('.dr')?.classList.remove('wb-mode'); }
+  function boardOff() { boardRO?.disconnect(); boardRO = null; document.body.classList.remove('wb-drawing'); $('#dCard', el)?.classList.remove('wb-on'); el.querySelector('.dr')?.classList.remove('wb-mode'); }
 
   // 2. the clock runs while they draw and guess
   function startDrawing() {
