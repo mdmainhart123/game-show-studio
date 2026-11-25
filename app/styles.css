@@ -1955,3 +1955,15 @@ body.theme-recovery .hs-tower { background: linear-gradient(180deg, #4b5ea8, #2c
   .hs-tower .hs-ladder li { display: none; flex: none; padding: 6px 12px 6px 16px; }
   .hs-tower .hs-ladder li.now, .hs-tower .hs-ladder li.safe { display: flex; }
 }
+/* 🎭 Charades */
+.game-card.charades { background: linear-gradient(145deg, #ff7ac4, #b3368a); }
+body.theme-classic .game-card.charades { --accent: #b05a8f; }
+body.theme-recovery .game-card.charades { background: linear-gradient(145deg, #f2a8d2, #d27bb1); }
+.ch-signals { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; margin-top: 18px; font-size: clamp(14px, 1.6vw, 18px); color: var(--muted); text-align: left; }
+.ch-signals b { color: var(--text); }
+.ch-info { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.ch-info span, .ch-hint { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); border-radius: 99px; padding: 5px 16px; font-size: clamp(16px, 2vw, 22px); font-weight: 700; }
+.ch-hint { display: inline-block; margin-top: 8px; }
+.ch-mime { display: inline-block; animation: chMime 1.6s ease-in-out infinite; }
+@keyframes chMime { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-14deg) translateY(-4px); } 75% { transform: rotate(14deg) translateY(-4px); } }
+@media (max-width: 760px) { .ch-signals { grid-template-columns: 1fr; } }
