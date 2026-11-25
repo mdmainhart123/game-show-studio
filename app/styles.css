@@ -1819,3 +1819,16 @@ body.theme-recovery .mt-tile { background: linear-gradient(145deg, #7d8fd6, #5d6
 /* Match It clock */
 .mt-top .pc.sm { margin-left: 4px; }
 .si-tally:empty { display: none; }
+/* Say It peek card */
+.si-peek { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%; max-width: 1100px; padding: 0 20px; }
+.si-label { font-size: 15px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); }
+.si-word { font-size: clamp(32px, calc(min(6.2vw, 10vh) * 18 / max(var(--len), 12)), 88px); font-weight: 800; color: var(--yellow); text-transform: uppercase; line-height: 1.05; text-align: center; }
+.si-rule-line { margin-top: 10px; font-size: clamp(17px, 2.1vw, 24px); font-weight: 700; color: #ff8a8a; }
+.si-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; }
+.si-chips span { background: rgba(255,80,80,.16); border: 2px solid rgba(255,110,110,.55); border-radius: 12px; padding: 6px 16px; font-size: clamp(18px, 2.3vw, 28px); font-weight: 800; text-transform: uppercase; letter-spacing: .5px; }
+.si-hide { width: min(420px, 70%); height: 6px; border-radius: 6px; background: rgba(255,255,255,.12); overflow: hidden; margin-top: 14px; }
+.si-hide-bar { height: 100%; background: var(--yellow); transform-origin: left; animation: siHide linear forwards; }
+@keyframes siHide { from { transform: scaleX(1); } to { transform: scaleX(0); } }
+.si-hide-txt { font-size: 15px; color: var(--muted); }
+.si-left:empty { display: none; }
+.si-left { margin-right: 8px; }

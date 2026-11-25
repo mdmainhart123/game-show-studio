@@ -4,6 +4,11 @@
 const SAY_POINTS = 100;
 const SAY_STOP = new Set('a an the of in on at to and or for with your you my our their his her its is are be someone something while from into out up by as'.split(' '));
 // The words the clue-giver can't say: every real word of the answer, plus its "don't say" list.
+function sayExtra(w) {
+  const own = new Set(w.word.toLowerCase().split(/[\s\-\/]+/).map(x => x.replace(/[^a-z0-9']/g, '')));
+  const seen = new Set();
+  return (w.banned || []).filter(x => { const k = x.toLowerCase(); if (own.has(k) || seen.has(k)) return false; seen.add(k); return true; });
+}
 function sayBanned(w) {
   const own = w.word.split(/[\s\-\/]+/).map(x => x.replace(/[^a-z0-9']/gi, '')).filter(x => x && !SAY_STOP.has(x.toLowerCase()));
   const seen = new Set();
@@ -68,7 +73,7 @@ App.screens.sayitPlay = (el, opts) => {
 
   el.innerHTML = `
     <div class="dr si">
-      <div class="dr-top"><span class="dr-count" id="sCount"></span><div class="spacer"></div><span class="pill si-tally" id="sTally"></span></div>
+      <div class="dr-top"><span class="dr-count" id="sCount"></span><div class="spacer"></div><span class="pill si-left" id="sLeft"></span><span class="pill si-tally" id="sTally"></span></div>
       <div class="dr-card" id="sCard"></div>
       <div class="dr-msg" id="sMsg"></div>
       <div class="wh-actions dr-actions" id="sActs"></div>
@@ -77,6 +82,7 @@ App.screens.sayitPlay = (el, opts) => {
   const msg = html => { $('#sMsg', el).innerHTML = html; };
   const acts = (html, hs = {}) => { $('#sActs', el).innerHTML = html; Object.entries(hs).forEach(([id, fn]) => { const b = $('#' + id, el); if (b) b.onclick = fn; }); };
   const stop = () => { clearInterval(timerId); clearTimeout(peekT); };
+  const leftPill = on => { const p = $('#sLeft', el); if (p) p.textContent = on && opts.time ? `⏸ ${Math.ceil(left)}s left` : ''; };
   const tally = () => { $('#sTally', el).textContent = phase === 'ready' || phase === 'over' ? '' : `✓ ${got.length} word${got.length === 1 ? '' : 's'} this turn`; };
   const badge = () => teamsMode ? `<span class="dr-team" style="--tc:${team().color}">${esc(team().name)}</span>` : '';
   const clock = () => opts.time ? RingClock.html('sClock', left) : '';
@@ -97,7 +103,7 @@ App.screens.sayitPlay = (el, opts) => {
 
   // 1. a new turn: the team picks a clue-giver
   function ready() {
-    stop(); phase = 'ready'; paused = false; got = []; liveCard(false);
+    stop(); phase = 'ready'; paused = false; got = []; liveCard(false); leftPill(false);
     if (teamsMode && turnsDone >= totalTurns) { App.endGame("Say It, Don't Say It", 'sayitSetup'); return; }
     setTurnUI(); tally();
     $('#sCount', el).textContent = teamsMode ? `Turn ${turnsDone + 1} of ${totalTurns}` : `Turn ${turnsDone + 1}`;
@@ -114,22 +120,27 @@ App.screens.sayitPlay = (el, opts) => {
     card(`<div class="dr-ready">${flash ? `<div class="si-flash">${flash}</div>` : ''}
       <div class="dr-big">👀 Clue-giver only!</div>
       <div class="dr-sub">Everyone else, look away — then tap <b>Peek</b> to see the ${flash ? 'next' : 'first'} word.</div></div>`);
-    msg(opts.time ? `<span class="si-paused">⏸ Clock paused at ${Math.ceil(left)}</span>` : '');
+    msg(''); leftPill(true);
     acts(`<button class="btn lg pink" id="sPeek">👀 Peek</button>`, { sPeek: peek });
   }
   function peek() {
-    let n = 5;
-    const show = () => card(`<div class="dr-word">${esc(word.word)}</div>
-      <div class="si-ban"><span>🚫 Don't say:</span>${sayBanned(word).map(b => `<b>${esc(b)}</b>`).join('')}</div>
-      <div class="dr-sub">Hiding in ${n}…</div>`);
-    show();
+    const SECS = 5, extra = sayExtra(word);
+    card(`<div class="si-peek">
+      <div class="si-label">Your word</div>
+      <div class="si-word" style="--len:${word.word.length}">${esc(word.word)}</div>
+      <div class="si-rule-line">🚫 Don't say any word above${extra.length ? ', or these:' : '.'}</div>
+      ${extra.length ? `<div class="si-chips">${extra.map(b => `<span>${esc(b)}</span>`).join('')}</div>` : ''}
+      <div class="si-hide"><div class="si-hide-bar" style="animation-duration:${SECS}s"></div></div>
+      <div class="si-hide-txt" id="sHide">Hiding in ${SECS}…</div>
+    </div>`);
     acts(`<button class="btn lg green" id="sReady">I'm ready — go! ▶</button>`, { sReady: say });
-    const tick = () => { n--; if (n > 0) { show(); peekT = setTimeout(tick, 1000); } else say(); };
+    let n = SECS;
+    const tick = () => { n--; if (n > 0) { const h = $('#sHide', el); if (h) h.textContent = `Hiding in ${n}…`; peekT = setTimeout(tick, 1000); } else say(); };
     peekT = setTimeout(tick, 1000);
   }
   // 3. describing: the clock runs
   function say() {
-    stop(); phase = 'say'; msg('');
+    stop(); phase = 'say'; msg(''); leftPill(false);
     card(`<div class="dr-ready">${badge()}<div class="dr-big"><span class="si-talk">🗣️</span> Describe it!</div>
       ${opts.time ? clock() : `<div class="si-big-tally">✓ ${got.length}</div><div class="dr-sub">word${got.length === 1 ? '' : 's'} so far</div>`}</div>`);
     liveCard(true);
@@ -154,7 +165,7 @@ App.screens.sayitPlay = (el, opts) => {
   const buzz = () => { const c = $('#sCard', el); c.classList.remove('si-buzz'); void c.offsetWidth; c.classList.add('si-buzz'); };
   // 4. time's up: show how they did, next team
   function turnOver(ended) {
-    stop(); phase = 'over'; liveCard(false);
+    stop(); phase = 'over'; liveCard(false); leftPill(false);
     if (ended) Sfx.click(); else { Sfx.buzz(); setTimeout(buzz, 0); }
     const n = got.length;
     card(`<div class="dr-ready">${badge()}<div class="dr-big">${ended ? '⏹ Turn over!' : "⏰ Time's up!"}</div>
