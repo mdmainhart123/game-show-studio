@@ -100,12 +100,7 @@ App.screens.charadesPlay = (el, opts) => {
       <div class="dr-big">Pick an actor! 🎭</div>
       <div class="dr-sub">${speed ? 'Act out as many words as you can before time runs out.' : 'Act out the word for your team.'}</div>
       <div class="dr-sub si-rule">No talking, no sounds, no pointing at things in the room!</div>
-      <div class="ch-signals">
-        <span>🖐️ <b>Number of words</b> — hold up fingers</span>
-        <span>☝️ <b>Which word</b> — fingers again</span>
-        <span>👂 <b>Sounds like</b> — tug your ear</span>
-        <span>🤏 <b>Small word</b> — pinch fingers</span>
-      </div></div>`);
+</div>`);
     msg('');
     acts(`<button class="btn lg pink" id="cStart">Start turn ▶ <kbd>Space</kbd></button>`, { cStart: begin });
   }
