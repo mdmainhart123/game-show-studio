@@ -172,9 +172,11 @@ App.screens.hotseatPlay = (el, opts) => {
     stopClock(); phase = 'lock'; lifelines(); acts('');
     $$('.hs-ans', el).forEach(b => b.disabled = true);
     $(`.hs-ans[data-i="${pick}"]`, el).classList.add('locked');
-    msg('🥁 Locked in…');
+    msg('🔒 Locked in…');
     let beats = 0;
-    const drum = () => { if (beats++ < 6) { Sfx.tick(); sT = setTimeout(drum, 300); } else reveal(false); };
+    // a soft, low heartbeat for suspense (no high-pitched ticking)
+    const thump = () => { Sfx.tone(70, 0.18, 'sine', 0.22); Sfx.tone(62, 0.22, 'sine', 0.16, 0.2); };
+    const drum = () => { if (beats++ < 3) { thump(); sT = setTimeout(drum, 650); } else reveal(false); };
     sT = setTimeout(drum, 300);
   }
   function reveal(timedOut) {
