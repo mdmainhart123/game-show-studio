@@ -1,4 +1,4 @@
-const APP_VERSION = '20261125-1445'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261125-1510'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -765,11 +765,20 @@ const GameFiles = {
     }
     const d = App.data, I = this.info[k], n = d[k].length;
     const bar = document.createElement('div');
-    bar.className = 'cw-new gf-files';
-    bar.innerHTML = `<button class="btn yellow" data-f="imp">📥 Import ${I.noun}s from text file</button>
-      <button class="btn ghost" data-f="tpl">📄 Save blank template</button>
-      ${n ? `<button class="btn ghost" data-f="exp">📤 Export my ${I.noun}s</button>` : ''}`;
+    bar.className = 'gf-files';
+    // one small "Import / export" button that opens a menu (keeps the start screen clean)
+    bar.innerHTML = `<button class="btn ghost sm gf-toggle" aria-haspopup="true" aria-expanded="false">📁 Import / export ▾</button>
+      <div class="gf-menu" hidden>
+        <button class="gf-item" data-f="imp">📥 Import ${I.noun}s from a text file</button>
+        <button class="gf-item" data-f="tpl">📄 Save a blank template</button>
+        ${n ? `<button class="gf-item" data-f="exp">📤 Export my ${I.noun}s</button>` : ''}
+      </div>`;
     host.appendChild(bar);
+    const menu = $('.gf-menu', bar), tog = $('.gf-toggle', bar);
+    const open = on => { menu.hidden = !on; tog.setAttribute('aria-expanded', on); };
+    tog.onclick = e => { e.stopPropagation(); open(menu.hidden); };
+    menu.onclick = () => open(false);
+    document.addEventListener('click', e => { if (!bar.contains(e.target)) open(false); });
     $('[data-f="tpl"]', bar).onclick = async () => { const T = GSData.TEMPLATES[k]; if (await App.saveText(T.file, T.text.replace(/\n/g, '\r\n'))) toast('Template saved ✓'); };
     if (n) $('[data-f="exp"]', bar).onclick = async () => { if (await App.saveText(`${I.file} - My ${I.noun}s.txt`, (I.out(d[k]) + '\n').replace(/\n/g, '\r\n'))) toast('Saved ✓'); };
     $('[data-f="imp"]', bar).onclick = () => this.import(k);

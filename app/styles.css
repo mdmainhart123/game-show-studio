@@ -1900,3 +1900,12 @@ body.theme-recovery .hs-q, body.theme-recovery .hs-ans, body.theme-recovery .hs-
   .hs-ans { min-height: 48px; }
   .hs-life { width: 56px; height: 40px; font-size: 15px; }
 }
+/* Import / export tucked into a small menu on the start screens */
+.gf-files { position: relative; display: flex; justify-content: center; margin-top: 18px; padding-top: 0; border-top: 0; }
+.gf-toggle { opacity: .8; }
+.gf-toggle:hover { opacity: 1; }
+.gf-menu { position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); z-index: 20; min-width: 300px; display: flex; flex-direction: column; padding: 8px; border-radius: 14px; background: var(--navy-2, #1c2236); border: 1px solid var(--line, rgba(255,255,255,.15)); box-shadow: 0 12px 30px rgba(0,0,0,.45); }
+.gf-menu[hidden] { display: none; }
+.gf-item { text-align: left; padding: 12px 14px; border: 0; border-radius: 10px; background: none; color: inherit; font: inherit; font-size: 17px; cursor: pointer; white-space: nowrap; }
+.gf-item:hover { background: rgba(255,255,255,.1); }
+body.theme-recovery .gf-menu { background: #2f5d57; }

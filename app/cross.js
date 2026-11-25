@@ -129,10 +129,13 @@ App.screens.crossSetup = (el) => {
             <button class="btn green" id="cwNew">＋ Make a new crossword</button>
             ${d.trivia.length ? '<button class="btn cyan" id="cwQuick">⚡ Quick crossword from your trivia answers</button>' : ''}
           </div>
-          <div class="cw-new cw-files">
-            <button class="btn yellow" id="cwImp">📥 Import from text file</button>
-            <button class="btn ghost" id="cwTpl">📄 Save blank template</button>
-            ${d.cross.length ? '<button class="btn ghost" id="cwExp">📤 Export all</button>' : ''}
+          <div class="gf-files" id="cwFiles">
+            <button class="btn ghost sm gf-toggle" aria-haspopup="true" aria-expanded="false">📁 Import / export ▾</button>
+            <div class="gf-menu" hidden>
+              <button class="gf-item" id="cwImp">📥 Import puzzles from a text file</button>
+              <button class="gf-item" id="cwTpl">📄 Save a blank template</button>
+              ${d.cross.length ? '<button class="gf-item" id="cwExp">📤 Export all my puzzles</button>' : ''}
+            </div>
           </div>
         </div>
         <div><button class="link-btn" id="demo">🎬 Watch a demo first</button></div>
@@ -148,6 +151,11 @@ App.screens.crossSetup = (el) => {
       const txt = `== ${p.title}\n${p.entries.map(e => `${e.word} | ${e.clue}`).join('\n')}\n`;
       if (await App.saveText(`crossword - ${p.title.replace(/[\\/:*?"<>|]+/g, '').trim() || 'puzzle'}.txt`, txt.replace(/\n/g, '\r\n'))) toast('Saved ✓');
     });
+    { const bar = $('#cwFiles', el), menu = $('.gf-menu', bar), tog = $('.gf-toggle', bar);
+      const open = on => { menu.hidden = !on; tog.setAttribute('aria-expanded', on); };
+      tog.onclick = e => { e.stopPropagation(); open(menu.hidden); };
+      menu.addEventListener('click', () => open(false));
+      document.addEventListener('click', e => { if (!bar.contains(e.target)) open(false); }); }
     $('#cwTpl', el).onclick = async () => { if (await App.saveText(GSData.TEMPLATES.cross.file, GSData.TEMPLATES.cross.text.replace(/\n/g, '\r\n'))) toast('Template saved ✓'); };
     if ($('#cwExp', el)) $('#cwExp', el).onclick = async () => {
       const txt = d.cross.map(p => `== ${p.title}\n${p.entries.map(e => `${e.word} | ${e.clue}`).join('\n')}`).join('\n\n') + '\n';
