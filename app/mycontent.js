@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-25-holiday-stress",
+ "id": "matt-2026-11-25-say-it-match-it",
  "banks": {
   "standard": {
    "cross": [
@@ -34097,5 +34097,4041 @@ window.GS_MY_CONTENT = {
  },
  "renameSets": {
   "How Elections Work": "Elections"
+ },
+ "drawBanned": {
+  "a ballot": [
+   "vote",
+   "election",
+   "paper",
+   "choose"
+  ],
+  "a ballot box": [
+   "vote",
+   "election",
+   "slot",
+   "drop"
+  ],
+  "a ballot scanner": [
+   "vote",
+   "machine",
+   "read",
+   "election"
+  ],
+  "a basket": [
+   "picnic",
+   "carry",
+   "woven",
+   "Easter"
+  ],
+  "a beating heart": [
+   "pulse",
+   "chest",
+   "love",
+   "pump"
+  ],
+  "a bed": [
+   "sleep",
+   "pillow",
+   "blanket",
+   "bedroom"
+  ],
+  "a bell": [
+   "ring",
+   "ding",
+   "church",
+   "sound"
+  ],
+  "a bench": [
+   "sit",
+   "park",
+   "seat",
+   "wooden"
+  ],
+  "a bicycle": [
+   "bike",
+   "pedal",
+   "ride",
+   "wheels"
+  ],
+  "a birthday party": [
+   "cake",
+   "candles",
+   "presents",
+   "celebrate"
+  ],
+  "a boat": [
+   "water",
+   "sail",
+   "row",
+   "ship"
+  ],
+  "a body scan": [
+   "relax",
+   "head",
+   "toe",
+   "notice"
+  ],
+  "a brain": [
+   "think",
+   "head",
+   "smart",
+   "mind"
+  ],
+  "a brain on a phone": [
+   "screen",
+   "scroll",
+   "think",
+   "addicted"
+  ],
+  "a bridge": [
+   "cross",
+   "river",
+   "over",
+   "road"
+  ],
+  "a broken heart": [
+   "sad",
+   "love",
+   "breakup",
+   "hurt"
+  ],
+  "a burnt turkey": [
+   "oven",
+   "black",
+   "cooked",
+   "Thanksgiving"
+  ],
+  "a butterfly": [
+   "wings",
+   "caterpillar",
+   "flutter",
+   "insect"
+  ],
+  "a calendar": [
+   "date",
+   "month",
+   "day",
+   "schedule"
+  ],
+  "a calm face": [
+   "relaxed",
+   "peaceful",
+   "smile",
+   "quiet"
+  ],
+  "a calm lake": [
+   "water",
+   "still",
+   "peaceful",
+   "quiet"
+  ],
+  "a camera": [
+   "photo",
+   "picture",
+   "click",
+   "lens"
+  ],
+  "a campfire": [
+   "marshmallow",
+   "camping",
+   "flames",
+   "wood"
+  ],
+  "a cancelled party": [
+   "plans",
+   "off",
+   "sad",
+   "invite"
+  ],
+  "a candle": [
+   "wax",
+   "flame",
+   "light",
+   "birthday"
+  ],
+  "a car": [
+   "drive",
+   "wheels",
+   "road",
+   "vehicle"
+  ],
+  "a cat": [
+   "meow",
+   "pet",
+   "kitten",
+   "whiskers"
+  ],
+  "a check mark": [
+   "correct",
+   "right",
+   "tick",
+   "done"
+  ],
+  "a chef cooking": [
+   "kitchen",
+   "food",
+   "hat",
+   "cook"
+  ],
+  "a clock": [
+   "time",
+   "hands",
+   "tick",
+   "hour"
+  ],
+  "a closed door": [
+   "shut",
+   "knock",
+   "open",
+   "room"
+  ],
+  "a coach with a whistle": [
+   "sports",
+   "team",
+   "blow",
+   "gym"
+  ],
+  "a concert": [
+   "music",
+   "band",
+   "stage",
+   "crowd"
+  ],
+  "a corn cob": [
+   "yellow",
+   "kernels",
+   "butter",
+   "vegetable"
+  ],
+  "a cornucopia": [
+   "horn",
+   "plenty",
+   "harvest",
+   "Thanksgiving"
+  ],
+  "a cranberry bog": [
+   "berries",
+   "red",
+   "flooded",
+   "water"
+  ],
+  "a cup of tea": [
+   "drink",
+   "hot",
+   "mug",
+   "kettle"
+  ],
+  "a dance party": [
+   "music",
+   "dancing",
+   "DJ",
+   "fun"
+  ],
+  "a deep breath": [
+   "inhale",
+   "exhale",
+   "lungs",
+   "calm"
+  ],
+  "a deflated balloon": [
+   "air",
+   "flat",
+   "pop",
+   "sad"
+  ],
+  "a delay at the airport": [
+   "plane",
+   "flight",
+   "late",
+   "wait"
+  ],
+  "a dinner table": [
+   "eat",
+   "meal",
+   "chairs",
+   "family"
+  ],
+  "a dog chasing its tail": [
+   "puppy",
+   "spin",
+   "circle",
+   "around"
+  ],
+  "a door": [
+   "open",
+   "knock",
+   "handle",
+   "enter"
+  ],
+  "a drum": [
+   "beat",
+   "sticks",
+   "bang",
+   "music"
+  ],
+  "a fake smile in a photo": [
+   "pretend",
+   "picture",
+   "camera",
+   "happy"
+  ],
+  "a family dinner": [
+   "eat",
+   "meal",
+   "relatives",
+   "table"
+  ],
+  "a family photo": [
+   "picture",
+   "camera",
+   "relatives",
+   "smile"
+  ],
+  "a feather": [
+   "bird",
+   "light",
+   "quill",
+   "tickle"
+  ],
+  "a fish": [
+   "swim",
+   "water",
+   "gills",
+   "fishing"
+  ],
+  "a fishing hook": [
+   "bait",
+   "worm",
+   "catch",
+   "rod"
+  ],
+  "a fishing trip": [
+   "boat",
+   "catch",
+   "rod",
+   "lake"
+  ],
+  "a flag": [
+   "pole",
+   "wave",
+   "country",
+   "stars"
+  ],
+  "a flexing arm": [
+   "muscle",
+   "strong",
+   "bicep",
+   "gym"
+  ],
+  "a food coma": [
+   "full",
+   "sleepy",
+   "ate",
+   "nap"
+  ],
+  "a football": [
+   "ball",
+   "NFL",
+   "throw",
+   "touchdown"
+  ],
+  "a football game on tv": [
+   "sports",
+   "watch",
+   "couch",
+   "Sunday"
+  ],
+  "a football touchdown": [
+   "score",
+   "end zone",
+   "six",
+   "points"
+  ],
+  "a footprint": [
+   "foot",
+   "step",
+   "sand",
+   "track"
+  ],
+  "a forest path": [
+   "trees",
+   "woods",
+   "trail",
+   "walk"
+  ],
+  "a fork": [
+   "eat",
+   "spoon",
+   "knife",
+   "utensil"
+  ],
+  "a friend calling you": [
+   "phone",
+   "ring",
+   "buddy",
+   "talk"
+  ],
+  "a full belly": [
+   "stomach",
+   "ate",
+   "stuffed",
+   "food"
+  ],
+  "a gap between two cliffs": [
+   "canyon",
+   "jump",
+   "space",
+   "edge"
+  ],
+  "a gift box": [
+   "present",
+   "wrap",
+   "bow",
+   "birthday"
+  ],
+  "a giraffe eating leaves": [
+   "tall",
+   "neck",
+   "tree",
+   "zoo"
+  ],
+  "a good day": [
+   "happy",
+   "great",
+   "sunshine",
+   "nice"
+  ],
+  "a grocery store line": [
+   "shopping",
+   "wait",
+   "cart",
+   "cashier"
+  ],
+  "a group circle": [
+   "sit",
+   "together",
+   "share",
+   "chairs"
+  ],
+  "a guitar": [
+   "strings",
+   "strum",
+   "music",
+   "rock"
+  ],
+  "a hammer": [
+   "nail",
+   "tool",
+   "pound",
+   "hit"
+  ],
+  "a hand turkey": [
+   "trace",
+   "fingers",
+   "kids",
+   "Thanksgiving"
+  ],
+  "a hand wave": [
+   "hello",
+   "goodbye",
+   "hi"
+  ],
+  "a handshake": [
+   "hands",
+   "greet",
+   "meet",
+   "deal"
+  ],
+  "a happy face": [
+   "smile",
+   "emoji",
+   "glad",
+   "joy"
+  ],
+  "a harvest moon": [
+   "full",
+   "fall",
+   "night",
+   "orange"
+  ],
+  "a hat": [
+   "head",
+   "cap",
+   "wear",
+   "sun"
+  ],
+  "a headache": [
+   "pain",
+   "head",
+   "hurt",
+   "aspirin"
+  ],
+  "a heart": [
+   "love",
+   "valentine",
+   "red",
+   "beat"
+  ],
+  "a heart notification": [
+   "like",
+   "social media",
+   "phone",
+   "red"
+  ],
+  "a heart to heart talk": [
+   "honest",
+   "conversation",
+   "serious",
+   "share"
+  ],
+  "a heavy backpack": [
+   "school",
+   "carry",
+   "books",
+   "weight"
+  ],
+  "a helping hand": [
+   "help",
+   "assist",
+   "support",
+   "lend"
+  ],
+  "a house": [
+   "home",
+   "roof",
+   "live",
+   "door"
+  ],
+  "a hug": [
+   "arms",
+   "embrace",
+   "squeeze",
+   "love"
+  ],
+  "a ladder": [
+   "climb",
+   "rungs",
+   "steps",
+   "up"
+  ],
+  "a laptop": [
+   "computer",
+   "keyboard",
+   "screen",
+   "type"
+  ],
+  "a leaf": [
+   "tree",
+   "green",
+   "fall",
+   "autumn"
+  ],
+  "a life preserver": [
+   "ring",
+   "float",
+   "save",
+   "water"
+  ],
+  "a light bulb moment": [
+   "idea",
+   "think",
+   "aha",
+   "lamp"
+  ],
+  "a lighthouse": [
+   "ocean",
+   "light",
+   "ships",
+   "tower"
+  ],
+  "a lighthouse in a storm": [
+   "rain",
+   "ships",
+   "ocean",
+   "beam"
+  ],
+  "a line of people": [
+   "queue",
+   "wait",
+   "crowd",
+   "row"
+  ],
+  "a little voice on your shoulder": [
+   "angel",
+   "devil",
+   "conscience",
+   "whisper"
+  ],
+  "a lost game": [
+   "lose",
+   "losing",
+   "score",
+   "sad"
+  ],
+  "a magnifying glass": [
+   "zoom",
+   "detective",
+   "lens",
+   "bigger"
+  ],
+  "a mailbox": [
+   "letters",
+   "post office",
+   "mail",
+   "send"
+  ],
+  "a megaphone": [
+   "loud",
+   "shout",
+   "cheer",
+   "speaker"
+  ],
+  "a microphone": [
+   "sing",
+   "speak",
+   "karaoke",
+   "mic"
+  ],
+  "a mirror": [
+   "reflection",
+   "look",
+   "glass",
+   "see"
+  ],
+  "a missed bus": [
+   "late",
+   "wait",
+   "stop",
+   "ride"
+  ],
+  "a moon": [
+   "night",
+   "sky",
+   "full",
+   "stars"
+  ],
+  "a mountain": [
+   "climb",
+   "hill",
+   "peak",
+   "snow"
+  ],
+  "a mouth": [
+   "lips",
+   "teeth",
+   "tongue",
+   "talk"
+  ],
+  "a music note": [
+   "song",
+   "sing",
+   "sheet",
+   "melody"
+  ],
+  "a muted account": [
+   "mute",
+   "social media",
+   "silence",
+   "block"
+  ],
+  "a nail": [
+   "hammer",
+   "metal",
+   "screw",
+   "wood"
+  ],
+  "a nail in a forehead": [
+   "hammer",
+   "head",
+   "film",
+   "listen"
+  ],
+  "a newspaper": [
+   "news",
+   "read",
+   "headline",
+   "paper"
+  ],
+  "a parade balloon": [
+   "float",
+   "giant",
+   "street",
+   "Thanksgiving"
+  ],
+  "a pause button": [
+   "stop",
+   "play",
+   "remote",
+   "wait"
+  ],
+  "a pencil": [
+   "write",
+   "eraser",
+   "lead",
+   "paper"
+  ],
+  "a person meditating": [
+   "calm",
+   "breathe",
+   "sit",
+   "peace"
+  ],
+  "a person standing tall": [
+   "proud",
+   "confident",
+   "straight",
+   "posture"
+  ],
+  "a person trying something new": [
+   "first",
+   "brave",
+   "attempt"
+  ],
+  "a phone": [
+   "call",
+   "cell",
+   "ring",
+   "text"
+  ],
+  "a phone buzzing at night": [
+   "vibrate",
+   "sleep",
+   "bed",
+   "notification"
+  ],
+  "a phone call": [
+   "ring",
+   "talk",
+   "cell",
+   "dial"
+  ],
+  "a phone in a basket at dinner": [
+   "meal",
+   "table",
+   "put away",
+   "family"
+  ],
+  "a phone with a lock on it": [
+   "locked",
+   "password",
+   "screen",
+   "secure"
+  ],
+  "a piano": [
+   "keys",
+   "play",
+   "music",
+   "black and white"
+  ],
+  "a pie": [
+   "dessert",
+   "crust",
+   "slice",
+   "apple"
+  ],
+  "a pie in the oven": [
+   "bake",
+   "dessert",
+   "kitchen",
+   "crust"
+  ],
+  "a pilgrim hat": [
+   "buckle",
+   "black",
+   "Mayflower",
+   "Thanksgiving"
+  ],
+  "a pillow": [
+   "sleep",
+   "bed",
+   "soft",
+   "head"
+  ],
+  "a pizza": [
+   "cheese",
+   "slice",
+   "pepperoni",
+   "Italian"
+  ],
+  "a plate": [
+   "dish",
+   "eat",
+   "food",
+   "dinner"
+  ],
+  "a poll worker": [
+   "vote",
+   "election",
+   "help",
+   "volunteer"
+  ],
+  "a pond": [
+   "water",
+   "ducks",
+   "frog",
+   "lake"
+  ],
+  "a pumpkin": [
+   "orange",
+   "Halloween",
+   "pie",
+   "jack-o'-lantern"
+  ],
+  "a pumpkin patch": [
+   "orange",
+   "farm",
+   "Halloween",
+   "pick"
+  ],
+  "a racing heart": [
+   "fast",
+   "pulse",
+   "nervous",
+   "beat"
+  ],
+  "a radio": [
+   "music",
+   "station",
+   "listen",
+   "DJ"
+  ],
+  "a rain cloud": [
+   "sky",
+   "storm",
+   "wet",
+   "gray"
+  ],
+  "a rainbow": [
+   "colors",
+   "rain",
+   "sky",
+   "arc"
+  ],
+  "a raised hand": [
+   "question",
+   "school",
+   "hand up",
+   "volunteer"
+  ],
+  "a ribbon for a small win": [
+   "prize",
+   "award",
+   "blue",
+   "first place"
+  ],
+  "a rocket": [
+   "space",
+   "launch",
+   "NASA",
+   "blast off"
+  ],
+  "a roller coaster": [
+   "ride",
+   "amusement park",
+   "loop",
+   "scream"
+  ],
+  "a sad face": [
+   "frown",
+   "unhappy",
+   "tears",
+   "emoji"
+  ],
+  "a safety net": [
+   "circus",
+   "fall",
+   "catch",
+   "trapeze"
+  ],
+  "a scarecrow": [
+   "crows",
+   "field",
+   "straw",
+   "farm"
+  ],
+  "a seed growing into a tree": [
+   "plant",
+   "grow",
+   "sprout",
+   "garden"
+  ],
+  "a selfie": [
+   "picture",
+   "phone",
+   "camera",
+   "yourself"
+  ],
+  "a shrug": [
+   "shoulders",
+   "don't know",
+   "whatever",
+   "unsure"
+  ],
+  "a sign that says vote here": [
+   "election",
+   "polls",
+   "arrow",
+   "ballot"
+  ],
+  "a sleepless night": [
+   "insomnia",
+   "awake",
+   "bed",
+   "tired"
+  ],
+  "a sleepy bear": [
+   "hibernate",
+   "cave",
+   "yawn",
+   "winter"
+  ],
+  "a slot machine": [
+   "casino",
+   "gamble",
+   "jackpot",
+   "Vegas"
+  ],
+  "a smartphone": [
+   "cell",
+   "call",
+   "apps",
+   "screen"
+  ],
+  "a smile": [
+   "happy",
+   "teeth",
+   "grin",
+   "face"
+  ],
+  "a smoke alarm": [
+   "fire",
+   "beep",
+   "ceiling",
+   "detector"
+  ],
+  "a smoke alarm while cooking": [
+   "fire",
+   "kitchen",
+   "beep",
+   "burn"
+  ],
+  "a snowball fight": [
+   "throw",
+   "winter",
+   "cold",
+   "white"
+  ],
+  "a snowman": [
+   "snow",
+   "carrot",
+   "winter",
+   "Frosty"
+  ],
+  "a speaker": [
+   "sound",
+   "loud",
+   "music",
+   "volume"
+  ],
+  "a speech bubble": [
+   "talk",
+   "comic",
+   "words",
+   "say"
+  ],
+  "a staircase": [
+   "steps",
+   "up",
+   "down",
+   "climb"
+  ],
+  "a star": [
+   "sky",
+   "night",
+   "twinkle",
+   "shine"
+  ],
+  "a still pond": [
+   "water",
+   "calm",
+   "quiet",
+   "lake"
+  ],
+  "a stop sign": [
+   "red",
+   "octagon",
+   "road",
+   "halt"
+  ],
+  "a sun": [
+   "sky",
+   "hot",
+   "shine",
+   "yellow"
+  ],
+  "a sunrise": [
+   "morning",
+   "dawn",
+   "sky",
+   "early"
+  ],
+  "a superhero cape": [
+   "hero",
+   "fly",
+   "Superman",
+   "red"
+  ],
+  "a superhero flying": [
+   "cape",
+   "fly",
+   "Superman",
+   "sky"
+  ],
+  "a table": [
+   "chair",
+   "eat",
+   "dinner",
+   "legs"
+  ],
+  "a team": [
+   "group",
+   "players",
+   "sports",
+   "together"
+  ],
+  "a television": [
+   "TV",
+   "watch",
+   "remote",
+   "screen"
+  ],
+  "a text message": [
+   "phone",
+   "send",
+   "type",
+   "words"
+  ],
+  "a thought bubble": [
+   "think",
+   "cartoon",
+   "idea",
+   "cloud"
+  ],
+  "a thumbs up": [
+   "good",
+   "like",
+   "approve",
+   "OK"
+  ],
+  "a timer": [
+   "clock",
+   "countdown",
+   "seconds",
+   "beep"
+  ],
+  "a toolbox": [
+   "hammer",
+   "tools",
+   "wrench",
+   "fix"
+  ],
+  "a town hall": [
+   "meeting",
+   "mayor",
+   "city",
+   "government"
+  ],
+  "a traffic jam": [
+   "cars",
+   "stuck",
+   "road",
+   "rush hour"
+  ],
+  "a traffic jam on the way home": [
+   "cars",
+   "stuck",
+   "commute",
+   "late"
+  ],
+  "a tree": [
+   "leaves",
+   "trunk",
+   "branches",
+   "forest"
+  ],
+  "a trophy": [
+   "win",
+   "prize",
+   "cup",
+   "first place"
+  ],
+  "a turkey": [
+   "bird",
+   "Thanksgiving",
+   "gobble",
+   "feathers"
+  ],
+  "a turkey pardon": [
+   "president",
+   "White House",
+   "Thanksgiving",
+   "free"
+  ],
+  "a turkey running away": [
+   "escape",
+   "Thanksgiving",
+   "bird",
+   "chase"
+  ],
+  "a turkey trot race": [
+   "run",
+   "Thanksgiving",
+   "5K",
+   "jog"
+  ],
+  "a turkey wearing a hat": [
+   "bird",
+   "Thanksgiving",
+   "funny",
+   "pilgrim"
+  ],
+  "a volunteer serving food": [
+   "help",
+   "soup kitchen",
+   "give",
+   "meal"
+  ],
+  "a voter wearing headphones": [
+   "listen",
+   "audio",
+   "vote",
+   "accessible"
+  ],
+  "a voting booth": [
+   "vote",
+   "election",
+   "private",
+   "curtain"
+  ],
+  "a wall between two people": [
+   "barrier",
+   "divide",
+   "apart",
+   "separate"
+  ],
+  "a wandering mind": [
+   "daydream",
+   "distracted",
+   "think",
+   "drift"
+  ],
+  "a winner giving a speech": [
+   "win",
+   "award",
+   "podium",
+   "thank you"
+  ],
+  "a wishbone": [
+   "turkey",
+   "pull",
+   "break",
+   "wish"
+  ],
+  "airplane": [
+   "fly",
+   "pilot",
+   "wings",
+   "flight"
+  ],
+  "airport": [
+   "plane",
+   "fly",
+   "gate",
+   "travel"
+  ],
+  "alarm clock": [
+   "wake up",
+   "ring",
+   "morning",
+   "snooze"
+  ],
+  "an acorn": [
+   "oak",
+   "squirrel",
+   "nut",
+   "tree"
+  ],
+  "an alarm bell": [
+   "ring",
+   "warning",
+   "loud",
+   "emergency"
+  ],
+  "an apple": [
+   "fruit",
+   "red",
+   "tree",
+   "teacher"
+  ],
+  "an ear": [
+   "hear",
+   "listen",
+   "sound",
+   "head"
+  ],
+  "an endless scroll": [
+   "phone",
+   "feed",
+   "social media",
+   "swipe"
+  ],
+  "an eye roll": [
+   "annoyed",
+   "eyes",
+   "whatever",
+   "attitude"
+  ],
+  "an i voted sticker": [
+   "vote",
+   "election",
+   "polls"
+  ],
+  "an ice cream cone": [
+   "scoop",
+   "cold",
+   "vanilla",
+   "dessert"
+  ],
+  "an umbrella": [
+   "rain",
+   "wet",
+   "open",
+   "cover"
+  ],
+  "anchor": [
+   "boat",
+   "ship",
+   "sea",
+   "heavy"
+  ],
+  "apple": [
+   "fruit",
+   "red",
+   "tree",
+   "pie"
+  ],
+  "asking for help": [
+   "support",
+   "need",
+   "raise hand"
+  ],
+  "astronaut": [
+   "space",
+   "NASA",
+   "moon",
+   "rocket"
+  ],
+  "baking cookies": [
+   "oven",
+   "chocolate chip",
+   "dough",
+   "kitchen"
+  ],
+  "balance": [
+   "steady",
+   "scale",
+   "even",
+   "tightrope"
+  ],
+  "ball": [
+   "bounce",
+   "throw",
+   "round",
+   "catch"
+  ],
+  "ballet": [
+   "dance",
+   "tutu",
+   "ballerina",
+   "toes"
+  ],
+  "balloon": [
+   "air",
+   "pop",
+   "party",
+   "string"
+  ],
+  "banana": [
+   "fruit",
+   "yellow",
+   "monkey",
+   "peel"
+  ],
+  "baseball bat": [
+   "hit",
+   "swing",
+   "wood",
+   "home run"
+  ],
+  "basketball": [
+   "hoop",
+   "dribble",
+   "court",
+   "NBA"
+  ],
+  "bat": [
+   "vampire",
+   "cave",
+   "night",
+   "fly"
+  ],
+  "bats flying at night": [
+   "vampire",
+   "cave",
+   "dark",
+   "wings"
+  ],
+  "beach": [
+   "sand",
+   "ocean",
+   "sun",
+   "waves"
+  ],
+  "bear": [
+   "grizzly",
+   "honey",
+   "woods",
+   "cub"
+  ],
+  "bed": [
+   "sleep",
+   "pillow",
+   "blanket",
+   "mattress"
+  ],
+  "bee": [
+   "honey",
+   "buzz",
+   "sting",
+   "hive"
+  ],
+  "beehive": [
+   "bees",
+   "honey",
+   "buzz",
+   "queen"
+  ],
+  "being thankful": [
+   "grateful",
+   "thanks",
+   "gratitude",
+   "appreciate"
+  ],
+  "bicycle": [
+   "bike",
+   "pedal",
+   "ride",
+   "wheels"
+  ],
+  "bird": [
+   "fly",
+   "wings",
+   "tweet",
+   "feathers"
+  ],
+  "bird nest": [
+   "eggs",
+   "tree",
+   "twigs"
+  ],
+  "birthday cake": [
+   "candles",
+   "frosting",
+   "party",
+   "celebrate"
+  ],
+  "birthday party": [
+   "cake",
+   "candles",
+   "presents",
+   "celebrate"
+  ],
+  "birthday wish": [
+   "candles",
+   "blow",
+   "cake"
+  ],
+  "black cat": [
+   "Halloween",
+   "unlucky",
+   "witch",
+   "meow"
+  ],
+  "black friday shopping": [
+   "sale",
+   "deals",
+   "store",
+   "Thanksgiving"
+  ],
+  "black hole": [
+   "space",
+   "gravity",
+   "star",
+   "suck"
+  ],
+  "boat": [
+   "water",
+   "sail",
+   "row",
+   "ship"
+  ],
+  "bobbing for apples": [
+   "water",
+   "bucket",
+   "Halloween",
+   "teeth"
+  ],
+  "book": [
+   "read",
+   "pages",
+   "library",
+   "story"
+  ],
+  "boundaries": [
+   "limits",
+   "line",
+   "say no",
+   "respect"
+  ],
+  "bowling": [
+   "pins",
+   "strike",
+   "ball",
+   "lane"
+  ],
+  "brainstorm": [
+   "ideas",
+   "think",
+   "list",
+   "group"
+  ],
+  "break the ice": [
+   "awkward",
+   "conversation",
+   "start",
+   "icebreaker"
+  ],
+  "breaking news": [
+   "TV",
+   "report",
+   "headline"
+  ],
+  "breaking the wishbone": [
+   "wish",
+   "turkey",
+   "pull",
+   "Thanksgiving"
+  ],
+  "bride of frankenstein": [
+   "monster",
+   "wedding",
+   "hair",
+   "Halloween"
+  ],
+  "bridge": [
+   "cross",
+   "river",
+   "over",
+   "road"
+  ],
+  "broomstick": [
+   "witch",
+   "fly",
+   "sweep",
+   "Halloween"
+  ],
+  "brushing teeth": [
+   "toothbrush",
+   "toothpaste",
+   "dentist",
+   "morning"
+  ],
+  "brushing your teeth": [
+   "toothbrush",
+   "toothpaste",
+   "dentist",
+   "morning"
+  ],
+  "bubble bath": [
+   "bathtub",
+   "soap",
+   "relax",
+   "bubbles"
+  ],
+  "bucket list": [
+   "before",
+   "die",
+   "goals",
+   "dreams"
+  ],
+  "building a bridge": [
+   "connect",
+   "river",
+   "cross",
+   "build"
+  ],
+  "building a sandcastle": [
+   "beach",
+   "sand",
+   "bucket",
+   "shovel"
+  ],
+  "burnt toast": [
+   "bread",
+   "toaster",
+   "black",
+   "breakfast"
+  ],
+  "bus": [
+   "school",
+   "ride",
+   "driver",
+   "stop"
+  ],
+  "butterflies in your stomach": [
+   "nervous",
+   "jitters",
+   "excited"
+  ],
+  "butterfly": [
+   "wings",
+   "caterpillar",
+   "flutter",
+   "insect"
+  ],
+  "cactus": [
+   "desert",
+   "spiky",
+   "plant",
+   "prickly"
+  ],
+  "cake": [
+   "dessert",
+   "birthday",
+   "frosting",
+   "slice"
+  ],
+  "calendar": [
+   "date",
+   "month",
+   "day",
+   "schedule"
+  ],
+  "campfire": [
+   "marshmallow",
+   "camping",
+   "flames",
+   "wood"
+  ],
+  "campfire chat": [
+   "talk",
+   "camping",
+   "fire",
+   "stories"
+  ],
+  "camping": [
+   "tent",
+   "outdoors",
+   "campfire",
+   "woods"
+  ],
+  "candle": [
+   "wax",
+   "flame",
+   "light",
+   "birthday"
+  ],
+  "candy corn": [
+   "Halloween",
+   "orange",
+   "sweet",
+   "triangle"
+  ],
+  "car": [
+   "drive",
+   "wheels",
+   "road",
+   "vehicle"
+  ],
+  "carrot": [
+   "orange",
+   "vegetable",
+   "rabbit",
+   "Bugs Bunny"
+  ],
+  "carrying a heavy load together": [
+   "help",
+   "team",
+   "lift",
+   "share"
+  ],
+  "carving a pumpkin": [
+   "jack-o'-lantern",
+   "knife",
+   "Halloween",
+   "orange"
+  ],
+  "carving a turkey": [
+   "knife",
+   "Thanksgiving",
+   "slice",
+   "dinner"
+  ],
+  "castle": [
+   "king",
+   "queen",
+   "princess",
+   "medieval"
+  ],
+  "cat": [
+   "meow",
+   "pet",
+   "kitten",
+   "whiskers"
+  ],
+  "cat on a fence at night": [
+   "meow",
+   "moon",
+   "yard",
+   "alley"
+  ],
+  "cauldron": [
+   "witch",
+   "pot",
+   "brew",
+   "bubble"
+  ],
+  "celebration": [
+   "party",
+   "celebrate",
+   "cheer",
+   "confetti"
+  ],
+  "chair": [
+   "sit",
+   "seat",
+   "legs",
+   "table"
+  ],
+  "change": [
+   "different",
+   "new",
+   "coins",
+   "transform"
+  ],
+  "chef": [
+   "cook",
+   "kitchen",
+   "hat",
+   "restaurant"
+  ],
+  "climbing a mountain": [
+   "hike",
+   "peak",
+   "top",
+   "rope"
+  ],
+  "clock": [
+   "time",
+   "hands",
+   "tick",
+   "hour"
+  ],
+  "cloud": [
+   "sky",
+   "rain",
+   "white",
+   "fluffy"
+  ],
+  "coffee mug": [
+   "cup",
+   "drink",
+   "morning",
+   "hot"
+  ],
+  "coffee with a friend": [
+   "cafe",
+   "drink",
+   "chat",
+   "latte"
+  ],
+  "coffin": [
+   "vampire",
+   "dead",
+   "box",
+   "funeral"
+  ],
+  "cold feet": [
+   "nervous",
+   "wedding",
+   "scared",
+   "back out"
+  ],
+  "comfort zone": [
+   "safe",
+   "cozy",
+   "step outside",
+   "familiar"
+  ],
+  "compass": [
+   "north",
+   "direction",
+   "map",
+   "needle"
+  ],
+  "cookie": [
+   "chocolate chip",
+   "bake",
+   "Cookie Monster",
+   "sweet"
+  ],
+  "cooking dinner": [
+   "kitchen",
+   "stove",
+   "food",
+   "meal"
+  ],
+  "corn maze": [
+   "lost",
+   "field",
+   "fall",
+   "path"
+  ],
+  "costume contest": [
+   "Halloween",
+   "dress up",
+   "prize",
+   "judges"
+  ],
+  "couch potato": [
+   "sofa",
+   "lazy",
+   "TV",
+   "sit"
+  ],
+  "counting to four": [
+   "numbers",
+   "one two three",
+   "breathe",
+   "fingers"
+  ],
+  "counting votes": [
+   "election",
+   "ballot",
+   "tally",
+   "results"
+  ],
+  "courage": [
+   "brave",
+   "fear",
+   "lion",
+   "bold"
+  ],
+  "cow": [
+   "moo",
+   "milk",
+   "farm",
+   "spots"
+  ],
+  "cowboy": [
+   "horse",
+   "hat",
+   "rodeo",
+   "ranch"
+  ],
+  "crab": [
+   "claws",
+   "beach",
+   "ocean",
+   "sideways"
+  ],
+  "creepy crawlies": [
+   "bugs",
+   "spiders",
+   "insects",
+   "crawl"
+  ],
+  "crossed arms": [
+   "closed",
+   "mad",
+   "body language",
+   "chest"
+  ],
+  "crossing a bridge": [
+   "river",
+   "walk",
+   "over",
+   "cross"
+  ],
+  "crossing a finish line": [
+   "race",
+   "win",
+   "run",
+   "tape"
+  ],
+  "crown": [
+   "king",
+   "queen",
+   "gold",
+   "royal"
+  ],
+  "crystal ball": [
+   "fortune teller",
+   "future",
+   "magic",
+   "glass"
+  ],
+  "cup": [
+   "drink",
+   "mug",
+   "coffee",
+   "glass"
+  ],
+  "cup of tea": [
+   "drink",
+   "hot",
+   "mug",
+   "kettle"
+  ],
+  "curiosity": [
+   "curious",
+   "wonder",
+   "ask",
+   "cat"
+  ],
+  "dancing": [
+   "music",
+   "moves",
+   "ballroom",
+   "dance floor"
+  ],
+  "daydream": [
+   "imagine",
+   "distracted",
+   "think",
+   "wander"
+  ],
+  "deep breathing": [
+   "inhale",
+   "exhale",
+   "lungs",
+   "calm"
+  ],
+  "deja vu": [
+   "before",
+   "again",
+   "familiar",
+   "French"
+  ],
+  "doctor": [
+   "nurse",
+   "hospital",
+   "sick",
+   "check-up"
+  ],
+  "dog": [
+   "bark",
+   "puppy",
+   "pet",
+   "woof"
+  ],
+  "door": [
+   "open",
+   "knock",
+   "handle",
+   "enter"
+  ],
+  "doorbell": [
+   "ring",
+   "ding dong",
+   "visitor",
+   "button"
+  ],
+  "dragon": [
+   "fire",
+   "wings",
+   "fly",
+   "medieval"
+  ],
+  "drinking water": [
+   "glass",
+   "thirsty",
+   "hydrate",
+   "drink"
+  ],
+  "drum": [
+   "beat",
+   "sticks",
+   "bang",
+   "music"
+  ],
+  "duck": [
+   "quack",
+   "pond",
+   "bird",
+   "swim"
+  ],
+  "early bird": [
+   "morning",
+   "worm",
+   "wake up",
+   "first"
+  ],
+  "eating too much": [
+   "full",
+   "stuffed",
+   "food",
+   "belly"
+  ],
+  "echo": [
+   "repeat",
+   "canyon",
+   "sound",
+   "voice"
+  ],
+  "egg": [
+   "chicken",
+   "yolk",
+   "shell",
+   "breakfast"
+  ],
+  "electricity": [
+   "power",
+   "lightning",
+   "plug",
+   "current"
+  ],
+  "elephant": [
+   "trunk",
+   "big",
+   "gray",
+   "zoo"
+  ],
+  "elephant in the room": [
+   "ignore",
+   "obvious",
+   "awkward",
+   "avoid"
+  ],
+  "envelope": [
+   "letter",
+   "mail",
+   "stamp",
+   "send"
+  ],
+  "eye": [
+   "see",
+   "look",
+   "vision",
+   "eyeball"
+  ],
+  "eye contact": [
+   "look",
+   "stare",
+   "eyes",
+   "listen"
+  ],
+  "facing your fears": [
+   "scared",
+   "afraid",
+   "brave",
+   "fear"
+  ],
+  "fake news": [
+   "lie",
+   "false",
+   "rumor"
+  ],
+  "falling asleep during the game": [
+   "tired",
+   "sleep",
+   "couch",
+   "football"
+  ],
+  "family": [
+   "parents",
+   "kids",
+   "relatives",
+   "home"
+  ],
+  "family reunion": [
+   "relatives",
+   "cousins",
+   "gathering",
+   "picnic"
+  ],
+  "ferris wheel": [
+   "ride",
+   "carnival",
+   "round",
+   "fair"
+  ],
+  "filling in an oval": [
+   "ballot",
+   "pencil",
+   "bubble",
+   "test"
+  ],
+  "finish line": [
+   "race",
+   "end",
+   "win",
+   "tape"
+  ],
+  "fire truck": [
+   "firefighter",
+   "red",
+   "siren",
+   "hose"
+  ],
+  "firefighter": [
+   "fire",
+   "hose",
+   "truck",
+   "rescue"
+  ],
+  "fireworks": [
+   "Fourth of July",
+   "boom",
+   "sky",
+   "explode"
+  ],
+  "first date": [
+   "romance",
+   "dinner",
+   "nervous",
+   "couple"
+  ],
+  "fish": [
+   "swim",
+   "water",
+   "gills",
+   "fishing"
+  ],
+  "fishing": [
+   "rod",
+   "hook",
+   "catch",
+   "lake"
+  ],
+  "fishing trip": [
+   "boat",
+   "catch",
+   "rod",
+   "lake"
+  ],
+  "flag": [
+   "pole",
+   "wave",
+   "country",
+   "stars"
+  ],
+  "flower": [
+   "rose",
+   "petals",
+   "garden",
+   "bloom"
+  ],
+  "fog rolling over graves": [
+   "mist",
+   "cemetery",
+   "spooky",
+   "night"
+  ],
+  "forgiveness": [
+   "forgive",
+   "sorry",
+   "let go",
+   "apology"
+  ],
+  "fortune teller": [
+   "future",
+   "crystal ball",
+   "palm",
+   "psychic"
+  ],
+  "frankenstein monster": [
+   "green",
+   "bolts",
+   "scientist"
+  ],
+  "freedom": [
+   "free",
+   "liberty",
+   "flag",
+   "independence"
+  ],
+  "fresh start": [
+   "new",
+   "beginning",
+   "start over",
+   "clean slate"
+  ],
+  "friends": [
+   "buddies",
+   "pals",
+   "friendship",
+   "together"
+  ],
+  "friendship": [
+   "friends",
+   "buddies",
+   "together",
+   "trust"
+  ],
+  "frog": [
+   "jump",
+   "green",
+   "pond",
+   "ribbit"
+  ],
+  "full moon behind clouds": [
+   "night",
+   "sky",
+   "werewolf",
+   "dark"
+  ],
+  "garden": [
+   "plants",
+   "flowers",
+   "grow",
+   "dirt"
+  ],
+  "gardening": [
+   "plants",
+   "dig",
+   "grow",
+   "flowers"
+  ],
+  "ghost": [
+   "boo",
+   "spooky",
+   "haunt",
+   "sheet"
+  ],
+  "ghost in a sheet": [
+   "boo",
+   "Halloween",
+   "spooky",
+   "costume"
+  ],
+  "ghost story by a campfire": [
+   "scary",
+   "tell",
+   "camping",
+   "spooky"
+  ],
+  "gift": [
+   "present",
+   "wrap",
+   "bow",
+   "birthday"
+  ],
+  "giraffe": [
+   "tall",
+   "neck",
+   "spots",
+   "zoo"
+  ],
+  "giving thanks around the table": [
+   "grateful",
+   "dinner",
+   "Thanksgiving",
+   "family"
+  ],
+  "glasses": [
+   "eyes",
+   "see",
+   "lenses",
+   "frames"
+  ],
+  "going for a walk": [
+   "walking",
+   "stroll",
+   "outside",
+   "steps"
+  ],
+  "going viral": [
+   "internet",
+   "share",
+   "popular",
+   "video"
+  ],
+  "golf": [
+   "club",
+   "hole",
+   "putt",
+   "tee"
+  ],
+  "good night's sleep": [
+   "bed",
+   "rest",
+   "tired",
+   "dream"
+  ],
+  "gratitude": [
+   "thankful",
+   "thanks",
+   "grateful",
+   "appreciate"
+  ],
+  "graveyard at night": [
+   "cemetery",
+   "ghosts",
+   "tombstones",
+   "dark"
+  ],
+  "graveyard shift": [
+   "night",
+   "work",
+   "late",
+   "overnight"
+  ],
+  "gravity": [
+   "fall",
+   "Newton",
+   "apple",
+   "pull"
+  ],
+  "grocery store": [
+   "food",
+   "shopping",
+   "cart",
+   "aisle"
+  ],
+  "group hug": [
+   "arms",
+   "together",
+   "embrace",
+   "squeeze"
+  ],
+  "growth": [
+   "grow",
+   "bigger",
+   "change",
+   "plant"
+  ],
+  "guitar": [
+   "strings",
+   "strum",
+   "music",
+   "rock"
+  ],
+  "hamburger": [
+   "burger",
+   "bun",
+   "beef",
+   "grill"
+  ],
+  "hammer": [
+   "nail",
+   "tool",
+   "pound",
+   "hit"
+  ],
+  "hand": [
+   "fingers",
+   "wave",
+   "palm",
+   "thumb"
+  ],
+  "happiness": [
+   "happy",
+   "joy",
+   "smile",
+   "glad"
+  ],
+  "hat": [
+   "head",
+   "cap",
+   "wear",
+   "sun"
+  ],
+  "haunted hayride": [
+   "wagon",
+   "hay",
+   "Halloween",
+   "scary"
+  ],
+  "haunted house": [
+   "ghosts",
+   "spooky",
+   "Halloween",
+   "scary"
+  ],
+  "headless horseman": [
+   "horse",
+   "pumpkin",
+   "Sleepy Hollow",
+   "ghost"
+  ],
+  "headphones": [
+   "music",
+   "ears",
+   "listen",
+   "earbuds"
+  ],
+  "healing": [
+   "heal",
+   "recover",
+   "better",
+   "wound"
+  ],
+  "healthy meal": [
+   "food",
+   "vegetables",
+   "nutrition",
+   "eat"
+  ],
+  "heart": [
+   "love",
+   "valentine",
+   "red",
+   "beat"
+  ],
+  "helping a friend": [
+   "help",
+   "buddy",
+   "support",
+   "kind"
+  ],
+  "helping hand": [
+   "help",
+   "assist",
+   "support",
+   "lend"
+  ],
+  "hiccups": [
+   "hic",
+   "breath",
+   "scare",
+   "stomach"
+  ],
+  "hide and seek": [
+   "count",
+   "find"
+  ],
+  "high five": [
+   "hands",
+   "slap",
+   "nice job",
+   "celebrate"
+  ],
+  "hit the road": [
+   "leave",
+   "go",
+   "travel",
+   "drive"
+  ],
+  "holding a heavy weight": [
+   "lift",
+   "strong",
+   "gym"
+  ],
+  "homesick": [
+   "miss",
+   "home",
+   "family",
+   "away"
+  ],
+  "homework": [
+   "school",
+   "study",
+   "teacher",
+   "assignment"
+  ],
+  "honesty": [
+   "honest",
+   "truth",
+   "lie",
+   "trust"
+  ],
+  "hope": [
+   "wish",
+   "future",
+   "optimism",
+   "believe"
+  ],
+  "horse": [
+   "ride",
+   "saddle",
+   "gallop",
+   "pony"
+  ],
+  "hospital": [
+   "doctor",
+   "nurse",
+   "sick",
+   "emergency"
+  ],
+  "hot air balloon": [
+   "fly",
+   "basket",
+   "sky",
+   "float"
+  ],
+  "hot dog": [
+   "bun",
+   "mustard",
+   "ketchup",
+   "ballpark"
+  ],
+  "house": [
+   "home",
+   "roof",
+   "live",
+   "door"
+  ],
+  "howling at the moon": [
+   "wolf",
+   "night",
+   "werewolf",
+   "full"
+  ],
+  "hug": [
+   "arms",
+   "embrace",
+   "squeeze",
+   "love"
+  ],
+  "ice cream": [
+   "cone",
+   "scoop",
+   "cold",
+   "dessert"
+  ],
+  "igloo": [
+   "ice",
+   "snow",
+   "Eskimo",
+   "cold"
+  ],
+  "imagination": [
+   "imagine",
+   "creative",
+   "pretend",
+   "dream"
+  ],
+  "inner peace": [
+   "calm",
+   "peaceful",
+   "meditation",
+   "serenity"
+  ],
+  "inner strength": [
+   "strong",
+   "resilient",
+   "courage",
+   "tough"
+  ],
+  "interrupting someone": [
+   "talk over",
+   "rude",
+   "cut off",
+   "conversation"
+  ],
+  "jack-o-lantern": [
+   "pumpkin",
+   "carve",
+   "Halloween",
+   "candle"
+  ],
+  "jealousy": [
+   "jealous",
+   "envy",
+   "green",
+   "want"
+  ],
+  "jet lag": [
+   "travel",
+   "tired",
+   "time zone",
+   "flight"
+  ],
+  "jigsaw puzzle": [
+   "pieces",
+   "fit",
+   "picture",
+   "box"
+  ],
+  "job interview": [
+   "hire",
+   "work",
+   "resume",
+   "questions"
+  ],
+  "journal": [
+   "diary",
+   "write",
+   "notebook",
+   "pen"
+  ],
+  "juggling": [
+   "balls",
+   "throw",
+   "catch",
+   "clown"
+  ],
+  "jumping in a leaf pile": [
+   "leaves",
+   "fall",
+   "rake",
+   "jump"
+  ],
+  "karate": [
+   "martial arts",
+   "chop",
+   "black belt",
+   "kick"
+  ],
+  "key": [
+   "lock",
+   "door",
+   "open",
+   "unlock"
+  ],
+  "kindness": [
+   "kind",
+   "nice",
+   "help",
+   "care"
+  ],
+  "kite": [
+   "fly",
+   "string",
+   "wind",
+   "sky"
+  ],
+  "kitten": [
+   "cat",
+   "baby",
+   "meow",
+   "cute"
+  ],
+  "knocking on a door": [
+   "knock",
+   "visitor",
+   "hello"
+  ],
+  "ladder": [
+   "climb",
+   "rungs",
+   "steps",
+   "up"
+  ],
+  "ladybug": [
+   "red",
+   "spots",
+   "insect",
+   "bug"
+  ],
+  "lamp": [
+   "light",
+   "bulb",
+   "shade",
+   "table"
+  ],
+  "laughing": [
+   "laugh",
+   "funny",
+   "joke",
+   "giggle"
+  ],
+  "leaf": [
+   "tree",
+   "green",
+   "fall",
+   "autumn"
+  ],
+  "leaning in to listen": [
+   "ear",
+   "closer",
+   "attention"
+  ],
+  "leftovers in the fridge": [
+   "food",
+   "refrigerator",
+   "next day",
+   "cold"
+  ],
+  "letting go": [
+   "release",
+   "let",
+   "move on",
+   "free"
+  ],
+  "letting go of a balloon": [
+   "string",
+   "float away",
+   "sky",
+   "release"
+  ],
+  "library": [
+   "books",
+   "read",
+   "quiet",
+   "librarian"
+  ],
+  "life jacket": [
+   "boat",
+   "float",
+   "water",
+   "vest"
+  ],
+  "light at the end of the tunnel": [
+   "hope",
+   "dark",
+   "almost"
+  ],
+  "lighthouse": [
+   "ocean",
+   "light",
+   "ships",
+   "tower"
+  ],
+  "lion": [
+   "roar",
+   "king",
+   "jungle",
+   "mane"
+  ],
+  "listening to music": [
+   "headphones",
+   "songs",
+   "ears",
+   "radio"
+  ],
+  "love": [
+   "heart",
+   "romance",
+   "valentine",
+   "care"
+  ],
+  "magician": [
+   "magic",
+   "trick",
+   "rabbit",
+   "hat"
+  ],
+  "mailbox": [
+   "letters",
+   "post office",
+   "mail",
+   "send"
+  ],
+  "mailing a ballot": [
+   "vote",
+   "envelope",
+   "post office",
+   "election"
+  ],
+  "mashed potatoes": [
+   "gravy",
+   "butter",
+   "spuds",
+   "side dish"
+  ],
+  "meditation": [
+   "calm",
+   "breathe",
+   "mindful",
+   "sit"
+  ],
+  "mermaid": [
+   "tail",
+   "ocean",
+   "fish",
+   "Little Mermaid"
+  ],
+  "microwave": [
+   "heat",
+   "kitchen",
+   "popcorn",
+   "beep"
+  ],
+  "milestone coin": [
+   "recovery",
+   "sober",
+   "chip",
+   "anniversary"
+  ],
+  "mindfulness": [
+   "present",
+   "aware",
+   "meditation",
+   "moment"
+  ],
+  "monkey": [
+   "banana",
+   "ape",
+   "swing",
+   "zoo"
+  ],
+  "monster mash": [
+   "song",
+   "dance",
+   "Halloween",
+   "monsters"
+  ],
+  "moon": [
+   "night",
+   "sky",
+   "full",
+   "stars"
+  ],
+  "mountain": [
+   "climb",
+   "hill",
+   "peak",
+   "snow"
+  ],
+  "mowing the lawn": [
+   "grass",
+   "mower",
+   "yard",
+   "cut"
+  ],
+  "multitasking": [
+   "many things",
+   "busy",
+   "juggling",
+   "at once"
+  ],
+  "mummy": [
+   "wrapped",
+   "Egypt",
+   "tomb",
+   "bandages"
+  ],
+  "mummy rising from coffin": [
+   "wrapped",
+   "Egypt",
+   "tomb",
+   "scary"
+  ],
+  "mummy's curse": [
+   "Egypt",
+   "tomb",
+   "pharaoh",
+   "wrapped"
+  ],
+  "museum": [
+   "art",
+   "exhibit",
+   "history",
+   "paintings"
+  ],
+  "mushroom": [
+   "fungus",
+   "toadstool",
+   "pizza",
+   "forest"
+  ],
+  "musical chairs": [
+   "music",
+   "sit",
+   "game"
+  ],
+  "napping on the couch": [
+   "sleep",
+   "sofa",
+   "nap",
+   "tired"
+  ],
+  "nature hike": [
+   "trail",
+   "walk",
+   "woods",
+   "outdoors"
+  ],
+  "needle in a haystack": [
+   "impossible",
+   "find",
+   "hay",
+   "search"
+  ],
+  "new chapter": [
+   "book",
+   "begin",
+   "start",
+   "fresh"
+  ],
+  "nightmare": [
+   "bad dream",
+   "scary",
+   "sleep",
+   "wake up"
+  ],
+  "nodding your head": [
+   "yes",
+   "agree",
+   "listen"
+  ],
+  "octopus": [
+   "tentacles",
+   "ocean",
+   "eight",
+   "ink"
+  ],
+  "on cloud nine": [
+   "happy",
+   "thrilled",
+   "sky",
+   "joy"
+  ],
+  "one day at a time": [
+   "today",
+   "recovery",
+   "slogan",
+   "patience"
+  ],
+  "over the river and through the woods": [
+   "grandmother",
+   "sleigh",
+   "song",
+   "travel"
+  ],
+  "owl": [
+   "hoot",
+   "night",
+   "wise",
+   "bird"
+  ],
+  "painting": [
+   "paint",
+   "brush",
+   "art",
+   "canvas"
+  ],
+  "pancakes": [
+   "breakfast",
+   "syrup",
+   "flip",
+   "flapjacks"
+  ],
+  "parking lot": [
+   "cars",
+   "park",
+   "spaces",
+   "mall"
+  ],
+  "passing the gravy": [
+   "dinner",
+   "table",
+   "Thanksgiving",
+   "pass"
+  ],
+  "password": [
+   "login",
+   "secret",
+   "computer",
+   "code"
+  ],
+  "path": [
+   "trail",
+   "walk",
+   "way",
+   "road"
+  ],
+  "patience": [
+   "wait",
+   "patient",
+   "calm",
+   "slow"
+  ],
+  "peace": [
+   "calm",
+   "quiet",
+   "dove",
+   "harmony"
+  ],
+  "pencil": [
+   "write",
+   "eraser",
+   "lead",
+   "paper"
+  ],
+  "petting a dog": [
+   "pet",
+   "puppy",
+   "fur",
+   "good boy"
+  ],
+  "phone": [
+   "call",
+   "cell",
+   "ring",
+   "text"
+  ],
+  "phone a friend": [
+   "call",
+   "buddy",
+   "help",
+   "lifeline"
+  ],
+  "picking yourself up": [
+   "fall",
+   "get up",
+   "try again",
+   "resilience"
+  ],
+  "picnic": [
+   "basket",
+   "blanket",
+   "park",
+   "ants"
+  ],
+  "piece of cake": [
+   "easy",
+   "simple",
+   "dessert",
+   "slice"
+  ],
+  "pig": [
+   "oink",
+   "mud",
+   "farm",
+   "pork"
+  ],
+  "piggy bank": [
+   "save",
+   "money",
+   "coins",
+   "pig"
+  ],
+  "pillow": [
+   "sleep",
+   "bed",
+   "soft",
+   "head"
+  ],
+  "pirate": [
+   "ship",
+   "treasure",
+   "parrot",
+   "eye patch"
+  ],
+  "pizza": [
+   "cheese",
+   "slice",
+   "pepperoni",
+   "Italian"
+  ],
+  "planting a seed": [
+   "garden",
+   "dirt",
+   "grow",
+   "plant"
+  ],
+  "playing cards": [
+   "deck",
+   "poker",
+   "ace",
+   "shuffle"
+  ],
+  "plymouth rock": [
+   "Pilgrims",
+   "Mayflower",
+   "Massachusetts",
+   "landing"
+  ],
+  "popcorn": [
+   "movie",
+   "butter",
+   "kernels",
+   "pop"
+  ],
+  "popcorn at the movies": [
+   "theater",
+   "butter",
+   "film",
+   "snack"
+  ],
+  "potion bubbling in cauldron": [
+   "witch",
+   "brew",
+   "pot",
+   "magic"
+  ],
+  "procrastination": [
+   "later",
+   "delay",
+   "put off",
+   "lazy"
+  ],
+  "progress not perfection": [
+   "slogan",
+   "try",
+   "better",
+   "mistakes"
+  ],
+  "pulling someone up": [
+   "help",
+   "hand",
+   "lift",
+   "rescue"
+  ],
+  "pumpkin": [
+   "orange",
+   "Halloween",
+   "pie",
+   "jack-o'-lantern"
+  ],
+  "pumpkin patch": [
+   "orange",
+   "farm",
+   "Halloween",
+   "pick"
+  ],
+  "puppy": [
+   "dog",
+   "baby",
+   "cute",
+   "bark"
+  ],
+  "putting the phone away": [
+   "screen",
+   "put down",
+   "break"
+  ],
+  "putting the phone down": [
+   "screen",
+   "put away",
+   "break"
+  ],
+  "puzzle pieces": [
+   "jigsaw",
+   "fit",
+   "together",
+   "picture"
+  ],
+  "quiet time": [
+   "silence",
+   "calm",
+   "alone",
+   "rest"
+  ],
+  "rabbit": [
+   "bunny",
+   "carrot",
+   "hop",
+   "ears"
+  ],
+  "rain": [
+   "wet",
+   "umbrella",
+   "cloud",
+   "drops"
+  ],
+  "rainbow": [
+   "colors",
+   "rain",
+   "sky",
+   "arc"
+  ],
+  "raining cats and dogs": [
+   "pouring",
+   "storm",
+   "heavy",
+   "rain"
+  ],
+  "raking leaves": [
+   "rake",
+   "fall",
+   "yard",
+   "pile"
+  ],
+  "reading a book": [
+   "read",
+   "pages",
+   "story",
+   "library"
+  ],
+  "recycling": [
+   "bin",
+   "plastic",
+   "environment",
+   "reuse"
+  ],
+  "reflection": [
+   "mirror",
+   "think",
+   "water",
+   "image"
+  ],
+  "refrigerator": [
+   "fridge",
+   "cold",
+   "kitchen",
+   "food"
+  ],
+  "remote control": [
+   "TV",
+   "channel",
+   "buttons",
+   "couch"
+  ],
+  "resilience": [
+   "bounce back",
+   "strong",
+   "tough",
+   "recover"
+  ],
+  "retirement": [
+   "retire",
+   "work",
+   "old",
+   "pension"
+  ],
+  "ring": [
+   "wedding",
+   "finger",
+   "diamond",
+   "jewelry"
+  ],
+  "rising above challenges": [
+   "overcome",
+   "problems",
+   "strong",
+   "succeed"
+  ],
+  "road map": [
+   "directions",
+   "travel",
+   "route"
+  ],
+  "road trip": [
+   "car",
+   "drive",
+   "travel",
+   "highway"
+  ],
+  "robot": [
+   "machine",
+   "metal",
+   "beep",
+   "computer"
+  ],
+  "rocket": [
+   "space",
+   "launch",
+   "NASA",
+   "blast off"
+  ],
+  "roller coaster": [
+   "ride",
+   "amusement park",
+   "loop",
+   "scream"
+  ],
+  "running a race": [
+   "run",
+   "finish line",
+   "marathon",
+   "fast"
+  ],
+  "rush hour": [
+   "traffic",
+   "commute",
+   "busy",
+   "cars"
+  ],
+  "safety net": [
+   "circus",
+   "fall",
+   "catch",
+   "trapeze"
+  ],
+  "sandcastle": [
+   "beach",
+   "sand",
+   "bucket",
+   "castle"
+  ],
+  "sandwich": [
+   "bread",
+   "lunch",
+   "ham",
+   "deli"
+  ],
+  "saying thank you": [
+   "thanks",
+   "grateful",
+   "polite",
+   "manners"
+  ],
+  "scarecrow": [
+   "crows",
+   "field",
+   "straw",
+   "farm"
+  ],
+  "scared stiff": [
+   "afraid",
+   "frozen",
+   "fear",
+   "frightened"
+  ],
+  "scissors": [
+   "cut",
+   "paper",
+   "blades",
+   "snip"
+  ],
+  "scrolling in bed at night": [
+   "phone",
+   "scroll",
+   "late",
+   "sleep"
+  ],
+  "scrolling on a phone": [
+   "swipe",
+   "screen",
+   "social media",
+   "feed"
+  ],
+  "seed": [
+   "plant",
+   "grow",
+   "garden",
+   "sprout"
+  ],
+  "self-care": [
+   "relax",
+   "wellness",
+   "yourself"
+  ],
+  "sending love to a friend": [
+   "care",
+   "buddy",
+   "heart"
+  ],
+  "serenity": [
+   "calm",
+   "peace",
+   "prayer",
+   "quiet"
+  ],
+  "setting the table": [
+   "plates",
+   "forks",
+   "dinner",
+   "napkins"
+  ],
+  "shadow": [
+   "dark",
+   "sun",
+   "follow",
+   "silhouette"
+  ],
+  "shaking hands": [
+   "handshake",
+   "meet",
+   "greet",
+   "deal"
+  ],
+  "shark": [
+   "Jaws",
+   "fin",
+   "ocean",
+   "teeth"
+  ],
+  "shoe": [
+   "foot",
+   "sneaker",
+   "laces",
+   "wear"
+  ],
+  "singing in the shower": [
+   "sing",
+   "bathroom",
+   "water",
+   "song"
+  ],
+  "sitting quietly": [
+   "sit",
+   "silent",
+   "calm",
+   "still"
+  ],
+  "skateboard": [
+   "skate",
+   "wheels",
+   "ramp",
+   "board"
+  ],
+  "skeleton": [
+   "bones",
+   "skull",
+   "Halloween",
+   "body"
+  ],
+  "skeleton dancing": [
+   "bones",
+   "dance",
+   "Halloween",
+   "spooky"
+  ],
+  "skeleton in the closet": [
+   "secret",
+   "hide",
+   "past",
+   "bones"
+  ],
+  "skull": [
+   "bones",
+   "head",
+   "skeleton",
+   "pirate"
+  ],
+  "sleepwalking": [
+   "sleep",
+   "walk",
+   "night",
+   "zombie"
+  ],
+  "smile": [
+   "happy",
+   "teeth",
+   "grin",
+   "face"
+  ],
+  "snail": [
+   "slow",
+   "shell",
+   "slime",
+   "garden"
+  ],
+  "snake": [
+   "slither",
+   "hiss",
+   "reptile",
+   "scales"
+  ],
+  "sneezing": [
+   "achoo",
+   "cold",
+   "bless you",
+   "nose"
+  ],
+  "snowball fight": [
+   "throw",
+   "winter",
+   "cold",
+   "white"
+  ],
+  "snowboarding": [
+   "snow",
+   "mountain",
+   "ski",
+   "board"
+  ],
+  "snowman": [
+   "snow",
+   "carrot",
+   "winter",
+   "Frosty"
+  ],
+  "soccer goal": [
+   "net",
+   "kick",
+   "score",
+   "ball"
+  ],
+  "social media": [
+   "Facebook",
+   "Instagram",
+   "posts",
+   "likes"
+  ],
+  "sock": [
+   "foot",
+   "shoe",
+   "laundry",
+   "pair"
+  ],
+  "solar eclipse": [
+   "sun",
+   "moon",
+   "dark",
+   "glasses"
+  ],
+  "someone cheering": [
+   "cheer",
+   "yay",
+   "crowd",
+   "celebrate"
+  ],
+  "someone comparing themselves to a screen": [
+   "compare",
+   "phone",
+   "jealous",
+   "social media"
+  ],
+  "someone fact checking": [
+   "facts",
+   "true",
+   "check",
+   "research"
+  ],
+  "someone holding an umbrella for a friend": [
+   "rain",
+   "kind",
+   "share",
+   "help"
+  ],
+  "someone meditating": [
+   "calm",
+   "breathe",
+   "sit",
+   "peace"
+  ],
+  "someone on their phone while you talk": [
+   "ignore",
+   "rude",
+   "screen",
+   "distracted"
+  ],
+  "someone texting a friend": [
+   "phone",
+   "message",
+   "type",
+   "buddy"
+  ],
+  "song: beautiful day": [
+   "U2",
+   "Bono",
+   "song",
+   "wonderful"
+  ],
+  "song: blackbird": [
+   "Beatles",
+   "bird",
+   "wings",
+   "Paul McCartney"
+  ],
+  "song: here comes the sun": [
+   "Beatles",
+   "sunshine",
+   "morning",
+   "George Harrison"
+  ],
+  "song: lean on me": [
+   "Bill Withers",
+   "friend",
+   "help",
+   "support"
+  ],
+  "song: man in the mirror": [
+   "Michael Jackson",
+   "reflection",
+   "change",
+   "myself"
+  ],
+  "song: rise up": [
+   "Andra Day",
+   "stand",
+   "strong",
+   "again"
+  ],
+  "song: the climb": [
+   "Miley Cyrus",
+   "mountain",
+   "uphill",
+   "journey"
+  ],
+  "spaghetti": [
+   "pasta",
+   "meatballs",
+   "noodles",
+   "Italian"
+  ],
+  "spider": [
+   "web",
+   "eight legs",
+   "creepy",
+   "Spider-Man"
+  ],
+  "spider crawling up a wall": [
+   "web",
+   "creepy",
+   "bug",
+   "legs"
+  ],
+  "spider dropping from web": [
+   "string",
+   "creepy",
+   "bug",
+   "hang"
+  ],
+  "spider web": [
+   "sticky",
+   "silk",
+   "Halloween"
+  ],
+  "spill the beans": [
+   "tell",
+   "secret",
+   "gossip",
+   "reveal"
+  ],
+  "standing tall": [
+   "proud",
+   "confident",
+   "straight",
+   "posture"
+  ],
+  "star": [
+   "sky",
+   "night",
+   "twinkle",
+   "shine"
+  ],
+  "stepping stones": [
+   "path",
+   "cross",
+   "rocks",
+   "river"
+  ],
+  "stop sign": [
+   "red",
+   "octagon",
+   "road",
+   "halt"
+  ],
+  "strength": [
+   "strong",
+   "muscle",
+   "power",
+   "tough"
+  ],
+  "stretching": [
+   "stretch",
+   "yoga",
+   "reach",
+   "muscles"
+  ],
+  "sun": [
+   "sky",
+   "hot",
+   "shine",
+   "yellow"
+  ],
+  "sunburn": [
+   "red",
+   "skin",
+   "beach",
+   "lotion"
+  ],
+  "sunrise": [
+   "morning",
+   "dawn",
+   "sky",
+   "early"
+  ],
+  "sunrise walk": [
+   "morning",
+   "dawn",
+   "stroll",
+   "early"
+  ],
+  "superhero": [
+   "cape",
+   "power",
+   "save",
+   "Superman"
+  ],
+  "support group": [
+   "share",
+   "recovery",
+   "help"
+  ],
+  "surfing": [
+   "waves",
+   "board",
+   "ocean",
+   "beach"
+  ],
+  "sushi": [
+   "rice",
+   "fish",
+   "Japanese",
+   "raw"
+  ],
+  "swimming pool": [
+   "swim",
+   "water",
+   "dive",
+   "summer"
+  ],
+  "table": [
+   "chair",
+   "eat",
+   "dinner",
+   "legs"
+  ],
+  "tacos": [
+   "Mexican",
+   "shell",
+   "Tuesday",
+   "salsa"
+  ],
+  "taking a deep breath": [
+   "inhale",
+   "exhale",
+   "lungs",
+   "calm"
+  ],
+  "taking a selfie": [
+   "picture",
+   "phone",
+   "camera",
+   "yourself"
+  ],
+  "taking a small step": [
+   "baby step",
+   "start",
+   "walk",
+   "begin"
+  ],
+  "talking to a counselor": [
+   "therapy",
+   "help",
+   "talk",
+   "support"
+  ],
+  "talking to a friend": [
+   "chat",
+   "buddy",
+   "conversation",
+   "listen"
+  ],
+  "talking to yourself in a mirror": [
+   "reflection",
+   "self-talk",
+   "pep talk"
+  ],
+  "team huddle": [
+   "circle",
+   "plan",
+   "sports"
+  ],
+  "teamwork": [
+   "team",
+   "together",
+   "cooperate",
+   "help"
+  ],
+  "tennis racket": [
+   "ball",
+   "court",
+   "serve",
+   "net"
+  ],
+  "tent": [
+   "camping",
+   "sleep",
+   "outdoors",
+   "poles"
+  ],
+  "the first thanksgiving": [
+   "Pilgrims",
+   "feast",
+   "1621",
+   "Wampanoag"
+  ],
+  "the kids table": [
+   "children",
+   "Thanksgiving",
+   "small",
+   "family"
+  ],
+  "the last straw": [
+   "enough",
+   "final",
+   "camel",
+   "fed up"
+  ],
+  "the mayflower": [
+   "ship",
+   "Pilgrims",
+   "1620",
+   "Plymouth"
+  ],
+  "things that go bump in the night": [
+   "scary",
+   "noise",
+   "dark",
+   "ghosts"
+  ],
+  "thumbs up": [
+   "good",
+   "like",
+   "approve",
+   "OK"
+  ],
+  "thunderstorm": [
+   "lightning",
+   "thunder",
+   "rain",
+   "storm"
+  ],
+  "time flies": [
+   "fast",
+   "clock",
+   "fun",
+   "hours"
+  ],
+  "time machine": [
+   "travel",
+   "past",
+   "future",
+   "back"
+  ],
+  "toaster": [
+   "bread",
+   "toast",
+   "pop",
+   "kitchen"
+  ],
+  "toolbox": [
+   "hammer",
+   "tools",
+   "wrench",
+   "fix"
+  ],
+  "tooth": [
+   "teeth",
+   "dentist",
+   "smile",
+   "bite"
+  ],
+  "toothbrush": [
+   "teeth",
+   "brush",
+   "toothpaste",
+   "dentist"
+  ],
+  "tornado": [
+   "twister",
+   "wind",
+   "storm",
+   "Kansas"
+  ],
+  "traffic jam": [
+   "cars",
+   "stuck",
+   "road",
+   "rush hour"
+  ],
+  "traffic light": [
+   "red",
+   "green",
+   "yellow",
+   "stop"
+  ],
+  "train": [
+   "tracks",
+   "choo choo",
+   "railroad",
+   "station"
+  ],
+  "treasure map": [
+   "X marks the spot",
+   "pirate",
+   "gold",
+   "dig"
+  ],
+  "tree": [
+   "leaves",
+   "trunk",
+   "branches",
+   "forest"
+  ],
+  "trick or treating": [
+   "Halloween",
+   "candy",
+   "costume",
+   "doorbell"
+  ],
+  "trophy": [
+   "win",
+   "prize",
+   "cup",
+   "first place"
+  ],
+  "truck": [
+   "drive",
+   "big",
+   "haul",
+   "pickup"
+  ],
+  "trust": [
+   "believe",
+   "rely",
+   "faith",
+   "honest"
+  ],
+  "trying again": [
+   "retry",
+   "practice",
+   "don't quit"
+  ],
+  "tug of war": [
+   "rope",
+   "pull",
+   "team",
+   "game"
+  ],
+  "turning off notifications": [
+   "phone",
+   "settings",
+   "alerts",
+   "quiet"
+  ],
+  "turning over a new leaf": [
+   "change",
+   "fresh start",
+   "better",
+   "begin"
+  ],
+  "turning point": [
+   "change",
+   "moment",
+   "decision",
+   "different"
+  ],
+  "turtle": [
+   "shell",
+   "slow",
+   "reptile",
+   "pond"
+  ],
+  "two people talking": [
+   "conversation",
+   "chat",
+   "talk",
+   "listen"
+  ],
+  "umbrella": [
+   "rain",
+   "wet",
+   "open",
+   "cover"
+  ],
+  "unbuttoning your pants after dinner": [
+   "full",
+   "stuffed",
+   "belly",
+   "ate"
+  ],
+  "unicorn": [
+   "horn",
+   "magic",
+   "horse",
+   "rainbow"
+  ],
+  "vacation": [
+   "trip",
+   "travel",
+   "holiday",
+   "beach"
+  ],
+  "vacuum cleaner": [
+   "clean",
+   "carpet",
+   "suck",
+   "dust"
+  ],
+  "vampire": [
+   "Dracula",
+   "blood",
+   "fangs",
+   "bat"
+  ],
+  "vampire with fangs": [
+   "Dracula",
+   "blood",
+   "teeth",
+   "bite"
+  ],
+  "video game": [
+   "play",
+   "controller",
+   "console",
+   "Nintendo"
+  ],
+  "volcano": [
+   "lava",
+   "erupt",
+   "mountain",
+   "hot"
+  ],
+  "walking shoes": [
+   "sneakers",
+   "feet",
+   "walk",
+   "comfortable"
+  ],
+  "walking the dog": [
+   "leash",
+   "puppy",
+   "walk",
+   "park"
+  ],
+  "washing dishes": [
+   "sink",
+   "soap",
+   "kitchen",
+   "clean"
+  ],
+  "washing machine": [
+   "laundry",
+   "clothes",
+   "wash",
+   "soap"
+  ],
+  "watching a movie": [
+   "film",
+   "popcorn",
+   "theater",
+   "screen"
+  ],
+  "water bottle": [
+   "drink",
+   "thirsty",
+   "plastic",
+   "hydrate"
+  ],
+  "waterfall": [
+   "water",
+   "river",
+   "fall",
+   "Niagara"
+  ],
+  "waves": [
+   "ocean",
+   "beach",
+   "surf",
+   "water"
+  ],
+  "wedding cake": [
+   "bride",
+   "groom",
+   "tiers",
+   "frosting"
+  ],
+  "werewolf": [
+   "wolf",
+   "full moon",
+   "howl",
+   "transform"
+  ],
+  "whale": [
+   "ocean",
+   "big",
+   "blue",
+   "Moby Dick"
+  ],
+  "wi-fi": [
+   "internet",
+   "wireless",
+   "password",
+   "connect"
+  ],
+  "window": [
+   "glass",
+   "open",
+   "view",
+   "curtain"
+  ],
+  "witch": [
+   "broom",
+   "hat",
+   "spell",
+   "Halloween"
+  ],
+  "witch brewing a potion": [
+   "cauldron",
+   "magic",
+   "spell",
+   "pot"
+  ],
+  "witch casting a spell": [
+   "magic",
+   "wand",
+   "broom",
+   "hex"
+  ],
+  "witch on a broomstick": [
+   "fly",
+   "broom",
+   "hat",
+   "Halloween"
+  ],
+  "witching hour": [
+   "midnight",
+   "spooky",
+   "witches",
+   "night"
+  ],
+  "writer's block": [
+   "stuck",
+   "write",
+   "ideas",
+   "author"
+  ],
+  "writing in a journal": [
+   "diary",
+   "pen",
+   "notebook",
+   "write"
+  ],
+  "yawning": [
+   "tired",
+   "sleepy",
+   "mouth",
+   "bored"
+  ],
+  "yoga": [
+   "stretch",
+   "mat",
+   "pose",
+   "breathe"
+  ],
+  "zombie": [
+   "undead",
+   "brains",
+   "walk",
+   "Walking Dead"
+  ],
+  "zombie apocalypse": [
+   "undead",
+   "end of the world",
+   "brains",
+   "survive"
+  ],
+  "zombie walk": [
+   "undead",
+   "brains",
+   "stagger",
+   "parade"
+  ],
+  "zoo": [
+   "animals",
+   "cages",
+   "lions",
+   "visit"
+  ]
  }
 };

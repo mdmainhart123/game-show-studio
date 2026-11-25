@@ -206,6 +206,12 @@ beach
 #  paper while everyone else guesses. One word or phrase per line:
 #
 #    word | level
+#    word | level | don't, say, these, words      (optional)
+#
+#  The same words are used by Say It, Don't Say It, where one person
+#  describes the word without saying it. The optional third part lists
+#  up to 6 extra "don't say" words for that game, separated by commas.
+#  (Say It always forbids the words of the answer itself.)
 #
 #  Rules:
 #  - Level is easy, medium or hard (if left off, easy is used).
@@ -231,9 +237,9 @@ beach
 #  Halloween Easy.txt shows up as "Halloween Easy" under Question set.
 # =============================================================
 
-banana | easy
-roller coaster | medium
-time flies | hard
+banana | easy | fruit, yellow, monkey, peel
+roller coaster | medium | ride, amusement park, loop
+time flies | hard | clock, fast, fun
 `,
   };
 
@@ -422,7 +428,7 @@ football | Popular fall sport
     lines(text).forEach((raw, i) => {
       const n = i + 1, l = raw.trim();
       if (!l || isComment(l)) return;
-      const [w, lv] = l.split('|').map(s => s.trim());
+      const [w, lv, ban] = l.split('|').map(s => s.trim());
       if (!w) { problems.push(`Line ${n}: no word`); return; }
       if (w.length > 40) { problems.push(`Line ${n}: "${w}" is too long (40 characters max)`); return; }
       const key = w.toLowerCase();
@@ -430,7 +436,11 @@ football | Popular fall sport
       seen.add(key);
       let level = (lv || 'easy').toLowerCase();
       if (!['easy', 'medium', 'hard'].includes(level)) { problems.push(`Line ${n}: level "${lv}" should be easy, medium or hard — used easy`); level = 'easy'; }
-      items.push({ id: uid(), word: w, level });
+      const item = { id: uid(), word: w, level };
+      // optional 3rd part: "don't say" words for Say It, Don't Say It (comma-separated)
+      const banned = (ban || '').split(',').map(s => s.trim()).filter(Boolean);
+      if (banned.length) item.banned = banned.slice(0, 6);
+      items.push(item);
     });
     return { items, problems };
   }

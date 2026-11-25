@@ -5,6 +5,12 @@
 #  paper while everyone else guesses. One word or phrase per line:
 #
 #    word | level
+#    word | level | don't, say, these, words      (optional)
+#
+#  The same words are used by Say It, Don't Say It, where one person
+#  describes the word without saying it. The optional third part lists
+#  up to 6 extra "don't say" words for that game, separated by commas.
+#  (Say It always forbids the words of the answer itself.)
 #
 #  Rules:
 #  - Level is easy, medium or hard (if left off, easy is used).
@@ -30,6 +36,6 @@
 #  Halloween Easy.txt shows up as "Halloween Easy" under Question set.
 # =============================================================
 
-banana | easy
-roller coaster | medium
-time flies | hard
+banana | easy | fruit, yellow, monkey, peel
+roller coaster | medium | ride, amusement park, loop
+time flies | hard | clock, fast, fun

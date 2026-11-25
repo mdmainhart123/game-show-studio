@@ -67,7 +67,7 @@ App.screens.editor = (el, startTab = 'trivia') => {
     } else if (tab === 'draw') {
       box.innerHTML = `<div class="word-list">${items.map(w => `
         <div class="qitem" data-id="${w.id}">
-          <div class="qmain"><div class="qtext" style="font-weight:700">${esc(w.word)}</div><div class="qsub"><span class="pill">${DRAW_LEVELS[w.level] || DRAW_LEVELS.easy}</span>${w.played ? ' <span class="hint">✓ played</span>' : ''}</div></div>
+          <div class="qmain"><div class="qtext" style="font-weight:700">${esc(w.word)}</div><div class="qsub"><span class="pill">${DRAW_LEVELS[w.level] || DRAW_LEVELS.easy}</span>${w.banned && w.banned.length ? ` <span class="hint">🚫 ${esc(w.banned.join(', '))}</span>` : ''}${w.played ? ' <span class="hint">✓ played</span>' : ''}</div></div>
           <button class="btn sm ghost" data-edit>Edit</button><button class="btn sm red" data-del>🗑</button>
         </div>`).join('')}</div>`;
     } else if (tab === 'words') {
@@ -157,6 +157,7 @@ App.screens.editor = (el, startTab = 'trivia') => {
       body = `
         <label class="field"><span>Word or phrase to draw *</span><input class="input" id="fW" value="${esc(v.word || '')}" maxlength="40" style="font-size:24px;font-weight:700"></label>
         <label class="field"><span>Level</span><select class="input" id="fL">${Object.entries(DRAW_LEVELS).map(([k, l]) => `<option value="${k}" ${(v.level || 'easy') === k ? 'selected' : ''}>${l} — ${{ easy: 100, medium: 200, hard: 300 }[k]} points</option>`).join('')}</select></label>
+        <label class="field"><span>"Don't say" words for Say It, Don't Say It (optional, separated by commas)</span><input class="input" id="fBan" value="${esc((v.banned || []).join(', '))}" placeholder="e.g. fruit, yellow, monkey"></label>
         <div class="err" id="fErr"></div>`;
     } else if (tab === 'words') {
       body = `
@@ -223,7 +224,9 @@ App.screens.editor = (el, startTab = 'trivia') => {
         const w = val('fW');
         if (!w) return err('Please type a word or phrase.');
         if (d.draw.some(x => x.word.toLowerCase() === w.toLowerCase() && x !== item)) return err(`"${w}" is already in your list.`);
+        const ban = val('fBan').split(',').map(x => x.trim()).filter(Boolean).slice(0, 6);
         rec = { word: w, level: $('#fL', mb).value };
+        if (ban.length) rec.banned = ban; else if (item) delete item.banned;
       } else if (tab === 'words') {
         const w = val('fW').toUpperCase();
         if (!/^[A-Z]{5}$/.test(w)) return err('The word must be exactly 5 letters (A–Z).');
