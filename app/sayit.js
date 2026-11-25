@@ -29,7 +29,8 @@ App.screens.sayitSetup = (el) => {
         </div>
         <div class="field-row">
           <label class="field"><span>Time per turn</span><select class="input" id="sTime">
-            ${[45, 60, 90, 120].map(s => `<option value="${s}" ${s === 60 ? 'selected' : ''}>${s} seconds</option>`).join('')}</select></label>
+            ${[45, 60, 90, 120].map(s => `<option value="${s}" ${s === 60 ? 'selected' : ''}>${s} seconds</option>`).join('')}
+            <option value="0">♾️ No time limit — tap End turn</option></select></label>
           <label class="field" id="sRoundsF"><span>Turns for each team</span><select class="input" id="sRounds">
             ${[1, 2, 3, 4].map(n => `<option value="${n}" ${n === 2 ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
         </div>
@@ -61,7 +62,7 @@ App.screens.sayitPlay = (el, opts) => {
   App.gameBar({
     title: "🗣️ Say It",
     extra: teamsMode ? `<span class="turn-pill sm" id="sTurn"></span>` : '',
-    pause: { toggle: () => { if (phase !== 'say') return; paused = !paused; $('#sClock', el)?.classList.toggle('paused', paused); }, get: () => paused },
+    pause: { toggle: () => { if (phase !== 'say' || !opts.time) return; paused = !paused; RingClock.set($('#sClock', el), left, opts.time, paused); }, get: () => paused },
     ...(teamsMode ? { endTitle: "Say It, Don't Say It", endScreen: 'sayitSetup' } : {}),
   });
 
@@ -78,7 +79,8 @@ App.screens.sayitPlay = (el, opts) => {
   const stop = () => { clearInterval(timerId); clearTimeout(peekT); };
   const tally = () => { $('#sTally', el).textContent = phase === 'ready' || phase === 'over' ? '' : `✓ ${got.length} word${got.length === 1 ? '' : 's'} this turn`; };
   const badge = () => teamsMode ? `<span class="dr-team" style="--tc:${team().color}">${esc(team().name)}</span>` : '';
-  const clock = () => `<div class="dr-clock si-clock${paused ? ' paused' : ''}${left <= 10 ? ' low' : ''}" id="sClock">${Math.ceil(left)}</div>`;
+  const clock = () => opts.time ? RingClock.html('sClock', left) : '';
+  const liveCard = on => { const c = $('#sCard', el); c.classList.toggle('si-live', on); if (teamsMode) c.style.setProperty('--tc', team().color); };
 
   function setTurnUI() {
     if (!teamsMode) return;
@@ -95,23 +97,24 @@ App.screens.sayitPlay = (el, opts) => {
 
   // 1. a new turn: the team picks a clue-giver
   function ready() {
-    stop(); phase = 'ready'; paused = false; got = [];
+    stop(); phase = 'ready'; paused = false; got = []; liveCard(false);
     if (teamsMode && turnsDone >= totalTurns) { App.endGame("Say It, Don't Say It", 'sayitSetup'); return; }
     setTurnUI(); tally();
     $('#sCount', el).textContent = teamsMode ? `Turn ${turnsDone + 1} of ${totalTurns}` : `Turn ${turnsDone + 1}`;
     card(`<div class="dr-ready">${badge()}
       <div class="dr-big">Pick a clue-giver! 🗣️</div>
-      <div class="dr-sub">Describe each word without saying it or any <b>"don't say"</b> word. No spelling, rhyming or "sounds like"!</div></div>`);
+      <div class="dr-sub">Describe each word without saying it or any <b>"don't say"</b> word.</div>
+      <div class="dr-sub si-rule">No spelling, rhyming or "sounds like"!</div></div>`);
     msg('');
-    acts(`<button class="btn lg pink" id="sStart">Start turn ▶ <kbd>Space</kbd></button>`, { sStart: () => { left = opts.time; between(''); } });
+    acts(`<button class="btn lg pink" id="sStart">Start turn ▶ <kbd>Space</kbd></button>`, { sStart: () => { left = opts.time || 0; between(''); } });
   }
   // 2. between words the clock is paused and the clue-giver peeks at the next one
   function between(flash) {
-    stop(); phase = 'peek'; nextWord(); tally();
+    stop(); phase = 'peek'; nextWord(); tally(); liveCard(false);
     card(`<div class="dr-ready">${flash ? `<div class="si-flash">${flash}</div>` : ''}
       <div class="dr-big">👀 Clue-giver only!</div>
       <div class="dr-sub">Everyone else, look away — then tap <b>Peek</b> to see the ${flash ? 'next' : 'first'} word.</div></div>`);
-    msg(`<span class="si-paused">⏸ Clock paused at ${Math.ceil(left)}</span>`);
+    msg(opts.time ? `<span class="si-paused">⏸ Clock paused at ${Math.ceil(left)}</span>` : '');
     acts(`<button class="btn lg pink" id="sPeek">👀 Peek</button>`, { sPeek: peek });
   }
   function peek() {
@@ -127,31 +130,37 @@ App.screens.sayitPlay = (el, opts) => {
   // 3. describing: the clock runs
   function say() {
     stop(); phase = 'say'; msg('');
-    const draw = () => card(`<div class="dr-ready">${badge()}<div class="dr-big">🗣️ Describe it!</div>${clock()}</div>`);
-    draw();
+    card(`<div class="dr-ready">${badge()}<div class="dr-big"><span class="si-talk">🗣️</span> Describe it!</div>
+      ${opts.time ? clock() : `<div class="si-big-tally">✓ ${got.length}</div><div class="dr-sub">word${got.length === 1 ? '' : 's'} so far</div>`}</div>`);
+    liveCard(true);
+    if (opts.time) RingClock.set($('#sClock', el), left, opts.time, paused);
     acts(`<button class="btn lg green" id="sGot">✓ Got it!${teamsMode ? ` <small>+${SAY_POINTS}</small>` : ''}</button>
       <button class="btn lg red" id="sSaid">🚫 Said it!</button>
-      <button class="btn lg ghost" id="sSkip">⏭ Skip</button>`, {
-      sGot: () => { if (phase !== 'say') return; Played.mark(word); got.push(word.word); if (teamsMode) Scores.add(team().id, SAY_POINTS); Sfx.correct(); between(`<span class="msg-good">✓ ${esc(word.word)}</span>${teamsMode ? ` +${SAY_POINTS}` : ''}`); },
-      sSaid: () => { if (phase !== 'say') return; Played.mark(word); Sfx.buzz(); between(`<span class="msg-bad">🚫 Said it! The word was ${esc(word.word)}</span>`); },
+      <button class="btn lg ghost" id="sSkip">⏭ Skip</button>
+      ${opts.time ? '' : `<button class="btn lg ghost" id="sEnd">⏹ End turn</button>`}`, {
+      sGot: () => { if (phase !== 'say') return; Played.mark(word); got.push(word.word); if (teamsMode) Scores.add(team().id, SAY_POINTS); Sfx.correct(); between(`<span class="msg-good">✓ ${esc(word.word)}</span>${teamsMode ? ` <span class="si-plus">+${SAY_POINTS}</span>` : ''}`); },
+      sSaid: () => { if (phase !== 'say') return; Played.mark(word); Sfx.buzz(); between(`<span class="msg-bad">🚫 Said it! The word was ${esc(word.word)}</span>`); buzz(); },
       sSkip: () => { if (phase !== 'say') return; Sfx.click(); between(`<span class="si-skip">⏭ Skipped</span>`); },
+      sEnd: () => { if (phase === 'say') turnOver(true); },
     });
+    if (!opts.time) return; // ♾️ no clock: the turn ends with ⏹ End turn
     timerId = setInterval(() => {
       if (phase !== 'say' || paused) return;
       left = Math.max(0, left - 0.1);
-      const c = $('#sClock', el);
-      if (c) { c.textContent = Math.ceil(left); c.classList.toggle('low', left <= 10); }
+      RingClock.set($('#sClock', el), left, opts.time, paused);
       if (left <= 0) turnOver();
     }, 100);
   }
+  const buzz = () => { const c = $('#sCard', el); c.classList.remove('si-buzz'); void c.offsetWidth; c.classList.add('si-buzz'); };
   // 4. time's up: show how they did, next team
-  function turnOver() {
-    stop(); phase = 'over'; Sfx.buzz();
+  function turnOver(ended) {
+    stop(); phase = 'over'; liveCard(false);
+    if (ended) Sfx.click(); else { Sfx.buzz(); setTimeout(buzz, 0); }
     const n = got.length;
-    card(`<div class="dr-ready">${badge()}<div class="dr-big">⏰ Time's up!</div>
+    card(`<div class="dr-ready">${badge()}<div class="dr-big">${ended ? '⏹ Turn over!' : "⏰ Time's up!"}</div>
       <div class="si-score">${n} word${n === 1 ? '' : 's'}${teamsMode && n ? ` · +${fmt(n * SAY_POINTS)}` : ''}</div>
       ${n ? `<div class="si-list">${got.map(w => `<span>${esc(w)}</span>`).join('')}</div>` : ''}
-      <div class="dr-sub">The last word was <b>${esc(word.word)}</b></div></div>`);
+      ${ended ? '' : `<div class="dr-sub">The last word was <b>${esc(word.word)}</b></div>`}</div>`);
     msg(''); tally();
     turnsDone++; turn++;
     const last = teamsMode && turnsDone >= totalTurns;
@@ -162,7 +171,7 @@ App.screens.sayitPlay = (el, opts) => {
     if (Modal.stack.length || Menu.isOpen() || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
     if (e.code !== 'Space' && e.key !== 'Enter') return;
     e.preventDefault();
-    if (phase === 'ready') { left = opts.time; between(''); }
+    if (phase === 'ready') { left = opts.time || 0; between(''); }
     else if (phase === 'over') ready();
   };
   document.addEventListener('keydown', onKey);

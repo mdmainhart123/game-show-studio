@@ -20,6 +20,9 @@ App.screens.matchSetup = (el) => {
             <option value="all">No teams — the whole group plays together</option></select></label>
           <label class="field"><span>How many pairs?</span><select class="input" id="mPairs"></select></label>
         </div>
+        <label class="field"><span>Time per turn</span><select class="input" id="mTime">
+          <option value="0" selected>♾️ No time limit</option>
+          ${[15, 20, 30, 45].map(n => `<option value="${n}" ${s.matchTime === n ? 'selected' : ''}>${n} seconds to flip two tiles</option>`).join('')}</select></label>
         <div class="hint">Topics come from your crosswords (word | clue) — every crossword you add or import shows up here too.</div>
       </div>
       <button class="btn xl pink" id="go">Start! ▶</button>`
@@ -36,9 +39,9 @@ App.screens.matchSetup = (el) => {
   $('#mPuz', el).onchange = () => { s.matchPuzzle = $('#mPuz', el).value; App.save(); fillPairs(); };
   fillPairs();
   $('#go', el).onclick = () => {
-    s.matchPuzzle = $('#mPuz', el).value; s.matchPairs = +$('#mPairs', el).value; App.save();
+    s.matchPuzzle = $('#mPuz', el).value; s.matchPairs = +$('#mPairs', el).value; s.matchTime = +$('#mTime', el).value; App.save();
     Scores.resetAll();
-    App.show('matchPlay', { puzzle: s.matchPuzzle, pairs: s.matchPairs, mode: $('#mMode', el).value });
+    App.show('matchPlay', { puzzle: s.matchPuzzle, pairs: s.matchPairs, mode: $('#mMode', el).value, time: s.matchTime });
   };
 };
 
@@ -51,17 +54,18 @@ App.screens.matchPlay = (el, opts) => {
   const pairs = shuffle(p.entries).slice(0, opts.pairs);
   const tiles = shuffle(pairs.flatMap((e, i) => [{ pair: i, kind: 'word', text: e.word }, { pair: i, kind: 'clue', text: e.clue }]));
   const cols = tiles.length <= 12 ? 4 : tiles.length <= 16 ? 4 : tiles.length <= 20 ? 5 : 6;
-  let turn = 0, first = null, lock = false, found = 0, tries = 0, flipT;
+  let turn = 0, first = null, lock = false, found = 0, tries = 0, flipT, clockT, left = opts.time || 0, paused = false, over = false;
   const team = () => teams[turn % teams.length];
 
   App.gameBar({
     title: '🃏 Match It',
     extra: teamsMode ? `<span class="turn-pill sm" id="mTurn"></span>` : '',
+    ...(opts.time ? { pause: { toggle: () => { paused = !paused; RingClock.set($('#mClock', el), left, opts.time, paused); }, get: () => paused } } : {}),
     ...(teamsMode ? { endTitle: 'Match It', endScreen: 'matchSetup' } : {}),
   });
   el.innerHTML = `
     <div class="mt">
-      <div class="mt-top"><span class="pill">${esc(p.title)}</span><span class="dr-count" id="mCount"></span><div class="spacer"></div><div class="dr-msg mt-msg" id="mMsg"></div></div>
+      <div class="mt-top"><span class="pill">${esc(p.title)}</span><span class="dr-count" id="mCount"></span><div class="spacer"></div><div class="dr-msg mt-msg" id="mMsg"></div>${opts.time ? RingClock.html('mClock', opts.time, 'sm') : ''}</div>
       <div class="mt-grid" style="--cols:${cols}">${tiles.map((t, i) => `
         <button class="mt-tile" data-i="${i}" aria-label="Tile ${i + 1}">
           <span class="mt-back">${i + 1}</span>
@@ -80,6 +84,29 @@ App.screens.matchPlay = (el, opts) => {
   }
   HostView.set({ game: '🃏 Match It', meta: p.title, answer: pairs.map(e => e.word).join(' · '), answerLabel: 'Words in play' });
 
+  // ⏱ optional turn clock: a fresh clock for every go; run out and the turn passes
+  function startClock() {
+    if (!opts.time || over) return;
+    clearInterval(clockT); left = opts.time; RingClock.set($('#mClock', el), left, opts.time, paused);
+    clockT = setInterval(() => {
+      if (paused || lock) return;
+      left = Math.max(0, left - 0.1);
+      RingClock.set($('#mClock', el), left, opts.time, paused);
+      if (left <= 0) timeUp();
+    }, 100);
+  }
+  function timeUp() {
+    clearInterval(clockT); lock = true; Sfx.buzz();
+    msg(`<span class="msg-bad">⏰ Time's up!</span>${teamsMode && teams.length > 1 ? ` — next up: <b>${esc(teams[(turn + 1) % teams.length].name)}</b>` : ''}`);
+    flipT = setTimeout(() => {
+      if (first !== null) { tileEl(first).classList.remove('up'); first = null; }
+      lock = false; nextTurn();
+    }, 1800);
+  }
+  function nextTurn() {
+    if (teamsMode) { turn++; setTurnUI(); msg(`<b>${esc(team().name)}</b>, flip two tiles!`); } else msg('Flip two tiles!');
+    startClock();
+  }
   function flip(i) {
     const t = tiles[i], b = tileEl(i);
     if (lock || t.done || b.classList.contains('up')) return;
@@ -95,17 +122,18 @@ App.screens.matchPlay = (el, opts) => {
       Sfx.correct(); count();
       if (found === pairs.length) return finish();
       msg(`<span class="msg-good">✓ Match!</span> ${teamsMode ? `${esc(team().name)} +${MATCH_POINTS} — go again!` : 'Keep going!'}`);
+      startClock();
     } else {
       lock = true; Sfx.wrong(); count();
       msg(`<span class="msg-bad">No match</span>${teamsMode && teams.length > 1 ? ` — next up: <b>${esc(teams[(turn + 1) % teams.length].name)}</b>` : ''}`);
       flipT = setTimeout(() => {
         tileEl(ai).classList.remove('up'); b.classList.remove('up');
-        lock = false;
-        if (teamsMode) { turn++; setTurnUI(); msg(`<b>${esc(team().name)}</b>, flip two tiles!`); } else msg('Flip two tiles!');
+        lock = false; nextTurn();
       }, 2600);
     }
   }
   function finish() {
+    over = true; clearInterval(clockT);
     confetti(2500); Sfx.correct();
     msg(`<span class="msg-good">🎉 All ${pairs.length} pairs found${teamsMode ? '' : ` in ${tries} tries`}!</span>`);
     if (teamsMode) $('#mActs', el).innerHTML = `<button class="btn lg pink" id="mEnd">Final scores 🏁</button>`;
@@ -117,5 +145,6 @@ App.screens.matchPlay = (el, opts) => {
   $$('.mt-tile', el).forEach(b => b.onclick = () => flip(+b.dataset.i));
   setTurnUI(); count();
   msg(teamsMode ? `<b>${esc(team().name)}</b>, flip two tiles!` : 'Flip two tiles!');
-  return () => { clearTimeout(flipT); Scores.setActive(null); };
+  startClock();
+  return () => { clearTimeout(flipT); clearInterval(clockT); Scores.setActive(null); };
 };

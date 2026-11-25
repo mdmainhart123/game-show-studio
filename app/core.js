@@ -1,4 +1,4 @@
-const APP_VERSION = '20261125-1300'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261125-1345'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -570,8 +570,8 @@ function showHelp() {
       <p><b style="color:var(--pink)">🎲 Daily Doubles</b> — each Quiz Board hides one or two. It belongs to the team whose pick it was: they bet any amount up to their score (or the board's top value), and only they answer.</p>
       <p><b style="color:#4fd1c5">🧩 Crossword</b> — Pick a puzzle (or make your own: one <b>word | clue</b> per line) and the app builds a crossword from it — a fresh layout every time. The whole room solves it together: click a square (click again to switch Across/Down) or a clue, then type. <b>☰ Options</b> has Check (wrong letters turn red), reveal a letter, a word or everything, hide the clue list for a bigger grid, large text, a new layout and Print. Use <b>− Fit ＋</b> (or the − and + keys) to zoom in for easier reading. Print lets you print the blank puzzle and the answers separately (same layout as on screen). Correct words flash green. <b>⚡ Quick crossword</b> builds one from your one-word trivia answers. <b>📄 Save blank template</b> gives you a text file to fill in (== Title, then word | clue lines); <b>📥 Import from text file</b> builds the crossword from it automatically.</p>
       <p><b style="color:#b98cff">🎨 Draw It</b> — One person draws right on the screen (or on a whiteboard, paper or easel — no letters or numbers!) while everyone else guesses. The artist taps <b>👀 Peek</b> to see the word while everyone else looks away, then press <b>Start drawing</b>. A big white board opens. Tap <b>Options</b> in its corner for colors, pen sizes, Eraser, Undo, Clear, <b>👀 Peek</b> and <b>✋ Show the word</b> (ends the drawing with no points). The timer and <b>✓ Got it!</b> are in the other corner, with <b>⏭ Skip word</b> and <b>✋ Stop</b> under them. Skip word pauses the clock and opens a box where the artist taps <b>👀 Peek</b> to see the new word for 4 seconds, then the board is wiped clean (tapped it by mistake? <b>↩ Back to drawing</b> keeps the same word and drawing). Stop pauses the clock: <b>Next team</b> clears the board, gives no points and starts the next team with a new word (or tap Keep drawing). Got it? Tap the team that guessed it: they get the points (Easy 100 · Medium 200 · Hard 300) and <b>draw next</b>. Out of time? No points — the word is shown and the next team draws. Choose <i>No teams</i> to just play for fun — whoever guesses it draws next. To add your own words, use <b>📥 Import words from text file</b> on the Draw It screen (one word per line, like <i>banana | easy</i>; <b>📄 Save blank template</b> gives you a ready-made file). Words you already have are skipped. <b>⏭ Skip word</b> swaps in a new one.</p>
-      <p><b style="color:#ff7b7b">🗣️ Say It, Don't Say It</b> — A team picks a clue-giver, who describes words <b>without saying them</b> — or any of the 🚫 "don't say" words shown with each one (no spelling, rhyming or "sounds like"). Tap <b>Start turn</b>; between words the clock pauses so the clue-giver can tap <b>👀 Peek</b> while everyone else looks away (tap <i>I'm ready</i> to start sooner). Then <b>✓ Got it!</b> (+100), <b>🚫 Said it!</b> (no points) or <b>⏭ Skip</b>. Get as many as you can before time runs out, then the next team goes. It uses your Draw It words and Question sets; add extra "don't say" words to any word in 📝 Questions → 🎨 Draw It, or as a third part in an import file (<i>banana | easy | fruit, yellow, monkey</i>).</p>
-      <p><b style="color:#8fa8ff">🃏 Match It</b> — A memory game made from any of your crosswords. Tiles are numbered; each hides a <b>word</b> or a <b>clue</b>. The highlighted team calls out two numbers — tap them to flip. A word and its clue = a match: +100 and that team goes again. No match: the tiles flip back and the next team tries. Choose 4–12 pairs on the start screen; <i>No teams</i> lets the whole group play together and counts the tries.</p>
+      <p><b style="color:#ff7b7b">🗣️ Say It, Don't Say It</b> — A team picks a clue-giver, who describes words <b>without saying them</b> — or any of the 🚫 "don't say" words shown with each one (no spelling, rhyming or "sounds like"). Tap <b>Start turn</b>; between words the clock pauses so the clue-giver can tap <b>👀 Peek</b> while everyone else looks away (tap <i>I'm ready</i> to start sooner). Then <b>✓ Got it!</b> (+100), <b>🚫 Said it!</b> (no points) or <b>⏭ Skip</b>. Get as many as you can before time runs out (or pick <i>No time limit</i> and tap <b>⏹ End turn</b>), then the next team goes. It uses your Draw It words and Question sets; add extra "don't say" words to any word in 📝 Questions → 🎨 Draw It, or as a third part in an import file (<i>banana | easy | fruit, yellow, monkey</i>).</p>
+      <p><b style="color:#8fa8ff">🃏 Match It</b> — A memory game made from any of your crosswords. Tiles are numbered; each hides a <b>word</b> or a <b>clue</b>. The highlighted team calls out two numbers — tap them to flip. A word and its clue = a match: +100 and that team goes again. No match: the tiles flip back and the next team tries. Choose 4–12 pairs and an optional time limit per turn (run out and the turn passes) on the start screen; <i>No teams</i> lets the whole group play together and counts the tries.</p>
       <p><b style="color:var(--yellow)">🏆 Final Round</b> — after the Quiz Board, there's one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, and the <b>☰ Menu</b> has 🏁 End game, 🏠 Quit to Home and ⏸ Pause. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Look:</b> switch between <b>🎩 Classic</b> (navy &amp; gold), <b>🎈 Playful</b> (the original bright colours) and <b>🌿 Recovery</b> (calm and friendly) in <b>☰ Menu → 🎨 Look</b> or Settings. Recovery also switches every game to the <b>Mental Health &amp; Recovery</b> question set; Classic and Playful use your regular questions.</p>
@@ -1030,3 +1030,26 @@ function printKey(v) {
   window.addEventListener('afterprint', done);
   setTimeout(() => { window.print(); setTimeout(done, 1000); }, 50);
 }
+
+// ⏱ An animated countdown ring (Say It, Match It): it drains as time runs, slides green → yellow → red,
+// pops the number every second, pulses with a heartbeat in the last 10 s and shakes in the last 3 s.
+const RingClock = {
+  html(id, secs, size = '') {
+    return `<div class="pc ${size}" id="${id}" style="--p:1;--hue:130"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="pc-track" cx="100" cy="100" r="86"/><circle class="pc-bar" cx="100" cy="100" r="86" pathLength="100"/></svg><div class="pc-num">${Math.ceil(secs)}</div></div>`;
+  },
+  set(el, left, total, paused) {
+    if (!el) return;
+    const p = Math.max(0, Math.min(1, left / total));
+    el.style.setProperty('--p', p.toFixed(4));
+    el.style.setProperty('--hue', Math.round(130 * p));
+    const n = Math.ceil(left), num = el.querySelector('.pc-num');
+    if (num && num.textContent !== String(n)) {
+      num.textContent = n;
+      el.classList.remove('tick'); void el.offsetWidth; el.classList.add('tick');
+      if (n <= 5 && n > 0 && !paused) Sfx.tick();
+    }
+    el.classList.toggle('low', left <= 10 && left > 0);
+    el.classList.toggle('crit', left <= 3 && left > 0);
+    el.classList.toggle('paused', !!paused);
+  },
+};
