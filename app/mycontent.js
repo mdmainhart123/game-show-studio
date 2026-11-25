@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-24-thanksgiving",
+ "id": "matt-2026-11-25-holiday-stress",
  "banks": {
   "standard": {
    "cross": [
@@ -5331,6 +5331,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The president spares a turkey in this ceremony",
      "answer": "The turkey pardon"
+    },
+    {
+     "id": "b08buizib8pk",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 100,
+     "clue": "Busy schedules, shopping and travel are common holiday these",
+     "answer": "Stressors"
+    },
+    {
+     "id": "miw8a5lfb8pk",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 200,
+     "clue": "Tight shoulders, headaches and trouble sleeping can be signs of this",
+     "answer": "Stress"
+    },
+    {
+     "id": "qq4n3v0eb8pk",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 300,
+     "clue": "Expecting every moment to be \"perfect\" is called this",
+     "answer": "Perfectionism"
+    },
+    {
+     "id": "qf3fovhzb8pk",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 400,
+     "clue": "Spending more than you planned causes this kind of stress",
+     "answer": "Financial stress"
+    },
+    {
+     "id": "b8mc0b7pb8pk",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 500,
+     "clue": "Feeling sad or lonely while everyone else seems happy is sometimes called the holiday this",
+     "answer": "Blues"
+    },
+    {
+     "id": "c81i9e1lb8pk",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 100,
+     "clue": "A spending limit you set before you shop",
+     "answer": "A budget"
+    },
+    {
+     "id": "ubizm4rsb8pk",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 200,
+     "clue": "Writing down what needs to get done and when",
+     "answer": "A to-do list"
+    },
+    {
+     "id": "6kxvfrzvb8pk",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 300,
+     "clue": "Deciding ahead of time how and when you will leave a gathering",
+     "answer": "An exit plan"
+    },
+    {
+     "id": "ufysirt6b8pk",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 400,
+     "clue": "Saying no to some invitations protects these two things",
+     "answer": "Your time and energy"
+    },
+    {
+     "id": "626vj0a4b8pk",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 500,
+     "clue": "Choosing just a few traditions that matter most instead of doing them all",
+     "answer": "Prioritizing"
+    },
+    {
+     "id": "w8rj7io0b8pk",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 100,
+     "clue": "This two-letter word is a complete sentence",
+     "answer": "No"
+    },
+    {
+     "id": "pvdypjrvb8pk",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 200,
+     "clue": "Limits you set to protect your well-being",
+     "answer": "Boundaries"
+    },
+    {
+     "id": "e5zjtdlbb8pk",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 300,
+     "clue": "\"I can stay for about an hour\" is an example of setting this",
+     "answer": "A time limit"
+    },
+    {
+     "id": "iz7fb86mb8pk",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 400,
+     "clue": "Steering away from a touchy topic at the dinner table",
+     "answer": "Changing the subject"
+    },
+    {
+     "id": "b8ghr4htb8pk",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 500,
+     "clue": "\"I feel ___ when ___, and what I need is ___\"",
+     "answer": "An I-statement"
+    },
+    {
+     "id": "18rkurr2b8pk",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 100,
+     "clue": "In for 4, hold for 4, out for 4, hold for 4",
+     "answer": "Box breathing"
+    },
+    {
+     "id": "xn60335pb8pk",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 200,
+     "clue": "Stepping outside for fresh air or a short walk",
+     "answer": "Taking a break"
+    },
+    {
+     "id": "okl5mxwnb8pk",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 300,
+     "clue": "Naming 5 things you see, 4 you hear, 3 you can touch, 2 you smell and 1 you taste",
+     "answer": "5-4-3-2-1 grounding"
+    },
+    {
+     "id": "6ey1m4ipb8pk",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 400,
+     "clue": "Calling or texting someone in your support network",
+     "answer": "Reaching out"
+    },
+    {
+     "id": "arvuzylkb8pk",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 500,
+     "clue": "Swapping \"It's all ruined\" for \"It's not perfect, but it's okay\"",
+     "answer": "Reframing"
+    },
+    {
+     "id": "t85fa3u0b8pk",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 100,
+     "clue": "Going to bed and waking up at the same time each day",
+     "answer": "A sleep routine"
+    },
+    {
+     "id": "6hne4slzb8pk",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 200,
+     "clue": "Writing down three things you are thankful for",
+     "answer": "A gratitude list"
+    },
+    {
+     "id": "z6ezt3gfb8pk",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 300,
+     "clue": "Bringing your own favorite non-alcoholic drink to a gathering is part of this",
+     "answer": "A sober plan"
+    },
+    {
+     "id": "skw0fqhsb8pk",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 400,
+     "clue": "Adding an extra meeting or group during the holidays gives you more of this",
+     "answer": "Support"
+    },
+    {
+     "id": "3bsue0qrb8pk",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 500,
+     "clue": "Volunteering or helping others can boost this feeling",
+     "answer": "A sense of purpose"
     }
    ],
    "wheel": [
@@ -22687,6 +22887,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The president spares a turkey in this ceremony",
      "answer": "The turkey pardon"
+    },
+    {
+     "id": "p85klog0b9jx",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 100,
+     "clue": "Busy schedules, shopping and travel are common holiday these",
+     "answer": "Stressors"
+    },
+    {
+     "id": "7dyxaheib9jx",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 200,
+     "clue": "Tight shoulders, headaches and trouble sleeping can be signs of this",
+     "answer": "Stress"
+    },
+    {
+     "id": "dxzmtrqeb9jx",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 300,
+     "clue": "Expecting every moment to be \"perfect\" is called this",
+     "answer": "Perfectionism"
+    },
+    {
+     "id": "lwb8wh6cb9jx",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 400,
+     "clue": "Spending more than you planned causes this kind of stress",
+     "answer": "Financial stress"
+    },
+    {
+     "id": "x0dsjvpgb9jx",
+     "board": "Holiday Stress",
+     "category": "Spot the Stress",
+     "value": 500,
+     "clue": "Feeling sad or lonely while everyone else seems happy is sometimes called the holiday this",
+     "answer": "Blues"
+    },
+    {
+     "id": "dv20v6rwb9jx",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 100,
+     "clue": "A spending limit you set before you shop",
+     "answer": "A budget"
+    },
+    {
+     "id": "4v462piyb9jx",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 200,
+     "clue": "Writing down what needs to get done and when",
+     "answer": "A to-do list"
+    },
+    {
+     "id": "jr2nwxpeb9jx",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 300,
+     "clue": "Deciding ahead of time how and when you will leave a gathering",
+     "answer": "An exit plan"
+    },
+    {
+     "id": "zrqlms3rb9jx",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 400,
+     "clue": "Saying no to some invitations protects these two things",
+     "answer": "Your time and energy"
+    },
+    {
+     "id": "uf57xts8b9jx",
+     "board": "Holiday Stress",
+     "category": "Plan Ahead",
+     "value": 500,
+     "clue": "Choosing just a few traditions that matter most instead of doing them all",
+     "answer": "Prioritizing"
+    },
+    {
+     "id": "53o7o7fab9jx",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 100,
+     "clue": "This two-letter word is a complete sentence",
+     "answer": "No"
+    },
+    {
+     "id": "3glkaxcrb9jx",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 200,
+     "clue": "Limits you set to protect your well-being",
+     "answer": "Boundaries"
+    },
+    {
+     "id": "zcb03t77b9jx",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 300,
+     "clue": "\"I can stay for about an hour\" is an example of setting this",
+     "answer": "A time limit"
+    },
+    {
+     "id": "zi8e8pfyb9jx",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 400,
+     "clue": "Steering away from a touchy topic at the dinner table",
+     "answer": "Changing the subject"
+    },
+    {
+     "id": "b04xb5xkb9jx",
+     "board": "Holiday Stress",
+     "category": "Boundaries",
+     "value": 500,
+     "clue": "\"I feel ___ when ___, and what I need is ___\"",
+     "answer": "An I-statement"
+    },
+    {
+     "id": "ngf99fz0b9jx",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 100,
+     "clue": "In for 4, hold for 4, out for 4, hold for 4",
+     "answer": "Box breathing"
+    },
+    {
+     "id": "rnmv2nn5b9jx",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 200,
+     "clue": "Stepping outside for fresh air or a short walk",
+     "answer": "Taking a break"
+    },
+    {
+     "id": "ymvab3hcb9jx",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 300,
+     "clue": "Naming 5 things you see, 4 you hear, 3 you can touch, 2 you smell and 1 you taste",
+     "answer": "5-4-3-2-1 grounding"
+    },
+    {
+     "id": "tbxg51mlb9jx",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 400,
+     "clue": "Calling or texting someone in your support network",
+     "answer": "Reaching out"
+    },
+    {
+     "id": "8cjq26qtb9jx",
+     "board": "Holiday Stress",
+     "category": "Coping in the Moment",
+     "value": 500,
+     "clue": "Swapping \"It's all ruined\" for \"It's not perfect, but it's okay\"",
+     "answer": "Reframing"
+    },
+    {
+     "id": "llgojmp5b9jx",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 100,
+     "clue": "Going to bed and waking up at the same time each day",
+     "answer": "A sleep routine"
+    },
+    {
+     "id": "3qdplfxrb9jx",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 200,
+     "clue": "Writing down three things you are thankful for",
+     "answer": "A gratitude list"
+    },
+    {
+     "id": "xl49rh5ub9jx",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 300,
+     "clue": "Bringing your own favorite non-alcoholic drink to a gathering is part of this",
+     "answer": "A sober plan"
+    },
+    {
+     "id": "wywuv7brb9jx",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 400,
+     "clue": "Adding an extra meeting or group during the holidays gives you more of this",
+     "answer": "Support"
+    },
+    {
+     "id": "2b4cteqab9jx",
+     "board": "Holiday Stress",
+     "category": "Self-Care and Recovery",
+     "value": 500,
+     "clue": "Volunteering or helping others can boost this feeling",
+     "answer": "A sense of purpose"
     }
    ],
    "wheel": [
