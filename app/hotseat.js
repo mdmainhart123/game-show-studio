@@ -111,17 +111,27 @@ App.screens.hotseatPlay = (el, opts) => {
         <div class="hs-acts" id="hActs"></div>
         <div class="hs-overlay" id="hOver" hidden></div>
       </div>
-      <ol class="hs-ladder" id="hLadder" reversed>${ladder.map((v, i) => `
-        <li data-n="${i + 1}" class="${safe.includes(i + 1) ? 'safe' : ''}"><span>${i + 1}</span><b>${safe.includes(i + 1) ? '🛡 ' : ''}${fmt(v)}</b></li>`).reverse().join('')}</ol>
+      <div class="hs-tower">
+        <div class="hs-tower-head">🏆 Prize Ladder</div>
+        <ol class="hs-ladder" id="hLadder" reversed>${ladder.map((v, i) => {
+          const n = i + 1, tier = n === ladder.length ? 'top' : n > ladder.length * 2 / 3 ? 'gold' : n > ladder.length / 3 ? 'silver' : 'bronze';
+          return `<li data-n="${n}" class="t-${tier}${safe.includes(n) ? ' safe' : ''}"><span class="hs-n">${n}</span><b class="hs-v">${n === ladder.length ? '🏆 ' : ''}${fmt(v)}</b>${safe.includes(n) ? '<em class="hs-safe">🛡 SAFE</em>' : ''}</li>`;
+        }).reverse().join('')}</ol>
+        <div class="hs-tower-foot" id="hBank"></div>
+      </div>
     </div>`;
   const msg = h => { $('#hMsg', el).innerHTML = h; };
   const acts = (h, hs = {}) => { $('#hActs', el).innerHTML = h; Object.entries(hs).forEach(([id, fn]) => { const b = $('#' + id, el); if (b) b.onclick = fn; }); };
   const stopClock = () => { clearInterval(timerId); clearTimeout(sT); };
   function paintLadder() {
     $$('#hLadder li', el).forEach(li => {
-      const n = +li.dataset.n;
-      li.classList.toggle('done', n <= qi); li.classList.toggle('now', n === qi + 1 && phase !== 'over');
+      const n = +li.dataset.n, now = n === qi + 1 && phase !== 'over';
+      li.classList.toggle('done', n <= qi);
+      if (now && !li.classList.contains('now')) { li.classList.remove('climb'); void li.offsetWidth; li.classList.add('climb'); }
+      li.classList.toggle('now', now);
     });
+    const b = $('#hBank', el);
+    if (b) b.innerHTML = `<span>Won <b>${fmt(won())}</b></span><span>🛡 Safe <b>${fmt(banked())}</b></span>`;
   }
   function lifelines() {
     [['hFifty', 'fifty'], ['hAsk', 'ask'], ['hPhone', 'phone']].forEach(([id, k]) => { const b = $('#' + id, el); b.classList.toggle('used', used[k]); b.disabled = used[k] || phase !== 'ask'; });
@@ -138,7 +148,7 @@ App.screens.hotseatPlay = (el, opts) => {
     $('#hFor', el).innerHTML = `Question <b>${qi + 1}</b> of ${ladder.length} · for <b class="hs-gold">${fmt(ladder[qi])}</b>`;
     $('#hQ', el).innerHTML = `<div class="hs-qtext">${esc(q.question)}</div>`;
     drawAnswers();
-    msg(qi === 0 ? 'Tap an answer to choose it.' : `🏦 Won so far: <b>${fmt(won())}</b>${banked() ? ` · 🛡 safe: <b>${fmt(banked())}</b>` : ''}`);
+    msg('Tap an answer to choose it.');
     acts('');
     paintLadder(); lifelines();
     $('#hClockBox', el).innerHTML = opts.time ? RingClock.html('hClock', opts.time, 'sm') : '';
