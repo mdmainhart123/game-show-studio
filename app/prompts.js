@@ -27,7 +27,7 @@ App.screens.prompts = (el) => {
   const cats = () => CATS[kind];
   if (cat !== 'any' && !cats().some(c => c.id === cat)) cat = 'any';
   const catOf = p => cats().find(c => c.prompts.includes(p)) || cats()[0];
-  function pool() { return cat === 'any' ? cats().flatMap(c => c.prompts) : (cats().find(c => c.id === cat) || cats()[0]).prompts; }
+  function pool() { return cat === 'any' ? cats().filter(c => !c.solo).flatMap(c => c.prompts) : (cats().find(c => c.id === cat) || cats()[0]).prompts; }
   function pick() {
     const all = pool(); let fresh = all.filter(p => !seen[kind].has(p) && p !== prompt);
     if (!fresh.length) { all.forEach(p => seen[kind].delete(p)); fresh = all.filter(p => p !== prompt); }

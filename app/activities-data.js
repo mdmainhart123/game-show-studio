@@ -98,7 +98,7 @@ window.GS_ACTIVITIES = {
       'Think of someone beginning a new chapter. What encouragement would you offer them? Include something you learned from your own fresh start.',
       'Think of someone beginning a new chapter — a new job, a new habit, a fresh start. What encouragement would you offer? Share something that helped you when you started over.',
     ] },
-    { id: 'holiday', icon: '🎁', name: 'A holiday card', greet: 'Dear ________,', prompts: [
+    { id: 'holiday', solo: true, icon: '🎁', name: 'A holiday card', greet: 'Dear ________,', prompts: [
       'This season, I\'m grateful for you because…',
       'I want you to know that you matter to me because…',
       'As we head into the new year, I hope for you…',
