@@ -1,4 +1,4 @@
-const APP_VERSION = '20261127-0930'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261127-0945'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -238,6 +238,7 @@ const App = {
     if (typeof r === 'function') this.cleanup = r;
     const fk = name === 'sayitSetup' || name === 'charadesSetup' ? 'draw' : (name.match(/^(trivia|board|wheel|words|draw)Setup$/) || [])[1]; // Say It uses the Draw It words
     if (fk) GameFiles.attach(el, fk);
+    FolderSelect.enhanceAll(el); // dropdowns with 📁 month folders become collapsible
     Scores.render();
     this.navButtons();
   },
@@ -1080,5 +1081,43 @@ const Archive = {
     const groups = Object.keys(this.map()).map(m => [m, items.filter(it => this.of(it.name) === m)]).filter(([, l]) => l.length);
     const rest = items.filter(it => !this.of(it.name));
     return groups.map(([m, l]) => `<optgroup label="📁 ${esc(m)}">${l.map(opt).join('')}</optgroup>`).join('') + rest.map(opt).join('');
+  },
+};
+
+// 📁 A dropdown with collapsible month folders. It sits on top of a normal <select> that has
+// <optgroup>s (hidden, still holding the value), so every screen keeps reading .value / onchange.
+const FolderSelect = {
+  enhanceAll(root) { $$('select', root).forEach(s => { if (s.querySelector('optgroup') && !s.dataset.fs) this.enhance(s); }); },
+  enhance(sel) {
+    sel.dataset.fs = '1'; sel.classList.add('fsel-native'); sel.tabIndex = -1;
+    const box = document.createElement('div');
+    box.className = 'fsel';
+    box.innerHTML = `<button type="button" class="input fsel-btn" aria-haspopup="listbox" aria-expanded="false"><span class="fsel-cur"></span><span class="fsel-caret">▾</span></button><div class="fsel-panel" role="listbox" hidden></div>`;
+    sel.after(box);
+    const btn = $('.fsel-btn', box), panel = $('.fsel-panel', box), cur = $('.fsel-cur', box);
+    const openFolders = new Set();
+    const g = sel.selectedOptions[0]?.parentElement;
+    if (g && g.tagName === 'OPTGROUP') openFolders.add(g.label);
+    const label = () => { cur.textContent = sel.selectedOptions[0]?.text || ''; };
+    const item = o => `<button type="button" class="fsel-item${o.selected ? ' on' : ''}" data-v="${esc(o.value)}" role="option">${o.selected ? '✓ ' : ''}${esc(o.text)}</button>`;
+    const build = () => {
+      panel.innerHTML = [...sel.children].map(c => {
+        if (c.tagName !== 'OPTGROUP') return item(c);
+        const open = openFolders.has(c.label), n = c.children.length;
+        return `<div class="fsel-group${open ? ' open' : ''}"><button type="button" class="fsel-folder" data-g="${esc(c.label)}"><span>${esc(c.label)}</span><small>${n}</small><span class="fsel-chev">▸</span></button>
+          <div class="fsel-items"${open ? '' : ' hidden'}>${[...c.children].map(item).join('')}</div></div>`;
+      }).join('');
+      $$('.fsel-folder', panel).forEach(f => f.onclick = e => { e.stopPropagation(); const k = f.dataset.g; openFolders.has(k) ? openFolders.delete(k) : openFolders.add(k); build(); });
+      $$('.fsel-item', panel).forEach(b => b.onclick = e => {
+        e.stopPropagation(); show(false);
+        if (sel.value !== b.dataset.v) { sel.value = b.dataset.v; label(); sel.dispatchEvent(new Event('change', { bubbles: true })); }
+      });
+    };
+    const show = on => { panel.hidden = !on; btn.setAttribute('aria-expanded', on); box.classList.toggle('open', on); if (on) { build(); $('.fsel-item.on', panel)?.scrollIntoView({ block: 'nearest' }); } };
+    btn.onclick = e => { e.stopPropagation(); show(panel.hidden); };
+    document.addEventListener('click', e => { if (!box.contains(e.target)) show(false); });
+    box.addEventListener('keydown', e => { if (e.key === 'Escape') { show(false); btn.focus(); } });
+    sel.addEventListener('change', label);
+    label();
   },
 };
