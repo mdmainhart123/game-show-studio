@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-27-ai-for-good",
+ "id": "matt-2026-11-27-nine-packages",
  "archive": {
   "October": [
    "Halloween Easy",
@@ -27,7 +27,16 @@ window.GS_MY_CONTENT = {
    "Thanksgiving Easy",
    "Thanksgiving Intermediate",
    "Thanksgiving Hard",
-   "AI Utilization for Good"
+   "AI Utilization for Good",
+   "Conflict Resolution",
+   "Movement as Medicine",
+   "Nutritional Values",
+   "Peer Pressure & Recovery",
+   "Personal Responsibility",
+   "The Science of Leisure",
+   "Toxic Relationships",
+   "Your Values",
+   "Your Happy Place"
   ]
  },
  "banks": {
@@ -1819,6 +1828,600 @@ window.GS_MY_CONTENT = {
       {
        "word": "patterns",
        "clue": "AI finds these in data — it doesn't think or feel"
+      }
+     ]
+    },
+    {
+     "id": "sd374366aaft",
+     "title": "Conflict Resolution",
+     "entries": [
+      {
+       "word": "calm",
+       "clue": "Stay this to communicate clearly"
+      },
+      {
+       "word": "listen",
+       "clue": "Do this to understand, not just to respond"
+      },
+      {
+       "word": "compromise",
+       "clue": "Both people give a little and gain a little"
+      },
+      {
+       "word": "empathy",
+       "clue": "Understanding the other person's perspective"
+      },
+      {
+       "word": "apology",
+       "clue": "Owning the harm you caused without excuses"
+      },
+      {
+       "word": "timeout",
+       "clue": "A pause until everyone cools down"
+      },
+      {
+       "word": "boundaries",
+       "clue": "Limits that keep a disagreement respectful"
+      },
+      {
+       "word": "assertive",
+       "clue": "Clear and respectful communication style"
+      },
+      {
+       "word": "validate",
+       "clue": "Show their feelings make sense to them"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that sets off a conflict"
+      },
+      {
+       "word": "avoider",
+       "clue": "Conflict style that withdraws to keep the peace"
+      },
+      {
+       "word": "stonewalling",
+       "clue": "Shutting down and refusing to talk"
+      },
+      {
+       "word": "plan",
+       "clue": "The M in CALM: make a ___"
+      },
+      {
+       "word": "understanding",
+       "clue": "The real goal — not winning"
+      },
+      {
+       "word": "breathe",
+       "clue": "Slow down and ___ before you react"
+      }
+     ]
+    },
+    {
+     "id": "50c2xgx3un26",
+     "title": "Movement as Medicine",
+     "entries": [
+      {
+       "word": "endorphins",
+       "clue": "Feel-good chemicals released when you move"
+      },
+      {
+       "word": "cortisol",
+       "clue": "Stress hormone that exercise helps lower"
+      },
+      {
+       "word": "walking",
+       "clue": "Simple, free movement — one foot in front of the other"
+      },
+      {
+       "word": "stretching",
+       "clue": "Improves flexibility and eases tension"
+      },
+      {
+       "word": "yoga",
+       "clue": "Mind-body practice with poses and breathing"
+      },
+      {
+       "word": "sleep",
+       "clue": "Regular movement improves the quality of this"
+      },
+      {
+       "word": "consistent",
+       "clue": "Being this matters more than being perfect"
+      },
+      {
+       "word": "dancing",
+       "clue": "Moving to music — it counts!"
+      },
+      {
+       "word": "gardening",
+       "clue": "Outdoor hobby that counts as moderate movement"
+      },
+      {
+       "word": "recovery",
+       "clue": "Active ___: light movement on rest days"
+      },
+      {
+       "word": "motivation",
+       "clue": "Action often creates this, so don't wait for it"
+      },
+      {
+       "word": "snack",
+       "clue": "Movement ___: a short 5–10 minute burst"
+      },
+      {
+       "word": "mood",
+       "clue": "Movement can lift this — track it before and after"
+      },
+      {
+       "word": "neuroplasticity",
+       "clue": "The brain forming new connections"
+      },
+      {
+       "word": "hiking",
+       "clue": "Walking on nature trails"
+      }
+     ]
+    },
+    {
+     "id": "o8gm8zzzpar1",
+     "title": "Nutritional Values",
+     "entries": [
+      {
+       "word": "protein",
+       "clue": "Builds and repairs your body"
+      },
+      {
+       "word": "carbohydrates",
+       "clue": "Your body's main energy source"
+      },
+      {
+       "word": "fiber",
+       "clue": "Helps digestion and keeps you full"
+      },
+      {
+       "word": "water",
+       "clue": "Drink this first — thirst can feel like hunger"
+      },
+      {
+       "word": "rainbow",
+       "clue": "Eat the ___: many colorful fruits and veggies"
+      },
+      {
+       "word": "omega",
+       "clue": "___-3: healthy fat in fish and walnuts"
+      },
+      {
+       "word": "iron",
+       "clue": "Mineral that helps carry oxygen"
+      },
+      {
+       "word": "label",
+       "clue": "Read the food ___ to see what's inside"
+      },
+      {
+       "word": "vitamins",
+       "clue": "Small but mighty nutrients like A, C and D"
+      },
+      {
+       "word": "serotonin",
+       "clue": "Mood chemical made mostly in the gut"
+      },
+      {
+       "word": "mindful",
+       "clue": "___ eating: paying attention without judgment"
+      },
+      {
+       "word": "avocado",
+       "clue": "Green fruit full of healthy fat"
+      },
+      {
+       "word": "lentils",
+       "clue": "Low-cost, plant-based protein"
+      },
+      {
+       "word": "breakfast",
+       "clue": "The meal that breaks your overnight fast"
+      },
+      {
+       "word": "magnesium",
+       "clue": "Mineral in nuts that supports sleep"
+      }
+     ]
+    },
+    {
+     "id": "azontxmiw73k",
+     "title": "Peer Pressure & Recovery",
+     "entries": [
+      {
+       "word": "boundary",
+       "clue": "A limit you set to protect your wellbeing"
+      },
+      {
+       "word": "direct",
+       "clue": "Pressure where someone asks you outright"
+      },
+      {
+       "word": "indirect",
+       "clue": "Pressure to fit in without anyone asking"
+      },
+      {
+       "word": "internal",
+       "clue": "Pressure that comes from your own thoughts"
+      },
+      {
+       "word": "environment",
+       "clue": "Places and situations that pull you toward old habits"
+      },
+      {
+       "word": "stop",
+       "clue": "Four-step reset: S-T-O-P"
+      },
+      {
+       "word": "breathe",
+       "clue": "The T in STOP: take a breath — ___"
+      },
+      {
+       "word": "observe",
+       "clue": "The O in STOP"
+      },
+      {
+       "word": "support",
+       "clue": "Call on your ___ — you don't have to do it alone"
+      },
+      {
+       "word": "alternative",
+       "clue": "Suggest an ___ that supports your goals"
+      },
+      {
+       "word": "strength",
+       "clue": "Saying no takes real ___"
+      },
+      {
+       "word": "instincts",
+       "clue": "Don't dismiss these to please others"
+      },
+      {
+       "word": "excuses",
+       "clue": "Making these for someone else's behavior is a warning sign"
+      },
+      {
+       "word": "selfrespect",
+       "clue": "Protecting your recovery is an act of ___ (one word)"
+      },
+      {
+       "word": "no",
+       "clue": "A complete sentence all by itself"
+      }
+     ]
+    },
+    {
+     "id": "0xr7aic34bho",
+     "title": "Personal Responsibility",
+     "entries": [
+      {
+       "word": "accountability",
+       "clue": "Owning your actions with a focus on growth"
+      },
+      {
+       "word": "amends",
+       "clue": "Make ___: repair the harm you caused"
+      },
+      {
+       "word": "integrity",
+       "clue": "Doing right when no one is watching"
+      },
+      {
+       "word": "commitment",
+       "clue": "A promise you make and keep"
+      },
+      {
+       "word": "choices",
+       "clue": "Personal responsibility means owning these"
+      },
+      {
+       "word": "excuses",
+       "clue": "Responsible people make fewer of these"
+      },
+      {
+       "word": "recognize",
+       "clue": "Step 1 of the Responsibility Cycle"
+      },
+      {
+       "word": "repair",
+       "clue": "Step 3: make it right"
+      },
+      {
+       "word": "learn",
+       "clue": "Step 4: figure out what to do differently"
+      },
+      {
+       "word": "forward",
+       "clue": "Step 5: move ___"
+      },
+      {
+       "word": "trust",
+       "clue": "Following through builds this"
+      },
+      {
+       "word": "shame",
+       "clue": "Says 'I am bad' — not the same as responsibility"
+      },
+      {
+       "word": "selfawareness",
+       "clue": "The starting point — you can't own what you don't see (one word)"
+      },
+      {
+       "word": "help",
+       "clue": "Asking for this is a responsible choice"
+      },
+      {
+       "word": "followthrough",
+       "clue": "Do what you say you'll do (one word)"
+      }
+     ]
+    },
+    {
+     "id": "om9a62wbfnq6",
+     "title": "The Science of Leisure",
+     "entries": [
+      {
+       "word": "leisure",
+       "clue": "Time spent on activities you choose to enjoy"
+      },
+      {
+       "word": "hobby",
+       "clue": "Something you do for fun in your free time"
+      },
+      {
+       "word": "flow",
+       "clue": "State where time seems to disappear"
+      },
+      {
+       "word": "dopamine",
+       "clue": "Feel-good chemical that fun releases"
+      },
+      {
+       "word": "cortisol",
+       "clue": "Stress hormone leisure helps lower"
+      },
+      {
+       "word": "restorative",
+       "clue": "Leisure that refills your energy"
+      },
+      {
+       "word": "passive",
+       "clue": "TV and scrolling are this kind of leisure"
+      },
+      {
+       "word": "active",
+       "clue": "Hiking, painting and games are this kind of leisure"
+      },
+      {
+       "word": "creative",
+       "clue": "Drawing, writing and crafting are this type"
+      },
+      {
+       "word": "burnout",
+       "clue": "What can happen with no leisure at all"
+      },
+      {
+       "word": "identity",
+       "clue": "Hobbies help shape who you are"
+      },
+      {
+       "word": "guilt",
+       "clue": "A common barrier to taking time for yourself"
+      },
+      {
+       "word": "nature",
+       "clue": "Hiking, gardening and stargazing are ___-based leisure"
+      },
+      {
+       "word": "social",
+       "clue": "Leisure with friends, clubs and games"
+      },
+      {
+       "word": "rest",
+       "clue": "It's not a reward — it's part of the work"
+      }
+     ]
+    },
+    {
+     "id": "i813qwax6th8",
+     "title": "Toxic Relationships",
+     "entries": [
+      {
+       "word": "boundary",
+       "clue": "A limit you set to protect your wellbeing"
+      },
+      {
+       "word": "gaslighting",
+       "clue": "Making someone doubt their own reality"
+      },
+      {
+       "word": "respect",
+       "clue": "Healthy relationships are built on mutual ___"
+      },
+      {
+       "word": "isolation",
+       "clue": "Cutting someone off from their support"
+      },
+      {
+       "word": "manipulation",
+       "clue": "Using guilt or fear to control someone"
+      },
+      {
+       "word": "eggshells",
+       "clue": "Walking on ___: always afraid of their reaction"
+      },
+      {
+       "word": "lovebombing",
+       "clue": "Overwhelming affection early on to gain control (one word)"
+      },
+      {
+       "word": "support",
+       "clue": "A ___ network helps you feel less alone"
+      },
+      {
+       "word": "pattern",
+       "clue": "Toxicity is this, not a single bad day"
+      },
+      {
+       "word": "safe",
+       "clue": "A healthy relationship lets you feel this"
+      },
+      {
+       "word": "gates",
+       "clue": "Boundaries are fences with these"
+      },
+      {
+       "word": "selfworth",
+       "clue": "Toxic relationships can wear this down (one word)"
+      },
+      {
+       "word": "peace",
+       "clue": "Protect your ___"
+      },
+      {
+       "word": "criticism",
+       "clue": "Constant ___ is a red flag"
+      },
+      {
+       "word": "trust",
+       "clue": "Healthy relationships grow this over time"
+      }
+     ]
+    },
+    {
+     "id": "enyl32c6wqn1",
+     "title": "Your Values",
+     "entries": [
+      {
+       "word": "values",
+       "clue": "The principles that guide your choices"
+      },
+      {
+       "word": "honesty",
+       "clue": "Telling the truth, even when it's hard"
+      },
+      {
+       "word": "courage",
+       "clue": "Speaking up even when you're afraid"
+      },
+      {
+       "word": "compassion",
+       "clue": "Caring about others' wellbeing"
+      },
+      {
+       "word": "integrity",
+       "clue": "Acting on your beliefs when no one is watching"
+      },
+      {
+       "word": "compass",
+       "clue": "Values work like an inner one of these"
+      },
+      {
+       "word": "growth",
+       "clue": "Happens in the gap between values and actions"
+      },
+      {
+       "word": "belonging",
+       "clue": "Value focused on community and connection"
+      },
+      {
+       "word": "freedom",
+       "clue": "Value focused on independence"
+      },
+      {
+       "word": "authenticity",
+       "clue": "Being true to who you really are"
+      },
+      {
+       "word": "respect",
+       "clue": "Treating others — and yourself — with dignity"
+      },
+      {
+       "word": "kindness",
+       "clue": "Being friendly, generous and considerate"
+      },
+      {
+       "word": "purpose",
+       "clue": "Living your values gives life more of this"
+      },
+      {
+       "word": "boundaries",
+       "clue": "These protect what you value"
+      },
+      {
+       "word": "humor",
+       "clue": "Value of laughing and lightness"
+      }
+     ]
+    },
+    {
+     "id": "41bojysuiwdu",
+     "title": "Your Happy Place",
+     "entries": [
+      {
+       "word": "beach",
+       "clue": "Sand, waves and seagulls"
+      },
+      {
+       "word": "peace",
+       "clue": "The calm feeling a happy place brings"
+      },
+      {
+       "word": "calm",
+       "clue": "Quiet and relaxed — not stressed"
+      },
+      {
+       "word": "imagine",
+       "clue": "Picture something in your mind"
+      },
+      {
+       "word": "safe",
+       "clue": "Free from harm — the #1 feeling of a happy place"
+      },
+      {
+       "word": "senses",
+       "clue": "Sight, sound, smell, touch and taste"
+      },
+      {
+       "word": "grounding",
+       "clue": "Using your senses to anchor yourself"
+      },
+      {
+       "word": "visualize",
+       "clue": "See it clearly in your mind's eye"
+      },
+      {
+       "word": "cozy",
+       "clue": "Warm, comfy and snug"
+      },
+      {
+       "word": "sunset",
+       "clue": "When the sky turns orange and pink"
+      },
+      {
+       "word": "forest",
+       "clue": "A place full of tall trees"
+      },
+      {
+       "word": "draw",
+       "clue": "Sketch your happy place — stick figures welcome!"
+      },
+      {
+       "word": "present",
+       "clue": "Fully in the moment"
+      },
+      {
+       "word": "relax",
+       "clue": "Let go of tension"
+      },
+      {
+       "word": "hopeful",
+       "clue": "Looking forward with good feelings"
       }
      ]
     }
@@ -5823,6 +6426,1806 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The most important part of your growth journey",
      "answer": "You!"
+    },
+    {
+     "id": "rmfo6ytodc79",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 100,
+     "clue": "The C in CALM: pause before reacting",
+     "answer": "Cool down"
+    },
+    {
+     "id": "ux68z433beg4",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 200,
+     "clue": "The A in CALM",
+     "answer": "Ask and listen"
+    },
+    {
+     "id": "ig8l524gnsnq",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 300,
+     "clue": "The L in CALM: find what you both agree on",
+     "answer": "Look for common ground"
+    },
+    {
+     "id": "le1k5fjd8buj",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 400,
+     "clue": "The M in CALM: agree on a solution and follow through",
+     "answer": "Make a plan"
+    },
+    {
+     "id": "l00u2ymdlrdt",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 500,
+     "clue": "The goal of conflict resolution isn't to win — it's to reach this",
+     "answer": "Understanding"
+    },
+    {
+     "id": "efmlfcq4kn2w",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 100,
+     "clue": "'I feel hurt' instead of 'You always hurt me' is an example of this",
+     "answer": "An 'I' statement"
+    },
+    {
+     "id": "mruuzucw86ya",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 200,
+     "clue": "Two blame words that shut conversations down: 'You always' and 'You ___'",
+     "answer": "Never"
+    },
+    {
+     "id": "t1flqtael6na",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 300,
+     "clue": "Communication style that's clear and respectful, not aggressive",
+     "answer": "Assertive"
+    },
+    {
+     "id": "xdb7eg85cqbs",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 400,
+     "clue": "Repeating back what you heard to check you understood",
+     "answer": "Reflective listening"
+    },
+    {
+     "id": "zchpsmkcffmm",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 500,
+     "clue": "Saying their feelings make sense, even if you disagree",
+     "answer": "Validating"
+    },
+    {
+     "id": "4eqrhwnucto9",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 100,
+     "clue": "Withdraws from conflict and prefers peace over resolution",
+     "answer": "The Avoider"
+    },
+    {
+     "id": "78sq3ms72nji",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 200,
+     "clue": "Needs to win and may become aggressive",
+     "answer": "The Competitor"
+    },
+    {
+     "id": "m2vichl9wop9",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 300,
+     "clue": "Gives in quickly to keep the relationship",
+     "answer": "The Pleaser"
+    },
+    {
+     "id": "fq2w78exo21s",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 400,
+     "clue": "Stays calm and works toward resolution",
+     "answer": "The Problem Solver"
+    },
+    {
+     "id": "hbhmw6ik27gk",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 500,
+     "clue": "Completely shutting down and refusing to talk",
+     "answer": "Stonewalling"
+    },
+    {
+     "id": "x59e3xasyfki",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 100,
+     "clue": "It's okay to take one of these and come back when calm",
+     "answer": "A timeout"
+    },
+    {
+     "id": "f7ic6na7e3du",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 200,
+     "clue": "Words or actions that lower the tension",
+     "answer": "De-escalation"
+    },
+    {
+     "id": "skg4q383k1s0",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 300,
+     "clue": "This simple body skill calms the fight-or-flight response",
+     "answer": "Deep breathing"
+    },
+    {
+     "id": "0v22ryes4k8e",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 400,
+     "clue": "Don't bring up these during a disagreement",
+     "answer": "Old arguments"
+    },
+    {
+     "id": "fs7twcktk1ks",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 500,
+     "clue": "No yelling, name-calling or aggression — respect these",
+     "answer": "Boundaries"
+    },
+    {
+     "id": "u93skpmi9xb6",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 100,
+     "clue": "Both people give a little and gain a little",
+     "answer": "Compromise"
+    },
+    {
+     "id": "f020scj9k6jl",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 200,
+     "clue": "An outcome where both people's needs are met",
+     "answer": "Win-win"
+    },
+    {
+     "id": "c37360cjfekf",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 300,
+     "clue": "Owning the harm you caused without excuses",
+     "answer": "A real apology"
+    },
+    {
+     "id": "ml8xvey08r8x",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 400,
+     "clue": "Understanding the other person's point of view",
+     "answer": "Empathy"
+    },
+    {
+     "id": "rf49xtv6x3by",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 500,
+     "clue": "Finish the quote: 'Peace is not the absence of conflict — it is the ability to handle conflict ___'",
+     "answer": "Peacefully"
+    },
+    {
+     "id": "bbai2zphahoa",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 100,
+     "clue": "The brain's natural feel-good chemicals released during exercise",
+     "answer": "Endorphins"
+    },
+    {
+     "id": "8lahkl4iissf",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 200,
+     "clue": "The stress hormone that movement helps lower",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "lfp70y1uiw3p",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 300,
+     "clue": "Movement improves the quality of this nightly activity",
+     "answer": "Sleep"
+    },
+    {
+     "id": "shms5jqoe04v",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 400,
+     "clue": "The brain's ability to form new connections",
+     "answer": "Neuroplasticity"
+    },
+    {
+     "id": "14hgr39gm7ld",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 500,
+     "clue": "Even a walk this many minutes long can ease anxiety",
+     "answer": "10"
+    },
+    {
+     "id": "ruibz8akjp7r",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 100,
+     "clue": "Yoga and tai chi are this kind of movement — movement meets mindfulness",
+     "answer": "Mind-body"
+    },
+    {
+     "id": "irq03fie06hg",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 200,
+     "clue": "Walking, stretching and swimming are this kind of low-stress movement",
+     "answer": "Low-impact"
+    },
+    {
+     "id": "b9bp8ybee4s4",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 300,
+     "clue": "Hiking, cycling and this backyard hobby count as moderate movement",
+     "answer": "Gardening"
+    },
+    {
+     "id": "3bbvrx7zfuer",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 400,
+     "clue": "A 5–10 minute burst of activity during your day",
+     "answer": "A movement snack"
+    },
+    {
+     "id": "xronxbs4ln01",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 500,
+     "clue": "Light walking or stretching on rest days",
+     "answer": "Active recovery"
+    },
+    {
+     "id": "dvi5kueffsyu",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 100,
+     "clue": "True or false: you need 60+ minutes a day to see mental health benefits",
+     "answer": "False — 10–20 minutes helps"
+    },
+    {
+     "id": "osig1hey01wz",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 200,
+     "clue": "True or false: you need a gym to get real benefits",
+     "answer": "False"
+    },
+    {
+     "id": "vi4440n5bjiu",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 300,
+     "clue": "True or false: movement helps people at ALL fitness levels",
+     "answer": "True"
+    },
+    {
+     "id": "r27ge461de9a",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 400,
+     "clue": "True or false: skipping a few days erases all the benefits",
+     "answer": "False"
+    },
+    {
+     "id": "wky88gd21ols",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 500,
+     "clue": "True or false: your own body weight and 15 minutes are enough",
+     "answer": "True"
+    },
+    {
+     "id": "smzqh1tm2gpw",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 100,
+     "clue": "Health guidelines suggest at least this many minutes a week",
+     "answer": "150"
+    },
+    {
+     "id": "w5z05j77azpc",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 200,
+     "clue": "Often, action creates this — so don't wait for it",
+     "answer": "Motivation"
+    },
+    {
+     "id": "204uiv7ai6vl",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 300,
+     "clue": "The best kind of movement is the kind you'll do this way",
+     "answer": "Consistently"
+    },
+    {
+     "id": "piifn5f72jdq",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 400,
+     "clue": "When you're tired, try starting with just this many minutes",
+     "answer": "5"
+    },
+    {
+     "id": "qskds2ius3wu",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 500,
+     "clue": "Paying attention to pain and tiredness while exercising",
+     "answer": "Listening to your body"
+    },
+    {
+     "id": "ntlj7w3peks1",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 100,
+     "clue": "Using movement on purpose to handle tough emotions",
+     "answer": "Exercise as a coping skill"
+    },
+    {
+     "id": "93jxjbirfvxf",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 200,
+     "clue": "Group walks and team sports build this",
+     "answer": "Community / connection"
+    },
+    {
+     "id": "ghrjmk14yscl",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 300,
+     "clue": "Movement improves memory and focus by sending more of this to the brain",
+     "answer": "Blood flow"
+    },
+    {
+     "id": "m7o0r7ckot71",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 400,
+     "clue": "Consistent movement builds a sense of this",
+     "answer": "Accomplishment"
+    },
+    {
+     "id": "a8lmm9qt9nmb",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 500,
+     "clue": "Finish it: movement is medicine — not ___",
+     "answer": "Punishment"
+    },
+    {
+     "id": "d5zacgup0yj9",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 100,
+     "clue": "Your body's main energy source",
+     "answer": "Carbohydrates"
+    },
+    {
+     "id": "6m3h3ly6ar8y",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 200,
+     "clue": "Builds and repairs your body — found in eggs, beans and fish",
+     "answer": "Protein"
+    },
+    {
+     "id": "315nfdgx3vsv",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 300,
+     "clue": "Supports brain health — choose ones from avocado and olive oil",
+     "answer": "Healthy fats"
+    },
+    {
+     "id": "e62d2zn1yx3q",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 400,
+     "clue": "Oatmeal and brown rice are this kind of carb",
+     "answer": "Complex carbohydrates"
+    },
+    {
+     "id": "hs0fudmv2fuu",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 500,
+     "clue": "The three macronutrients: carbs, protein and ___",
+     "answer": "Fat"
+    },
+    {
+     "id": "ugigop7ebg4k",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 100,
+     "clue": "The 'sunshine vitamin' that supports mood",
+     "answer": "Vitamin D"
+    },
+    {
+     "id": "k1vf96kw58ui",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 200,
+     "clue": "Mineral that helps carry oxygen and gives you energy",
+     "answer": "Iron"
+    },
+    {
+     "id": "0xdkc6qjx9wa",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 300,
+     "clue": "Healthy fat found in fish, flaxseed and walnuts",
+     "answer": "Omega-3"
+    },
+    {
+     "id": "g7uuplpsk9yp",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 400,
+     "clue": "Mineral in nuts and dark chocolate that supports sleep",
+     "answer": "Magnesium"
+    },
+    {
+     "id": "ts5ctg19cum3",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 500,
+     "clue": "Mood chemical made mostly in your gut",
+     "answer": "Serotonin"
+    },
+    {
+     "id": "hznjp1ioq6rs",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 100,
+     "clue": "Drink this first — thirst can feel like hunger",
+     "answer": "Water"
+    },
+    {
+     "id": "z3wwev12oe8w",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 200,
+     "clue": "Add more of this to your plate for more nutrients",
+     "answer": "Color (fruits and veggies)"
+    },
+    {
+     "id": "ap8i2hsmr05z",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 300,
+     "clue": "Reading these tells you what's in your food",
+     "answer": "Food labels"
+    },
+    {
+     "id": "58y5htx4o67p",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 400,
+     "clue": "Doing this regularly keeps your mood and focus steady",
+     "answer": "Eating meals"
+    },
+    {
+     "id": "pgv20ioweosl",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 500,
+     "clue": "Paying attention to how and why you eat",
+     "answer": "Mindful eating"
+    },
+    {
+     "id": "b6qcfazew7oe",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "Eating healthy is always too expensive",
+     "answer": "Myth"
+    },
+    {
+     "id": "kay8da4rnf2c",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Carbs are your body's main energy source",
+     "answer": "Fact"
+    },
+    {
+     "id": "h6sr6qi2hxag",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "You need to eat perfectly to be healthy",
+     "answer": "Myth"
+    },
+    {
+     "id": "ywp4ydxfxtl4",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Supplements can replace a healthy diet",
+     "answer": "Myth"
+    },
+    {
+     "id": "8ow7326g7l64",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Low-fat foods are always healthier",
+     "answer": "Myth"
+    },
+    {
+     "id": "4lggd5pg2qxa",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 100,
+     "clue": "A sugar spike is usually followed by this",
+     "answer": "A crash"
+    },
+    {
+     "id": "9bkwzevs6zz7",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 200,
+     "clue": "Eating a variety of colorful produce is called eating a ___",
+     "answer": "Rainbow"
+    },
+    {
+     "id": "5q65gfvctq5d",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 300,
+     "clue": "Beans, lentils, oats and frozen veggies are low-cost and nutrient-___",
+     "answer": "Dense"
+    },
+    {
+     "id": "t1sx7r2zc42y",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 400,
+     "clue": "Fatigue, headache and dark urine can be signs of this",
+     "answer": "Dehydration"
+    },
+    {
+     "id": "yq8p940pdf2r",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 500,
+     "clue": "Swapping one habit at a time beats this",
+     "answer": "Overhauling everything at once"
+    },
+    {
+     "id": "3j7tjtw9e9cx",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 100,
+     "clue": "Someone directly asks or tells you to do something",
+     "answer": "Direct pressure"
+    },
+    {
+     "id": "wkqdrbswryvu",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 200,
+     "clue": "Feeling you should act a certain way to fit in",
+     "answer": "Indirect pressure"
+    },
+    {
+     "id": "klb4kmlfl2x0",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 300,
+     "clue": "Telling yourself what others expect of you",
+     "answer": "Internal pressure"
+    },
+    {
+     "id": "r7i8rwt584e8",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 400,
+     "clue": "Places, people or situations that pull you toward old habits",
+     "answer": "Environmental pressure"
+    },
+    {
+     "id": "ewe8t1cqabw6",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 500,
+     "clue": "Pressure can even come from people who ___ about you",
+     "answer": "Care"
+    },
+    {
+     "id": "k3arer9axbuv",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 100,
+     "clue": "The S in STOP",
+     "answer": "Stop what you're doing"
+    },
+    {
+     "id": "7qrclzxt0ivw",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 200,
+     "clue": "The T in STOP",
+     "answer": "Take a breath"
+    },
+    {
+     "id": "u0qy2zg6zv8u",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 300,
+     "clue": "The O in STOP",
+     "answer": "Observe what's happening around and inside you"
+    },
+    {
+     "id": "6yh4ez7a08l2",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 400,
+     "clue": "The P in STOP",
+     "answer": "Proceed with intention"
+    },
+    {
+     "id": "qtylj6fbdkcd",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 500,
+     "clue": "STOP is a quick one of these when pressure hits",
+     "answer": "Reset"
+    },
+    {
+     "id": "fl9w5rpmqvfg",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 100,
+     "clue": "Two words that make a complete sentence",
+     "answer": "No thanks"
+    },
+    {
+     "id": "76fmgnld1nou",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 200,
+     "clue": "\"Let me think about it\" buys you this",
+     "answer": "Time"
+    },
+    {
+     "id": "0l814h2zv1a6",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 300,
+     "clue": "Redirect the plan to something healthy by suggesting one of these",
+     "answer": "An alternative"
+    },
+    {
+     "id": "m8nl07i3kfom",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 400,
+     "clue": "Removing yourself from the situation is a skill, not this",
+     "answer": "Weakness"
+    },
+    {
+     "id": "qg0ttmxasp6d",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 500,
+     "clue": "Text or call someone safe — you don't have to do it ___",
+     "answer": "Alone"
+    },
+    {
+     "id": "ta16u6f4yl9g",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 100,
+     "clue": "Three words that are a big red flag: 'just ___ ___'",
+     "answer": "This once"
+    },
+    {
+     "id": "eb5ve2wdwxr0",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 200,
+     "clue": "Feeling anxious or this about saying no",
+     "answer": "Guilty"
+    },
+    {
+     "id": "pwufomqdms3d",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 300,
+     "clue": "Making these for someone else's behavior",
+     "answer": "Excuses"
+    },
+    {
+     "id": "xjgd7wp8cb9o",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 400,
+     "clue": "Changing your plans to avoid this",
+     "answer": "Conflict"
+    },
+    {
+     "id": "n2thy97jps1g",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 500,
+     "clue": "Feeling like you have to earn your place in this",
+     "answer": "A group"
+    },
+    {
+     "id": "78case6yg659",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 100,
+     "clue": "A limit you set to protect your wellbeing",
+     "answer": "A boundary"
+    },
+    {
+     "id": "w5tvdkdfa2fw",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 200,
+     "clue": "Your recovery is this — no one has the right to threaten it",
+     "answer": "Yours"
+    },
+    {
+     "id": "88ve0vq5gl5e",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 300,
+     "clue": "Saying no is an act of strength and self-___",
+     "answer": "Respect"
+    },
+    {
+     "id": "obyo0icrwxrp",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 400,
+     "clue": "Asking for this is a sign of strength, not weakness",
+     "answer": "Support"
+    },
+    {
+     "id": "qvwepo0bra0y",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 500,
+     "clue": "Healthy relationships respect your ___",
+     "answer": "Boundaries (and your 'no')"
+    },
+    {
+     "id": "ddb0u5mg9lca",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 100,
+     "clue": "Step 1: see what happened honestly",
+     "answer": "Recognize"
+    },
+    {
+     "id": "wepvcynqeaqx",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 200,
+     "clue": "Step 2: name what YOU did or didn't do",
+     "answer": "Own your role"
+    },
+    {
+     "id": "scor87kc5wum",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 300,
+     "clue": "Step 3: make it right",
+     "answer": "Repair"
+    },
+    {
+     "id": "mjkwjtu9u1dv",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 400,
+     "clue": "Step 4: decide what you'll do differently",
+     "answer": "Learn"
+    },
+    {
+     "id": "sl7kvq3zvxae",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 500,
+     "clue": "Step 5: don't let one mistake define your story",
+     "answer": "Move forward"
+    },
+    {
+     "id": "xo96ff3x6b3l",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 100,
+     "clue": "Doing what you say you'll do",
+     "answer": "Following through"
+    },
+    {
+     "id": "hgfobemh2won",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 200,
+     "clue": "Taking real steps to repair harm you caused",
+     "answer": "Making amends"
+    },
+    {
+     "id": "8j1fs00f3h0u",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 300,
+     "clue": "Recognizing when you need support is responsible — so do this",
+     "answer": "Ask for help"
+    },
+    {
+     "id": "42cd0dg9lckj",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 400,
+     "clue": "Small daily ones of these build trust in yourself",
+     "answer": "Commitments"
+    },
+    {
+     "id": "bnou482d3xk7",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 500,
+     "clue": "Looking at your role when something goes wrong",
+     "answer": "Acknowledging mistakes"
+    },
+    {
+     "id": "f9telngovlmw",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 100,
+     "clue": "Says 'I am bad' — and paralyzes you",
+     "answer": "Shame"
+    },
+    {
+     "id": "3fnl3h5vv8m9",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 200,
+     "clue": "Says 'I did something I want to do differently' — and empowers you",
+     "answer": "Responsibility"
+    },
+    {
+     "id": "twdb4jlb78je",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 300,
+     "clue": "Focuses on growth instead of punishment",
+     "answer": "Accountability"
+    },
+    {
+     "id": "qt8ro6v4aumu",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 400,
+     "clue": "Pointing at other people instead of yourself",
+     "answer": "Blame"
+    },
+    {
+     "id": "bvp1cbm9bhkr",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 500,
+     "clue": "'I'm sorry you feel that way' is not a real one",
+     "answer": "Apology"
+    },
+    {
+     "id": "mbctwe28l5r0",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 100,
+     "clue": "Doing the right thing when no one is watching",
+     "answer": "Integrity"
+    },
+    {
+     "id": "mk7czhofhm0y",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 200,
+     "clue": "You can't take responsibility for what you don't recognize — so start with this",
+     "answer": "Self-awareness"
+    },
+    {
+     "id": "zvurlwt2ivx8",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 300,
+     "clue": "Acting with integrity builds this toward yourself",
+     "answer": "Self-respect"
+    },
+    {
+     "id": "67j9mhorrkj8",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 400,
+     "clue": "Owning your actions typically earns this from others",
+     "answer": "Respect"
+    },
+    {
+     "id": "gdau937ikxr9",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 500,
+     "clue": "Taking ownership before a problem happens",
+     "answer": "Proactive responsibility"
+    },
+    {
+     "id": "oes1n3q8cmkw",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 100,
+     "clue": "Recognizing you usually have more than one option",
+     "answer": "Choice awareness"
+    },
+    {
+     "id": "2q4zbypeaju4",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 200,
+     "clue": "Owning your choices gives you the power to change your life's ___",
+     "answer": "Direction"
+    },
+    {
+     "id": "7wncy1a6hzw3",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 300,
+     "clue": "Ownership builds this in relationships",
+     "answer": "Trust"
+    },
+    {
+     "id": "2azv7qjpq079",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 400,
+     "clue": "'I was late because of traffic' is an example of making one of these",
+     "answer": "An excuse"
+    },
+    {
+     "id": "7jg5bx66bd2n",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 500,
+     "clue": "Responsibility is about behavior, not this",
+     "answer": "Identity (who you are)"
+    },
+    {
+     "id": "omdyjmbscvrt",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 100,
+     "clue": "Walking, dancing, yoga and swimming",
+     "answer": "Physical"
+    },
+    {
+     "id": "0090o49777f0",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 200,
+     "clue": "Drawing, writing, crafting and cooking",
+     "answer": "Creative"
+    },
+    {
+     "id": "c8vgc9nwzao7",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 300,
+     "clue": "Games with friends, clubs and volunteering",
+     "answer": "Social"
+    },
+    {
+     "id": "2bvyn7k3156w",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 400,
+     "clue": "Reading, puzzles and learning new things",
+     "answer": "Mind-based"
+    },
+    {
+     "id": "89f3a49r17f5",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 500,
+     "clue": "Hiking, gardening and stargazing",
+     "answer": "Nature-based"
+    },
+    {
+     "id": "by6yzaw5dn8p",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 100,
+     "clue": "Enjoyable activities lower this stress hormone",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "w32a0faxaoyl",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 200,
+     "clue": "Fun releases this feel-good brain chemical",
+     "answer": "Dopamine"
+    },
+    {
+     "id": "frr448bjnk76",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 300,
+     "clue": "Active leisure during the day helps regulate this at night",
+     "answer": "Sleep"
+    },
+    {
+     "id": "3omvbwvaeq1b",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 400,
+     "clue": "Shared activities build this and reduce isolation",
+     "answer": "Connection"
+    },
+    {
+     "id": "f3sm0hxshemi",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 500,
+     "clue": "Hobbies are part of who you are — they build your ___",
+     "answer": "Identity"
+    },
+    {
+     "id": "xkdsmdkj55pc",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 100,
+     "clue": "Scrolling your phone",
+     "answer": "Passive"
+    },
+    {
+     "id": "myoecrc837nw",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 200,
+     "clue": "Painting a picture",
+     "answer": "Active"
+    },
+    {
+     "id": "jvp9vlrbejfv",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 300,
+     "clue": "Watching TV",
+     "answer": "Passive"
+    },
+    {
+     "id": "gtfefvciicvi",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 400,
+     "clue": "Playing a board game with friends",
+     "answer": "Active"
+    },
+    {
+     "id": "uh3p1vzm6wyv",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 500,
+     "clue": "Being so absorbed in an activity that time disappears",
+     "answer": "Flow"
+    },
+    {
+     "id": "0dmdjqj7ymc4",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 100,
+     "clue": "True or false: leisure is just wasting time",
+     "answer": "False"
+    },
+    {
+     "id": "jhcs9x4rpxvi",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 200,
+     "clue": "True or false: you have to earn rest",
+     "answer": "False — it's a basic need"
+    },
+    {
+     "id": "99fzx0py1uiv",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 300,
+     "clue": "True or false: only expensive hobbies count",
+     "answer": "False"
+    },
+    {
+     "id": "odzb4xwnyopp",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 400,
+     "clue": "True or false: you have to be good at it for it to count",
+     "answer": "False"
+    },
+    {
+     "id": "eq5voqbwmeqw",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 500,
+     "clue": "True or false: fun is an important part of a healthy life",
+     "answer": "True"
+    },
+    {
+     "id": "wa450kgi8awz",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 100,
+     "clue": "Protecting time for fun on your calendar",
+     "answer": "Scheduling leisure"
+    },
+    {
+     "id": "41xmayea7jra",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 200,
+     "clue": "A common barrier: feeling this about taking time for yourself",
+     "answer": "Guilt"
+    },
+    {
+     "id": "iblue2m5tggf",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 300,
+     "clue": "No leisure at all can lead to this kind of exhaustion",
+     "answer": "Burnout"
+    },
+    {
+     "id": "nrdkujmqt8nb",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 400,
+     "clue": "Knowing how to choose activities that truly restore you",
+     "answer": "Leisure literacy"
+    },
+    {
+     "id": "s7iglzya83fb",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 500,
+     "clue": "Finish it: 'Rest is not a reward for hard work. It is ___'",
+     "answer": "Part of the work"
+    },
+    {
+     "id": "dadfnd6skba2",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 100,
+     "clue": "Being regularly put down or belittled",
+     "answer": "Constant criticism"
+    },
+    {
+     "id": "2ak5rvj0waux",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 200,
+     "clue": "Being told who to see, where to go or what to wear",
+     "answer": "Control and isolation"
+    },
+    {
+     "id": "ohf8c48xxcri",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 300,
+     "clue": "Always afraid of their reaction to ordinary things",
+     "answer": "Walking on eggshells"
+    },
+    {
+     "id": "glozv2spry9h",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 400,
+     "clue": "Having your reality constantly questioned or denied",
+     "answer": "Gaslighting"
+    },
+    {
+     "id": "5wm3mfs00bal",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 500,
+     "clue": "Using guilt, threats or pressure to control you",
+     "answer": "Manipulation"
+    },
+    {
+     "id": "h6ptyg4clbco",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 100,
+     "clue": "You feel ___ to be yourself without fear of judgment",
+     "answer": "Safe"
+    },
+    {
+     "id": "k8s1ypfme335",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 200,
+     "clue": "Disagreements happen this way — without cruelty",
+     "answer": "Respectfully"
+    },
+    {
+     "id": "r0e0pyzgryg9",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 300,
+     "clue": "Both people's ___ are considered and valued",
+     "answer": "Needs"
+    },
+    {
+     "id": "1rk4h6nly59q",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 400,
+     "clue": "You can say this without feeling afraid or guilty",
+     "answer": "No"
+    },
+    {
+     "id": "w736b2jnmr9v",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 500,
+     "clue": "A healthy relationship does this — it doesn't tear you down",
+     "answer": "Builds you up"
+    },
+    {
+     "id": "40sj1i7w2va6",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 100,
+     "clue": "Overwhelming affection early on to gain control",
+     "answer": "Love bombing"
+    },
+    {
+     "id": "r16j2ctilbq2",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 200,
+     "clue": "Just enough attention to keep you hooked",
+     "answer": "Breadcrumbing"
+    },
+    {
+     "id": "aiyqyuidof1a",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 300,
+     "clue": "Cutting someone off from friends and family",
+     "answer": "Isolation"
+    },
+    {
+     "id": "saar5uujgvwe",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 400,
+     "clue": "Using money, emotions or isolation to dominate someone",
+     "answer": "Coercive control"
+    },
+    {
+     "id": "9lozfuslyp6p",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 500,
+     "clue": "Unpredictable rewards that keep someone hoping",
+     "answer": "Intermittent reinforcement"
+    },
+    {
+     "id": "lvbfti9lvh9g",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 100,
+     "clue": "A limit that protects your emotional, physical or mental wellbeing",
+     "answer": "A boundary"
+    },
+    {
+     "id": "pz46ueqo7vzu",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 200,
+     "clue": "Boundaries aren't walls — they're fences with these",
+     "answer": "Gates"
+    },
+    {
+     "id": "tay7mqsriv7i",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 300,
+     "clue": "'I need space when I feel ___'",
+     "answer": "Overwhelmed"
+    },
+    {
+     "id": "h6dg9pmu6vdd",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 400,
+     "clue": "Prioritizing your wellbeing by limiting harmful interactions",
+     "answer": "Protecting your peace"
+    },
+    {
+     "id": "ty32ke4qbun0",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 500,
+     "clue": "Clear, calm sentences that start with this word share your feelings",
+     "answer": "I"
+    },
+    {
+     "id": "h82fclm2wueb",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 100,
+     "clue": "The first step: recognizing and doing this to the patterns",
+     "answer": "Naming them"
+    },
+    {
+     "id": "un7zzp9i0303",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 200,
+     "clue": "Without real change, repeated ones of these are part of the cycle",
+     "answer": "Apologies"
+    },
+    {
+     "id": "uies8k1yz574",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 300,
+     "clue": "Friends, family and counselors who offer support form this",
+     "answer": "A support network"
+    },
+    {
+     "id": "p5niaadh1lpg",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 400,
+     "clue": "Toxic relationships can happen with partners, friends, family and these",
+     "answer": "Coworkers"
+    },
+    {
+     "id": "mdwobsc6fg2h",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 500,
+     "clue": "You deserve relationships that make you feel valued, respected and ___",
+     "answer": "Safe"
+    },
+    {
+     "id": "rqsrjtly7c5d",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 100,
+     "clue": "Telling the truth even when it's uncomfortable",
+     "answer": "Honesty"
+    },
+    {
+     "id": "se53xl1pq61y",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 200,
+     "clue": "Caring about the wellbeing of others",
+     "answer": "Compassion"
+    },
+    {
+     "id": "3xjnhvmdtdrc",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 300,
+     "clue": "Speaking up even when you're afraid",
+     "answer": "Courage"
+    },
+    {
+     "id": "84suy9nbiso8",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 400,
+     "clue": "Believing in learning and improving",
+     "answer": "Growth"
+    },
+    {
+     "id": "8ewa1vlgnepk",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 500,
+     "clue": "Being true to who you really are",
+     "answer": "Authenticity"
+    },
+    {
+     "id": "qqszs24yvsjw",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 100,
+     "clue": "The principles that guide your decisions and relationships",
+     "answer": "Values"
+    },
+    {
+     "id": "py23kmhl4jvn",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 200,
+     "clue": "Figuring out which principles matter most to you",
+     "answer": "Values clarification"
+    },
+    {
+     "id": "e43sq73mnr7a",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 300,
+     "clue": "Values come from within; these are set by others",
+     "answer": "Rules"
+    },
+    {
+     "id": "a2k24t8dwkvm",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 400,
+     "clue": "Values act like this — an inner one that points the way",
+     "answer": "Compass"
+    },
+    {
+     "id": "g75tpulh4e8w",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 500,
+     "clue": "Can your values change as you grow?",
+     "answer": "Yes"
+    },
+    {
+     "id": "8lc1lkj7icv5",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 100,
+     "clue": "Acting on your values even when no one is watching",
+     "answer": "Integrity"
+    },
+    {
+     "id": "s7c3188uuob5",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 200,
+     "clue": "Choosing actions that reflect your principles",
+     "answer": "Value-based decision making"
+    },
+    {
+     "id": "d7rbqm3txkyi",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 300,
+     "clue": "Feeling torn between two things you care about",
+     "answer": "A values conflict"
+    },
+    {
+     "id": "0c5dgybe81hk",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 400,
+     "clue": "Boundaries are how you protect what you ___",
+     "answer": "Value"
+    },
+    {
+     "id": "phlnbyivo68x",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 500,
+     "clue": "The gap between values and actions is where this happens",
+     "answer": "Growth"
+    },
+    {
+     "id": "f9ii5oth5juh",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "Your values are set in stone once you're an adult",
+     "answer": "Myth"
+    },
+    {
+     "id": "9xrp90ebif0u",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Everyone sometimes acts against their values",
+     "answer": "Fact"
+    },
+    {
+     "id": "0ic7ntbwxo66",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Your values must match your family's",
+     "answer": "Myth"
+    },
+    {
+     "id": "xhsqtnutvmju",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Knowing your values can reduce anxiety and help decisions",
+     "answer": "Fact"
+    },
+    {
+     "id": "9aknl3l44aw3",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "If you don't live your values perfectly, you're a hypocrite",
+     "answer": "Myth"
+    },
+    {
+     "id": "qwunmd0t8l5b",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 100,
+     "clue": "You narrow your list of 10 down to your top ___",
+     "answer": "3"
+    },
+    {
+     "id": "7vbj29me271f",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 200,
+     "clue": "A value focused on community and connection",
+     "answer": "Belonging"
+    },
+    {
+     "id": "a1xid56xj2dk",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 300,
+     "clue": "A value centered on independence and personal choice",
+     "answer": "Freedom"
+    },
+    {
+     "id": "tyhnh4kzexqk",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 400,
+     "clue": "A value about laughing and not taking life too seriously",
+     "answer": "Humor"
+    },
+    {
+     "id": "m2o0pkvjwsxq",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 500,
+     "clue": "Finish it: 'When your actions align with your values, you stop ___'",
+     "answer": "Second-guessing yourself"
+    },
+    {
+     "id": "p5vcyblarwcb",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 100,
+     "clue": "What do you ___? Colors, light, objects…",
+     "answer": "See"
+    },
+    {
+     "id": "yrhv2f0rgylt",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 200,
+     "clue": "Waves, music or peaceful silence",
+     "answer": "Hear"
+    },
+    {
+     "id": "e5w342i1ms0j",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 300,
+     "clue": "Warm sun, cool breeze, soft blankets",
+     "answer": "Feel (touch)"
+    },
+    {
+     "id": "k7tr5vo05154",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 400,
+     "clue": "Fresh bread, pine trees or ocean air",
+     "answer": "Smell"
+    },
+    {
+     "id": "s2rrcwzybktt",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 500,
+     "clue": "Using your senses to anchor yourself in calm",
+     "answer": "Grounding"
+    },
+    {
+     "id": "l91ykceffe8w",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 100,
+     "clue": "A real or imagined place where you feel at peace",
+     "answer": "A happy place"
+    },
+    {
+     "id": "dfrsp8l6x66e",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 200,
+     "clue": "Your happy place can be completely this — it doesn't have to be real",
+     "answer": "Imaginary"
+    },
+    {
+     "id": "2gor6339fylc",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 300,
+     "clue": "Picturing a calm scene in your mind",
+     "answer": "Visualization"
+    },
+    {
+     "id": "j8m1umwidkrb",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 400,
+     "clue": "More of this makes your happy place more calming",
+     "answer": "Detail"
+    },
+    {
+     "id": "if9akdueu7ne",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 500,
+     "clue": "How often you can visit your happy place",
+     "answer": "As often as you need"
+    },
+    {
+     "id": "xq1uwos99454",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 100,
+     "clue": "Sand, waves and seagulls",
+     "answer": "The beach"
+    },
+    {
+     "id": "twur3ie3p5tg",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 200,
+     "clue": "Tall trees and a quiet trail",
+     "answer": "A forest"
+    },
+    {
+     "id": "huormia7eu0r",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 300,
+     "clue": "Smells like cookies at Grandma's",
+     "answer": "The kitchen"
+    },
+    {
+     "id": "yccypud3sw91",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 400,
+     "clue": "Stars, planets and floating in zero gravity",
+     "answer": "Outer space"
+    },
+    {
+     "id": "u75pha5nkmjp",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 500,
+     "clue": "A soft blanket and a favorite chair",
+     "answer": "A cozy room"
+    },
+    {
+     "id": "7057jvvudi9s",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 100,
+     "clue": "The #1 feeling a happy place gives you",
+     "answer": "Safe"
+    },
+    {
+     "id": "upoff14gisjw",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 200,
+     "clue": "Calm and quiet inside",
+     "answer": "Peaceful"
+    },
+    {
+     "id": "lev0k2qf223t",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 300,
+     "clue": "No limits, no pressure",
+     "answer": "Free"
+    },
+    {
+     "id": "gxwfouzwupfk",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 400,
+     "clue": "Full of good energy and hope for what's next",
+     "answer": "Hopeful"
+    },
+    {
+     "id": "2kndm2k2g53e",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 500,
+     "clue": "Being fully in the moment",
+     "answer": "Present"
+    },
+    {
+     "id": "36v4eyitfr30",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You have to have been there in real life",
+     "answer": "Myth"
+    },
+    {
+     "id": "okevbgf54s9w",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Visualization is a real coping tool",
+     "answer": "Fact"
+    },
+    {
+     "id": "74hkr31mk1uj",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Only kids use a happy place",
+     "answer": "Myth"
+    },
+    {
+     "id": "1bubx9c072a2",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "You need to be good at art to draw it",
+     "answer": "Myth"
+    },
+    {
+     "id": "qxuu54q9vxbr",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Picturing your happy place can lower your heart rate",
+     "answer": "Fact"
     }
    ],
    "wheel": [
@@ -8605,6 +11008,1090 @@ window.GS_MY_CONTENT = {
      "sets": [
       "AI Utilization for Good"
      ]
+    },
+    {
+     "id": "1lt7qxjhnqfo",
+     "category": "Phrase",
+     "phrase": "COOL DOWN FIRST",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "2yj2dxqen9n1",
+     "category": "Phrase",
+     "phrase": "LISTEN TO UNDERSTAND",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "m2wlnhhiz1p6",
+     "category": "Thing",
+     "phrase": "COMMON GROUND",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "gtej31n90687",
+     "category": "Phrase",
+     "phrase": "MAKE A PLAN",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "b9kawek6o6rj",
+     "category": "Thing",
+     "phrase": "AN I STATEMENT",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "wx49sq60ap42",
+     "category": "Phrase",
+     "phrase": "STAY ON TOPIC",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "snnz9d02gzzs",
+     "category": "Event",
+     "phrase": "TAKING A TIMEOUT",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "m7ck43wm4zuy",
+     "category": "Thing",
+     "phrase": "A WIN WIN SOLUTION",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "90sl4qvikk99",
+     "category": "Phrase",
+     "phrase": "RESPECT BOUNDARIES",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "1bvk1v3pr76n",
+     "category": "Thing",
+     "phrase": "ACTIVE LISTENING",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "qaqi553qqnwt",
+     "category": "Phrase",
+     "phrase": "OWN YOUR PART",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "ytd0500a7uum",
+     "category": "Event",
+     "phrase": "SHAKING HANDS",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "obytjpcnh8ut",
+     "category": "Thing",
+     "phrase": "A SINCERE APOLOGY",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "qvx6v6sfkfac",
+     "category": "Phrase",
+     "phrase": "AGREE TO DISAGREE",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "mwpio175f8xe",
+     "category": "Thing",
+     "phrase": "A PROBLEM SOLVER",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "w4qv5sacjlfg",
+     "category": "Phrase",
+     "phrase": "TAKE A DEEP BREATH",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "k2v4w5ytzazj",
+     "category": "Phrase",
+     "phrase": "MOVEMENT IS MEDICINE",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "rj48z3h8wpy3",
+     "category": "Thing",
+     "phrase": "FEEL GOOD ENDORPHINS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "49605kprwffh",
+     "category": "Event",
+     "phrase": "A WALK AROUND THE BLOCK",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "zmej69jy94ha",
+     "category": "Event",
+     "phrase": "DANCING IN THE KITCHEN",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "du5bzvsc54x4",
+     "category": "Thing",
+     "phrase": "A STRETCH BREAK",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "z0hdjma8ixgh",
+     "category": "Phrase",
+     "phrase": "START SMALL AND STAY CONSISTENT",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "t9ops6zc5wy0",
+     "category": "Event",
+     "phrase": "A YOGA CLASS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "fa0nvo7lp9vs",
+     "category": "Thing",
+     "phrase": "A MOVEMENT SNACK",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "cunbhe8i7kqe",
+     "category": "Event",
+     "phrase": "GARDENING IN THE SUN",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "p4w14sybme98",
+     "category": "Phrase",
+     "phrase": "LISTEN TO YOUR BODY",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "2f6gmvosa9on",
+     "category": "Event",
+     "phrase": "A HIKE IN THE WOODS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "z7xhcwyqjqtf",
+     "category": "Thing",
+     "phrase": "A JUMP ROPE",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "cpw8sgq1o3e2",
+     "category": "Event",
+     "phrase": "TAKING THE STAIRS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "0wsdzvk7add5",
+     "category": "Phrase",
+     "phrase": "EVERY STEP COUNTS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "49oe51k7uj47",
+     "category": "Thing",
+     "phrase": "A TEAM SPORT",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "gqz2ks048py8",
+     "category": "Event",
+     "phrase": "A BIKE RIDE",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "udcjh4u44rrn",
+     "category": "Phrase",
+     "phrase": "EAT THE RAINBOW",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "qayipayv5quk",
+     "category": "Thing",
+     "phrase": "A GLASS OF WATER",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "gyxlw9xohabb",
+     "category": "Thing",
+     "phrase": "FRESH FRUIT",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "h6b8t9vp4gfa",
+     "category": "Thing",
+     "phrase": "WHOLE GRAINS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "c3sjiwdduh4q",
+     "category": "Thing",
+     "phrase": "LEAFY GREENS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "0trbnddmc7zh",
+     "category": "Phrase",
+     "phrase": "SMALL CHANGES ADD UP",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "6c58707ipf37",
+     "category": "Thing",
+     "phrase": "A BOWL OF OATMEAL",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "aptn7f52xcu9",
+     "category": "Event",
+     "phrase": "READING A FOOD LABEL",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ox1ll6a9rxrb",
+     "category": "Thing",
+     "phrase": "HEALTHY FATS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "kfsxie9ftri6",
+     "category": "Phrase",
+     "phrase": "FOOD FUELS YOUR BRAIN",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "yqwgq4whgstx",
+     "category": "Thing",
+     "phrase": "A HANDFUL OF NUTS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "0s7trx78rvq9",
+     "category": "Event",
+     "phrase": "MAKING A SALAD",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "prtk7nhtq0cc",
+     "category": "Thing",
+     "phrase": "SCRAMBLED EGGS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "jnik8lum5e55",
+     "category": "Event",
+     "phrase": "A FAMILY DINNER",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "cd2glcv5s6kv",
+     "category": "Phrase",
+     "phrase": "PROGRESS NOT PERFECTION",
+     "sets": [
+      "Nutritional Values",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "3d2til863gb5",
+     "category": "Thing",
+     "phrase": "A FARMERS MARKET",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ijeeswjei9dg",
+     "category": "Phrase",
+     "phrase": "NO THANKS",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "r8dhgoutq690",
+     "category": "Phrase",
+     "phrase": "NO IS A COMPLETE SENTENCE",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "jnz67zzu3a9o",
+     "category": "Phrase",
+     "phrase": "LET ME THINK ABOUT IT",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "pfn06l6x0728",
+     "category": "Thing",
+     "phrase": "A HEALTHY BOUNDARY",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "jgadkreqbwm4",
+     "category": "Phrase",
+     "phrase": "STOP AND TAKE A BREATH",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "r3cebwwmdecx",
+     "category": "Thing",
+     "phrase": "A SUPPORT PERSON",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "b5wznu9tbvft",
+     "category": "Phrase",
+     "phrase": "SUGGEST AN ALTERNATIVE",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "tg1n7er04etw",
+     "category": "Phrase",
+     "phrase": "STAND YOUR GROUND",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "63wwqh6w6407",
+     "category": "Event",
+     "phrase": "WALKING AWAY",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "tyaw3hagj6bf",
+     "category": "Phrase",
+     "phrase": "TRUST YOUR INSTINCTS",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "dgv2p6a4kvqd",
+     "category": "Thing",
+     "phrase": "INNER STRENGTH",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "mv00pcxugopq",
+     "category": "Event",
+     "phrase": "CALLING A FRIEND",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "tu1rvfned6rx",
+     "category": "Phrase",
+     "phrase": "BE TRUE TO YOURSELF",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "uq4zgzed5a4f",
+     "category": "Thing",
+     "phrase": "SELF RESPECT",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "8imqlyopyysx",
+     "category": "Phrase",
+     "phrase": "YOUR CHOICE YOUR VOICE",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "snrstsqcldtp",
+     "category": "Phrase",
+     "phrase": "OWN YOUR CHOICES",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "r1j6ct9mab8k",
+     "category": "Phrase",
+     "phrase": "FOLLOW THROUGH",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "id78ztrbn5to",
+     "category": "Event",
+     "phrase": "MAKING AMENDS",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "7agy4odg6il4",
+     "category": "Phrase",
+     "phrase": "ASK FOR HELP",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "5aq3ffxlsq4e",
+     "category": "Thing",
+     "phrase": "A KEPT PROMISE",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "f135a1wswscb",
+     "category": "Phrase",
+     "phrase": "LEARN AND MOVE FORWARD",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "emegrejtjpkv",
+     "category": "Thing",
+     "phrase": "INTEGRITY",
+     "sets": [
+      "Personal Responsibility",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "i41iuyguz91y",
+     "category": "Phrase",
+     "phrase": "DO WHAT YOU SAY",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "0w8w11hye516",
+     "category": "Thing",
+     "phrase": "A FRESH START",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "q5zdztdyxmel",
+     "category": "Event",
+     "phrase": "SHOWING UP ON TIME",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "51a9okizi9fg",
+     "category": "Phrase",
+     "phrase": "WRITE YOUR OWN STORY",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "icutf54oqwx7",
+     "category": "Phrase",
+     "phrase": "NO MORE EXCUSES",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "egvk6zm9yofi",
+     "category": "Thing",
+     "phrase": "A DAILY COMMITMENT",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "my11rtf5i1ai",
+     "category": "Phrase",
+     "phrase": "REST IS PART OF THE WORK",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "lxwbq1r08hha",
+     "category": "Event",
+     "phrase": "A WALK IN THE PARK",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "cz4bsp33w2o0",
+     "category": "Thing",
+     "phrase": "A JIGSAW PUZZLE",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "qmqa0kg4js9m",
+     "category": "Event",
+     "phrase": "GAME NIGHT WITH FRIENDS",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "zcn1946wjm0p",
+     "category": "Event",
+     "phrase": "PAINTING A PICTURE",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "c3o359wtrexy",
+     "category": "Thing",
+     "phrase": "A GOOD BOOK",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "64x0hutz42t0",
+     "category": "Event",
+     "phrase": "STARGAZING",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "nb2i2jndqoll",
+     "category": "Event",
+     "phrase": "PLANTING A GARDEN",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "ihrqe0z6hw8z",
+     "category": "Phrase",
+     "phrase": "FIND YOUR FLOW",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "ghez5cteo5pg",
+     "category": "Event",
+     "phrase": "BAKING COOKIES",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9d09q2pe3qw3",
+     "category": "Thing",
+     "phrase": "A NEW HOBBY",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "w67dirms74oe",
+     "category": "Event",
+     "phrase": "LISTENING TO MUSIC",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "d3bcqpgkprxf",
+     "category": "Phrase",
+     "phrase": "TIME WELL SPENT",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9hnevoe93v1i",
+     "category": "Event",
+     "phrase": "BIRDWATCHING",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "aa5bsyf19kpv",
+     "category": "Thing",
+     "phrase": "A CROSSWORD",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "vfg5m1f2ynsw",
+     "category": "Phrase",
+     "phrase": "FUN IS GOOD FOR YOU",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "jtyv8u4eoapo",
+     "category": "Phrase",
+     "phrase": "YOU DESERVE RESPECT",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "a80oosgnrbpf",
+     "category": "Phrase",
+     "phrase": "PROTECT YOUR PEACE",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "xxmo2z4qrbd1",
+     "category": "Thing",
+     "phrase": "A SUPPORT NETWORK",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "5jgtsny4jhdw",
+     "category": "Thing",
+     "phrase": "MUTUAL RESPECT",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "9qt8klt16ny7",
+     "category": "Phrase",
+     "phrase": "TRUST YOUR GUT",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "susomxz7mczp",
+     "category": "Thing",
+     "phrase": "A GREEN FLAG",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "trurswdgfd60",
+     "category": "Phrase",
+     "phrase": "FENCES WITH GATES",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "aevvku7g0quz",
+     "category": "Phrase",
+     "phrase": "YOU ARE NOT ALONE",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "he87x27hlt4z",
+     "category": "Thing",
+     "phrase": "A TRUE FRIEND",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "w069mvnevz98",
+     "category": "Phrase",
+     "phrase": "CHOOSE YOURSELF",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "x55xtevo1nns",
+     "category": "Thing",
+     "phrase": "SELF WORTH",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "38md0xedw3ip",
+     "category": "Phrase",
+     "phrase": "SAFE TO BE YOURSELF",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "agmruxlfdqqk",
+     "category": "Thing",
+     "phrase": "A KIND WORD",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "m9mxzbf9vlyd",
+     "category": "Phrase",
+     "phrase": "BUILD EACH OTHER UP",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "khaj9ex0qshc",
+     "category": "Phrase",
+     "phrase": "KNOW WHAT MATTERS",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "po0jv0d8n3ze",
+     "category": "Thing",
+     "phrase": "AN INNER COMPASS",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "whifhw7i4rxq",
+     "category": "Thing",
+     "phrase": "HONESTY AND KINDNESS",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "5t9epe10a827",
+     "category": "Phrase",
+     "phrase": "LIVE YOUR VALUES",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "6ybu5dfe1e8s",
+     "category": "Thing",
+     "phrase": "COURAGE",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "nf41uw1u6mrm",
+     "category": "Phrase",
+     "phrase": "TRUE TO YOURSELF",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "vr5f9cveonfl",
+     "category": "Thing",
+     "phrase": "FAMILY AND FRIENDSHIP",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "us2gymo0896t",
+     "category": "Thing",
+     "phrase": "PEACE OF MIND",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "q44ukgmhhmx9",
+     "category": "Phrase",
+     "phrase": "WALK THE TALK",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "fg4dini7lnml",
+     "category": "Thing",
+     "phrase": "COMPASSION",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "rlvouneoqmw6",
+     "category": "Phrase",
+     "phrase": "STAND FOR SOMETHING",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "e2q3flij9j4y",
+     "category": "Thing",
+     "phrase": "A SENSE OF PURPOSE",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "mlmhnqany07z",
+     "category": "Thing",
+     "phrase": "PERSONAL GROWTH",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "1wowjpwwm5la",
+     "category": "Phrase",
+     "phrase": "ACTIONS SPEAK LOUDER",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "1ecvvflllk46",
+     "category": "Thing",
+     "phrase": "A QUIET BEACH AT SUNRISE",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "8gcdt68to11c",
+     "category": "Thing",
+     "phrase": "A COZY BLANKET",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "7gqqvq6w703a",
+     "category": "Phrase",
+     "phrase": "CLOSE YOUR EYES",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "mpjgdec5rqpc",
+     "category": "Thing",
+     "phrase": "A FOREST TRAIL",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "gyrmvq303zu6",
+     "category": "Thing",
+     "phrase": "GRANDMA'S KITCHEN",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "x3ufqvvitlbd",
+     "category": "Phrase",
+     "phrase": "PEACE AND QUIET",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "dz3buhyuttkh",
+     "category": "Thing",
+     "phrase": "A HAMMOCK IN THE SHADE",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "cho4fup1fu3k",
+     "category": "Event",
+     "phrase": "WATCHING THE SUNSET",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "39pi2lsjgkr1",
+     "category": "Thing",
+     "phrase": "A MOUNTAIN LAKE",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "1w5x3j6v8pzr",
+     "category": "Phrase",
+     "phrase": "TAKE ME AWAY",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "j908evkll5wx",
+     "category": "Thing",
+     "phrase": "A FIELD OF FLOWERS",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "tg76o8ejlh9g",
+     "category": "Event",
+     "phrase": "LISTENING TO THE RAIN",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "tzxgshpphnau",
+     "category": "Thing",
+     "phrase": "A CAMPFIRE UNDER THE STARS",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "32kjfz2pducy",
+     "category": "Phrase",
+     "phrase": "HOME SWEET HOME",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "gsxtn6vf8mbw",
+     "category": "Thing",
+     "phrase": "A WARM CUP OF COCOA",
+     "sets": [
+      "Your Happy Place"
+     ]
     }
    ],
    "words": [
@@ -10866,6 +14353,777 @@ window.GS_MY_CONTENT = {
      "hint": "AI for Good",
      "sets": [
       "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "09zkxhh6zddw",
+     "word": "PEACE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution",
+      "Toxic Relationships",
+      "Your Values",
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "9me3cfmhd1ub",
+     "word": "TALKS",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "7d8tto0v84sy",
+     "word": "AGREE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "ez66f7v7waw9",
+     "word": "PAUSE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "ttww7wt8fjsr",
+     "word": "SPACE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "0alq2jsmxrey",
+     "word": "HEARD",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "u3wmin8fl002",
+     "word": "TRUCE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "fvabp7ktsstf",
+     "word": "SHARE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "xtkjug08oas3",
+     "word": "BREAK",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "2x1nx3504gqc",
+     "word": "TRUST",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution",
+      "Personal Responsibility",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "if1d6p3bcgpy",
+     "word": "SORRY",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "htdg7u5q7ljk",
+     "word": "UNITE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "j9ovtxp37p14",
+     "word": "CHILL",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "bo5pee3s88am",
+     "word": "DANCE",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "sjegraol958k",
+     "word": "HIKES",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "owtwxdtzphka",
+     "word": "SWIMS",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "secdhjn3a88g",
+     "word": "BIKES",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "nmes5hzm9xlv",
+     "word": "SPORT",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "zbdrhi0cz4rz",
+     "word": "CLIMB",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "oh9grhjcvnc7",
+     "word": "SWEAT",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ki1xgl7gzd1x",
+     "word": "LUNGE",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "luvip0by1ax6",
+     "word": "SQUAT",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "0ak76zef4fcv",
+     "word": "HEART",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "w8blfvx8x9gy",
+     "word": "MOVES",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "f0gyatfqkui2",
+     "word": "STEPS",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "06pad3vbgtjd",
+     "word": "FRUIT",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "zi0lh7oqaf10",
+     "word": "WATER",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rg9ka9xux7ez",
+     "word": "BEANS",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "5lwlpx5yk3ut",
+     "word": "GRAIN",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "qamwywrl6em3",
+     "word": "SALAD",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "yvspyvwy11af",
+     "word": "APPLE",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "5dyygxtvgxvd",
+     "word": "LEMON",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ze1ia9n2zj28",
+     "word": "BERRY",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rfon65trp8yw",
+     "word": "MEALS",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "m7tcargcyfau",
+     "word": "OLIVE",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "yseptggi7onk",
+     "word": "ONION",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "fdf3untj7yk3",
+     "word": "PEACH",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ouovf43f5alr",
+     "word": "TOAST",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rumnglnljjld",
+     "word": "FIBER",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "13dd41qpuy34",
+     "word": "CHOSE",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "2sl1jdqoloxe",
+     "word": "PEERS",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "zrfwnv42hb7x",
+     "word": "BRAVE",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "g5nu1to49mpz",
+     "word": "GUARD",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "n7v0bn9f29e2",
+     "word": "VOICE",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "q0hf5lpgu6c1",
+     "word": "FOCUS",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "hjt1vozeniz5",
+     "word": "LIMIT",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "fx2m4ifewk0l",
+     "word": "PROUD",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "qmiyk2oy4f43",
+     "word": "STAND",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "sxtd3mwuxem2",
+     "word": "HONOR",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Personal Responsibility",
+      "Toxic Relationships",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "sfn6ssmffznw",
+     "word": "OWNER",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "6spcy1xxmloe",
+     "word": "AMEND",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "unncg89vzs3m",
+     "word": "LEARN",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "fkbuepmwsrwa",
+     "word": "GROWS",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "3v0l9djerre7",
+     "word": "SHOWS",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "7fbn786067z3",
+     "word": "KEEPS",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "7zpb86b0507t",
+     "word": "VALUE",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility",
+      "Toxic Relationships",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "jsa7ozmz5sbg",
+     "word": "EARNS",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "wo8k6nnbtubb",
+     "word": "FIXED",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "faunbeinjj9a",
+     "word": "HOBBY",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "gjkel58n8y8p",
+     "word": "RELAX",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure",
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "jaedr7jwudsw",
+     "word": "GAMES",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "zwd7ygcozncn",
+     "word": "MUSIC",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "v9g2iveaaacf",
+     "word": "PAINT",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "yywbueif3mcv",
+     "word": "CRAFT",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "vz40csmopbng",
+     "word": "BOOKS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "b43aeg54rm9h",
+     "word": "PARKS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "plc0x3adzgia",
+     "word": "DRAWS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "qgikv3o7a6j1",
+     "word": "PLAYS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "2b2e54nskyqq",
+     "word": "SINGS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "kcm0hovdr3my",
+     "word": "FLOWS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "q6civ6x00fzp",
+     "word": "CHESS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "89c9g25ku8s1",
+     "word": "WORTH",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "i0f73a7e5ot7",
+     "word": "CARES",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "7qz5g8ui7wqj",
+     "word": "LOYAL",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "8nf1esx595qn",
+     "word": "GATES",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "e0j1ntgy94qy",
+     "word": "HEARS",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "q3nftf3ws7bi",
+     "word": "EQUAL",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "wx4q7nredpg5",
+     "word": "BONDS",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "53yffb47gr4f",
+     "word": "TRUTH",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "2ras6810j6ev",
+     "word": "FAITH",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "7tvg4semfph7",
+     "word": "HUMOR",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "f461z18typ8h",
+     "word": "SERVE",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "2m8hhf9ky692",
+     "word": "ETHIC",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "iyb5duyciwo2",
+     "word": "BEACH",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "hv6hax2ki4p9",
+     "word": "OCEAN",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "j022o96ap6ju",
+     "word": "QUIET",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "kfpk07tugtxn",
+     "word": "DREAM",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "9ysz55sd9bwl",
+     "word": "SUNNY",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "tp75ks90ns84",
+     "word": "WAVES",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "2sqmx416ecqa",
+     "word": "HAPPY",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "oeyry4znmqgc",
+     "word": "SMILE",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "mnx2fvoke99m",
+     "word": "CLOUD",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "72c2ua4l84vl",
+     "word": "SHORE",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "gcqlnwzzibf0",
+     "word": "BLISS",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
      ]
     }
    ],
@@ -13949,6 +18207,2370 @@ window.GS_MY_CONTENT = {
      ],
      "sets": [
       "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "t1m77benweiq",
+     "word": "a handshake",
+     "level": "easy",
+     "banned": [
+      "shake",
+      "hands",
+      "deal",
+      "greet"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "cxchx2qsp9d1",
+     "word": "a stop sign",
+     "level": "easy",
+     "banned": [
+      "red",
+      "stop",
+      "octagon",
+      "traffic"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "0v0b3k77ybsn",
+     "word": "a peace sign",
+     "level": "easy",
+     "banned": [
+      "peace",
+      "hippie",
+      "fingers",
+      "symbol"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "btrybtlx79in",
+     "word": "an ear",
+     "level": "easy",
+     "banned": [
+      "hear",
+      "listen",
+      "head",
+      "sound"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "3wj5h7yggt29",
+     "word": "a bridge",
+     "level": "easy",
+     "banned": [
+      "river",
+      "cross",
+      "over",
+      "road"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "016ajedqo87n",
+     "word": "a white flag",
+     "level": "easy",
+     "banned": [
+      "surrender",
+      "wave",
+      "give up",
+      "flag"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "hd660ocknd1m",
+     "word": "a heart",
+     "level": "easy",
+     "banned": [
+      "love",
+      "valentine",
+      "red",
+      "beat"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Toxic Relationships",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "qi5i4egre9uo",
+     "word": "a clock",
+     "level": "easy",
+     "banned": [
+      "time",
+      "tick",
+      "hands",
+      "hour"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "n72oe7mlnn02",
+     "word": "a scale",
+     "level": "easy",
+     "banned": [
+      "balance",
+      "weigh",
+      "justice",
+      "even"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "7cot95k6k4bm",
+     "word": "a hug",
+     "level": "easy",
+     "banned": [
+      "arms",
+      "squeeze",
+      "embrace",
+      "cuddle"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "x3b0hw0ammuz",
+     "word": "taking a deep breath",
+     "level": "medium",
+     "banned": [
+      "breathe",
+      "inhale",
+      "air",
+      "lungs"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "vy09og8vaqav",
+     "word": "counting to ten",
+     "level": "medium",
+     "banned": [
+      "count",
+      "numbers",
+      "ten",
+      "fingers"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "0gtn46qc3a1l",
+     "word": "walking away to cool off",
+     "level": "medium",
+     "banned": [
+      "leave",
+      "walk",
+      "cool",
+      "calm"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "8hriul3nopck",
+     "word": "two people talking",
+     "level": "medium",
+     "banned": [
+      "chat",
+      "conversation",
+      "speak",
+      "words"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "o122k04b0i48",
+     "word": "saying sorry",
+     "level": "medium",
+     "banned": [
+      "apologize",
+      "sorry",
+      "forgive",
+      "oops"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "3sy25hh227y9",
+     "word": "a referee",
+     "level": "medium",
+     "banned": [
+      "sports",
+      "whistle",
+      "ref",
+      "stripes"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "zay1eavtwmgv",
+     "word": "meeting in the middle",
+     "level": "medium",
+     "banned": [
+      "middle",
+      "halfway",
+      "compromise",
+      "center"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "g64bnf0dkzv4",
+     "word": "shaking hands on a deal",
+     "level": "medium",
+     "banned": [
+      "shake",
+      "hands",
+      "agree",
+      "deal"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "y1655otcbz9h",
+     "word": "a tug of war",
+     "level": "medium",
+     "banned": [
+      "rope",
+      "pull",
+      "teams",
+      "war"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "hldefex9zmxa",
+     "word": "a thumbs up",
+     "level": "easy",
+     "banned": [
+      "thumb",
+      "good",
+      "okay",
+      "like"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "e1og6x8pqa7j",
+     "word": "a sneaker",
+     "level": "easy",
+     "banned": [
+      "shoe",
+      "run",
+      "laces",
+      "foot"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "b02smyqyzmxk",
+     "word": "a bicycle",
+     "level": "easy",
+     "banned": [
+      "bike",
+      "pedal",
+      "wheels",
+      "ride"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "1ds102zmhet6",
+     "word": "a jump rope",
+     "level": "easy",
+     "banned": [
+      "jump",
+      "rope",
+      "skip",
+      "hop"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ax3x86fgc2d8",
+     "word": "a soccer ball",
+     "level": "easy",
+     "banned": [
+      "kick",
+      "goal",
+      "ball",
+      "football"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "b7gu2ix44bgo",
+     "word": "a swimming pool",
+     "level": "easy",
+     "banned": [
+      "swim",
+      "water",
+      "dive",
+      "splash"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "5natvoonxujx",
+     "word": "a dumbbell",
+     "level": "easy",
+     "banned": [
+      "weights",
+      "lift",
+      "gym",
+      "heavy"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "3uexuj3t3zx8",
+     "word": "a yoga mat",
+     "level": "easy",
+     "banned": [
+      "yoga",
+      "mat",
+      "stretch",
+      "roll"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "5vd3ll84tzk1",
+     "word": "a basketball hoop",
+     "level": "easy",
+     "banned": [
+      "hoop",
+      "net",
+      "dunk",
+      "shoot"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "93risiecm6my",
+     "word": "a mountain",
+     "level": "easy",
+     "banned": [
+      "hike",
+      "peak",
+      "climb",
+      "snow"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "qunn13m4jx8y",
+     "word": "a water bottle",
+     "level": "easy",
+     "banned": [
+      "drink",
+      "water",
+      "bottle",
+      "thirsty"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "x4snskcwdivu",
+     "word": "doing jumping jacks",
+     "level": "medium",
+     "banned": [
+      "jump",
+      "jacks",
+      "arms",
+      "exercise"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "xyndsvtglbjm",
+     "word": "touching your toes",
+     "level": "medium",
+     "banned": [
+      "toes",
+      "stretch",
+      "bend",
+      "reach"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ylbt3ouoexig",
+     "word": "walking a dog",
+     "level": "medium",
+     "banned": [
+      "dog",
+      "leash",
+      "walk",
+      "pet"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "a692tlqwkiza",
+     "word": "dancing",
+     "level": "medium",
+     "banned": [
+      "dance",
+      "music",
+      "party",
+      "moves"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "nq1qf1ez408x",
+     "word": "raking leaves",
+     "level": "medium",
+     "banned": [
+      "rake",
+      "leaves",
+      "fall",
+      "yard"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "hj1ft4n5dc69",
+     "word": "climbing stairs",
+     "level": "medium",
+     "banned": [
+      "stairs",
+      "steps",
+      "up",
+      "climb"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "89q7x0cpk60k",
+     "word": "riding a bike",
+     "level": "medium",
+     "banned": [
+      "bike",
+      "pedal",
+      "ride",
+      "wheels"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "d1vckpmugd4a",
+     "word": "doing a push-up",
+     "level": "medium",
+     "banned": [
+      "push",
+      "floor",
+      "arms",
+      "exercise"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "glzdcpndh9il",
+     "word": "throwing a frisbee",
+     "level": "medium",
+     "banned": [
+      "frisbee",
+      "throw",
+      "catch",
+      "disc"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "66udoac7uipn",
+     "word": "tai chi",
+     "level": "medium",
+     "banned": [
+      "slow",
+      "martial",
+      "china",
+      "balance"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "aoby2fo877of",
+     "word": "an apple",
+     "level": "easy",
+     "banned": [
+      "fruit",
+      "red",
+      "tree",
+      "core"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "woy3z1247tcv",
+     "word": "a banana",
+     "level": "easy",
+     "banned": [
+      "yellow",
+      "peel",
+      "monkey",
+      "fruit"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "knp0pi58q1kd",
+     "word": "a carrot",
+     "level": "easy",
+     "banned": [
+      "orange",
+      "rabbit",
+      "vegetable",
+      "root"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "fzvb61mo1bdp",
+     "word": "a glass of water",
+     "level": "easy",
+     "banned": [
+      "drink",
+      "glass",
+      "water",
+      "thirsty"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ysirq9zib39o",
+     "word": "an egg",
+     "level": "easy",
+     "banned": [
+      "chicken",
+      "yolk",
+      "shell",
+      "breakfast"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "jm3o74zy6p7k",
+     "word": "a fish",
+     "level": "easy",
+     "banned": [
+      "swim",
+      "ocean",
+      "fins",
+      "sea"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "6dgqatgbsm84",
+     "word": "broccoli",
+     "level": "easy",
+     "banned": [
+      "green",
+      "tree",
+      "vegetable",
+      "florets"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "w6kfkexyivjr",
+     "word": "a sandwich",
+     "level": "easy",
+     "banned": [
+      "bread",
+      "lunch",
+      "slice",
+      "sub"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "j62i6d81aiex",
+     "word": "a bowl of cereal",
+     "level": "easy",
+     "banned": [
+      "milk",
+      "spoon",
+      "breakfast",
+      "bowl"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "56raxd4zzuco",
+     "word": "a pineapple",
+     "level": "easy",
+     "banned": [
+      "fruit",
+      "tropical",
+      "spiky",
+      "yellow"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "e6gmzltzjakq",
+     "word": "making a salad",
+     "level": "medium",
+     "banned": [
+      "lettuce",
+      "bowl",
+      "toss",
+      "vegetables"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ika9nu23kyu3",
+     "word": "grocery shopping",
+     "level": "medium",
+     "banned": [
+      "store",
+      "cart",
+      "buy",
+      "food"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "fozyaqubfn4m",
+     "word": "reading a food label",
+     "level": "medium",
+     "banned": [
+      "label",
+      "read",
+      "package",
+      "nutrition"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "vcxzv8ds805k",
+     "word": "cooking dinner",
+     "level": "medium",
+     "banned": [
+      "cook",
+      "stove",
+      "pan",
+      "meal"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "953andjw07p0",
+     "word": "a picnic",
+     "level": "medium",
+     "banned": [
+      "blanket",
+      "basket",
+      "park",
+      "lunch"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "zbkc71v4c9vg",
+     "word": "slicing a watermelon",
+     "level": "medium",
+     "banned": [
+      "watermelon",
+      "knife",
+      "slice",
+      "seeds"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "bmptfiaj131h",
+     "word": "a farmers market",
+     "level": "medium",
+     "banned": [
+      "farm",
+      "market",
+      "stand",
+      "produce"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "hxz6ba3jgxro",
+     "word": "peeling an orange",
+     "level": "medium",
+     "banned": [
+      "orange",
+      "peel",
+      "citrus",
+      "fruit"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "8z7wicliyepx",
+     "word": "making a smoothie",
+     "level": "medium",
+     "banned": [
+      "blender",
+      "fruit",
+      "drink",
+      "blend"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rz1v64u4alki",
+     "word": "a lunchbox",
+     "level": "easy",
+     "banned": [
+      "lunch",
+      "box",
+      "school",
+      "pack"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "5c25y2lofqap",
+     "word": "a shield",
+     "level": "easy",
+     "banned": [
+      "protect",
+      "knight",
+      "armor",
+      "defend"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "82ou6s8bmyvl",
+     "word": "a phone",
+     "level": "easy",
+     "banned": [
+      "call",
+      "text",
+      "cell",
+      "ring"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "7k7lljw3e0hl",
+     "word": "a fence with a gate",
+     "level": "easy",
+     "banned": [
+      "fence",
+      "gate",
+      "yard",
+      "boundary"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "9sud42azlgjp",
+     "word": "a crowd",
+     "level": "easy",
+     "banned": [
+      "people",
+      "group",
+      "many",
+      "bunch"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "kjneeu1n0itz",
+     "word": "a door",
+     "level": "easy",
+     "banned": [
+      "open",
+      "knob",
+      "exit",
+      "close"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "lc0w7mb7v1um",
+     "word": "a compass",
+     "level": "easy",
+     "banned": [
+      "north",
+      "direction",
+      "needle",
+      "navigate"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "9v2nu1kp6rr5",
+     "word": "a lighthouse",
+     "level": "easy",
+     "banned": [
+      "light",
+      "ocean",
+      "beacon",
+      "tower"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "umptj3uw1rv8",
+     "word": "a thumbs down",
+     "level": "easy",
+     "banned": [
+      "thumb",
+      "no",
+      "bad",
+      "dislike"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "vne0l2cxtt86",
+     "word": "a sheep",
+     "level": "easy",
+     "banned": [
+      "wool",
+      "baa",
+      "flock",
+      "farm"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "mn9xnlao68lo",
+     "word": "walking away",
+     "level": "medium",
+     "banned": [
+      "walk",
+      "leave",
+      "away",
+      "exit"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "84jq7sqi0wit",
+     "word": "saying no",
+     "level": "medium",
+     "banned": [
+      "no",
+      "refuse",
+      "shake",
+      "head"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "bphsm03y61xp",
+     "word": "calling a friend",
+     "level": "medium",
+     "banned": [
+      "phone",
+      "call",
+      "friend",
+      "talk"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "7vb98ec0e24s",
+     "word": "following the crowd",
+     "level": "medium",
+     "banned": [
+      "follow",
+      "crowd",
+      "group",
+      "sheep"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "djipdiyw88x6",
+     "word": "standing up for yourself",
+     "level": "medium",
+     "banned": [
+      "stand",
+      "brave",
+      "yourself",
+      "speak"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "qlzno18gytpr",
+     "word": "a fork in the road",
+     "level": "medium",
+     "banned": [
+      "fork",
+      "road",
+      "choice",
+      "split"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "g1u6ga5bt2gn",
+     "word": "swimming upstream",
+     "level": "medium",
+     "banned": [
+      "swim",
+      "fish",
+      "river",
+      "against"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "km7jhhp7hte1",
+     "word": "crossing your arms",
+     "level": "medium",
+     "banned": [
+      "arms",
+      "cross",
+      "fold",
+      "no"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "dhpyefsvz7tk",
+     "word": "a high five",
+     "level": "easy",
+     "banned": [
+      "hand",
+      "five",
+      "slap",
+      "celebrate"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "9af7bp76ckhb",
+     "word": "a key",
+     "level": "easy",
+     "banned": [
+      "lock",
+      "door",
+      "open",
+      "keychain"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "rodokmqcorh0",
+     "word": "a promise ring",
+     "level": "easy",
+     "banned": [
+      "ring",
+      "finger",
+      "promise",
+      "jewelry"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "vn5b7dn7bfn0",
+     "word": "an alarm clock",
+     "level": "easy",
+     "banned": [
+      "alarm",
+      "wake",
+      "clock",
+      "ring"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "p5adnlorbxh9",
+     "word": "a calendar",
+     "level": "easy",
+     "banned": [
+      "date",
+      "month",
+      "days",
+      "schedule"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "vj1y1m41jxsx",
+     "word": "a mirror",
+     "level": "easy",
+     "banned": [
+      "reflection",
+      "look",
+      "glass",
+      "face"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "m2q0km9u7epd",
+     "word": "a checkmark",
+     "level": "easy",
+     "banned": [
+      "check",
+      "done",
+      "tick",
+      "correct"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "i9kj8owxe3lf",
+     "word": "a ladder",
+     "level": "easy",
+     "banned": [
+      "climb",
+      "steps",
+      "rungs",
+      "up"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "mjh84l2gacql",
+     "word": "a steering wheel",
+     "level": "easy",
+     "banned": [
+      "drive",
+      "car",
+      "steer",
+      "wheel"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ki2trp06wuqo",
+     "word": "a seed growing",
+     "level": "easy",
+     "banned": [
+      "plant",
+      "grow",
+      "sprout",
+      "soil"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "l0jv4lpgr8zt",
+     "word": "an eraser",
+     "level": "easy",
+     "banned": [
+      "erase",
+      "pencil",
+      "rub",
+      "mistake"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "foig550gi458",
+     "word": "keeping a promise",
+     "level": "medium",
+     "banned": [
+      "promise",
+      "keep",
+      "pinky",
+      "swear"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "e3nrbbmtxl0n",
+     "word": "cleaning your room",
+     "level": "medium",
+     "banned": [
+      "clean",
+      "room",
+      "tidy",
+      "mess"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "nyfvv6jvpjgu",
+     "word": "showing up on time",
+     "level": "medium",
+     "banned": [
+      "late",
+      "time",
+      "clock",
+      "early"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ifg1iwky8k7f",
+     "word": "fixing something you broke",
+     "level": "medium",
+     "banned": [
+      "fix",
+      "broken",
+      "repair",
+      "glue"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "mubx75xh5ymn",
+     "word": "saying I'm sorry",
+     "level": "medium",
+     "banned": [
+      "sorry",
+      "apologize",
+      "oops",
+      "forgive"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "92m0odn9yur2",
+     "word": "watering a plant",
+     "level": "medium",
+     "banned": [
+      "water",
+      "plant",
+      "grow",
+      "can"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "x8jr3yf9a5v1",
+     "word": "feeding a pet",
+     "level": "medium",
+     "banned": [
+      "pet",
+      "food",
+      "bowl",
+      "dog"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "nc4fffpcom3x",
+     "word": "making your bed",
+     "level": "medium",
+     "banned": [
+      "bed",
+      "pillow",
+      "sheets",
+      "blanket"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "mal2xzy28vjx",
+     "word": "taking out the trash",
+     "level": "medium",
+     "banned": [
+      "trash",
+      "garbage",
+      "bin",
+      "can"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "nksbscgyyzj4",
+     "word": "a pinky promise",
+     "level": "easy",
+     "banned": [
+      "pinky",
+      "promise",
+      "finger",
+      "swear"
+     ],
+     "sets": [
+      "Personal Responsibility",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "fpsjyyxz9jl0",
+     "word": "a paintbrush",
+     "level": "easy",
+     "banned": [
+      "paint",
+      "brush",
+      "art",
+      "canvas"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "o89m6mdfr32b",
+     "word": "a guitar",
+     "level": "easy",
+     "banned": [
+      "music",
+      "strings",
+      "play",
+      "rock"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "uzqppycsrs4y",
+     "word": "a puzzle piece",
+     "level": "easy",
+     "banned": [
+      "puzzle",
+      "jigsaw",
+      "piece",
+      "fit"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "6h6tjqqvur84",
+     "word": "a hammock",
+     "level": "easy",
+     "banned": [
+      "swing",
+      "relax",
+      "trees",
+      "nap"
+     ],
+     "sets": [
+      "The Science of Leisure",
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "2d3ccje1vuef",
+     "word": "a kite",
+     "level": "easy",
+     "banned": [
+      "fly",
+      "wind",
+      "string",
+      "sky"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "rnxz38yfqm19",
+     "word": "a fishing pole",
+     "level": "easy",
+     "banned": [
+      "fish",
+      "hook",
+      "lake",
+      "cast"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9vizrdbt002i",
+     "word": "a board game",
+     "level": "easy",
+     "banned": [
+      "dice",
+      "board",
+      "game",
+      "play"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "gnnzago4z7nv",
+     "word": "a book",
+     "level": "easy",
+     "banned": [
+      "read",
+      "pages",
+      "library",
+      "story"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "sy7yfsu6xuw0",
+     "word": "headphones",
+     "level": "easy",
+     "banned": [
+      "music",
+      "ears",
+      "listen",
+      "sound"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "rrngmrqxpk5z",
+     "word": "a telescope",
+     "level": "easy",
+     "banned": [
+      "stars",
+      "space",
+      "look",
+      "sky"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "b4ny8uuaiyo0",
+     "word": "knitting",
+     "level": "medium",
+     "banned": [
+      "yarn",
+      "needles",
+      "sweater",
+      "knit"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "5cvi1713l894",
+     "word": "birdwatching",
+     "level": "medium",
+     "banned": [
+      "birds",
+      "binoculars",
+      "watch",
+      "feathers"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "b0k9vn1mv8g3",
+     "word": "baking cookies",
+     "level": "medium",
+     "banned": [
+      "bake",
+      "oven",
+      "cookies",
+      "dough"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "fz4awe4d9dc1",
+     "word": "planting flowers",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "flowers",
+      "garden",
+      "dirt"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "mzys16hx0fj4",
+     "word": "taking a nap",
+     "level": "medium",
+     "banned": [
+      "sleep",
+      "nap",
+      "bed",
+      "tired"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "0czac8s93qh8",
+     "word": "doing a puzzle",
+     "level": "medium",
+     "banned": [
+      "puzzle",
+      "pieces",
+      "jigsaw",
+      "fit"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "19pymj3u1mlo",
+     "word": "playing cards",
+     "level": "medium",
+     "banned": [
+      "cards",
+      "deck",
+      "poker",
+      "deal"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "ocmy6s9no1ui",
+     "word": "stargazing",
+     "level": "medium",
+     "banned": [
+      "stars",
+      "sky",
+      "night",
+      "look"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9d7zavb459st",
+     "word": "a picnic in the park",
+     "level": "medium",
+     "banned": [
+      "picnic",
+      "blanket",
+      "park",
+      "basket"
+     ],
+     "sets": [
+      "The Science of Leisure",
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "t9pea0hhbb35",
+     "word": "roasting marshmallows",
+     "level": "medium",
+     "banned": [
+      "campfire",
+      "marshmallow",
+      "stick",
+      "s'mores"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "b837xsv378ng",
+     "word": "a red flag",
+     "level": "easy",
+     "banned": [
+      "flag",
+      "red",
+      "warning",
+      "pole"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "zq30q5dg6u9k",
+     "word": "a green flag",
+     "level": "easy",
+     "banned": [
+      "flag",
+      "green",
+      "good",
+      "pole"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "g35m6fy5tpcg",
+     "word": "an umbrella",
+     "level": "easy",
+     "banned": [
+      "rain",
+      "shelter",
+      "cover",
+      "open"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "0bmbosngdlz3",
+     "word": "an eggshell",
+     "level": "easy",
+     "banned": [
+      "egg",
+      "shell",
+      "crack",
+      "chicken"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "3qmulg9iplj1",
+     "word": "a puppet on strings",
+     "level": "easy",
+     "banned": [
+      "puppet",
+      "strings",
+      "control",
+      "marionette"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "wy4fp3ygt99e",
+     "word": "a broken chain",
+     "level": "easy",
+     "banned": [
+      "chain",
+      "break",
+      "free",
+      "links"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "1bdif7dlckpc",
+     "word": "a teddy bear",
+     "level": "easy",
+     "banned": [
+      "bear",
+      "stuffed",
+      "toy",
+      "hug"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "xy01aq9ydarz",
+     "word": "walking on eggshells",
+     "level": "medium",
+     "banned": [
+      "eggs",
+      "walk",
+      "careful",
+      "tiptoe"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "bn5osr8sj68g",
+     "word": "two people hugging",
+     "level": "medium",
+     "banned": [
+      "hug",
+      "embrace",
+      "arms",
+      "love"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "714onew1yc0x",
+     "word": "closing a door",
+     "level": "medium",
+     "banned": [
+      "door",
+      "close",
+      "shut",
+      "exit"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "opxjtsq1sl2k",
+     "word": "a bird leaving a cage",
+     "level": "medium",
+     "banned": [
+      "bird",
+      "cage",
+      "free",
+      "fly"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "mg004r4pi3bp",
+     "word": "holding hands",
+     "level": "medium",
+     "banned": [
+      "hands",
+      "hold",
+      "couple",
+      "together"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "lyhz9kfbdxsj",
+     "word": "a group of friends",
+     "level": "medium",
+     "banned": [
+      "friends",
+      "group",
+      "people",
+      "together"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "k2bdv0lr74u7",
+     "word": "putting up a fence",
+     "level": "medium",
+     "banned": [
+      "fence",
+      "build",
+      "yard",
+      "post"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "o2bhsjongcg1",
+     "word": "a lifeguard",
+     "level": "medium",
+     "banned": [
+      "pool",
+      "rescue",
+      "whistle",
+      "beach"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "1u6z1qxzvalr",
+     "word": "planting a garden",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "garden",
+      "grow",
+      "seeds"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "r5m3aw7i39qb",
+     "word": "a trophy",
+     "level": "easy",
+     "banned": [
+      "win",
+      "award",
+      "cup",
+      "prize"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "q0vd20ofq4kf",
+     "word": "a family",
+     "level": "easy",
+     "banned": [
+      "mom",
+      "dad",
+      "kids",
+      "home"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "i031726nl8h3",
+     "word": "a star",
+     "level": "easy",
+     "banned": [
+      "shine",
+      "sky",
+      "twinkle",
+      "night"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "kquar43o79wp",
+     "word": "a tree with roots",
+     "level": "easy",
+     "banned": [
+      "tree",
+      "roots",
+      "ground",
+      "trunk"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "tx7fvzmetm0y",
+     "word": "a lion",
+     "level": "easy",
+     "banned": [
+      "roar",
+      "king",
+      "mane",
+      "jungle"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "jzaor51soqps",
+     "word": "a house",
+     "level": "easy",
+     "banned": [
+      "home",
+      "roof",
+      "door",
+      "live"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "287o27frwlmw",
+     "word": "a dove",
+     "level": "easy",
+     "banned": [
+      "bird",
+      "peace",
+      "white",
+      "fly"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "m1lrlm11pa0u",
+     "word": "telling the truth",
+     "level": "medium",
+     "banned": [
+      "truth",
+      "honest",
+      "lie",
+      "tell"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "kaeo4q2g7l3n",
+     "word": "helping a neighbor",
+     "level": "medium",
+     "banned": [
+      "help",
+      "neighbor",
+      "kind",
+      "next door"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "8c5eu510l1ug",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "banned": [
+      "climb",
+      "mountain",
+      "peak",
+      "top"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "v38vncqrkaq7",
+     "word": "volunteering",
+     "level": "medium",
+     "banned": [
+      "volunteer",
+      "help",
+      "free",
+      "community"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "w466ecevhebp",
+     "word": "sharing your lunch",
+     "level": "medium",
+     "banned": [
+      "share",
+      "lunch",
+      "food",
+      "give"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "ud80m2ed4gqy",
+     "word": "a map with an X",
+     "level": "medium",
+     "banned": [
+      "treasure",
+      "map",
+      "pirate",
+      "X"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "yx9qk8mmhk9i",
+     "word": "planting a tree",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "tree",
+      "dig",
+      "grow"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "bldab1clfsa5",
+     "word": "standing tall",
+     "level": "medium",
+     "banned": [
+      "stand",
+      "tall",
+      "proud",
+      "straight"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "uj11f2oopu3w",
+     "word": "a crown",
+     "level": "easy",
+     "banned": [
+      "king",
+      "queen",
+      "royal",
+      "head"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "yirki03qukfn",
+     "word": "a beach",
+     "level": "easy",
+     "banned": [
+      "sand",
+      "ocean",
+      "waves",
+      "shore"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "1yb08l7db3g9",
+     "word": "a sun",
+     "level": "easy",
+     "banned": [
+      "sun",
+      "hot",
+      "sky",
+      "bright"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "yv0lrihjeq3k",
+     "word": "a campfire",
+     "level": "easy",
+     "banned": [
+      "fire",
+      "camp",
+      "flames",
+      "logs"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ictljhvn8q5e",
+     "word": "a rainbow",
+     "level": "easy",
+     "banned": [
+      "colors",
+      "rain",
+      "arc",
+      "sky"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "qfia3ipeen0k",
+     "word": "a cozy cabin",
+     "level": "easy",
+     "banned": [
+      "cabin",
+      "woods",
+      "log",
+      "house"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "4ruubgkad19o",
+     "word": "a cup of cocoa",
+     "level": "easy",
+     "banned": [
+      "cocoa",
+      "hot",
+      "mug",
+      "chocolate"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "vrx065drqe6e",
+     "word": "a flower",
+     "level": "easy",
+     "banned": [
+      "petal",
+      "bloom",
+      "garden",
+      "stem"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "9231qujbl1e8",
+     "word": "a cloud",
+     "level": "easy",
+     "banned": [
+      "sky",
+      "fluffy",
+      "white",
+      "rain"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "te916mo2kr36",
+     "word": "a palm tree",
+     "level": "easy",
+     "banned": [
+      "palm",
+      "tree",
+      "tropical",
+      "island"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ezxraumvsjjf",
+     "word": "a sunset over the ocean",
+     "level": "medium",
+     "banned": [
+      "sunset",
+      "ocean",
+      "sun",
+      "water"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "y1v53o46h7p1",
+     "word": "reading in bed",
+     "level": "medium",
+     "banned": [
+      "book",
+      "bed",
+      "read",
+      "pillow"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "yv6dnc19re1q",
+     "word": "floating in a pool",
+     "level": "medium",
+     "banned": [
+      "float",
+      "pool",
+      "water",
+      "swim"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "rpmbc5faqv5d",
+     "word": "lying in the grass",
+     "level": "medium",
+     "banned": [
+      "grass",
+      "lie",
+      "ground",
+      "lawn"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "e1m5cgv3xmgk",
+     "word": "a hot bath",
+     "level": "medium",
+     "banned": [
+      "bath",
+      "tub",
+      "bubbles",
+      "water"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "bz5ep9ub39s4",
+     "word": "swinging on a swing",
+     "level": "medium",
+     "banned": [
+      "swing",
+      "playground",
+      "seat",
+      "chains"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "6i8mmeoie4ov",
+     "word": "watching the stars",
+     "level": "medium",
+     "banned": [
+      "stars",
+      "sky",
+      "night",
+      "look"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ixax5tea11v7",
+     "word": "a snowy cabin",
+     "level": "medium",
+     "banned": [
+      "snow",
+      "cabin",
+      "cold",
+      "winter"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "5pupikgz9zn0",
+     "word": "a treehouse",
+     "level": "easy",
+     "banned": [
+      "tree",
+      "house",
+      "ladder",
+      "fort"
+     ],
+     "sets": [
+      "Your Happy Place"
      ]
     }
    ],
@@ -19924,6 +26546,3338 @@ window.GS_MY_CONTENT = {
      "sets": [
       "AI Utilization for Good"
      ]
+    },
+    {
+     "id": "ulwb5olf2g2y",
+     "question": "What is conflict resolution?",
+     "answer": "Finding a peaceful, constructive solution to a disagreement",
+     "wrong": [
+      "Winning by proving the other person wrong",
+      "Avoiding every possible disagreement",
+      "A therapy term for anger management"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "k7khl8nlm5ni",
+     "question": "What is a healthy first step in resolving a conflict?",
+     "answer": "Pause and calm down before responding",
+     "wrong": [
+      "Immediately explain your side",
+      "Bring in a third party right away",
+      "End the relationship to prevent more conflict"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "b8u5g4azag5l",
+     "question": "What does active listening mean in a conflict?",
+     "answer": "Fully focusing on their words without planning your comeback",
+     "wrong": [
+      "Repeating everything they say word for word",
+      "Letting them talk first so you can win",
+      "Listening, then explaining why they're wrong"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "tcbvvfduw12u",
+     "question": "Which communication style helps MOST during conflict?",
+     "answer": "Assertive — clear and respectful",
+     "wrong": [
+      "Passive — staying quiet",
+      "Aggressive — speaking loudly",
+      "Passive-aggressive — hinting at it"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "4s0y85ja4cki",
+     "question": "What does using 'I statements' mean?",
+     "answer": "Sharing how YOU feel and what YOU need",
+     "wrong": [
+      "Starting every sentence with 'I'",
+      "Only talking about yourself",
+      "Telling personal stories for sympathy"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "gt7yx802q3g9",
+     "question": "True or false: Conflict means a relationship is failing.",
+     "answer": "False — conflict is normal; how it's handled matters",
+     "wrong": [
+      "True — healthy relationships have no conflict",
+      "True — repeated conflict means it should end",
+      "False — but only at work"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "jeurx4xzl50f",
+     "question": "What is the purpose of compromise?",
+     "answer": "Both people give a little and gain a little",
+     "wrong": [
+      "One person changes completely",
+      "Both pretend nothing happened",
+      "The stronger person sets the terms"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "b821w8nnm7cm",
+     "question": "Which is an example of a conflict TRIGGER?",
+     "answer": "A comment that feels dismissive of your feelings",
+     "wrong": [
+      "A scheduled meeting",
+      "A written note from a supervisor",
+      "Both people wanting the same thing"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "0xy4vjpdhu56",
+     "question": "What is de-escalation?",
+     "answer": "Words or actions that lower the tension",
+     "wrong": [
+      "Leaving a conversation forever",
+      "A technique only counselors can use",
+      "Pretending to agree to end things fast"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "7zl6jt3k82ob",
+     "question": "What's the difference between a position and a need?",
+     "answer": "A position is what you want; a need is the reason why",
+     "wrong": [
+      "A need is always more important",
+      "A position is emotional; a need is logical",
+      "They're the same thing"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "fo6u6vy7fqws",
+     "question": "Which feeling is MOST likely to escalate conflict if ignored?",
+     "answer": "Feeling unheard or dismissed",
+     "wrong": [
+      "Happiness",
+      "Curiosity",
+      "Sadness"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "w5r4x51gxaru",
+     "question": "What does it mean to validate someone in a conflict?",
+     "answer": "Acknowledge their feelings make sense to them, even if you disagree",
+     "wrong": [
+      "Tell them they're right to end it",
+      "Agree with everything they say",
+      "Have a professional confirm their feelings"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "dbo66yn0qu5z",
+     "question": "What's a sign a conflict was resolved well?",
+     "answer": "Both people feel heard and agree on a plan",
+     "wrong": [
+      "One person apologizes and it's never discussed",
+      "Nobody ever mentions it again",
+      "A supervisor made the decision"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "lozwij9xm66h",
+     "question": "What makes a real apology?",
+     "answer": "Owning the harm you caused without excuses",
+     "wrong": [
+      "Saying 'I'm sorry you feel that way'",
+      "A formal statement to end the conflict",
+      "Admitting fault even if you don't mean it"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "21mhuzal66yi",
+     "question": "What is stonewalling?",
+     "answer": "Shutting down and refusing to communicate",
+     "wrong": [
+      "Building a wall to avoid someone",
+      "Taking a short break to calm down",
+      "A group mediation technique"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "r60790mkpn1u",
+     "question": "How can deep breathing help during conflict?",
+     "answer": "It calms your body's fight-or-flight response",
+     "wrong": [
+      "It shows you don't care",
+      "It only works before a conflict",
+      "It delays a solution"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "72qju0fxbftn",
+     "question": "What does 'staying on topic' mean?",
+     "answer": "Focusing on this issue, not old arguments",
+     "wrong": [
+      "Only talking about things you agree on",
+      "Keeping the conversation very short",
+      "Avoiding all emotional words"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "t47ab82s8bx2",
+     "question": "What is a win-win outcome?",
+     "answer": "Both people's core needs are met",
+     "wrong": [
+      "The person who was right wins",
+      "Both drop it and walk away",
+      "One person wins and explains why"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "iti9nq5sjk6w",
+     "question": "What role does empathy play in conflict?",
+     "answer": "It helps you respond to their real concern",
+     "wrong": [
+      "It means agreeing with them",
+      "It only matters if both are equally hurt",
+      "It slows everything down"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "pf5ezqnw41uk",
+     "question": "Which describes a conflict AVOIDANCE pattern?",
+     "answer": "Always going silent, even when your needs aren't met",
+     "wrong": [
+      "Taking a moment before responding",
+      "Letting tiny things go",
+      "Agreeing sometimes to keep balance"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "eo9a7xnhmcbs",
+     "question": "What is reflective listening?",
+     "answer": "Repeating back what you heard to check you understood",
+     "wrong": [
+      "Thinking about it after it's over",
+      "Planning your answer while they talk",
+      "Recording the conversation"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "jfuwao2z1tj0",
+     "question": "True or false: You must feel totally calm to start resolving a conflict.",
+     "answer": "False — calm is a goal, not a requirement",
+     "wrong": [
+      "True — only calm people can resolve conflict",
+      "True — emotions always make it worse",
+      "False — start when emotions peak"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "ikx39r71swv5",
+     "question": "What does it mean to 'own your part'?",
+     "answer": "Admit your role without excuses",
+     "wrong": [
+      "Take all the blame",
+      "Fix it all yourself",
+      "Find out who is at fault"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "9wue8pmvdr1k",
+     "question": "In the CALM method, what does the C stand for?",
+     "answer": "Cool down",
+     "wrong": [
+      "Compromise",
+      "Communicate",
+      "Choose a side"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "7vuaj9b6pml0",
+     "question": "In the CALM method, what does the L stand for?",
+     "answer": "Look for common ground",
+     "wrong": [
+      "Let it go",
+      "Listen louder",
+      "Leave the room"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "hz2kczxf7ufd",
+     "question": "Which conflict style stays calm and works toward a solution?",
+     "answer": "The Problem Solver",
+     "wrong": [
+      "The Avoider",
+      "The Competitor",
+      "The Pleaser"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "jqcb8n7c2l40",
+     "question": "Which phrases tend to shut conversations down?",
+     "answer": "'You always' and 'You never'",
+     "wrong": [
+      "'I feel' and 'I need'",
+      "'Help me understand'",
+      "'Let's take a break'"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "johwo3vbgmnt",
+     "question": "What does 'movement as medicine' mean?",
+     "answer": "Physical activity can prevent, treat and improve many health conditions",
+     "wrong": [
+      "Exercise only helps if a doctor prescribes it",
+      "Movement must be intense to help",
+      "Medicine works better while exercising"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "tfqllwhc4kfy",
+     "question": "Which is a mental health benefit of regular movement?",
+     "answer": "Less anxiety and stress, and a better mood",
+     "wrong": [
+      "Permanently ending all symptoms",
+      "Better focus only during exercise",
+      "Needing fewer friends"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "tdk70rj02a4b",
+     "question": "What feel-good chemicals does exercise release?",
+     "answer": "Endorphins",
+     "wrong": [
+      "Cortisol",
+      "Insulin",
+      "Melatonin"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "0aso2d7j64iz",
+     "question": "How much moderate movement do guidelines suggest for adults each week?",
+     "answer": "At least 150 minutes",
+     "wrong": [
+      "60 minutes every single day",
+      "20 minutes once a week",
+      "There's no suggested amount"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "l8qosvoce1ev",
+     "question": "Which of these counts as movement for your health?",
+     "answer": "Walking, dancing, gardening and chores",
+     "wrong": [
+      "Only gym workouts",
+      "Only running or swimming",
+      "Only doctor-prescribed therapy"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "3osorn6d6htg",
+     "question": "How does regular movement affect sleep?",
+     "answer": "It improves sleep quality",
+     "wrong": [
+      "It always causes insomnia",
+      "It has nothing to do with sleep",
+      "It only helps right before bed"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ufej2johxypl",
+     "question": "True or false: You need a gym or equipment to benefit from movement.",
+     "answer": "False — walking and stretching work great",
+     "wrong": [
+      "True — only gyms count",
+      "True — equipment is required",
+      "False — but gyms are always better"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "8dsdeyil95d1",
+     "question": "What is a 'movement snack'?",
+     "answer": "A short 5–10 minute burst of activity",
+     "wrong": [
+      "A healthy pre-workout food",
+      "A rest between sets",
+      "A snack eaten while walking"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "qhlxv7nebumj",
+     "question": "Which statement about stretching is TRUE?",
+     "answer": "It improves flexibility and eases tension",
+     "wrong": [
+      "It only helps athletes",
+      "It's only for injury recovery",
+      "It does nothing for mental health"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "i5kzjxltu6f6",
+     "question": "How does movement affect the brain over time?",
+     "answer": "It helps the brain form new connections",
+     "wrong": [
+      "It shrinks the brain",
+      "It has no effect on the brain",
+      "It only helps during the workout"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "can8o9a06v65",
+     "question": "Which is an example of mindful movement?",
+     "answer": "Yoga, tai chi or a slow, focused walk",
+     "wrong": [
+      "Any workout in a gym",
+      "High-speed interval training",
+      "Only instructor-led classes"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "6apf6nqosxwo",
+     "question": "What's a common barrier to getting moving?",
+     "answer": "Waiting to feel motivated before starting",
+     "wrong": [
+      "Having too much energy",
+      "Too many choices",
+      "Being too healthy to notice"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "dr0xeaqv5n87",
+     "question": "How does movement help with stress?",
+     "answer": "It burns off stress hormones and releases endorphins",
+     "wrong": [
+      "It makes the body forget stress",
+      "It raises blood pressure to reset you",
+      "It only works outdoors"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "hzuu0lqfq8mj",
+     "question": "Which type of movement is best for mental health?",
+     "answer": "The kind you'll actually do and enjoy",
+     "wrong": [
+      "Only high-intensity cardio",
+      "Only weight training",
+      "Only outdoor exercise"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "aq1g66jjb0xv",
+     "question": "True or false: Sitting all day is fine if you exercise once.",
+     "answer": "False — long periods of sitting carry their own risks",
+     "wrong": [
+      "True — one workout cancels it out",
+      "True — the body stores exercise",
+      "False — but only after age 50"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "l998bl7egosf",
+     "question": "What is 'active recovery'?",
+     "answer": "Light movement like walking on rest days",
+     "wrong": [
+      "Total rest after any activity",
+      "Physical therapy after injury",
+      "A hard workout right after another"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ka2zixlvz7bb",
+     "question": "Which kind of movement builds community?",
+     "answer": "Group walks, team sports and dance classes",
+     "wrong": [
+      "Solo running with headphones",
+      "Fitness apps with strangers",
+      "Any outdoor exercise"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "itmsro4m8yxn",
+     "question": "How does movement affect self-esteem?",
+     "answer": "It builds a sense of accomplishment and trust in your body",
+     "wrong": [
+      "Only if your appearance changes",
+      "Only for athletes",
+      "It has no connection"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "6hnmxhrnittm",
+     "question": "What does 'listen to your body' mean?",
+     "answer": "Notice pain and tiredness so you move safely",
+     "wrong": [
+      "Only exercise when fully energized",
+      "Wear a fitness tracker",
+      "Stop at the slightest discomfort"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "6j2bopdn8f90",
+     "question": "What's a good idea if you dislike traditional exercise?",
+     "answer": "Find fun movement — dancing, hiking, gardening",
+     "wrong": [
+      "Push through until you like it",
+      "Start with the hardest workout",
+      "Avoid movement altogether"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "xllvkdyy110q",
+     "question": "How does movement help your thinking?",
+     "answer": "It boosts memory and focus by increasing blood flow to the brain",
+     "wrong": [
+      "It only improves reaction time",
+      "It only helps people over 60",
+      "It has no effect on thinking"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "uoooda5ln1fn",
+     "question": "True or false: Being consistent matters more than being perfect.",
+     "answer": "True — small, regular movement adds up",
+     "wrong": [
+      "False — intensity matters most",
+      "False — only supervised exercise counts",
+      "True — but only for your heart"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "u2d79r21rbe3",
+     "question": "What can you do when you feel too tired to move?",
+     "answer": "Start with just 5 minutes",
+     "wrong": [
+      "Skip it — you need full energy",
+      "Drink caffeine and go all-out",
+      "Never exercise when tired"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "dgilr00k3mq2",
+     "question": "Even a walk of how long can reduce anxiety and improve focus?",
+     "answer": "10 minutes",
+     "wrong": [
+      "2 hours",
+      "1 minute",
+      "45 minutes"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "sf7o6femd9b2",
+     "question": "Exercise lowers which stress hormone?",
+     "answer": "Cortisol",
+     "wrong": [
+      "Endorphins",
+      "Serotonin",
+      "Melatonin"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "lrhzdb9tjfpb",
+     "question": "Finish the quote: 'You don't have to be great to start — you just have to…'",
+     "answer": "start to be great",
+     "wrong": [
+      "work out every day",
+      "join a gym",
+      "never give up"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "p32jbbnfrtnt",
+     "question": "What are the three main macronutrients?",
+     "answer": "Carbohydrates, proteins and fats",
+     "wrong": [
+      "Vitamins, minerals and water",
+      "Fiber, sugar and cholesterol",
+      "Calories, sodium and iron"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "qcot11v86c0a",
+     "question": "What is the main job of carbohydrates?",
+     "answer": "To give the body (and brain) energy",
+     "wrong": [
+      "To build muscle",
+      "To insulate organs",
+      "To carry oxygen"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "he2q5bczyewf",
+     "question": "Which is a complex carbohydrate?",
+     "answer": "Oatmeal and brown rice",
+     "wrong": [
+      "Candy and soda",
+      "White bread and pastries",
+      "Energy drinks"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "dra8b074vw31",
+     "question": "What does protein do in the body?",
+     "answer": "Builds and repairs tissue and supports the immune system",
+     "wrong": [
+      "Gives quick bursts of energy",
+      "Keeps you warm",
+      "Slows digestion"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "zsyurk68fg26",
+     "question": "Which is a plant-based source of protein?",
+     "answer": "Lentils and chickpeas",
+     "wrong": [
+      "Salmon and tuna",
+      "Butter and cream",
+      "White rice and pasta"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "1ljfud1auqip",
+     "question": "Which type of fat is best for your heart and brain?",
+     "answer": "Unsaturated fat — like avocados, olive oil and nuts",
+     "wrong": [
+      "Saturated fat",
+      "Trans fat",
+      "Hydrogenated fat"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "6w31a7725ysb",
+     "question": "How does food affect mental health?",
+     "answer": "It influences brain chemistry, mood and energy",
+     "wrong": [
+      "It only affects the body",
+      "Only therapy affects mood",
+      "Only for people with a diagnosis"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "7fuvgyxnqgnk",
+     "question": "Which vitamin is called the 'sunshine vitamin'?",
+     "answer": "Vitamin D",
+     "wrong": [
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin A"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "2tmop5tz35as",
+     "question": "True or false: Skipping meals is a healthy habit.",
+     "answer": "False — it can drain energy and affect mood",
+     "wrong": [
+      "True — fewer meals is better",
+      "True — the body adapts",
+      "False — except on busy days"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "jkdy9vxyum2q",
+     "question": "What does 'eating a rainbow' mean?",
+     "answer": "Eating lots of different colorful fruits and veggies",
+     "wrong": [
+      "Eating food with food coloring",
+      "A different color theme each day",
+      "Picking the prettiest food"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "wbk09cac4mfz",
+     "question": "Why is fiber important?",
+     "answer": "It helps digestion and keeps you full",
+     "wrong": [
+      "It replaces missing nutrients",
+      "It's a protein to avoid",
+      "It's stored fat for energy"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "8e98sd110d4h",
+     "question": "Which is a sign of dehydration?",
+     "answer": "Tiredness, headache and trouble focusing",
+     "wrong": [
+      "Cold hands and slow heartbeat",
+      "Lots of extra energy",
+      "Bloating at rest"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rii08zu6ysd7",
+     "question": "What can a food label tell you?",
+     "answer": "What's in it — calories, nutrients and ingredients",
+     "wrong": [
+      "Whether it's a medicine",
+      "Exactly how it was grown",
+      "Its environmental impact"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "9mcaw4idd8dy",
+     "question": "What is a 'nutrient-dense' food?",
+     "answer": "One packed with nutrients for its calories",
+     "wrong": [
+      "One with extra calories",
+      "One with added vitamins only",
+      "Anything labeled organic"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "wkr2t5ifkjdd",
+     "question": "How does a lot of sugar affect energy?",
+     "answer": "Quick spike, then a crash",
+     "wrong": [
+      "Steady energy all day",
+      "No effect on mood",
+      "Only processed sugar matters"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "jrc3rgmi7bai",
+     "question": "Where can you find omega-3 fats?",
+     "answer": "Fish, flaxseed and walnuts",
+     "wrong": [
+      "Red meat",
+      "Candy",
+      "White bread"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "4iqivu253mjr",
+     "question": "True or false: All fat is bad for you.",
+     "answer": "False — healthy fats help your brain",
+     "wrong": [
+      "True — fat is the main cause of poor health",
+      "True — the body makes all it needs",
+      "False — saturated fat is always healthy"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "iddcmr0gwfy1",
+     "question": "Your gut produces which mood chemical?",
+     "answer": "Serotonin",
+     "wrong": [
+      "Adrenaline",
+      "Insulin",
+      "Cortisol"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "p3j17yw8xpbj",
+     "question": "Which eating pattern supports long-term wellbeing?",
+     "answer": "Balanced meals with a variety of whole foods",
+     "wrong": [
+      "Strict rules followed by big binges",
+      "Eating only at set times regardless of hunger",
+      "Whatever diet is trending"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "lim84s4f8nu0",
+     "question": "What is mindful eating?",
+     "answer": "Paying attention to how and why you eat, without judgment",
+     "wrong": [
+      "Only eating approved foods",
+      "Counting every calorie",
+      "Eating as slowly as possible"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "4cc4g24tysl9",
+     "question": "What's an easy way to eat more vegetables?",
+     "answer": "Add a handful of greens to foods you already like",
+     "wrong": [
+      "Only eat vegetables",
+      "Only eat them one way",
+      "Take a pill instead"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "fixvhwftdpzk",
+     "question": "What does iron do?",
+     "answer": "Helps carry oxygen and supports energy",
+     "wrong": [
+      "Builds bones",
+      "Prevents diabetes",
+      "Heals skin"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "wv1ur65bku8c",
+     "question": "True or false: Supplements can replace healthy food.",
+     "answer": "False — whole foods offer more than a pill can",
+     "wrong": [
+      "True — a multivitamin covers everything",
+      "True — pills absorb better",
+      "False — but they're equal if taken daily"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "62dipdnbhx79",
+     "question": "Which is an affordable, nutrient-dense food?",
+     "answer": "Eggs",
+     "wrong": [
+      "Imported superfoods",
+      "Protein powder",
+      "Fancy organic berries"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "cmavujujpudd",
+     "question": "What should you drink first when you feel hungry or tired?",
+     "answer": "Water",
+     "wrong": [
+      "Soda",
+      "Coffee",
+      "An energy drink"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "6oorrhf79w03",
+     "question": "Which mineral supports sleep and is found in nuts and dark chocolate?",
+     "answer": "Magnesium",
+     "wrong": [
+      "Sodium",
+      "Iron",
+      "Calcium"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "j9ei92sq9dzb",
+     "question": "What does 'peer pressure' mean in recovery?",
+     "answer": "Feeling pushed to act against your recovery goals",
+     "wrong": [
+      "Only strangers forcing you to use",
+      "A doctor asking you to follow a plan",
+      "Being asked to help someone else"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "nz97osc7sj2x",
+     "question": "Which is an example of INDIRECT peer pressure?",
+     "answer": "Feeling you need to drink at a party to fit in, even if no one asks",
+     "wrong": [
+      "A friend handing you a drink",
+      "A family member asking you to skip a meeting",
+      "A counselor suggesting a new skill"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "6kddsh8zi9pj",
+     "question": "What is 'internal' peer pressure?",
+     "answer": "The voice inside telling you what others expect",
+     "wrong": [
+      "Pressure from people inside your program",
+      "Pressure you only feel alone",
+      "A clinical term for social anxiety"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "lf53m7dahhnm",
+     "question": "Which response to pressure is MOST effective?",
+     "answer": "A clear, firm 'no' — no explanation needed",
+     "wrong": [
+      "Agreeing to avoid conflict",
+      "Making up an excuse",
+      "Waiting for it to go away"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "2mnxnuoe74hv",
+     "question": "Where can peer pressure in recovery come from?",
+     "answer": "Old friends, family and even your own thoughts",
+     "wrong": [
+      "Only from strangers",
+      "Only from old friends",
+      "Only from people who mean harm"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "vwczyqwri53z",
+     "question": "What does the S stand for in the STOP skill?",
+     "answer": "Stop what you're doing",
+     "wrong": [
+      "Say no immediately",
+      "Seek support",
+      "Start something new"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "sfpyc5ig8bwb",
+     "question": "What does the T stand for in the STOP skill?",
+     "answer": "Take a breath",
+     "wrong": [
+      "Tell someone",
+      "Turn around",
+      "Think it over for a day"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "lvf789bfw7b2",
+     "question": "What does the O stand for in the STOP skill?",
+     "answer": "Observe what's happening around and inside you",
+     "wrong": [
+      "Open up to someone",
+      "Opt out right away",
+      "Organize your thoughts"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "jtgsz3o7ouw8",
+     "question": "What does the P stand for in the STOP skill?",
+     "answer": "Proceed with intention",
+     "wrong": [
+      "Pause forever",
+      "Pretend it's fine",
+      "Please everyone"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "lj98r2w72r52",
+     "question": "True or false: You must explain your reasons when you say no.",
+     "answer": "False — 'no' is a complete answer",
+     "wrong": [
+      "True — people deserve an explanation",
+      "True — it shows respect",
+      "False — but only with strangers"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "80za0lz3kgi3",
+     "question": "Which is a warning sign you may be facing peer pressure?",
+     "answer": "You hear yourself saying 'just this once'",
+     "wrong": [
+      "You feel excited to try a new hobby",
+      "You ask a counselor for advice",
+      "You write in your journal"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "f1f8opv400dy",
+     "question": "What is 'environmental' peer pressure?",
+     "answer": "Places or situations that pull you toward old habits",
+     "wrong": [
+      "Stress from noise",
+      "Pressure from eco-friendly friends",
+      "Pressure you only feel outdoors"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "axsyxddx5xdf",
+     "question": "How can journaling help with peer pressure?",
+     "answer": "It gives you private space to sort out your feelings and values",
+     "wrong": [
+      "It makes pressure disappear",
+      "It only helps if shared",
+      "It replaces your support person"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "jrgrviznxc9b",
+     "question": "What is a healthy boundary?",
+     "answer": "A limit you set to protect your wellbeing",
+     "wrong": [
+      "A rule your counselor sets",
+      "A wall that keeps everyone out",
+      "A promise to someone else"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "7gvoov4t7zan",
+     "question": "Which statement is TRUE?",
+     "answer": "Even people with strong recovery can feel the pull of pressure",
+     "wrong": [
+      "Recovery makes you immune to pressure",
+      "Only early recovery is affected",
+      "Peer pressure is just a teen problem"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "rfamcz7cqpge",
+     "question": "What should you do if you feel pressured to skip a meeting?",
+     "answer": "Name it, stick to your plan and reach out for support",
+     "wrong": [
+      "Skip just this once",
+      "Skip and make it up later",
+      "Avoid that person forever"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "1j14t8aqadje",
+     "question": "Saying no to protect your recovery is best described as…",
+     "answer": "An act of strength and self-respect",
+     "wrong": [
+      "Being unfriendly",
+      "Only needed early on",
+      "Not trusting your friends"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "5xn8y4f57179",
+     "question": "Which is an example of DIRECT peer pressure?",
+     "answer": "A friend saying 'come on, just try it'",
+     "wrong": [
+      "Feeling out of place at a party",
+      "Wondering what old friends think",
+      "Seeing something on TV"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "c8ouc5urewyj",
+     "question": "What's a healthy alternative when you feel pressured socially?",
+     "answer": "Suggest a different activity",
+     "wrong": [
+      "Leave without a word",
+      "Lecture the person",
+      "Go along with it"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "mj3zrg446jss",
+     "question": "What can a support person do when you face pressure?",
+     "answer": "Help you hold your boundaries and remember your goals",
+     "wrong": [
+      "Confront people for you",
+      "Make your decisions",
+      "Go everywhere with you"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "t7c1oyp84ju7",
+     "question": "Which phrase can buy you time to make a clear choice?",
+     "answer": "\"Let me think about it.\"",
+     "wrong": [
+      "\"Sure, why not?\"",
+      "\"Everyone else is.\"",
+      "\"Just this once.\""
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "rh3c7etdz10l",
+     "question": "Naming the pressure out loud — 'I feel pressured right now' — does what?",
+     "answer": "Reduces its power",
+     "wrong": [
+      "Makes it worse",
+      "Ends the friendship",
+      "Has no effect"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "xe23hvw01lja",
+     "question": "Leaving a high-pressure situation is…",
+     "answer": "A recovery skill, not weakness",
+     "wrong": [
+      "Rude",
+      "Always a mistake",
+      "Only for beginners"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "gzm9u1w7jx37",
+     "question": "Finish it: 'Every time you say no to pressure, you are saying…'",
+     "answer": "yes to yourself",
+     "wrong": [
+      "goodbye to your friends",
+      "no to fun",
+      "sorry to everyone"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "4g4mv68p58s9",
+     "question": "What is personal responsibility?",
+     "answer": "Owning your choices and their consequences without blaming others",
+     "wrong": [
+      "Following every rule without question",
+      "Taking blame for everything around you",
+      "Accepting punishment when things go wrong"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "o5jjs8sl6f67",
+     "question": "Which is an example of personal responsibility?",
+     "answer": "'I handled that poorly — here's what I'll do differently'",
+     "wrong": [
+      "Listing all the outside reasons it went wrong",
+      "Pointing out someone else's mistakes",
+      "Waiting for someone else to fix it"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "zisptlisog26",
+     "question": "What's the difference between accountability and self-blame?",
+     "answer": "Accountability focuses on growth; self-blame focuses on shame",
+     "wrong": [
+      "Accountability is public; self-blame is private",
+      "They're exactly the same",
+      "Self-blame is healthy if it's quick"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "klc1t72i9hbg",
+     "question": "True or false: Being responsible means doing everything alone.",
+     "answer": "False — asking for help is a responsible choice",
+     "wrong": [
+      "True — responsibility means independence",
+      "True — needing help shows weakness",
+      "False — but only as a last resort"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "wisuaa7bt4gr",
+     "question": "Which is a sign someone is avoiding responsibility?",
+     "answer": "Always blaming bad luck or other people",
+     "wrong": [
+      "Asking questions before accepting blame",
+      "Pausing to reflect",
+      "Expressing regret"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "tjsaqwwmq6az",
+     "question": "What does 'making amends' mean?",
+     "answer": "Taking real steps to repair harm — beyond saying sorry",
+     "wrong": [
+      "Apologizing over and over",
+      "Treating yourself after admitting fault",
+      "A process done only in treatment"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "y0w0wzk9m9l1",
+     "question": "How does following through build trust?",
+     "answer": "It shows your words match your actions",
+     "wrong": [
+      "It makes others owe you",
+      "It only matters at work",
+      "Good intentions are enough"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "yvcc03tpn7y7",
+     "question": "What are the steps of the Responsibility Cycle?",
+     "answer": "Recognize, Own, Repair, Learn, Move Forward",
+     "wrong": [
+      "Blame, Justify, Apologize, Forget, Repeat",
+      "Identify, Report, Accept, Heal, Improve",
+      "Reflect, Discuss, Decide, Act, Evaluate"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "u7qsxssnatsi",
+     "question": "Why is self-awareness important for responsibility?",
+     "answer": "You can't own what you don't recognize",
+     "wrong": [
+      "It only matters in therapy",
+      "Action is all that matters",
+      "It leads to overthinking"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "u13webs59dyc",
+     "question": "True or false: 'I'm sorry you feel that way' takes responsibility.",
+     "answer": "False — it dismisses their experience",
+     "wrong": [
+      "True — it acknowledges feelings",
+      "True — any apology counts",
+      "False — but it's fine if you did nothing wrong"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "lh5qse4uo9i7",
+     "question": "What is integrity?",
+     "answer": "Doing the right thing even when no one is watching",
+     "wrong": [
+      "Only acting right when there are consequences",
+      "Agreeing to keep the peace",
+      "Following rules you disagree with"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "tjdjbdorbkhv",
+     "question": "What's a healthy response to making a mistake?",
+     "answer": "Own it, make it right if you can, and move forward",
+     "wrong": [
+      "Feel intense shame",
+      "Justify it",
+      "Minimize it"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "11xuouiv33zw",
+     "question": "How does responsibility connect to self-respect?",
+     "answer": "Acting with integrity makes you someone you can trust",
+     "wrong": [
+      "Self-respect depends on others",
+      "They're unrelated",
+      "You build it by avoiding blame"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "4flh9c45qfuw",
+     "question": "What is a commitment?",
+     "answer": "A promise you make — and keep",
+     "wrong": [
+      "A form you sign",
+      "An optional goal",
+      "A court order"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "hasth58wfr2m",
+     "question": "What does it mean to 'move forward' after owning a mistake?",
+     "answer": "Learn from it and don't let it define your whole story",
+     "wrong": [
+      "Forget it ever happened",
+      "Move on before understanding the impact",
+      "Refuse to look back at all"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "megutpe3oycb",
+     "question": "What is proactive responsibility?",
+     "answer": "Taking ownership before problems happen",
+     "wrong": [
+      "Reacting fast when called out",
+      "Taking blame to protect others",
+      "A program-only strategy"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ca36ngalqofp",
+     "question": "True or false: Responsibility only matters after something goes wrong.",
+     "answer": "False — it's how you show up every day",
+     "wrong": [
+      "True — it's only for fixing problems",
+      "True — planning is a different skill",
+      "False — but it's most visible after mistakes"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ojcdll7qk9b7",
+     "question": "How does personal responsibility connect to freedom?",
+     "answer": "Owning your choices gives you the power to change your direction",
+     "wrong": [
+      "They are opposites",
+      "Responsibility limits freedom",
+      "Freedom means avoiding responsibility"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "6384cf49r0ky",
+     "question": "How does responsibility affect relationships?",
+     "answer": "Ownership builds trust; avoiding it erodes trust",
+     "wrong": [
+      "It means deciding for others",
+      "Only avoiding blame matters",
+      "It only matters with a boss"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "nv1kuc3cwjq0",
+     "question": "What is 'choice awareness'?",
+     "answer": "Recognizing you usually have more than one option",
+     "wrong": [
+      "Noticing others' choices",
+      "A clinical test",
+      "Accepting that choices are made for you"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ay0onby8kb17",
+     "question": "Which is NOT taking personal responsibility?",
+     "answer": "'I was late because traffic is always bad'",
+     "wrong": [
+      "'I should have left earlier'",
+      "'I made a mistake — here's my fix'",
+      "'I need help handling this better'"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ug4jzxtu49lr",
+     "question": "Why can taking responsibility feel hard?",
+     "answer": "It takes vulnerability to admit you were wrong",
+     "wrong": [
+      "It's only taught through punishment",
+      "It needs perfect logic",
+      "There are no good examples"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ym5b9aaa9hjo",
+     "question": "Shame says 'I am bad.' Responsibility says…",
+     "answer": "'I did something I want to do differently'",
+     "wrong": [
+      "'It wasn't my fault'",
+      "'I'll never mess up again'",
+      "'Everyone does it'"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "wa693cozjxzk",
+     "question": "What is leisure?",
+     "answer": "Time spent on activities you choose for enjoyment or rest",
+     "wrong": [
+      "Any time you're not sleeping",
+      "Free time filled with chores",
+      "Scheduled clinical relaxation"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "6o8mc569bxz3",
+     "question": "What's one mental health benefit of regular leisure?",
+     "answer": "Less stress and a better mood",
+     "wrong": [
+      "More hours at work",
+      "Better sleep than any medication",
+      "No more need for support"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "kf9m12ogy3th",
+     "question": "Which statement about leisure is TRUE?",
+     "answer": "It's a necessary part of health — not a reward",
+     "wrong": [
+      "It should only come after all work is done",
+      "Too much leads to laziness",
+      "It's only for people with no responsibilities"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "89yfk2wtuwtj",
+     "question": "What is 'passive' leisure?",
+     "answer": "Enjoyment without much effort, like watching TV",
+     "wrong": [
+      "Leisure outdoors",
+      "Any solo activity",
+      "Prescribed relaxation"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "zyw1khfp0r4i",
+     "question": "What is 'active' leisure?",
+     "answer": "Physical, creative or social activities like hiking or painting",
+     "wrong": [
+      "Only gym workouts",
+      "Anything on your calendar",
+      "Activities longer than 30 minutes"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "lh1wd4hgahmd",
+     "question": "Which is a restorative leisure activity?",
+     "answer": "A quiet walk in nature",
+     "wrong": [
+      "Working to meet a deadline",
+      "Checking work emails",
+      "A required meeting"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "iwcog23nogl6",
+     "question": "What does 'flow' mean?",
+     "answer": "Being so absorbed in an activity that time disappears",
+     "wrong": [
+      "A water activity",
+      "Switching between hobbies",
+      "A test for enjoyment"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "zqaf0831059y",
+     "question": "How does social leisure help mental health?",
+     "answer": "It builds connection and reduces isolation",
+     "wrong": [
+      "Only if it's exercise",
+      "It's worse than solo leisure",
+      "It replaces counseling"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "0x17a2uqknyh",
+     "question": "Which is a creative leisure activity?",
+     "answer": "Writing, drawing or playing music",
+     "wrong": [
+      "A required class",
+      "Doing chores fast",
+      "Reading for work"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "xfrctzn5bz7x",
+     "question": "What's the difference between rest and leisure?",
+     "answer": "Rest restores through stillness; leisure through enjoyable activity",
+     "wrong": [
+      "There's no difference",
+      "Leisure is rest in a group",
+      "Rest helps; leisure is just entertainment"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "yh9hob5xt4fh",
+     "question": "Why have a variety of leisure activities?",
+     "answer": "Different activities meet different needs",
+     "wrong": [
+      "One hobby is unhealthy",
+      "Only to prevent boredom",
+      "One is always enough"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "nhoo5cd6wk1p",
+     "question": "How does leisure help the brain?",
+     "answer": "It lowers stress hormones and restores focus",
+     "wrong": [
+      "It permanently raises dopamine",
+      "It has no effect",
+      "Only reading helps"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "937z89dwb5z8",
+     "question": "What is a common barrier to leisure?",
+     "answer": "Guilt about taking time for yourself",
+     "wrong": [
+      "Too many fun options",
+      "Feeling too rested",
+      "Too much encouragement"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "l70ogxwlyb9n",
+     "question": "What is 'leisure literacy'?",
+     "answer": "Knowing how to choose activities that truly restore you",
+     "wrong": [
+      "Reading about hobbies",
+      "A recreation certificate",
+      "The history of leisure"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "unlklvrawmyj",
+     "question": "True or false: All screen time is meaningful leisure.",
+     "answer": "False — it can restore or drain you",
+     "wrong": [
+      "True — any screen time counts",
+      "True — it's all the same",
+      "False — screens never count"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "459pila815v7",
+     "question": "Why choose leisure that matches your interests?",
+     "answer": "Genuine enjoyment brings bigger benefits",
+     "wrong": [
+      "Only creative people benefit",
+      "It's not supported by research",
+      "All activities are equal"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "3ss05sf27h4g",
+     "question": "What's a risk of having no leisure time?",
+     "answer": "Burnout, irritability and low motivation",
+     "wrong": [
+      "Too much energy",
+      "Being overly focused",
+      "Working too little"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "rvj2f36xqf5w",
+     "question": "What does it mean to 'schedule leisure'?",
+     "answer": "Protecting time for fun so it doesn't get crowded out",
+     "wrong": [
+      "Being required to attend",
+      "Timing it in 30-minute blocks",
+      "Only on weekends"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "6kgnc3gajmr2",
+     "question": "How does leisure connect to identity?",
+     "answer": "What you enjoy reflects who you are",
+     "wrong": [
+      "They're unrelated",
+      "Only work shapes identity",
+      "Your skills decide your identity"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "fu96369tyrzu",
+     "question": "What is 'restorative theory'?",
+     "answer": "Some places and activities refill your mental energy",
+     "wrong": [
+      "Rest must come before leisure",
+      "A hospital recreation model",
+      "Only outdoor activities restore you"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "sslbrcyafqyf",
+     "question": "Which activity is MOST likely to lower stress hormones?",
+     "answer": "A nature walk or creative project",
+     "wrong": [
+      "Intense competition",
+      "Watching stressful news",
+      "Multitasking during downtime"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "oisfhgixpt8y",
+     "question": "True or false: Leisure is selfish if others are still working.",
+     "answer": "False — caring for yourself helps you show up for others",
+     "wrong": [
+      "True — wait until everyone's done",
+      "True — it's discouraged in groups",
+      "False — only if it's not fun"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "tp25kfm4f480",
+     "question": "What's a good first step if you don't know what you enjoy?",
+     "answer": "Try something small — a walk, a doodle, a song",
+     "wrong": [
+      "Copy the most popular hobby",
+      "Have someone assign one",
+      "Wait until you feel motivated"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9evu1mkw16wl",
+     "question": "Fun activities naturally release which feel-good brain chemical?",
+     "answer": "Dopamine",
+     "wrong": [
+      "Cortisol",
+      "Adrenaline",
+      "Insulin"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "2kuezoscbpx0",
+     "question": "Finish the quote: 'Rest is not a reward for hard work. It is…'",
+     "answer": "part of the work",
+     "wrong": [
+      "a waste of time",
+      "for weekends only",
+      "earned by finishing"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "vwo8n0s46c9n",
+     "question": "What is a toxic relationship?",
+     "answer": "One that consistently undermines your wellbeing, self-worth or safety",
+     "wrong": [
+      "Any relationship with arguments",
+      "A relationship that ended badly",
+      "One with someone who is struggling"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "bb5wxs1q70yd",
+     "question": "Which is a warning sign of a toxic relationship?",
+     "answer": "Your feelings are always dismissed as 'too sensitive'",
+     "wrong": [
+      "You disagree on big topics",
+      "You communicate differently",
+      "They're going through a hard time"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "3uc2va0aaxn7",
+     "question": "What is 'love bombing'?",
+     "answer": "Overwhelming someone with affection early on to gain control",
+     "wrong": [
+      "Openly expressing love in a healthy way",
+      "A sincere apology with flowers",
+      "Healthy attachment in a new relationship"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "3abizy2qtvc2",
+     "question": "What is emotional manipulation?",
+     "answer": "Using someone's feelings or fears to control them",
+     "wrong": [
+      "Sharing your emotions honestly",
+      "Exploring feelings in counseling",
+      "Saying you're disappointed about a broken promise"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "45nwp6387ncf",
+     "question": "What is gaslighting?",
+     "answer": "Making someone doubt their own memory or reality",
+     "wrong": [
+      "Raising your voice to make a point",
+      "Lighting candles for a nice mood",
+      "Being very emotionally reactive"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "stltbzg1gsvp",
+     "question": "Which compares healthy vs. toxic correctly?",
+     "answer": "Healthy: mutual respect. Toxic: one person controls the other",
+     "wrong": [
+      "Healthy: no arguments. Toxic: any conflict",
+      "Healthy: all time together. Toxic: time apart",
+      "Healthy: one decides. Toxic: equal say"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "0goccy1tsaed",
+     "question": "True or false: Only romantic relationships can be toxic.",
+     "answer": "False — friends, family and coworkers too",
+     "wrong": [
+      "True — only romantic partners",
+      "True — family is always safe",
+      "False — but friendships are never as harmful"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "sel3c8wcrdti",
+     "question": "What is 'isolation' in a toxic relationship?",
+     "answer": "Cutting someone off from their support network",
+     "wrong": [
+      "Choosing quiet time for self-care",
+      "Setting boundaries with unsupportive people",
+      "Taking a social media break"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "n8tmporha1ha",
+     "question": "Why can people get stuck in toxic relationships?",
+     "answer": "The cycle of hurt and making up creates a strong bond",
+     "wrong": [
+      "They enjoy the conflict",
+      "They don't know healthy ones exist",
+      "Toxic relationships always feel bad from day one"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "hjpu8k0rdztj",
+     "question": "Which is a sign of a HEALTHY relationship?",
+     "answer": "Both feel safe to share needs and disagree",
+     "wrong": [
+      "One person changes everything to please",
+      "Both avoid hard topics",
+      "One always sacrifices their needs"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "zgj15x71x8d4",
+     "question": "What does 'walking on eggshells' mean?",
+     "answer": "Constantly watching what you say out of fear",
+     "wrong": [
+      "Being careful during one tense moment",
+      "A healthy communication strategy",
+      "Anxiety about any conversation"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "nscgawvi8bl3",
+     "question": "What is 'breadcrumbing'?",
+     "answer": "Giving just enough attention to keep someone hooked",
+     "wrong": [
+      "Small, consistent acts of care",
+      "Taking small steps to resolve conflict",
+      "Slowly rebuilding trust"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "onbezuddizgc",
+     "question": "How can a toxic relationship affect self-esteem?",
+     "answer": "It wears down self-worth over time",
+     "wrong": [
+      "Only physical harm affects it",
+      "It improves self-esteem",
+      "Only if you were already struggling"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "oewjaqiaosav",
+     "question": "What is the first step in addressing a toxic relationship?",
+     "answer": "Recognizing and naming the patterns",
+     "wrong": [
+      "Ending it immediately",
+      "Listing every way they hurt you",
+      "Getting legal help first"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "wwf66ilbrbgi",
+     "question": "True or false: Repeated apologies mean the behavior will stop.",
+     "answer": "False — without real change, apologies are part of the cycle",
+     "wrong": [
+      "True — apologies show willingness",
+      "True — they always rebuild trust",
+      "False — unless there's therapy"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "mfmpjze8u4sc",
+     "question": "What is coercive control?",
+     "answer": "A pattern of using money, emotions or isolation to dominate someone",
+     "wrong": [
+      "Insisting on your own way once",
+      "Normal jealousy",
+      "Encouraging healthy habits"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "1ujbp9qxy45f",
+     "question": "What does 'protect your peace' mean?",
+     "answer": "Limiting interactions that keep harming you",
+     "wrong": [
+      "Avoiding all conflict",
+      "Only seeing people who agree with you",
+      "Relaxing so you can tolerate mistreatment"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "vh1w8z5i57i2",
+     "question": "Which is a healthy response to feeling hurt?",
+     "answer": "Share your feelings calmly using 'I' statements",
+     "wrong": [
+      "The silent treatment",
+      "Telling everyone else first",
+      "Hiding your feelings"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "78fbmqouusia",
+     "question": "How can a support network help?",
+     "answer": "It offers validation, safety and practical help",
+     "wrong": [
+      "It makes your decisions",
+      "Only professionals can help",
+      "It only helps after it's over"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "2uimth4uj985",
+     "question": "True or false: If you love someone, it's your job to fix their toxic behavior.",
+     "answer": "False — you can't change someone who won't change, and your safety comes first",
+     "wrong": [
+      "True — love means fixing them",
+      "True — commitment means staying no matter what",
+      "False — but staying is always the right choice"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "v3cu12s3yyjr",
+     "question": "Why does recognizing toxic patterns early matter?",
+     "answer": "It's easier to address them before they feel normal",
+     "wrong": [
+      "It gives you leverage",
+      "Patterns fix themselves if spotted early",
+      "It means the relationship is doomed"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "iten4di6suei",
+     "question": "Boundaries are not walls — they're fences with…",
+     "answer": "Gates",
+     "wrong": [
+      "Locks",
+      "Barbed wire",
+      "No openings"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "po0paznu4jfo",
+     "question": "In a healthy relationship, you can say no without feeling…",
+     "answer": "Afraid or guilty",
+     "wrong": [
+      "Happy",
+      "Respected",
+      "Heard"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "gg61tpvak3yt",
+     "question": "What are personal values?",
+     "answer": "The core beliefs that guide how you live and treat others",
+     "wrong": [
+      "Rules your family says you must follow",
+      "Goals for the future",
+      "Opinions about others' choices"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "u8pblxuvsm8f",
+     "question": "Why identify your values?",
+     "answer": "They guide your decisions, especially in hard moments",
+     "wrong": [
+      "They're needed for assessments",
+      "They help you judge others",
+      "They only matter in big transitions"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "yzlvnxdn9ptt",
+     "question": "Which is an example of a personal value?",
+     "answer": "Honesty",
+     "wrong": [
+      "Wanting to earn more money",
+      "Preferring quiet rooms",
+      "Attending a required class"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "o55r36fscwk3",
+     "question": "What happens when your actions match your values?",
+     "answer": "You feel more peace and purpose",
+     "wrong": [
+      "You never make mistakes",
+      "Everyone always approves",
+      "You never need encouragement"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "8xxemjvwchcj",
+     "question": "What is 'values clarification'?",
+     "answer": "Figuring out which principles matter most to you",
+     "wrong": [
+      "Fixing values someone else dislikes",
+      "Finding the single best value",
+      "Finding the most popular values"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "6i2t5khgxrla",
+     "question": "Which is a sign of a values conflict?",
+     "answer": "Feeling torn between two things you care about",
+     "wrong": [
+      "Disagreeing with a relative's lifestyle",
+      "Wanting something you can't have",
+      "Guilt when others disapprove"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "v1lurc9g9o99",
+     "question": "How can knowing your values help with peer pressure?",
+     "answer": "They act like an inner compass",
+     "wrong": [
+      "They make you immune to influence",
+      "They guarantee the right choice",
+      "They only help in certain situations"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "vscf7wf3gg1a",
+     "question": "True or false: Your values can change as you grow.",
+     "answer": "True — they evolve with experience",
+     "wrong": [
+      "False — they're fixed from childhood",
+      "False — if they change, they weren't yours",
+      "True — but only if someone approves"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "xyidm5ubrp52",
+     "question": "What's the difference between a value and a rule?",
+     "answer": "A value comes from within; a rule is set by others",
+     "wrong": [
+      "Values always beat rules",
+      "Rules are written; values aren't",
+      "A value becomes a rule when popular"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "404g4pmtjhtu",
+     "question": "Which BEST shows the value of courage?",
+     "answer": "Speaking up about what matters even when you're afraid",
+     "wrong": [
+      "Taking reckless risks",
+      "Winning every argument",
+      "Never changing your mind"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "1utqmv272b9i",
+     "question": "What is value-based decision making?",
+     "answer": "Choosing actions that reflect your principles",
+     "wrong": [
+      "Doing what others value",
+      "Following a checklist",
+      "Waiting until you're perfectly calm"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "0hyf4xgidd4t",
+     "question": "How does living your values affect self-esteem?",
+     "answer": "It builds real self-respect",
+     "wrong": [
+      "Only others' approval matters",
+      "There's no connection",
+      "It makes everyone like you"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "p59gw3k7dy41",
+     "question": "What can happen when you live against your values for a long time?",
+     "answer": "Inner conflict and feeling disconnected from yourself",
+     "wrong": [
+      "You find peace",
+      "Others stop challenging you",
+      "Your values update automatically"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "1kol135da9w5",
+     "question": "Which value focuses on community and connection?",
+     "answer": "Belonging",
+     "wrong": [
+      "Autonomy",
+      "Achievement",
+      "Stability"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "mlqi6c10uizb",
+     "question": "True or false: Your values need everyone's approval to be valid.",
+     "answer": "False — your values are yours",
+     "wrong": [
+      "True — they need community approval",
+      "True — sharing them makes them count",
+      "False — but your team must approve them"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "01reuholyo30",
+     "question": "What does integrity mean as a value?",
+     "answer": "Acting on your beliefs consistently, even unseen",
+     "wrong": [
+      "Honesty only when you might get caught",
+      "Agreeing with authority",
+      "Keeping promises only to loved ones"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "45ygnkka77dj",
+     "question": "What does it mean to 'honor' a value?",
+     "answer": "Act on it even when it's hard or inconvenient",
+     "wrong": [
+      "List it on a form",
+      "Announce it publicly",
+      "Pick it over everything, always"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "01ytmku1xp73",
+     "question": "Which is NOT a personal value?",
+     "answer": "Preferring pizza over pasta",
+     "wrong": [
+      "Compassion",
+      "Freedom",
+      "Growth"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "fmxwzmj43tcu",
+     "question": "What is a 'guiding value'?",
+     "answer": "A core value that shapes choices in many areas of life",
+     "wrong": [
+      "One assigned by a counselor",
+      "One used only in emergencies",
+      "A temporary short-term value"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "scjegst511y7",
+     "question": "Why might two people with the same values make different choices?",
+     "answer": "Their experiences and situations differ",
+     "wrong": [
+      "One person's values are stronger",
+      "Values only work in familiar situations",
+      "Their values are secretly different"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "jbazople67rh",
+     "question": "What's the best way to find your top values?",
+     "answer": "Reflect on moments you felt most proud or at peace",
+     "wrong": [
+      "Accept a quiz score",
+      "Let others list them",
+      "Pick the ones that sound impressive"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "q9hwu5xbdkvj",
+     "question": "How are values and boundaries related?",
+     "answer": "Boundaries protect what you value",
+     "wrong": [
+      "They rarely connect",
+      "Only in professional settings",
+      "Boundaries reflect community values only"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "w4bjtqppuj2c",
+     "question": "Finish the quote: 'When your actions align with your values…'",
+     "answer": "you stop second-guessing yourself",
+     "wrong": [
+      "everyone agrees with you",
+      "life gets easy",
+      "you never fail"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "7fotaslyu2tk",
+     "question": "The gap between your values and your actions is where ___ happens.",
+     "answer": "Growth",
+     "wrong": [
+      "Failure",
+      "Nothing",
+      "Luck"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "llpgojiuczmf",
+     "question": "What does 'your happy place' mean?",
+     "answer": "A real or imagined space where you feel safe and calm",
+     "wrong": [
+      "A vacation spot you've visited",
+      "A place reached only by meditation",
+      "A clinical term for no stress"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ncavvq2srsa3",
+     "question": "Which is an example of a mental happy place?",
+     "answer": "Closing your eyes and picturing a peaceful beach",
+     "wrong": [
+      "Going to a friend's house",
+      "Taking a walk in the park",
+      "Blasting loud music"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "urmp4y1sdf0x",
+     "question": "What's one purpose of finding your happy place?",
+     "answer": "To have a calming tool you can return to anytime",
+     "wrong": [
+      "To avoid your problems",
+      "To replace support from others",
+      "To spend all your time there"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "jf6jepatuu9z",
+     "question": "Which senses can help create a happy place?",
+     "answer": "All of them — sight, sound, smell, touch and taste",
+     "wrong": [
+      "Only sight",
+      "Only smell",
+      "None — it needs silence"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "lmtk4iosszt6",
+     "question": "True or false: Your happy place must be somewhere you've actually been.",
+     "answer": "False — an imagined place works just as well",
+     "wrong": [
+      "True — it must be real",
+      "True — your brain needs real memories",
+      "False — but you must plan to visit"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ietdxtkem6vf",
+     "question": "Which feelings are most connected to a happy place?",
+     "answer": "Safety and calm",
+     "wrong": [
+      "Excitement and energy",
+      "Nostalgia and sadness",
+      "Confidence and pride"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "zobo851pnq7d",
+     "question": "How can you use your happy place in a stressful moment?",
+     "answer": "Pause, close your eyes and imagine it in detail",
+     "wrong": [
+      "Tell everyone about it",
+      "Draw it right away",
+      "Go there physically as soon as possible"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ih4ay3p6t6hs",
+     "question": "Why make your happy place vivid and detailed?",
+     "answer": "More detail activates more calming responses",
+     "wrong": [
+      "It's easier to explain",
+      "It's required to work",
+      "It lasts longer in memory"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "yqnwcufq7r35",
+     "question": "Which would make the LEAST calming happy place for most people?",
+     "answer": "A noisy, chaotic, unpredictable place",
+     "wrong": [
+      "A quiet garden",
+      "A cozy bedroom",
+      "Calm water at sunrise"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "arldwwmsxb7o",
+     "question": "Why might two people have totally different happy places?",
+     "answer": "Peace looks different for everyone",
+     "wrong": [
+      "One is more creative",
+      "A therapist assigns them",
+      "Only certain places qualify"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ofvydkzmri4y",
+     "question": "How does visiting your happy place regularly help?",
+     "answer": "It trains your body to find calm faster",
+     "wrong": [
+      "It ends stress forever",
+      "It only works in therapy",
+      "It replaces friends"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "w5ncueg1co3o",
+     "question": "How is grounding related to a happy place?",
+     "answer": "Both use your senses to anchor you in calm",
+     "wrong": [
+      "Grounding means touching dirt",
+      "Grounding is a diagnosis",
+      "They're unrelated"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "f7kwoe4k7nzv",
+     "question": "Which statement about happiness is TRUE?",
+     "answer": "Happiness is a skill you can practice and return to",
+     "wrong": [
+      "It depends only on circumstances",
+      "Some people just can't be happy",
+      "Once you have it, it's permanent"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "d653t2ypmc73",
+     "question": "What can drawing your happy place teach you?",
+     "answer": "What environments and feelings restore you",
+     "wrong": [
+      "How creative you are compared to others",
+      "How well you follow directions",
+      "What treatment you need"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "k9dpqi43eoen",
+     "question": "How can sharing happy places with the group help?",
+     "answer": "It builds connection and shows many kinds of peace are valid",
+     "wrong": [
+      "It's required",
+      "Others can copy yours",
+      "It makes yours stronger"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "8zglt63x6q78",
+     "question": "Which is an example of a PHYSICAL happy place?",
+     "answer": "A favorite chair in a quiet room",
+     "wrong": [
+      "A loud, bright party",
+      "A packed crowd",
+      "Your busiest workspace"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "lt5k6qnhmunw",
+     "question": "What role does imagination play?",
+     "answer": "It lets you visit a peaceful place anytime, anywhere",
+     "wrong": [
+      "It makes it less real",
+      "It's only for when you can't travel",
+      "It blocks healing"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "echqy1cqawbl",
+     "question": "What if other people are in your happy place?",
+     "answer": "Connection and belonging are part of peace for you",
+     "wrong": [
+      "You did it wrong",
+      "You're more outgoing than others",
+      "It won't work"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "xx8oswg11kya",
+     "question": "How often can you visit your happy place?",
+     "answer": "As often as you need",
+     "wrong": [
+      "Only in therapy",
+      "Once a day",
+      "Only when already calm"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "clfk1x9iiw9n",
+     "question": "How are your happy place and self-care connected?",
+     "answer": "Both are choices to care for your wellbeing",
+     "wrong": [
+      "They're unrelated",
+      "Self-care replaces it",
+      "Only if a therapist links them"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "vn3wp5wzmyg0",
+     "question": "Why update your happy place over time?",
+     "answer": "What brings you peace can change as you grow",
+     "wrong": [
+      "It expires",
+      "You must change it weekly",
+      "It's required"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "m3120o8ycl7e",
+     "question": "What if you can't think of a happy place?",
+     "answer": "Start small — a color, a sound or a temperature",
+     "wrong": [
+      "Skip the activity",
+      "Borrow someone else's",
+      "Wait until you feel happy"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "hb0rncxrajlp",
+     "question": "How does a happy place support emotional balance?",
+     "answer": "It gives you a calm anchor when emotions feel big",
+     "wrong": [
+      "It erases negative emotions",
+      "It teaches you to bottle things up",
+      "It only works for anxiety"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "lh4sgquhin6f",
+     "question": "Finish the quote: 'Your happy place is always available to you —'",
+     "answer": "close your eyes and go there anytime",
+     "wrong": [
+      "but only on weekends",
+      "if you can afford the trip",
+      "once you earn it"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
     }
    ]
   },
@@ -21243,6 +31197,600 @@ window.GS_MY_CONTENT = {
       {
        "word": "patterns",
        "clue": "AI finds these in data — it doesn't think or feel"
+      }
+     ]
+    },
+    {
+     "id": "sd374366aaft",
+     "title": "Conflict Resolution",
+     "entries": [
+      {
+       "word": "calm",
+       "clue": "Stay this to communicate clearly"
+      },
+      {
+       "word": "listen",
+       "clue": "Do this to understand, not just to respond"
+      },
+      {
+       "word": "compromise",
+       "clue": "Both people give a little and gain a little"
+      },
+      {
+       "word": "empathy",
+       "clue": "Understanding the other person's perspective"
+      },
+      {
+       "word": "apology",
+       "clue": "Owning the harm you caused without excuses"
+      },
+      {
+       "word": "timeout",
+       "clue": "A pause until everyone cools down"
+      },
+      {
+       "word": "boundaries",
+       "clue": "Limits that keep a disagreement respectful"
+      },
+      {
+       "word": "assertive",
+       "clue": "Clear and respectful communication style"
+      },
+      {
+       "word": "validate",
+       "clue": "Show their feelings make sense to them"
+      },
+      {
+       "word": "trigger",
+       "clue": "Something that sets off a conflict"
+      },
+      {
+       "word": "avoider",
+       "clue": "Conflict style that withdraws to keep the peace"
+      },
+      {
+       "word": "stonewalling",
+       "clue": "Shutting down and refusing to talk"
+      },
+      {
+       "word": "plan",
+       "clue": "The M in CALM: make a ___"
+      },
+      {
+       "word": "understanding",
+       "clue": "The real goal — not winning"
+      },
+      {
+       "word": "breathe",
+       "clue": "Slow down and ___ before you react"
+      }
+     ]
+    },
+    {
+     "id": "50c2xgx3un26",
+     "title": "Movement as Medicine",
+     "entries": [
+      {
+       "word": "endorphins",
+       "clue": "Feel-good chemicals released when you move"
+      },
+      {
+       "word": "cortisol",
+       "clue": "Stress hormone that exercise helps lower"
+      },
+      {
+       "word": "walking",
+       "clue": "Simple, free movement — one foot in front of the other"
+      },
+      {
+       "word": "stretching",
+       "clue": "Improves flexibility and eases tension"
+      },
+      {
+       "word": "yoga",
+       "clue": "Mind-body practice with poses and breathing"
+      },
+      {
+       "word": "sleep",
+       "clue": "Regular movement improves the quality of this"
+      },
+      {
+       "word": "consistent",
+       "clue": "Being this matters more than being perfect"
+      },
+      {
+       "word": "dancing",
+       "clue": "Moving to music — it counts!"
+      },
+      {
+       "word": "gardening",
+       "clue": "Outdoor hobby that counts as moderate movement"
+      },
+      {
+       "word": "recovery",
+       "clue": "Active ___: light movement on rest days"
+      },
+      {
+       "word": "motivation",
+       "clue": "Action often creates this, so don't wait for it"
+      },
+      {
+       "word": "snack",
+       "clue": "Movement ___: a short 5–10 minute burst"
+      },
+      {
+       "word": "mood",
+       "clue": "Movement can lift this — track it before and after"
+      },
+      {
+       "word": "neuroplasticity",
+       "clue": "The brain forming new connections"
+      },
+      {
+       "word": "hiking",
+       "clue": "Walking on nature trails"
+      }
+     ]
+    },
+    {
+     "id": "o8gm8zzzpar1",
+     "title": "Nutritional Values",
+     "entries": [
+      {
+       "word": "protein",
+       "clue": "Builds and repairs your body"
+      },
+      {
+       "word": "carbohydrates",
+       "clue": "Your body's main energy source"
+      },
+      {
+       "word": "fiber",
+       "clue": "Helps digestion and keeps you full"
+      },
+      {
+       "word": "water",
+       "clue": "Drink this first — thirst can feel like hunger"
+      },
+      {
+       "word": "rainbow",
+       "clue": "Eat the ___: many colorful fruits and veggies"
+      },
+      {
+       "word": "omega",
+       "clue": "___-3: healthy fat in fish and walnuts"
+      },
+      {
+       "word": "iron",
+       "clue": "Mineral that helps carry oxygen"
+      },
+      {
+       "word": "label",
+       "clue": "Read the food ___ to see what's inside"
+      },
+      {
+       "word": "vitamins",
+       "clue": "Small but mighty nutrients like A, C and D"
+      },
+      {
+       "word": "serotonin",
+       "clue": "Mood chemical made mostly in the gut"
+      },
+      {
+       "word": "mindful",
+       "clue": "___ eating: paying attention without judgment"
+      },
+      {
+       "word": "avocado",
+       "clue": "Green fruit full of healthy fat"
+      },
+      {
+       "word": "lentils",
+       "clue": "Low-cost, plant-based protein"
+      },
+      {
+       "word": "breakfast",
+       "clue": "The meal that breaks your overnight fast"
+      },
+      {
+       "word": "magnesium",
+       "clue": "Mineral in nuts that supports sleep"
+      }
+     ]
+    },
+    {
+     "id": "azontxmiw73k",
+     "title": "Peer Pressure & Recovery",
+     "entries": [
+      {
+       "word": "boundary",
+       "clue": "A limit you set to protect your wellbeing"
+      },
+      {
+       "word": "direct",
+       "clue": "Pressure where someone asks you outright"
+      },
+      {
+       "word": "indirect",
+       "clue": "Pressure to fit in without anyone asking"
+      },
+      {
+       "word": "internal",
+       "clue": "Pressure that comes from your own thoughts"
+      },
+      {
+       "word": "environment",
+       "clue": "Places and situations that pull you toward old habits"
+      },
+      {
+       "word": "stop",
+       "clue": "Four-step reset: S-T-O-P"
+      },
+      {
+       "word": "breathe",
+       "clue": "The T in STOP: take a breath — ___"
+      },
+      {
+       "word": "observe",
+       "clue": "The O in STOP"
+      },
+      {
+       "word": "support",
+       "clue": "Call on your ___ — you don't have to do it alone"
+      },
+      {
+       "word": "alternative",
+       "clue": "Suggest an ___ that supports your goals"
+      },
+      {
+       "word": "strength",
+       "clue": "Saying no takes real ___"
+      },
+      {
+       "word": "instincts",
+       "clue": "Don't dismiss these to please others"
+      },
+      {
+       "word": "excuses",
+       "clue": "Making these for someone else's behavior is a warning sign"
+      },
+      {
+       "word": "selfrespect",
+       "clue": "Protecting your recovery is an act of ___ (one word)"
+      },
+      {
+       "word": "no",
+       "clue": "A complete sentence all by itself"
+      }
+     ]
+    },
+    {
+     "id": "0xr7aic34bho",
+     "title": "Personal Responsibility",
+     "entries": [
+      {
+       "word": "accountability",
+       "clue": "Owning your actions with a focus on growth"
+      },
+      {
+       "word": "amends",
+       "clue": "Make ___: repair the harm you caused"
+      },
+      {
+       "word": "integrity",
+       "clue": "Doing right when no one is watching"
+      },
+      {
+       "word": "commitment",
+       "clue": "A promise you make and keep"
+      },
+      {
+       "word": "choices",
+       "clue": "Personal responsibility means owning these"
+      },
+      {
+       "word": "excuses",
+       "clue": "Responsible people make fewer of these"
+      },
+      {
+       "word": "recognize",
+       "clue": "Step 1 of the Responsibility Cycle"
+      },
+      {
+       "word": "repair",
+       "clue": "Step 3: make it right"
+      },
+      {
+       "word": "learn",
+       "clue": "Step 4: figure out what to do differently"
+      },
+      {
+       "word": "forward",
+       "clue": "Step 5: move ___"
+      },
+      {
+       "word": "trust",
+       "clue": "Following through builds this"
+      },
+      {
+       "word": "shame",
+       "clue": "Says 'I am bad' — not the same as responsibility"
+      },
+      {
+       "word": "selfawareness",
+       "clue": "The starting point — you can't own what you don't see (one word)"
+      },
+      {
+       "word": "help",
+       "clue": "Asking for this is a responsible choice"
+      },
+      {
+       "word": "followthrough",
+       "clue": "Do what you say you'll do (one word)"
+      }
+     ]
+    },
+    {
+     "id": "om9a62wbfnq6",
+     "title": "The Science of Leisure",
+     "entries": [
+      {
+       "word": "leisure",
+       "clue": "Time spent on activities you choose to enjoy"
+      },
+      {
+       "word": "hobby",
+       "clue": "Something you do for fun in your free time"
+      },
+      {
+       "word": "flow",
+       "clue": "State where time seems to disappear"
+      },
+      {
+       "word": "dopamine",
+       "clue": "Feel-good chemical that fun releases"
+      },
+      {
+       "word": "cortisol",
+       "clue": "Stress hormone leisure helps lower"
+      },
+      {
+       "word": "restorative",
+       "clue": "Leisure that refills your energy"
+      },
+      {
+       "word": "passive",
+       "clue": "TV and scrolling are this kind of leisure"
+      },
+      {
+       "word": "active",
+       "clue": "Hiking, painting and games are this kind of leisure"
+      },
+      {
+       "word": "creative",
+       "clue": "Drawing, writing and crafting are this type"
+      },
+      {
+       "word": "burnout",
+       "clue": "What can happen with no leisure at all"
+      },
+      {
+       "word": "identity",
+       "clue": "Hobbies help shape who you are"
+      },
+      {
+       "word": "guilt",
+       "clue": "A common barrier to taking time for yourself"
+      },
+      {
+       "word": "nature",
+       "clue": "Hiking, gardening and stargazing are ___-based leisure"
+      },
+      {
+       "word": "social",
+       "clue": "Leisure with friends, clubs and games"
+      },
+      {
+       "word": "rest",
+       "clue": "It's not a reward — it's part of the work"
+      }
+     ]
+    },
+    {
+     "id": "i813qwax6th8",
+     "title": "Toxic Relationships",
+     "entries": [
+      {
+       "word": "boundary",
+       "clue": "A limit you set to protect your wellbeing"
+      },
+      {
+       "word": "gaslighting",
+       "clue": "Making someone doubt their own reality"
+      },
+      {
+       "word": "respect",
+       "clue": "Healthy relationships are built on mutual ___"
+      },
+      {
+       "word": "isolation",
+       "clue": "Cutting someone off from their support"
+      },
+      {
+       "word": "manipulation",
+       "clue": "Using guilt or fear to control someone"
+      },
+      {
+       "word": "eggshells",
+       "clue": "Walking on ___: always afraid of their reaction"
+      },
+      {
+       "word": "lovebombing",
+       "clue": "Overwhelming affection early on to gain control (one word)"
+      },
+      {
+       "word": "support",
+       "clue": "A ___ network helps you feel less alone"
+      },
+      {
+       "word": "pattern",
+       "clue": "Toxicity is this, not a single bad day"
+      },
+      {
+       "word": "safe",
+       "clue": "A healthy relationship lets you feel this"
+      },
+      {
+       "word": "gates",
+       "clue": "Boundaries are fences with these"
+      },
+      {
+       "word": "selfworth",
+       "clue": "Toxic relationships can wear this down (one word)"
+      },
+      {
+       "word": "peace",
+       "clue": "Protect your ___"
+      },
+      {
+       "word": "criticism",
+       "clue": "Constant ___ is a red flag"
+      },
+      {
+       "word": "trust",
+       "clue": "Healthy relationships grow this over time"
+      }
+     ]
+    },
+    {
+     "id": "enyl32c6wqn1",
+     "title": "Your Values",
+     "entries": [
+      {
+       "word": "values",
+       "clue": "The principles that guide your choices"
+      },
+      {
+       "word": "honesty",
+       "clue": "Telling the truth, even when it's hard"
+      },
+      {
+       "word": "courage",
+       "clue": "Speaking up even when you're afraid"
+      },
+      {
+       "word": "compassion",
+       "clue": "Caring about others' wellbeing"
+      },
+      {
+       "word": "integrity",
+       "clue": "Acting on your beliefs when no one is watching"
+      },
+      {
+       "word": "compass",
+       "clue": "Values work like an inner one of these"
+      },
+      {
+       "word": "growth",
+       "clue": "Happens in the gap between values and actions"
+      },
+      {
+       "word": "belonging",
+       "clue": "Value focused on community and connection"
+      },
+      {
+       "word": "freedom",
+       "clue": "Value focused on independence"
+      },
+      {
+       "word": "authenticity",
+       "clue": "Being true to who you really are"
+      },
+      {
+       "word": "respect",
+       "clue": "Treating others — and yourself — with dignity"
+      },
+      {
+       "word": "kindness",
+       "clue": "Being friendly, generous and considerate"
+      },
+      {
+       "word": "purpose",
+       "clue": "Living your values gives life more of this"
+      },
+      {
+       "word": "boundaries",
+       "clue": "These protect what you value"
+      },
+      {
+       "word": "humor",
+       "clue": "Value of laughing and lightness"
+      }
+     ]
+    },
+    {
+     "id": "41bojysuiwdu",
+     "title": "Your Happy Place",
+     "entries": [
+      {
+       "word": "beach",
+       "clue": "Sand, waves and seagulls"
+      },
+      {
+       "word": "peace",
+       "clue": "The calm feeling a happy place brings"
+      },
+      {
+       "word": "calm",
+       "clue": "Quiet and relaxed — not stressed"
+      },
+      {
+       "word": "imagine",
+       "clue": "Picture something in your mind"
+      },
+      {
+       "word": "safe",
+       "clue": "Free from harm — the #1 feeling of a happy place"
+      },
+      {
+       "word": "senses",
+       "clue": "Sight, sound, smell, touch and taste"
+      },
+      {
+       "word": "grounding",
+       "clue": "Using your senses to anchor yourself"
+      },
+      {
+       "word": "visualize",
+       "clue": "See it clearly in your mind's eye"
+      },
+      {
+       "word": "cozy",
+       "clue": "Warm, comfy and snug"
+      },
+      {
+       "word": "sunset",
+       "clue": "When the sky turns orange and pink"
+      },
+      {
+       "word": "forest",
+       "clue": "A place full of tall trees"
+      },
+      {
+       "word": "draw",
+       "clue": "Sketch your happy place — stick figures welcome!"
+      },
+      {
+       "word": "present",
+       "clue": "Fully in the moment"
+      },
+      {
+       "word": "relax",
+       "clue": "Let go of tension"
+      },
+      {
+       "word": "hopeful",
+       "clue": "Looking forward with good feelings"
       }
      ]
     }
@@ -24647,6 +35195,1806 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "The most important part of your growth journey",
      "answer": "You!"
+    },
+    {
+     "id": "rmfo6ytodc79",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 100,
+     "clue": "The C in CALM: pause before reacting",
+     "answer": "Cool down"
+    },
+    {
+     "id": "ux68z433beg4",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 200,
+     "clue": "The A in CALM",
+     "answer": "Ask and listen"
+    },
+    {
+     "id": "ig8l524gnsnq",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 300,
+     "clue": "The L in CALM: find what you both agree on",
+     "answer": "Look for common ground"
+    },
+    {
+     "id": "le1k5fjd8buj",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 400,
+     "clue": "The M in CALM: agree on a solution and follow through",
+     "answer": "Make a plan"
+    },
+    {
+     "id": "l00u2ymdlrdt",
+     "board": "Conflict Resolution",
+     "category": "The CALM Method",
+     "value": 500,
+     "clue": "The goal of conflict resolution isn't to win — it's to reach this",
+     "answer": "Understanding"
+    },
+    {
+     "id": "efmlfcq4kn2w",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 100,
+     "clue": "'I feel hurt' instead of 'You always hurt me' is an example of this",
+     "answer": "An 'I' statement"
+    },
+    {
+     "id": "mruuzucw86ya",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 200,
+     "clue": "Two blame words that shut conversations down: 'You always' and 'You ___'",
+     "answer": "Never"
+    },
+    {
+     "id": "t1flqtael6na",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 300,
+     "clue": "Communication style that's clear and respectful, not aggressive",
+     "answer": "Assertive"
+    },
+    {
+     "id": "xdb7eg85cqbs",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 400,
+     "clue": "Repeating back what you heard to check you understood",
+     "answer": "Reflective listening"
+    },
+    {
+     "id": "zchpsmkcffmm",
+     "board": "Conflict Resolution",
+     "category": "Say It Better",
+     "value": 500,
+     "clue": "Saying their feelings make sense, even if you disagree",
+     "answer": "Validating"
+    },
+    {
+     "id": "4eqrhwnucto9",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 100,
+     "clue": "Withdraws from conflict and prefers peace over resolution",
+     "answer": "The Avoider"
+    },
+    {
+     "id": "78sq3ms72nji",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 200,
+     "clue": "Needs to win and may become aggressive",
+     "answer": "The Competitor"
+    },
+    {
+     "id": "m2vichl9wop9",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 300,
+     "clue": "Gives in quickly to keep the relationship",
+     "answer": "The Pleaser"
+    },
+    {
+     "id": "fq2w78exo21s",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 400,
+     "clue": "Stays calm and works toward resolution",
+     "answer": "The Problem Solver"
+    },
+    {
+     "id": "hbhmw6ik27gk",
+     "board": "Conflict Resolution",
+     "category": "Conflict Styles",
+     "value": 500,
+     "clue": "Completely shutting down and refusing to talk",
+     "answer": "Stonewalling"
+    },
+    {
+     "id": "x59e3xasyfki",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 100,
+     "clue": "It's okay to take one of these and come back when calm",
+     "answer": "A timeout"
+    },
+    {
+     "id": "f7ic6na7e3du",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 200,
+     "clue": "Words or actions that lower the tension",
+     "answer": "De-escalation"
+    },
+    {
+     "id": "skg4q383k1s0",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 300,
+     "clue": "This simple body skill calms the fight-or-flight response",
+     "answer": "Deep breathing"
+    },
+    {
+     "id": "0v22ryes4k8e",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 400,
+     "clue": "Don't bring up these during a disagreement",
+     "answer": "Old arguments"
+    },
+    {
+     "id": "fs7twcktk1ks",
+     "board": "Conflict Resolution",
+     "category": "Cool Heads",
+     "value": 500,
+     "clue": "No yelling, name-calling or aggression — respect these",
+     "answer": "Boundaries"
+    },
+    {
+     "id": "u93skpmi9xb6",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 100,
+     "clue": "Both people give a little and gain a little",
+     "answer": "Compromise"
+    },
+    {
+     "id": "f020scj9k6jl",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 200,
+     "clue": "An outcome where both people's needs are met",
+     "answer": "Win-win"
+    },
+    {
+     "id": "c37360cjfekf",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 300,
+     "clue": "Owning the harm you caused without excuses",
+     "answer": "A real apology"
+    },
+    {
+     "id": "ml8xvey08r8x",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 400,
+     "clue": "Understanding the other person's point of view",
+     "answer": "Empathy"
+    },
+    {
+     "id": "rf49xtv6x3by",
+     "board": "Conflict Resolution",
+     "category": "Finding Peace",
+     "value": 500,
+     "clue": "Finish the quote: 'Peace is not the absence of conflict — it is the ability to handle conflict ___'",
+     "answer": "Peacefully"
+    },
+    {
+     "id": "bbai2zphahoa",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 100,
+     "clue": "The brain's natural feel-good chemicals released during exercise",
+     "answer": "Endorphins"
+    },
+    {
+     "id": "8lahkl4iissf",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 200,
+     "clue": "The stress hormone that movement helps lower",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "lfp70y1uiw3p",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 300,
+     "clue": "Movement improves the quality of this nightly activity",
+     "answer": "Sleep"
+    },
+    {
+     "id": "shms5jqoe04v",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 400,
+     "clue": "The brain's ability to form new connections",
+     "answer": "Neuroplasticity"
+    },
+    {
+     "id": "14hgr39gm7ld",
+     "board": "Movement as Medicine",
+     "category": "Feel-Good Science",
+     "value": 500,
+     "clue": "Even a walk this many minutes long can ease anxiety",
+     "answer": "10"
+    },
+    {
+     "id": "ruibz8akjp7r",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 100,
+     "clue": "Yoga and tai chi are this kind of movement — movement meets mindfulness",
+     "answer": "Mind-body"
+    },
+    {
+     "id": "irq03fie06hg",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 200,
+     "clue": "Walking, stretching and swimming are this kind of low-stress movement",
+     "answer": "Low-impact"
+    },
+    {
+     "id": "b9bp8ybee4s4",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 300,
+     "clue": "Hiking, cycling and this backyard hobby count as moderate movement",
+     "answer": "Gardening"
+    },
+    {
+     "id": "3bbvrx7zfuer",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 400,
+     "clue": "A 5–10 minute burst of activity during your day",
+     "answer": "A movement snack"
+    },
+    {
+     "id": "xronxbs4ln01",
+     "board": "Movement as Medicine",
+     "category": "Ways to Move",
+     "value": 500,
+     "clue": "Light walking or stretching on rest days",
+     "answer": "Active recovery"
+    },
+    {
+     "id": "dvi5kueffsyu",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 100,
+     "clue": "True or false: you need 60+ minutes a day to see mental health benefits",
+     "answer": "False — 10–20 minutes helps"
+    },
+    {
+     "id": "osig1hey01wz",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 200,
+     "clue": "True or false: you need a gym to get real benefits",
+     "answer": "False"
+    },
+    {
+     "id": "vi4440n5bjiu",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 300,
+     "clue": "True or false: movement helps people at ALL fitness levels",
+     "answer": "True"
+    },
+    {
+     "id": "r27ge461de9a",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 400,
+     "clue": "True or false: skipping a few days erases all the benefits",
+     "answer": "False"
+    },
+    {
+     "id": "wky88gd21ols",
+     "board": "Movement as Medicine",
+     "category": "Myth Busters",
+     "value": 500,
+     "clue": "True or false: your own body weight and 15 minutes are enough",
+     "answer": "True"
+    },
+    {
+     "id": "smzqh1tm2gpw",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 100,
+     "clue": "Health guidelines suggest at least this many minutes a week",
+     "answer": "150"
+    },
+    {
+     "id": "w5z05j77azpc",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 200,
+     "clue": "Often, action creates this — so don't wait for it",
+     "answer": "Motivation"
+    },
+    {
+     "id": "204uiv7ai6vl",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 300,
+     "clue": "The best kind of movement is the kind you'll do this way",
+     "answer": "Consistently"
+    },
+    {
+     "id": "piifn5f72jdq",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 400,
+     "clue": "When you're tired, try starting with just this many minutes",
+     "answer": "5"
+    },
+    {
+     "id": "qskds2ius3wu",
+     "board": "Movement as Medicine",
+     "category": "Get Moving",
+     "value": 500,
+     "clue": "Paying attention to pain and tiredness while exercising",
+     "answer": "Listening to your body"
+    },
+    {
+     "id": "ntlj7w3peks1",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 100,
+     "clue": "Using movement on purpose to handle tough emotions",
+     "answer": "Exercise as a coping skill"
+    },
+    {
+     "id": "93jxjbirfvxf",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 200,
+     "clue": "Group walks and team sports build this",
+     "answer": "Community / connection"
+    },
+    {
+     "id": "ghrjmk14yscl",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 300,
+     "clue": "Movement improves memory and focus by sending more of this to the brain",
+     "answer": "Blood flow"
+    },
+    {
+     "id": "m7o0r7ckot71",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 400,
+     "clue": "Consistent movement builds a sense of this",
+     "answer": "Accomplishment"
+    },
+    {
+     "id": "a8lmm9qt9nmb",
+     "board": "Movement as Medicine",
+     "category": "Body & Mind",
+     "value": 500,
+     "clue": "Finish it: movement is medicine — not ___",
+     "answer": "Punishment"
+    },
+    {
+     "id": "d5zacgup0yj9",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 100,
+     "clue": "Your body's main energy source",
+     "answer": "Carbohydrates"
+    },
+    {
+     "id": "6m3h3ly6ar8y",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 200,
+     "clue": "Builds and repairs your body — found in eggs, beans and fish",
+     "answer": "Protein"
+    },
+    {
+     "id": "315nfdgx3vsv",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 300,
+     "clue": "Supports brain health — choose ones from avocado and olive oil",
+     "answer": "Healthy fats"
+    },
+    {
+     "id": "e62d2zn1yx3q",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 400,
+     "clue": "Oatmeal and brown rice are this kind of carb",
+     "answer": "Complex carbohydrates"
+    },
+    {
+     "id": "hs0fudmv2fuu",
+     "board": "Nutritional Values",
+     "category": "Macro Basics",
+     "value": 500,
+     "clue": "The three macronutrients: carbs, protein and ___",
+     "answer": "Fat"
+    },
+    {
+     "id": "ugigop7ebg4k",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 100,
+     "clue": "The 'sunshine vitamin' that supports mood",
+     "answer": "Vitamin D"
+    },
+    {
+     "id": "k1vf96kw58ui",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 200,
+     "clue": "Mineral that helps carry oxygen and gives you energy",
+     "answer": "Iron"
+    },
+    {
+     "id": "0xdkc6qjx9wa",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 300,
+     "clue": "Healthy fat found in fish, flaxseed and walnuts",
+     "answer": "Omega-3"
+    },
+    {
+     "id": "g7uuplpsk9yp",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 400,
+     "clue": "Mineral in nuts and dark chocolate that supports sleep",
+     "answer": "Magnesium"
+    },
+    {
+     "id": "ts5ctg19cum3",
+     "board": "Nutritional Values",
+     "category": "Small but Mighty",
+     "value": 500,
+     "clue": "Mood chemical made mostly in your gut",
+     "answer": "Serotonin"
+    },
+    {
+     "id": "hznjp1ioq6rs",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 100,
+     "clue": "Drink this first — thirst can feel like hunger",
+     "answer": "Water"
+    },
+    {
+     "id": "z3wwev12oe8w",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 200,
+     "clue": "Add more of this to your plate for more nutrients",
+     "answer": "Color (fruits and veggies)"
+    },
+    {
+     "id": "ap8i2hsmr05z",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 300,
+     "clue": "Reading these tells you what's in your food",
+     "answer": "Food labels"
+    },
+    {
+     "id": "58y5htx4o67p",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 400,
+     "clue": "Doing this regularly keeps your mood and focus steady",
+     "answer": "Eating meals"
+    },
+    {
+     "id": "pgv20ioweosl",
+     "board": "Nutritional Values",
+     "category": "Smart Habits",
+     "value": 500,
+     "clue": "Paying attention to how and why you eat",
+     "answer": "Mindful eating"
+    },
+    {
+     "id": "b6qcfazew7oe",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "Eating healthy is always too expensive",
+     "answer": "Myth"
+    },
+    {
+     "id": "kay8da4rnf2c",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Carbs are your body's main energy source",
+     "answer": "Fact"
+    },
+    {
+     "id": "h6sr6qi2hxag",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "You need to eat perfectly to be healthy",
+     "answer": "Myth"
+    },
+    {
+     "id": "ywp4ydxfxtl4",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Supplements can replace a healthy diet",
+     "answer": "Myth"
+    },
+    {
+     "id": "8ow7326g7l64",
+     "board": "Nutritional Values",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Low-fat foods are always healthier",
+     "answer": "Myth"
+    },
+    {
+     "id": "4lggd5pg2qxa",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 100,
+     "clue": "A sugar spike is usually followed by this",
+     "answer": "A crash"
+    },
+    {
+     "id": "9bkwzevs6zz7",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 200,
+     "clue": "Eating a variety of colorful produce is called eating a ___",
+     "answer": "Rainbow"
+    },
+    {
+     "id": "5q65gfvctq5d",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 300,
+     "clue": "Beans, lentils, oats and frozen veggies are low-cost and nutrient-___",
+     "answer": "Dense"
+    },
+    {
+     "id": "t1sx7r2zc42y",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 400,
+     "clue": "Fatigue, headache and dark urine can be signs of this",
+     "answer": "Dehydration"
+    },
+    {
+     "id": "yq8p940pdf2r",
+     "board": "Nutritional Values",
+     "category": "Food & Mood",
+     "value": 500,
+     "clue": "Swapping one habit at a time beats this",
+     "answer": "Overhauling everything at once"
+    },
+    {
+     "id": "3j7tjtw9e9cx",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 100,
+     "clue": "Someone directly asks or tells you to do something",
+     "answer": "Direct pressure"
+    },
+    {
+     "id": "wkqdrbswryvu",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 200,
+     "clue": "Feeling you should act a certain way to fit in",
+     "answer": "Indirect pressure"
+    },
+    {
+     "id": "klb4kmlfl2x0",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 300,
+     "clue": "Telling yourself what others expect of you",
+     "answer": "Internal pressure"
+    },
+    {
+     "id": "r7i8rwt584e8",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 400,
+     "clue": "Places, people or situations that pull you toward old habits",
+     "answer": "Environmental pressure"
+    },
+    {
+     "id": "ewe8t1cqabw6",
+     "board": "Peer Pressure & Recovery",
+     "category": "Kinds of Pressure",
+     "value": 500,
+     "clue": "Pressure can even come from people who ___ about you",
+     "answer": "Care"
+    },
+    {
+     "id": "k3arer9axbuv",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 100,
+     "clue": "The S in STOP",
+     "answer": "Stop what you're doing"
+    },
+    {
+     "id": "7qrclzxt0ivw",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 200,
+     "clue": "The T in STOP",
+     "answer": "Take a breath"
+    },
+    {
+     "id": "u0qy2zg6zv8u",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 300,
+     "clue": "The O in STOP",
+     "answer": "Observe what's happening around and inside you"
+    },
+    {
+     "id": "6yh4ez7a08l2",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 400,
+     "clue": "The P in STOP",
+     "answer": "Proceed with intention"
+    },
+    {
+     "id": "qtylj6fbdkcd",
+     "board": "Peer Pressure & Recovery",
+     "category": "The STOP Skill",
+     "value": 500,
+     "clue": "STOP is a quick one of these when pressure hits",
+     "answer": "Reset"
+    },
+    {
+     "id": "fl9w5rpmqvfg",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 100,
+     "clue": "Two words that make a complete sentence",
+     "answer": "No thanks"
+    },
+    {
+     "id": "76fmgnld1nou",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 200,
+     "clue": "\"Let me think about it\" buys you this",
+     "answer": "Time"
+    },
+    {
+     "id": "0l814h2zv1a6",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 300,
+     "clue": "Redirect the plan to something healthy by suggesting one of these",
+     "answer": "An alternative"
+    },
+    {
+     "id": "m8nl07i3kfom",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 400,
+     "clue": "Removing yourself from the situation is a skill, not this",
+     "answer": "Weakness"
+    },
+    {
+     "id": "qg0ttmxasp6d",
+     "board": "Peer Pressure & Recovery",
+     "category": "Ways to Respond",
+     "value": 500,
+     "clue": "Text or call someone safe — you don't have to do it ___",
+     "answer": "Alone"
+    },
+    {
+     "id": "ta16u6f4yl9g",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 100,
+     "clue": "Three words that are a big red flag: 'just ___ ___'",
+     "answer": "This once"
+    },
+    {
+     "id": "eb5ve2wdwxr0",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 200,
+     "clue": "Feeling anxious or this about saying no",
+     "answer": "Guilty"
+    },
+    {
+     "id": "pwufomqdms3d",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 300,
+     "clue": "Making these for someone else's behavior",
+     "answer": "Excuses"
+    },
+    {
+     "id": "xjgd7wp8cb9o",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 400,
+     "clue": "Changing your plans to avoid this",
+     "answer": "Conflict"
+    },
+    {
+     "id": "n2thy97jps1g",
+     "board": "Peer Pressure & Recovery",
+     "category": "Warning Signs",
+     "value": 500,
+     "clue": "Feeling like you have to earn your place in this",
+     "answer": "A group"
+    },
+    {
+     "id": "78case6yg659",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 100,
+     "clue": "A limit you set to protect your wellbeing",
+     "answer": "A boundary"
+    },
+    {
+     "id": "w5tvdkdfa2fw",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 200,
+     "clue": "Your recovery is this — no one has the right to threaten it",
+     "answer": "Yours"
+    },
+    {
+     "id": "88ve0vq5gl5e",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 300,
+     "clue": "Saying no is an act of strength and self-___",
+     "answer": "Respect"
+    },
+    {
+     "id": "obyo0icrwxrp",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 400,
+     "clue": "Asking for this is a sign of strength, not weakness",
+     "answer": "Support"
+    },
+    {
+     "id": "qvwepo0bra0y",
+     "board": "Peer Pressure & Recovery",
+     "category": "Standing Strong",
+     "value": 500,
+     "clue": "Healthy relationships respect your ___",
+     "answer": "Boundaries (and your 'no')"
+    },
+    {
+     "id": "ddb0u5mg9lca",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 100,
+     "clue": "Step 1: see what happened honestly",
+     "answer": "Recognize"
+    },
+    {
+     "id": "wepvcynqeaqx",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 200,
+     "clue": "Step 2: name what YOU did or didn't do",
+     "answer": "Own your role"
+    },
+    {
+     "id": "scor87kc5wum",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 300,
+     "clue": "Step 3: make it right",
+     "answer": "Repair"
+    },
+    {
+     "id": "mjkwjtu9u1dv",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 400,
+     "clue": "Step 4: decide what you'll do differently",
+     "answer": "Learn"
+    },
+    {
+     "id": "sl7kvq3zvxae",
+     "board": "Personal Responsibility",
+     "category": "The Responsibility Cycle",
+     "value": 500,
+     "clue": "Step 5: don't let one mistake define your story",
+     "answer": "Move forward"
+    },
+    {
+     "id": "xo96ff3x6b3l",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 100,
+     "clue": "Doing what you say you'll do",
+     "answer": "Following through"
+    },
+    {
+     "id": "hgfobemh2won",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 200,
+     "clue": "Taking real steps to repair harm you caused",
+     "answer": "Making amends"
+    },
+    {
+     "id": "8j1fs00f3h0u",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 300,
+     "clue": "Recognizing when you need support is responsible — so do this",
+     "answer": "Ask for help"
+    },
+    {
+     "id": "42cd0dg9lckj",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 400,
+     "clue": "Small daily ones of these build trust in yourself",
+     "answer": "Commitments"
+    },
+    {
+     "id": "bnou482d3xk7",
+     "board": "Personal Responsibility",
+     "category": "What It Looks Like",
+     "value": 500,
+     "clue": "Looking at your role when something goes wrong",
+     "answer": "Acknowledging mistakes"
+    },
+    {
+     "id": "f9telngovlmw",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 100,
+     "clue": "Says 'I am bad' — and paralyzes you",
+     "answer": "Shame"
+    },
+    {
+     "id": "3fnl3h5vv8m9",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 200,
+     "clue": "Says 'I did something I want to do differently' — and empowers you",
+     "answer": "Responsibility"
+    },
+    {
+     "id": "twdb4jlb78je",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 300,
+     "clue": "Focuses on growth instead of punishment",
+     "answer": "Accountability"
+    },
+    {
+     "id": "qt8ro6v4aumu",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 400,
+     "clue": "Pointing at other people instead of yourself",
+     "answer": "Blame"
+    },
+    {
+     "id": "bvp1cbm9bhkr",
+     "board": "Personal Responsibility",
+     "category": "Not the Same Thing",
+     "value": 500,
+     "clue": "'I'm sorry you feel that way' is not a real one",
+     "answer": "Apology"
+    },
+    {
+     "id": "mbctwe28l5r0",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 100,
+     "clue": "Doing the right thing when no one is watching",
+     "answer": "Integrity"
+    },
+    {
+     "id": "mk7czhofhm0y",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 200,
+     "clue": "You can't take responsibility for what you don't recognize — so start with this",
+     "answer": "Self-awareness"
+    },
+    {
+     "id": "zvurlwt2ivx8",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 300,
+     "clue": "Acting with integrity builds this toward yourself",
+     "answer": "Self-respect"
+    },
+    {
+     "id": "67j9mhorrkj8",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 400,
+     "clue": "Owning your actions typically earns this from others",
+     "answer": "Respect"
+    },
+    {
+     "id": "gdau937ikxr9",
+     "board": "Personal Responsibility",
+     "category": "Character Counts",
+     "value": 500,
+     "clue": "Taking ownership before a problem happens",
+     "answer": "Proactive responsibility"
+    },
+    {
+     "id": "oes1n3q8cmkw",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 100,
+     "clue": "Recognizing you usually have more than one option",
+     "answer": "Choice awareness"
+    },
+    {
+     "id": "2q4zbypeaju4",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 200,
+     "clue": "Owning your choices gives you the power to change your life's ___",
+     "answer": "Direction"
+    },
+    {
+     "id": "7wncy1a6hzw3",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 300,
+     "clue": "Ownership builds this in relationships",
+     "answer": "Trust"
+    },
+    {
+     "id": "2azv7qjpq079",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 400,
+     "clue": "'I was late because of traffic' is an example of making one of these",
+     "answer": "An excuse"
+    },
+    {
+     "id": "7jg5bx66bd2n",
+     "board": "Personal Responsibility",
+     "category": "Your Choices",
+     "value": 500,
+     "clue": "Responsibility is about behavior, not this",
+     "answer": "Identity (who you are)"
+    },
+    {
+     "id": "omdyjmbscvrt",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 100,
+     "clue": "Walking, dancing, yoga and swimming",
+     "answer": "Physical"
+    },
+    {
+     "id": "0090o49777f0",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 200,
+     "clue": "Drawing, writing, crafting and cooking",
+     "answer": "Creative"
+    },
+    {
+     "id": "c8vgc9nwzao7",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 300,
+     "clue": "Games with friends, clubs and volunteering",
+     "answer": "Social"
+    },
+    {
+     "id": "2bvyn7k3156w",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 400,
+     "clue": "Reading, puzzles and learning new things",
+     "answer": "Mind-based"
+    },
+    {
+     "id": "89f3a49r17f5",
+     "board": "The Science of Leisure",
+     "category": "Types of Leisure",
+     "value": 500,
+     "clue": "Hiking, gardening and stargazing",
+     "answer": "Nature-based"
+    },
+    {
+     "id": "by6yzaw5dn8p",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 100,
+     "clue": "Enjoyable activities lower this stress hormone",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "w32a0faxaoyl",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 200,
+     "clue": "Fun releases this feel-good brain chemical",
+     "answer": "Dopamine"
+    },
+    {
+     "id": "frr448bjnk76",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 300,
+     "clue": "Active leisure during the day helps regulate this at night",
+     "answer": "Sleep"
+    },
+    {
+     "id": "3omvbwvaeq1b",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 400,
+     "clue": "Shared activities build this and reduce isolation",
+     "answer": "Connection"
+    },
+    {
+     "id": "f3sm0hxshemi",
+     "board": "The Science of Leisure",
+     "category": "Brain Benefits",
+     "value": 500,
+     "clue": "Hobbies are part of who you are — they build your ___",
+     "answer": "Identity"
+    },
+    {
+     "id": "xkdsmdkj55pc",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 100,
+     "clue": "Scrolling your phone",
+     "answer": "Passive"
+    },
+    {
+     "id": "myoecrc837nw",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 200,
+     "clue": "Painting a picture",
+     "answer": "Active"
+    },
+    {
+     "id": "jvp9vlrbejfv",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 300,
+     "clue": "Watching TV",
+     "answer": "Passive"
+    },
+    {
+     "id": "gtfefvciicvi",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 400,
+     "clue": "Playing a board game with friends",
+     "answer": "Active"
+    },
+    {
+     "id": "uh3p1vzm6wyv",
+     "board": "The Science of Leisure",
+     "category": "Active or Passive?",
+     "value": 500,
+     "clue": "Being so absorbed in an activity that time disappears",
+     "answer": "Flow"
+    },
+    {
+     "id": "0dmdjqj7ymc4",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 100,
+     "clue": "True or false: leisure is just wasting time",
+     "answer": "False"
+    },
+    {
+     "id": "jhcs9x4rpxvi",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 200,
+     "clue": "True or false: you have to earn rest",
+     "answer": "False — it's a basic need"
+    },
+    {
+     "id": "99fzx0py1uiv",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 300,
+     "clue": "True or false: only expensive hobbies count",
+     "answer": "False"
+    },
+    {
+     "id": "odzb4xwnyopp",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 400,
+     "clue": "True or false: you have to be good at it for it to count",
+     "answer": "False"
+    },
+    {
+     "id": "eq5voqbwmeqw",
+     "board": "The Science of Leisure",
+     "category": "Leisure Myths",
+     "value": 500,
+     "clue": "True or false: fun is an important part of a healthy life",
+     "answer": "True"
+    },
+    {
+     "id": "wa450kgi8awz",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 100,
+     "clue": "Protecting time for fun on your calendar",
+     "answer": "Scheduling leisure"
+    },
+    {
+     "id": "41xmayea7jra",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 200,
+     "clue": "A common barrier: feeling this about taking time for yourself",
+     "answer": "Guilt"
+    },
+    {
+     "id": "iblue2m5tggf",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 300,
+     "clue": "No leisure at all can lead to this kind of exhaustion",
+     "answer": "Burnout"
+    },
+    {
+     "id": "nrdkujmqt8nb",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 400,
+     "clue": "Knowing how to choose activities that truly restore you",
+     "answer": "Leisure literacy"
+    },
+    {
+     "id": "s7iglzya83fb",
+     "board": "The Science of Leisure",
+     "category": "Make Time for Fun",
+     "value": 500,
+     "clue": "Finish it: 'Rest is not a reward for hard work. It is ___'",
+     "answer": "Part of the work"
+    },
+    {
+     "id": "dadfnd6skba2",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 100,
+     "clue": "Being regularly put down or belittled",
+     "answer": "Constant criticism"
+    },
+    {
+     "id": "2ak5rvj0waux",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 200,
+     "clue": "Being told who to see, where to go or what to wear",
+     "answer": "Control and isolation"
+    },
+    {
+     "id": "ohf8c48xxcri",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 300,
+     "clue": "Always afraid of their reaction to ordinary things",
+     "answer": "Walking on eggshells"
+    },
+    {
+     "id": "glozv2spry9h",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 400,
+     "clue": "Having your reality constantly questioned or denied",
+     "answer": "Gaslighting"
+    },
+    {
+     "id": "5wm3mfs00bal",
+     "board": "Toxic Relationships",
+     "category": "Red Flags",
+     "value": 500,
+     "clue": "Using guilt, threats or pressure to control you",
+     "answer": "Manipulation"
+    },
+    {
+     "id": "h6ptyg4clbco",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 100,
+     "clue": "You feel ___ to be yourself without fear of judgment",
+     "answer": "Safe"
+    },
+    {
+     "id": "k8s1ypfme335",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 200,
+     "clue": "Disagreements happen this way — without cruelty",
+     "answer": "Respectfully"
+    },
+    {
+     "id": "r0e0pyzgryg9",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 300,
+     "clue": "Both people's ___ are considered and valued",
+     "answer": "Needs"
+    },
+    {
+     "id": "1rk4h6nly59q",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 400,
+     "clue": "You can say this without feeling afraid or guilty",
+     "answer": "No"
+    },
+    {
+     "id": "w736b2jnmr9v",
+     "board": "Toxic Relationships",
+     "category": "Green Flags",
+     "value": 500,
+     "clue": "A healthy relationship does this — it doesn't tear you down",
+     "answer": "Builds you up"
+    },
+    {
+     "id": "40sj1i7w2va6",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 100,
+     "clue": "Overwhelming affection early on to gain control",
+     "answer": "Love bombing"
+    },
+    {
+     "id": "r16j2ctilbq2",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 200,
+     "clue": "Just enough attention to keep you hooked",
+     "answer": "Breadcrumbing"
+    },
+    {
+     "id": "aiyqyuidof1a",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 300,
+     "clue": "Cutting someone off from friends and family",
+     "answer": "Isolation"
+    },
+    {
+     "id": "saar5uujgvwe",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 400,
+     "clue": "Using money, emotions or isolation to dominate someone",
+     "answer": "Coercive control"
+    },
+    {
+     "id": "9lozfuslyp6p",
+     "board": "Toxic Relationships",
+     "category": "Name That Tactic",
+     "value": 500,
+     "clue": "Unpredictable rewards that keep someone hoping",
+     "answer": "Intermittent reinforcement"
+    },
+    {
+     "id": "lvbfti9lvh9g",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 100,
+     "clue": "A limit that protects your emotional, physical or mental wellbeing",
+     "answer": "A boundary"
+    },
+    {
+     "id": "pz46ueqo7vzu",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 200,
+     "clue": "Boundaries aren't walls — they're fences with these",
+     "answer": "Gates"
+    },
+    {
+     "id": "tay7mqsriv7i",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 300,
+     "clue": "'I need space when I feel ___'",
+     "answer": "Overwhelmed"
+    },
+    {
+     "id": "h6dg9pmu6vdd",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 400,
+     "clue": "Prioritizing your wellbeing by limiting harmful interactions",
+     "answer": "Protecting your peace"
+    },
+    {
+     "id": "ty32ke4qbun0",
+     "board": "Toxic Relationships",
+     "category": "Boundaries",
+     "value": 500,
+     "clue": "Clear, calm sentences that start with this word share your feelings",
+     "answer": "I"
+    },
+    {
+     "id": "h82fclm2wueb",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 100,
+     "clue": "The first step: recognizing and doing this to the patterns",
+     "answer": "Naming them"
+    },
+    {
+     "id": "un7zzp9i0303",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 200,
+     "clue": "Without real change, repeated ones of these are part of the cycle",
+     "answer": "Apologies"
+    },
+    {
+     "id": "uies8k1yz574",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 300,
+     "clue": "Friends, family and counselors who offer support form this",
+     "answer": "A support network"
+    },
+    {
+     "id": "p5niaadh1lpg",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 400,
+     "clue": "Toxic relationships can happen with partners, friends, family and these",
+     "answer": "Coworkers"
+    },
+    {
+     "id": "mdwobsc6fg2h",
+     "board": "Toxic Relationships",
+     "category": "Moving Forward",
+     "value": 500,
+     "clue": "You deserve relationships that make you feel valued, respected and ___",
+     "answer": "Safe"
+    },
+    {
+     "id": "rqsrjtly7c5d",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 100,
+     "clue": "Telling the truth even when it's uncomfortable",
+     "answer": "Honesty"
+    },
+    {
+     "id": "se53xl1pq61y",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 200,
+     "clue": "Caring about the wellbeing of others",
+     "answer": "Compassion"
+    },
+    {
+     "id": "3xjnhvmdtdrc",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 300,
+     "clue": "Speaking up even when you're afraid",
+     "answer": "Courage"
+    },
+    {
+     "id": "84suy9nbiso8",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 400,
+     "clue": "Believing in learning and improving",
+     "answer": "Growth"
+    },
+    {
+     "id": "8ewa1vlgnepk",
+     "board": "Your Values",
+     "category": "Name That Value",
+     "value": 500,
+     "clue": "Being true to who you really are",
+     "answer": "Authenticity"
+    },
+    {
+     "id": "qqszs24yvsjw",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 100,
+     "clue": "The principles that guide your decisions and relationships",
+     "answer": "Values"
+    },
+    {
+     "id": "py23kmhl4jvn",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 200,
+     "clue": "Figuring out which principles matter most to you",
+     "answer": "Values clarification"
+    },
+    {
+     "id": "e43sq73mnr7a",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 300,
+     "clue": "Values come from within; these are set by others",
+     "answer": "Rules"
+    },
+    {
+     "id": "a2k24t8dwkvm",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 400,
+     "clue": "Values act like this — an inner one that points the way",
+     "answer": "Compass"
+    },
+    {
+     "id": "g75tpulh4e8w",
+     "board": "Your Values",
+     "category": "Values 101",
+     "value": 500,
+     "clue": "Can your values change as you grow?",
+     "answer": "Yes"
+    },
+    {
+     "id": "8lc1lkj7icv5",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 100,
+     "clue": "Acting on your values even when no one is watching",
+     "answer": "Integrity"
+    },
+    {
+     "id": "s7c3188uuob5",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 200,
+     "clue": "Choosing actions that reflect your principles",
+     "answer": "Value-based decision making"
+    },
+    {
+     "id": "d7rbqm3txkyi",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 300,
+     "clue": "Feeling torn between two things you care about",
+     "answer": "A values conflict"
+    },
+    {
+     "id": "0c5dgybe81hk",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 400,
+     "clue": "Boundaries are how you protect what you ___",
+     "answer": "Value"
+    },
+    {
+     "id": "phlnbyivo68x",
+     "board": "Your Values",
+     "category": "Living Them Out",
+     "value": 500,
+     "clue": "The gap between values and actions is where this happens",
+     "answer": "Growth"
+    },
+    {
+     "id": "f9ii5oth5juh",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "Your values are set in stone once you're an adult",
+     "answer": "Myth"
+    },
+    {
+     "id": "9xrp90ebif0u",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Everyone sometimes acts against their values",
+     "answer": "Fact"
+    },
+    {
+     "id": "0ic7ntbwxo66",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Your values must match your family's",
+     "answer": "Myth"
+    },
+    {
+     "id": "xhsqtnutvmju",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Knowing your values can reduce anxiety and help decisions",
+     "answer": "Fact"
+    },
+    {
+     "id": "9aknl3l44aw3",
+     "board": "Your Values",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "If you don't live your values perfectly, you're a hypocrite",
+     "answer": "Myth"
+    },
+    {
+     "id": "qwunmd0t8l5b",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 100,
+     "clue": "You narrow your list of 10 down to your top ___",
+     "answer": "3"
+    },
+    {
+     "id": "7vbj29me271f",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 200,
+     "clue": "A value focused on community and connection",
+     "answer": "Belonging"
+    },
+    {
+     "id": "a1xid56xj2dk",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 300,
+     "clue": "A value centered on independence and personal choice",
+     "answer": "Freedom"
+    },
+    {
+     "id": "tyhnh4kzexqk",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 400,
+     "clue": "A value about laughing and not taking life too seriously",
+     "answer": "Humor"
+    },
+    {
+     "id": "m2o0pkvjwsxq",
+     "board": "Your Values",
+     "category": "Your Top Picks",
+     "value": 500,
+     "clue": "Finish it: 'When your actions align with your values, you stop ___'",
+     "answer": "Second-guessing yourself"
+    },
+    {
+     "id": "p5vcyblarwcb",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 100,
+     "clue": "What do you ___? Colors, light, objects…",
+     "answer": "See"
+    },
+    {
+     "id": "yrhv2f0rgylt",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 200,
+     "clue": "Waves, music or peaceful silence",
+     "answer": "Hear"
+    },
+    {
+     "id": "e5w342i1ms0j",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 300,
+     "clue": "Warm sun, cool breeze, soft blankets",
+     "answer": "Feel (touch)"
+    },
+    {
+     "id": "k7tr5vo05154",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 400,
+     "clue": "Fresh bread, pine trees or ocean air",
+     "answer": "Smell"
+    },
+    {
+     "id": "s2rrcwzybktt",
+     "board": "Your Happy Place",
+     "category": "Use Your Senses",
+     "value": 500,
+     "clue": "Using your senses to anchor yourself in calm",
+     "answer": "Grounding"
+    },
+    {
+     "id": "l91ykceffe8w",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 100,
+     "clue": "A real or imagined place where you feel at peace",
+     "answer": "A happy place"
+    },
+    {
+     "id": "dfrsp8l6x66e",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 200,
+     "clue": "Your happy place can be completely this — it doesn't have to be real",
+     "answer": "Imaginary"
+    },
+    {
+     "id": "2gor6339fylc",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 300,
+     "clue": "Picturing a calm scene in your mind",
+     "answer": "Visualization"
+    },
+    {
+     "id": "j8m1umwidkrb",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 400,
+     "clue": "More of this makes your happy place more calming",
+     "answer": "Detail"
+    },
+    {
+     "id": "if9akdueu7ne",
+     "board": "Your Happy Place",
+     "category": "Happy Place Basics",
+     "value": 500,
+     "clue": "How often you can visit your happy place",
+     "answer": "As often as you need"
+    },
+    {
+     "id": "xq1uwos99454",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 100,
+     "clue": "Sand, waves and seagulls",
+     "answer": "The beach"
+    },
+    {
+     "id": "twur3ie3p5tg",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 200,
+     "clue": "Tall trees and a quiet trail",
+     "answer": "A forest"
+    },
+    {
+     "id": "huormia7eu0r",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 300,
+     "clue": "Smells like cookies at Grandma's",
+     "answer": "The kitchen"
+    },
+    {
+     "id": "yccypud3sw91",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 400,
+     "clue": "Stars, planets and floating in zero gravity",
+     "answer": "Outer space"
+    },
+    {
+     "id": "u75pha5nkmjp",
+     "board": "Your Happy Place",
+     "category": "Where Could It Be?",
+     "value": 500,
+     "clue": "A soft blanket and a favorite chair",
+     "answer": "A cozy room"
+    },
+    {
+     "id": "7057jvvudi9s",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 100,
+     "clue": "The #1 feeling a happy place gives you",
+     "answer": "Safe"
+    },
+    {
+     "id": "upoff14gisjw",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 200,
+     "clue": "Calm and quiet inside",
+     "answer": "Peaceful"
+    },
+    {
+     "id": "lev0k2qf223t",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 300,
+     "clue": "No limits, no pressure",
+     "answer": "Free"
+    },
+    {
+     "id": "gxwfouzwupfk",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 400,
+     "clue": "Full of good energy and hope for what's next",
+     "answer": "Hopeful"
+    },
+    {
+     "id": "2kndm2k2g53e",
+     "board": "Your Happy Place",
+     "category": "How It Feels",
+     "value": 500,
+     "clue": "Being fully in the moment",
+     "answer": "Present"
+    },
+    {
+     "id": "36v4eyitfr30",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You have to have been there in real life",
+     "answer": "Myth"
+    },
+    {
+     "id": "okevbgf54s9w",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Visualization is a real coping tool",
+     "answer": "Fact"
+    },
+    {
+     "id": "74hkr31mk1uj",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Only kids use a happy place",
+     "answer": "Myth"
+    },
+    {
+     "id": "1bubx9c072a2",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "You need to be good at art to draw it",
+     "answer": "Myth"
+    },
+    {
+     "id": "qxuu54q9vxbr",
+     "board": "Your Happy Place",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Picturing your happy place can lower your heart rate",
+     "answer": "Fact"
     }
    ],
    "wheel": [
@@ -26964,6 +39312,1090 @@ window.GS_MY_CONTENT = {
      "sets": [
       "AI Utilization for Good"
      ]
+    },
+    {
+     "id": "1lt7qxjhnqfo",
+     "category": "Phrase",
+     "phrase": "COOL DOWN FIRST",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "2yj2dxqen9n1",
+     "category": "Phrase",
+     "phrase": "LISTEN TO UNDERSTAND",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "m2wlnhhiz1p6",
+     "category": "Thing",
+     "phrase": "COMMON GROUND",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "gtej31n90687",
+     "category": "Phrase",
+     "phrase": "MAKE A PLAN",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "b9kawek6o6rj",
+     "category": "Thing",
+     "phrase": "AN I STATEMENT",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "wx49sq60ap42",
+     "category": "Phrase",
+     "phrase": "STAY ON TOPIC",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "snnz9d02gzzs",
+     "category": "Event",
+     "phrase": "TAKING A TIMEOUT",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "m7ck43wm4zuy",
+     "category": "Thing",
+     "phrase": "A WIN WIN SOLUTION",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "90sl4qvikk99",
+     "category": "Phrase",
+     "phrase": "RESPECT BOUNDARIES",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "1bvk1v3pr76n",
+     "category": "Thing",
+     "phrase": "ACTIVE LISTENING",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "qaqi553qqnwt",
+     "category": "Phrase",
+     "phrase": "OWN YOUR PART",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "ytd0500a7uum",
+     "category": "Event",
+     "phrase": "SHAKING HANDS",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "obytjpcnh8ut",
+     "category": "Thing",
+     "phrase": "A SINCERE APOLOGY",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "qvx6v6sfkfac",
+     "category": "Phrase",
+     "phrase": "AGREE TO DISAGREE",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "mwpio175f8xe",
+     "category": "Thing",
+     "phrase": "A PROBLEM SOLVER",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "w4qv5sacjlfg",
+     "category": "Phrase",
+     "phrase": "TAKE A DEEP BREATH",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "k2v4w5ytzazj",
+     "category": "Phrase",
+     "phrase": "MOVEMENT IS MEDICINE",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "rj48z3h8wpy3",
+     "category": "Thing",
+     "phrase": "FEEL GOOD ENDORPHINS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "49605kprwffh",
+     "category": "Event",
+     "phrase": "A WALK AROUND THE BLOCK",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "zmej69jy94ha",
+     "category": "Event",
+     "phrase": "DANCING IN THE KITCHEN",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "du5bzvsc54x4",
+     "category": "Thing",
+     "phrase": "A STRETCH BREAK",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "z0hdjma8ixgh",
+     "category": "Phrase",
+     "phrase": "START SMALL AND STAY CONSISTENT",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "t9ops6zc5wy0",
+     "category": "Event",
+     "phrase": "A YOGA CLASS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "fa0nvo7lp9vs",
+     "category": "Thing",
+     "phrase": "A MOVEMENT SNACK",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "cunbhe8i7kqe",
+     "category": "Event",
+     "phrase": "GARDENING IN THE SUN",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "p4w14sybme98",
+     "category": "Phrase",
+     "phrase": "LISTEN TO YOUR BODY",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "2f6gmvosa9on",
+     "category": "Event",
+     "phrase": "A HIKE IN THE WOODS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "z7xhcwyqjqtf",
+     "category": "Thing",
+     "phrase": "A JUMP ROPE",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "cpw8sgq1o3e2",
+     "category": "Event",
+     "phrase": "TAKING THE STAIRS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "0wsdzvk7add5",
+     "category": "Phrase",
+     "phrase": "EVERY STEP COUNTS",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "49oe51k7uj47",
+     "category": "Thing",
+     "phrase": "A TEAM SPORT",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "gqz2ks048py8",
+     "category": "Event",
+     "phrase": "A BIKE RIDE",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "udcjh4u44rrn",
+     "category": "Phrase",
+     "phrase": "EAT THE RAINBOW",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "qayipayv5quk",
+     "category": "Thing",
+     "phrase": "A GLASS OF WATER",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "gyxlw9xohabb",
+     "category": "Thing",
+     "phrase": "FRESH FRUIT",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "h6b8t9vp4gfa",
+     "category": "Thing",
+     "phrase": "WHOLE GRAINS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "c3sjiwdduh4q",
+     "category": "Thing",
+     "phrase": "LEAFY GREENS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "0trbnddmc7zh",
+     "category": "Phrase",
+     "phrase": "SMALL CHANGES ADD UP",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "6c58707ipf37",
+     "category": "Thing",
+     "phrase": "A BOWL OF OATMEAL",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "aptn7f52xcu9",
+     "category": "Event",
+     "phrase": "READING A FOOD LABEL",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ox1ll6a9rxrb",
+     "category": "Thing",
+     "phrase": "HEALTHY FATS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "kfsxie9ftri6",
+     "category": "Phrase",
+     "phrase": "FOOD FUELS YOUR BRAIN",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "yqwgq4whgstx",
+     "category": "Thing",
+     "phrase": "A HANDFUL OF NUTS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "0s7trx78rvq9",
+     "category": "Event",
+     "phrase": "MAKING A SALAD",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "prtk7nhtq0cc",
+     "category": "Thing",
+     "phrase": "SCRAMBLED EGGS",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "jnik8lum5e55",
+     "category": "Event",
+     "phrase": "A FAMILY DINNER",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "cd2glcv5s6kv",
+     "category": "Phrase",
+     "phrase": "PROGRESS NOT PERFECTION",
+     "sets": [
+      "Nutritional Values",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "3d2til863gb5",
+     "category": "Thing",
+     "phrase": "A FARMERS MARKET",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ijeeswjei9dg",
+     "category": "Phrase",
+     "phrase": "NO THANKS",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "r8dhgoutq690",
+     "category": "Phrase",
+     "phrase": "NO IS A COMPLETE SENTENCE",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "jnz67zzu3a9o",
+     "category": "Phrase",
+     "phrase": "LET ME THINK ABOUT IT",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "pfn06l6x0728",
+     "category": "Thing",
+     "phrase": "A HEALTHY BOUNDARY",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "jgadkreqbwm4",
+     "category": "Phrase",
+     "phrase": "STOP AND TAKE A BREATH",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "r3cebwwmdecx",
+     "category": "Thing",
+     "phrase": "A SUPPORT PERSON",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "b5wznu9tbvft",
+     "category": "Phrase",
+     "phrase": "SUGGEST AN ALTERNATIVE",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "tg1n7er04etw",
+     "category": "Phrase",
+     "phrase": "STAND YOUR GROUND",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "63wwqh6w6407",
+     "category": "Event",
+     "phrase": "WALKING AWAY",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "tyaw3hagj6bf",
+     "category": "Phrase",
+     "phrase": "TRUST YOUR INSTINCTS",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "dgv2p6a4kvqd",
+     "category": "Thing",
+     "phrase": "INNER STRENGTH",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "mv00pcxugopq",
+     "category": "Event",
+     "phrase": "CALLING A FRIEND",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "tu1rvfned6rx",
+     "category": "Phrase",
+     "phrase": "BE TRUE TO YOURSELF",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "uq4zgzed5a4f",
+     "category": "Thing",
+     "phrase": "SELF RESPECT",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "8imqlyopyysx",
+     "category": "Phrase",
+     "phrase": "YOUR CHOICE YOUR VOICE",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "snrstsqcldtp",
+     "category": "Phrase",
+     "phrase": "OWN YOUR CHOICES",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "r1j6ct9mab8k",
+     "category": "Phrase",
+     "phrase": "FOLLOW THROUGH",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "id78ztrbn5to",
+     "category": "Event",
+     "phrase": "MAKING AMENDS",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "7agy4odg6il4",
+     "category": "Phrase",
+     "phrase": "ASK FOR HELP",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "5aq3ffxlsq4e",
+     "category": "Thing",
+     "phrase": "A KEPT PROMISE",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "f135a1wswscb",
+     "category": "Phrase",
+     "phrase": "LEARN AND MOVE FORWARD",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "emegrejtjpkv",
+     "category": "Thing",
+     "phrase": "INTEGRITY",
+     "sets": [
+      "Personal Responsibility",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "i41iuyguz91y",
+     "category": "Phrase",
+     "phrase": "DO WHAT YOU SAY",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "0w8w11hye516",
+     "category": "Thing",
+     "phrase": "A FRESH START",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "q5zdztdyxmel",
+     "category": "Event",
+     "phrase": "SHOWING UP ON TIME",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "51a9okizi9fg",
+     "category": "Phrase",
+     "phrase": "WRITE YOUR OWN STORY",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "icutf54oqwx7",
+     "category": "Phrase",
+     "phrase": "NO MORE EXCUSES",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "egvk6zm9yofi",
+     "category": "Thing",
+     "phrase": "A DAILY COMMITMENT",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "my11rtf5i1ai",
+     "category": "Phrase",
+     "phrase": "REST IS PART OF THE WORK",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "lxwbq1r08hha",
+     "category": "Event",
+     "phrase": "A WALK IN THE PARK",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "cz4bsp33w2o0",
+     "category": "Thing",
+     "phrase": "A JIGSAW PUZZLE",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "qmqa0kg4js9m",
+     "category": "Event",
+     "phrase": "GAME NIGHT WITH FRIENDS",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "zcn1946wjm0p",
+     "category": "Event",
+     "phrase": "PAINTING A PICTURE",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "c3o359wtrexy",
+     "category": "Thing",
+     "phrase": "A GOOD BOOK",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "64x0hutz42t0",
+     "category": "Event",
+     "phrase": "STARGAZING",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "nb2i2jndqoll",
+     "category": "Event",
+     "phrase": "PLANTING A GARDEN",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "ihrqe0z6hw8z",
+     "category": "Phrase",
+     "phrase": "FIND YOUR FLOW",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "ghez5cteo5pg",
+     "category": "Event",
+     "phrase": "BAKING COOKIES",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9d09q2pe3qw3",
+     "category": "Thing",
+     "phrase": "A NEW HOBBY",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "w67dirms74oe",
+     "category": "Event",
+     "phrase": "LISTENING TO MUSIC",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "d3bcqpgkprxf",
+     "category": "Phrase",
+     "phrase": "TIME WELL SPENT",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9hnevoe93v1i",
+     "category": "Event",
+     "phrase": "BIRDWATCHING",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "aa5bsyf19kpv",
+     "category": "Thing",
+     "phrase": "A CROSSWORD",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "vfg5m1f2ynsw",
+     "category": "Phrase",
+     "phrase": "FUN IS GOOD FOR YOU",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "jtyv8u4eoapo",
+     "category": "Phrase",
+     "phrase": "YOU DESERVE RESPECT",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "a80oosgnrbpf",
+     "category": "Phrase",
+     "phrase": "PROTECT YOUR PEACE",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "xxmo2z4qrbd1",
+     "category": "Thing",
+     "phrase": "A SUPPORT NETWORK",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "5jgtsny4jhdw",
+     "category": "Thing",
+     "phrase": "MUTUAL RESPECT",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "9qt8klt16ny7",
+     "category": "Phrase",
+     "phrase": "TRUST YOUR GUT",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "susomxz7mczp",
+     "category": "Thing",
+     "phrase": "A GREEN FLAG",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "trurswdgfd60",
+     "category": "Phrase",
+     "phrase": "FENCES WITH GATES",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "aevvku7g0quz",
+     "category": "Phrase",
+     "phrase": "YOU ARE NOT ALONE",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "he87x27hlt4z",
+     "category": "Thing",
+     "phrase": "A TRUE FRIEND",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "w069mvnevz98",
+     "category": "Phrase",
+     "phrase": "CHOOSE YOURSELF",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "x55xtevo1nns",
+     "category": "Thing",
+     "phrase": "SELF WORTH",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "38md0xedw3ip",
+     "category": "Phrase",
+     "phrase": "SAFE TO BE YOURSELF",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "agmruxlfdqqk",
+     "category": "Thing",
+     "phrase": "A KIND WORD",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "m9mxzbf9vlyd",
+     "category": "Phrase",
+     "phrase": "BUILD EACH OTHER UP",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "khaj9ex0qshc",
+     "category": "Phrase",
+     "phrase": "KNOW WHAT MATTERS",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "po0jv0d8n3ze",
+     "category": "Thing",
+     "phrase": "AN INNER COMPASS",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "whifhw7i4rxq",
+     "category": "Thing",
+     "phrase": "HONESTY AND KINDNESS",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "5t9epe10a827",
+     "category": "Phrase",
+     "phrase": "LIVE YOUR VALUES",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "6ybu5dfe1e8s",
+     "category": "Thing",
+     "phrase": "COURAGE",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "nf41uw1u6mrm",
+     "category": "Phrase",
+     "phrase": "TRUE TO YOURSELF",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "vr5f9cveonfl",
+     "category": "Thing",
+     "phrase": "FAMILY AND FRIENDSHIP",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "us2gymo0896t",
+     "category": "Thing",
+     "phrase": "PEACE OF MIND",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "q44ukgmhhmx9",
+     "category": "Phrase",
+     "phrase": "WALK THE TALK",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "fg4dini7lnml",
+     "category": "Thing",
+     "phrase": "COMPASSION",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "rlvouneoqmw6",
+     "category": "Phrase",
+     "phrase": "STAND FOR SOMETHING",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "e2q3flij9j4y",
+     "category": "Thing",
+     "phrase": "A SENSE OF PURPOSE",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "mlmhnqany07z",
+     "category": "Thing",
+     "phrase": "PERSONAL GROWTH",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "1wowjpwwm5la",
+     "category": "Phrase",
+     "phrase": "ACTIONS SPEAK LOUDER",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "1ecvvflllk46",
+     "category": "Thing",
+     "phrase": "A QUIET BEACH AT SUNRISE",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "8gcdt68to11c",
+     "category": "Thing",
+     "phrase": "A COZY BLANKET",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "7gqqvq6w703a",
+     "category": "Phrase",
+     "phrase": "CLOSE YOUR EYES",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "mpjgdec5rqpc",
+     "category": "Thing",
+     "phrase": "A FOREST TRAIL",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "gyrmvq303zu6",
+     "category": "Thing",
+     "phrase": "GRANDMA'S KITCHEN",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "x3ufqvvitlbd",
+     "category": "Phrase",
+     "phrase": "PEACE AND QUIET",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "dz3buhyuttkh",
+     "category": "Thing",
+     "phrase": "A HAMMOCK IN THE SHADE",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "cho4fup1fu3k",
+     "category": "Event",
+     "phrase": "WATCHING THE SUNSET",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "39pi2lsjgkr1",
+     "category": "Thing",
+     "phrase": "A MOUNTAIN LAKE",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "1w5x3j6v8pzr",
+     "category": "Phrase",
+     "phrase": "TAKE ME AWAY",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "j908evkll5wx",
+     "category": "Thing",
+     "phrase": "A FIELD OF FLOWERS",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "tg76o8ejlh9g",
+     "category": "Event",
+     "phrase": "LISTENING TO THE RAIN",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "tzxgshpphnau",
+     "category": "Thing",
+     "phrase": "A CAMPFIRE UNDER THE STARS",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "32kjfz2pducy",
+     "category": "Phrase",
+     "phrase": "HOME SWEET HOME",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "gsxtn6vf8mbw",
+     "category": "Thing",
+     "phrase": "A WARM CUP OF COCOA",
+     "sets": [
+      "Your Happy Place"
+     ]
     }
    ],
    "words": [
@@ -28967,6 +42399,777 @@ window.GS_MY_CONTENT = {
      "hint": "AI for Good",
      "sets": [
       "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "09zkxhh6zddw",
+     "word": "PEACE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution",
+      "Toxic Relationships",
+      "Your Values",
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "9me3cfmhd1ub",
+     "word": "TALKS",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "7d8tto0v84sy",
+     "word": "AGREE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "ez66f7v7waw9",
+     "word": "PAUSE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "ttww7wt8fjsr",
+     "word": "SPACE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "0alq2jsmxrey",
+     "word": "HEARD",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "u3wmin8fl002",
+     "word": "TRUCE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "fvabp7ktsstf",
+     "word": "SHARE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "xtkjug08oas3",
+     "word": "BREAK",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "2x1nx3504gqc",
+     "word": "TRUST",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution",
+      "Personal Responsibility",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "if1d6p3bcgpy",
+     "word": "SORRY",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "htdg7u5q7ljk",
+     "word": "UNITE",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "j9ovtxp37p14",
+     "word": "CHILL",
+     "hint": "Conflict Resolution",
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "bo5pee3s88am",
+     "word": "DANCE",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "sjegraol958k",
+     "word": "HIKES",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "owtwxdtzphka",
+     "word": "SWIMS",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "secdhjn3a88g",
+     "word": "BIKES",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "nmes5hzm9xlv",
+     "word": "SPORT",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "zbdrhi0cz4rz",
+     "word": "CLIMB",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "oh9grhjcvnc7",
+     "word": "SWEAT",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ki1xgl7gzd1x",
+     "word": "LUNGE",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "luvip0by1ax6",
+     "word": "SQUAT",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "0ak76zef4fcv",
+     "word": "HEART",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "w8blfvx8x9gy",
+     "word": "MOVES",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "f0gyatfqkui2",
+     "word": "STEPS",
+     "hint": "Movement",
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "06pad3vbgtjd",
+     "word": "FRUIT",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "zi0lh7oqaf10",
+     "word": "WATER",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rg9ka9xux7ez",
+     "word": "BEANS",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "5lwlpx5yk3ut",
+     "word": "GRAIN",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "qamwywrl6em3",
+     "word": "SALAD",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "yvspyvwy11af",
+     "word": "APPLE",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "5dyygxtvgxvd",
+     "word": "LEMON",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ze1ia9n2zj28",
+     "word": "BERRY",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rfon65trp8yw",
+     "word": "MEALS",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "m7tcargcyfau",
+     "word": "OLIVE",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "yseptggi7onk",
+     "word": "ONION",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "fdf3untj7yk3",
+     "word": "PEACH",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ouovf43f5alr",
+     "word": "TOAST",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rumnglnljjld",
+     "word": "FIBER",
+     "hint": "Nutrition",
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "13dd41qpuy34",
+     "word": "CHOSE",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "2sl1jdqoloxe",
+     "word": "PEERS",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "zrfwnv42hb7x",
+     "word": "BRAVE",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "g5nu1to49mpz",
+     "word": "GUARD",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "n7v0bn9f29e2",
+     "word": "VOICE",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "q0hf5lpgu6c1",
+     "word": "FOCUS",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "hjt1vozeniz5",
+     "word": "LIMIT",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "fx2m4ifewk0l",
+     "word": "PROUD",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "qmiyk2oy4f43",
+     "word": "STAND",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "sxtd3mwuxem2",
+     "word": "HONOR",
+     "hint": "Peer Pressure",
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Personal Responsibility",
+      "Toxic Relationships",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "sfn6ssmffznw",
+     "word": "OWNER",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "6spcy1xxmloe",
+     "word": "AMEND",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "unncg89vzs3m",
+     "word": "LEARN",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "fkbuepmwsrwa",
+     "word": "GROWS",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "3v0l9djerre7",
+     "word": "SHOWS",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "7fbn786067z3",
+     "word": "KEEPS",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "7zpb86b0507t",
+     "word": "VALUE",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility",
+      "Toxic Relationships",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "jsa7ozmz5sbg",
+     "word": "EARNS",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "wo8k6nnbtubb",
+     "word": "FIXED",
+     "hint": "Responsibility",
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "faunbeinjj9a",
+     "word": "HOBBY",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "gjkel58n8y8p",
+     "word": "RELAX",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure",
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "jaedr7jwudsw",
+     "word": "GAMES",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "zwd7ygcozncn",
+     "word": "MUSIC",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "v9g2iveaaacf",
+     "word": "PAINT",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "yywbueif3mcv",
+     "word": "CRAFT",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "vz40csmopbng",
+     "word": "BOOKS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "b43aeg54rm9h",
+     "word": "PARKS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "plc0x3adzgia",
+     "word": "DRAWS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "qgikv3o7a6j1",
+     "word": "PLAYS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "2b2e54nskyqq",
+     "word": "SINGS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "kcm0hovdr3my",
+     "word": "FLOWS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "q6civ6x00fzp",
+     "word": "CHESS",
+     "hint": "Leisure",
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "89c9g25ku8s1",
+     "word": "WORTH",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "i0f73a7e5ot7",
+     "word": "CARES",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "7qz5g8ui7wqj",
+     "word": "LOYAL",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "8nf1esx595qn",
+     "word": "GATES",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "e0j1ntgy94qy",
+     "word": "HEARS",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "q3nftf3ws7bi",
+     "word": "EQUAL",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "wx4q7nredpg5",
+     "word": "BONDS",
+     "hint": "Relationships",
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "53yffb47gr4f",
+     "word": "TRUTH",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "2ras6810j6ev",
+     "word": "FAITH",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "7tvg4semfph7",
+     "word": "HUMOR",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "f461z18typ8h",
+     "word": "SERVE",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "2m8hhf9ky692",
+     "word": "ETHIC",
+     "hint": "Values",
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "iyb5duyciwo2",
+     "word": "BEACH",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "hv6hax2ki4p9",
+     "word": "OCEAN",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "j022o96ap6ju",
+     "word": "QUIET",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "kfpk07tugtxn",
+     "word": "DREAM",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "9ysz55sd9bwl",
+     "word": "SUNNY",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "tp75ks90ns84",
+     "word": "WAVES",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "2sqmx416ecqa",
+     "word": "HAPPY",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "oeyry4znmqgc",
+     "word": "SMILE",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "mnx2fvoke99m",
+     "word": "CLOUD",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "72c2ua4l84vl",
+     "word": "SHORE",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "gcqlnwzzibf0",
+     "word": "BLISS",
+     "hint": "Happy Place",
+     "sets": [
+      "Your Happy Place"
      ]
     }
    ],
@@ -31578,6 +45781,2370 @@ window.GS_MY_CONTENT = {
      ],
      "sets": [
       "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "t1m77benweiq",
+     "word": "a handshake",
+     "level": "easy",
+     "banned": [
+      "shake",
+      "hands",
+      "deal",
+      "greet"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "cxchx2qsp9d1",
+     "word": "a stop sign",
+     "level": "easy",
+     "banned": [
+      "red",
+      "stop",
+      "octagon",
+      "traffic"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "0v0b3k77ybsn",
+     "word": "a peace sign",
+     "level": "easy",
+     "banned": [
+      "peace",
+      "hippie",
+      "fingers",
+      "symbol"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "btrybtlx79in",
+     "word": "an ear",
+     "level": "easy",
+     "banned": [
+      "hear",
+      "listen",
+      "head",
+      "sound"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "3wj5h7yggt29",
+     "word": "a bridge",
+     "level": "easy",
+     "banned": [
+      "river",
+      "cross",
+      "over",
+      "road"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "016ajedqo87n",
+     "word": "a white flag",
+     "level": "easy",
+     "banned": [
+      "surrender",
+      "wave",
+      "give up",
+      "flag"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "hd660ocknd1m",
+     "word": "a heart",
+     "level": "easy",
+     "banned": [
+      "love",
+      "valentine",
+      "red",
+      "beat"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Toxic Relationships",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "qi5i4egre9uo",
+     "word": "a clock",
+     "level": "easy",
+     "banned": [
+      "time",
+      "tick",
+      "hands",
+      "hour"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "n72oe7mlnn02",
+     "word": "a scale",
+     "level": "easy",
+     "banned": [
+      "balance",
+      "weigh",
+      "justice",
+      "even"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "7cot95k6k4bm",
+     "word": "a hug",
+     "level": "easy",
+     "banned": [
+      "arms",
+      "squeeze",
+      "embrace",
+      "cuddle"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "x3b0hw0ammuz",
+     "word": "taking a deep breath",
+     "level": "medium",
+     "banned": [
+      "breathe",
+      "inhale",
+      "air",
+      "lungs"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "vy09og8vaqav",
+     "word": "counting to ten",
+     "level": "medium",
+     "banned": [
+      "count",
+      "numbers",
+      "ten",
+      "fingers"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "0gtn46qc3a1l",
+     "word": "walking away to cool off",
+     "level": "medium",
+     "banned": [
+      "leave",
+      "walk",
+      "cool",
+      "calm"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "8hriul3nopck",
+     "word": "two people talking",
+     "level": "medium",
+     "banned": [
+      "chat",
+      "conversation",
+      "speak",
+      "words"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "o122k04b0i48",
+     "word": "saying sorry",
+     "level": "medium",
+     "banned": [
+      "apologize",
+      "sorry",
+      "forgive",
+      "oops"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "3sy25hh227y9",
+     "word": "a referee",
+     "level": "medium",
+     "banned": [
+      "sports",
+      "whistle",
+      "ref",
+      "stripes"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "zay1eavtwmgv",
+     "word": "meeting in the middle",
+     "level": "medium",
+     "banned": [
+      "middle",
+      "halfway",
+      "compromise",
+      "center"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "g64bnf0dkzv4",
+     "word": "shaking hands on a deal",
+     "level": "medium",
+     "banned": [
+      "shake",
+      "hands",
+      "agree",
+      "deal"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "y1655otcbz9h",
+     "word": "a tug of war",
+     "level": "medium",
+     "banned": [
+      "rope",
+      "pull",
+      "teams",
+      "war"
+     ],
+     "sets": [
+      "Conflict Resolution",
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "hldefex9zmxa",
+     "word": "a thumbs up",
+     "level": "easy",
+     "banned": [
+      "thumb",
+      "good",
+      "okay",
+      "like"
+     ],
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "e1og6x8pqa7j",
+     "word": "a sneaker",
+     "level": "easy",
+     "banned": [
+      "shoe",
+      "run",
+      "laces",
+      "foot"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "b02smyqyzmxk",
+     "word": "a bicycle",
+     "level": "easy",
+     "banned": [
+      "bike",
+      "pedal",
+      "wheels",
+      "ride"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "1ds102zmhet6",
+     "word": "a jump rope",
+     "level": "easy",
+     "banned": [
+      "jump",
+      "rope",
+      "skip",
+      "hop"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ax3x86fgc2d8",
+     "word": "a soccer ball",
+     "level": "easy",
+     "banned": [
+      "kick",
+      "goal",
+      "ball",
+      "football"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "b7gu2ix44bgo",
+     "word": "a swimming pool",
+     "level": "easy",
+     "banned": [
+      "swim",
+      "water",
+      "dive",
+      "splash"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "5natvoonxujx",
+     "word": "a dumbbell",
+     "level": "easy",
+     "banned": [
+      "weights",
+      "lift",
+      "gym",
+      "heavy"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "3uexuj3t3zx8",
+     "word": "a yoga mat",
+     "level": "easy",
+     "banned": [
+      "yoga",
+      "mat",
+      "stretch",
+      "roll"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "5vd3ll84tzk1",
+     "word": "a basketball hoop",
+     "level": "easy",
+     "banned": [
+      "hoop",
+      "net",
+      "dunk",
+      "shoot"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "93risiecm6my",
+     "word": "a mountain",
+     "level": "easy",
+     "banned": [
+      "hike",
+      "peak",
+      "climb",
+      "snow"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "qunn13m4jx8y",
+     "word": "a water bottle",
+     "level": "easy",
+     "banned": [
+      "drink",
+      "water",
+      "bottle",
+      "thirsty"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "x4snskcwdivu",
+     "word": "doing jumping jacks",
+     "level": "medium",
+     "banned": [
+      "jump",
+      "jacks",
+      "arms",
+      "exercise"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "xyndsvtglbjm",
+     "word": "touching your toes",
+     "level": "medium",
+     "banned": [
+      "toes",
+      "stretch",
+      "bend",
+      "reach"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ylbt3ouoexig",
+     "word": "walking a dog",
+     "level": "medium",
+     "banned": [
+      "dog",
+      "leash",
+      "walk",
+      "pet"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "a692tlqwkiza",
+     "word": "dancing",
+     "level": "medium",
+     "banned": [
+      "dance",
+      "music",
+      "party",
+      "moves"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "nq1qf1ez408x",
+     "word": "raking leaves",
+     "level": "medium",
+     "banned": [
+      "rake",
+      "leaves",
+      "fall",
+      "yard"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "hj1ft4n5dc69",
+     "word": "climbing stairs",
+     "level": "medium",
+     "banned": [
+      "stairs",
+      "steps",
+      "up",
+      "climb"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "89q7x0cpk60k",
+     "word": "riding a bike",
+     "level": "medium",
+     "banned": [
+      "bike",
+      "pedal",
+      "ride",
+      "wheels"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "d1vckpmugd4a",
+     "word": "doing a push-up",
+     "level": "medium",
+     "banned": [
+      "push",
+      "floor",
+      "arms",
+      "exercise"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "glzdcpndh9il",
+     "word": "throwing a frisbee",
+     "level": "medium",
+     "banned": [
+      "frisbee",
+      "throw",
+      "catch",
+      "disc"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "66udoac7uipn",
+     "word": "tai chi",
+     "level": "medium",
+     "banned": [
+      "slow",
+      "martial",
+      "china",
+      "balance"
+     ],
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "aoby2fo877of",
+     "word": "an apple",
+     "level": "easy",
+     "banned": [
+      "fruit",
+      "red",
+      "tree",
+      "core"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "woy3z1247tcv",
+     "word": "a banana",
+     "level": "easy",
+     "banned": [
+      "yellow",
+      "peel",
+      "monkey",
+      "fruit"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "knp0pi58q1kd",
+     "word": "a carrot",
+     "level": "easy",
+     "banned": [
+      "orange",
+      "rabbit",
+      "vegetable",
+      "root"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "fzvb61mo1bdp",
+     "word": "a glass of water",
+     "level": "easy",
+     "banned": [
+      "drink",
+      "glass",
+      "water",
+      "thirsty"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ysirq9zib39o",
+     "word": "an egg",
+     "level": "easy",
+     "banned": [
+      "chicken",
+      "yolk",
+      "shell",
+      "breakfast"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "jm3o74zy6p7k",
+     "word": "a fish",
+     "level": "easy",
+     "banned": [
+      "swim",
+      "ocean",
+      "fins",
+      "sea"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "6dgqatgbsm84",
+     "word": "broccoli",
+     "level": "easy",
+     "banned": [
+      "green",
+      "tree",
+      "vegetable",
+      "florets"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "w6kfkexyivjr",
+     "word": "a sandwich",
+     "level": "easy",
+     "banned": [
+      "bread",
+      "lunch",
+      "slice",
+      "sub"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "j62i6d81aiex",
+     "word": "a bowl of cereal",
+     "level": "easy",
+     "banned": [
+      "milk",
+      "spoon",
+      "breakfast",
+      "bowl"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "56raxd4zzuco",
+     "word": "a pineapple",
+     "level": "easy",
+     "banned": [
+      "fruit",
+      "tropical",
+      "spiky",
+      "yellow"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "e6gmzltzjakq",
+     "word": "making a salad",
+     "level": "medium",
+     "banned": [
+      "lettuce",
+      "bowl",
+      "toss",
+      "vegetables"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "ika9nu23kyu3",
+     "word": "grocery shopping",
+     "level": "medium",
+     "banned": [
+      "store",
+      "cart",
+      "buy",
+      "food"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "fozyaqubfn4m",
+     "word": "reading a food label",
+     "level": "medium",
+     "banned": [
+      "label",
+      "read",
+      "package",
+      "nutrition"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "vcxzv8ds805k",
+     "word": "cooking dinner",
+     "level": "medium",
+     "banned": [
+      "cook",
+      "stove",
+      "pan",
+      "meal"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "953andjw07p0",
+     "word": "a picnic",
+     "level": "medium",
+     "banned": [
+      "blanket",
+      "basket",
+      "park",
+      "lunch"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "zbkc71v4c9vg",
+     "word": "slicing a watermelon",
+     "level": "medium",
+     "banned": [
+      "watermelon",
+      "knife",
+      "slice",
+      "seeds"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "bmptfiaj131h",
+     "word": "a farmers market",
+     "level": "medium",
+     "banned": [
+      "farm",
+      "market",
+      "stand",
+      "produce"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "hxz6ba3jgxro",
+     "word": "peeling an orange",
+     "level": "medium",
+     "banned": [
+      "orange",
+      "peel",
+      "citrus",
+      "fruit"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "8z7wicliyepx",
+     "word": "making a smoothie",
+     "level": "medium",
+     "banned": [
+      "blender",
+      "fruit",
+      "drink",
+      "blend"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rz1v64u4alki",
+     "word": "a lunchbox",
+     "level": "easy",
+     "banned": [
+      "lunch",
+      "box",
+      "school",
+      "pack"
+     ],
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "5c25y2lofqap",
+     "word": "a shield",
+     "level": "easy",
+     "banned": [
+      "protect",
+      "knight",
+      "armor",
+      "defend"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "82ou6s8bmyvl",
+     "word": "a phone",
+     "level": "easy",
+     "banned": [
+      "call",
+      "text",
+      "cell",
+      "ring"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "7k7lljw3e0hl",
+     "word": "a fence with a gate",
+     "level": "easy",
+     "banned": [
+      "fence",
+      "gate",
+      "yard",
+      "boundary"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "9sud42azlgjp",
+     "word": "a crowd",
+     "level": "easy",
+     "banned": [
+      "people",
+      "group",
+      "many",
+      "bunch"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "kjneeu1n0itz",
+     "word": "a door",
+     "level": "easy",
+     "banned": [
+      "open",
+      "knob",
+      "exit",
+      "close"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "lc0w7mb7v1um",
+     "word": "a compass",
+     "level": "easy",
+     "banned": [
+      "north",
+      "direction",
+      "needle",
+      "navigate"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "9v2nu1kp6rr5",
+     "word": "a lighthouse",
+     "level": "easy",
+     "banned": [
+      "light",
+      "ocean",
+      "beacon",
+      "tower"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "umptj3uw1rv8",
+     "word": "a thumbs down",
+     "level": "easy",
+     "banned": [
+      "thumb",
+      "no",
+      "bad",
+      "dislike"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "vne0l2cxtt86",
+     "word": "a sheep",
+     "level": "easy",
+     "banned": [
+      "wool",
+      "baa",
+      "flock",
+      "farm"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "mn9xnlao68lo",
+     "word": "walking away",
+     "level": "medium",
+     "banned": [
+      "walk",
+      "leave",
+      "away",
+      "exit"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "84jq7sqi0wit",
+     "word": "saying no",
+     "level": "medium",
+     "banned": [
+      "no",
+      "refuse",
+      "shake",
+      "head"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "bphsm03y61xp",
+     "word": "calling a friend",
+     "level": "medium",
+     "banned": [
+      "phone",
+      "call",
+      "friend",
+      "talk"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "7vb98ec0e24s",
+     "word": "following the crowd",
+     "level": "medium",
+     "banned": [
+      "follow",
+      "crowd",
+      "group",
+      "sheep"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "djipdiyw88x6",
+     "word": "standing up for yourself",
+     "level": "medium",
+     "banned": [
+      "stand",
+      "brave",
+      "yourself",
+      "speak"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "qlzno18gytpr",
+     "word": "a fork in the road",
+     "level": "medium",
+     "banned": [
+      "fork",
+      "road",
+      "choice",
+      "split"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "g1u6ga5bt2gn",
+     "word": "swimming upstream",
+     "level": "medium",
+     "banned": [
+      "swim",
+      "fish",
+      "river",
+      "against"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "km7jhhp7hte1",
+     "word": "crossing your arms",
+     "level": "medium",
+     "banned": [
+      "arms",
+      "cross",
+      "fold",
+      "no"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "dhpyefsvz7tk",
+     "word": "a high five",
+     "level": "easy",
+     "banned": [
+      "hand",
+      "five",
+      "slap",
+      "celebrate"
+     ],
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "9af7bp76ckhb",
+     "word": "a key",
+     "level": "easy",
+     "banned": [
+      "lock",
+      "door",
+      "open",
+      "keychain"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "rodokmqcorh0",
+     "word": "a promise ring",
+     "level": "easy",
+     "banned": [
+      "ring",
+      "finger",
+      "promise",
+      "jewelry"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "vn5b7dn7bfn0",
+     "word": "an alarm clock",
+     "level": "easy",
+     "banned": [
+      "alarm",
+      "wake",
+      "clock",
+      "ring"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "p5adnlorbxh9",
+     "word": "a calendar",
+     "level": "easy",
+     "banned": [
+      "date",
+      "month",
+      "days",
+      "schedule"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "vj1y1m41jxsx",
+     "word": "a mirror",
+     "level": "easy",
+     "banned": [
+      "reflection",
+      "look",
+      "glass",
+      "face"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "m2q0km9u7epd",
+     "word": "a checkmark",
+     "level": "easy",
+     "banned": [
+      "check",
+      "done",
+      "tick",
+      "correct"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "i9kj8owxe3lf",
+     "word": "a ladder",
+     "level": "easy",
+     "banned": [
+      "climb",
+      "steps",
+      "rungs",
+      "up"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "mjh84l2gacql",
+     "word": "a steering wheel",
+     "level": "easy",
+     "banned": [
+      "drive",
+      "car",
+      "steer",
+      "wheel"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ki2trp06wuqo",
+     "word": "a seed growing",
+     "level": "easy",
+     "banned": [
+      "plant",
+      "grow",
+      "sprout",
+      "soil"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "l0jv4lpgr8zt",
+     "word": "an eraser",
+     "level": "easy",
+     "banned": [
+      "erase",
+      "pencil",
+      "rub",
+      "mistake"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "foig550gi458",
+     "word": "keeping a promise",
+     "level": "medium",
+     "banned": [
+      "promise",
+      "keep",
+      "pinky",
+      "swear"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "e3nrbbmtxl0n",
+     "word": "cleaning your room",
+     "level": "medium",
+     "banned": [
+      "clean",
+      "room",
+      "tidy",
+      "mess"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "nyfvv6jvpjgu",
+     "word": "showing up on time",
+     "level": "medium",
+     "banned": [
+      "late",
+      "time",
+      "clock",
+      "early"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ifg1iwky8k7f",
+     "word": "fixing something you broke",
+     "level": "medium",
+     "banned": [
+      "fix",
+      "broken",
+      "repair",
+      "glue"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "mubx75xh5ymn",
+     "word": "saying I'm sorry",
+     "level": "medium",
+     "banned": [
+      "sorry",
+      "apologize",
+      "oops",
+      "forgive"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "92m0odn9yur2",
+     "word": "watering a plant",
+     "level": "medium",
+     "banned": [
+      "water",
+      "plant",
+      "grow",
+      "can"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "x8jr3yf9a5v1",
+     "word": "feeding a pet",
+     "level": "medium",
+     "banned": [
+      "pet",
+      "food",
+      "bowl",
+      "dog"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "nc4fffpcom3x",
+     "word": "making your bed",
+     "level": "medium",
+     "banned": [
+      "bed",
+      "pillow",
+      "sheets",
+      "blanket"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "mal2xzy28vjx",
+     "word": "taking out the trash",
+     "level": "medium",
+     "banned": [
+      "trash",
+      "garbage",
+      "bin",
+      "can"
+     ],
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "nksbscgyyzj4",
+     "word": "a pinky promise",
+     "level": "easy",
+     "banned": [
+      "pinky",
+      "promise",
+      "finger",
+      "swear"
+     ],
+     "sets": [
+      "Personal Responsibility",
+      "Your Values"
+     ]
+    },
+    {
+     "id": "fpsjyyxz9jl0",
+     "word": "a paintbrush",
+     "level": "easy",
+     "banned": [
+      "paint",
+      "brush",
+      "art",
+      "canvas"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "o89m6mdfr32b",
+     "word": "a guitar",
+     "level": "easy",
+     "banned": [
+      "music",
+      "strings",
+      "play",
+      "rock"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "uzqppycsrs4y",
+     "word": "a puzzle piece",
+     "level": "easy",
+     "banned": [
+      "puzzle",
+      "jigsaw",
+      "piece",
+      "fit"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "6h6tjqqvur84",
+     "word": "a hammock",
+     "level": "easy",
+     "banned": [
+      "swing",
+      "relax",
+      "trees",
+      "nap"
+     ],
+     "sets": [
+      "The Science of Leisure",
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "2d3ccje1vuef",
+     "word": "a kite",
+     "level": "easy",
+     "banned": [
+      "fly",
+      "wind",
+      "string",
+      "sky"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "rnxz38yfqm19",
+     "word": "a fishing pole",
+     "level": "easy",
+     "banned": [
+      "fish",
+      "hook",
+      "lake",
+      "cast"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9vizrdbt002i",
+     "word": "a board game",
+     "level": "easy",
+     "banned": [
+      "dice",
+      "board",
+      "game",
+      "play"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "gnnzago4z7nv",
+     "word": "a book",
+     "level": "easy",
+     "banned": [
+      "read",
+      "pages",
+      "library",
+      "story"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "sy7yfsu6xuw0",
+     "word": "headphones",
+     "level": "easy",
+     "banned": [
+      "music",
+      "ears",
+      "listen",
+      "sound"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "rrngmrqxpk5z",
+     "word": "a telescope",
+     "level": "easy",
+     "banned": [
+      "stars",
+      "space",
+      "look",
+      "sky"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "b4ny8uuaiyo0",
+     "word": "knitting",
+     "level": "medium",
+     "banned": [
+      "yarn",
+      "needles",
+      "sweater",
+      "knit"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "5cvi1713l894",
+     "word": "birdwatching",
+     "level": "medium",
+     "banned": [
+      "birds",
+      "binoculars",
+      "watch",
+      "feathers"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "b0k9vn1mv8g3",
+     "word": "baking cookies",
+     "level": "medium",
+     "banned": [
+      "bake",
+      "oven",
+      "cookies",
+      "dough"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "fz4awe4d9dc1",
+     "word": "planting flowers",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "flowers",
+      "garden",
+      "dirt"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "mzys16hx0fj4",
+     "word": "taking a nap",
+     "level": "medium",
+     "banned": [
+      "sleep",
+      "nap",
+      "bed",
+      "tired"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "0czac8s93qh8",
+     "word": "doing a puzzle",
+     "level": "medium",
+     "banned": [
+      "puzzle",
+      "pieces",
+      "jigsaw",
+      "fit"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "19pymj3u1mlo",
+     "word": "playing cards",
+     "level": "medium",
+     "banned": [
+      "cards",
+      "deck",
+      "poker",
+      "deal"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "ocmy6s9no1ui",
+     "word": "stargazing",
+     "level": "medium",
+     "banned": [
+      "stars",
+      "sky",
+      "night",
+      "look"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9d7zavb459st",
+     "word": "a picnic in the park",
+     "level": "medium",
+     "banned": [
+      "picnic",
+      "blanket",
+      "park",
+      "basket"
+     ],
+     "sets": [
+      "The Science of Leisure",
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "t9pea0hhbb35",
+     "word": "roasting marshmallows",
+     "level": "medium",
+     "banned": [
+      "campfire",
+      "marshmallow",
+      "stick",
+      "s'mores"
+     ],
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "b837xsv378ng",
+     "word": "a red flag",
+     "level": "easy",
+     "banned": [
+      "flag",
+      "red",
+      "warning",
+      "pole"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "zq30q5dg6u9k",
+     "word": "a green flag",
+     "level": "easy",
+     "banned": [
+      "flag",
+      "green",
+      "good",
+      "pole"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "g35m6fy5tpcg",
+     "word": "an umbrella",
+     "level": "easy",
+     "banned": [
+      "rain",
+      "shelter",
+      "cover",
+      "open"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "0bmbosngdlz3",
+     "word": "an eggshell",
+     "level": "easy",
+     "banned": [
+      "egg",
+      "shell",
+      "crack",
+      "chicken"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "3qmulg9iplj1",
+     "word": "a puppet on strings",
+     "level": "easy",
+     "banned": [
+      "puppet",
+      "strings",
+      "control",
+      "marionette"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "wy4fp3ygt99e",
+     "word": "a broken chain",
+     "level": "easy",
+     "banned": [
+      "chain",
+      "break",
+      "free",
+      "links"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "1bdif7dlckpc",
+     "word": "a teddy bear",
+     "level": "easy",
+     "banned": [
+      "bear",
+      "stuffed",
+      "toy",
+      "hug"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "xy01aq9ydarz",
+     "word": "walking on eggshells",
+     "level": "medium",
+     "banned": [
+      "eggs",
+      "walk",
+      "careful",
+      "tiptoe"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "bn5osr8sj68g",
+     "word": "two people hugging",
+     "level": "medium",
+     "banned": [
+      "hug",
+      "embrace",
+      "arms",
+      "love"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "714onew1yc0x",
+     "word": "closing a door",
+     "level": "medium",
+     "banned": [
+      "door",
+      "close",
+      "shut",
+      "exit"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "opxjtsq1sl2k",
+     "word": "a bird leaving a cage",
+     "level": "medium",
+     "banned": [
+      "bird",
+      "cage",
+      "free",
+      "fly"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "mg004r4pi3bp",
+     "word": "holding hands",
+     "level": "medium",
+     "banned": [
+      "hands",
+      "hold",
+      "couple",
+      "together"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "lyhz9kfbdxsj",
+     "word": "a group of friends",
+     "level": "medium",
+     "banned": [
+      "friends",
+      "group",
+      "people",
+      "together"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "k2bdv0lr74u7",
+     "word": "putting up a fence",
+     "level": "medium",
+     "banned": [
+      "fence",
+      "build",
+      "yard",
+      "post"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "o2bhsjongcg1",
+     "word": "a lifeguard",
+     "level": "medium",
+     "banned": [
+      "pool",
+      "rescue",
+      "whistle",
+      "beach"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "1u6z1qxzvalr",
+     "word": "planting a garden",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "garden",
+      "grow",
+      "seeds"
+     ],
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "r5m3aw7i39qb",
+     "word": "a trophy",
+     "level": "easy",
+     "banned": [
+      "win",
+      "award",
+      "cup",
+      "prize"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "q0vd20ofq4kf",
+     "word": "a family",
+     "level": "easy",
+     "banned": [
+      "mom",
+      "dad",
+      "kids",
+      "home"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "i031726nl8h3",
+     "word": "a star",
+     "level": "easy",
+     "banned": [
+      "shine",
+      "sky",
+      "twinkle",
+      "night"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "kquar43o79wp",
+     "word": "a tree with roots",
+     "level": "easy",
+     "banned": [
+      "tree",
+      "roots",
+      "ground",
+      "trunk"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "tx7fvzmetm0y",
+     "word": "a lion",
+     "level": "easy",
+     "banned": [
+      "roar",
+      "king",
+      "mane",
+      "jungle"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "jzaor51soqps",
+     "word": "a house",
+     "level": "easy",
+     "banned": [
+      "home",
+      "roof",
+      "door",
+      "live"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "287o27frwlmw",
+     "word": "a dove",
+     "level": "easy",
+     "banned": [
+      "bird",
+      "peace",
+      "white",
+      "fly"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "m1lrlm11pa0u",
+     "word": "telling the truth",
+     "level": "medium",
+     "banned": [
+      "truth",
+      "honest",
+      "lie",
+      "tell"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "kaeo4q2g7l3n",
+     "word": "helping a neighbor",
+     "level": "medium",
+     "banned": [
+      "help",
+      "neighbor",
+      "kind",
+      "next door"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "8c5eu510l1ug",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "banned": [
+      "climb",
+      "mountain",
+      "peak",
+      "top"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "v38vncqrkaq7",
+     "word": "volunteering",
+     "level": "medium",
+     "banned": [
+      "volunteer",
+      "help",
+      "free",
+      "community"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "w466ecevhebp",
+     "word": "sharing your lunch",
+     "level": "medium",
+     "banned": [
+      "share",
+      "lunch",
+      "food",
+      "give"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "ud80m2ed4gqy",
+     "word": "a map with an X",
+     "level": "medium",
+     "banned": [
+      "treasure",
+      "map",
+      "pirate",
+      "X"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "yx9qk8mmhk9i",
+     "word": "planting a tree",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "tree",
+      "dig",
+      "grow"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "bldab1clfsa5",
+     "word": "standing tall",
+     "level": "medium",
+     "banned": [
+      "stand",
+      "tall",
+      "proud",
+      "straight"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "uj11f2oopu3w",
+     "word": "a crown",
+     "level": "easy",
+     "banned": [
+      "king",
+      "queen",
+      "royal",
+      "head"
+     ],
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "yirki03qukfn",
+     "word": "a beach",
+     "level": "easy",
+     "banned": [
+      "sand",
+      "ocean",
+      "waves",
+      "shore"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "1yb08l7db3g9",
+     "word": "a sun",
+     "level": "easy",
+     "banned": [
+      "sun",
+      "hot",
+      "sky",
+      "bright"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "yv0lrihjeq3k",
+     "word": "a campfire",
+     "level": "easy",
+     "banned": [
+      "fire",
+      "camp",
+      "flames",
+      "logs"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ictljhvn8q5e",
+     "word": "a rainbow",
+     "level": "easy",
+     "banned": [
+      "colors",
+      "rain",
+      "arc",
+      "sky"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "qfia3ipeen0k",
+     "word": "a cozy cabin",
+     "level": "easy",
+     "banned": [
+      "cabin",
+      "woods",
+      "log",
+      "house"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "4ruubgkad19o",
+     "word": "a cup of cocoa",
+     "level": "easy",
+     "banned": [
+      "cocoa",
+      "hot",
+      "mug",
+      "chocolate"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "vrx065drqe6e",
+     "word": "a flower",
+     "level": "easy",
+     "banned": [
+      "petal",
+      "bloom",
+      "garden",
+      "stem"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "9231qujbl1e8",
+     "word": "a cloud",
+     "level": "easy",
+     "banned": [
+      "sky",
+      "fluffy",
+      "white",
+      "rain"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "te916mo2kr36",
+     "word": "a palm tree",
+     "level": "easy",
+     "banned": [
+      "palm",
+      "tree",
+      "tropical",
+      "island"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ezxraumvsjjf",
+     "word": "a sunset over the ocean",
+     "level": "medium",
+     "banned": [
+      "sunset",
+      "ocean",
+      "sun",
+      "water"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "y1v53o46h7p1",
+     "word": "reading in bed",
+     "level": "medium",
+     "banned": [
+      "book",
+      "bed",
+      "read",
+      "pillow"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "yv6dnc19re1q",
+     "word": "floating in a pool",
+     "level": "medium",
+     "banned": [
+      "float",
+      "pool",
+      "water",
+      "swim"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "rpmbc5faqv5d",
+     "word": "lying in the grass",
+     "level": "medium",
+     "banned": [
+      "grass",
+      "lie",
+      "ground",
+      "lawn"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "e1m5cgv3xmgk",
+     "word": "a hot bath",
+     "level": "medium",
+     "banned": [
+      "bath",
+      "tub",
+      "bubbles",
+      "water"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "bz5ep9ub39s4",
+     "word": "swinging on a swing",
+     "level": "medium",
+     "banned": [
+      "swing",
+      "playground",
+      "seat",
+      "chains"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "6i8mmeoie4ov",
+     "word": "watching the stars",
+     "level": "medium",
+     "banned": [
+      "stars",
+      "sky",
+      "night",
+      "look"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ixax5tea11v7",
+     "word": "a snowy cabin",
+     "level": "medium",
+     "banned": [
+      "snow",
+      "cabin",
+      "cold",
+      "winter"
+     ],
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "5pupikgz9zn0",
+     "word": "a treehouse",
+     "level": "easy",
+     "banned": [
+      "tree",
+      "house",
+      "ladder",
+      "fort"
+     ],
+     "sets": [
+      "Your Happy Place"
      ]
     }
    ],
@@ -36653,6 +53220,3338 @@ window.GS_MY_CONTENT = {
      "sets": [
       "AI Utilization for Good"
      ]
+    },
+    {
+     "id": "ulwb5olf2g2y",
+     "question": "What is conflict resolution?",
+     "answer": "Finding a peaceful, constructive solution to a disagreement",
+     "wrong": [
+      "Winning by proving the other person wrong",
+      "Avoiding every possible disagreement",
+      "A therapy term for anger management"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "k7khl8nlm5ni",
+     "question": "What is a healthy first step in resolving a conflict?",
+     "answer": "Pause and calm down before responding",
+     "wrong": [
+      "Immediately explain your side",
+      "Bring in a third party right away",
+      "End the relationship to prevent more conflict"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "b8u5g4azag5l",
+     "question": "What does active listening mean in a conflict?",
+     "answer": "Fully focusing on their words without planning your comeback",
+     "wrong": [
+      "Repeating everything they say word for word",
+      "Letting them talk first so you can win",
+      "Listening, then explaining why they're wrong"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "tcbvvfduw12u",
+     "question": "Which communication style helps MOST during conflict?",
+     "answer": "Assertive — clear and respectful",
+     "wrong": [
+      "Passive — staying quiet",
+      "Aggressive — speaking loudly",
+      "Passive-aggressive — hinting at it"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "4s0y85ja4cki",
+     "question": "What does using 'I statements' mean?",
+     "answer": "Sharing how YOU feel and what YOU need",
+     "wrong": [
+      "Starting every sentence with 'I'",
+      "Only talking about yourself",
+      "Telling personal stories for sympathy"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "gt7yx802q3g9",
+     "question": "True or false: Conflict means a relationship is failing.",
+     "answer": "False — conflict is normal; how it's handled matters",
+     "wrong": [
+      "True — healthy relationships have no conflict",
+      "True — repeated conflict means it should end",
+      "False — but only at work"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "jeurx4xzl50f",
+     "question": "What is the purpose of compromise?",
+     "answer": "Both people give a little and gain a little",
+     "wrong": [
+      "One person changes completely",
+      "Both pretend nothing happened",
+      "The stronger person sets the terms"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "b821w8nnm7cm",
+     "question": "Which is an example of a conflict TRIGGER?",
+     "answer": "A comment that feels dismissive of your feelings",
+     "wrong": [
+      "A scheduled meeting",
+      "A written note from a supervisor",
+      "Both people wanting the same thing"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "0xy4vjpdhu56",
+     "question": "What is de-escalation?",
+     "answer": "Words or actions that lower the tension",
+     "wrong": [
+      "Leaving a conversation forever",
+      "A technique only counselors can use",
+      "Pretending to agree to end things fast"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "7zl6jt3k82ob",
+     "question": "What's the difference between a position and a need?",
+     "answer": "A position is what you want; a need is the reason why",
+     "wrong": [
+      "A need is always more important",
+      "A position is emotional; a need is logical",
+      "They're the same thing"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "fo6u6vy7fqws",
+     "question": "Which feeling is MOST likely to escalate conflict if ignored?",
+     "answer": "Feeling unheard or dismissed",
+     "wrong": [
+      "Happiness",
+      "Curiosity",
+      "Sadness"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "w5r4x51gxaru",
+     "question": "What does it mean to validate someone in a conflict?",
+     "answer": "Acknowledge their feelings make sense to them, even if you disagree",
+     "wrong": [
+      "Tell them they're right to end it",
+      "Agree with everything they say",
+      "Have a professional confirm their feelings"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "dbo66yn0qu5z",
+     "question": "What's a sign a conflict was resolved well?",
+     "answer": "Both people feel heard and agree on a plan",
+     "wrong": [
+      "One person apologizes and it's never discussed",
+      "Nobody ever mentions it again",
+      "A supervisor made the decision"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "lozwij9xm66h",
+     "question": "What makes a real apology?",
+     "answer": "Owning the harm you caused without excuses",
+     "wrong": [
+      "Saying 'I'm sorry you feel that way'",
+      "A formal statement to end the conflict",
+      "Admitting fault even if you don't mean it"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "21mhuzal66yi",
+     "question": "What is stonewalling?",
+     "answer": "Shutting down and refusing to communicate",
+     "wrong": [
+      "Building a wall to avoid someone",
+      "Taking a short break to calm down",
+      "A group mediation technique"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "r60790mkpn1u",
+     "question": "How can deep breathing help during conflict?",
+     "answer": "It calms your body's fight-or-flight response",
+     "wrong": [
+      "It shows you don't care",
+      "It only works before a conflict",
+      "It delays a solution"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "72qju0fxbftn",
+     "question": "What does 'staying on topic' mean?",
+     "answer": "Focusing on this issue, not old arguments",
+     "wrong": [
+      "Only talking about things you agree on",
+      "Keeping the conversation very short",
+      "Avoiding all emotional words"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "t47ab82s8bx2",
+     "question": "What is a win-win outcome?",
+     "answer": "Both people's core needs are met",
+     "wrong": [
+      "The person who was right wins",
+      "Both drop it and walk away",
+      "One person wins and explains why"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "iti9nq5sjk6w",
+     "question": "What role does empathy play in conflict?",
+     "answer": "It helps you respond to their real concern",
+     "wrong": [
+      "It means agreeing with them",
+      "It only matters if both are equally hurt",
+      "It slows everything down"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "pf5ezqnw41uk",
+     "question": "Which describes a conflict AVOIDANCE pattern?",
+     "answer": "Always going silent, even when your needs aren't met",
+     "wrong": [
+      "Taking a moment before responding",
+      "Letting tiny things go",
+      "Agreeing sometimes to keep balance"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "eo9a7xnhmcbs",
+     "question": "What is reflective listening?",
+     "answer": "Repeating back what you heard to check you understood",
+     "wrong": [
+      "Thinking about it after it's over",
+      "Planning your answer while they talk",
+      "Recording the conversation"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "jfuwao2z1tj0",
+     "question": "True or false: You must feel totally calm to start resolving a conflict.",
+     "answer": "False — calm is a goal, not a requirement",
+     "wrong": [
+      "True — only calm people can resolve conflict",
+      "True — emotions always make it worse",
+      "False — start when emotions peak"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "ikx39r71swv5",
+     "question": "What does it mean to 'own your part'?",
+     "answer": "Admit your role without excuses",
+     "wrong": [
+      "Take all the blame",
+      "Fix it all yourself",
+      "Find out who is at fault"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution",
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "9wue8pmvdr1k",
+     "question": "In the CALM method, what does the C stand for?",
+     "answer": "Cool down",
+     "wrong": [
+      "Compromise",
+      "Communicate",
+      "Choose a side"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "7vuaj9b6pml0",
+     "question": "In the CALM method, what does the L stand for?",
+     "answer": "Look for common ground",
+     "wrong": [
+      "Let it go",
+      "Listen louder",
+      "Leave the room"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "hz2kczxf7ufd",
+     "question": "Which conflict style stays calm and works toward a solution?",
+     "answer": "The Problem Solver",
+     "wrong": [
+      "The Avoider",
+      "The Competitor",
+      "The Pleaser"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "jqcb8n7c2l40",
+     "question": "Which phrases tend to shut conversations down?",
+     "answer": "'You always' and 'You never'",
+     "wrong": [
+      "'I feel' and 'I need'",
+      "'Help me understand'",
+      "'Let's take a break'"
+     ],
+     "category": "Conflict Resolution",
+     "time": 20,
+     "sets": [
+      "Conflict Resolution"
+     ]
+    },
+    {
+     "id": "johwo3vbgmnt",
+     "question": "What does 'movement as medicine' mean?",
+     "answer": "Physical activity can prevent, treat and improve many health conditions",
+     "wrong": [
+      "Exercise only helps if a doctor prescribes it",
+      "Movement must be intense to help",
+      "Medicine works better while exercising"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "tfqllwhc4kfy",
+     "question": "Which is a mental health benefit of regular movement?",
+     "answer": "Less anxiety and stress, and a better mood",
+     "wrong": [
+      "Permanently ending all symptoms",
+      "Better focus only during exercise",
+      "Needing fewer friends"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "tdk70rj02a4b",
+     "question": "What feel-good chemicals does exercise release?",
+     "answer": "Endorphins",
+     "wrong": [
+      "Cortisol",
+      "Insulin",
+      "Melatonin"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "0aso2d7j64iz",
+     "question": "How much moderate movement do guidelines suggest for adults each week?",
+     "answer": "At least 150 minutes",
+     "wrong": [
+      "60 minutes every single day",
+      "20 minutes once a week",
+      "There's no suggested amount"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "l8qosvoce1ev",
+     "question": "Which of these counts as movement for your health?",
+     "answer": "Walking, dancing, gardening and chores",
+     "wrong": [
+      "Only gym workouts",
+      "Only running or swimming",
+      "Only doctor-prescribed therapy"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "3osorn6d6htg",
+     "question": "How does regular movement affect sleep?",
+     "answer": "It improves sleep quality",
+     "wrong": [
+      "It always causes insomnia",
+      "It has nothing to do with sleep",
+      "It only helps right before bed"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ufej2johxypl",
+     "question": "True or false: You need a gym or equipment to benefit from movement.",
+     "answer": "False — walking and stretching work great",
+     "wrong": [
+      "True — only gyms count",
+      "True — equipment is required",
+      "False — but gyms are always better"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "8dsdeyil95d1",
+     "question": "What is a 'movement snack'?",
+     "answer": "A short 5–10 minute burst of activity",
+     "wrong": [
+      "A healthy pre-workout food",
+      "A rest between sets",
+      "A snack eaten while walking"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "qhlxv7nebumj",
+     "question": "Which statement about stretching is TRUE?",
+     "answer": "It improves flexibility and eases tension",
+     "wrong": [
+      "It only helps athletes",
+      "It's only for injury recovery",
+      "It does nothing for mental health"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "i5kzjxltu6f6",
+     "question": "How does movement affect the brain over time?",
+     "answer": "It helps the brain form new connections",
+     "wrong": [
+      "It shrinks the brain",
+      "It has no effect on the brain",
+      "It only helps during the workout"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "can8o9a06v65",
+     "question": "Which is an example of mindful movement?",
+     "answer": "Yoga, tai chi or a slow, focused walk",
+     "wrong": [
+      "Any workout in a gym",
+      "High-speed interval training",
+      "Only instructor-led classes"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "6apf6nqosxwo",
+     "question": "What's a common barrier to getting moving?",
+     "answer": "Waiting to feel motivated before starting",
+     "wrong": [
+      "Having too much energy",
+      "Too many choices",
+      "Being too healthy to notice"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "dr0xeaqv5n87",
+     "question": "How does movement help with stress?",
+     "answer": "It burns off stress hormones and releases endorphins",
+     "wrong": [
+      "It makes the body forget stress",
+      "It raises blood pressure to reset you",
+      "It only works outdoors"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "hzuu0lqfq8mj",
+     "question": "Which type of movement is best for mental health?",
+     "answer": "The kind you'll actually do and enjoy",
+     "wrong": [
+      "Only high-intensity cardio",
+      "Only weight training",
+      "Only outdoor exercise"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "aq1g66jjb0xv",
+     "question": "True or false: Sitting all day is fine if you exercise once.",
+     "answer": "False — long periods of sitting carry their own risks",
+     "wrong": [
+      "True — one workout cancels it out",
+      "True — the body stores exercise",
+      "False — but only after age 50"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "l998bl7egosf",
+     "question": "What is 'active recovery'?",
+     "answer": "Light movement like walking on rest days",
+     "wrong": [
+      "Total rest after any activity",
+      "Physical therapy after injury",
+      "A hard workout right after another"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "ka2zixlvz7bb",
+     "question": "Which kind of movement builds community?",
+     "answer": "Group walks, team sports and dance classes",
+     "wrong": [
+      "Solo running with headphones",
+      "Fitness apps with strangers",
+      "Any outdoor exercise"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "itmsro4m8yxn",
+     "question": "How does movement affect self-esteem?",
+     "answer": "It builds a sense of accomplishment and trust in your body",
+     "wrong": [
+      "Only if your appearance changes",
+      "Only for athletes",
+      "It has no connection"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "6hnmxhrnittm",
+     "question": "What does 'listen to your body' mean?",
+     "answer": "Notice pain and tiredness so you move safely",
+     "wrong": [
+      "Only exercise when fully energized",
+      "Wear a fitness tracker",
+      "Stop at the slightest discomfort"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "6j2bopdn8f90",
+     "question": "What's a good idea if you dislike traditional exercise?",
+     "answer": "Find fun movement — dancing, hiking, gardening",
+     "wrong": [
+      "Push through until you like it",
+      "Start with the hardest workout",
+      "Avoid movement altogether"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "xllvkdyy110q",
+     "question": "How does movement help your thinking?",
+     "answer": "It boosts memory and focus by increasing blood flow to the brain",
+     "wrong": [
+      "It only improves reaction time",
+      "It only helps people over 60",
+      "It has no effect on thinking"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "uoooda5ln1fn",
+     "question": "True or false: Being consistent matters more than being perfect.",
+     "answer": "True — small, regular movement adds up",
+     "wrong": [
+      "False — intensity matters most",
+      "False — only supervised exercise counts",
+      "True — but only for your heart"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "u2d79r21rbe3",
+     "question": "What can you do when you feel too tired to move?",
+     "answer": "Start with just 5 minutes",
+     "wrong": [
+      "Skip it — you need full energy",
+      "Drink caffeine and go all-out",
+      "Never exercise when tired"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "dgilr00k3mq2",
+     "question": "Even a walk of how long can reduce anxiety and improve focus?",
+     "answer": "10 minutes",
+     "wrong": [
+      "2 hours",
+      "1 minute",
+      "45 minutes"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "sf7o6femd9b2",
+     "question": "Exercise lowers which stress hormone?",
+     "answer": "Cortisol",
+     "wrong": [
+      "Endorphins",
+      "Serotonin",
+      "Melatonin"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "lrhzdb9tjfpb",
+     "question": "Finish the quote: 'You don't have to be great to start — you just have to…'",
+     "answer": "start to be great",
+     "wrong": [
+      "work out every day",
+      "join a gym",
+      "never give up"
+     ],
+     "category": "Movement as Medicine",
+     "time": 20,
+     "sets": [
+      "Movement as Medicine"
+     ]
+    },
+    {
+     "id": "p32jbbnfrtnt",
+     "question": "What are the three main macronutrients?",
+     "answer": "Carbohydrates, proteins and fats",
+     "wrong": [
+      "Vitamins, minerals and water",
+      "Fiber, sugar and cholesterol",
+      "Calories, sodium and iron"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "qcot11v86c0a",
+     "question": "What is the main job of carbohydrates?",
+     "answer": "To give the body (and brain) energy",
+     "wrong": [
+      "To build muscle",
+      "To insulate organs",
+      "To carry oxygen"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "he2q5bczyewf",
+     "question": "Which is a complex carbohydrate?",
+     "answer": "Oatmeal and brown rice",
+     "wrong": [
+      "Candy and soda",
+      "White bread and pastries",
+      "Energy drinks"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "dra8b074vw31",
+     "question": "What does protein do in the body?",
+     "answer": "Builds and repairs tissue and supports the immune system",
+     "wrong": [
+      "Gives quick bursts of energy",
+      "Keeps you warm",
+      "Slows digestion"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "zsyurk68fg26",
+     "question": "Which is a plant-based source of protein?",
+     "answer": "Lentils and chickpeas",
+     "wrong": [
+      "Salmon and tuna",
+      "Butter and cream",
+      "White rice and pasta"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "1ljfud1auqip",
+     "question": "Which type of fat is best for your heart and brain?",
+     "answer": "Unsaturated fat — like avocados, olive oil and nuts",
+     "wrong": [
+      "Saturated fat",
+      "Trans fat",
+      "Hydrogenated fat"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "6w31a7725ysb",
+     "question": "How does food affect mental health?",
+     "answer": "It influences brain chemistry, mood and energy",
+     "wrong": [
+      "It only affects the body",
+      "Only therapy affects mood",
+      "Only for people with a diagnosis"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "7fuvgyxnqgnk",
+     "question": "Which vitamin is called the 'sunshine vitamin'?",
+     "answer": "Vitamin D",
+     "wrong": [
+      "Vitamin C",
+      "Vitamin B12",
+      "Vitamin A"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "2tmop5tz35as",
+     "question": "True or false: Skipping meals is a healthy habit.",
+     "answer": "False — it can drain energy and affect mood",
+     "wrong": [
+      "True — fewer meals is better",
+      "True — the body adapts",
+      "False — except on busy days"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "jkdy9vxyum2q",
+     "question": "What does 'eating a rainbow' mean?",
+     "answer": "Eating lots of different colorful fruits and veggies",
+     "wrong": [
+      "Eating food with food coloring",
+      "A different color theme each day",
+      "Picking the prettiest food"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "wbk09cac4mfz",
+     "question": "Why is fiber important?",
+     "answer": "It helps digestion and keeps you full",
+     "wrong": [
+      "It replaces missing nutrients",
+      "It's a protein to avoid",
+      "It's stored fat for energy"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "8e98sd110d4h",
+     "question": "Which is a sign of dehydration?",
+     "answer": "Tiredness, headache and trouble focusing",
+     "wrong": [
+      "Cold hands and slow heartbeat",
+      "Lots of extra energy",
+      "Bloating at rest"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "rii08zu6ysd7",
+     "question": "What can a food label tell you?",
+     "answer": "What's in it — calories, nutrients and ingredients",
+     "wrong": [
+      "Whether it's a medicine",
+      "Exactly how it was grown",
+      "Its environmental impact"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "9mcaw4idd8dy",
+     "question": "What is a 'nutrient-dense' food?",
+     "answer": "One packed with nutrients for its calories",
+     "wrong": [
+      "One with extra calories",
+      "One with added vitamins only",
+      "Anything labeled organic"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "wkr2t5ifkjdd",
+     "question": "How does a lot of sugar affect energy?",
+     "answer": "Quick spike, then a crash",
+     "wrong": [
+      "Steady energy all day",
+      "No effect on mood",
+      "Only processed sugar matters"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "jrc3rgmi7bai",
+     "question": "Where can you find omega-3 fats?",
+     "answer": "Fish, flaxseed and walnuts",
+     "wrong": [
+      "Red meat",
+      "Candy",
+      "White bread"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "4iqivu253mjr",
+     "question": "True or false: All fat is bad for you.",
+     "answer": "False — healthy fats help your brain",
+     "wrong": [
+      "True — fat is the main cause of poor health",
+      "True — the body makes all it needs",
+      "False — saturated fat is always healthy"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "iddcmr0gwfy1",
+     "question": "Your gut produces which mood chemical?",
+     "answer": "Serotonin",
+     "wrong": [
+      "Adrenaline",
+      "Insulin",
+      "Cortisol"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "p3j17yw8xpbj",
+     "question": "Which eating pattern supports long-term wellbeing?",
+     "answer": "Balanced meals with a variety of whole foods",
+     "wrong": [
+      "Strict rules followed by big binges",
+      "Eating only at set times regardless of hunger",
+      "Whatever diet is trending"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "lim84s4f8nu0",
+     "question": "What is mindful eating?",
+     "answer": "Paying attention to how and why you eat, without judgment",
+     "wrong": [
+      "Only eating approved foods",
+      "Counting every calorie",
+      "Eating as slowly as possible"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "4cc4g24tysl9",
+     "question": "What's an easy way to eat more vegetables?",
+     "answer": "Add a handful of greens to foods you already like",
+     "wrong": [
+      "Only eat vegetables",
+      "Only eat them one way",
+      "Take a pill instead"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "fixvhwftdpzk",
+     "question": "What does iron do?",
+     "answer": "Helps carry oxygen and supports energy",
+     "wrong": [
+      "Builds bones",
+      "Prevents diabetes",
+      "Heals skin"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "wv1ur65bku8c",
+     "question": "True or false: Supplements can replace healthy food.",
+     "answer": "False — whole foods offer more than a pill can",
+     "wrong": [
+      "True — a multivitamin covers everything",
+      "True — pills absorb better",
+      "False — but they're equal if taken daily"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "62dipdnbhx79",
+     "question": "Which is an affordable, nutrient-dense food?",
+     "answer": "Eggs",
+     "wrong": [
+      "Imported superfoods",
+      "Protein powder",
+      "Fancy organic berries"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "cmavujujpudd",
+     "question": "What should you drink first when you feel hungry or tired?",
+     "answer": "Water",
+     "wrong": [
+      "Soda",
+      "Coffee",
+      "An energy drink"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "6oorrhf79w03",
+     "question": "Which mineral supports sleep and is found in nuts and dark chocolate?",
+     "answer": "Magnesium",
+     "wrong": [
+      "Sodium",
+      "Iron",
+      "Calcium"
+     ],
+     "category": "Nutritional Values",
+     "time": 20,
+     "sets": [
+      "Nutritional Values"
+     ]
+    },
+    {
+     "id": "j9ei92sq9dzb",
+     "question": "What does 'peer pressure' mean in recovery?",
+     "answer": "Feeling pushed to act against your recovery goals",
+     "wrong": [
+      "Only strangers forcing you to use",
+      "A doctor asking you to follow a plan",
+      "Being asked to help someone else"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "nz97osc7sj2x",
+     "question": "Which is an example of INDIRECT peer pressure?",
+     "answer": "Feeling you need to drink at a party to fit in, even if no one asks",
+     "wrong": [
+      "A friend handing you a drink",
+      "A family member asking you to skip a meeting",
+      "A counselor suggesting a new skill"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "6kddsh8zi9pj",
+     "question": "What is 'internal' peer pressure?",
+     "answer": "The voice inside telling you what others expect",
+     "wrong": [
+      "Pressure from people inside your program",
+      "Pressure you only feel alone",
+      "A clinical term for social anxiety"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "lf53m7dahhnm",
+     "question": "Which response to pressure is MOST effective?",
+     "answer": "A clear, firm 'no' — no explanation needed",
+     "wrong": [
+      "Agreeing to avoid conflict",
+      "Making up an excuse",
+      "Waiting for it to go away"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "2mnxnuoe74hv",
+     "question": "Where can peer pressure in recovery come from?",
+     "answer": "Old friends, family and even your own thoughts",
+     "wrong": [
+      "Only from strangers",
+      "Only from old friends",
+      "Only from people who mean harm"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "vwczyqwri53z",
+     "question": "What does the S stand for in the STOP skill?",
+     "answer": "Stop what you're doing",
+     "wrong": [
+      "Say no immediately",
+      "Seek support",
+      "Start something new"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "sfpyc5ig8bwb",
+     "question": "What does the T stand for in the STOP skill?",
+     "answer": "Take a breath",
+     "wrong": [
+      "Tell someone",
+      "Turn around",
+      "Think it over for a day"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "lvf789bfw7b2",
+     "question": "What does the O stand for in the STOP skill?",
+     "answer": "Observe what's happening around and inside you",
+     "wrong": [
+      "Open up to someone",
+      "Opt out right away",
+      "Organize your thoughts"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "jtgsz3o7ouw8",
+     "question": "What does the P stand for in the STOP skill?",
+     "answer": "Proceed with intention",
+     "wrong": [
+      "Pause forever",
+      "Pretend it's fine",
+      "Please everyone"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "lj98r2w72r52",
+     "question": "True or false: You must explain your reasons when you say no.",
+     "answer": "False — 'no' is a complete answer",
+     "wrong": [
+      "True — people deserve an explanation",
+      "True — it shows respect",
+      "False — but only with strangers"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "80za0lz3kgi3",
+     "question": "Which is a warning sign you may be facing peer pressure?",
+     "answer": "You hear yourself saying 'just this once'",
+     "wrong": [
+      "You feel excited to try a new hobby",
+      "You ask a counselor for advice",
+      "You write in your journal"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "f1f8opv400dy",
+     "question": "What is 'environmental' peer pressure?",
+     "answer": "Places or situations that pull you toward old habits",
+     "wrong": [
+      "Stress from noise",
+      "Pressure from eco-friendly friends",
+      "Pressure you only feel outdoors"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "axsyxddx5xdf",
+     "question": "How can journaling help with peer pressure?",
+     "answer": "It gives you private space to sort out your feelings and values",
+     "wrong": [
+      "It makes pressure disappear",
+      "It only helps if shared",
+      "It replaces your support person"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "jrgrviznxc9b",
+     "question": "What is a healthy boundary?",
+     "answer": "A limit you set to protect your wellbeing",
+     "wrong": [
+      "A rule your counselor sets",
+      "A wall that keeps everyone out",
+      "A promise to someone else"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery",
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "7gvoov4t7zan",
+     "question": "Which statement is TRUE?",
+     "answer": "Even people with strong recovery can feel the pull of pressure",
+     "wrong": [
+      "Recovery makes you immune to pressure",
+      "Only early recovery is affected",
+      "Peer pressure is just a teen problem"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "rfamcz7cqpge",
+     "question": "What should you do if you feel pressured to skip a meeting?",
+     "answer": "Name it, stick to your plan and reach out for support",
+     "wrong": [
+      "Skip just this once",
+      "Skip and make it up later",
+      "Avoid that person forever"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "1j14t8aqadje",
+     "question": "Saying no to protect your recovery is best described as…",
+     "answer": "An act of strength and self-respect",
+     "wrong": [
+      "Being unfriendly",
+      "Only needed early on",
+      "Not trusting your friends"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "5xn8y4f57179",
+     "question": "Which is an example of DIRECT peer pressure?",
+     "answer": "A friend saying 'come on, just try it'",
+     "wrong": [
+      "Feeling out of place at a party",
+      "Wondering what old friends think",
+      "Seeing something on TV"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "c8ouc5urewyj",
+     "question": "What's a healthy alternative when you feel pressured socially?",
+     "answer": "Suggest a different activity",
+     "wrong": [
+      "Leave without a word",
+      "Lecture the person",
+      "Go along with it"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "mj3zrg446jss",
+     "question": "What can a support person do when you face pressure?",
+     "answer": "Help you hold your boundaries and remember your goals",
+     "wrong": [
+      "Confront people for you",
+      "Make your decisions",
+      "Go everywhere with you"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "t7c1oyp84ju7",
+     "question": "Which phrase can buy you time to make a clear choice?",
+     "answer": "\"Let me think about it.\"",
+     "wrong": [
+      "\"Sure, why not?\"",
+      "\"Everyone else is.\"",
+      "\"Just this once.\""
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "rh3c7etdz10l",
+     "question": "Naming the pressure out loud — 'I feel pressured right now' — does what?",
+     "answer": "Reduces its power",
+     "wrong": [
+      "Makes it worse",
+      "Ends the friendship",
+      "Has no effect"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "xe23hvw01lja",
+     "question": "Leaving a high-pressure situation is…",
+     "answer": "A recovery skill, not weakness",
+     "wrong": [
+      "Rude",
+      "Always a mistake",
+      "Only for beginners"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "gzm9u1w7jx37",
+     "question": "Finish it: 'Every time you say no to pressure, you are saying…'",
+     "answer": "yes to yourself",
+     "wrong": [
+      "goodbye to your friends",
+      "no to fun",
+      "sorry to everyone"
+     ],
+     "category": "Peer Pressure & Recovery",
+     "time": 20,
+     "sets": [
+      "Peer Pressure & Recovery"
+     ]
+    },
+    {
+     "id": "4g4mv68p58s9",
+     "question": "What is personal responsibility?",
+     "answer": "Owning your choices and their consequences without blaming others",
+     "wrong": [
+      "Following every rule without question",
+      "Taking blame for everything around you",
+      "Accepting punishment when things go wrong"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "o5jjs8sl6f67",
+     "question": "Which is an example of personal responsibility?",
+     "answer": "'I handled that poorly — here's what I'll do differently'",
+     "wrong": [
+      "Listing all the outside reasons it went wrong",
+      "Pointing out someone else's mistakes",
+      "Waiting for someone else to fix it"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "zisptlisog26",
+     "question": "What's the difference between accountability and self-blame?",
+     "answer": "Accountability focuses on growth; self-blame focuses on shame",
+     "wrong": [
+      "Accountability is public; self-blame is private",
+      "They're exactly the same",
+      "Self-blame is healthy if it's quick"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "klc1t72i9hbg",
+     "question": "True or false: Being responsible means doing everything alone.",
+     "answer": "False — asking for help is a responsible choice",
+     "wrong": [
+      "True — responsibility means independence",
+      "True — needing help shows weakness",
+      "False — but only as a last resort"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "wisuaa7bt4gr",
+     "question": "Which is a sign someone is avoiding responsibility?",
+     "answer": "Always blaming bad luck or other people",
+     "wrong": [
+      "Asking questions before accepting blame",
+      "Pausing to reflect",
+      "Expressing regret"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "tjsaqwwmq6az",
+     "question": "What does 'making amends' mean?",
+     "answer": "Taking real steps to repair harm — beyond saying sorry",
+     "wrong": [
+      "Apologizing over and over",
+      "Treating yourself after admitting fault",
+      "A process done only in treatment"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "y0w0wzk9m9l1",
+     "question": "How does following through build trust?",
+     "answer": "It shows your words match your actions",
+     "wrong": [
+      "It makes others owe you",
+      "It only matters at work",
+      "Good intentions are enough"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "yvcc03tpn7y7",
+     "question": "What are the steps of the Responsibility Cycle?",
+     "answer": "Recognize, Own, Repair, Learn, Move Forward",
+     "wrong": [
+      "Blame, Justify, Apologize, Forget, Repeat",
+      "Identify, Report, Accept, Heal, Improve",
+      "Reflect, Discuss, Decide, Act, Evaluate"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "u7qsxssnatsi",
+     "question": "Why is self-awareness important for responsibility?",
+     "answer": "You can't own what you don't recognize",
+     "wrong": [
+      "It only matters in therapy",
+      "Action is all that matters",
+      "It leads to overthinking"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "u13webs59dyc",
+     "question": "True or false: 'I'm sorry you feel that way' takes responsibility.",
+     "answer": "False — it dismisses their experience",
+     "wrong": [
+      "True — it acknowledges feelings",
+      "True — any apology counts",
+      "False — but it's fine if you did nothing wrong"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "lh5qse4uo9i7",
+     "question": "What is integrity?",
+     "answer": "Doing the right thing even when no one is watching",
+     "wrong": [
+      "Only acting right when there are consequences",
+      "Agreeing to keep the peace",
+      "Following rules you disagree with"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "tjdjbdorbkhv",
+     "question": "What's a healthy response to making a mistake?",
+     "answer": "Own it, make it right if you can, and move forward",
+     "wrong": [
+      "Feel intense shame",
+      "Justify it",
+      "Minimize it"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "11xuouiv33zw",
+     "question": "How does responsibility connect to self-respect?",
+     "answer": "Acting with integrity makes you someone you can trust",
+     "wrong": [
+      "Self-respect depends on others",
+      "They're unrelated",
+      "You build it by avoiding blame"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "4flh9c45qfuw",
+     "question": "What is a commitment?",
+     "answer": "A promise you make — and keep",
+     "wrong": [
+      "A form you sign",
+      "An optional goal",
+      "A court order"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "hasth58wfr2m",
+     "question": "What does it mean to 'move forward' after owning a mistake?",
+     "answer": "Learn from it and don't let it define your whole story",
+     "wrong": [
+      "Forget it ever happened",
+      "Move on before understanding the impact",
+      "Refuse to look back at all"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "megutpe3oycb",
+     "question": "What is proactive responsibility?",
+     "answer": "Taking ownership before problems happen",
+     "wrong": [
+      "Reacting fast when called out",
+      "Taking blame to protect others",
+      "A program-only strategy"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ca36ngalqofp",
+     "question": "True or false: Responsibility only matters after something goes wrong.",
+     "answer": "False — it's how you show up every day",
+     "wrong": [
+      "True — it's only for fixing problems",
+      "True — planning is a different skill",
+      "False — but it's most visible after mistakes"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ojcdll7qk9b7",
+     "question": "How does personal responsibility connect to freedom?",
+     "answer": "Owning your choices gives you the power to change your direction",
+     "wrong": [
+      "They are opposites",
+      "Responsibility limits freedom",
+      "Freedom means avoiding responsibility"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "6384cf49r0ky",
+     "question": "How does responsibility affect relationships?",
+     "answer": "Ownership builds trust; avoiding it erodes trust",
+     "wrong": [
+      "It means deciding for others",
+      "Only avoiding blame matters",
+      "It only matters with a boss"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "nv1kuc3cwjq0",
+     "question": "What is 'choice awareness'?",
+     "answer": "Recognizing you usually have more than one option",
+     "wrong": [
+      "Noticing others' choices",
+      "A clinical test",
+      "Accepting that choices are made for you"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ay0onby8kb17",
+     "question": "Which is NOT taking personal responsibility?",
+     "answer": "'I was late because traffic is always bad'",
+     "wrong": [
+      "'I should have left earlier'",
+      "'I made a mistake — here's my fix'",
+      "'I need help handling this better'"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ug4jzxtu49lr",
+     "question": "Why can taking responsibility feel hard?",
+     "answer": "It takes vulnerability to admit you were wrong",
+     "wrong": [
+      "It's only taught through punishment",
+      "It needs perfect logic",
+      "There are no good examples"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "ym5b9aaa9hjo",
+     "question": "Shame says 'I am bad.' Responsibility says…",
+     "answer": "'I did something I want to do differently'",
+     "wrong": [
+      "'It wasn't my fault'",
+      "'I'll never mess up again'",
+      "'Everyone does it'"
+     ],
+     "category": "Personal Responsibility",
+     "time": 20,
+     "sets": [
+      "Personal Responsibility"
+     ]
+    },
+    {
+     "id": "wa693cozjxzk",
+     "question": "What is leisure?",
+     "answer": "Time spent on activities you choose for enjoyment or rest",
+     "wrong": [
+      "Any time you're not sleeping",
+      "Free time filled with chores",
+      "Scheduled clinical relaxation"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "6o8mc569bxz3",
+     "question": "What's one mental health benefit of regular leisure?",
+     "answer": "Less stress and a better mood",
+     "wrong": [
+      "More hours at work",
+      "Better sleep than any medication",
+      "No more need for support"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "kf9m12ogy3th",
+     "question": "Which statement about leisure is TRUE?",
+     "answer": "It's a necessary part of health — not a reward",
+     "wrong": [
+      "It should only come after all work is done",
+      "Too much leads to laziness",
+      "It's only for people with no responsibilities"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "89yfk2wtuwtj",
+     "question": "What is 'passive' leisure?",
+     "answer": "Enjoyment without much effort, like watching TV",
+     "wrong": [
+      "Leisure outdoors",
+      "Any solo activity",
+      "Prescribed relaxation"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "zyw1khfp0r4i",
+     "question": "What is 'active' leisure?",
+     "answer": "Physical, creative or social activities like hiking or painting",
+     "wrong": [
+      "Only gym workouts",
+      "Anything on your calendar",
+      "Activities longer than 30 minutes"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "lh1wd4hgahmd",
+     "question": "Which is a restorative leisure activity?",
+     "answer": "A quiet walk in nature",
+     "wrong": [
+      "Working to meet a deadline",
+      "Checking work emails",
+      "A required meeting"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "iwcog23nogl6",
+     "question": "What does 'flow' mean?",
+     "answer": "Being so absorbed in an activity that time disappears",
+     "wrong": [
+      "A water activity",
+      "Switching between hobbies",
+      "A test for enjoyment"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "zqaf0831059y",
+     "question": "How does social leisure help mental health?",
+     "answer": "It builds connection and reduces isolation",
+     "wrong": [
+      "Only if it's exercise",
+      "It's worse than solo leisure",
+      "It replaces counseling"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "0x17a2uqknyh",
+     "question": "Which is a creative leisure activity?",
+     "answer": "Writing, drawing or playing music",
+     "wrong": [
+      "A required class",
+      "Doing chores fast",
+      "Reading for work"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "xfrctzn5bz7x",
+     "question": "What's the difference between rest and leisure?",
+     "answer": "Rest restores through stillness; leisure through enjoyable activity",
+     "wrong": [
+      "There's no difference",
+      "Leisure is rest in a group",
+      "Rest helps; leisure is just entertainment"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "yh9hob5xt4fh",
+     "question": "Why have a variety of leisure activities?",
+     "answer": "Different activities meet different needs",
+     "wrong": [
+      "One hobby is unhealthy",
+      "Only to prevent boredom",
+      "One is always enough"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "nhoo5cd6wk1p",
+     "question": "How does leisure help the brain?",
+     "answer": "It lowers stress hormones and restores focus",
+     "wrong": [
+      "It permanently raises dopamine",
+      "It has no effect",
+      "Only reading helps"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "937z89dwb5z8",
+     "question": "What is a common barrier to leisure?",
+     "answer": "Guilt about taking time for yourself",
+     "wrong": [
+      "Too many fun options",
+      "Feeling too rested",
+      "Too much encouragement"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "l70ogxwlyb9n",
+     "question": "What is 'leisure literacy'?",
+     "answer": "Knowing how to choose activities that truly restore you",
+     "wrong": [
+      "Reading about hobbies",
+      "A recreation certificate",
+      "The history of leisure"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "unlklvrawmyj",
+     "question": "True or false: All screen time is meaningful leisure.",
+     "answer": "False — it can restore or drain you",
+     "wrong": [
+      "True — any screen time counts",
+      "True — it's all the same",
+      "False — screens never count"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "459pila815v7",
+     "question": "Why choose leisure that matches your interests?",
+     "answer": "Genuine enjoyment brings bigger benefits",
+     "wrong": [
+      "Only creative people benefit",
+      "It's not supported by research",
+      "All activities are equal"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "3ss05sf27h4g",
+     "question": "What's a risk of having no leisure time?",
+     "answer": "Burnout, irritability and low motivation",
+     "wrong": [
+      "Too much energy",
+      "Being overly focused",
+      "Working too little"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "rvj2f36xqf5w",
+     "question": "What does it mean to 'schedule leisure'?",
+     "answer": "Protecting time for fun so it doesn't get crowded out",
+     "wrong": [
+      "Being required to attend",
+      "Timing it in 30-minute blocks",
+      "Only on weekends"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "6kgnc3gajmr2",
+     "question": "How does leisure connect to identity?",
+     "answer": "What you enjoy reflects who you are",
+     "wrong": [
+      "They're unrelated",
+      "Only work shapes identity",
+      "Your skills decide your identity"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "fu96369tyrzu",
+     "question": "What is 'restorative theory'?",
+     "answer": "Some places and activities refill your mental energy",
+     "wrong": [
+      "Rest must come before leisure",
+      "A hospital recreation model",
+      "Only outdoor activities restore you"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "sslbrcyafqyf",
+     "question": "Which activity is MOST likely to lower stress hormones?",
+     "answer": "A nature walk or creative project",
+     "wrong": [
+      "Intense competition",
+      "Watching stressful news",
+      "Multitasking during downtime"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "oisfhgixpt8y",
+     "question": "True or false: Leisure is selfish if others are still working.",
+     "answer": "False — caring for yourself helps you show up for others",
+     "wrong": [
+      "True — wait until everyone's done",
+      "True — it's discouraged in groups",
+      "False — only if it's not fun"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "tp25kfm4f480",
+     "question": "What's a good first step if you don't know what you enjoy?",
+     "answer": "Try something small — a walk, a doodle, a song",
+     "wrong": [
+      "Copy the most popular hobby",
+      "Have someone assign one",
+      "Wait until you feel motivated"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "9evu1mkw16wl",
+     "question": "Fun activities naturally release which feel-good brain chemical?",
+     "answer": "Dopamine",
+     "wrong": [
+      "Cortisol",
+      "Adrenaline",
+      "Insulin"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "2kuezoscbpx0",
+     "question": "Finish the quote: 'Rest is not a reward for hard work. It is…'",
+     "answer": "part of the work",
+     "wrong": [
+      "a waste of time",
+      "for weekends only",
+      "earned by finishing"
+     ],
+     "category": "The Science of Leisure",
+     "time": 20,
+     "sets": [
+      "The Science of Leisure"
+     ]
+    },
+    {
+     "id": "vwo8n0s46c9n",
+     "question": "What is a toxic relationship?",
+     "answer": "One that consistently undermines your wellbeing, self-worth or safety",
+     "wrong": [
+      "Any relationship with arguments",
+      "A relationship that ended badly",
+      "One with someone who is struggling"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "bb5wxs1q70yd",
+     "question": "Which is a warning sign of a toxic relationship?",
+     "answer": "Your feelings are always dismissed as 'too sensitive'",
+     "wrong": [
+      "You disagree on big topics",
+      "You communicate differently",
+      "They're going through a hard time"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "3uc2va0aaxn7",
+     "question": "What is 'love bombing'?",
+     "answer": "Overwhelming someone with affection early on to gain control",
+     "wrong": [
+      "Openly expressing love in a healthy way",
+      "A sincere apology with flowers",
+      "Healthy attachment in a new relationship"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "3abizy2qtvc2",
+     "question": "What is emotional manipulation?",
+     "answer": "Using someone's feelings or fears to control them",
+     "wrong": [
+      "Sharing your emotions honestly",
+      "Exploring feelings in counseling",
+      "Saying you're disappointed about a broken promise"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "45nwp6387ncf",
+     "question": "What is gaslighting?",
+     "answer": "Making someone doubt their own memory or reality",
+     "wrong": [
+      "Raising your voice to make a point",
+      "Lighting candles for a nice mood",
+      "Being very emotionally reactive"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "stltbzg1gsvp",
+     "question": "Which compares healthy vs. toxic correctly?",
+     "answer": "Healthy: mutual respect. Toxic: one person controls the other",
+     "wrong": [
+      "Healthy: no arguments. Toxic: any conflict",
+      "Healthy: all time together. Toxic: time apart",
+      "Healthy: one decides. Toxic: equal say"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "0goccy1tsaed",
+     "question": "True or false: Only romantic relationships can be toxic.",
+     "answer": "False — friends, family and coworkers too",
+     "wrong": [
+      "True — only romantic partners",
+      "True — family is always safe",
+      "False — but friendships are never as harmful"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "sel3c8wcrdti",
+     "question": "What is 'isolation' in a toxic relationship?",
+     "answer": "Cutting someone off from their support network",
+     "wrong": [
+      "Choosing quiet time for self-care",
+      "Setting boundaries with unsupportive people",
+      "Taking a social media break"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "n8tmporha1ha",
+     "question": "Why can people get stuck in toxic relationships?",
+     "answer": "The cycle of hurt and making up creates a strong bond",
+     "wrong": [
+      "They enjoy the conflict",
+      "They don't know healthy ones exist",
+      "Toxic relationships always feel bad from day one"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "hjpu8k0rdztj",
+     "question": "Which is a sign of a HEALTHY relationship?",
+     "answer": "Both feel safe to share needs and disagree",
+     "wrong": [
+      "One person changes everything to please",
+      "Both avoid hard topics",
+      "One always sacrifices their needs"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "zgj15x71x8d4",
+     "question": "What does 'walking on eggshells' mean?",
+     "answer": "Constantly watching what you say out of fear",
+     "wrong": [
+      "Being careful during one tense moment",
+      "A healthy communication strategy",
+      "Anxiety about any conversation"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "nscgawvi8bl3",
+     "question": "What is 'breadcrumbing'?",
+     "answer": "Giving just enough attention to keep someone hooked",
+     "wrong": [
+      "Small, consistent acts of care",
+      "Taking small steps to resolve conflict",
+      "Slowly rebuilding trust"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "onbezuddizgc",
+     "question": "How can a toxic relationship affect self-esteem?",
+     "answer": "It wears down self-worth over time",
+     "wrong": [
+      "Only physical harm affects it",
+      "It improves self-esteem",
+      "Only if you were already struggling"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "oewjaqiaosav",
+     "question": "What is the first step in addressing a toxic relationship?",
+     "answer": "Recognizing and naming the patterns",
+     "wrong": [
+      "Ending it immediately",
+      "Listing every way they hurt you",
+      "Getting legal help first"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "wwf66ilbrbgi",
+     "question": "True or false: Repeated apologies mean the behavior will stop.",
+     "answer": "False — without real change, apologies are part of the cycle",
+     "wrong": [
+      "True — apologies show willingness",
+      "True — they always rebuild trust",
+      "False — unless there's therapy"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "mfmpjze8u4sc",
+     "question": "What is coercive control?",
+     "answer": "A pattern of using money, emotions or isolation to dominate someone",
+     "wrong": [
+      "Insisting on your own way once",
+      "Normal jealousy",
+      "Encouraging healthy habits"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "1ujbp9qxy45f",
+     "question": "What does 'protect your peace' mean?",
+     "answer": "Limiting interactions that keep harming you",
+     "wrong": [
+      "Avoiding all conflict",
+      "Only seeing people who agree with you",
+      "Relaxing so you can tolerate mistreatment"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "vh1w8z5i57i2",
+     "question": "Which is a healthy response to feeling hurt?",
+     "answer": "Share your feelings calmly using 'I' statements",
+     "wrong": [
+      "The silent treatment",
+      "Telling everyone else first",
+      "Hiding your feelings"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "78fbmqouusia",
+     "question": "How can a support network help?",
+     "answer": "It offers validation, safety and practical help",
+     "wrong": [
+      "It makes your decisions",
+      "Only professionals can help",
+      "It only helps after it's over"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "2uimth4uj985",
+     "question": "True or false: If you love someone, it's your job to fix their toxic behavior.",
+     "answer": "False — you can't change someone who won't change, and your safety comes first",
+     "wrong": [
+      "True — love means fixing them",
+      "True — commitment means staying no matter what",
+      "False — but staying is always the right choice"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "v3cu12s3yyjr",
+     "question": "Why does recognizing toxic patterns early matter?",
+     "answer": "It's easier to address them before they feel normal",
+     "wrong": [
+      "It gives you leverage",
+      "Patterns fix themselves if spotted early",
+      "It means the relationship is doomed"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "iten4di6suei",
+     "question": "Boundaries are not walls — they're fences with…",
+     "answer": "Gates",
+     "wrong": [
+      "Locks",
+      "Barbed wire",
+      "No openings"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "po0paznu4jfo",
+     "question": "In a healthy relationship, you can say no without feeling…",
+     "answer": "Afraid or guilty",
+     "wrong": [
+      "Happy",
+      "Respected",
+      "Heard"
+     ],
+     "category": "Toxic Relationships",
+     "time": 20,
+     "sets": [
+      "Toxic Relationships"
+     ]
+    },
+    {
+     "id": "gg61tpvak3yt",
+     "question": "What are personal values?",
+     "answer": "The core beliefs that guide how you live and treat others",
+     "wrong": [
+      "Rules your family says you must follow",
+      "Goals for the future",
+      "Opinions about others' choices"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "u8pblxuvsm8f",
+     "question": "Why identify your values?",
+     "answer": "They guide your decisions, especially in hard moments",
+     "wrong": [
+      "They're needed for assessments",
+      "They help you judge others",
+      "They only matter in big transitions"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "yzlvnxdn9ptt",
+     "question": "Which is an example of a personal value?",
+     "answer": "Honesty",
+     "wrong": [
+      "Wanting to earn more money",
+      "Preferring quiet rooms",
+      "Attending a required class"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "o55r36fscwk3",
+     "question": "What happens when your actions match your values?",
+     "answer": "You feel more peace and purpose",
+     "wrong": [
+      "You never make mistakes",
+      "Everyone always approves",
+      "You never need encouragement"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "8xxemjvwchcj",
+     "question": "What is 'values clarification'?",
+     "answer": "Figuring out which principles matter most to you",
+     "wrong": [
+      "Fixing values someone else dislikes",
+      "Finding the single best value",
+      "Finding the most popular values"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "6i2t5khgxrla",
+     "question": "Which is a sign of a values conflict?",
+     "answer": "Feeling torn between two things you care about",
+     "wrong": [
+      "Disagreeing with a relative's lifestyle",
+      "Wanting something you can't have",
+      "Guilt when others disapprove"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "v1lurc9g9o99",
+     "question": "How can knowing your values help with peer pressure?",
+     "answer": "They act like an inner compass",
+     "wrong": [
+      "They make you immune to influence",
+      "They guarantee the right choice",
+      "They only help in certain situations"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "vscf7wf3gg1a",
+     "question": "True or false: Your values can change as you grow.",
+     "answer": "True — they evolve with experience",
+     "wrong": [
+      "False — they're fixed from childhood",
+      "False — if they change, they weren't yours",
+      "True — but only if someone approves"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "xyidm5ubrp52",
+     "question": "What's the difference between a value and a rule?",
+     "answer": "A value comes from within; a rule is set by others",
+     "wrong": [
+      "Values always beat rules",
+      "Rules are written; values aren't",
+      "A value becomes a rule when popular"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "404g4pmtjhtu",
+     "question": "Which BEST shows the value of courage?",
+     "answer": "Speaking up about what matters even when you're afraid",
+     "wrong": [
+      "Taking reckless risks",
+      "Winning every argument",
+      "Never changing your mind"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "1utqmv272b9i",
+     "question": "What is value-based decision making?",
+     "answer": "Choosing actions that reflect your principles",
+     "wrong": [
+      "Doing what others value",
+      "Following a checklist",
+      "Waiting until you're perfectly calm"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "0hyf4xgidd4t",
+     "question": "How does living your values affect self-esteem?",
+     "answer": "It builds real self-respect",
+     "wrong": [
+      "Only others' approval matters",
+      "There's no connection",
+      "It makes everyone like you"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "p59gw3k7dy41",
+     "question": "What can happen when you live against your values for a long time?",
+     "answer": "Inner conflict and feeling disconnected from yourself",
+     "wrong": [
+      "You find peace",
+      "Others stop challenging you",
+      "Your values update automatically"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "1kol135da9w5",
+     "question": "Which value focuses on community and connection?",
+     "answer": "Belonging",
+     "wrong": [
+      "Autonomy",
+      "Achievement",
+      "Stability"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "mlqi6c10uizb",
+     "question": "True or false: Your values need everyone's approval to be valid.",
+     "answer": "False — your values are yours",
+     "wrong": [
+      "True — they need community approval",
+      "True — sharing them makes them count",
+      "False — but your team must approve them"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "01reuholyo30",
+     "question": "What does integrity mean as a value?",
+     "answer": "Acting on your beliefs consistently, even unseen",
+     "wrong": [
+      "Honesty only when you might get caught",
+      "Agreeing with authority",
+      "Keeping promises only to loved ones"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "45ygnkka77dj",
+     "question": "What does it mean to 'honor' a value?",
+     "answer": "Act on it even when it's hard or inconvenient",
+     "wrong": [
+      "List it on a form",
+      "Announce it publicly",
+      "Pick it over everything, always"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "01ytmku1xp73",
+     "question": "Which is NOT a personal value?",
+     "answer": "Preferring pizza over pasta",
+     "wrong": [
+      "Compassion",
+      "Freedom",
+      "Growth"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "fmxwzmj43tcu",
+     "question": "What is a 'guiding value'?",
+     "answer": "A core value that shapes choices in many areas of life",
+     "wrong": [
+      "One assigned by a counselor",
+      "One used only in emergencies",
+      "A temporary short-term value"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "scjegst511y7",
+     "question": "Why might two people with the same values make different choices?",
+     "answer": "Their experiences and situations differ",
+     "wrong": [
+      "One person's values are stronger",
+      "Values only work in familiar situations",
+      "Their values are secretly different"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "jbazople67rh",
+     "question": "What's the best way to find your top values?",
+     "answer": "Reflect on moments you felt most proud or at peace",
+     "wrong": [
+      "Accept a quiz score",
+      "Let others list them",
+      "Pick the ones that sound impressive"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "q9hwu5xbdkvj",
+     "question": "How are values and boundaries related?",
+     "answer": "Boundaries protect what you value",
+     "wrong": [
+      "They rarely connect",
+      "Only in professional settings",
+      "Boundaries reflect community values only"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "w4bjtqppuj2c",
+     "question": "Finish the quote: 'When your actions align with your values…'",
+     "answer": "you stop second-guessing yourself",
+     "wrong": [
+      "everyone agrees with you",
+      "life gets easy",
+      "you never fail"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "7fotaslyu2tk",
+     "question": "The gap between your values and your actions is where ___ happens.",
+     "answer": "Growth",
+     "wrong": [
+      "Failure",
+      "Nothing",
+      "Luck"
+     ],
+     "category": "Your Values",
+     "time": 20,
+     "sets": [
+      "Your Values"
+     ]
+    },
+    {
+     "id": "llpgojiuczmf",
+     "question": "What does 'your happy place' mean?",
+     "answer": "A real or imagined space where you feel safe and calm",
+     "wrong": [
+      "A vacation spot you've visited",
+      "A place reached only by meditation",
+      "A clinical term for no stress"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ncavvq2srsa3",
+     "question": "Which is an example of a mental happy place?",
+     "answer": "Closing your eyes and picturing a peaceful beach",
+     "wrong": [
+      "Going to a friend's house",
+      "Taking a walk in the park",
+      "Blasting loud music"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "urmp4y1sdf0x",
+     "question": "What's one purpose of finding your happy place?",
+     "answer": "To have a calming tool you can return to anytime",
+     "wrong": [
+      "To avoid your problems",
+      "To replace support from others",
+      "To spend all your time there"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "jf6jepatuu9z",
+     "question": "Which senses can help create a happy place?",
+     "answer": "All of them — sight, sound, smell, touch and taste",
+     "wrong": [
+      "Only sight",
+      "Only smell",
+      "None — it needs silence"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "lmtk4iosszt6",
+     "question": "True or false: Your happy place must be somewhere you've actually been.",
+     "answer": "False — an imagined place works just as well",
+     "wrong": [
+      "True — it must be real",
+      "True — your brain needs real memories",
+      "False — but you must plan to visit"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ietdxtkem6vf",
+     "question": "Which feelings are most connected to a happy place?",
+     "answer": "Safety and calm",
+     "wrong": [
+      "Excitement and energy",
+      "Nostalgia and sadness",
+      "Confidence and pride"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "zobo851pnq7d",
+     "question": "How can you use your happy place in a stressful moment?",
+     "answer": "Pause, close your eyes and imagine it in detail",
+     "wrong": [
+      "Tell everyone about it",
+      "Draw it right away",
+      "Go there physically as soon as possible"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ih4ay3p6t6hs",
+     "question": "Why make your happy place vivid and detailed?",
+     "answer": "More detail activates more calming responses",
+     "wrong": [
+      "It's easier to explain",
+      "It's required to work",
+      "It lasts longer in memory"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "yqnwcufq7r35",
+     "question": "Which would make the LEAST calming happy place for most people?",
+     "answer": "A noisy, chaotic, unpredictable place",
+     "wrong": [
+      "A quiet garden",
+      "A cozy bedroom",
+      "Calm water at sunrise"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "arldwwmsxb7o",
+     "question": "Why might two people have totally different happy places?",
+     "answer": "Peace looks different for everyone",
+     "wrong": [
+      "One is more creative",
+      "A therapist assigns them",
+      "Only certain places qualify"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "ofvydkzmri4y",
+     "question": "How does visiting your happy place regularly help?",
+     "answer": "It trains your body to find calm faster",
+     "wrong": [
+      "It ends stress forever",
+      "It only works in therapy",
+      "It replaces friends"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "w5ncueg1co3o",
+     "question": "How is grounding related to a happy place?",
+     "answer": "Both use your senses to anchor you in calm",
+     "wrong": [
+      "Grounding means touching dirt",
+      "Grounding is a diagnosis",
+      "They're unrelated"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "f7kwoe4k7nzv",
+     "question": "Which statement about happiness is TRUE?",
+     "answer": "Happiness is a skill you can practice and return to",
+     "wrong": [
+      "It depends only on circumstances",
+      "Some people just can't be happy",
+      "Once you have it, it's permanent"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "d653t2ypmc73",
+     "question": "What can drawing your happy place teach you?",
+     "answer": "What environments and feelings restore you",
+     "wrong": [
+      "How creative you are compared to others",
+      "How well you follow directions",
+      "What treatment you need"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "k9dpqi43eoen",
+     "question": "How can sharing happy places with the group help?",
+     "answer": "It builds connection and shows many kinds of peace are valid",
+     "wrong": [
+      "It's required",
+      "Others can copy yours",
+      "It makes yours stronger"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "8zglt63x6q78",
+     "question": "Which is an example of a PHYSICAL happy place?",
+     "answer": "A favorite chair in a quiet room",
+     "wrong": [
+      "A loud, bright party",
+      "A packed crowd",
+      "Your busiest workspace"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "lt5k6qnhmunw",
+     "question": "What role does imagination play?",
+     "answer": "It lets you visit a peaceful place anytime, anywhere",
+     "wrong": [
+      "It makes it less real",
+      "It's only for when you can't travel",
+      "It blocks healing"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "echqy1cqawbl",
+     "question": "What if other people are in your happy place?",
+     "answer": "Connection and belonging are part of peace for you",
+     "wrong": [
+      "You did it wrong",
+      "You're more outgoing than others",
+      "It won't work"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "xx8oswg11kya",
+     "question": "How often can you visit your happy place?",
+     "answer": "As often as you need",
+     "wrong": [
+      "Only in therapy",
+      "Once a day",
+      "Only when already calm"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "clfk1x9iiw9n",
+     "question": "How are your happy place and self-care connected?",
+     "answer": "Both are choices to care for your wellbeing",
+     "wrong": [
+      "They're unrelated",
+      "Self-care replaces it",
+      "Only if a therapist links them"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "vn3wp5wzmyg0",
+     "question": "Why update your happy place over time?",
+     "answer": "What brings you peace can change as you grow",
+     "wrong": [
+      "It expires",
+      "You must change it weekly",
+      "It's required"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "m3120o8ycl7e",
+     "question": "What if you can't think of a happy place?",
+     "answer": "Start small — a color, a sound or a temperature",
+     "wrong": [
+      "Skip the activity",
+      "Borrow someone else's",
+      "Wait until you feel happy"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "hb0rncxrajlp",
+     "question": "How does a happy place support emotional balance?",
+     "answer": "It gives you a calm anchor when emotions feel big",
+     "wrong": [
+      "It erases negative emotions",
+      "It teaches you to bottle things up",
+      "It only works for anxiety"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
+    },
+    {
+     "id": "lh4sgquhin6f",
+     "question": "Finish the quote: 'Your happy place is always available to you —'",
+     "answer": "close your eyes and go there anytime",
+     "wrong": [
+      "but only on weekends",
+      "if you can afford the trip",
+      "once you earn it"
+     ],
+     "category": "Your Happy Place",
+     "time": 20,
+     "sets": [
+      "Your Happy Place"
+     ]
     }
    ]
   }
@@ -40802,6 +60701,792 @@ window.GS_MY_CONTENT = {
    "floor",
    "dust",
    "robot"
+  ],
+  "a peace sign": [
+   "peace",
+   "hippie",
+   "fingers",
+   "symbol"
+  ],
+  "a white flag": [
+   "surrender",
+   "wave",
+   "give up",
+   "flag"
+  ],
+  "a scale": [
+   "balance",
+   "weigh",
+   "justice",
+   "even"
+  ],
+  "counting to ten": [
+   "count",
+   "numbers",
+   "ten",
+   "fingers"
+  ],
+  "walking away to cool off": [
+   "leave",
+   "walk",
+   "cool",
+   "calm"
+  ],
+  "saying sorry": [
+   "apologize",
+   "sorry",
+   "forgive",
+   "oops"
+  ],
+  "a referee": [
+   "sports",
+   "whistle",
+   "ref",
+   "stripes"
+  ],
+  "meeting in the middle": [
+   "middle",
+   "halfway",
+   "compromise",
+   "center"
+  ],
+  "shaking hands on a deal": [
+   "shake",
+   "hands",
+   "agree",
+   "deal"
+  ],
+  "a tug of war": [
+   "rope",
+   "pull",
+   "teams",
+   "war"
+  ],
+  "a sneaker": [
+   "shoe",
+   "run",
+   "laces",
+   "foot"
+  ],
+  "a jump rope": [
+   "jump",
+   "rope",
+   "skip",
+   "hop"
+  ],
+  "a soccer ball": [
+   "kick",
+   "goal",
+   "ball",
+   "football"
+  ],
+  "a swimming pool": [
+   "swim",
+   "water",
+   "dive",
+   "splash"
+  ],
+  "a dumbbell": [
+   "weights",
+   "lift",
+   "gym",
+   "heavy"
+  ],
+  "a yoga mat": [
+   "yoga",
+   "mat",
+   "stretch",
+   "roll"
+  ],
+  "a basketball hoop": [
+   "hoop",
+   "net",
+   "dunk",
+   "shoot"
+  ],
+  "a water bottle": [
+   "drink",
+   "water",
+   "bottle",
+   "thirsty"
+  ],
+  "doing jumping jacks": [
+   "jump",
+   "jacks",
+   "arms",
+   "exercise"
+  ],
+  "touching your toes": [
+   "toes",
+   "stretch",
+   "bend",
+   "reach"
+  ],
+  "walking a dog": [
+   "dog",
+   "leash",
+   "walk",
+   "pet"
+  ],
+  "climbing stairs": [
+   "stairs",
+   "steps",
+   "up",
+   "climb"
+  ],
+  "riding a bike": [
+   "bike",
+   "pedal",
+   "ride",
+   "wheels"
+  ],
+  "doing a push-up": [
+   "push",
+   "floor",
+   "arms",
+   "exercise"
+  ],
+  "throwing a frisbee": [
+   "frisbee",
+   "throw",
+   "catch",
+   "disc"
+  ],
+  "tai chi": [
+   "slow",
+   "martial",
+   "china",
+   "balance"
+  ],
+  "a banana": [
+   "yellow",
+   "peel",
+   "monkey",
+   "fruit"
+  ],
+  "a carrot": [
+   "orange",
+   "rabbit",
+   "vegetable",
+   "root"
+  ],
+  "a glass of water": [
+   "drink",
+   "glass",
+   "water",
+   "thirsty"
+  ],
+  "an egg": [
+   "chicken",
+   "yolk",
+   "shell",
+   "breakfast"
+  ],
+  "broccoli": [
+   "green",
+   "tree",
+   "vegetable",
+   "florets"
+  ],
+  "a sandwich": [
+   "bread",
+   "lunch",
+   "slice",
+   "sub"
+  ],
+  "a bowl of cereal": [
+   "milk",
+   "spoon",
+   "breakfast",
+   "bowl"
+  ],
+  "a pineapple": [
+   "fruit",
+   "tropical",
+   "spiky",
+   "yellow"
+  ],
+  "making a salad": [
+   "lettuce",
+   "bowl",
+   "toss",
+   "vegetables"
+  ],
+  "grocery shopping": [
+   "store",
+   "cart",
+   "buy",
+   "food"
+  ],
+  "reading a food label": [
+   "label",
+   "read",
+   "package",
+   "nutrition"
+  ],
+  "a picnic": [
+   "blanket",
+   "basket",
+   "park",
+   "lunch"
+  ],
+  "slicing a watermelon": [
+   "watermelon",
+   "knife",
+   "slice",
+   "seeds"
+  ],
+  "a farmers market": [
+   "farm",
+   "market",
+   "stand",
+   "produce"
+  ],
+  "peeling an orange": [
+   "orange",
+   "peel",
+   "citrus",
+   "fruit"
+  ],
+  "making a smoothie": [
+   "blender",
+   "fruit",
+   "drink",
+   "blend"
+  ],
+  "a lunchbox": [
+   "lunch",
+   "box",
+   "school",
+   "pack"
+  ],
+  "a shield": [
+   "protect",
+   "knight",
+   "armor",
+   "defend"
+  ],
+  "a fence with a gate": [
+   "fence",
+   "gate",
+   "yard",
+   "boundary"
+  ],
+  "a crowd": [
+   "people",
+   "group",
+   "many",
+   "bunch"
+  ],
+  "a compass": [
+   "north",
+   "direction",
+   "needle",
+   "navigate"
+  ],
+  "a thumbs down": [
+   "thumb",
+   "no",
+   "bad",
+   "dislike"
+  ],
+  "a sheep": [
+   "wool",
+   "baa",
+   "flock",
+   "farm"
+  ],
+  "walking away": [
+   "walk",
+   "leave",
+   "away",
+   "exit"
+  ],
+  "saying no": [
+   "no",
+   "refuse",
+   "shake",
+   "head"
+  ],
+  "calling a friend": [
+   "phone",
+   "call",
+   "friend",
+   "talk"
+  ],
+  "following the crowd": [
+   "follow",
+   "crowd",
+   "group",
+   "sheep"
+  ],
+  "standing up for yourself": [
+   "stand",
+   "brave",
+   "yourself",
+   "speak"
+  ],
+  "a fork in the road": [
+   "fork",
+   "road",
+   "choice",
+   "split"
+  ],
+  "swimming upstream": [
+   "swim",
+   "fish",
+   "river",
+   "against"
+  ],
+  "crossing your arms": [
+   "arms",
+   "cross",
+   "fold",
+   "no"
+  ],
+  "a high five": [
+   "hand",
+   "five",
+   "slap",
+   "celebrate"
+  ],
+  "a key": [
+   "lock",
+   "door",
+   "open",
+   "keychain"
+  ],
+  "a promise ring": [
+   "ring",
+   "finger",
+   "promise",
+   "jewelry"
+  ],
+  "an alarm clock": [
+   "alarm",
+   "wake",
+   "clock",
+   "ring"
+  ],
+  "a checkmark": [
+   "check",
+   "done",
+   "tick",
+   "correct"
+  ],
+  "a steering wheel": [
+   "drive",
+   "car",
+   "steer",
+   "wheel"
+  ],
+  "a seed growing": [
+   "plant",
+   "grow",
+   "sprout",
+   "soil"
+  ],
+  "an eraser": [
+   "erase",
+   "pencil",
+   "rub",
+   "mistake"
+  ],
+  "keeping a promise": [
+   "promise",
+   "keep",
+   "pinky",
+   "swear"
+  ],
+  "cleaning your room": [
+   "clean",
+   "room",
+   "tidy",
+   "mess"
+  ],
+  "showing up on time": [
+   "late",
+   "time",
+   "clock",
+   "early"
+  ],
+  "fixing something you broke": [
+   "fix",
+   "broken",
+   "repair",
+   "glue"
+  ],
+  "saying i'm sorry": [
+   "sorry",
+   "apologize",
+   "oops",
+   "forgive"
+  ],
+  "watering a plant": [
+   "water",
+   "plant",
+   "grow",
+   "can"
+  ],
+  "feeding a pet": [
+   "pet",
+   "food",
+   "bowl",
+   "dog"
+  ],
+  "making your bed": [
+   "bed",
+   "pillow",
+   "sheets",
+   "blanket"
+  ],
+  "taking out the trash": [
+   "trash",
+   "garbage",
+   "bin",
+   "can"
+  ],
+  "a pinky promise": [
+   "pinky",
+   "promise",
+   "finger",
+   "swear"
+  ],
+  "a paintbrush": [
+   "paint",
+   "brush",
+   "art",
+   "canvas"
+  ],
+  "a puzzle piece": [
+   "puzzle",
+   "jigsaw",
+   "piece",
+   "fit"
+  ],
+  "a hammock": [
+   "swing",
+   "relax",
+   "trees",
+   "nap"
+  ],
+  "a kite": [
+   "fly",
+   "wind",
+   "string",
+   "sky"
+  ],
+  "a fishing pole": [
+   "fish",
+   "hook",
+   "lake",
+   "cast"
+  ],
+  "a board game": [
+   "dice",
+   "board",
+   "game",
+   "play"
+  ],
+  "a telescope": [
+   "stars",
+   "space",
+   "look",
+   "sky"
+  ],
+  "knitting": [
+   "yarn",
+   "needles",
+   "sweater",
+   "knit"
+  ],
+  "birdwatching": [
+   "birds",
+   "binoculars",
+   "watch",
+   "feathers"
+  ],
+  "planting flowers": [
+   "plant",
+   "flowers",
+   "garden",
+   "dirt"
+  ],
+  "taking a nap": [
+   "sleep",
+   "nap",
+   "bed",
+   "tired"
+  ],
+  "doing a puzzle": [
+   "puzzle",
+   "pieces",
+   "jigsaw",
+   "fit"
+  ],
+  "stargazing": [
+   "stars",
+   "sky",
+   "night",
+   "look"
+  ],
+  "a picnic in the park": [
+   "picnic",
+   "blanket",
+   "park",
+   "basket"
+  ],
+  "roasting marshmallows": [
+   "campfire",
+   "marshmallow",
+   "stick",
+   "s'mores"
+  ],
+  "a red flag": [
+   "flag",
+   "red",
+   "warning",
+   "pole"
+  ],
+  "a green flag": [
+   "flag",
+   "green",
+   "good",
+   "pole"
+  ],
+  "an eggshell": [
+   "egg",
+   "shell",
+   "crack",
+   "chicken"
+  ],
+  "a puppet on strings": [
+   "puppet",
+   "strings",
+   "control",
+   "marionette"
+  ],
+  "a broken chain": [
+   "chain",
+   "break",
+   "free",
+   "links"
+  ],
+  "a teddy bear": [
+   "bear",
+   "stuffed",
+   "toy",
+   "hug"
+  ],
+  "walking on eggshells": [
+   "eggs",
+   "walk",
+   "careful",
+   "tiptoe"
+  ],
+  "two people hugging": [
+   "hug",
+   "embrace",
+   "arms",
+   "love"
+  ],
+  "closing a door": [
+   "door",
+   "close",
+   "shut",
+   "exit"
+  ],
+  "a bird leaving a cage": [
+   "bird",
+   "cage",
+   "free",
+   "fly"
+  ],
+  "holding hands": [
+   "hands",
+   "hold",
+   "couple",
+   "together"
+  ],
+  "a group of friends": [
+   "friends",
+   "group",
+   "people",
+   "together"
+  ],
+  "putting up a fence": [
+   "fence",
+   "build",
+   "yard",
+   "post"
+  ],
+  "a lifeguard": [
+   "pool",
+   "rescue",
+   "whistle",
+   "beach"
+  ],
+  "planting a garden": [
+   "plant",
+   "garden",
+   "grow",
+   "seeds"
+  ],
+  "a family": [
+   "mom",
+   "dad",
+   "kids",
+   "home"
+  ],
+  "a tree with roots": [
+   "tree",
+   "roots",
+   "ground",
+   "trunk"
+  ],
+  "a lion": [
+   "roar",
+   "king",
+   "mane",
+   "jungle"
+  ],
+  "a dove": [
+   "bird",
+   "peace",
+   "white",
+   "fly"
+  ],
+  "telling the truth": [
+   "truth",
+   "honest",
+   "lie",
+   "tell"
+  ],
+  "helping a neighbor": [
+   "help",
+   "neighbor",
+   "kind",
+   "next door"
+  ],
+  "volunteering": [
+   "volunteer",
+   "help",
+   "free",
+   "community"
+  ],
+  "sharing your lunch": [
+   "share",
+   "lunch",
+   "food",
+   "give"
+  ],
+  "a map with an x": [
+   "treasure",
+   "map",
+   "pirate",
+   "X"
+  ],
+  "planting a tree": [
+   "plant",
+   "tree",
+   "dig",
+   "grow"
+  ],
+  "a crown": [
+   "king",
+   "queen",
+   "royal",
+   "head"
+  ],
+  "a beach": [
+   "sand",
+   "ocean",
+   "waves",
+   "shore"
+  ],
+  "a cozy cabin": [
+   "cabin",
+   "woods",
+   "log",
+   "house"
+  ],
+  "a cup of cocoa": [
+   "cocoa",
+   "hot",
+   "mug",
+   "chocolate"
+  ],
+  "a flower": [
+   "petal",
+   "bloom",
+   "garden",
+   "stem"
+  ],
+  "a cloud": [
+   "sky",
+   "fluffy",
+   "white",
+   "rain"
+  ],
+  "a palm tree": [
+   "palm",
+   "tree",
+   "tropical",
+   "island"
+  ],
+  "a sunset over the ocean": [
+   "sunset",
+   "ocean",
+   "sun",
+   "water"
+  ],
+  "reading in bed": [
+   "book",
+   "bed",
+   "read",
+   "pillow"
+  ],
+  "floating in a pool": [
+   "float",
+   "pool",
+   "water",
+   "swim"
+  ],
+  "lying in the grass": [
+   "grass",
+   "lie",
+   "ground",
+   "lawn"
+  ],
+  "a hot bath": [
+   "bath",
+   "tub",
+   "bubbles",
+   "water"
+  ],
+  "swinging on a swing": [
+   "swing",
+   "playground",
+   "seat",
+   "chains"
+  ],
+  "watching the stars": [
+   "stars",
+   "sky",
+   "night",
+   "look"
+  ],
+  "a snowy cabin": [
+   "snow",
+   "cabin",
+   "cold",
+   "winter"
+  ],
+  "a treehouse": [
+   "tree",
+   "house",
+   "ladder",
+   "fort"
   ]
  }
 };
