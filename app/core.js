@@ -1,4 +1,4 @@
-const APP_VERSION = '20261127-0945'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261127-1446'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -555,10 +555,17 @@ App.screens.home = (el) => {
       <button class="game-card match" data-g="match"><div class="emoji">🃏</div><h2>Match It</h2><p>Flip tiles, find the pairs</p></button>
       <button class="game-card hotseat" data-g="hotseat"><div class="emoji">🪑</div><h2>Hot Seat</h2><p>Climb the ladder to the top prize</p></button>
       <button class="game-card charades" data-g="charades"><div class="emoji">🎭</div><h2>Charades</h2><p>Act it out — no talking!</p></button>
+      <button class="game-card myth" data-g="myth"><div class="emoji">🧐</div><h2>Myth or Fact?</h2><p>Call it, then see the big reveal</p></button>
+    </div>
+    <div class="home-acts">
+      <span class="home-acts-label">Activities</span>
+      <button class="act-card prompts" data-s="prompts"><span class="emoji">✍️</span><span><b>Prompt Studio</b><small>Letter &amp; journal prompts · printable sheets</small></span></button>
+      <button class="act-card gratjar" data-s="gratjar"><span class="emoji">🫙</span><span><b>Gratitude Jar</b><small>Pull a slip, share, fill the jar · printable slips</small></span></button>
     </div>
     <div class="home-teams">${App.data.teams.map(t => `<span style="--tc:${t.color}">${esc(t.name)}</span>`).join('')}</div>
     <div class="home-hint">Host: teams, questions, settings and demos are in the <b>☰ Menu</b> (top right)</div>`;
   $$('.game-card', el).forEach(b => b.onclick = () => { Sfx.click(); App.show(b.dataset.g + 'Setup'); });
+  $$('.act-card', el).forEach(b => b.onclick = () => { Sfx.click(); App.show(b.dataset.s); });
 };
 
 function showHelp() {
@@ -577,6 +584,9 @@ function showHelp() {
       <p><b style="color:#8fa8ff">🃏 Match It</b> — A memory game made from any of your crosswords. Tiles are numbered; each hides a <b>word</b> or a <b>clue</b>. The highlighted team calls out two numbers — tap them to flip. A word and its clue = a match: +100 and that team goes again. No match: the tiles flip back and the next team tries. Choose 4–12 pairs and an optional time limit per turn (run out and the turn passes) on the start screen; <i>No teams</i> lets the whole group play together and counts the tries.</p>
       <p><b style="color:#ffd23f">🪑 Hot Seat</b> — One contestant (a team, or the whole group) climbs a ladder of <b>10 or 15</b> multiple-choice questions, each worth more than the last, up to 1,000,000. Tap an answer, then <b>🔒 Final answer!</b> to lock it in. Pass a <b>🛡 milestone</b> (question 5, and 10 in the 15-question game) and that amount is safe. Three lifelines, once each: <b>50:50</b> removes two wrong answers, <b>👥 Ask the Group</b> (tap a letter for each vote in a show of hands) and <b>📞 Phone a Peer</b> (30 seconds with one person). <b>🚶 Walk away</b> keeps what you've won; a wrong answer drops you to your last milestone. It uses your Trivia Blitz questions — pick a 🪜 theme like <i>Thanksgiving: Easy → Hard</i> and the questions get harder as you climb. <b>Next contestant</b> keeps the scores going for the next team.</p>
       <p><b style="color:#ff9ad5">🎭 Charades</b> — A team picks an actor who acts out a word: <b>no talking, no sounds, no pointing at things in the room</b>. The actor taps <b>👀 Peek</b> while everyone else looks away (the clock pauses), then <b>✓ Got it!</b>, <b>⏭ Skip</b> or <b>✋ Stop</b>. <i>One word per turn</i> scores by level (Easy 100 · Medium 200 · Hard 300); <i>Speed round</i> is as many words as you can before time runs out, 100 each. The screen shows how many words the answer has. Uses your Draw It words and Question sets.</p>
+      <p><b>🧐 Myth or Fact?</b> — a fun statement pops up; teams (or the whole room) call MYTH or FACT, then see the reveal and the "here's why." Keys: <b>M</b> / <b>F</b>, Space for next. 🖨 Print gives you MYTH/FACT paddles, a fold-over card set and an answer sheet.</p>
+      <p><b>✍️ Prompt Studio</b> — upbeat letter-writing and journal prompts on the big screen, with a quiet writing timer. 🖨 Print a writing sheet for the prompt on screen, a take-home list of 10, or every prompt.</p>
+      <p><b>🫙 Gratitude Jar</b> — pull a slip, share your answer, and drop it in the jar to watch it fill up. No scores, just good feelings. 🖨 Print slips to cut out and a jar label.</p>
       <p><b style="color:var(--yellow)">🏆 Final Round</b> — after the Quiz Board, there's one last question. Teams secretly bet points (anyone under 1,000 can still bet up to 1,000), you type the bets in, then reveal and mark each team right or wrong. Turn it off in ☰ Menu → Settings.</p>
       <p><b>Getting around:</b> every game has <b>◀ Back</b> and <b>Next ▶</b> (or the <kbd>←</kbd> <kbd>→</kbd> keys) for questions, boards or puzzles, and the <b>☰ Menu</b> has 🏁 End game, 🏠 Quit to Home and ⏸ Pause. In Everyone-answers Trivia, going back to a scored question lets you fix who got it right.</p>
       <p><b>Look:</b> switch between <b>🎩 Classic</b> (navy &amp; gold), <b>🎈 Playful</b> (the original bright colours) and <b>🌿 Recovery</b> (calm and friendly) in <b>☰ Menu → 🎨 Look</b> or Settings. Recovery also switches every game to the <b>Mental Health &amp; Recovery</b> question set; Classic and Playful use your regular questions.</p>
@@ -1052,7 +1062,7 @@ const RingClock = {
   html(id, secs, size = '') {
     return `<div class="pc ${size}" id="${id}" style="--p:1;--hue:130"><svg viewBox="0 0 200 200" aria-hidden="true"><circle class="pc-track" cx="100" cy="100" r="86"/><circle class="pc-bar" cx="100" cy="100" r="86" pathLength="100"/></svg><div class="pc-num">${Math.ceil(secs)}</div></div>`;
   },
-  set(el, left, total, paused) {
+  set(el, left, total, paused, quiet) {
     if (!el) return;
     const p = Math.max(0, Math.min(1, left / total));
     el.style.setProperty('--p', p.toFixed(4));
@@ -1061,7 +1071,7 @@ const RingClock = {
     if (num && num.textContent !== String(n)) {
       num.textContent = n;
       el.classList.remove('tick'); void el.offsetWidth; el.classList.add('tick');
-      if (n <= 5 && n > 0 && !paused) Sfx.tick();
+      if (n <= 5 && n > 0 && !paused && !quiet) Sfx.tick();
     }
     el.classList.toggle('low', left <= 10 && left > 0);
     el.classList.toggle('crit', left <= 3 && left > 0);
@@ -1121,3 +1131,19 @@ const FolderSelect = {
     label();
   },
 };
+
+// 🖨 Print a page built inside the studio (worksheets, card sets, slips). Same approach as the
+// crossword printout: the page is shown only while the browser's print window is open.
+function printPage(title, html, cls = '') {
+  $('#printKey')?.remove();
+  const box = document.createElement('div');
+  box.id = 'printKey';
+  box.className = 'pk-page ' + cls;
+  box.innerHTML = html;
+  const oldTitle = document.title; document.title = title; // becomes the PDF file name
+  document.body.appendChild(box);
+  document.body.classList.add('printing');
+  const done = () => { document.title = oldTitle; document.body.classList.remove('printing'); box.remove(); window.removeEventListener('afterprint', done); };
+  window.addEventListener('afterprint', done);
+  setTimeout(() => { window.print(); setTimeout(done, 1000); }, 50);
+}
