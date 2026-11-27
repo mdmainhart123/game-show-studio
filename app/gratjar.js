@@ -41,7 +41,7 @@ App.screens.gratjar = (el) => {
     phase = 'idle';
     $('#gjSlip', el).className = 'gj-slip idle';
     $('#gjSlip', el).innerHTML = `<div class="gj-big">🫙 ${filled.length ? 'Pull another slip!' : 'Pull a slip!'}</div>
-      <div class="gj-sub">Read it out loud, share your answer, then add it to the jar.</div>`;
+      <div class="gj-sub">Finish the sentence out loud, then add it to the jar.</div>`;
     acts(`<button class="btn xl pink" id="gjPull">🫙 Pull a slip <kbd>Space</kbd></button>
       ${filled.length ? `<button class="btn lg ghost" id="gjDone">🎉 Look at our jar!</button>` : ''}
       <div class="gf-files gj-print" id="gjPrint"><button class="btn ghost sm gf-toggle">🖨 Print ▾</button>
@@ -56,7 +56,7 @@ App.screens.gratjar = (el) => {
     slip = deck[di++]; phase = 'slip'; Sfx.click();
     const sl = $('#gjSlip', el);
     sl.className = 'gj-slip open'; void sl.offsetWidth;
-    sl.innerHTML = `<div class="gj-paper" style="--c:${COLORS[filled.length % COLORS.length]}"><small>Share…</small><div>${esc(slip)}</div></div>`;
+    sl.innerHTML = `<div class="gj-paper" style="--c:${COLORS[filled.length % COLORS.length]}"><small>I’m grateful for…</small><div>${esc(slip)}</div></div>`;
     acts(`<button class="btn xl green" id="gjAdd">💛 We shared — add it to the jar! <kbd>Space</kbd></button>
       <button class="btn lg ghost" id="gjSwap">🔁 Different slip</button>`, { gjAdd: add, gjSwap: pull });
   }
@@ -95,6 +95,6 @@ function gjPrint(what) {
     return;
   }
   const blanks = Array(9).fill('I’m grateful for…');
-  printPage('Gratitude Slips', `<h1 class="pk-big">🫙 Gratitude Slips</h1><p class="pk-sub">✂ Cut along the dashed lines, fold, and drop them in the jar. Blank slips at the end are for your own!</p>
-    <div class="pk-slips">${[...S, ...blanks].map((t, k) => `<div class="pk-slip${k >= S.length ? ' blank' : ''}">${esc(t)}${k >= S.length ? '<span class="pk-blank-line"></span>' : ''}</div>`).join('')}</div>`, 'pk-gj');
+  printPage('Gratitude Slips', `<h1 class="pk-big">🫙 Gratitude Slips</h1><p class="pk-sub">✂ Cut along the dashed lines, fold, and drop them in the jar. Pull one, finish the sentence out loud! Blank slips at the end are for your own.</p>
+    <div class="pk-slips">${[...S.map(t => 'I’m grateful for ' + t), ...blanks].map((t, k) => `<div class="pk-slip${k >= S.length ? ' blank' : ''}">${esc(t)}${k >= S.length ? '<span class="pk-blank-line"></span>' : ''}</div>`).join('')}</div>`, 'pk-gj');
 }
