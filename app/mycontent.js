@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-27-nine-packages",
+ "id": "matt-2026-11-27-four-packages",
  "archive": {
   "October": [
    "Halloween Easy",
@@ -36,7 +36,11 @@ window.GS_MY_CONTENT = {
    "The Science of Leisure",
    "Toxic Relationships",
    "Your Values",
-   "Your Happy Place"
+   "Your Happy Place",
+   "Strength-Based Thinking",
+   "Holiday Cards",
+   "Intrusive Thoughts",
+   "Inner Critics"
   ]
  },
  "banks": {
@@ -2422,6 +2426,270 @@ window.GS_MY_CONTENT = {
       {
        "word": "hopeful",
        "clue": "Looking forward with good feelings"
+      }
+     ]
+    },
+    {
+     "id": "wjuk3yt05loy",
+     "title": "Strength-Based Thinking",
+     "entries": [
+      {
+       "word": "strengths",
+       "clue": "What you build on in strength-based thinking"
+      },
+      {
+       "word": "reframe",
+       "clue": "Change how you see it to find the strength"
+      },
+      {
+       "word": "resilience",
+       "clue": "The ability to bounce back"
+      },
+      {
+       "word": "inventory",
+       "clue": "A Strength ___: a list of what you do well"
+      },
+      {
+       "word": "deficit",
+       "clue": "A ___-based view focuses on what you lack"
+      },
+      {
+       "word": "growth",
+       "clue": "___ mindset: abilities can grow with effort"
+      },
+      {
+       "word": "selfefficacy",
+       "clue": "Belief that your actions can lead to good outcomes (one word)"
+      },
+      {
+       "word": "hope",
+       "clue": "Believing change is possible"
+      },
+      {
+       "word": "courage",
+       "clue": "'I keep trying — that takes ___'"
+      },
+      {
+       "word": "notice",
+       "clue": "Step 1: ___ the negative label"
+      },
+      {
+       "word": "survived",
+       "clue": "Hard things you've ___ reveal real strength"
+      },
+      {
+       "word": "perspective",
+       "clue": "What living through hard things can give you"
+      },
+      {
+       "word": "practice",
+       "clue": "It takes ___, not perfection"
+      },
+      {
+       "word": "capable",
+       "clue": "Able to do what you set your mind to"
+      },
+      {
+       "word": "focus",
+       "clue": "What you ___ on grows"
+      }
+     ]
+    },
+    {
+     "id": "nq4f1sc4zhiq",
+     "title": "Holiday Cards",
+     "entries": [
+      {
+       "word": "card",
+       "clue": "Folded paper with a message inside"
+      },
+      {
+       "word": "envelope",
+       "clue": "What you put a card in to mail it"
+      },
+      {
+       "word": "stamp",
+       "clue": "Stick one on before you mail it"
+      },
+      {
+       "word": "gratitude",
+       "clue": "'I'm grateful for you because…' practices this"
+      },
+      {
+       "word": "message",
+       "clue": "The most important part — what you write inside"
+      },
+      {
+       "word": "cardstock",
+       "clue": "Sturdy paper for cards"
+      },
+      {
+       "word": "markers",
+       "clue": "Colorful tools for drawing"
+      },
+      {
+       "word": "stickers",
+       "clue": "Peel-and-stick decorations"
+      },
+      {
+       "word": "recipient",
+       "clue": "The person who gets your card"
+      },
+      {
+       "word": "handmade",
+       "clue": "Made by you, not bought"
+      },
+      {
+       "word": "connection",
+       "clue": "What a card builds between people"
+      },
+      {
+       "word": "snowflake",
+       "clue": "A paper ___: cut-out winter design"
+      },
+      {
+       "word": "mindfulness",
+       "clue": "Slowing down and being present"
+      },
+      {
+       "word": "thinking",
+       "clue": "'I was ___ of you'"
+      },
+      {
+       "word": "sign",
+       "clue": "___ your name at the end"
+      }
+     ]
+    },
+    {
+     "id": "oy1smls4p7n7",
+     "title": "Intrusive Thoughts",
+     "entries": [
+      {
+       "word": "intrusive",
+       "clue": "Unwanted thoughts that pop up uninvited"
+      },
+      {
+       "word": "label",
+       "clue": "Step 2: call it 'just a thought'"
+      },
+      {
+       "word": "acknowledge",
+       "clue": "Step 1: 'I'm having a thought right now'"
+      },
+      {
+       "word": "cloud",
+       "clue": "Let it pass like one of these across the sky"
+      },
+      {
+       "word": "suppress",
+       "clue": "Push away — which backfires"
+      },
+      {
+       "word": "rebound",
+       "clue": "The ___ effect: pushed-away thoughts come back stronger"
+      },
+      {
+       "word": "defusion",
+       "clue": "Creating distance from a thought"
+      },
+      {
+       "word": "elephant",
+       "clue": "Try NOT to think of a pink one"
+      },
+      {
+       "word": "weather",
+       "clue": "You are the sky; thoughts are the ___"
+      },
+      {
+       "word": "values",
+       "clue": "Being bothered by a thought shows these are intact"
+      },
+      {
+       "word": "mindfulness",
+       "clue": "Noticing without judging"
+      },
+      {
+       "word": "return",
+       "clue": "Step 5: gently come back to the present"
+      },
+      {
+       "word": "noise",
+       "clue": "'That's just my brain generating ___'"
+      },
+      {
+       "word": "everyone",
+       "clue": "Who has intrusive thoughts? Nearly ___"
+      },
+      {
+       "word": "fact",
+       "clue": "A thought is not one of these"
+      }
+     ]
+    },
+    {
+     "id": "vqrhfauq0enb",
+     "title": "Inner Critics",
+     "entries": [
+      {
+       "word": "critic",
+       "clue": "The harsh inner voice that judges you"
+      },
+      {
+       "word": "compassion",
+       "clue": "Self-___: kindness toward yourself"
+      },
+      {
+       "word": "conscience",
+       "clue": "Guides you toward values — not the same as the critic"
+      },
+      {
+       "word": "pattern",
+       "clue": "The critic is a learned ___ of thinking"
+      },
+      {
+       "word": "pause",
+       "clue": "Step 2: don't argue — just ___"
+      },
+      {
+       "word": "friend",
+       "clue": "'Would I say this to a ___?'"
+      },
+      {
+       "word": "redirect",
+       "clue": "Step 5: choose a kinder thought"
+      },
+      {
+       "word": "kinder",
+       "clue": "Building a ___ inner voice"
+      },
+      {
+       "word": "standards",
+       "clue": "High ___ motivate; the critic paralyzes"
+      },
+      {
+       "word": "shame",
+       "clue": "The critic often carries and amplifies this"
+      },
+      {
+       "word": "neff",
+       "clue": "Kristin ___: self-compassion researcher"
+      },
+      {
+       "word": "journaling",
+       "clue": "Writing to notice, name and respond"
+      },
+      {
+       "word": "enough",
+       "clue": "'You are ___' — a kind reply to the critic"
+      },
+      {
+       "word": "grace",
+       "clue": "Give yourself ___"
+      },
+      {
+       "word": "voice",
+       "clue": "The inner critic is one of these in your head"
       }
      ]
     }
@@ -8226,6 +8494,806 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Picturing your happy place can lower your heart rate",
      "answer": "Fact"
+    },
+    {
+     "id": "n4g5kq3gu9t3",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 100,
+     "clue": "'I keep failing' becomes 'I keep ___'",
+     "answer": "Trying"
+    },
+    {
+     "id": "5b6mspcvghok",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 200,
+     "clue": "'I have nothing to offer' becomes 'I know what I don't want — that's ___'",
+     "answer": "Clarity"
+    },
+    {
+     "id": "j3l7xqyysp7e",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 300,
+     "clue": "'I've made too many mistakes' becomes 'that gives me ___'",
+     "answer": "Perspective"
+    },
+    {
+     "id": "cgcpqu8z4lfs",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 400,
+     "clue": "'No one believes in me' becomes 'I'm still ___'",
+     "answer": "Here"
+    },
+    {
+     "id": "6doz025bsq6k",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 500,
+     "clue": "Changing how you see a situation to find the strength in it",
+     "answer": "Reframing"
+    },
+    {
+     "id": "5cik9azpicaf",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 100,
+     "clue": "Step 1: catch the negative label",
+     "answer": "Notice"
+    },
+    {
+     "id": "4b9og9kxys2e",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 200,
+     "clue": "Step 2: 'Is this 100% true?'",
+     "answer": "Ask"
+    },
+    {
+     "id": "wzuyzyhja6jo",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 300,
+     "clue": "Step 3: find the strength the situation reveals",
+     "answer": "Reframe"
+    },
+    {
+     "id": "5g8n7fh5giwz",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 400,
+     "clue": "Step 4: your brain believes what it reads",
+     "answer": "Write it down"
+    },
+    {
+     "id": "vro2vicewvgg",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 500,
+     "clue": "Step 5: it takes practice, not perfection",
+     "answer": "Repeat"
+    },
+    {
+     "id": "el2fvjazm1x4",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 100,
+     "clue": "Hard seasons you've made it through",
+     "answer": "Things you've survived"
+    },
+    {
+     "id": "39fgcu63xmi1",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 200,
+     "clue": "Lessons from school, work or life",
+     "answer": "Things you've learned"
+    },
+    {
+     "id": "z11p72d24bfg",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 300,
+     "clue": "Skills, talents and habits",
+     "answer": "Things you do well"
+    },
+    {
+     "id": "g0rq7zq218qk",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 400,
+     "clue": "Things people thank or ___ you for",
+     "answer": "Trust"
+    },
+    {
+     "id": "4qchqi6ck2ub",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 500,
+     "clue": "Small daily acts of character done without being ___",
+     "answer": "Asked"
+    },
+    {
+     "id": "hnjnlnzkqlsw",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 100,
+     "clue": "Believing abilities can grow with effort",
+     "answer": "Growth mindset"
+    },
+    {
+     "id": "dbbt4tprzlz9",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 200,
+     "clue": "Focusing mostly on what you lack",
+     "answer": "Deficit-based thinking"
+    },
+    {
+     "id": "weksxdz3auj6",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 300,
+     "clue": "Believing your actions can make a difference",
+     "answer": "Self-efficacy"
+    },
+    {
+     "id": "j5g1kinr31mc",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 400,
+     "clue": "The value strength-based thinking supports most — believing change is possible",
+     "answer": "Hope"
+    },
+    {
+     "id": "wyf30xqfcjyw",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 500,
+     "clue": "Finish it: what you focus on ___",
+     "answer": "Grows"
+    },
+    {
+     "id": "ycvisxwfp433",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 100,
+     "clue": "A personal list of what you do well and have overcome",
+     "answer": "A Strength Inventory"
+    },
+    {
+     "id": "p51pbg31x348",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 200,
+     "clue": "Recognizing your strengths isn't arrogance — it's accurate self-___",
+     "answer": "Knowledge"
+    },
+    {
+     "id": "cejdgdkrad2t",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 300,
+     "clue": "They often see strengths in us we can't see ourselves",
+     "answer": "Other people"
+    },
+    {
+     "id": "07e405rrlmjo",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 400,
+     "clue": "Strength-based thinking is most valuable on these kinds of days",
+     "answer": "Hard days"
+    },
+    {
+     "id": "nsnplbi85nbv",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 500,
+     "clue": "The bounce-back strength revealed by surviving hardship",
+     "answer": "Resilience"
+    },
+    {
+     "id": "343tejqd34w5",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 100,
+     "clue": "Step 1: decide who you're making it for",
+     "answer": "Choose your recipient"
+    },
+    {
+     "id": "1gfx1w5euni1",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 200,
+     "clue": "Step 2: think about colors, images and symbols that fit",
+     "answer": "Plan your design"
+    },
+    {
+     "id": "6z0bhhk0g9u2",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 300,
+     "clue": "Step 3: decorate the front",
+     "answer": "Create the outside"
+    },
+    {
+     "id": "1huvqkihmkn3",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 400,
+     "clue": "Step 4: say what you really feel inside",
+     "answer": "Write your message"
+    },
+    {
+     "id": "bj3w4d5dk7yg",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 500,
+     "clue": "Step 5: sign it and decide to give, keep or mail it",
+     "answer": "Finish and share"
+    },
+    {
+     "id": "pisyv0hvrb35",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 100,
+     "clue": "'This season, I'm grateful for you because…' practices this",
+     "answer": "Gratitude"
+    },
+    {
+     "id": "g03levcw9tpn",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 200,
+     "clue": "'I want you to know that you ___ to me because…'",
+     "answer": "Matter"
+    },
+    {
+     "id": "oroigae5uvq9",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 300,
+     "clue": "'As we head into the new ___, I hope for you…'",
+     "answer": "Year"
+    },
+    {
+     "id": "6bj2917db7rr",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 400,
+     "clue": "'You have helped me ___…'",
+     "answer": "By"
+    },
+    {
+     "id": "jncrktlkn3z8",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 500,
+     "clue": "Message starters beat this kind of anxiety",
+     "answer": "Blank-page anxiety"
+    },
+    {
+     "id": "qpmyr1msn1z9",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 100,
+     "clue": "Folded paper or this sturdier stock",
+     "answer": "Cardstock"
+    },
+    {
+     "id": "zpppg7ai0vlu",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 200,
+     "clue": "Colorful tools for drawing",
+     "answer": "Markers or colored pencils"
+    },
+    {
+     "id": "0q6mvgpyee4e",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 300,
+     "clue": "Optional decorations you peel and stick",
+     "answer": "Stickers"
+    },
+    {
+     "id": "ge7rvq1dl6fq",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 400,
+     "clue": "Ink designs you press onto paper",
+     "answer": "Stamps"
+    },
+    {
+     "id": "vtmh6yu21k36",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 500,
+     "clue": "The most important ingredient of all",
+     "answer": "Your own words"
+    },
+    {
+     "id": "9w5qjhy3j5pm",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 100,
+     "clue": "A card says: 'I was ___ about you'",
+     "answer": "Thinking"
+    },
+    {
+     "id": "lmmdxpbgsbw9",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 200,
+     "clue": "Making something by hand helps you slow down and practice this",
+     "answer": "Mindfulness"
+    },
+    {
+     "id": "rj9empv51112",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 300,
+     "clue": "Writing to yourself kindly practices self-___",
+     "answer": "Compassion"
+    },
+    {
+     "id": "vkbbcpqc0ay7",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 400,
+     "clue": "Handmade cards show this — time and thought",
+     "answer": "Care / effort"
+    },
+    {
+     "id": "2kxzkfjx0he3",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 500,
+     "clue": "The skills practiced — gratitude and connection — apply this many days a year",
+     "answer": "365 (every day)"
+    },
+    {
+     "id": "y05yhtq19fdl",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You have to be artistic to make a meaningful card",
+     "answer": "Myth"
+    },
+    {
+     "id": "rl0kmfp4kl0c",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Card-making can reduce stress",
+     "answer": "Fact"
+    },
+    {
+     "id": "atmu0oo6o8dk",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "If you have no one to send it to, there's no point",
+     "answer": "Myth"
+    },
+    {
+     "id": "40kzqmfj4akz",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Writing feelings gets easier with practice",
+     "answer": "Fact"
+    },
+    {
+     "id": "qziixhzvkjr1",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Your card needs to look store-bought",
+     "answer": "Myth"
+    },
+    {
+     "id": "rnkkjshb7sxd",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 100,
+     "clue": "Step 1: 'I'm having an intrusive thought right now'",
+     "answer": "Acknowledge"
+    },
+    {
+     "id": "p39nv9990gwz",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 200,
+     "clue": "Step 2: 'That's just my brain generating noise'",
+     "answer": "Label it"
+    },
+    {
+     "id": "wu4th6av9fq6",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 300,
+     "clue": "Step 3: notice it like a passing car — don't chase it",
+     "answer": "Don't engage"
+    },
+    {
+     "id": "x8wl5dbm06m7",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 400,
+     "clue": "Step 4: imagine it like a cloud moving across the sky",
+     "answer": "Let it pass"
+    },
+    {
+     "id": "4pw0vp9n4xjc",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 500,
+     "clue": "Step 5: gently bring your attention back",
+     "answer": "Return"
+    },
+    {
+     "id": "quf92r40y352",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 100,
+     "clue": "Trying hard NOT to think about it",
+     "answer": "Suppressing it"
+    },
+    {
+     "id": "1738ur5y3txq",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 200,
+     "clue": "When a pushed-away thought comes back stronger",
+     "answer": "The rebound effect"
+    },
+    {
+     "id": "z09dgk6j7kzj",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 300,
+     "clue": "This colorful animal shows suppression doesn't work",
+     "answer": "A pink elephant"
+    },
+    {
+     "id": "4ui44qbqe891",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 400,
+     "clue": "Believing 'I had it, so I must want it'",
+     "answer": "Treating it as meaningful"
+    },
+    {
+     "id": "ux4c754puz0e",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 500,
+     "clue": "Staying away from triggers keeps this alive",
+     "answer": "Anxiety"
+    },
+    {
+     "id": "hwiqz2pk6zik",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 100,
+     "clue": "How many people have intrusive thoughts?",
+     "answer": "Nearly everyone"
+    },
+    {
+     "id": "daj2mxvuc0fw",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 200,
+     "clue": "Our brains make thousands of these every day",
+     "answer": "Thoughts"
+    },
+    {
+     "id": "bb70nicwlvcv",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 300,
+     "clue": "A thought that clashes with your values",
+     "answer": "Ego-dystonic"
+    },
+    {
+     "id": "h2teyj6a4kqd",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 400,
+     "clue": "Stress, anxiety and this can make them more frequent",
+     "answer": "Fatigue / tiredness"
+    },
+    {
+     "id": "kumxjts6xza3",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 500,
+     "clue": "Being bothered by a thought shows these are intact",
+     "answer": "Your values"
+    },
+    {
+     "id": "6jrn1e4uplm4",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 100,
+     "clue": "Creating distance from a thought",
+     "answer": "Defusion"
+    },
+    {
+     "id": "fadf9rxoso31",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 200,
+     "clue": "You are the sky; thoughts are the ___",
+     "answer": "Weather"
+    },
+    {
+     "id": "ilyhog7aimr7",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 300,
+     "clue": "Noticing thoughts without judging them",
+     "answer": "Mindfulness"
+    },
+    {
+     "id": "a80fe5acki79",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 400,
+     "clue": "Therapy often used for OCD-related thoughts",
+     "answer": "ERP"
+    },
+    {
+     "id": "bcsfl7mof6kf",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 500,
+     "clue": "Therapists are trained to tell thoughts apart from these",
+     "answer": "Intentions"
+    },
+    {
+     "id": "544mygf3q0bx",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 100,
+     "clue": "Unwanted and automatic",
+     "answer": "An intrusive thought"
+    },
+    {
+     "id": "cfoa3qlmonsp",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 200,
+     "clue": "Deliberate and chosen",
+     "answer": "A plan"
+    },
+    {
+     "id": "8ispz8ov1481",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 300,
+     "clue": "A thought is not a fact, a plan, or a reflection of ___",
+     "answer": "Who you are"
+    },
+    {
+     "id": "qp2bw8ievnbq",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 400,
+     "clue": "Sharing them with a counselor is an act of this",
+     "answer": "Courage"
+    },
+    {
+     "id": "gz12cctzz3zm",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 500,
+     "clue": "Get extra support when thoughts are constant or interfere with this",
+     "answer": "Daily life"
+    },
+    {
+     "id": "3e335mp7hx1e",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 100,
+     "clue": "Step 1: 'That's my inner critic talking — not the truth'",
+     "answer": "Name it"
+    },
+    {
+     "id": "43ly69zfgda2",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 200,
+     "clue": "Step 2: don't argue — arguing gives it power",
+     "answer": "Pause"
+    },
+    {
+     "id": "ag0on13i2ki2",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 300,
+     "clue": "Step 3: 'Would I say this to someone I love?'",
+     "answer": "Ask"
+    },
+    {
+     "id": "nzfu2boglebq",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 400,
+     "clue": "Step 4: offer yourself what you'd offer a friend",
+     "answer": "Respond with compassion"
+    },
+    {
+     "id": "lkml7f7jha8j",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 500,
+     "clue": "Step 5: choose one kind or accurate thought",
+     "answer": "Redirect"
+    },
+    {
+     "id": "i5x8cejdk1dn",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 100,
+     "clue": "It's not this — which guides you toward your values",
+     "answer": "Your conscience"
+    },
+    {
+     "id": "2ya5s0qpwocv",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 200,
+     "clue": "It's not these — which motivate instead of paralyze",
+     "answer": "High standards"
+    },
+    {
+     "id": "ivjwq74986ag",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 300,
+     "clue": "It may feel like it, but it isn't doing this for you",
+     "answer": "Protecting you"
+    },
+    {
+     "id": "k004trhpygrq",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 400,
+     "clue": "It's not the truth — it's a learned ___",
+     "answer": "Pattern"
+    },
+    {
+     "id": "wixyy1n2z1o4",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 500,
+     "clue": "Real honesty is specific and this — the critic is neither",
+     "answer": "Fair"
+    },
+    {
+     "id": "9o6scg3oqhwg",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 100,
+     "clue": "Treating yourself like you'd treat a struggling friend",
+     "answer": "Self-compassion"
+    },
+    {
+     "id": "2ovf5na00d7i",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 200,
+     "clue": "Researcher who co-developed Mindful Self-Compassion",
+     "answer": "Kristin Neff"
+    },
+    {
+     "id": "raxvs0e31r76",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 300,
+     "clue": "People with kinder inner voices do this faster after setbacks",
+     "answer": "Bounce back / recover"
+    },
+    {
+     "id": "y3s7flltrck8",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 400,
+     "clue": "Self-compassion supports this — without shame spirals",
+     "answer": "Accountability"
+    },
+    {
+     "id": "4fp0ok0lukdp",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 500,
+     "clue": "Writing it down to notice, name and respond to the critic",
+     "answer": "Journaling"
+    },
+    {
+     "id": "po90g6lrhmi7",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 100,
+     "clue": "Critic or kind? 'You always mess up.'",
+     "answer": "Critic"
+    },
+    {
+     "id": "4cgsesuxi95r",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 200,
+     "clue": "Critic or kind? 'This is hard, and that's okay.'",
+     "answer": "Kind"
+    },
+    {
+     "id": "5nr3gh764r7f",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 300,
+     "clue": "Critic or kind? 'You're not good enough.'",
+     "answer": "Critic"
+    },
+    {
+     "id": "k17w1mptfref",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 400,
+     "clue": "Critic or kind? 'What can I do differently next time?'",
+     "answer": "Kind"
+    },
+    {
+     "id": "420485njmybr",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 500,
+     "clue": "Critic or kind? 'You don't deserve good things.'",
+     "answer": "Critic"
+    },
+    {
+     "id": "2f0ygsm9da98",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 100,
+     "clue": "The goal: change your ___ with the critic so it has less power",
+     "answer": "Relationship"
+    },
+    {
+     "id": "k4uarkcnetax",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 200,
+     "clue": "The question to ask a friend in your head: 'What would I ___ to a friend?'",
+     "answer": "Say"
+    },
+    {
+     "id": "ilj2i8xrmttp",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 300,
+     "clue": "Replacing harsh inner messages with honest, kind ones",
+     "answer": "Building a kinder inner voice"
+    },
+    {
+     "id": "wd8tzknm7jvp",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 400,
+     "clue": "Changing your inner voice takes this — and that's okay",
+     "answer": "Time"
+    },
+    {
+     "id": "yo0czoef9lyw",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 500,
+     "clue": "Believing you have what it takes to make change",
+     "answer": "Self-efficacy"
     }
    ],
    "wheel": [
@@ -12092,6 +13160,486 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Your Happy Place"
      ]
+    },
+    {
+     "id": "j2m7wqepp4tw",
+     "category": "Phrase",
+     "phrase": "I KEEP TRYING",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "c2yzqouek5xr",
+     "category": "Phrase",
+     "phrase": "WHAT YOU FOCUS ON GROWS",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "17m3ub9jk54c",
+     "category": "Thing",
+     "phrase": "A GROWTH MINDSET",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "3160epuozr8q",
+     "category": "Thing",
+     "phrase": "A STRENGTH INVENTORY",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "9iokx1fhhu81",
+     "category": "Phrase",
+     "phrase": "STILL STANDING",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "jvu5ub5mdxw9",
+     "category": "Thing",
+     "phrase": "INNER RESILIENCE",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "rrwrq4zb0777",
+     "category": "Phrase",
+     "phrase": "LOOK HOW FAR YOU HAVE COME",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "1uii6p2uba9f",
+     "category": "Phrase",
+     "phrase": "PRACTICE NOT PERFECTION",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "9x7rmw2lnxe6",
+     "category": "Thing",
+     "phrase": "HIDDEN TALENTS",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "oyf0n99lir4n",
+     "category": "Phrase",
+     "phrase": "GIVE YOURSELF CREDIT",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ybicwi4gn11x",
+     "category": "Event",
+     "phrase": "WRITING DOWN A WIN",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "2dy7dyvj5nb2",
+     "category": "Phrase",
+     "phrase": "YOU ARE CAPABLE",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ygl1nv3ybknc",
+     "category": "Thing",
+     "phrase": "A FRESH PERSPECTIVE",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "2e1agk4kexrb",
+     "category": "Phrase",
+     "phrase": "FLIP THE SCRIPT",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "7ousvsgbvit8",
+     "category": "Thing",
+     "phrase": "QUIET COURAGE",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "5027b6uooqqo",
+     "category": "Phrase",
+     "phrase": "THINKING OF YOU",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3t3j9yo38zqb",
+     "category": "Phrase",
+     "phrase": "SEASONS GREETINGS",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "afwsrmlyxzq4",
+     "category": "Thing",
+     "phrase": "A HANDMADE CARD",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "psthwm888yla",
+     "category": "Phrase",
+     "phrase": "HAPPY NEW YEAR",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "wrszm7iee2w5",
+     "category": "Thing",
+     "phrase": "MARKERS AND STICKERS",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ggmx0chdb767",
+     "category": "Phrase",
+     "phrase": "YOU MATTER TO ME",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "fws6v824512d",
+     "category": "Thing",
+     "phrase": "A HEARTFELT MESSAGE",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "cui0eadczmfc",
+     "category": "Event",
+     "phrase": "MAILING A CARD",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "8hfyjj90qfuf",
+     "category": "Phrase",
+     "phrase": "WARM WISHES",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "z3zf4pnc9ai5",
+     "category": "Thing",
+     "phrase": "A SNOWFLAKE DESIGN",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "e3z5hw3ges21",
+     "category": "Phrase",
+     "phrase": "FROM THE HEART",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "xn7su3r6ut8i",
+     "category": "Event",
+     "phrase": "SIGNING YOUR NAME",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "sjo4dk7nv5p9",
+     "category": "Thing",
+     "phrase": "A ROLL OF STAMPS",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "bmfnvoqxs5gp",
+     "category": "Phrase",
+     "phrase": "PEACE AND JOY",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "at4nuan54ivz",
+     "category": "Thing",
+     "phrase": "FOLDED CARDSTOCK",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "cg2mghyjhruj",
+     "category": "Phrase",
+     "phrase": "A THOUGHT IS NOT A FACT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "lhww6rb33qow",
+     "category": "Phrase",
+     "phrase": "LET IT PASS",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "uuphmw8v0oor",
+     "category": "Thing",
+     "phrase": "A PINK ELEPHANT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "tunarv5bpc8i",
+     "category": "Phrase",
+     "phrase": "JUST BRAIN NOISE",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "9vi0ltb77q0y",
+     "category": "Thing",
+     "phrase": "CLOUDS DRIFTING BY",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ix4mm4oyw3uo",
+     "category": "Phrase",
+     "phrase": "YOU ARE THE SKY",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "abskq4e9d1z2",
+     "category": "Phrase",
+     "phrase": "NOTICE AND RETURN",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "owntz4zi94o9",
+     "category": "Thing",
+     "phrase": "A PASSING CAR",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "fr4a72zxo4am",
+     "category": "Phrase",
+     "phrase": "LABEL IT AND MOVE ON",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "pj4qr0g8gkmf",
+     "category": "Thing",
+     "phrase": "A CALM MIND",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "w7tp5nzib9gq",
+     "category": "Phrase",
+     "phrase": "DON'T CHASE IT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "tim8tl5y5qnp",
+     "category": "Event",
+     "phrase": "COMING BACK TO THE PRESENT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "49we76hbpote",
+     "category": "Thing",
+     "phrase": "MINDFUL BREATHING",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "4zllbq8dc05u",
+     "category": "Phrase",
+     "phrase": "THOUGHTS ARE LIKE WEATHER",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "frmptjjzzazo",
+     "category": "Phrase",
+     "phrase": "YOUR VALUES ARE INTACT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "90n47o82rvxp",
+     "category": "Phrase",
+     "phrase": "BE KIND TO YOURSELF",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "md3a11gisstr",
+     "category": "Phrase",
+     "phrase": "NOT THE TRUTH",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ot1nfgb75fji",
+     "category": "Thing",
+     "phrase": "A KINDER INNER VOICE",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "zw6uxmy05x4p",
+     "category": "Phrase",
+     "phrase": "WHAT WOULD I SAY TO A FRIEND",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3gpps59i76uq",
+     "category": "Thing",
+     "phrase": "SELF COMPASSION",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "vuki6vo5l67h",
+     "category": "Phrase",
+     "phrase": "NAME IT AND PAUSE",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "dzjbutfhroc1",
+     "category": "Phrase",
+     "phrase": "YOU ARE ENOUGH",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "iddv50cxfhm4",
+     "category": "Thing",
+     "phrase": "GENTLE WORDS",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "x8ft849ze6df",
+     "category": "Phrase",
+     "phrase": "PROGRESS NOT PERFECTION",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3c0lp4axx9cg",
+     "category": "Phrase",
+     "phrase": "TALK TO YOURSELF LIKE A FRIEND",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ord63cdz5t48",
+     "category": "Thing",
+     "phrase": "A PEP TALK",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "g9vjcuf0aav9",
+     "category": "Phrase",
+     "phrase": "GOOD ENOUGH IS GOOD",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3qhk0ou9vyu7",
+     "category": "Thing",
+     "phrase": "A SECOND CHANCE",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "cc1py88nj83m",
+     "category": "Phrase",
+     "phrase": "GIVE YOURSELF GRACE",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "6shtezbcu5km",
+     "category": "Thing",
+     "phrase": "AN INNER CHEERLEADER",
+     "sets": [
+      "Inner Critics"
+     ]
     }
    ],
    "words": [
@@ -15124,6 +16672,355 @@ window.GS_MY_CONTENT = {
      "hint": "Happy Place",
      "sets": [
       "Your Happy Place"
+     ]
+    },
+    {
+     "id": "2mjtr5mp6omn",
+     "word": "SKILL",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "tfmje981ql3d",
+     "word": "BRAVE",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "tmiuagxy75dp",
+     "word": "TOUGH",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "qqx5o81xjs56",
+     "word": "SHINE",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "dysbxb9y0et0",
+     "word": "HOPES",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "a93fvigwp1tk",
+     "word": "GIFTS",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking",
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "v9rl4qxdrkg1",
+     "word": "PROUD",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ti5l2tn55m9d",
+     "word": "ROOTS",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "qhe3vfw1swd8",
+     "word": "FOCUS",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "50ldyykhrtw8",
+     "word": "WORTH",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "d5fhafgqo3xp",
+     "word": "TRIED",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "6fn5eno018pg",
+     "word": "VALOR",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "5ny4uxrf546z",
+     "word": "CARDS",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "5jk51pwojh9n",
+     "word": "MERRY",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "xa7zw6s3g8qy",
+     "word": "SNOWY",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "83njkqvynkqh",
+     "word": "STAMP",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "sr5qmwumbvrc",
+     "word": "CHEER",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "6o8nz90phacw",
+     "word": "MAILS",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "wx37hmy975ra",
+     "word": "WARMS",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "mheu79zw0s7v",
+     "word": "JOLLY",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "okjy0k9j8onl",
+     "word": "PAPER",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "j6x52dwiork9",
+     "word": "GLUED",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "hqsfvy7m6mkm",
+     "word": "HAPPY",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "84gjj605asd3",
+     "word": "CLOUD",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "lefqdn8pk47q",
+     "word": "NOISE",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "jkyphu2f78em",
+     "word": "LABEL",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "8auio7foh2ko",
+     "word": "PAUSE",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "u3ggftr0pm3v",
+     "word": "DRIFT",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "vtopwrsptree",
+     "word": "MINDS",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "gfwd6jj76erh",
+     "word": "SKIES",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "8vqgblif2oe5",
+     "word": "STORM",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "1p2ys0fdgbxb",
+     "word": "CALMS",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "4zon6ybyj4yw",
+     "word": "WAVES",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "tsvrzh1aed7y",
+     "word": "FLOAT",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "eih6z8owo380",
+     "word": "NOTED",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "0z64mvc5w6a8",
+     "word": "GRACE",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "zj2diimwnc4d",
+     "word": "VOICE",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "yo4lwb0cif75",
+     "word": "HEART",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "q5jiw8qnhl1o",
+     "word": "TRUTH",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "h07jlv76u19r",
+     "word": "SMILE",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "rej7scyxatf4",
+     "word": "NAMED",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "t78ccdefr7wk",
+     "word": "HEALS",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "9dd779gshe9m",
+     "word": "LOVED",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
      ]
     }
    ],
@@ -20571,6 +22468,1100 @@ window.GS_MY_CONTENT = {
      ],
      "sets": [
       "Your Happy Place"
+     ]
+    },
+    {
+     "id": "nn62gt5w89lh",
+     "word": "a flexed arm",
+     "level": "easy",
+     "banned": [
+      "muscle",
+      "strong",
+      "arm",
+      "bicep"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ds8ycevxgyji",
+     "word": "a trophy",
+     "level": "easy",
+     "banned": [
+      "win",
+      "award",
+      "cup",
+      "prize"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "dyt9t3ij2neb",
+     "word": "a medal",
+     "level": "easy",
+     "banned": [
+      "gold",
+      "win",
+      "ribbon",
+      "olympics"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "orgyvctbxj3r",
+     "word": "a superhero cape",
+     "level": "easy",
+     "banned": [
+      "hero",
+      "cape",
+      "super",
+      "fly"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "64m0q74dkrwi",
+     "word": "a toolbox",
+     "level": "easy",
+     "banned": [
+      "tools",
+      "hammer",
+      "box",
+      "fix"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "jseynoujrj2j",
+     "word": "a lightbulb",
+     "level": "easy",
+     "banned": [
+      "idea",
+      "light",
+      "bright",
+      "bulb"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ofnn2fjavktn",
+     "word": "an oak tree",
+     "level": "easy",
+     "banned": [
+      "tree",
+      "acorn",
+      "strong",
+      "trunk"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "83ebecgxbygf",
+     "word": "a star",
+     "level": "easy",
+     "banned": [
+      "shine",
+      "sky",
+      "twinkle",
+      "night"
+     ],
+     "sets": [
+      "Strength-Based Thinking",
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "308ucpcmb0gs",
+     "word": "a mountain peak",
+     "level": "easy",
+     "banned": [
+      "mountain",
+      "top",
+      "climb",
+      "summit"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "08wgln2y7h7s",
+     "word": "a ladder",
+     "level": "easy",
+     "banned": [
+      "climb",
+      "steps",
+      "rungs",
+      "up"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "c796lejnnhvz",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "banned": [
+      "climb",
+      "mountain",
+      "peak",
+      "top"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "3iza3hqphc36",
+     "word": "lifting weights",
+     "level": "medium",
+     "banned": [
+      "lift",
+      "weights",
+      "gym",
+      "heavy"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "dnsvx97dr89s",
+     "word": "a flower in a sidewalk crack",
+     "level": "medium",
+     "banned": [
+      "flower",
+      "crack",
+      "grow",
+      "concrete"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "8isrhwqweprb",
+     "word": "a pat on the back",
+     "level": "medium",
+     "banned": [
+      "pat",
+      "back",
+      "good job",
+      "hand"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "bcb8toqu179t",
+     "word": "crossing a finish line",
+     "level": "medium",
+     "banned": [
+      "race",
+      "finish",
+      "win",
+      "tape"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "byyqzeb8tbpd",
+     "word": "a butterfly leaving a cocoon",
+     "level": "medium",
+     "banned": [
+      "butterfly",
+      "cocoon",
+      "caterpillar",
+      "wings"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "snt5i0po40mw",
+     "word": "planting a seed",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "seed",
+      "dirt",
+      "grow"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "z0uj7nu71axw",
+     "word": "looking in a mirror and smiling",
+     "level": "medium",
+     "banned": [
+      "mirror",
+      "smile",
+      "reflection",
+      "face"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "d5wnvye8fptx",
+     "word": "a phoenix",
+     "level": "medium",
+     "banned": [
+      "bird",
+      "fire",
+      "rise",
+      "ashes"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "75yidmi8dxxc",
+     "word": "a gold star sticker",
+     "level": "easy",
+     "banned": [
+      "gold",
+      "star",
+      "sticker",
+      "reward"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "sw4mcsrf28ei",
+     "word": "an envelope",
+     "level": "easy",
+     "banned": [
+      "mail",
+      "letter",
+      "stamp",
+      "seal"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "il8t6006pwrn",
+     "word": "a snowflake",
+     "level": "easy",
+     "banned": [
+      "snow",
+      "winter",
+      "cold",
+      "flake"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "b6e9gvq2nwkz",
+     "word": "a candle",
+     "level": "easy",
+     "banned": [
+      "flame",
+      "wax",
+      "light",
+      "wick"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "hz5wmrmubrhi",
+     "word": "a present",
+     "level": "easy",
+     "banned": [
+      "gift",
+      "bow",
+      "wrap",
+      "box"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "v3uil3ijr5dl",
+     "word": "a snowman",
+     "level": "easy",
+     "banned": [
+      "snow",
+      "carrot",
+      "frosty",
+      "winter"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "zbgbrj114qgm",
+     "word": "a mailbox",
+     "level": "easy",
+     "banned": [
+      "mail",
+      "letters",
+      "post",
+      "box"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "4u2b649hiz38",
+     "word": "a mitten",
+     "level": "easy",
+     "banned": [
+      "glove",
+      "hand",
+      "winter",
+      "warm"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ton10mmfwx0m",
+     "word": "a pencil",
+     "level": "easy",
+     "banned": [
+      "write",
+      "lead",
+      "eraser",
+      "draw"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "0i9fuy3ocka6",
+     "word": "a heart",
+     "level": "easy",
+     "banned": [
+      "love",
+      "valentine",
+      "red",
+      "beat"
+     ],
+     "sets": [
+      "Holiday Cards",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "0w2y08qqiwx0",
+     "word": "writing a card",
+     "level": "medium",
+     "banned": [
+      "write",
+      "card",
+      "pen",
+      "message"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "qpfmmgkrkqsf",
+     "word": "licking a stamp",
+     "level": "medium",
+     "banned": [
+      "stamp",
+      "lick",
+      "mail",
+      "tongue"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "992nqz9ngk49",
+     "word": "wrapping a gift",
+     "level": "medium",
+     "banned": [
+      "wrap",
+      "gift",
+      "paper",
+      "bow"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "lnce49oysxh0",
+     "word": "hanging lights",
+     "level": "medium",
+     "banned": [
+      "lights",
+      "string",
+      "hang",
+      "decorate"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ehuj9ug3njv3",
+     "word": "sledding",
+     "level": "medium",
+     "banned": [
+      "sled",
+      "snow",
+      "hill",
+      "slide"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "m21p88i2sy2r",
+     "word": "hot cocoa by the fire",
+     "level": "medium",
+     "banned": [
+      "cocoa",
+      "fire",
+      "mug",
+      "warm"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "0cgqq5syjwdb",
+     "word": "a gingerbread house",
+     "level": "medium",
+     "banned": [
+      "gingerbread",
+      "candy",
+      "house",
+      "cookie"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "bs34lc0qedff",
+     "word": "making a paper snowflake",
+     "level": "medium",
+     "banned": [
+      "paper",
+      "scissors",
+      "snowflake",
+      "cut"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3f0816bhnisf",
+     "word": "opening a card",
+     "level": "medium",
+     "banned": [
+      "open",
+      "card",
+      "envelope",
+      "read"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "yvk7p7rilsvz",
+     "word": "a winter hat",
+     "level": "easy",
+     "banned": [
+      "hat",
+      "beanie",
+      "cold",
+      "head"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ozdc4r3tw57r",
+     "word": "a cloud",
+     "level": "easy",
+     "banned": [
+      "sky",
+      "fluffy",
+      "white",
+      "rain"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "63e28n0qgiv5",
+     "word": "a pink elephant",
+     "level": "easy",
+     "banned": [
+      "pink",
+      "elephant",
+      "trunk",
+      "animal"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "cu20kgjnitzk",
+     "word": "a brain",
+     "level": "easy",
+     "banned": [
+      "think",
+      "head",
+      "mind",
+      "smart"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5na3wnq433cl",
+     "word": "a thought bubble",
+     "level": "easy",
+     "banned": [
+      "think",
+      "bubble",
+      "comic",
+      "cloud"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ssl0rfwrbgaj",
+     "word": "a car driving by",
+     "level": "easy",
+     "banned": [
+      "car",
+      "drive",
+      "road",
+      "wheels"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "t8t8vmvsmdqg",
+     "word": "a leaf on a stream",
+     "level": "easy",
+     "banned": [
+      "leaf",
+      "water",
+      "float",
+      "river"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "aowl1grfus15",
+     "word": "a radio",
+     "level": "easy",
+     "banned": [
+      "music",
+      "station",
+      "dial",
+      "listen"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "o5jjpjp0qruu",
+     "word": "the sun",
+     "level": "easy",
+     "banned": [
+      "sun",
+      "sky",
+      "hot",
+      "bright"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "qh8tsfirsviq",
+     "word": "a rain cloud",
+     "level": "easy",
+     "banned": [
+      "rain",
+      "cloud",
+      "storm",
+      "drops"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ddomik2fqew3",
+     "word": "a label",
+     "level": "easy",
+     "banned": [
+      "tag",
+      "sticker",
+      "name",
+      "label"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "vudndhl0wag3",
+     "word": "clouds passing by",
+     "level": "medium",
+     "banned": [
+      "clouds",
+      "sky",
+      "float",
+      "drift"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "tanf6jercrxh",
+     "word": "waving goodbye",
+     "level": "medium",
+     "banned": [
+      "wave",
+      "bye",
+      "hand",
+      "leave"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "2my883c796gb",
+     "word": "a train passing",
+     "level": "medium",
+     "banned": [
+      "train",
+      "tracks",
+      "choo",
+      "station"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "drj4358bchqg",
+     "word": "bubbles floating away",
+     "level": "medium",
+     "banned": [
+      "bubbles",
+      "float",
+      "pop",
+      "blow"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "yd40upbdx8v0",
+     "word": "changing the channel",
+     "level": "medium",
+     "banned": [
+      "remote",
+      "TV",
+      "channel",
+      "click"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "78hye6ilq66o",
+     "word": "a balloon floating away",
+     "level": "medium",
+     "banned": [
+      "balloon",
+      "float",
+      "string",
+      "sky"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "8mq22gmz58d0",
+     "word": "watching the weather",
+     "level": "medium",
+     "banned": [
+      "weather",
+      "forecast",
+      "rain",
+      "sun"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "3j02ibfv59vk",
+     "word": "taking a deep breath",
+     "level": "medium",
+     "banned": [
+      "breathe",
+      "inhale",
+      "air",
+      "lungs"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "1i52ohsk1tp5",
+     "word": "a busy highway",
+     "level": "medium",
+     "banned": [
+      "cars",
+      "road",
+      "traffic",
+      "highway"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "onytrqlqy0ev",
+     "word": "a calm lake",
+     "level": "easy",
+     "banned": [
+      "lake",
+      "water",
+      "still",
+      "calm"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "f0po2ixbv3i4",
+     "word": "a megaphone",
+     "level": "easy",
+     "banned": [
+      "loud",
+      "speaker",
+      "yell",
+      "cheer"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "odcusbzl3xvw",
+     "word": "a cheerleader",
+     "level": "easy",
+     "banned": [
+      "cheer",
+      "pom-poms",
+      "team",
+      "rah"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "tqdg45vygg00",
+     "word": "a mirror",
+     "level": "easy",
+     "banned": [
+      "reflection",
+      "look",
+      "glass",
+      "face"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "o82q4ca1twme",
+     "word": "a speech bubble",
+     "level": "easy",
+     "banned": [
+      "talk",
+      "words",
+      "comic",
+      "bubble"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "x50z56y2bow7",
+     "word": "a judge's gavel",
+     "level": "easy",
+     "banned": [
+      "judge",
+      "court",
+      "hammer",
+      "order"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "alkmowxkncrz",
+     "word": "a hug",
+     "level": "easy",
+     "banned": [
+      "arms",
+      "squeeze",
+      "embrace",
+      "cuddle"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "9pi4wm689xw6",
+     "word": "an angel",
+     "level": "easy",
+     "banned": [
+      "wings",
+      "halo",
+      "heaven",
+      "fly"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "2iwnx6619l4o",
+     "word": "a teddy bear",
+     "level": "easy",
+     "banned": [
+      "bear",
+      "stuffed",
+      "toy",
+      "hug"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ktnii4dbanh9",
+     "word": "a gold star",
+     "level": "easy",
+     "banned": [
+      "star",
+      "gold",
+      "sticker",
+      "reward"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "0uohf9cgk8nk",
+     "word": "a pep talk",
+     "level": "medium",
+     "banned": [
+      "pep",
+      "talk",
+      "encourage",
+      "coach"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "otdrws2yr7wz",
+     "word": "giving yourself a hug",
+     "level": "medium",
+     "banned": [
+      "hug",
+      "yourself",
+      "arms",
+      "self"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "llx7vcgww279",
+     "word": "patting yourself on the back",
+     "level": "medium",
+     "banned": [
+      "pat",
+      "back",
+      "good job",
+      "hand"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ghyxy5dur5e7",
+     "word": "turning down the volume",
+     "level": "medium",
+     "banned": [
+      "volume",
+      "quiet",
+      "knob",
+      "loud"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "gy0x8qxhnhty",
+     "word": "a referee blowing a whistle",
+     "level": "medium",
+     "banned": [
+      "referee",
+      "whistle",
+      "ref",
+      "foul"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "f5wlfyuwb7gf",
+     "word": "whispering",
+     "level": "medium",
+     "banned": [
+      "whisper",
+      "quiet",
+      "secret",
+      "ear"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ftq4eoawwuam",
+     "word": "a coach cheering",
+     "level": "medium",
+     "banned": [
+      "coach",
+      "cheer",
+      "team",
+      "whistle"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "n7ypnkfb6xvd",
+     "word": "smiling in the mirror",
+     "level": "medium",
+     "banned": [
+      "smile",
+      "mirror",
+      "face",
+      "reflection"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "2rs9ai4k4f5g",
+     "word": "crossing out a mean word",
+     "level": "medium",
+     "banned": [
+      "cross",
+      "out",
+      "erase",
+      "word"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "9871frfwr5ho",
+     "word": "a thumbs up",
+     "level": "easy",
+     "banned": [
+      "thumb",
+      "good",
+      "okay",
+      "like"
+     ],
+     "sets": [
+      "Inner Critics"
      ]
     }
    ],
@@ -29878,6 +32869,1446 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Your Happy Place"
      ]
+    },
+    {
+     "id": "huu3ia8b5izf",
+     "question": "What is strength-based thinking?",
+     "answer": "Recognizing and building on your skills, values and character",
+     "wrong": [
+      "Only thinking positive thoughts",
+      "A therapy only social workers can use",
+      "Focusing on what you lack"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "o6wapnrj1fi1",
+     "question": "What's a strength-based reframe of 'I keep failing'?",
+     "answer": "'I keep trying — that takes courage.'",
+     "wrong": [
+      "'I need to stop making excuses.'",
+      "'Failure is just life.'",
+      "'I'll succeed once I fix my weaknesses.'"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "tg2zjrvcmdve",
+     "question": "Where do personal strengths often come from?",
+     "answer": "What we've survived, learned and how we treat others",
+     "wrong": [
+      "Only degrees and certificates",
+      "Only affirmations",
+      "Traits fixed at birth"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "rhyj9tw6rl83",
+     "question": "True or false: Strength-based thinking ignores real problems.",
+     "answer": "False — it sees challenges AND your resources",
+     "wrong": [
+      "True — it only looks at the good",
+      "True — problems wait until later",
+      "False — but only with a therapist"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "w2iac3nzoxbf",
+     "question": "What is a 'deficit-based' view of yourself?",
+     "answer": "Focusing mainly on what you lack or what went wrong",
+     "wrong": [
+      "Being realistic about limits",
+      "Using mistakes as motivation",
+      "A medical condition"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "l5dd4125xdty",
+     "question": "What does surviving hardship reveal?",
+     "answer": "Real resilience many people never discover",
+     "wrong": [
+      "That you got lucky",
+      "That you need more help",
+      "Nothing at all"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "1obrk2swprgi",
+     "question": "What is a Strength Inventory?",
+     "answer": "A list of what you do well, have overcome and are valued for",
+     "wrong": [
+      "A clinical test",
+      "A list of weaknesses",
+      "A discharge form"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "jb0mzjk4g83j",
+     "question": "How does strength-based thinking affect motivation?",
+     "answer": "It builds belief that your actions can make a difference",
+     "wrong": [
+      "It removes the need for support",
+      "It guarantees success",
+      "It makes you too comfortable"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "lj74pzqklo1s",
+     "question": "Which field pioneered the strength-based approach?",
+     "answer": "Social work and community counseling",
+     "wrong": [
+      "Forensic psychology",
+      "Nutrition science",
+      "Emergency medicine"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "od85dmbi9v97",
+     "question": "True or false: Recognizing your strengths is arrogant.",
+     "answer": "False — it's accurate self-knowledge",
+     "wrong": [
+      "True — humility means downplaying them",
+      "True — unless an expert names them",
+      "False — only if others agree first"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "4ecl406edsge",
+     "question": "What's the first step in a strength-based reframe?",
+     "answer": "Notice the negative label you're giving yourself",
+     "wrong": [
+      "List everything that went wrong",
+      "Have someone else find your strengths",
+      "Erase all negative self-talk first"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "p9ikahyplpuk",
+     "question": "What is a growth mindset?",
+     "answer": "Believing abilities can grow through effort",
+     "wrong": [
+      "Believing talent is fixed at birth",
+      "Always feeling optimistic",
+      "A technique just for kids"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "6j51v5v9l77b",
+     "question": "How can other people help us see our strengths?",
+     "answer": "They often notice strengths we can't see",
+     "wrong": [
+      "They're the only valid source",
+      "They always exaggerate",
+      "Their opinions should be ignored"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ipxy0lf427b9",
+     "question": "What does 'what you focus on grows' mean?",
+     "answer": "Paying attention to strengths helps them grow",
+     "wrong": [
+      "Thinking about problems makes them worse",
+      "Positive thinking rebuilds your brain",
+      "Only therapy skills grow"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "w7d97qdae9c6",
+     "question": "Which is NOT a strength-based approach?",
+     "answer": "Listing everything you did wrong this year",
+     "wrong": [
+      "Writing three things you did well today",
+      "Asking a friend what they appreciate about you",
+      "Reframing 'I have no support' as 'I'm building support'"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "9g6zexyg5976",
+     "question": "What is self-efficacy?",
+     "answer": "Believing your efforts can lead to good outcomes",
+     "wrong": [
+      "Never needing help",
+      "Your IQ score",
+      "Never making mistakes"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "2i6nzz3zb73z",
+     "question": "What's a simple daily strength-based practice?",
+     "answer": "Write down one thing you did well today",
+     "wrong": [
+      "30 minutes of mirror affirmations",
+      "Never talking about struggles",
+      "Rereading goals every two hours"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "q727varlx0we",
+     "question": "True or false: Strength-based thinking is only for good days.",
+     "answer": "False — it's most valuable on hard days",
+     "wrong": [
+      "True — crises need other tools",
+      "True — it's for later stages",
+      "False — but it takes months to work"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "mqop0iuv8ada",
+     "question": "Which question reflects a strength-based perspective?",
+     "answer": "'What have you overcome that shows you can do this?'",
+     "wrong": [
+      "'Why can't you fix it?'",
+      "'What has to change before you can succeed?'",
+      "'When did things go wrong?'"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "omndizpnv36a",
+     "question": "Self-reflection vs. self-criticism — what's the difference?",
+     "answer": "Reflection leads to growth; criticism paralyzes",
+     "wrong": [
+      "Both should be avoided",
+      "There is no difference",
+      "Criticism is more useful"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "fh14ifm26wa9",
+     "question": "Which value does strength-based thinking support most?",
+     "answer": "Hope — believing change is possible",
+     "wrong": [
+      "Strict routine",
+      "Perfection",
+      "Competition"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "2j2vfymjerhl",
+     "question": "What if you can't think of any strengths?",
+     "answer": "Ask someone who knows you, or start small — like showing up today",
+     "wrong": [
+      "Accept you have none",
+      "Wait until you feel better",
+      "Have someone else fill it in"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "fsu0rhs4x1x4",
+     "question": "In the reframe steps, what comes after NOTICE?",
+     "answer": "ASK — 'Is this 100% true?'",
+     "wrong": [
+      "REPEAT",
+      "IGNORE",
+      "WRITE IT DOWN"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "vyxo0luui2x3",
+     "question": "Why write your strengths down?",
+     "answer": "Your brain believes what it reads",
+     "wrong": [
+      "It's required",
+      "So others can grade them",
+      "It doesn't matter"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ayyhkdu2azwu",
+     "question": "What is the main purpose of making a handmade card?",
+     "answer": "To share connection and gratitude in a personal way",
+     "wrong": [
+      "To show off your art skills",
+      "To finish a required task",
+      "To practice fine motor skills"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "gxof11pzx8hn",
+     "question": "What is the MOST important ingredient in a holiday card?",
+     "answer": "An honest, personal message",
+     "wrong": [
+      "Professional artwork",
+      "Expensive glitter",
+      "A rhyming poem"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ccmae1sxkqo2",
+     "question": "What is one benefit of making a card in group?",
+     "answer": "It helps you slow down and be present",
+     "wrong": [
+      "You don't have to talk",
+      "It replaces journaling",
+      "It's art school training"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "0t55b4czad3s",
+     "question": "True or false: You need to be artistic to make a meaningful card.",
+     "answer": "False — the message matters more than the art",
+     "wrong": [
+      "True — a messy card could offend",
+      "True — skill shows you care",
+      "False — but only with store-bought decorations"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "sieunrhmfqqt",
+     "question": "Who can you make a holiday card for?",
+     "answer": "Family, a friend, a group member or your future self",
+     "wrong": [
+      "Only family",
+      "Only staff",
+      "Only people you'll see in person"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3frdk90htg8w",
+     "question": "Which message starter looks forward with hope?",
+     "answer": "'As we head into the new year, I hope for you…'",
+     "wrong": [
+      "'I'm sorry I haven't been in touch…'",
+      "'I know things are hard right now, but…'",
+      "'It's been a while…'"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "e7b505ba5m77",
+     "question": "What skills does writing a card practice?",
+     "answer": "Gratitude, openness and connection",
+     "wrong": [
+      "Confrontation and arguing",
+      "Distraction",
+      "Budgeting"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "wfkiepb4zmw8",
+     "question": "If someone has no one to send a card to, what can they do?",
+     "answer": "Write to their future self or someone in the group",
+     "wrong": [
+      "Skip the activity",
+      "Only make one for staff",
+      "Write to nobody"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3gux09e3zrbc",
+     "question": "Slowing down to make something by hand helps with what?",
+     "answer": "Mindfulness — being in the moment",
+     "wrong": [
+      "Memorizing facts",
+      "Getting faster",
+      "Winning prizes"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "6owdpwhi86a8",
+     "question": "What should you do if you want to start your card over?",
+     "answer": "Ask for a fresh sheet",
+     "wrong": [
+      "Keep going with the messy one",
+      "Wait until next time",
+      "Use the back of a handout"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "esyrlg9zh4ng",
+     "question": "Which is a warm way to open a card?",
+     "answer": "'I was thinking about you and wanted you to know…'",
+     "wrong": [
+      "'I hope you're doing better than me…'",
+      "'You probably don't remember me…'",
+      "'We haven't always gotten along…'"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "lgud6yb1qhlq",
+     "question": "Why do handwritten messages matter?",
+     "answer": "They show someone took time and thought for you",
+     "wrong": [
+      "They're legally binding",
+      "They're cheaper",
+      "They're faster"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "8vj14e90a8ja",
+     "question": "What's a healthy goal for card-making?",
+     "answer": "Put real feelings into words, however simple",
+     "wrong": [
+      "Make the fanciest card",
+      "Finish first",
+      "Use every supply"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "vuh9h5gmcgtv",
+     "question": "Writing a kind card to yourself practices what?",
+     "answer": "Self-compassion",
+     "wrong": [
+      "Arguing",
+      "Budgeting",
+      "Speed writing"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "kpwzd64fyb92",
+     "question": "Why might writing a personal message feel uncomfortable?",
+     "answer": "Sharing feelings can feel new or risky",
+     "wrong": [
+      "You don't know the person",
+      "Cards are silly",
+      "Talking is always better"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "awnwtb9nets8",
+     "question": "What is a 'message starter' for?",
+     "answer": "Beating the blank page when you don't know what to write",
+     "wrong": [
+      "Telling you exactly what to say",
+      "Replacing your own thoughts",
+      "Making it official"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "yjm5gnqmzw31",
+     "question": "What can you do with your card when it's done?",
+     "answer": "Give it, keep it, mail it or display it",
+     "wrong": [
+      "Only hand it in",
+      "Never share it",
+      "Mail it immediately"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "1vs3798tndg3",
+     "question": "True or false: The value of card-making ends when the session ends.",
+     "answer": "False — gratitude and connection carry forward",
+     "wrong": [
+      "True — it's just an activity",
+      "True — unless it's delivered",
+      "False — only with more art groups"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "mpjyraz6ql80",
+     "question": "What does giving something you made yourself communicate?",
+     "answer": "Personal effort and care",
+     "wrong": [
+      "That you couldn't afford a gift",
+      "That they owe you",
+      "That it's less special"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "nucn1qh167oe",
+     "question": "Which group norm matters most while making cards?",
+     "answer": "Respect everyone's creative process — no judging",
+     "wrong": [
+      "Make all cards look the same",
+      "Share before sealing",
+      "Finish before anyone talks"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ksmwtqc5f40k",
+     "question": "What is creative expression?",
+     "answer": "Using art or writing to express feelings",
+     "wrong": [
+      "Performing on stage",
+      "Earning points",
+      "A certified therapy"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3waoawgbv1ua",
+     "question": "Why is it okay if your card isn't perfect?",
+     "answer": "The intention and message give it value",
+     "wrong": [
+      "People expect less",
+      "Perfection is bad",
+      "Cards get thrown away anyway"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ledpbbqjm866",
+     "question": "What's the best way to end a card?",
+     "answer": "Something true and specific to that person",
+     "wrong": [
+      "Just 'Happy Holidays'",
+      "A famous quote",
+      "Asking for something back"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "djh1uph39x71",
+     "question": "What's the FIRST step in making your card?",
+     "answer": "Choose who it's for",
+     "wrong": [
+      "Pick the stickers",
+      "Sign your name",
+      "Mail it"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "iem9ajnj0anu",
+     "question": "What are intrusive thoughts?",
+     "answer": "Unwanted, automatic thoughts that pop up uninvited",
+     "wrong": [
+      "Thoughts that only happen during panic",
+      "Plans you are thinking about doing",
+      "Only memories of past events"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5trfpo4xc8fz",
+     "question": "True or false: Having an intrusive thought means you want to act on it.",
+     "answer": "False — they go against your values and are unwanted",
+     "wrong": [
+      "True — thoughts reveal true desires",
+      "True — if they repeat three times",
+      "False — only for some topics"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "kdhaq92yrr7i",
+     "question": "How many people experience intrusive thoughts?",
+     "answer": "Nearly everyone",
+     "wrong": [
+      "Only people with a diagnosis",
+      "About 10–15% of people",
+      "Only people who've been through trauma"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "wrdhgepjfuuz",
+     "question": "What does 'ego-dystonic' mean?",
+     "answer": "The thought clashes with your values — it's not who you are",
+     "wrong": [
+      "The thought feels comfortable",
+      "It comes from the ego",
+      "It needs medication"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "e0ppuzdq4pqa",
+     "question": "Why does trying to push a thought away often backfire?",
+     "answer": "Fighting it makes it come back more — the rebound effect",
+     "wrong": [
+      "It burns out your brain",
+      "It only works hourly",
+      "It needs a professional"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "1tbg3efg3el6",
+     "question": "What does the 'pink elephant' example show?",
+     "answer": "Trying NOT to think about something brings it back",
+     "wrong": [
+      "Intrusive thoughts are always silly",
+      "Your brain is playful",
+      "Picture animals to calm down"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "xuen02p699mb",
+     "question": "What is 'defusion'?",
+     "answer": "Creating distance from a thought so it has less power",
+     "wrong": [
+      "Blocking the thought",
+      "Replacing it with a positive one",
+      "Arguing until it leaves"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5aht3dobplkw",
+     "question": "Which is a defusion statement?",
+     "answer": "'I'm having the thought that… — but that's just my brain.'",
+     "wrong": [
+      "'I need to prove that thought wrong now.'",
+      "'I must call someone every time.'",
+      "'I should analyze what this means about me.'"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "x4sxuvlwgu0h",
+     "question": "What does the 'sky and weather' metaphor teach?",
+     "answer": "You are the sky — thoughts are weather passing through",
+     "wrong": [
+      "Storms always pass in 24 hours",
+      "Clear clouds before thinking",
+      "Just wait it out"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "6wrw0ekyhxbv",
+     "question": "What can make intrusive thoughts happen more often?",
+     "answer": "Stress, tiredness and anxiety",
+     "wrong": [
+      "Only trauma",
+      "Only caffeine",
+      "Good sleep"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "jnfniffgy3f9",
+     "question": "What does it mean to 'label' a thought?",
+     "answer": "Calling it what it is — 'just a thought, not a plan or fact'",
+     "wrong": [
+      "Rating its danger 1–10",
+      "Giving it a journal title",
+      "Telling the group what it said"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5egqwgfp9rmh",
+     "question": "Which is NOT a healthy response to an intrusive thought?",
+     "answer": "Trying to force it out of your mind",
+     "wrong": [
+      "Naming it without judgment",
+      "Letting it pass",
+      "Remembering it doesn't define you"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "dzd3g7dkd0j4",
+     "question": "How is an intrusive thought different from a plan?",
+     "answer": "It's unwanted and automatic; a plan is chosen",
+     "wrong": [
+      "It's always false",
+      "It only happens once",
+      "There's no difference"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "1evg1cyobdts",
+     "question": "After noticing an intrusive thought, what should you do?",
+     "answer": "Acknowledge, label, let it pass, then return to the present",
+     "wrong": [
+      "Call someone every single time",
+      "Analyze it in detail",
+      "Cover it with an affirmation"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5piwjj5rj00d",
+     "question": "What do intrusive thoughts say about your character?",
+     "answer": "Nothing — being bothered by them shows your values are intact",
+     "wrong": [
+      "They reveal hidden traits",
+      "Only flawed people have them",
+      "They can measure character"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ht3jgp724pxf",
+     "question": "When should you get extra support for intrusive thoughts?",
+     "answer": "When they're constant or get in the way of daily life",
+     "wrong": [
+      "Only after acting on one",
+      "After 90 days",
+      "Only if a clinician sees them"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "vewfqy25z016",
+     "question": "What does mindfulness teach about thoughts?",
+     "answer": "Notice them without judging or obeying them",
+     "wrong": [
+      "Replace each one with an affirmation",
+      "It makes them disappear forever",
+      "Mindfulness can't handle them"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "6wdoo3fcshz5",
+     "question": "True or false: Telling a therapist about intrusive thoughts will get you in trouble.",
+     "answer": "False — they're trained to tell thoughts from intentions",
+     "wrong": [
+      "True — they must report them",
+      "True — for some thoughts",
+      "False — but sessions will double"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "shxbifl9etex",
+     "question": "What is the rebound effect?",
+     "answer": "A suppressed thought comes back stronger",
+     "wrong": [
+      "It's less upsetting the second time",
+      "It's stored forever",
+      "A different thought replaces it"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "f924ps05runh",
+     "question": "What's a healthy way to view a thought that bothers you?",
+     "answer": "'It bothers me because it's not what I want — my values are intact.'",
+     "wrong": [
+      "'It's a warning sign.'",
+      "'I have to understand it first.'",
+      "'I need much more treatment.'"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "apzkav7jaxsr",
+     "question": "Which therapy is commonly used for OCD-related intrusive thoughts?",
+     "answer": "ERP — Exposure and Response Prevention",
+     "wrong": [
+      "EMDR",
+      "DBT",
+      "IPT"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "7pjn34b79e2y",
+     "question": "What's the most important thing to remember?",
+     "answer": "A thought is not a fact, a plan or who you are",
+     "wrong": [
+      "Thoughts always become actions",
+      "Thought content always has meaning",
+      "They stop only when the cause is fixed"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "7gpzvjsa9196",
+     "question": "In the 5 steps, what do you do right after you ACKNOWLEDGE the thought?",
+     "answer": "LABEL it",
+     "wrong": [
+      "FIGHT it",
+      "SHARE it",
+      "IGNORE it"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ynh22rftesy1",
+     "question": "In the 5 steps, how should you let a thought pass?",
+     "answer": "Like a cloud moving across the sky",
+     "wrong": [
+      "By shouting it away",
+      "By writing it 10 times",
+      "By holding your breath"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "paakpp1biigc",
+     "question": "What is the inner critic?",
+     "answer": "An inner voice that judges and criticizes you",
+     "wrong": [
+      "A medical term for low self-esteem",
+      "A trusted person's voice",
+      "A healthy safety alarm"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ef62s3nza2qb",
+     "question": "Where does the inner critic often come from?",
+     "answer": "Critical messages absorbed early in life",
+     "wrong": [
+      "One brain region in adulthood",
+      "Unchangeable genes",
+      "The same system as dreams"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "g8goxakfpknk",
+     "question": "Inner critic vs. conscience — what's the difference?",
+     "answer": "Conscience guides you to your values; the critic attacks your worth",
+     "wrong": [
+      "They're the same",
+      "Conscience is outside you",
+      "The critic is the positive one"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "7ibpi7bo1445",
+     "question": "True or false: A strong inner critic means you have high standards.",
+     "answer": "False — high standards motivate; the critic paralyzes",
+     "wrong": [
+      "True — it shows you care",
+      "True — people without one underperform",
+      "False — only about looks"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "t52m97i4d52n",
+     "question": "What is self-compassion?",
+     "answer": "Treating yourself with the kindness you'd give a friend",
+     "wrong": [
+      "Making excuses",
+      "Pretending everything's fine",
+      "A clinician-only technique"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "l4s5jllsmifv",
+     "question": "True or false: Being kind to yourself after a mistake is making excuses.",
+     "answer": "False — it supports accountability without shame",
+     "wrong": [
+      "True — feeling bad prevents repeats",
+      "True — unless approved",
+      "False — but only for small mistakes"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3m5tw0xazqfn",
+     "question": "What happens when you argue directly with your inner critic?",
+     "answer": "It often gives the critic more power",
+     "wrong": [
+      "It silences it forever",
+      "It boosts self-worth",
+      "Nothing at all"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3xslnzpi74t2",
+     "question": "What's the first step when the inner critic shows up?",
+     "answer": "Name it — 'That's my inner critic, not the truth'",
+     "wrong": [
+      "Argue with evidence",
+      "Share it with the group",
+      "Distract yourself right away"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "n7kwa0hgkuzk",
+     "question": "What does research on self-compassion show?",
+     "answer": "Kinder inner voices help people bounce back faster",
+     "wrong": [
+      "It makes people lazy",
+      "It only works the first year",
+      "Criticism works better"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "nx968fr2c7x2",
+     "question": "Which sounds like the inner critic — not healthy reflection?",
+     "answer": "'You're broken and don't deserve good things.'",
+     "wrong": [
+      "'What can I do differently next time?'",
+      "'This is hard, and that's okay.'",
+      "'I should ask for help.'"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "lxw9gqn190ob",
+     "question": "Who developed Mindful Self-Compassion?",
+     "answer": "Kristin Neff and Christopher Germer",
+     "wrong": [
+      "Sigmund Freud",
+      "Carl Jung",
+      "B.F. Skinner"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "vh1mvrh9vbar",
+     "question": "Which question helps create distance from an inner critic thought?",
+     "answer": "'Would I say this to someone I love?'",
+     "wrong": [
+      "'Why am I like this?'",
+      "'How bad am I?'",
+      "'Who's to blame?'"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "n3j1edqsjgz7",
+     "question": "Which is NOT a helpful response to the inner critic?",
+     "answer": "Trying to silence it by achieving something huge",
+     "wrong": [
+      "Noticing and labeling it",
+      "Responding like you would to a friend",
+      "Coming back to the present"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "kuhj7o9pipkx",
+     "question": "True or false: The inner critic disappears on its own with time.",
+     "answer": "False — it takes intentional practice to change",
+     "wrong": [
+      "True — time fixes it",
+      "True — after a certain program",
+      "False — it always gets louder"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "b24dcsq78nke",
+     "question": "What is a compassionate response to an inner critic thought?",
+     "answer": "Acknowledge the hurt and offer yourself kindness",
+     "wrong": [
+      "Instantly cover it with an affirmation",
+      "Ignore it forever",
+      "Write a rebuttal"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "r7ixfgitxjxv",
+     "question": "What makes accountability different from the inner critic?",
+     "answer": "Accountability is specific and forward-looking; the critic attacks your whole worth",
+     "wrong": [
+      "Accountability is external",
+      "There's no difference",
+      "Accountability is always painful"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "us4eum18u6ts",
+     "question": "How can journaling help with the inner critic?",
+     "answer": "It gives you space to notice, name and respond to it",
+     "wrong": [
+      "It erases the critic",
+      "Only if a therapist reads it",
+      "It makes it louder"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "4nqblw576elk",
+     "question": "What does 'building a kinder inner voice' mean?",
+     "answer": "Slowly replacing harsh inner messages with honest, kind ones",
+     "wrong": [
+      "Reprogramming with affirmations",
+      "Copying a mentor's voice",
+      "A specific worksheet"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "q6gniwd2i3xb",
+     "question": "Who is most likely to have an intense inner critic?",
+     "answer": "Anyone who's faced a lot of criticism or shame",
+     "wrong": [
+      "Only people with a diagnosis",
+      "Only adults over 40",
+      "Only one type of family"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "misufx9sa52z",
+     "question": "What's the real goal of working with your inner critic?",
+     "answer": "Change your relationship with it so it has less power",
+     "wrong": [
+      "Silence it perfectly",
+      "Forgive everyone first",
+      "Think only positive thoughts"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "53vt3c8hsf6n",
+     "question": "What's a simple daily practice for the inner critic?",
+     "answer": "Pause and ask: 'What would I say to a friend right now?'",
+     "wrong": [
+      "Record everything it says",
+      "Timed positive thinking",
+      "Avoid every trigger"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3v5di463akvk",
+     "question": "In the 5 steps, what comes after NAME IT?",
+     "answer": "PAUSE — don't argue with it",
+     "wrong": [
+      "SHOUT",
+      "OBEY",
+      "HIDE"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "bwfgpwen35tq",
+     "question": "The inner critic is NOT the truth. It's a…",
+     "answer": "Learned pattern of thinking",
+     "wrong": [
+      "Fact about you",
+      "Prediction",
+      "Warning from your conscience"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "vcfdcseb3qmz",
+     "question": "Working with your inner critic most directly supports which skill?",
+     "answer": "Self-efficacy — believing you can make change",
+     "wrong": [
+      "Saying no to others",
+      "Following a routine",
+      "Speed"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
     }
    ]
   },
@@ -31791,6 +36222,270 @@ window.GS_MY_CONTENT = {
       {
        "word": "hopeful",
        "clue": "Looking forward with good feelings"
+      }
+     ]
+    },
+    {
+     "id": "wjuk3yt05loy",
+     "title": "Strength-Based Thinking",
+     "entries": [
+      {
+       "word": "strengths",
+       "clue": "What you build on in strength-based thinking"
+      },
+      {
+       "word": "reframe",
+       "clue": "Change how you see it to find the strength"
+      },
+      {
+       "word": "resilience",
+       "clue": "The ability to bounce back"
+      },
+      {
+       "word": "inventory",
+       "clue": "A Strength ___: a list of what you do well"
+      },
+      {
+       "word": "deficit",
+       "clue": "A ___-based view focuses on what you lack"
+      },
+      {
+       "word": "growth",
+       "clue": "___ mindset: abilities can grow with effort"
+      },
+      {
+       "word": "selfefficacy",
+       "clue": "Belief that your actions can lead to good outcomes (one word)"
+      },
+      {
+       "word": "hope",
+       "clue": "Believing change is possible"
+      },
+      {
+       "word": "courage",
+       "clue": "'I keep trying — that takes ___'"
+      },
+      {
+       "word": "notice",
+       "clue": "Step 1: ___ the negative label"
+      },
+      {
+       "word": "survived",
+       "clue": "Hard things you've ___ reveal real strength"
+      },
+      {
+       "word": "perspective",
+       "clue": "What living through hard things can give you"
+      },
+      {
+       "word": "practice",
+       "clue": "It takes ___, not perfection"
+      },
+      {
+       "word": "capable",
+       "clue": "Able to do what you set your mind to"
+      },
+      {
+       "word": "focus",
+       "clue": "What you ___ on grows"
+      }
+     ]
+    },
+    {
+     "id": "nq4f1sc4zhiq",
+     "title": "Holiday Cards",
+     "entries": [
+      {
+       "word": "card",
+       "clue": "Folded paper with a message inside"
+      },
+      {
+       "word": "envelope",
+       "clue": "What you put a card in to mail it"
+      },
+      {
+       "word": "stamp",
+       "clue": "Stick one on before you mail it"
+      },
+      {
+       "word": "gratitude",
+       "clue": "'I'm grateful for you because…' practices this"
+      },
+      {
+       "word": "message",
+       "clue": "The most important part — what you write inside"
+      },
+      {
+       "word": "cardstock",
+       "clue": "Sturdy paper for cards"
+      },
+      {
+       "word": "markers",
+       "clue": "Colorful tools for drawing"
+      },
+      {
+       "word": "stickers",
+       "clue": "Peel-and-stick decorations"
+      },
+      {
+       "word": "recipient",
+       "clue": "The person who gets your card"
+      },
+      {
+       "word": "handmade",
+       "clue": "Made by you, not bought"
+      },
+      {
+       "word": "connection",
+       "clue": "What a card builds between people"
+      },
+      {
+       "word": "snowflake",
+       "clue": "A paper ___: cut-out winter design"
+      },
+      {
+       "word": "mindfulness",
+       "clue": "Slowing down and being present"
+      },
+      {
+       "word": "thinking",
+       "clue": "'I was ___ of you'"
+      },
+      {
+       "word": "sign",
+       "clue": "___ your name at the end"
+      }
+     ]
+    },
+    {
+     "id": "oy1smls4p7n7",
+     "title": "Intrusive Thoughts",
+     "entries": [
+      {
+       "word": "intrusive",
+       "clue": "Unwanted thoughts that pop up uninvited"
+      },
+      {
+       "word": "label",
+       "clue": "Step 2: call it 'just a thought'"
+      },
+      {
+       "word": "acknowledge",
+       "clue": "Step 1: 'I'm having a thought right now'"
+      },
+      {
+       "word": "cloud",
+       "clue": "Let it pass like one of these across the sky"
+      },
+      {
+       "word": "suppress",
+       "clue": "Push away — which backfires"
+      },
+      {
+       "word": "rebound",
+       "clue": "The ___ effect: pushed-away thoughts come back stronger"
+      },
+      {
+       "word": "defusion",
+       "clue": "Creating distance from a thought"
+      },
+      {
+       "word": "elephant",
+       "clue": "Try NOT to think of a pink one"
+      },
+      {
+       "word": "weather",
+       "clue": "You are the sky; thoughts are the ___"
+      },
+      {
+       "word": "values",
+       "clue": "Being bothered by a thought shows these are intact"
+      },
+      {
+       "word": "mindfulness",
+       "clue": "Noticing without judging"
+      },
+      {
+       "word": "return",
+       "clue": "Step 5: gently come back to the present"
+      },
+      {
+       "word": "noise",
+       "clue": "'That's just my brain generating ___'"
+      },
+      {
+       "word": "everyone",
+       "clue": "Who has intrusive thoughts? Nearly ___"
+      },
+      {
+       "word": "fact",
+       "clue": "A thought is not one of these"
+      }
+     ]
+    },
+    {
+     "id": "vqrhfauq0enb",
+     "title": "Inner Critics",
+     "entries": [
+      {
+       "word": "critic",
+       "clue": "The harsh inner voice that judges you"
+      },
+      {
+       "word": "compassion",
+       "clue": "Self-___: kindness toward yourself"
+      },
+      {
+       "word": "conscience",
+       "clue": "Guides you toward values — not the same as the critic"
+      },
+      {
+       "word": "pattern",
+       "clue": "The critic is a learned ___ of thinking"
+      },
+      {
+       "word": "pause",
+       "clue": "Step 2: don't argue — just ___"
+      },
+      {
+       "word": "friend",
+       "clue": "'Would I say this to a ___?'"
+      },
+      {
+       "word": "redirect",
+       "clue": "Step 5: choose a kinder thought"
+      },
+      {
+       "word": "kinder",
+       "clue": "Building a ___ inner voice"
+      },
+      {
+       "word": "standards",
+       "clue": "High ___ motivate; the critic paralyzes"
+      },
+      {
+       "word": "shame",
+       "clue": "The critic often carries and amplifies this"
+      },
+      {
+       "word": "neff",
+       "clue": "Kristin ___: self-compassion researcher"
+      },
+      {
+       "word": "journaling",
+       "clue": "Writing to notice, name and respond"
+      },
+      {
+       "word": "enough",
+       "clue": "'You are ___' — a kind reply to the critic"
+      },
+      {
+       "word": "grace",
+       "clue": "Give yourself ___"
+      },
+      {
+       "word": "voice",
+       "clue": "The inner critic is one of these in your head"
       }
      ]
     }
@@ -36995,6 +41690,806 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Picturing your happy place can lower your heart rate",
      "answer": "Fact"
+    },
+    {
+     "id": "n4g5kq3gu9t3",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 100,
+     "clue": "'I keep failing' becomes 'I keep ___'",
+     "answer": "Trying"
+    },
+    {
+     "id": "5b6mspcvghok",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 200,
+     "clue": "'I have nothing to offer' becomes 'I know what I don't want — that's ___'",
+     "answer": "Clarity"
+    },
+    {
+     "id": "j3l7xqyysp7e",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 300,
+     "clue": "'I've made too many mistakes' becomes 'that gives me ___'",
+     "answer": "Perspective"
+    },
+    {
+     "id": "cgcpqu8z4lfs",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 400,
+     "clue": "'No one believes in me' becomes 'I'm still ___'",
+     "answer": "Here"
+    },
+    {
+     "id": "6doz025bsq6k",
+     "board": "Strength-Based Thinking",
+     "category": "Reframe It",
+     "value": 500,
+     "clue": "Changing how you see a situation to find the strength in it",
+     "answer": "Reframing"
+    },
+    {
+     "id": "5cik9azpicaf",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 100,
+     "clue": "Step 1: catch the negative label",
+     "answer": "Notice"
+    },
+    {
+     "id": "4b9og9kxys2e",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 200,
+     "clue": "Step 2: 'Is this 100% true?'",
+     "answer": "Ask"
+    },
+    {
+     "id": "wzuyzyhja6jo",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 300,
+     "clue": "Step 3: find the strength the situation reveals",
+     "answer": "Reframe"
+    },
+    {
+     "id": "5g8n7fh5giwz",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 400,
+     "clue": "Step 4: your brain believes what it reads",
+     "answer": "Write it down"
+    },
+    {
+     "id": "vro2vicewvgg",
+     "board": "Strength-Based Thinking",
+     "category": "The 5 Steps",
+     "value": 500,
+     "clue": "Step 5: it takes practice, not perfection",
+     "answer": "Repeat"
+    },
+    {
+     "id": "el2fvjazm1x4",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 100,
+     "clue": "Hard seasons you've made it through",
+     "answer": "Things you've survived"
+    },
+    {
+     "id": "39fgcu63xmi1",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 200,
+     "clue": "Lessons from school, work or life",
+     "answer": "Things you've learned"
+    },
+    {
+     "id": "z11p72d24bfg",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 300,
+     "clue": "Skills, talents and habits",
+     "answer": "Things you do well"
+    },
+    {
+     "id": "g0rq7zq218qk",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 400,
+     "clue": "Things people thank or ___ you for",
+     "answer": "Trust"
+    },
+    {
+     "id": "4qchqi6ck2ub",
+     "board": "Strength-Based Thinking",
+     "category": "Where Strengths Come From",
+     "value": 500,
+     "clue": "Small daily acts of character done without being ___",
+     "answer": "Asked"
+    },
+    {
+     "id": "hnjnlnzkqlsw",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 100,
+     "clue": "Believing abilities can grow with effort",
+     "answer": "Growth mindset"
+    },
+    {
+     "id": "dbbt4tprzlz9",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 200,
+     "clue": "Focusing mostly on what you lack",
+     "answer": "Deficit-based thinking"
+    },
+    {
+     "id": "weksxdz3auj6",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 300,
+     "clue": "Believing your actions can make a difference",
+     "answer": "Self-efficacy"
+    },
+    {
+     "id": "j5g1kinr31mc",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 400,
+     "clue": "The value strength-based thinking supports most — believing change is possible",
+     "answer": "Hope"
+    },
+    {
+     "id": "wyf30xqfcjyw",
+     "board": "Strength-Based Thinking",
+     "category": "Mindset Matters",
+     "value": 500,
+     "clue": "Finish it: what you focus on ___",
+     "answer": "Grows"
+    },
+    {
+     "id": "ycvisxwfp433",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 100,
+     "clue": "A personal list of what you do well and have overcome",
+     "answer": "A Strength Inventory"
+    },
+    {
+     "id": "p51pbg31x348",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 200,
+     "clue": "Recognizing your strengths isn't arrogance — it's accurate self-___",
+     "answer": "Knowledge"
+    },
+    {
+     "id": "cejdgdkrad2t",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 300,
+     "clue": "They often see strengths in us we can't see ourselves",
+     "answer": "Other people"
+    },
+    {
+     "id": "07e405rrlmjo",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 400,
+     "clue": "Strength-based thinking is most valuable on these kinds of days",
+     "answer": "Hard days"
+    },
+    {
+     "id": "nsnplbi85nbv",
+     "board": "Strength-Based Thinking",
+     "category": "Know Your Strengths",
+     "value": 500,
+     "clue": "The bounce-back strength revealed by surviving hardship",
+     "answer": "Resilience"
+    },
+    {
+     "id": "343tejqd34w5",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 100,
+     "clue": "Step 1: decide who you're making it for",
+     "answer": "Choose your recipient"
+    },
+    {
+     "id": "1gfx1w5euni1",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 200,
+     "clue": "Step 2: think about colors, images and symbols that fit",
+     "answer": "Plan your design"
+    },
+    {
+     "id": "6z0bhhk0g9u2",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 300,
+     "clue": "Step 3: decorate the front",
+     "answer": "Create the outside"
+    },
+    {
+     "id": "1huvqkihmkn3",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 400,
+     "clue": "Step 4: say what you really feel inside",
+     "answer": "Write your message"
+    },
+    {
+     "id": "bj3w4d5dk7yg",
+     "board": "Holiday Cards",
+     "category": "Card Steps",
+     "value": 500,
+     "clue": "Step 5: sign it and decide to give, keep or mail it",
+     "answer": "Finish and share"
+    },
+    {
+     "id": "pisyv0hvrb35",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 100,
+     "clue": "'This season, I'm grateful for you because…' practices this",
+     "answer": "Gratitude"
+    },
+    {
+     "id": "g03levcw9tpn",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 200,
+     "clue": "'I want you to know that you ___ to me because…'",
+     "answer": "Matter"
+    },
+    {
+     "id": "oroigae5uvq9",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 300,
+     "clue": "'As we head into the new ___, I hope for you…'",
+     "answer": "Year"
+    },
+    {
+     "id": "6bj2917db7rr",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 400,
+     "clue": "'You have helped me ___…'",
+     "answer": "By"
+    },
+    {
+     "id": "jncrktlkn3z8",
+     "board": "Holiday Cards",
+     "category": "Message Starters",
+     "value": 500,
+     "clue": "Message starters beat this kind of anxiety",
+     "answer": "Blank-page anxiety"
+    },
+    {
+     "id": "qpmyr1msn1z9",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 100,
+     "clue": "Folded paper or this sturdier stock",
+     "answer": "Cardstock"
+    },
+    {
+     "id": "zpppg7ai0vlu",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 200,
+     "clue": "Colorful tools for drawing",
+     "answer": "Markers or colored pencils"
+    },
+    {
+     "id": "0q6mvgpyee4e",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 300,
+     "clue": "Optional decorations you peel and stick",
+     "answer": "Stickers"
+    },
+    {
+     "id": "ge7rvq1dl6fq",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 400,
+     "clue": "Ink designs you press onto paper",
+     "answer": "Stamps"
+    },
+    {
+     "id": "vtmh6yu21k36",
+     "board": "Holiday Cards",
+     "category": "Supplies",
+     "value": 500,
+     "clue": "The most important ingredient of all",
+     "answer": "Your own words"
+    },
+    {
+     "id": "9w5qjhy3j5pm",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 100,
+     "clue": "A card says: 'I was ___ about you'",
+     "answer": "Thinking"
+    },
+    {
+     "id": "lmmdxpbgsbw9",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 200,
+     "clue": "Making something by hand helps you slow down and practice this",
+     "answer": "Mindfulness"
+    },
+    {
+     "id": "rj9empv51112",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 300,
+     "clue": "Writing to yourself kindly practices self-___",
+     "answer": "Compassion"
+    },
+    {
+     "id": "vkbbcpqc0ay7",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 400,
+     "clue": "Handmade cards show this — time and thought",
+     "answer": "Care / effort"
+    },
+    {
+     "id": "2kxzkfjx0he3",
+     "board": "Holiday Cards",
+     "category": "Why Cards Matter",
+     "value": 500,
+     "clue": "The skills practiced — gratitude and connection — apply this many days a year",
+     "answer": "365 (every day)"
+    },
+    {
+     "id": "y05yhtq19fdl",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You have to be artistic to make a meaningful card",
+     "answer": "Myth"
+    },
+    {
+     "id": "rl0kmfp4kl0c",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Card-making can reduce stress",
+     "answer": "Fact"
+    },
+    {
+     "id": "atmu0oo6o8dk",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "If you have no one to send it to, there's no point",
+     "answer": "Myth"
+    },
+    {
+     "id": "40kzqmfj4akz",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Writing feelings gets easier with practice",
+     "answer": "Fact"
+    },
+    {
+     "id": "qziixhzvkjr1",
+     "board": "Holiday Cards",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Your card needs to look store-bought",
+     "answer": "Myth"
+    },
+    {
+     "id": "rnkkjshb7sxd",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 100,
+     "clue": "Step 1: 'I'm having an intrusive thought right now'",
+     "answer": "Acknowledge"
+    },
+    {
+     "id": "p39nv9990gwz",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 200,
+     "clue": "Step 2: 'That's just my brain generating noise'",
+     "answer": "Label it"
+    },
+    {
+     "id": "wu4th6av9fq6",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 300,
+     "clue": "Step 3: notice it like a passing car — don't chase it",
+     "answer": "Don't engage"
+    },
+    {
+     "id": "x8wl5dbm06m7",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 400,
+     "clue": "Step 4: imagine it like a cloud moving across the sky",
+     "answer": "Let it pass"
+    },
+    {
+     "id": "4pw0vp9n4xjc",
+     "board": "Intrusive Thoughts",
+     "category": "The 5 Steps",
+     "value": 500,
+     "clue": "Step 5: gently bring your attention back",
+     "answer": "Return"
+    },
+    {
+     "id": "quf92r40y352",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 100,
+     "clue": "Trying hard NOT to think about it",
+     "answer": "Suppressing it"
+    },
+    {
+     "id": "1738ur5y3txq",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 200,
+     "clue": "When a pushed-away thought comes back stronger",
+     "answer": "The rebound effect"
+    },
+    {
+     "id": "z09dgk6j7kzj",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 300,
+     "clue": "This colorful animal shows suppression doesn't work",
+     "answer": "A pink elephant"
+    },
+    {
+     "id": "4ui44qbqe891",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 400,
+     "clue": "Believing 'I had it, so I must want it'",
+     "answer": "Treating it as meaningful"
+    },
+    {
+     "id": "ux4c754puz0e",
+     "board": "Intrusive Thoughts",
+     "category": "What Makes It Worse",
+     "value": 500,
+     "clue": "Staying away from triggers keeps this alive",
+     "answer": "Anxiety"
+    },
+    {
+     "id": "hwiqz2pk6zik",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 100,
+     "clue": "How many people have intrusive thoughts?",
+     "answer": "Nearly everyone"
+    },
+    {
+     "id": "daj2mxvuc0fw",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 200,
+     "clue": "Our brains make thousands of these every day",
+     "answer": "Thoughts"
+    },
+    {
+     "id": "bb70nicwlvcv",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 300,
+     "clue": "A thought that clashes with your values",
+     "answer": "Ego-dystonic"
+    },
+    {
+     "id": "h2teyj6a4kqd",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 400,
+     "clue": "Stress, anxiety and this can make them more frequent",
+     "answer": "Fatigue / tiredness"
+    },
+    {
+     "id": "kumxjts6xza3",
+     "board": "Intrusive Thoughts",
+     "category": "Brain Facts",
+     "value": 500,
+     "clue": "Being bothered by a thought shows these are intact",
+     "answer": "Your values"
+    },
+    {
+     "id": "6jrn1e4uplm4",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 100,
+     "clue": "Creating distance from a thought",
+     "answer": "Defusion"
+    },
+    {
+     "id": "fadf9rxoso31",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 200,
+     "clue": "You are the sky; thoughts are the ___",
+     "answer": "Weather"
+    },
+    {
+     "id": "ilyhog7aimr7",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 300,
+     "clue": "Noticing thoughts without judging them",
+     "answer": "Mindfulness"
+    },
+    {
+     "id": "a80fe5acki79",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 400,
+     "clue": "Therapy often used for OCD-related thoughts",
+     "answer": "ERP"
+    },
+    {
+     "id": "bcsfl7mof6kf",
+     "board": "Intrusive Thoughts",
+     "category": "Helpful Tools",
+     "value": 500,
+     "clue": "Therapists are trained to tell thoughts apart from these",
+     "answer": "Intentions"
+    },
+    {
+     "id": "544mygf3q0bx",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 100,
+     "clue": "Unwanted and automatic",
+     "answer": "An intrusive thought"
+    },
+    {
+     "id": "cfoa3qlmonsp",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 200,
+     "clue": "Deliberate and chosen",
+     "answer": "A plan"
+    },
+    {
+     "id": "8ispz8ov1481",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 300,
+     "clue": "A thought is not a fact, a plan, or a reflection of ___",
+     "answer": "Who you are"
+    },
+    {
+     "id": "qp2bw8ievnbq",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 400,
+     "clue": "Sharing them with a counselor is an act of this",
+     "answer": "Courage"
+    },
+    {
+     "id": "gz12cctzz3zm",
+     "board": "Intrusive Thoughts",
+     "category": "Thoughts vs. Facts",
+     "value": 500,
+     "clue": "Get extra support when thoughts are constant or interfere with this",
+     "answer": "Daily life"
+    },
+    {
+     "id": "3e335mp7hx1e",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 100,
+     "clue": "Step 1: 'That's my inner critic talking — not the truth'",
+     "answer": "Name it"
+    },
+    {
+     "id": "43ly69zfgda2",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 200,
+     "clue": "Step 2: don't argue — arguing gives it power",
+     "answer": "Pause"
+    },
+    {
+     "id": "ag0on13i2ki2",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 300,
+     "clue": "Step 3: 'Would I say this to someone I love?'",
+     "answer": "Ask"
+    },
+    {
+     "id": "nzfu2boglebq",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 400,
+     "clue": "Step 4: offer yourself what you'd offer a friend",
+     "answer": "Respond with compassion"
+    },
+    {
+     "id": "lkml7f7jha8j",
+     "board": "Inner Critics",
+     "category": "The 5 Steps",
+     "value": 500,
+     "clue": "Step 5: choose one kind or accurate thought",
+     "answer": "Redirect"
+    },
+    {
+     "id": "i5x8cejdk1dn",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 100,
+     "clue": "It's not this — which guides you toward your values",
+     "answer": "Your conscience"
+    },
+    {
+     "id": "2ya5s0qpwocv",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 200,
+     "clue": "It's not these — which motivate instead of paralyze",
+     "answer": "High standards"
+    },
+    {
+     "id": "ivjwq74986ag",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 300,
+     "clue": "It may feel like it, but it isn't doing this for you",
+     "answer": "Protecting you"
+    },
+    {
+     "id": "k004trhpygrq",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 400,
+     "clue": "It's not the truth — it's a learned ___",
+     "answer": "Pattern"
+    },
+    {
+     "id": "wixyy1n2z1o4",
+     "board": "Inner Critics",
+     "category": "What It's NOT",
+     "value": 500,
+     "clue": "Real honesty is specific and this — the critic is neither",
+     "answer": "Fair"
+    },
+    {
+     "id": "9o6scg3oqhwg",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 100,
+     "clue": "Treating yourself like you'd treat a struggling friend",
+     "answer": "Self-compassion"
+    },
+    {
+     "id": "2ovf5na00d7i",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 200,
+     "clue": "Researcher who co-developed Mindful Self-Compassion",
+     "answer": "Kristin Neff"
+    },
+    {
+     "id": "raxvs0e31r76",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 300,
+     "clue": "People with kinder inner voices do this faster after setbacks",
+     "answer": "Bounce back / recover"
+    },
+    {
+     "id": "y3s7flltrck8",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 400,
+     "clue": "Self-compassion supports this — without shame spirals",
+     "answer": "Accountability"
+    },
+    {
+     "id": "4fp0ok0lukdp",
+     "board": "Inner Critics",
+     "category": "Self-Compassion",
+     "value": 500,
+     "clue": "Writing it down to notice, name and respond to the critic",
+     "answer": "Journaling"
+    },
+    {
+     "id": "po90g6lrhmi7",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 100,
+     "clue": "Critic or kind? 'You always mess up.'",
+     "answer": "Critic"
+    },
+    {
+     "id": "4cgsesuxi95r",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 200,
+     "clue": "Critic or kind? 'This is hard, and that's okay.'",
+     "answer": "Kind"
+    },
+    {
+     "id": "5nr3gh764r7f",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 300,
+     "clue": "Critic or kind? 'You're not good enough.'",
+     "answer": "Critic"
+    },
+    {
+     "id": "k17w1mptfref",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 400,
+     "clue": "Critic or kind? 'What can I do differently next time?'",
+     "answer": "Kind"
+    },
+    {
+     "id": "420485njmybr",
+     "board": "Inner Critics",
+     "category": "Spot the Critic",
+     "value": 500,
+     "clue": "Critic or kind? 'You don't deserve good things.'",
+     "answer": "Critic"
+    },
+    {
+     "id": "2f0ygsm9da98",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 100,
+     "clue": "The goal: change your ___ with the critic so it has less power",
+     "answer": "Relationship"
+    },
+    {
+     "id": "k4uarkcnetax",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 200,
+     "clue": "The question to ask a friend in your head: 'What would I ___ to a friend?'",
+     "answer": "Say"
+    },
+    {
+     "id": "ilj2i8xrmttp",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 300,
+     "clue": "Replacing harsh inner messages with honest, kind ones",
+     "answer": "Building a kinder inner voice"
+    },
+    {
+     "id": "wd8tzknm7jvp",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 400,
+     "clue": "Changing your inner voice takes this — and that's okay",
+     "answer": "Time"
+    },
+    {
+     "id": "yo0czoef9lyw",
+     "board": "Inner Critics",
+     "category": "A Kinder Voice",
+     "value": 500,
+     "clue": "Believing you have what it takes to make change",
+     "answer": "Self-efficacy"
     }
    ],
    "wheel": [
@@ -40396,6 +45891,486 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Your Happy Place"
      ]
+    },
+    {
+     "id": "j2m7wqepp4tw",
+     "category": "Phrase",
+     "phrase": "I KEEP TRYING",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "c2yzqouek5xr",
+     "category": "Phrase",
+     "phrase": "WHAT YOU FOCUS ON GROWS",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "17m3ub9jk54c",
+     "category": "Thing",
+     "phrase": "A GROWTH MINDSET",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "3160epuozr8q",
+     "category": "Thing",
+     "phrase": "A STRENGTH INVENTORY",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "9iokx1fhhu81",
+     "category": "Phrase",
+     "phrase": "STILL STANDING",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "jvu5ub5mdxw9",
+     "category": "Thing",
+     "phrase": "INNER RESILIENCE",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "rrwrq4zb0777",
+     "category": "Phrase",
+     "phrase": "LOOK HOW FAR YOU HAVE COME",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "1uii6p2uba9f",
+     "category": "Phrase",
+     "phrase": "PRACTICE NOT PERFECTION",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "9x7rmw2lnxe6",
+     "category": "Thing",
+     "phrase": "HIDDEN TALENTS",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "oyf0n99lir4n",
+     "category": "Phrase",
+     "phrase": "GIVE YOURSELF CREDIT",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ybicwi4gn11x",
+     "category": "Event",
+     "phrase": "WRITING DOWN A WIN",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "2dy7dyvj5nb2",
+     "category": "Phrase",
+     "phrase": "YOU ARE CAPABLE",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ygl1nv3ybknc",
+     "category": "Thing",
+     "phrase": "A FRESH PERSPECTIVE",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "2e1agk4kexrb",
+     "category": "Phrase",
+     "phrase": "FLIP THE SCRIPT",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "7ousvsgbvit8",
+     "category": "Thing",
+     "phrase": "QUIET COURAGE",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "5027b6uooqqo",
+     "category": "Phrase",
+     "phrase": "THINKING OF YOU",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3t3j9yo38zqb",
+     "category": "Phrase",
+     "phrase": "SEASONS GREETINGS",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "afwsrmlyxzq4",
+     "category": "Thing",
+     "phrase": "A HANDMADE CARD",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "psthwm888yla",
+     "category": "Phrase",
+     "phrase": "HAPPY NEW YEAR",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "wrszm7iee2w5",
+     "category": "Thing",
+     "phrase": "MARKERS AND STICKERS",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ggmx0chdb767",
+     "category": "Phrase",
+     "phrase": "YOU MATTER TO ME",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "fws6v824512d",
+     "category": "Thing",
+     "phrase": "A HEARTFELT MESSAGE",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "cui0eadczmfc",
+     "category": "Event",
+     "phrase": "MAILING A CARD",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "8hfyjj90qfuf",
+     "category": "Phrase",
+     "phrase": "WARM WISHES",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "z3zf4pnc9ai5",
+     "category": "Thing",
+     "phrase": "A SNOWFLAKE DESIGN",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "e3z5hw3ges21",
+     "category": "Phrase",
+     "phrase": "FROM THE HEART",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "xn7su3r6ut8i",
+     "category": "Event",
+     "phrase": "SIGNING YOUR NAME",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "sjo4dk7nv5p9",
+     "category": "Thing",
+     "phrase": "A ROLL OF STAMPS",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "bmfnvoqxs5gp",
+     "category": "Phrase",
+     "phrase": "PEACE AND JOY",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "at4nuan54ivz",
+     "category": "Thing",
+     "phrase": "FOLDED CARDSTOCK",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "cg2mghyjhruj",
+     "category": "Phrase",
+     "phrase": "A THOUGHT IS NOT A FACT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "lhww6rb33qow",
+     "category": "Phrase",
+     "phrase": "LET IT PASS",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "uuphmw8v0oor",
+     "category": "Thing",
+     "phrase": "A PINK ELEPHANT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "tunarv5bpc8i",
+     "category": "Phrase",
+     "phrase": "JUST BRAIN NOISE",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "9vi0ltb77q0y",
+     "category": "Thing",
+     "phrase": "CLOUDS DRIFTING BY",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ix4mm4oyw3uo",
+     "category": "Phrase",
+     "phrase": "YOU ARE THE SKY",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "abskq4e9d1z2",
+     "category": "Phrase",
+     "phrase": "NOTICE AND RETURN",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "owntz4zi94o9",
+     "category": "Thing",
+     "phrase": "A PASSING CAR",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "fr4a72zxo4am",
+     "category": "Phrase",
+     "phrase": "LABEL IT AND MOVE ON",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "pj4qr0g8gkmf",
+     "category": "Thing",
+     "phrase": "A CALM MIND",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "w7tp5nzib9gq",
+     "category": "Phrase",
+     "phrase": "DON'T CHASE IT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "tim8tl5y5qnp",
+     "category": "Event",
+     "phrase": "COMING BACK TO THE PRESENT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "49we76hbpote",
+     "category": "Thing",
+     "phrase": "MINDFUL BREATHING",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "4zllbq8dc05u",
+     "category": "Phrase",
+     "phrase": "THOUGHTS ARE LIKE WEATHER",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "frmptjjzzazo",
+     "category": "Phrase",
+     "phrase": "YOUR VALUES ARE INTACT",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "90n47o82rvxp",
+     "category": "Phrase",
+     "phrase": "BE KIND TO YOURSELF",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "md3a11gisstr",
+     "category": "Phrase",
+     "phrase": "NOT THE TRUTH",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ot1nfgb75fji",
+     "category": "Thing",
+     "phrase": "A KINDER INNER VOICE",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "zw6uxmy05x4p",
+     "category": "Phrase",
+     "phrase": "WHAT WOULD I SAY TO A FRIEND",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3gpps59i76uq",
+     "category": "Thing",
+     "phrase": "SELF COMPASSION",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "vuki6vo5l67h",
+     "category": "Phrase",
+     "phrase": "NAME IT AND PAUSE",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "dzjbutfhroc1",
+     "category": "Phrase",
+     "phrase": "YOU ARE ENOUGH",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "iddv50cxfhm4",
+     "category": "Thing",
+     "phrase": "GENTLE WORDS",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "x8ft849ze6df",
+     "category": "Phrase",
+     "phrase": "PROGRESS NOT PERFECTION",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3c0lp4axx9cg",
+     "category": "Phrase",
+     "phrase": "TALK TO YOURSELF LIKE A FRIEND",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ord63cdz5t48",
+     "category": "Thing",
+     "phrase": "A PEP TALK",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "g9vjcuf0aav9",
+     "category": "Phrase",
+     "phrase": "GOOD ENOUGH IS GOOD",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3qhk0ou9vyu7",
+     "category": "Thing",
+     "phrase": "A SECOND CHANCE",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "cc1py88nj83m",
+     "category": "Phrase",
+     "phrase": "GIVE YOURSELF GRACE",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "6shtezbcu5km",
+     "category": "Thing",
+     "phrase": "AN INNER CHEERLEADER",
+     "sets": [
+      "Inner Critics"
+     ]
     }
    ],
    "words": [
@@ -43170,6 +49145,355 @@ window.GS_MY_CONTENT = {
      "hint": "Happy Place",
      "sets": [
       "Your Happy Place"
+     ]
+    },
+    {
+     "id": "2mjtr5mp6omn",
+     "word": "SKILL",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "tfmje981ql3d",
+     "word": "BRAVE",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "tmiuagxy75dp",
+     "word": "TOUGH",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "qqx5o81xjs56",
+     "word": "SHINE",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "dysbxb9y0et0",
+     "word": "HOPES",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "a93fvigwp1tk",
+     "word": "GIFTS",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking",
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "v9rl4qxdrkg1",
+     "word": "PROUD",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ti5l2tn55m9d",
+     "word": "ROOTS",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "qhe3vfw1swd8",
+     "word": "FOCUS",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "50ldyykhrtw8",
+     "word": "WORTH",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "d5fhafgqo3xp",
+     "word": "TRIED",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "6fn5eno018pg",
+     "word": "VALOR",
+     "hint": "Strengths",
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "5ny4uxrf546z",
+     "word": "CARDS",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "5jk51pwojh9n",
+     "word": "MERRY",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "xa7zw6s3g8qy",
+     "word": "SNOWY",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "83njkqvynkqh",
+     "word": "STAMP",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "sr5qmwumbvrc",
+     "word": "CHEER",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "6o8nz90phacw",
+     "word": "MAILS",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "wx37hmy975ra",
+     "word": "WARMS",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "mheu79zw0s7v",
+     "word": "JOLLY",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "okjy0k9j8onl",
+     "word": "PAPER",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "j6x52dwiork9",
+     "word": "GLUED",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "hqsfvy7m6mkm",
+     "word": "HAPPY",
+     "hint": "Holiday Cards",
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "84gjj605asd3",
+     "word": "CLOUD",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "lefqdn8pk47q",
+     "word": "NOISE",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "jkyphu2f78em",
+     "word": "LABEL",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "8auio7foh2ko",
+     "word": "PAUSE",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "u3ggftr0pm3v",
+     "word": "DRIFT",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "vtopwrsptree",
+     "word": "MINDS",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "gfwd6jj76erh",
+     "word": "SKIES",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "8vqgblif2oe5",
+     "word": "STORM",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "1p2ys0fdgbxb",
+     "word": "CALMS",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "4zon6ybyj4yw",
+     "word": "WAVES",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "tsvrzh1aed7y",
+     "word": "FLOAT",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "eih6z8owo380",
+     "word": "NOTED",
+     "hint": "Thoughts",
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "0z64mvc5w6a8",
+     "word": "GRACE",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "zj2diimwnc4d",
+     "word": "VOICE",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "yo4lwb0cif75",
+     "word": "HEART",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "q5jiw8qnhl1o",
+     "word": "TRUTH",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "h07jlv76u19r",
+     "word": "SMILE",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "rej7scyxatf4",
+     "word": "NAMED",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "t78ccdefr7wk",
+     "word": "HEALS",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "9dd779gshe9m",
+     "word": "LOVED",
+     "hint": "Inner Critic",
+     "sets": [
+      "Inner Critics"
      ]
     }
    ],
@@ -48145,6 +54469,1100 @@ window.GS_MY_CONTENT = {
      ],
      "sets": [
       "Your Happy Place"
+     ]
+    },
+    {
+     "id": "nn62gt5w89lh",
+     "word": "a flexed arm",
+     "level": "easy",
+     "banned": [
+      "muscle",
+      "strong",
+      "arm",
+      "bicep"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ds8ycevxgyji",
+     "word": "a trophy",
+     "level": "easy",
+     "banned": [
+      "win",
+      "award",
+      "cup",
+      "prize"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "dyt9t3ij2neb",
+     "word": "a medal",
+     "level": "easy",
+     "banned": [
+      "gold",
+      "win",
+      "ribbon",
+      "olympics"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "orgyvctbxj3r",
+     "word": "a superhero cape",
+     "level": "easy",
+     "banned": [
+      "hero",
+      "cape",
+      "super",
+      "fly"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "64m0q74dkrwi",
+     "word": "a toolbox",
+     "level": "easy",
+     "banned": [
+      "tools",
+      "hammer",
+      "box",
+      "fix"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "jseynoujrj2j",
+     "word": "a lightbulb",
+     "level": "easy",
+     "banned": [
+      "idea",
+      "light",
+      "bright",
+      "bulb"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ofnn2fjavktn",
+     "word": "an oak tree",
+     "level": "easy",
+     "banned": [
+      "tree",
+      "acorn",
+      "strong",
+      "trunk"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "83ebecgxbygf",
+     "word": "a star",
+     "level": "easy",
+     "banned": [
+      "shine",
+      "sky",
+      "twinkle",
+      "night"
+     ],
+     "sets": [
+      "Strength-Based Thinking",
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "308ucpcmb0gs",
+     "word": "a mountain peak",
+     "level": "easy",
+     "banned": [
+      "mountain",
+      "top",
+      "climb",
+      "summit"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "08wgln2y7h7s",
+     "word": "a ladder",
+     "level": "easy",
+     "banned": [
+      "climb",
+      "steps",
+      "rungs",
+      "up"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "c796lejnnhvz",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "banned": [
+      "climb",
+      "mountain",
+      "peak",
+      "top"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "3iza3hqphc36",
+     "word": "lifting weights",
+     "level": "medium",
+     "banned": [
+      "lift",
+      "weights",
+      "gym",
+      "heavy"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "dnsvx97dr89s",
+     "word": "a flower in a sidewalk crack",
+     "level": "medium",
+     "banned": [
+      "flower",
+      "crack",
+      "grow",
+      "concrete"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "8isrhwqweprb",
+     "word": "a pat on the back",
+     "level": "medium",
+     "banned": [
+      "pat",
+      "back",
+      "good job",
+      "hand"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "bcb8toqu179t",
+     "word": "crossing a finish line",
+     "level": "medium",
+     "banned": [
+      "race",
+      "finish",
+      "win",
+      "tape"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "byyqzeb8tbpd",
+     "word": "a butterfly leaving a cocoon",
+     "level": "medium",
+     "banned": [
+      "butterfly",
+      "cocoon",
+      "caterpillar",
+      "wings"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "snt5i0po40mw",
+     "word": "planting a seed",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "seed",
+      "dirt",
+      "grow"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "z0uj7nu71axw",
+     "word": "looking in a mirror and smiling",
+     "level": "medium",
+     "banned": [
+      "mirror",
+      "smile",
+      "reflection",
+      "face"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "d5wnvye8fptx",
+     "word": "a phoenix",
+     "level": "medium",
+     "banned": [
+      "bird",
+      "fire",
+      "rise",
+      "ashes"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "75yidmi8dxxc",
+     "word": "a gold star sticker",
+     "level": "easy",
+     "banned": [
+      "gold",
+      "star",
+      "sticker",
+      "reward"
+     ],
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "sw4mcsrf28ei",
+     "word": "an envelope",
+     "level": "easy",
+     "banned": [
+      "mail",
+      "letter",
+      "stamp",
+      "seal"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "il8t6006pwrn",
+     "word": "a snowflake",
+     "level": "easy",
+     "banned": [
+      "snow",
+      "winter",
+      "cold",
+      "flake"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "b6e9gvq2nwkz",
+     "word": "a candle",
+     "level": "easy",
+     "banned": [
+      "flame",
+      "wax",
+      "light",
+      "wick"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "hz5wmrmubrhi",
+     "word": "a present",
+     "level": "easy",
+     "banned": [
+      "gift",
+      "bow",
+      "wrap",
+      "box"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "v3uil3ijr5dl",
+     "word": "a snowman",
+     "level": "easy",
+     "banned": [
+      "snow",
+      "carrot",
+      "frosty",
+      "winter"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "zbgbrj114qgm",
+     "word": "a mailbox",
+     "level": "easy",
+     "banned": [
+      "mail",
+      "letters",
+      "post",
+      "box"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "4u2b649hiz38",
+     "word": "a mitten",
+     "level": "easy",
+     "banned": [
+      "glove",
+      "hand",
+      "winter",
+      "warm"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ton10mmfwx0m",
+     "word": "a pencil",
+     "level": "easy",
+     "banned": [
+      "write",
+      "lead",
+      "eraser",
+      "draw"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "0i9fuy3ocka6",
+     "word": "a heart",
+     "level": "easy",
+     "banned": [
+      "love",
+      "valentine",
+      "red",
+      "beat"
+     ],
+     "sets": [
+      "Holiday Cards",
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "0w2y08qqiwx0",
+     "word": "writing a card",
+     "level": "medium",
+     "banned": [
+      "write",
+      "card",
+      "pen",
+      "message"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "qpfmmgkrkqsf",
+     "word": "licking a stamp",
+     "level": "medium",
+     "banned": [
+      "stamp",
+      "lick",
+      "mail",
+      "tongue"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "992nqz9ngk49",
+     "word": "wrapping a gift",
+     "level": "medium",
+     "banned": [
+      "wrap",
+      "gift",
+      "paper",
+      "bow"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "lnce49oysxh0",
+     "word": "hanging lights",
+     "level": "medium",
+     "banned": [
+      "lights",
+      "string",
+      "hang",
+      "decorate"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ehuj9ug3njv3",
+     "word": "sledding",
+     "level": "medium",
+     "banned": [
+      "sled",
+      "snow",
+      "hill",
+      "slide"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "m21p88i2sy2r",
+     "word": "hot cocoa by the fire",
+     "level": "medium",
+     "banned": [
+      "cocoa",
+      "fire",
+      "mug",
+      "warm"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "0cgqq5syjwdb",
+     "word": "a gingerbread house",
+     "level": "medium",
+     "banned": [
+      "gingerbread",
+      "candy",
+      "house",
+      "cookie"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "bs34lc0qedff",
+     "word": "making a paper snowflake",
+     "level": "medium",
+     "banned": [
+      "paper",
+      "scissors",
+      "snowflake",
+      "cut"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3f0816bhnisf",
+     "word": "opening a card",
+     "level": "medium",
+     "banned": [
+      "open",
+      "card",
+      "envelope",
+      "read"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "yvk7p7rilsvz",
+     "word": "a winter hat",
+     "level": "easy",
+     "banned": [
+      "hat",
+      "beanie",
+      "cold",
+      "head"
+     ],
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ozdc4r3tw57r",
+     "word": "a cloud",
+     "level": "easy",
+     "banned": [
+      "sky",
+      "fluffy",
+      "white",
+      "rain"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "63e28n0qgiv5",
+     "word": "a pink elephant",
+     "level": "easy",
+     "banned": [
+      "pink",
+      "elephant",
+      "trunk",
+      "animal"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "cu20kgjnitzk",
+     "word": "a brain",
+     "level": "easy",
+     "banned": [
+      "think",
+      "head",
+      "mind",
+      "smart"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5na3wnq433cl",
+     "word": "a thought bubble",
+     "level": "easy",
+     "banned": [
+      "think",
+      "bubble",
+      "comic",
+      "cloud"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ssl0rfwrbgaj",
+     "word": "a car driving by",
+     "level": "easy",
+     "banned": [
+      "car",
+      "drive",
+      "road",
+      "wheels"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "t8t8vmvsmdqg",
+     "word": "a leaf on a stream",
+     "level": "easy",
+     "banned": [
+      "leaf",
+      "water",
+      "float",
+      "river"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "aowl1grfus15",
+     "word": "a radio",
+     "level": "easy",
+     "banned": [
+      "music",
+      "station",
+      "dial",
+      "listen"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "o5jjpjp0qruu",
+     "word": "the sun",
+     "level": "easy",
+     "banned": [
+      "sun",
+      "sky",
+      "hot",
+      "bright"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "qh8tsfirsviq",
+     "word": "a rain cloud",
+     "level": "easy",
+     "banned": [
+      "rain",
+      "cloud",
+      "storm",
+      "drops"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ddomik2fqew3",
+     "word": "a label",
+     "level": "easy",
+     "banned": [
+      "tag",
+      "sticker",
+      "name",
+      "label"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "vudndhl0wag3",
+     "word": "clouds passing by",
+     "level": "medium",
+     "banned": [
+      "clouds",
+      "sky",
+      "float",
+      "drift"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "tanf6jercrxh",
+     "word": "waving goodbye",
+     "level": "medium",
+     "banned": [
+      "wave",
+      "bye",
+      "hand",
+      "leave"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "2my883c796gb",
+     "word": "a train passing",
+     "level": "medium",
+     "banned": [
+      "train",
+      "tracks",
+      "choo",
+      "station"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "drj4358bchqg",
+     "word": "bubbles floating away",
+     "level": "medium",
+     "banned": [
+      "bubbles",
+      "float",
+      "pop",
+      "blow"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "yd40upbdx8v0",
+     "word": "changing the channel",
+     "level": "medium",
+     "banned": [
+      "remote",
+      "TV",
+      "channel",
+      "click"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "78hye6ilq66o",
+     "word": "a balloon floating away",
+     "level": "medium",
+     "banned": [
+      "balloon",
+      "float",
+      "string",
+      "sky"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "8mq22gmz58d0",
+     "word": "watching the weather",
+     "level": "medium",
+     "banned": [
+      "weather",
+      "forecast",
+      "rain",
+      "sun"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "3j02ibfv59vk",
+     "word": "taking a deep breath",
+     "level": "medium",
+     "banned": [
+      "breathe",
+      "inhale",
+      "air",
+      "lungs"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "1i52ohsk1tp5",
+     "word": "a busy highway",
+     "level": "medium",
+     "banned": [
+      "cars",
+      "road",
+      "traffic",
+      "highway"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "onytrqlqy0ev",
+     "word": "a calm lake",
+     "level": "easy",
+     "banned": [
+      "lake",
+      "water",
+      "still",
+      "calm"
+     ],
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "f0po2ixbv3i4",
+     "word": "a megaphone",
+     "level": "easy",
+     "banned": [
+      "loud",
+      "speaker",
+      "yell",
+      "cheer"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "odcusbzl3xvw",
+     "word": "a cheerleader",
+     "level": "easy",
+     "banned": [
+      "cheer",
+      "pom-poms",
+      "team",
+      "rah"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "tqdg45vygg00",
+     "word": "a mirror",
+     "level": "easy",
+     "banned": [
+      "reflection",
+      "look",
+      "glass",
+      "face"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "o82q4ca1twme",
+     "word": "a speech bubble",
+     "level": "easy",
+     "banned": [
+      "talk",
+      "words",
+      "comic",
+      "bubble"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "x50z56y2bow7",
+     "word": "a judge's gavel",
+     "level": "easy",
+     "banned": [
+      "judge",
+      "court",
+      "hammer",
+      "order"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "alkmowxkncrz",
+     "word": "a hug",
+     "level": "easy",
+     "banned": [
+      "arms",
+      "squeeze",
+      "embrace",
+      "cuddle"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "9pi4wm689xw6",
+     "word": "an angel",
+     "level": "easy",
+     "banned": [
+      "wings",
+      "halo",
+      "heaven",
+      "fly"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "2iwnx6619l4o",
+     "word": "a teddy bear",
+     "level": "easy",
+     "banned": [
+      "bear",
+      "stuffed",
+      "toy",
+      "hug"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ktnii4dbanh9",
+     "word": "a gold star",
+     "level": "easy",
+     "banned": [
+      "star",
+      "gold",
+      "sticker",
+      "reward"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "0uohf9cgk8nk",
+     "word": "a pep talk",
+     "level": "medium",
+     "banned": [
+      "pep",
+      "talk",
+      "encourage",
+      "coach"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "otdrws2yr7wz",
+     "word": "giving yourself a hug",
+     "level": "medium",
+     "banned": [
+      "hug",
+      "yourself",
+      "arms",
+      "self"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "llx7vcgww279",
+     "word": "patting yourself on the back",
+     "level": "medium",
+     "banned": [
+      "pat",
+      "back",
+      "good job",
+      "hand"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ghyxy5dur5e7",
+     "word": "turning down the volume",
+     "level": "medium",
+     "banned": [
+      "volume",
+      "quiet",
+      "knob",
+      "loud"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "gy0x8qxhnhty",
+     "word": "a referee blowing a whistle",
+     "level": "medium",
+     "banned": [
+      "referee",
+      "whistle",
+      "ref",
+      "foul"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "f5wlfyuwb7gf",
+     "word": "whispering",
+     "level": "medium",
+     "banned": [
+      "whisper",
+      "quiet",
+      "secret",
+      "ear"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ftq4eoawwuam",
+     "word": "a coach cheering",
+     "level": "medium",
+     "banned": [
+      "coach",
+      "cheer",
+      "team",
+      "whistle"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "n7ypnkfb6xvd",
+     "word": "smiling in the mirror",
+     "level": "medium",
+     "banned": [
+      "smile",
+      "mirror",
+      "face",
+      "reflection"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "2rs9ai4k4f5g",
+     "word": "crossing out a mean word",
+     "level": "medium",
+     "banned": [
+      "cross",
+      "out",
+      "erase",
+      "word"
+     ],
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "9871frfwr5ho",
+     "word": "a thumbs up",
+     "level": "easy",
+     "banned": [
+      "thumb",
+      "good",
+      "okay",
+      "like"
+     ],
+     "sets": [
+      "Inner Critics"
      ]
     }
    ],
@@ -56552,6 +63970,1446 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Your Happy Place"
      ]
+    },
+    {
+     "id": "huu3ia8b5izf",
+     "question": "What is strength-based thinking?",
+     "answer": "Recognizing and building on your skills, values and character",
+     "wrong": [
+      "Only thinking positive thoughts",
+      "A therapy only social workers can use",
+      "Focusing on what you lack"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "o6wapnrj1fi1",
+     "question": "What's a strength-based reframe of 'I keep failing'?",
+     "answer": "'I keep trying — that takes courage.'",
+     "wrong": [
+      "'I need to stop making excuses.'",
+      "'Failure is just life.'",
+      "'I'll succeed once I fix my weaknesses.'"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "tg2zjrvcmdve",
+     "question": "Where do personal strengths often come from?",
+     "answer": "What we've survived, learned and how we treat others",
+     "wrong": [
+      "Only degrees and certificates",
+      "Only affirmations",
+      "Traits fixed at birth"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "rhyj9tw6rl83",
+     "question": "True or false: Strength-based thinking ignores real problems.",
+     "answer": "False — it sees challenges AND your resources",
+     "wrong": [
+      "True — it only looks at the good",
+      "True — problems wait until later",
+      "False — but only with a therapist"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "w2iac3nzoxbf",
+     "question": "What is a 'deficit-based' view of yourself?",
+     "answer": "Focusing mainly on what you lack or what went wrong",
+     "wrong": [
+      "Being realistic about limits",
+      "Using mistakes as motivation",
+      "A medical condition"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "l5dd4125xdty",
+     "question": "What does surviving hardship reveal?",
+     "answer": "Real resilience many people never discover",
+     "wrong": [
+      "That you got lucky",
+      "That you need more help",
+      "Nothing at all"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "1obrk2swprgi",
+     "question": "What is a Strength Inventory?",
+     "answer": "A list of what you do well, have overcome and are valued for",
+     "wrong": [
+      "A clinical test",
+      "A list of weaknesses",
+      "A discharge form"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "jb0mzjk4g83j",
+     "question": "How does strength-based thinking affect motivation?",
+     "answer": "It builds belief that your actions can make a difference",
+     "wrong": [
+      "It removes the need for support",
+      "It guarantees success",
+      "It makes you too comfortable"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "lj74pzqklo1s",
+     "question": "Which field pioneered the strength-based approach?",
+     "answer": "Social work and community counseling",
+     "wrong": [
+      "Forensic psychology",
+      "Nutrition science",
+      "Emergency medicine"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "od85dmbi9v97",
+     "question": "True or false: Recognizing your strengths is arrogant.",
+     "answer": "False — it's accurate self-knowledge",
+     "wrong": [
+      "True — humility means downplaying them",
+      "True — unless an expert names them",
+      "False — only if others agree first"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "4ecl406edsge",
+     "question": "What's the first step in a strength-based reframe?",
+     "answer": "Notice the negative label you're giving yourself",
+     "wrong": [
+      "List everything that went wrong",
+      "Have someone else find your strengths",
+      "Erase all negative self-talk first"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "p9ikahyplpuk",
+     "question": "What is a growth mindset?",
+     "answer": "Believing abilities can grow through effort",
+     "wrong": [
+      "Believing talent is fixed at birth",
+      "Always feeling optimistic",
+      "A technique just for kids"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "6j51v5v9l77b",
+     "question": "How can other people help us see our strengths?",
+     "answer": "They often notice strengths we can't see",
+     "wrong": [
+      "They're the only valid source",
+      "They always exaggerate",
+      "Their opinions should be ignored"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ipxy0lf427b9",
+     "question": "What does 'what you focus on grows' mean?",
+     "answer": "Paying attention to strengths helps them grow",
+     "wrong": [
+      "Thinking about problems makes them worse",
+      "Positive thinking rebuilds your brain",
+      "Only therapy skills grow"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "w7d97qdae9c6",
+     "question": "Which is NOT a strength-based approach?",
+     "answer": "Listing everything you did wrong this year",
+     "wrong": [
+      "Writing three things you did well today",
+      "Asking a friend what they appreciate about you",
+      "Reframing 'I have no support' as 'I'm building support'"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "9g6zexyg5976",
+     "question": "What is self-efficacy?",
+     "answer": "Believing your efforts can lead to good outcomes",
+     "wrong": [
+      "Never needing help",
+      "Your IQ score",
+      "Never making mistakes"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "2i6nzz3zb73z",
+     "question": "What's a simple daily strength-based practice?",
+     "answer": "Write down one thing you did well today",
+     "wrong": [
+      "30 minutes of mirror affirmations",
+      "Never talking about struggles",
+      "Rereading goals every two hours"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "q727varlx0we",
+     "question": "True or false: Strength-based thinking is only for good days.",
+     "answer": "False — it's most valuable on hard days",
+     "wrong": [
+      "True — crises need other tools",
+      "True — it's for later stages",
+      "False — but it takes months to work"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "mqop0iuv8ada",
+     "question": "Which question reflects a strength-based perspective?",
+     "answer": "'What have you overcome that shows you can do this?'",
+     "wrong": [
+      "'Why can't you fix it?'",
+      "'What has to change before you can succeed?'",
+      "'When did things go wrong?'"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "omndizpnv36a",
+     "question": "Self-reflection vs. self-criticism — what's the difference?",
+     "answer": "Reflection leads to growth; criticism paralyzes",
+     "wrong": [
+      "Both should be avoided",
+      "There is no difference",
+      "Criticism is more useful"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "fh14ifm26wa9",
+     "question": "Which value does strength-based thinking support most?",
+     "answer": "Hope — believing change is possible",
+     "wrong": [
+      "Strict routine",
+      "Perfection",
+      "Competition"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "2j2vfymjerhl",
+     "question": "What if you can't think of any strengths?",
+     "answer": "Ask someone who knows you, or start small — like showing up today",
+     "wrong": [
+      "Accept you have none",
+      "Wait until you feel better",
+      "Have someone else fill it in"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "fsu0rhs4x1x4",
+     "question": "In the reframe steps, what comes after NOTICE?",
+     "answer": "ASK — 'Is this 100% true?'",
+     "wrong": [
+      "REPEAT",
+      "IGNORE",
+      "WRITE IT DOWN"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "vyxo0luui2x3",
+     "question": "Why write your strengths down?",
+     "answer": "Your brain believes what it reads",
+     "wrong": [
+      "It's required",
+      "So others can grade them",
+      "It doesn't matter"
+     ],
+     "category": "Strength-Based Thinking",
+     "time": 20,
+     "sets": [
+      "Strength-Based Thinking"
+     ]
+    },
+    {
+     "id": "ayyhkdu2azwu",
+     "question": "What is the main purpose of making a handmade card?",
+     "answer": "To share connection and gratitude in a personal way",
+     "wrong": [
+      "To show off your art skills",
+      "To finish a required task",
+      "To practice fine motor skills"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "gxof11pzx8hn",
+     "question": "What is the MOST important ingredient in a holiday card?",
+     "answer": "An honest, personal message",
+     "wrong": [
+      "Professional artwork",
+      "Expensive glitter",
+      "A rhyming poem"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ccmae1sxkqo2",
+     "question": "What is one benefit of making a card in group?",
+     "answer": "It helps you slow down and be present",
+     "wrong": [
+      "You don't have to talk",
+      "It replaces journaling",
+      "It's art school training"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "0t55b4czad3s",
+     "question": "True or false: You need to be artistic to make a meaningful card.",
+     "answer": "False — the message matters more than the art",
+     "wrong": [
+      "True — a messy card could offend",
+      "True — skill shows you care",
+      "False — but only with store-bought decorations"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "sieunrhmfqqt",
+     "question": "Who can you make a holiday card for?",
+     "answer": "Family, a friend, a group member or your future self",
+     "wrong": [
+      "Only family",
+      "Only staff",
+      "Only people you'll see in person"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3frdk90htg8w",
+     "question": "Which message starter looks forward with hope?",
+     "answer": "'As we head into the new year, I hope for you…'",
+     "wrong": [
+      "'I'm sorry I haven't been in touch…'",
+      "'I know things are hard right now, but…'",
+      "'It's been a while…'"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "e7b505ba5m77",
+     "question": "What skills does writing a card practice?",
+     "answer": "Gratitude, openness and connection",
+     "wrong": [
+      "Confrontation and arguing",
+      "Distraction",
+      "Budgeting"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "wfkiepb4zmw8",
+     "question": "If someone has no one to send a card to, what can they do?",
+     "answer": "Write to their future self or someone in the group",
+     "wrong": [
+      "Skip the activity",
+      "Only make one for staff",
+      "Write to nobody"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3gux09e3zrbc",
+     "question": "Slowing down to make something by hand helps with what?",
+     "answer": "Mindfulness — being in the moment",
+     "wrong": [
+      "Memorizing facts",
+      "Getting faster",
+      "Winning prizes"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "6owdpwhi86a8",
+     "question": "What should you do if you want to start your card over?",
+     "answer": "Ask for a fresh sheet",
+     "wrong": [
+      "Keep going with the messy one",
+      "Wait until next time",
+      "Use the back of a handout"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "esyrlg9zh4ng",
+     "question": "Which is a warm way to open a card?",
+     "answer": "'I was thinking about you and wanted you to know…'",
+     "wrong": [
+      "'I hope you're doing better than me…'",
+      "'You probably don't remember me…'",
+      "'We haven't always gotten along…'"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "lgud6yb1qhlq",
+     "question": "Why do handwritten messages matter?",
+     "answer": "They show someone took time and thought for you",
+     "wrong": [
+      "They're legally binding",
+      "They're cheaper",
+      "They're faster"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "8vj14e90a8ja",
+     "question": "What's a healthy goal for card-making?",
+     "answer": "Put real feelings into words, however simple",
+     "wrong": [
+      "Make the fanciest card",
+      "Finish first",
+      "Use every supply"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "vuh9h5gmcgtv",
+     "question": "Writing a kind card to yourself practices what?",
+     "answer": "Self-compassion",
+     "wrong": [
+      "Arguing",
+      "Budgeting",
+      "Speed writing"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "kpwzd64fyb92",
+     "question": "Why might writing a personal message feel uncomfortable?",
+     "answer": "Sharing feelings can feel new or risky",
+     "wrong": [
+      "You don't know the person",
+      "Cards are silly",
+      "Talking is always better"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "awnwtb9nets8",
+     "question": "What is a 'message starter' for?",
+     "answer": "Beating the blank page when you don't know what to write",
+     "wrong": [
+      "Telling you exactly what to say",
+      "Replacing your own thoughts",
+      "Making it official"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "yjm5gnqmzw31",
+     "question": "What can you do with your card when it's done?",
+     "answer": "Give it, keep it, mail it or display it",
+     "wrong": [
+      "Only hand it in",
+      "Never share it",
+      "Mail it immediately"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "1vs3798tndg3",
+     "question": "True or false: The value of card-making ends when the session ends.",
+     "answer": "False — gratitude and connection carry forward",
+     "wrong": [
+      "True — it's just an activity",
+      "True — unless it's delivered",
+      "False — only with more art groups"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "mpjyraz6ql80",
+     "question": "What does giving something you made yourself communicate?",
+     "answer": "Personal effort and care",
+     "wrong": [
+      "That you couldn't afford a gift",
+      "That they owe you",
+      "That it's less special"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "nucn1qh167oe",
+     "question": "Which group norm matters most while making cards?",
+     "answer": "Respect everyone's creative process — no judging",
+     "wrong": [
+      "Make all cards look the same",
+      "Share before sealing",
+      "Finish before anyone talks"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ksmwtqc5f40k",
+     "question": "What is creative expression?",
+     "answer": "Using art or writing to express feelings",
+     "wrong": [
+      "Performing on stage",
+      "Earning points",
+      "A certified therapy"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "3waoawgbv1ua",
+     "question": "Why is it okay if your card isn't perfect?",
+     "answer": "The intention and message give it value",
+     "wrong": [
+      "People expect less",
+      "Perfection is bad",
+      "Cards get thrown away anyway"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "ledpbbqjm866",
+     "question": "What's the best way to end a card?",
+     "answer": "Something true and specific to that person",
+     "wrong": [
+      "Just 'Happy Holidays'",
+      "A famous quote",
+      "Asking for something back"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "djh1uph39x71",
+     "question": "What's the FIRST step in making your card?",
+     "answer": "Choose who it's for",
+     "wrong": [
+      "Pick the stickers",
+      "Sign your name",
+      "Mail it"
+     ],
+     "category": "Holiday Cards",
+     "time": 20,
+     "sets": [
+      "Holiday Cards"
+     ]
+    },
+    {
+     "id": "iem9ajnj0anu",
+     "question": "What are intrusive thoughts?",
+     "answer": "Unwanted, automatic thoughts that pop up uninvited",
+     "wrong": [
+      "Thoughts that only happen during panic",
+      "Plans you are thinking about doing",
+      "Only memories of past events"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5trfpo4xc8fz",
+     "question": "True or false: Having an intrusive thought means you want to act on it.",
+     "answer": "False — they go against your values and are unwanted",
+     "wrong": [
+      "True — thoughts reveal true desires",
+      "True — if they repeat three times",
+      "False — only for some topics"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "kdhaq92yrr7i",
+     "question": "How many people experience intrusive thoughts?",
+     "answer": "Nearly everyone",
+     "wrong": [
+      "Only people with a diagnosis",
+      "About 10–15% of people",
+      "Only people who've been through trauma"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "wrdhgepjfuuz",
+     "question": "What does 'ego-dystonic' mean?",
+     "answer": "The thought clashes with your values — it's not who you are",
+     "wrong": [
+      "The thought feels comfortable",
+      "It comes from the ego",
+      "It needs medication"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "e0ppuzdq4pqa",
+     "question": "Why does trying to push a thought away often backfire?",
+     "answer": "Fighting it makes it come back more — the rebound effect",
+     "wrong": [
+      "It burns out your brain",
+      "It only works hourly",
+      "It needs a professional"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "1tbg3efg3el6",
+     "question": "What does the 'pink elephant' example show?",
+     "answer": "Trying NOT to think about something brings it back",
+     "wrong": [
+      "Intrusive thoughts are always silly",
+      "Your brain is playful",
+      "Picture animals to calm down"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "xuen02p699mb",
+     "question": "What is 'defusion'?",
+     "answer": "Creating distance from a thought so it has less power",
+     "wrong": [
+      "Blocking the thought",
+      "Replacing it with a positive one",
+      "Arguing until it leaves"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5aht3dobplkw",
+     "question": "Which is a defusion statement?",
+     "answer": "'I'm having the thought that… — but that's just my brain.'",
+     "wrong": [
+      "'I need to prove that thought wrong now.'",
+      "'I must call someone every time.'",
+      "'I should analyze what this means about me.'"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "x4sxuvlwgu0h",
+     "question": "What does the 'sky and weather' metaphor teach?",
+     "answer": "You are the sky — thoughts are weather passing through",
+     "wrong": [
+      "Storms always pass in 24 hours",
+      "Clear clouds before thinking",
+      "Just wait it out"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "6wrw0ekyhxbv",
+     "question": "What can make intrusive thoughts happen more often?",
+     "answer": "Stress, tiredness and anxiety",
+     "wrong": [
+      "Only trauma",
+      "Only caffeine",
+      "Good sleep"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "jnfniffgy3f9",
+     "question": "What does it mean to 'label' a thought?",
+     "answer": "Calling it what it is — 'just a thought, not a plan or fact'",
+     "wrong": [
+      "Rating its danger 1–10",
+      "Giving it a journal title",
+      "Telling the group what it said"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5egqwgfp9rmh",
+     "question": "Which is NOT a healthy response to an intrusive thought?",
+     "answer": "Trying to force it out of your mind",
+     "wrong": [
+      "Naming it without judgment",
+      "Letting it pass",
+      "Remembering it doesn't define you"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "dzd3g7dkd0j4",
+     "question": "How is an intrusive thought different from a plan?",
+     "answer": "It's unwanted and automatic; a plan is chosen",
+     "wrong": [
+      "It's always false",
+      "It only happens once",
+      "There's no difference"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "1evg1cyobdts",
+     "question": "After noticing an intrusive thought, what should you do?",
+     "answer": "Acknowledge, label, let it pass, then return to the present",
+     "wrong": [
+      "Call someone every single time",
+      "Analyze it in detail",
+      "Cover it with an affirmation"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "5piwjj5rj00d",
+     "question": "What do intrusive thoughts say about your character?",
+     "answer": "Nothing — being bothered by them shows your values are intact",
+     "wrong": [
+      "They reveal hidden traits",
+      "Only flawed people have them",
+      "They can measure character"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ht3jgp724pxf",
+     "question": "When should you get extra support for intrusive thoughts?",
+     "answer": "When they're constant or get in the way of daily life",
+     "wrong": [
+      "Only after acting on one",
+      "After 90 days",
+      "Only if a clinician sees them"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "vewfqy25z016",
+     "question": "What does mindfulness teach about thoughts?",
+     "answer": "Notice them without judging or obeying them",
+     "wrong": [
+      "Replace each one with an affirmation",
+      "It makes them disappear forever",
+      "Mindfulness can't handle them"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "6wdoo3fcshz5",
+     "question": "True or false: Telling a therapist about intrusive thoughts will get you in trouble.",
+     "answer": "False — they're trained to tell thoughts from intentions",
+     "wrong": [
+      "True — they must report them",
+      "True — for some thoughts",
+      "False — but sessions will double"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "shxbifl9etex",
+     "question": "What is the rebound effect?",
+     "answer": "A suppressed thought comes back stronger",
+     "wrong": [
+      "It's less upsetting the second time",
+      "It's stored forever",
+      "A different thought replaces it"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "f924ps05runh",
+     "question": "What's a healthy way to view a thought that bothers you?",
+     "answer": "'It bothers me because it's not what I want — my values are intact.'",
+     "wrong": [
+      "'It's a warning sign.'",
+      "'I have to understand it first.'",
+      "'I need much more treatment.'"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "apzkav7jaxsr",
+     "question": "Which therapy is commonly used for OCD-related intrusive thoughts?",
+     "answer": "ERP — Exposure and Response Prevention",
+     "wrong": [
+      "EMDR",
+      "DBT",
+      "IPT"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "7pjn34b79e2y",
+     "question": "What's the most important thing to remember?",
+     "answer": "A thought is not a fact, a plan or who you are",
+     "wrong": [
+      "Thoughts always become actions",
+      "Thought content always has meaning",
+      "They stop only when the cause is fixed"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "7gpzvjsa9196",
+     "question": "In the 5 steps, what do you do right after you ACKNOWLEDGE the thought?",
+     "answer": "LABEL it",
+     "wrong": [
+      "FIGHT it",
+      "SHARE it",
+      "IGNORE it"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "ynh22rftesy1",
+     "question": "In the 5 steps, how should you let a thought pass?",
+     "answer": "Like a cloud moving across the sky",
+     "wrong": [
+      "By shouting it away",
+      "By writing it 10 times",
+      "By holding your breath"
+     ],
+     "category": "Intrusive Thoughts",
+     "time": 20,
+     "sets": [
+      "Intrusive Thoughts"
+     ]
+    },
+    {
+     "id": "paakpp1biigc",
+     "question": "What is the inner critic?",
+     "answer": "An inner voice that judges and criticizes you",
+     "wrong": [
+      "A medical term for low self-esteem",
+      "A trusted person's voice",
+      "A healthy safety alarm"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "ef62s3nza2qb",
+     "question": "Where does the inner critic often come from?",
+     "answer": "Critical messages absorbed early in life",
+     "wrong": [
+      "One brain region in adulthood",
+      "Unchangeable genes",
+      "The same system as dreams"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "g8goxakfpknk",
+     "question": "Inner critic vs. conscience — what's the difference?",
+     "answer": "Conscience guides you to your values; the critic attacks your worth",
+     "wrong": [
+      "They're the same",
+      "Conscience is outside you",
+      "The critic is the positive one"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "7ibpi7bo1445",
+     "question": "True or false: A strong inner critic means you have high standards.",
+     "answer": "False — high standards motivate; the critic paralyzes",
+     "wrong": [
+      "True — it shows you care",
+      "True — people without one underperform",
+      "False — only about looks"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "t52m97i4d52n",
+     "question": "What is self-compassion?",
+     "answer": "Treating yourself with the kindness you'd give a friend",
+     "wrong": [
+      "Making excuses",
+      "Pretending everything's fine",
+      "A clinician-only technique"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "l4s5jllsmifv",
+     "question": "True or false: Being kind to yourself after a mistake is making excuses.",
+     "answer": "False — it supports accountability without shame",
+     "wrong": [
+      "True — feeling bad prevents repeats",
+      "True — unless approved",
+      "False — but only for small mistakes"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3m5tw0xazqfn",
+     "question": "What happens when you argue directly with your inner critic?",
+     "answer": "It often gives the critic more power",
+     "wrong": [
+      "It silences it forever",
+      "It boosts self-worth",
+      "Nothing at all"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3xslnzpi74t2",
+     "question": "What's the first step when the inner critic shows up?",
+     "answer": "Name it — 'That's my inner critic, not the truth'",
+     "wrong": [
+      "Argue with evidence",
+      "Share it with the group",
+      "Distract yourself right away"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "n7kwa0hgkuzk",
+     "question": "What does research on self-compassion show?",
+     "answer": "Kinder inner voices help people bounce back faster",
+     "wrong": [
+      "It makes people lazy",
+      "It only works the first year",
+      "Criticism works better"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "nx968fr2c7x2",
+     "question": "Which sounds like the inner critic — not healthy reflection?",
+     "answer": "'You're broken and don't deserve good things.'",
+     "wrong": [
+      "'What can I do differently next time?'",
+      "'This is hard, and that's okay.'",
+      "'I should ask for help.'"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "lxw9gqn190ob",
+     "question": "Who developed Mindful Self-Compassion?",
+     "answer": "Kristin Neff and Christopher Germer",
+     "wrong": [
+      "Sigmund Freud",
+      "Carl Jung",
+      "B.F. Skinner"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "vh1mvrh9vbar",
+     "question": "Which question helps create distance from an inner critic thought?",
+     "answer": "'Would I say this to someone I love?'",
+     "wrong": [
+      "'Why am I like this?'",
+      "'How bad am I?'",
+      "'Who's to blame?'"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "n3j1edqsjgz7",
+     "question": "Which is NOT a helpful response to the inner critic?",
+     "answer": "Trying to silence it by achieving something huge",
+     "wrong": [
+      "Noticing and labeling it",
+      "Responding like you would to a friend",
+      "Coming back to the present"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "kuhj7o9pipkx",
+     "question": "True or false: The inner critic disappears on its own with time.",
+     "answer": "False — it takes intentional practice to change",
+     "wrong": [
+      "True — time fixes it",
+      "True — after a certain program",
+      "False — it always gets louder"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "b24dcsq78nke",
+     "question": "What is a compassionate response to an inner critic thought?",
+     "answer": "Acknowledge the hurt and offer yourself kindness",
+     "wrong": [
+      "Instantly cover it with an affirmation",
+      "Ignore it forever",
+      "Write a rebuttal"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "r7ixfgitxjxv",
+     "question": "What makes accountability different from the inner critic?",
+     "answer": "Accountability is specific and forward-looking; the critic attacks your whole worth",
+     "wrong": [
+      "Accountability is external",
+      "There's no difference",
+      "Accountability is always painful"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "us4eum18u6ts",
+     "question": "How can journaling help with the inner critic?",
+     "answer": "It gives you space to notice, name and respond to it",
+     "wrong": [
+      "It erases the critic",
+      "Only if a therapist reads it",
+      "It makes it louder"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "4nqblw576elk",
+     "question": "What does 'building a kinder inner voice' mean?",
+     "answer": "Slowly replacing harsh inner messages with honest, kind ones",
+     "wrong": [
+      "Reprogramming with affirmations",
+      "Copying a mentor's voice",
+      "A specific worksheet"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "q6gniwd2i3xb",
+     "question": "Who is most likely to have an intense inner critic?",
+     "answer": "Anyone who's faced a lot of criticism or shame",
+     "wrong": [
+      "Only people with a diagnosis",
+      "Only adults over 40",
+      "Only one type of family"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "misufx9sa52z",
+     "question": "What's the real goal of working with your inner critic?",
+     "answer": "Change your relationship with it so it has less power",
+     "wrong": [
+      "Silence it perfectly",
+      "Forgive everyone first",
+      "Think only positive thoughts"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "53vt3c8hsf6n",
+     "question": "What's a simple daily practice for the inner critic?",
+     "answer": "Pause and ask: 'What would I say to a friend right now?'",
+     "wrong": [
+      "Record everything it says",
+      "Timed positive thinking",
+      "Avoid every trigger"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "3v5di463akvk",
+     "question": "In the 5 steps, what comes after NAME IT?",
+     "answer": "PAUSE — don't argue with it",
+     "wrong": [
+      "SHOUT",
+      "OBEY",
+      "HIDE"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "bwfgpwen35tq",
+     "question": "The inner critic is NOT the truth. It's a…",
+     "answer": "Learned pattern of thinking",
+     "wrong": [
+      "Fact about you",
+      "Prediction",
+      "Warning from your conscience"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
+    },
+    {
+     "id": "vcfdcseb3qmz",
+     "question": "Working with your inner critic most directly supports which skill?",
+     "answer": "Self-efficacy — believing you can make change",
+     "wrong": [
+      "Saying no to others",
+      "Following a routine",
+      "Speed"
+     ],
+     "category": "Inner Critics",
+     "time": 20,
+     "sets": [
+      "Inner Critics"
+     ]
     }
    ]
   }
@@ -61487,6 +70345,318 @@ window.GS_MY_CONTENT = {
    "house",
    "ladder",
    "fort"
+  ],
+  "a flexed arm": [
+   "muscle",
+   "strong",
+   "arm",
+   "bicep"
+  ],
+  "a medal": [
+   "gold",
+   "win",
+   "ribbon",
+   "olympics"
+  ],
+  "a lightbulb": [
+   "idea",
+   "light",
+   "bright",
+   "bulb"
+  ],
+  "an oak tree": [
+   "tree",
+   "acorn",
+   "strong",
+   "trunk"
+  ],
+  "a mountain peak": [
+   "mountain",
+   "top",
+   "climb",
+   "summit"
+  ],
+  "lifting weights": [
+   "lift",
+   "weights",
+   "gym",
+   "heavy"
+  ],
+  "a flower in a sidewalk crack": [
+   "flower",
+   "crack",
+   "grow",
+   "concrete"
+  ],
+  "a pat on the back": [
+   "pat",
+   "back",
+   "good job",
+   "hand"
+  ],
+  "a butterfly leaving a cocoon": [
+   "butterfly",
+   "cocoon",
+   "caterpillar",
+   "wings"
+  ],
+  "looking in a mirror and smiling": [
+   "mirror",
+   "smile",
+   "reflection",
+   "face"
+  ],
+  "a phoenix": [
+   "bird",
+   "fire",
+   "rise",
+   "ashes"
+  ],
+  "a gold star sticker": [
+   "gold",
+   "star",
+   "sticker",
+   "reward"
+  ],
+  "an envelope": [
+   "mail",
+   "letter",
+   "stamp",
+   "seal"
+  ],
+  "a snowflake": [
+   "snow",
+   "winter",
+   "cold",
+   "flake"
+  ],
+  "a present": [
+   "gift",
+   "bow",
+   "wrap",
+   "box"
+  ],
+  "a mitten": [
+   "glove",
+   "hand",
+   "winter",
+   "warm"
+  ],
+  "writing a card": [
+   "write",
+   "card",
+   "pen",
+   "message"
+  ],
+  "licking a stamp": [
+   "stamp",
+   "lick",
+   "mail",
+   "tongue"
+  ],
+  "wrapping a gift": [
+   "wrap",
+   "gift",
+   "paper",
+   "bow"
+  ],
+  "hanging lights": [
+   "lights",
+   "string",
+   "hang",
+   "decorate"
+  ],
+  "sledding": [
+   "sled",
+   "snow",
+   "hill",
+   "slide"
+  ],
+  "hot cocoa by the fire": [
+   "cocoa",
+   "fire",
+   "mug",
+   "warm"
+  ],
+  "a gingerbread house": [
+   "gingerbread",
+   "candy",
+   "house",
+   "cookie"
+  ],
+  "making a paper snowflake": [
+   "paper",
+   "scissors",
+   "snowflake",
+   "cut"
+  ],
+  "opening a card": [
+   "open",
+   "card",
+   "envelope",
+   "read"
+  ],
+  "a winter hat": [
+   "hat",
+   "beanie",
+   "cold",
+   "head"
+  ],
+  "a pink elephant": [
+   "pink",
+   "elephant",
+   "trunk",
+   "animal"
+  ],
+  "a car driving by": [
+   "car",
+   "drive",
+   "road",
+   "wheels"
+  ],
+  "a leaf on a stream": [
+   "leaf",
+   "water",
+   "float",
+   "river"
+  ],
+  "the sun": [
+   "sun",
+   "sky",
+   "hot",
+   "bright"
+  ],
+  "a label": [
+   "tag",
+   "sticker",
+   "name",
+   "label"
+  ],
+  "clouds passing by": [
+   "clouds",
+   "sky",
+   "float",
+   "drift"
+  ],
+  "waving goodbye": [
+   "wave",
+   "bye",
+   "hand",
+   "leave"
+  ],
+  "a train passing": [
+   "train",
+   "tracks",
+   "choo",
+   "station"
+  ],
+  "bubbles floating away": [
+   "bubbles",
+   "float",
+   "pop",
+   "blow"
+  ],
+  "changing the channel": [
+   "remote",
+   "TV",
+   "channel",
+   "click"
+  ],
+  "a balloon floating away": [
+   "balloon",
+   "float",
+   "string",
+   "sky"
+  ],
+  "watching the weather": [
+   "weather",
+   "forecast",
+   "rain",
+   "sun"
+  ],
+  "a busy highway": [
+   "cars",
+   "road",
+   "traffic",
+   "highway"
+  ],
+  "a cheerleader": [
+   "cheer",
+   "pom-poms",
+   "team",
+   "rah"
+  ],
+  "a judge's gavel": [
+   "judge",
+   "court",
+   "hammer",
+   "order"
+  ],
+  "an angel": [
+   "wings",
+   "halo",
+   "heaven",
+   "fly"
+  ],
+  "a gold star": [
+   "star",
+   "gold",
+   "sticker",
+   "reward"
+  ],
+  "a pep talk": [
+   "pep",
+   "talk",
+   "encourage",
+   "coach"
+  ],
+  "giving yourself a hug": [
+   "hug",
+   "yourself",
+   "arms",
+   "self"
+  ],
+  "patting yourself on the back": [
+   "pat",
+   "back",
+   "good job",
+   "hand"
+  ],
+  "turning down the volume": [
+   "volume",
+   "quiet",
+   "knob",
+   "loud"
+  ],
+  "a referee blowing a whistle": [
+   "referee",
+   "whistle",
+   "ref",
+   "foul"
+  ],
+  "whispering": [
+   "whisper",
+   "quiet",
+   "secret",
+   "ear"
+  ],
+  "a coach cheering": [
+   "coach",
+   "cheer",
+   "team",
+   "whistle"
+  ],
+  "smiling in the mirror": [
+   "smile",
+   "mirror",
+   "face",
+   "reflection"
+  ],
+  "crossing out a mean word": [
+   "cross",
+   "out",
+   "erase",
+   "word"
   ]
  }
 };
