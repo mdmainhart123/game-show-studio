@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-27-four-packages",
+ "id": "matt-2026-11-27-december-eight",
  "archive": {
   "October": [
    "Halloween Easy",
@@ -2676,6 +2676,534 @@ window.GS_MY_CONTENT = {
       {
        "word": "voice",
        "clue": "The inner critic is one of these in your head"
+      }
+     ]
+    },
+    {
+     "id": "teldwxt6mj2x",
+     "title": "Year in Review",
+     "entries": [
+      {
+       "word": "reflection",
+       "clue": "Looking back to understand, not to judge"
+      },
+      {
+       "word": "survival",
+       "clue": "An accomplishment worth naming"
+      },
+      {
+       "word": "growth",
+       "clue": "What hard years often contain the most of"
+      },
+      {
+       "word": "perfectionism",
+       "clue": "The enemy of real progress"
+      },
+      {
+       "word": "shame",
+       "clue": "Leave this behind — you're not your worst moment"
+      },
+      {
+       "word": "lessons",
+       "clue": "Things you learned this year"
+      },
+      {
+       "word": "connections",
+       "clue": "Relationships that matter — carry these forward"
+      },
+      {
+       "word": "values",
+       "clue": "What truly matters to you"
+      },
+      {
+       "word": "forward",
+       "clue": "Carry it ___"
+      },
+      {
+       "word": "release",
+       "clue": "Let go of what no longer serves you"
+      },
+      {
+       "word": "witness",
+       "clue": "Bear ___ to your own story"
+      },
+      {
+       "word": "progress",
+       "clue": "Small, steady steps toward change"
+      },
+      {
+       "word": "calendar",
+       "clue": "Twelve months on one page"
+      },
+      {
+       "word": "proud",
+       "clue": "How you feel about a win"
+      },
+      {
+       "word": "year",
+       "clue": "365 days"
+      }
+     ]
+    },
+    {
+     "id": "8o9oog8gswtz",
+     "title": "Acts of Kindness",
+     "entries": [
+      {
+       "word": "kindness",
+       "clue": "Intentional, voluntary help for another person"
+      },
+      {
+       "word": "dopamine",
+       "clue": "Feel-good chemical kindness releases"
+      },
+      {
+       "word": "ripple",
+       "clue": "One kind act spreading — the ___ effect"
+      },
+      {
+       "word": "compliment",
+       "clue": "Sincere, specific praise"
+      },
+      {
+       "word": "thankyou",
+       "clue": "Two words that are enough (one word)"
+      },
+      {
+       "word": "listen",
+       "clue": "Do this fully, without your phone"
+      },
+      {
+       "word": "contagious",
+       "clue": "Kindness spreads — it's ___"
+      },
+      {
+       "word": "helpers",
+       "clue": "___ high: mood boost from helping (no apostrophe)"
+      },
+      {
+       "word": "boundaries",
+       "clue": "Kindness and these can coexist"
+      },
+      {
+       "word": "purpose",
+       "clue": "Helping others builds this"
+      },
+      {
+       "word": "giving",
+       "clue": "Allowing help gives others the gift of ___"
+      },
+      {
+       "word": "cortisol",
+       "clue": "Stress hormone kindness lowers"
+      },
+      {
+       "word": "generous",
+       "clue": "Giving freely"
+      },
+      {
+       "word": "smile",
+       "clue": "Free, easy and contagious"
+      },
+      {
+       "word": "volunteer",
+       "clue": "Give your time to help"
+      }
+     ]
+    },
+    {
+     "id": "q91lqbpz7ay4",
+     "title": "Hope and the Future",
+     "entries": [
+      {
+       "word": "hope",
+       "clue": "Believing the future can be different"
+      },
+      {
+       "word": "goals",
+       "clue": "What you want to move toward"
+      },
+      {
+       "word": "pathways",
+       "clue": "Routes to get there"
+      },
+      {
+       "word": "agency",
+       "clue": "Believing you can make progress"
+      },
+      {
+       "word": "snyder",
+       "clue": "Psychologist behind Hope Theory"
+      },
+      {
+       "word": "borrowed",
+       "clue": "___ hope: let others hold it for a while"
+      },
+      {
+       "word": "future",
+       "clue": "What hope looks toward"
+      },
+      {
+       "word": "resilience",
+       "clue": "Bouncing back"
+      },
+      {
+       "word": "wishful",
+       "clue": "___ thinking: passive, unlike hope"
+      },
+      {
+       "word": "evidence",
+       "clue": "Proof that change is possible"
+      },
+      {
+       "word": "dream",
+       "clue": "Something you hope for"
+      },
+      {
+       "word": "action",
+       "clue": "Take one small ___"
+      },
+      {
+       "word": "believe",
+       "clue": "Trust that it can happen"
+      },
+      {
+       "word": "tomorrow",
+       "clue": "The day after today"
+      },
+      {
+       "word": "possible",
+       "clue": "Change is ___"
+      }
+     ]
+    },
+    {
+     "id": "0uom5qcwxwqv",
+     "title": "Holiday Cash",
+     "entries": [
+      {
+       "word": "budget",
+       "clue": "A spending plan"
+      },
+      {
+       "word": "cash",
+       "clue": "Paper money — when it's gone, spending stops"
+      },
+      {
+       "word": "comparison",
+       "clue": "Spending because of what others buy"
+      },
+      {
+       "word": "guilt",
+       "clue": "Trying to make up for things with gifts"
+      },
+      {
+       "word": "credit",
+       "clue": "Spending money you don't actually have"
+      },
+      {
+       "word": "list",
+       "clue": "Make one before you shop"
+      },
+      {
+       "word": "simple",
+       "clue": "'I'm keeping things ___ this year'"
+      },
+      {
+       "word": "homemade",
+       "clue": "Made by you, not bought"
+      },
+      {
+       "word": "cap",
+       "clue": "Spending ___: your total limit"
+      },
+      {
+       "word": "hidden",
+       "clue": "___ costs: wrapping, shipping, tips"
+      },
+      {
+       "word": "january",
+       "clue": "The month holiday debt shows up"
+      },
+      {
+       "word": "impulse",
+       "clue": "Unplanned buying"
+      },
+      {
+       "word": "time",
+       "clue": "A gift that costs nothing"
+      },
+      {
+       "word": "debt",
+       "clue": "Money owed"
+      },
+      {
+       "word": "receipt",
+       "clue": "Proof of purchase"
+      }
+     ]
+    },
+    {
+     "id": "kxrihdw5sdar",
+     "title": "Loneliness",
+     "entries": [
+      {
+       "word": "loneliness",
+       "clue": "The gap between the connection you have and need"
+      },
+      {
+       "word": "connection",
+       "clue": "What loneliness signals you need more of"
+      },
+      {
+       "word": "isolation",
+       "clue": "Being cut off from others"
+      },
+      {
+       "word": "hello",
+       "clue": "A simple first step toward connection"
+      },
+      {
+       "word": "network",
+       "clue": "Your support ___"
+      },
+      {
+       "word": "quality",
+       "clue": "___ over quantity"
+      },
+      {
+       "word": "belonging",
+       "clue": "Feeling part of something"
+      },
+      {
+       "word": "familiarity",
+       "clue": "Built by showing up regularly"
+      },
+      {
+       "word": "cortisol",
+       "clue": "Stress hormone loneliness raises"
+      },
+      {
+       "word": "friendship",
+       "clue": "A close, caring relationship"
+      },
+      {
+       "word": "reach",
+       "clue": "___ out to someone"
+      },
+      {
+       "word": "together",
+       "clue": "With each other"
+      },
+      {
+       "word": "vulnerable",
+       "clue": "Open, even when it feels risky"
+      },
+      {
+       "word": "group",
+       "clue": "Join one around something you love"
+      },
+      {
+       "word": "neighbor",
+       "clue": "Someone who lives nearby"
+      }
+     ]
+    },
+    {
+     "id": "0ytmktihcf1o",
+     "title": "New Year, New Intentions",
+     "entries": [
+      {
+       "word": "intention",
+       "clue": "A values-based direction for your year"
+      },
+      {
+       "word": "resolution",
+       "clue": "A specific, often rigid New Year's goal"
+      },
+      {
+       "word": "values",
+       "clue": "Intentions start with these"
+      },
+      {
+       "word": "fresh",
+       "clue": "___ start effect"
+      },
+      {
+       "word": "habits",
+       "clue": "These outlast willpower"
+      },
+      {
+       "word": "setback",
+       "clue": "A stumble — just information"
+      },
+      {
+       "word": "recommit",
+       "clue": "Return to your intention after a slip"
+      },
+      {
+       "word": "word",
+       "clue": "Pick one ___ to guide your year"
+      },
+      {
+       "word": "accountability",
+       "clue": "Telling someone helps with this"
+      },
+      {
+       "word": "january",
+       "clue": "When many people start over"
+      },
+      {
+       "word": "midnight",
+       "clue": "When the new year begins"
+      },
+      {
+       "word": "direction",
+       "clue": "An intention is one of these, not a destination"
+      },
+      {
+       "word": "small",
+       "clue": "___ steps beat big declarations"
+      },
+      {
+       "word": "monthly",
+       "clue": "How often to revisit your intention"
+      },
+      {
+       "word": "growth",
+       "clue": "Wanting this is healthy, not a flaw"
+      }
+     ]
+    },
+    {
+     "id": "m2tdrs57kw45",
+     "title": "Stressful Holiday Moments",
+     "entries": [
+      {
+       "word": "exit",
+       "clue": "Know your ___: a plan to leave early"
+      },
+      {
+       "word": "grounding",
+       "clue": "5-4-3-2-1 is a ___ technique"
+      },
+      {
+       "word": "break",
+       "clue": "Step away and take one"
+      },
+      {
+       "word": "plan",
+       "clue": "Make one before the event"
+      },
+      {
+       "word": "support",
+       "clue": "Bring a ___ person"
+      },
+      {
+       "word": "debrief",
+       "clue": "Talk it over afterward"
+      },
+      {
+       "word": "triggers",
+       "clue": "What sets off your stress"
+      },
+      {
+       "word": "rest",
+       "clue": "What your body needs after a hard event"
+      },
+      {
+       "word": "senses",
+       "clue": "5-4-3-2-1 uses all five"
+      },
+      {
+       "word": "credit",
+       "clue": "Give yourself some for getting through it"
+      },
+      {
+       "word": "timelimit",
+       "clue": "Set one on risky events (one word)"
+      },
+      {
+       "word": "peace",
+       "clue": "Protect your ___"
+      },
+      {
+       "word": "perfect",
+       "clue": "Holidays don't have to be ___"
+      },
+      {
+       "word": "breathe",
+       "clue": "Slow down and ___"
+      },
+      {
+       "word": "gentle",
+       "clue": "How to treat yourself afterward"
+      }
+     ]
+    },
+    {
+     "id": "btgp5c9cshpw",
+     "title": "Winter SAD",
+     "entries": [
+      {
+       "word": "seasonal",
+       "clue": "SAD stands for ___ Affective Disorder"
+      },
+      {
+       "word": "sunlight",
+       "clue": "Less of this causes winter SAD"
+      },
+      {
+       "word": "serotonin",
+       "clue": "Mood chemical that drops in winter"
+      },
+      {
+       "word": "melatonin",
+       "clue": "Sleep hormone that rises in winter"
+      },
+      {
+       "word": "circadian",
+       "clue": "___ rhythm: the body's 24-hour clock"
+      },
+      {
+       "word": "lightbox",
+       "clue": "A 10,000-lux lamp for light therapy"
+      },
+      {
+       "word": "lux",
+       "clue": "Unit of light brightness"
+      },
+      {
+       "word": "exercise",
+       "clue": "A strong natural mood booster"
+      },
+      {
+       "word": "schedule",
+       "clue": "Keep a consistent sleep ___"
+      },
+      {
+       "word": "spring",
+       "clue": "When SAD usually lifts"
+      },
+      {
+       "word": "winter",
+       "clue": "The season SAD is most common"
+      },
+      {
+       "word": "connection",
+       "clue": "Isolation makes SAD worse — keep this up"
+      },
+      {
+       "word": "outside",
+       "clue": "Go ___ even on cloudy days"
+      },
+      {
+       "word": "morning",
+       "clue": "Best time for light therapy"
+      },
+      {
+       "word": "cbt",
+       "clue": "Talk therapy often used for SAD (abbr.)"
       }
      ]
     }
@@ -9280,6 +9808,1606 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Believing you have what it takes to make change",
      "answer": "Self-efficacy"
+    },
+    {
+     "id": "jaqidcb2fe4b",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 100,
+     "clue": "Honestly acknowledging what happened — your own story",
+     "answer": "Bearing witness"
+    },
+    {
+     "id": "plpuwnwwmxcj",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 200,
+     "clue": "The hardest part of the year — and how you got through it — shows this",
+     "answer": "Resilience / strength"
+    },
+    {
+     "id": "97hbu0x3x22k",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 300,
+     "clue": "Something that surprised you about ___ this year",
+     "answer": "Yourself"
+    },
+    {
+     "id": "4ip4wenrrwcy",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 400,
+     "clue": "Who showed ___ for you this year?",
+     "answer": "Up"
+    },
+    {
+     "id": "qbmqzybgni39",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 500,
+     "clue": "A belief, habit or relationship you let ___ of",
+     "answer": "Go"
+    },
+    {
+     "id": "jwo56vll1j0p",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 100,
+     "clue": "Getting through a hard year is one of these",
+     "answer": "An accomplishment"
+    },
+    {
+     "id": "m3nsh1jih8wc",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 200,
+     "clue": "Hard days that didn't turn into hard ___ matter",
+     "answer": "Weeks"
+    },
+    {
+     "id": "x9t2ngkx5ykh",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 300,
+     "clue": "Showing up to group and programming does this",
+     "answer": "Counts"
+    },
+    {
+     "id": "degr1iob7bbg",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 400,
+     "clue": "Moments of honesty, vulnerability or this count too",
+     "answer": "Connection"
+    },
+    {
+     "id": "cll4dtnnoga0",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 500,
+     "clue": "Every day you didn't ___ ___ was a choice you made",
+     "answer": "Give up"
+    },
+    {
+     "id": "qznsxxcgk0l5",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 100,
+     "clue": "You are not your worst ___",
+     "answer": "Moment"
+    },
+    {
+     "id": "gclp7ab50h4v",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 200,
+     "clue": "The enemy of real progress",
+     "answer": "Perfectionism"
+    },
+    {
+     "id": "iw3brtpwmymk",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 300,
+     "clue": "The feeling to release about past mistakes",
+     "answer": "Shame"
+    },
+    {
+     "id": "p5e9a30dbbhk",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 400,
+     "clue": "Release ones of these that don't serve you",
+     "answer": "Expectations"
+    },
+    {
+     "id": "m9a7z5299x13",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 500,
+     "clue": "'The story that you haven't ___' — look at the evidence",
+     "answer": "Changed"
+    },
+    {
+     "id": "mg0piyi5g66r",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 100,
+     "clue": "These coping and communication tools don't disappear at year's end",
+     "answer": "Skills"
+    },
+    {
+     "id": "tml8khtjhg5a",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 200,
+     "clue": "Relationships that matter",
+     "answer": "Connections"
+    },
+    {
+     "id": "0fvb8wao7kta",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 300,
+     "clue": "The knowledge that you've survived ___ things before",
+     "answer": "Hard"
+    },
+    {
+     "id": "08paw3k7ftwi",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 400,
+     "clue": "What truly matters to you",
+     "answer": "Your values"
+    },
+    {
+     "id": "bbnf2yr93zic",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 500,
+     "clue": "Bring one of these from this year that you want to remember",
+     "answer": "A lesson"
+    },
+    {
+     "id": "hqy2bmsxr823",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "A hard year has nothing worth reflecting on",
+     "answer": "Myth"
+    },
+    {
+     "id": "ens9w3wm1byk",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Reflecting can help you plan your future",
+     "answer": "Fact"
+    },
+    {
+     "id": "rzu4j1eiwshy",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "You should only reflect on accomplishments",
+     "answer": "Myth"
+    },
+    {
+     "id": "7emju0xtl5jb",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "A year with setbacks can still have real growth",
+     "answer": "Fact"
+    },
+    {
+     "id": "9o6k6rnza60p",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "It's too late — the year is already over",
+     "answer": "Myth"
+    },
+    {
+     "id": "f4ypkylttg2g",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 100,
+     "clue": "The feel-good reward chemical released when you're kind",
+     "answer": "Dopamine"
+    },
+    {
+     "id": "xe51oj3ays5q",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 200,
+     "clue": "The stress hormone kindness lowers",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "mlgbr3y7sc7r",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 300,
+     "clue": "The mood boost after helping someone",
+     "answer": "Helper's high"
+    },
+    {
+     "id": "o18uv956xk6b",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 400,
+     "clue": "One kind act sparking another",
+     "answer": "The ripple effect"
+    },
+    {
+     "id": "rdd2i96t5bos",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 500,
+     "clue": "Watching kindness lights up the same brain areas as ___ it",
+     "answer": "Receiving / experiencing"
+    },
+    {
+     "id": "tbzi2wo3earf",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 100,
+     "clue": "Write one of these to someone who helped you",
+     "answer": "A thank-you note"
+    },
+    {
+     "id": "zz3za6hd736o",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 200,
+     "clue": "Listen fully without checking this",
+     "answer": "Your phone"
+    },
+    {
+     "id": "qu70fxextr64",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 300,
+     "clue": "Make it sincere and specific",
+     "answer": "A compliment"
+    },
+    {
+     "id": "as56sxzi5g33",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 400,
+     "clue": "Let someone go ahead of you here",
+     "answer": "In line"
+    },
+    {
+     "id": "omcqf3u05qnp",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 500,
+     "clue": "Check ___ on someone you haven't talked to in a while",
+     "answer": "In"
+    },
+    {
+     "id": "ftfzhujkc8ur",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 100,
+     "clue": "Accepting kindness gracefully is also one of these",
+     "answer": "A skill"
+    },
+    {
+     "id": "bm2lauol4a8q",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 200,
+     "clue": "You don't have to ___ kindness — it's freely given",
+     "answer": "Earn"
+    },
+    {
+     "id": "axa6ltsz890y",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 300,
+     "clue": "Two words that are enough when someone's kind to you",
+     "answer": "Thank you"
+    },
+    {
+     "id": "atanz3vmkaqe",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 400,
+     "clue": "Letting others help you gives them the gift of ___",
+     "answer": "Giving"
+    },
+    {
+     "id": "30fonsy59oi9",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 500,
+     "clue": "Feeling this can make it hard to accept kindness",
+     "answer": "Unworthy"
+    },
+    {
+     "id": "jkx867zfmcsn",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 100,
+     "clue": "True or false: kindness only counts if it's big",
+     "answer": "False"
+    },
+    {
+     "id": "q3v4ib3kvquo",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 200,
+     "clue": "True or false: being kind to yourself is selfish",
+     "answer": "False"
+    },
+    {
+     "id": "wv29en6gcet3",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 300,
+     "clue": "True or false: kindness is a skill you can practice",
+     "answer": "True"
+    },
+    {
+     "id": "bego4ynktgyr",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 400,
+     "clue": "True or false: you can be kind AND have boundaries",
+     "answer": "True"
+    },
+    {
+     "id": "kt1efovohapj",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 500,
+     "clue": "True or false: you must feel great before you can be kind",
+     "answer": "False"
+    },
+    {
+     "id": "xmo1gsjvwa4z",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 100,
+     "clue": "By giving to others, you help yourself — the helper's ___",
+     "answer": "Paradox"
+    },
+    {
+     "id": "yumwzumi56in",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 200,
+     "clue": "Small acts done often beat rare ___ gestures",
+     "answer": "Grand"
+    },
+    {
+     "id": "2rf2eg5stb2b",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 300,
+     "clue": "Kindness builds this — a key protective factor",
+     "answer": "Connection"
+    },
+    {
+     "id": "uj5at88pt8lk",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 400,
+     "clue": "Helping others reinforces your sense of this",
+     "answer": "Purpose"
+    },
+    {
+     "id": "d6ohekvwr0z1",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 500,
+     "clue": "Kindness rebuilds this — with yourself and others",
+     "answer": "Trust"
+    },
+    {
+     "id": "w47z0hd1zzly",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 100,
+     "clue": "The researcher behind Hope Theory: Dr. C.R. ___",
+     "answer": "Snyder"
+    },
+    {
+     "id": "6n2inkdnjnfm",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 200,
+     "clue": "Knowing what you want to move toward",
+     "answer": "Goals"
+    },
+    {
+     "id": "azn3llsev3bz",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 300,
+     "clue": "Identifying ways to get there",
+     "answer": "Pathways"
+    },
+    {
+     "id": "u2nk5mtghjt9",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 400,
+     "clue": "Believing you're capable of making progress",
+     "answer": "Agency"
+    },
+    {
+     "id": "v1pgyt8w59fn",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 500,
+     "clue": "Hope is not passive — it's this",
+     "answer": "Active"
+    },
+    {
+     "id": "bjhai6qmp5w1",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 100,
+     "clue": "Start this way: one day, one hour, one goal at a time",
+     "answer": "Small"
+    },
+    {
+     "id": "emcv60bpv5kc",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 200,
+     "clue": "Notice this — proof that change is possible",
+     "answer": "Evidence"
+    },
+    {
+     "id": "5jh3zs7l1ofj",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 300,
+     "clue": "Surround yourself with people who ___ hope",
+     "answer": "Model / have"
+    },
+    {
+     "id": "r6otpjcj4dzd",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 400,
+     "clue": "Connect with these — what you care about",
+     "answer": "Your values"
+    },
+    {
+     "id": "eiu1d7spqp9h",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 500,
+     "clue": "Allowing yourself to do this is the beginning of hope",
+     "answer": "Want things"
+    },
+    {
+     "id": "4ep3qfam30j7",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 100,
+     "clue": "Repeated unmet ___ can damage hope",
+     "answer": "Expectations"
+    },
+    {
+     "id": "36863c2psdf7",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 200,
+     "clue": "This feeling says you don't deserve a better future",
+     "answer": "Shame"
+    },
+    {
+     "id": "80okftttuv0z",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 300,
+     "clue": "Fewer people to reflect hope back to you",
+     "answer": "Isolation"
+    },
+    {
+     "id": "7wp5rzmmtl5w",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 400,
+     "clue": "Passive hoping without action",
+     "answer": "Wishful thinking"
+    },
+    {
+     "id": "nqwqoabbw8zf",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 500,
+     "clue": "When hope feels impossible, that feeling is a symptom — not a ___",
+     "answer": "Verdict"
+    },
+    {
+     "id": "b9iumw3scu64",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 100,
+     "clue": "Letting others hold hope for you for a while",
+     "answer": "Borrowed hope"
+    },
+    {
+     "id": "2tzoebi3xl2o",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 200,
+     "clue": "Hope is easier to hold when you're not ___",
+     "answer": "Alone"
+    },
+    {
+     "id": "y1et68ypk9bx",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 300,
+     "clue": "Take one small one of these toward what matters",
+     "answer": "Action"
+    },
+    {
+     "id": "nt1xh5te09kh",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 400,
+     "clue": "You've already survived these — evidence of your capacity",
+     "answer": "Hard things"
+    },
+    {
+     "id": "slg5tonfncje",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 500,
+     "clue": "Write down what a good ___ looks like to you",
+     "answer": "Life"
+    },
+    {
+     "id": "8d1egp9gk15y",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "Hope is just wishful thinking",
+     "answer": "Myth"
+    },
+    {
+     "id": "fvpk7mlqk4qe",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Hope can be rebuilt after loss",
+     "answer": "Fact"
+    },
+    {
+     "id": "jf6ki6sli7wq",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "You have to feel hopeful to have hope",
+     "answer": "Myth"
+    },
+    {
+     "id": "qrjtiht2g90o",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Hope is linked to better health and resilience",
+     "answer": "Fact"
+    },
+    {
+     "id": "ij29bwax55fc",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "You need everything figured out first",
+     "answer": "Myth"
+    },
+    {
+     "id": "0a7jhqkx14b2",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 100,
+     "clue": "Wanting to show love or avoid conflict — this kind of pressure",
+     "answer": "Emotional pressure"
+    },
+    {
+     "id": "89ea2mlx7cr9",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 200,
+     "clue": "Seeing what others spend or give",
+     "answer": "Comparison"
+    },
+    {
+     "id": "cf3mu0vts65d",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 300,
+     "clue": "'It's only once a year' thinking",
+     "answer": "Urgency"
+    },
+    {
+     "id": "n8v9o95jct67",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 400,
+     "clue": "Spending money we don't actually have",
+     "answer": "Credit"
+    },
+    {
+     "id": "9e8rca07n2cg",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 500,
+     "clue": "Trying to make up for things with gifts",
+     "answer": "Guilt"
+    },
+    {
+     "id": "omcb3byaua7o",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 100,
+     "clue": "List everyone you're giving to and set a dollar ___ per person",
+     "answer": "Limit"
+    },
+    {
+     "id": "iqqe9ap96rm8",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 200,
+     "clue": "Add up your total ___ you shop, not after",
+     "answer": "Before"
+    },
+    {
+     "id": "ehrcpak0qbh2",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 300,
+     "clue": "Wrapping, shipping and tips are these kinds of costs",
+     "answer": "Hidden costs"
+    },
+    {
+     "id": "4ezce7e61zdt",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 400,
+     "clue": "Your overall maximum holiday spending",
+     "answer": "A spending cap"
+    },
+    {
+     "id": "4mdp9nqs2jk8",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 500,
+     "clue": "Pay with these to avoid overspending without noticing",
+     "answer": "Cash or a prepaid card"
+    },
+    {
+     "id": "djgfkownzikp",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 100,
+     "clue": "Often more meaningful than a store-bought gift",
+     "answer": "A handwritten card or letter"
+    },
+    {
+     "id": "77h0xliatpzz",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 200,
+     "clue": "Cook or do this from scratch",
+     "answer": "Bake"
+    },
+    {
+     "id": "6sglstpy1d6o",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 300,
+     "clue": "Offer this — a walk, a movie, a phone call",
+     "answer": "Your time"
+    },
+    {
+     "id": "5mqt072kst8f",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 400,
+     "clue": "Create one of these together instead of buying something",
+     "answer": "A memory"
+    },
+    {
+     "id": "9li0qm4a04x1",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 500,
+     "clue": "Giving your full attention without distraction",
+     "answer": "Listening"
+    },
+    {
+     "id": "7woufxu10bj0",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 100,
+     "clue": "'I'm keeping things ___ this year'",
+     "answer": "Simple"
+    },
+    {
+     "id": "xz5fpg5xzx7g",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 200,
+     "clue": "You don't owe anyone one of these for your budget",
+     "answer": "An explanation"
+    },
+    {
+     "id": "p9o53mxye71b",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 300,
+     "clue": "Real relationships don't depend on how much you ___",
+     "answer": "Spend"
+    },
+    {
+     "id": "vmc68g2jivwd",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 400,
+     "clue": "Setting limits now protects this month",
+     "answer": "January"
+    },
+    {
+     "id": "f8bm1dszwocn",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 500,
+     "clue": "Talk to one of these if money stress feels overwhelming",
+     "answer": "A trusted person"
+    },
+    {
+     "id": "4ufuzl43qi3r",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You have to spend a lot to show love",
+     "answer": "Myth"
+    },
+    {
+     "id": "fd51yk6ovhj3",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Holiday debt can take months to pay off",
+     "answer": "Fact"
+    },
+    {
+     "id": "p6w0qzlbi9px",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "People will be crushed if you spend less",
+     "answer": "Myth"
+    },
+    {
+     "id": "0trll7hmitfs",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "A budget can reduce holiday stress",
+     "answer": "Fact"
+    },
+    {
+     "id": "aw72a9h838mq",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "The holidays are the worst time to think about money",
+     "answer": "Myth"
+    },
+    {
+     "id": "dw9byixztwao",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 100,
+     "clue": "The gap between connection you have and connection you ___",
+     "answer": "Need"
+    },
+    {
+     "id": "5ha0aoztvsa9",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 200,
+     "clue": "You can feel lonely even in one of these",
+     "answer": "A crowd"
+    },
+    {
+     "id": "bsd2fm4a9ysf",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 300,
+     "clue": "Loneliness is the brain's signal — like hunger — that you need this",
+     "answer": "Connection"
+    },
+    {
+     "id": "buzx3d3sxkoc",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 400,
+     "clue": "A few meaningful relationships beat many shallow ones: quality over ___",
+     "answer": "Quantity"
+    },
+    {
+     "id": "2lwg926ruvsm",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 500,
+     "clue": "Chronic loneliness raises this stress hormone",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "x9zzrxpfib1m",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 100,
+     "clue": "Make eye contact and say this to one new person",
+     "answer": "Hello"
+    },
+    {
+     "id": "be8bvm41e6vs",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 200,
+     "clue": "Be ___ with one person about how you've been feeling",
+     "answer": "Honest"
+    },
+    {
+     "id": "hewrdc1z5x8q",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 300,
+     "clue": "Join one of these around something you care about",
+     "answer": "A group / club"
+    },
+    {
+     "id": "wfnvapwnl3x9",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 400,
+     "clue": "Reach ___ to someone you've been meaning to contact",
+     "answer": "Out"
+    },
+    {
+     "id": "3cqtqt7w8pq6",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 500,
+     "clue": "The simplest step: just do this — to group or events",
+     "answer": "Show up"
+    },
+    {
+     "id": "c9yk5pqr1m8c",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 100,
+     "clue": "Feeling like no one really ___ you",
+     "answer": "Understands"
+    },
+    {
+     "id": "fqyhy5g7e6wd",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 200,
+     "clue": "Dreading being alone but also avoiding this",
+     "answer": "Reaching out"
+    },
+    {
+     "id": "5yybxwn4wct3",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 300,
+     "clue": "Spending more time doing this but feeling emptier afterward",
+     "answer": "Scrolling online"
+    },
+    {
+     "id": "wftnre31so6n",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 400,
+     "clue": "Feeling like a ___ to others",
+     "answer": "Burden"
+    },
+    {
+     "id": "9jmqsbvv8smr",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 500,
+     "clue": "Craving connection but not knowing how to ___",
+     "answer": "Start"
+    },
+    {
+     "id": "j5ui9txpyj25",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 100,
+     "clue": "Drawing or listing the people in your support network",
+     "answer": "Connection mapping"
+    },
+    {
+     "id": "2ed6jsj3wrza",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 200,
+     "clue": "Letting someone else hold your belief in connection for a while",
+     "answer": "Borrowed hope"
+    },
+    {
+     "id": "qk23mixwerhd",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 300,
+     "clue": "Even short exchanges of this kind help most",
+     "answer": "In-person contact"
+    },
+    {
+     "id": "uzobu2zinbav",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 400,
+     "clue": "Regular presence builds this — the foundation of connection",
+     "answer": "Familiarity"
+    },
+    {
+     "id": "7ul33hdkj68y",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 500,
+     "clue": "Communities designed to reduce isolation",
+     "answer": "Support groups"
+    },
+    {
+     "id": "nv3kr32965hh",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "If you're lonely, something is wrong with you",
+     "answer": "Myth"
+    },
+    {
+     "id": "67c53hs048ca",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Being around people always fixes loneliness",
+     "answer": "Myth"
+    },
+    {
+     "id": "xrs1j7ap8gun",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Loneliness can affect your physical health",
+     "answer": "Fact"
+    },
+    {
+     "id": "ugqsek1q5wnk",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Needing people means you're weak",
+     "answer": "Myth"
+    },
+    {
+     "id": "upsdbrccbxrv",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "You can make real friends at any age",
+     "answer": "Fact"
+    },
+    {
+     "id": "w7i92clrnn7j",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 100,
+     "clue": "Often absolute and rigid — 'never miss a workout'",
+     "answer": "A resolution"
+    },
+    {
+     "id": "u665qi38r6ov",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 200,
+     "clue": "A direction, not a destination",
+     "answer": "An intention"
+    },
+    {
+     "id": "tcgbfaiel4ed",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 300,
+     "clue": "Intentions start with these",
+     "answer": "Values"
+    },
+    {
+     "id": "kjo5e8gcazmi",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 400,
+     "clue": "Intentions are directional, not this — all-or-nothing",
+     "answer": "Binary"
+    },
+    {
+     "id": "bvug96e5tb92",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 500,
+     "clue": "Most resolutions rely on this, which comes and goes",
+     "answer": "Motivation / willpower"
+    },
+    {
+     "id": "l59bonznrh80",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 100,
+     "clue": "Choose one ___ to guide your year",
+     "answer": "Word"
+    },
+    {
+     "id": "6q21x4nsra1p",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 200,
+     "clue": "Break it into one small, concrete ___ this week",
+     "answer": "Action"
+    },
+    {
+     "id": "rj8zjjjhtw8u",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 300,
+     "clue": "Tell someone — this makes intentions stick",
+     "answer": "Accountability"
+    },
+    {
+     "id": "yjkpobihf79p",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 400,
+     "clue": "Write it down and revisit it every ___",
+     "answer": "Month"
+    },
+    {
+     "id": "535dm9bd4pxr",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 500,
+     "clue": "Ask: 'What does a meaningful ___ look like to me?'",
+     "answer": "Life"
+    },
+    {
+     "id": "azvmtuiqqzgr",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 100,
+     "clue": "A stumble isn't failure — it's this",
+     "answer": "Information"
+    },
+    {
+     "id": "s9fx38anrawn",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 200,
+     "clue": "Be as kind to yourself as you'd be to a ___",
+     "answer": "Friend"
+    },
+    {
+     "id": "nfv847w0c03h",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 300,
+     "clue": "Revisit your intention and ___ it if needed",
+     "answer": "Adjust"
+    },
+    {
+     "id": "wyqj2dvml5p8",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 400,
+     "clue": "Returning to your intention after a slip",
+     "answer": "Recommitting"
+    },
+    {
+     "id": "99hytxuim5mf",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 500,
+     "clue": "Change isn't this — it has ups and downs",
+     "answer": "Linear"
+    },
+    {
+     "id": "1hqdk7k92uj1",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 100,
+     "clue": "Extra motivation at meaningful dates like January 1",
+     "answer": "The fresh start effect"
+    },
+    {
+     "id": "bdlawjrynq17",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 200,
+     "clue": "These work better than big declarations",
+     "answer": "Small, specific steps"
+    },
+    {
+     "id": "85ur928qvqf3",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 300,
+     "clue": "Being pulled toward what you value is this kind of motivation",
+     "answer": "Positive"
+    },
+    {
+     "id": "slzwf7ibzyvt",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 400,
+     "clue": "Systems and these last longer than willpower",
+     "answer": "Habits"
+    },
+    {
+     "id": "bv0v0yhfmwc4",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 500,
+     "clue": "Goals that start from this ('fix myself') tend to fail",
+     "answer": "Shame"
+    },
+    {
+     "id": "h3ngkgcgme4z",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You must wait for January 1 to change",
+     "answer": "Myth"
+    },
+    {
+     "id": "km08g7ehe1mj",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "It's too late if you slip by February",
+     "answer": "Myth"
+    },
+    {
+     "id": "g97zayug1iqx",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Small steps beat big declarations",
+     "answer": "Fact"
+    },
+    {
+     "id": "f5va33jrvxat",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Sharing your goal helps you follow through",
+     "answer": "Fact"
+    },
+    {
+     "id": "q2sfw2mi444k",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Setting an intention means something's wrong with you",
+     "answer": "Myth"
+    },
+    {
+     "id": "i3jokpzrfmk0",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 100,
+     "clue": "Have a reason to leave early if needed",
+     "answer": "Know your exit"
+    },
+    {
+     "id": "cpaltwpuevfr",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 200,
+     "clue": "Bring one of these people with you if you can",
+     "answer": "A support person"
+    },
+    {
+     "id": "3reat77e1cwi",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 300,
+     "clue": "Have someone you can do this with if things get hard",
+     "answer": "Text or call"
+    },
+    {
+     "id": "wq3q7bdzfvgt",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 400,
+     "clue": "Decide this before you go",
+     "answer": "What you will and won't do"
+    },
+    {
+     "id": "axtk07daqvsn",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 500,
+     "clue": "Put one of these on events that feel risky",
+     "answer": "A time limit"
+    },
+    {
+     "id": "f81843grt35p",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 100,
+     "clue": "Step outside, use the restroom or take a walk",
+     "answer": "Take a break"
+    },
+    {
+     "id": "1lj5ile0maqp",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 200,
+     "clue": "Focus on one ___ at a time, not the whole room",
+     "answer": "Conversation"
+    },
+    {
+     "id": "uo3r2lo3qy8j",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 300,
+     "clue": "Excuse yourself from conversations that feel ___",
+     "answer": "Unsafe"
+    },
+    {
+     "id": "p02ljjr286x4",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 400,
+     "clue": "'I don't have to ___ everything right now'",
+     "answer": "Fix"
+    },
+    {
+     "id": "626o67f0vbmr",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 500,
+     "clue": "A 5-4-3-2-1 technique that uses your senses",
+     "answer": "Grounding"
+    },
+    {
+     "id": "3o6i2poleo1a",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 100,
+     "clue": "Name 5 things you can do this",
+     "answer": "See"
+    },
+    {
+     "id": "97hq2u51q8ua",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 200,
+     "clue": "Name 4 things you can do this",
+     "answer": "Touch"
+    },
+    {
+     "id": "8pmbayr641dt",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 300,
+     "clue": "Name 3 things you can do this",
+     "answer": "Hear"
+    },
+    {
+     "id": "b55vrtfg6sn9",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 400,
+     "clue": "Name 2 things you can do this",
+     "answer": "Smell"
+    },
+    {
+     "id": "1pxntpvakin3",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 500,
+     "clue": "Name 1 thing you can do this",
+     "answer": "Taste"
+    },
+    {
+     "id": "yg8f3vmxk3pw",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 100,
+     "clue": "Give yourself this for getting through it",
+     "answer": "Credit"
+    },
+    {
+     "id": "5scwyhzdumm2",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 200,
+     "clue": "Talk it over with a trusted person",
+     "answer": "Debrief"
+    },
+    {
+     "id": "z3fddrbbcrro",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 300,
+     "clue": "Emotional stress is physically exhausting — so do this",
+     "answer": "Rest"
+    },
+    {
+     "id": "i21s7puwldsx",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 400,
+     "clue": "Notice what set you off and log it — your ___",
+     "answer": "Triggers"
+    },
+    {
+     "id": "g78ed39vh6rt",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 500,
+     "clue": "Be this with yourself if it wasn't perfect",
+     "answer": "Gentle"
+    },
+    {
+     "id": "q13kndhupldq",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You must attend every holiday event",
+     "answer": "Myth"
+    },
+    {
+     "id": "yeidhw9c1h14",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Feeling stressed means you're not strong enough",
+     "answer": "Myth"
+    },
+    {
+     "id": "ruy4faptzs0z",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Planning ahead is a great coping strategy",
+     "answer": "Fact"
+    },
+    {
+     "id": "4fpya29twrrn",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Leaving early always makes things worse",
+     "answer": "Myth"
+    },
+    {
+     "id": "y0blxzqruwh5",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Using your support system is a strength",
+     "answer": "Fact"
+    },
+    {
+     "id": "1w2gymkc83j5",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 100,
+     "clue": "The body's internal 24-hour clock",
+     "answer": "Circadian rhythm"
+    },
+    {
+     "id": "vddbv62ygljv",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 200,
+     "clue": "Mood chemical that drops with less sunlight",
+     "answer": "Serotonin"
+    },
+    {
+     "id": "5rdmj0td5gmr",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 300,
+     "clue": "Sleep hormone that rises in dark months",
+     "answer": "Melatonin"
+    },
+    {
+     "id": "xcz97vc3q77t",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 400,
+     "clue": "The main cause of winter SAD: less of this",
+     "answer": "Sunlight"
+    },
+    {
+     "id": "wnz8659zplj9",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 500,
+     "clue": "The season when SAD usually lifts",
+     "answer": "Spring"
+    },
+    {
+     "id": "w34iphz3bflj",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 100,
+     "clue": "A special lamp used for light therapy",
+     "answer": "A lightbox"
+    },
+    {
+     "id": "zuk5edxql1pq",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 200,
+     "clue": "A lightbox's brightness: 10,000 ___",
+     "answer": "Lux"
+    },
+    {
+     "id": "kuwuxalg0h68",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 300,
+     "clue": "How long to use it each morning: 20 to ___ minutes",
+     "answer": "30"
+    },
+    {
+     "id": "eayhwtvt4y35",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 400,
+     "clue": "Even on these kinds of days, getting outside helps",
+     "answer": "Cloudy"
+    },
+    {
+     "id": "rnazrdw94nmi",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 500,
+     "clue": "Time of day to get outside for the most light",
+     "answer": "Midday / brightest part"
+    },
+    {
+     "id": "glxu4661b94r",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 100,
+     "clue": "Go to bed and wake up at the same ___ every day",
+     "answer": "Time"
+    },
+    {
+     "id": "s50piq7eayrb",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 200,
+     "clue": "One of the best natural mood boosters",
+     "answer": "Exercise"
+    },
+    {
+     "id": "pbkt2lbfthes",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 300,
+     "clue": "Isolation makes SAD worse — so keep this up",
+     "answer": "Social connection"
+    },
+    {
+     "id": "z48hnfg4yq4y",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 400,
+     "clue": "Talk therapy often used for SAD",
+     "answer": "CBT"
+    },
+    {
+     "id": "1spfppti7qx5",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 500,
+     "clue": "Tell this person if you notice symptoms",
+     "answer": "A doctor or counselor"
+    },
+    {
+     "id": "mrzxvamtozqy",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 100,
+     "clue": "Persistent low mood or feeling this",
+     "answer": "Empty / sad"
+    },
+    {
+     "id": "9yh4a3qts7l6",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 200,
+     "clue": "Losing interest in things you normally ___",
+     "answer": "Enjoy"
+    },
+    {
+     "id": "5tz20djj2sss",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 300,
+     "clue": "Sleeping more than usual but still feeling this",
+     "answer": "Tired"
+    },
+    {
+     "id": "98vo8tsobpu3",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 400,
+     "clue": "Increased appetite, especially for these",
+     "answer": "Carbohydrates"
+    },
+    {
+     "id": "lrz5h3ua5z7e",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 500,
+     "clue": "Pulling away from friends and activities",
+     "answer": "Withdrawing"
+    },
+    {
+     "id": "jaez8t148jt7",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "SAD is just the winter blues",
+     "answer": "Myth"
+    },
+    {
+     "id": "hg8l4tbf3wyt",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "SAD only happens in snowy places",
+     "answer": "Myth"
+    },
+    {
+     "id": "dux4pbhjx2xz",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Light therapy is well researched",
+     "answer": "Fact"
+    },
+    {
+     "id": "1kgaem63b3xn",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "SAD is a character flaw",
+     "answer": "Myth"
+    },
+    {
+     "id": "oo6a11w9jwyn",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Exercise can help with winter mood",
+     "answer": "Fact"
     }
    ],
    "wheel": [
@@ -13626,6 +15754,959 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Inner Critics"
      ]
+    },
+    {
+     "id": "f1fbeggoip3u",
+     "category": "Phrase",
+     "phrase": "LOOK HOW FAR YOU HAVE COME",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "m0kunt95xjl2",
+     "category": "Phrase",
+     "phrase": "CARRY IT FORWARD",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2r50rq04ikdo",
+     "category": "Phrase",
+     "phrase": "LET IT GO",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2zccz6ij01o5",
+     "category": "Thing",
+     "phrase": "A YEAR OF GROWTH",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "myr7wxyfyioe",
+     "category": "Phrase",
+     "phrase": "YOU SHOWED UP",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "yttwqcdx1uj7",
+     "category": "Thing",
+     "phrase": "LESSONS LEARNED",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "j7plklad7yyw",
+     "category": "Phrase",
+     "phrase": "SURVIVAL COUNTS",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "4c65os2dcc5e",
+     "category": "Thing",
+     "phrase": "A FRESH PAGE",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "n4a27yllb4ne",
+     "category": "Phrase",
+     "phrase": "ONE DAY AT A TIME",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ioqg19g3x9w2",
+     "category": "Thing",
+     "phrase": "PROUD MOMENTS",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "qhie6siy1uf5",
+     "category": "Phrase",
+     "phrase": "PROGRESS NOT PERFECTION",
+     "sets": [
+      "Year in Review",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "urufvr87usum",
+     "category": "Thing",
+     "phrase": "THE YEAR IN REVIEW",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "n12ptw8055ht",
+     "category": "Event",
+     "phrase": "TURNING THE CALENDAR",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "d2fou3y0bm1m",
+     "category": "Thing",
+     "phrase": "NEW CHAPTER",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "59kn7f7zn5bq",
+     "category": "Phrase",
+     "phrase": "OLD YEAR NEW YOU",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "zb66oh2ghu5m",
+     "category": "Phrase",
+     "phrase": "PAY IT FORWARD",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "eu6wc9fxlif1",
+     "category": "Thing",
+     "phrase": "A RANDOM ACT OF KINDNESS",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "7e9w8pf5m7ty",
+     "category": "Thing",
+     "phrase": "A THANK YOU NOTE",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "wpp657akfh29",
+     "category": "Phrase",
+     "phrase": "KINDNESS IS CONTAGIOUS",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "1tlb2yupw71o",
+     "category": "Thing",
+     "phrase": "A HELPING HAND",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "gunkswcmey9m",
+     "category": "Event",
+     "phrase": "HOLDING THE DOOR",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "v7pnf579ihdf",
+     "category": "Thing",
+     "phrase": "A WARM SMILE",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "o8vbj7evdnlj",
+     "category": "Phrase",
+     "phrase": "SPREAD KINDNESS",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "2wc1gjrywmdq",
+     "category": "Thing",
+     "phrase": "THE RIPPLE EFFECT",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "8klwb31qar13",
+     "category": "Event",
+     "phrase": "CHECKING ON A FRIEND",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "yvq79vw0b744",
+     "category": "Thing",
+     "phrase": "A SINCERE COMPLIMENT",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "negz8293mfjg",
+     "category": "Phrase",
+     "phrase": "BE THE REASON SOMEONE SMILES",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "s6bwek2luxuw",
+     "category": "Event",
+     "phrase": "SHARING A MEAL",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "lj9zoe7xosmi",
+     "category": "Thing",
+     "phrase": "A KIND WORD",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "ij8192h58fck",
+     "category": "Phrase",
+     "phrase": "SMALL ACTS BIG IMPACT",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "2j98qinxl4ax",
+     "category": "Phrase",
+     "phrase": "THERE IS ALWAYS HOPE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "dqo7p25h3ybv",
+     "category": "Thing",
+     "phrase": "A BRIGHTER TOMORROW",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "8c3kbri2iphg",
+     "category": "Phrase",
+     "phrase": "ONE STEP AT A TIME",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "8ndb6h0e7x63",
+     "category": "Thing",
+     "phrase": "GOALS AND PATHWAYS",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "8fvomot8mv43",
+     "category": "Phrase",
+     "phrase": "THE BEST IS YET TO COME",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "4wndbc81p0hh",
+     "category": "Thing",
+     "phrase": "A RAY OF SUNSHINE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "cpor8qz1iyvf",
+     "category": "Phrase",
+     "phrase": "KEEP GOING",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "2r86t0eqncxv",
+     "category": "Thing",
+     "phrase": "A LIGHT AT THE END OF THE TUNNEL",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "hdtvknzm0quf",
+     "category": "Phrase",
+     "phrase": "BELIEVE IN YOURSELF",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "5fk0bzxyiqfb",
+     "category": "Thing",
+     "phrase": "BORROWED HOPE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "xttu2y6e1nqn",
+     "category": "Phrase",
+     "phrase": "CHANGE IS POSSIBLE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "7r51f23674or",
+     "category": "Event",
+     "phrase": "PLANTING A SEED",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "txlwc0bam89u",
+     "category": "Thing",
+     "phrase": "A NEW DAY",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "x12axz7bporp",
+     "category": "Phrase",
+     "phrase": "DREAM BIG START SMALL",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "4dgwd6l4hv38",
+     "category": "Thing",
+     "phrase": "A SUNRISE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "oejl3fu4kodv",
+     "category": "Phrase",
+     "phrase": "STICK TO THE BUDGET",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "mmgxq6ia77j8",
+     "category": "Thing",
+     "phrase": "A HOLIDAY SPENDING CAP",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "d71fsfrqjt03",
+     "category": "Phrase",
+     "phrase": "KEEP IT SIMPLE",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "uri0mc73rxj2",
+     "category": "Thing",
+     "phrase": "A HOMEMADE GIFT",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "n473lulitqmy",
+     "category": "Thing",
+     "phrase": "A SHOPPING LIST",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "3re4i7zqnp7r",
+     "category": "Phrase",
+     "phrase": "TIME IS THE BEST GIFT",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "v2xyuqpteehr",
+     "category": "Thing",
+     "phrase": "A PIGGY BANK",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "738w94vhujqt",
+     "category": "Event",
+     "phrase": "BAKING COOKIES FOR FRIENDS",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "p26d3s5h0qme",
+     "category": "Phrase",
+     "phrase": "CASH ONLY",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "utjjns3jz9av",
+     "category": "Thing",
+     "phrase": "A HANDWRITTEN CARD",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "r9ko05z1wqjr",
+     "category": "Phrase",
+     "phrase": "PRESENCE NOT PRESENTS",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "obiw7mf32n4c",
+     "category": "Event",
+     "phrase": "WRAPPING GIFTS",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "jlxarwdf60rm",
+     "category": "Phrase",
+     "phrase": "PLAN AHEAD",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "r7mc40lx9ksa",
+     "category": "Thing",
+     "phrase": "A GIFT OF TIME",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "bmhvd4auaefe",
+     "category": "Phrase",
+     "phrase": "PEACE OF MIND",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "88l2tiu7ri6p",
+     "category": "Phrase",
+     "phrase": "YOU ARE NOT ALONE",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "kvi04nexoix7",
+     "category": "Phrase",
+     "phrase": "REACH OUT",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "iwb88oo74z09",
+     "category": "Thing",
+     "phrase": "A FRIENDLY HELLO",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "iayp20i5v6y0",
+     "category": "Event",
+     "phrase": "CALLING AN OLD FRIEND",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "m4grqndjrvqs",
+     "category": "Thing",
+     "phrase": "A SUPPORT NETWORK",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "ay9yma1a3jtr",
+     "category": "Phrase",
+     "phrase": "QUALITY OVER QUANTITY",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "hsq13kihmmvp",
+     "category": "Event",
+     "phrase": "JOINING A CLUB",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "99m737dpzdm9",
+     "category": "Thing",
+     "phrase": "A CUP OF COFFEE WITH A FRIEND",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "iuxdvgdxputm",
+     "category": "Phrase",
+     "phrase": "SHOW UP",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "a28b0pwgcjhp",
+     "category": "Thing",
+     "phrase": "A GROUP HUG",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "owbgymlu8sab",
+     "category": "Event",
+     "phrase": "SAYING HELLO TO A NEIGHBOR",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "p9xg6vdkdaob",
+     "category": "Phrase",
+     "phrase": "WE ARE IN THIS TOGETHER",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "x0ho4qiivcg6",
+     "category": "Thing",
+     "phrase": "A FRIENDLY FACE",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "t72uf3n1bzpl",
+     "category": "Event",
+     "phrase": "GAME NIGHT",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "qdxiez4zxas4",
+     "category": "Phrase",
+     "phrase": "CONNECTION MATTERS",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "fh3q3zq75f6a",
+     "category": "Phrase",
+     "phrase": "HAPPY NEW YEAR",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "856qnpxmpxmc",
+     "category": "Phrase",
+     "phrase": "A DIRECTION NOT A DESTINATION",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "80d1qaeomabm",
+     "category": "Thing",
+     "phrase": "MY ONE WORD",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ju9x1svmtfzp",
+     "category": "Thing",
+     "phrase": "A FRESH START",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ezgpyo8rw6q2",
+     "category": "Phrase",
+     "phrase": "SMALL STEPS BIG CHANGE",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "n02akryuc8lo",
+     "category": "Event",
+     "phrase": "WRITING DOWN YOUR GOALS",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "23dqqovmpz6x",
+     "category": "Thing",
+     "phrase": "A NEW CALENDAR",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "d13wn8n8dke3",
+     "category": "Phrase",
+     "phrase": "TRY AGAIN TOMORROW",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "wsy9id7a38k4",
+     "category": "Thing",
+     "phrase": "A VISION BOARD",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "gueu7k3rpy20",
+     "category": "Phrase",
+     "phrase": "LIVE YOUR VALUES",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "4gd2pwke6vmp",
+     "category": "Event",
+     "phrase": "THE MIDNIGHT COUNTDOWN",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "knih79irvi5o",
+     "category": "Thing",
+     "phrase": "A CLEAN SLATE",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "uvb2wm7fkwwi",
+     "category": "Event",
+     "phrase": "CHEERING AT MIDNIGHT",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "8t0z1hhs8tze",
+     "category": "Phrase",
+     "phrase": "NEW YEAR NEW YOU",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "bunsrsfmkqyq",
+     "category": "Phrase",
+     "phrase": "KNOW YOUR EXIT",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "cza81vf152g5",
+     "category": "Phrase",
+     "phrase": "TAKE A BREAK",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ilxiff4kkulw",
+     "category": "Thing",
+     "phrase": "A HOLIDAY GAME PLAN",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "mytia694xbww",
+     "category": "Phrase",
+     "phrase": "ONE CONVERSATION AT A TIME",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "5q4c5ggu55un",
+     "category": "Event",
+     "phrase": "STEPPING OUTSIDE FOR AIR",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "jlbkne4v05o8",
+     "category": "Phrase",
+     "phrase": "PROTECT YOUR PEACE",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "9qnq7b9iciua",
+     "category": "Thing",
+     "phrase": "A SUPPORT PERSON",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "f7izyiovelt0",
+     "category": "Phrase",
+     "phrase": "GOOD ENOUGH IS GOOD",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "3iu4fjsla5yl",
+     "category": "Event",
+     "phrase": "TEXTING A FRIEND",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "kyffy5str98z",
+     "category": "Thing",
+     "phrase": "FIVE FOUR THREE TWO ONE",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "rkghgtb2cvc1",
+     "category": "Phrase",
+     "phrase": "IT IS OKAY TO SAY NO",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "qwjo5sbhjda8",
+     "category": "Thing",
+     "phrase": "A QUIET CORNER",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "1dbhftgpkgzg",
+     "category": "Phrase",
+     "phrase": "BREATHE IN BREATHE OUT",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "taxjbfggxjfg",
+     "category": "Event",
+     "phrase": "LEAVING A PARTY EARLY",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "og24r6kqi2jt",
+     "category": "Phrase",
+     "phrase": "GIVE YOURSELF CREDIT",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "4nsymb8c6csh",
+     "category": "Phrase",
+     "phrase": "CHASE THE SUNSHINE",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "isl3tcsvzfq1",
+     "category": "Thing",
+     "phrase": "A LIGHT THERAPY LAMP",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "zq528keb9uy2",
+     "category": "Event",
+     "phrase": "A WALK AT MIDDAY",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "zpnsajqg2ap0",
+     "category": "Thing",
+     "phrase": "A CONSISTENT SLEEP SCHEDULE",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "cze62urpzmci",
+     "category": "Phrase",
+     "phrase": "SPRING WILL COME",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "qvd0vme4l4xx",
+     "category": "Thing",
+     "phrase": "WINTER WELLNESS",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "948qtsn3z7pn",
+     "category": "Event",
+     "phrase": "OPENING THE CURTAINS",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "2vikmcu4sfxs",
+     "category": "Thing",
+     "phrase": "A COZY WINTER WALK",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "sva5rucc9kxt",
+     "category": "Phrase",
+     "phrase": "STAY CONNECTED",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "5o0m41isgowq",
+     "category": "Thing",
+     "phrase": "MORNING SUNLIGHT",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "vgzfmumntrvu",
+     "category": "Event",
+     "phrase": "CALLING A FRIEND",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "nfvyo8clo02x",
+     "category": "Thing",
+     "phrase": "A WARM MUG OF TEA",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "roszd584onl2",
+     "category": "Phrase",
+     "phrase": "LET THE LIGHT IN",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "zk1oi089dqmt",
+     "category": "Event",
+     "phrase": "A SNOWBALL FIGHT",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "jesenukjq0hd",
+     "category": "Phrase",
+     "phrase": "BRIGHTER DAYS AHEAD",
+     "sets": [
+      "Winter SAD"
+     ]
     }
    ],
    "words": [
@@ -17007,6 +20088,711 @@ window.GS_MY_CONTENT = {
      "hint": "Inner Critic",
      "sets": [
       "Inner Critics"
+     ]
+    },
+    {
+     "id": "5egsm87grv7e",
+     "word": "YEARS",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "54429qlt9nqi",
+     "word": "GROWN",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "iwv596duhupb",
+     "word": "PROUD",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ha2o0ufv4dql",
+     "word": "SHIFT",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "t1ouajvo98o6",
+     "word": "STEPS",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "7x5nppt2dj2k",
+     "word": "TODAY",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "5235exdwa0rg",
+     "word": "MONTH",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "f83eaclxunig",
+     "word": "CARRY",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "blhxtppdmy47",
+     "word": "LEAVE",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "vdbwv6qqfu55",
+     "word": "LEARN",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "xt9bcmmif9z7",
+     "word": "BUILT",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "flfcn5wjd969",
+     "word": "GAINS",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "mmwwcxy55rr8",
+     "word": "SMILE",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "98aotzeaoez3",
+     "word": "HELPS",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "ztolrluab9n4",
+     "word": "GIVES",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "nswyudwlt2lq",
+     "word": "SHARE",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness",
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "2jmv96wjrf80",
+     "word": "CARES",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "q71m89ixk5zu",
+     "word": "THANK",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "9kb3h1en2yhf",
+     "word": "NOTES",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "44npru2u7hi5",
+     "word": "HEART",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "hfwpacfxm9bw",
+     "word": "SWEET",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "swwem0k0ql4k",
+     "word": "WARMS",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "phhh6ojy823u",
+     "word": "LIFTS",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "96xc8cl9uan0",
+     "word": "SERVE",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "1eoiiatlqsbu",
+     "word": "HOPES",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "l1cre5j83asf",
+     "word": "DREAM",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "htd6kgy1h3e6",
+     "word": "LIGHT",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "26j1cw76whv8",
+     "word": "GOALS",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "7wvy3e99ql2s",
+     "word": "SPARK",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "o1fqfl8hec8v",
+     "word": "BLOOM",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "evfkijk7wncq",
+     "word": "RISES",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "bpcc68f2prmu",
+     "word": "AHEAD",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "dqrqgf1spvyq",
+     "word": "PATHS",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "w08mvyx4emie",
+     "word": "SEEDS",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "eg7afktzmx1a",
+     "word": "FAITH",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "5tw2qf3fg7u6",
+     "word": "SUNNY",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "hey7jqp314wb",
+     "word": "MONEY",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "23ab3gfprxk0",
+     "word": "SPEND",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "a9q5uarhylbi",
+     "word": "SAVED",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "f0y1rx11f9tv",
+     "word": "COINS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "ahe3ni69xn3m",
+     "word": "LIMIT",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "52ggly81nwye",
+     "word": "GIFTS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "vttfdgyuaykz",
+     "word": "PRICE",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "m4xeemw09jpe",
+     "word": "TOTAL",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "qo6kqyxfmsa5",
+     "word": "WRAPS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "lfm92ov4o1in",
+     "word": "SALES",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "98xforv78yx4",
+     "word": "BILLS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "hwpb1rdnpweq",
+     "word": "PLANS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash",
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "bbdqw5dx71vk",
+     "word": "HELLO",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "4r2wnbc7hiil",
+     "word": "BONDS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "crwa00dycb2f",
+     "word": "UNITE",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "6u016kq5wweo",
+     "word": "CALLS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "8vzpgcy4k5be",
+     "word": "TRUST",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "zz1igzffv1ss",
+     "word": "GROUP",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "umhh8oxakgfa",
+     "word": "VISIT",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "pzztqbncvvp8",
+     "word": "PEERS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "n4o8kejftdnc",
+     "word": "TEAMS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "vh0c19g9szdh",
+     "word": "CHATS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "9z5vrg8xmehs",
+     "word": "CLOSE",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "u7e07mk5l4j6",
+     "word": "START",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "vt2tyuy3qxwm",
+     "word": "FRESH",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "zeeodsdnu9so",
+     "word": "FOCUS",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "nf5jnrlmvtfb",
+     "word": "BEGIN",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "9085nxglqzaw",
+     "word": "HABIT",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "4vm9sp3uvq55",
+     "word": "VALUE",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "cc8u2ju2mr3v",
+     "word": "AGAIN",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "oisibuiq4r1f",
+     "word": "SLATE",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "duoo9cjppe78",
+     "word": "CHEER",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "socuu3f6bou2",
+     "word": "CLOCK",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "b80fyi0qso6t",
+     "word": "CALMS",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "mcgutjn02c8y",
+     "word": "BREAK",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "xn0hwc3xwds1",
+     "word": "PAUSE",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "9z74gelk79d2",
+     "word": "RESTS",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "x220pd59rhfa",
+     "word": "EXITS",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "jichpxpakqne",
+     "word": "PEACE",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "jkebcrcynih6",
+     "word": "HEARS",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "yqrz73f6xw41",
+     "word": "SMELL",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ix7l6n26qiym",
+     "word": "TASTE",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "oihfestdz98y",
+     "word": "TOUCH",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "32gsvmzoslwp",
+     "word": "SPACE",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "lxp5gytf6isq",
+     "word": "WALKS",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "dcayqkx7mluw",
+     "word": "SLEEP",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "nqy30n4eydoz",
+     "word": "SNOWY",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "kb05e5bm7oww",
+     "word": "BRISK",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "7c16ufz553fj",
+     "word": "SHINE",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "l0ydbnqatjfy",
+     "word": "DAWNS",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ceo5kpnw2oz2",
+     "word": "MOODS",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
      ]
     }
    ],
@@ -23548,6 +27334,2181 @@ window.GS_MY_CONTENT = {
      ],
      "sets": [
       "Inner Critics"
+     ]
+    },
+    {
+     "id": "9qhe7eif3a7w",
+     "word": "a calendar",
+     "level": "easy",
+     "banned": [
+      "date",
+      "month",
+      "days",
+      "schedule"
+     ],
+     "sets": [
+      "Year in Review",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "cg99f58qs2t9",
+     "word": "a clock striking midnight",
+     "level": "easy",
+     "banned": [
+      "clock",
+      "twelve",
+      "midnight",
+      "time"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "73f5qexmpxgi",
+     "word": "a photo album",
+     "level": "easy",
+     "banned": [
+      "photos",
+      "pictures",
+      "album",
+      "memories"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2568wypp5nt8",
+     "word": "a backpack",
+     "level": "easy",
+     "banned": [
+      "bag",
+      "school",
+      "carry",
+      "straps"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2sp5f6cf6zm8",
+     "word": "a staircase",
+     "level": "easy",
+     "banned": [
+      "stairs",
+      "steps",
+      "up",
+      "climb"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "3o5rb01aij8n",
+     "word": "a road",
+     "level": "easy",
+     "banned": [
+      "street",
+      "drive",
+      "path",
+      "car"
+     ],
+     "sets": [
+      "Year in Review",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "8cs01f5mmtco",
+     "word": "a rearview mirror",
+     "level": "easy",
+     "banned": [
+      "mirror",
+      "car",
+      "behind",
+      "look"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "jtkvawxvd5zc",
+     "word": "a trophy",
+     "level": "easy",
+     "banned": [
+      "win",
+      "award",
+      "cup",
+      "prize"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "1mf4qp0gnj8o",
+     "word": "a book",
+     "level": "easy",
+     "banned": [
+      "read",
+      "pages",
+      "library",
+      "story"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "vanygi27c6bg",
+     "word": "a balloon",
+     "level": "easy",
+     "banned": [
+      "air",
+      "float",
+      "party",
+      "string"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "agqdw5xnww1x",
+     "word": "looking back over your shoulder",
+     "level": "medium",
+     "banned": [
+      "look",
+      "back",
+      "shoulder",
+      "behind"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "mi5azmktz89p",
+     "word": "turning a page",
+     "level": "medium",
+     "banned": [
+      "page",
+      "book",
+      "turn",
+      "flip"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "u5mkeevlhq9w",
+     "word": "unpacking a suitcase",
+     "level": "medium",
+     "banned": [
+      "suitcase",
+      "unpack",
+      "clothes",
+      "travel"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "f4hxfde8qxqk",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "banned": [
+      "climb",
+      "mountain",
+      "peak",
+      "top"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ey4bz5iou0qy",
+     "word": "a time capsule",
+     "level": "medium",
+     "banned": [
+      "time",
+      "capsule",
+      "bury",
+      "future"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "29aiq9xu5ve4",
+     "word": "letting go of a balloon",
+     "level": "medium",
+     "banned": [
+      "balloon",
+      "let go",
+      "float",
+      "string"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "uzfj28ohchcw",
+     "word": "writing in a journal",
+     "level": "medium",
+     "banned": [
+      "write",
+      "journal",
+      "diary",
+      "pen"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "0rgxy2rwbaqa",
+     "word": "crossing a bridge",
+     "level": "medium",
+     "banned": [
+      "bridge",
+      "cross",
+      "river",
+      "walk"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "zvf7iqiak488",
+     "word": "a scrapbook",
+     "level": "medium",
+     "banned": [
+      "scrap",
+      "book",
+      "photos",
+      "glue"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2jqsve0fhm1x",
+     "word": "a gold star",
+     "level": "easy",
+     "banned": [
+      "star",
+      "gold",
+      "sticker",
+      "reward"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "7ep77gs4g6z6",
+     "word": "a smiley face",
+     "level": "easy",
+     "banned": [
+      "smile",
+      "happy",
+      "face",
+      "emoji"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "44qik92trm6g",
+     "word": "a gift",
+     "level": "easy",
+     "banned": [
+      "present",
+      "bow",
+      "box",
+      "wrap"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "s2llyj5d87l9",
+     "word": "a helping hand",
+     "level": "easy",
+     "banned": [
+      "hand",
+      "help",
+      "reach",
+      "fingers"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "i7i251wbqvu8",
+     "word": "a heart",
+     "level": "easy",
+     "banned": [
+      "love",
+      "valentine",
+      "red",
+      "beat"
+     ],
+     "sets": [
+      "Acts of Kindness",
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "34a2h0wv5da4",
+     "word": "a thank-you card",
+     "level": "easy",
+     "banned": [
+      "thanks",
+      "card",
+      "note",
+      "grateful"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "o9wd8pjszqxb",
+     "word": "a flower",
+     "level": "easy",
+     "banned": [
+      "petal",
+      "bloom",
+      "garden",
+      "stem"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "06osd61ft7qx",
+     "word": "a cookie",
+     "level": "easy",
+     "banned": [
+      "bake",
+      "chocolate",
+      "chip",
+      "treat"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "f848jjqk78nq",
+     "word": "an open door",
+     "level": "easy",
+     "banned": [
+      "door",
+      "open",
+      "enter",
+      "knob"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "alfbgbf8bxnu",
+     "word": "a hug",
+     "level": "easy",
+     "banned": [
+      "arms",
+      "squeeze",
+      "embrace",
+      "cuddle"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "gb8yxxhsgg75",
+     "word": "a ripple in water",
+     "level": "easy",
+     "banned": [
+      "ripple",
+      "water",
+      "pond",
+      "splash"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "k2gqzrx410fy",
+     "word": "holding the door for someone",
+     "level": "medium",
+     "banned": [
+      "door",
+      "hold",
+      "open",
+      "polite"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "2mzax84fu8h9",
+     "word": "carrying groceries",
+     "level": "medium",
+     "banned": [
+      "groceries",
+      "bags",
+      "carry",
+      "food"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "jz47pda9sszm",
+     "word": "shoveling a neighbor's sidewalk",
+     "level": "medium",
+     "banned": [
+      "shovel",
+      "snow",
+      "neighbor",
+      "sidewalk"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "zsxdn42qg05d",
+     "word": "sharing an umbrella",
+     "level": "medium",
+     "banned": [
+      "umbrella",
+      "rain",
+      "share",
+      "wet"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "u04s3o186xlw",
+     "word": "giving a compliment",
+     "level": "medium",
+     "banned": [
+      "compliment",
+      "nice",
+      "praise",
+      "say"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "yptgu90tn4jn",
+     "word": "baking for a friend",
+     "level": "medium",
+     "banned": [
+      "bake",
+      "oven",
+      "cookies",
+      "friend"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "2h7ft496mf5s",
+     "word": "a high five",
+     "level": "medium",
+     "banned": [
+      "hand",
+      "five",
+      "slap",
+      "celebrate"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "dos5jmpzojui",
+     "word": "helping someone up",
+     "level": "medium",
+     "banned": [
+      "help",
+      "up",
+      "fall",
+      "hand"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "wz5ipbmudwjj",
+     "word": "leaving a kind note",
+     "level": "medium",
+     "banned": [
+      "note",
+      "write",
+      "kind",
+      "sticky"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "ddfaf3p3swuh",
+     "word": "a teddy bear",
+     "level": "easy",
+     "banned": [
+      "bear",
+      "stuffed",
+      "toy",
+      "hug"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "zcyqxw6ixxzi",
+     "word": "a rainbow",
+     "level": "easy",
+     "banned": [
+      "colors",
+      "rain",
+      "arc",
+      "sky"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "yzognu80f9xf",
+     "word": "a sunrise",
+     "level": "easy",
+     "banned": [
+      "sun",
+      "morning",
+      "rise",
+      "dawn"
+     ],
+     "sets": [
+      "Hope and the Future",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ktdl7lgdzbt3",
+     "word": "a seedling",
+     "level": "easy",
+     "banned": [
+      "plant",
+      "sprout",
+      "grow",
+      "seed"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "hz09xhr8xwtu",
+     "word": "a lighthouse",
+     "level": "easy",
+     "banned": [
+      "light",
+      "ocean",
+      "beacon",
+      "tower"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "u77xo8jxxhbi",
+     "word": "an anchor",
+     "level": "easy",
+     "banned": [
+      "boat",
+      "ship",
+      "sea",
+      "heavy"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "14oj8pfxrfv6",
+     "word": "a candle",
+     "level": "easy",
+     "banned": [
+      "flame",
+      "wax",
+      "light",
+      "wick"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "k32m20tfc44b",
+     "word": "a road sign",
+     "level": "easy",
+     "banned": [
+      "sign",
+      "road",
+      "street",
+      "direction"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "ynefv3yjbrbm",
+     "word": "a kite",
+     "level": "easy",
+     "banned": [
+      "fly",
+      "wind",
+      "string",
+      "sky"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "v61sx1sybqjg",
+     "word": "a shooting star",
+     "level": "easy",
+     "banned": [
+      "star",
+      "wish",
+      "sky",
+      "night"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "4rlqxmbh78in",
+     "word": "a butterfly",
+     "level": "easy",
+     "banned": [
+      "wings",
+      "fly",
+      "caterpillar",
+      "insect"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "tugwthgsypj2",
+     "word": "a light at the end of a tunnel",
+     "level": "medium",
+     "banned": [
+      "tunnel",
+      "light",
+      "end",
+      "dark"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "lplm69wufk34",
+     "word": "making a wish",
+     "level": "medium",
+     "banned": [
+      "wish",
+      "star",
+      "blow",
+      "candles"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "td70lua2hk9x",
+     "word": "planting a seed",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "seed",
+      "dirt",
+      "grow"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "1zfavuh3dc7l",
+     "word": "climbing a ladder",
+     "level": "medium",
+     "banned": [
+      "ladder",
+      "climb",
+      "rungs",
+      "up"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "bngltyiplk3u",
+     "word": "a map with a path",
+     "level": "medium",
+     "banned": [
+      "map",
+      "path",
+      "route",
+      "road"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "ud5a8zvvzd0o",
+     "word": "a flower through the snow",
+     "level": "medium",
+     "banned": [
+      "flower",
+      "snow",
+      "winter",
+      "bloom"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "8801hdqbcb6y",
+     "word": "looking through a telescope",
+     "level": "medium",
+     "banned": [
+      "telescope",
+      "stars",
+      "look",
+      "far"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "wfe45o163i5m",
+     "word": "a sun behind clouds",
+     "level": "medium",
+     "banned": [
+      "sun",
+      "cloud",
+      "sky",
+      "peek"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "d0ob8nsfnarg",
+     "word": "opening a window",
+     "level": "medium",
+     "banned": [
+      "window",
+      "open",
+      "fresh",
+      "air"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "jfivk156sx80",
+     "word": "a compass",
+     "level": "easy",
+     "banned": [
+      "north",
+      "direction",
+      "needle",
+      "navigate"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "gkngfi4m52j0",
+     "word": "a piggy bank",
+     "level": "easy",
+     "banned": [
+      "pig",
+      "bank",
+      "coins",
+      "save"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "1f1t2dk0ec2q",
+     "word": "a wallet",
+     "level": "easy",
+     "banned": [
+      "money",
+      "cash",
+      "leather",
+      "pocket"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "xhymu6zpgu6z",
+     "word": "a gift box",
+     "level": "easy",
+     "banned": [
+      "present",
+      "bow",
+      "box",
+      "wrap"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "lf4fikgdi5fl",
+     "word": "a credit card",
+     "level": "easy",
+     "banned": [
+      "card",
+      "plastic",
+      "credit",
+      "pay"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "txsvk0jn4ub0",
+     "word": "a shopping cart",
+     "level": "easy",
+     "banned": [
+      "cart",
+      "store",
+      "shop",
+      "wheels"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "l33h1jrx8a1x",
+     "word": "a price tag",
+     "level": "easy",
+     "banned": [
+      "price",
+      "tag",
+      "cost",
+      "sale"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "kz8yu848q4mo",
+     "word": "a dollar sign",
+     "level": "easy",
+     "banned": [
+      "dollar",
+      "money",
+      "cash",
+      "symbol"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "wdtm2ulqlud9",
+     "word": "a coin",
+     "level": "easy",
+     "banned": [
+      "money",
+      "penny",
+      "quarter",
+      "round"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "nigv1bjvqsgy",
+     "word": "a calculator",
+     "level": "easy",
+     "banned": [
+      "math",
+      "numbers",
+      "add",
+      "plus"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "9otp8hctpfzo",
+     "word": "a cash register",
+     "level": "easy",
+     "banned": [
+      "register",
+      "store",
+      "money",
+      "checkout"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "f9dcw6bqq9sk",
+     "word": "making a shopping list",
+     "level": "medium",
+     "banned": [
+      "list",
+      "write",
+      "shop",
+      "paper"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "osvjmvis4g86",
+     "word": "wrapping a present",
+     "level": "medium",
+     "banned": [
+      "wrap",
+      "gift",
+      "paper",
+      "bow"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "0a69kldnioc9",
+     "word": "counting money",
+     "level": "medium",
+     "banned": [
+      "count",
+      "money",
+      "cash",
+      "bills"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "mdq0eadf41w8",
+     "word": "baking cookies",
+     "level": "medium",
+     "banned": [
+      "bake",
+      "oven",
+      "cookies",
+      "dough"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "mjd0caes10v4",
+     "word": "a long checkout line",
+     "level": "medium",
+     "banned": [
+      "line",
+      "checkout",
+      "store",
+      "wait"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "gpxyswhyfc8z",
+     "word": "putting coins in a jar",
+     "level": "medium",
+     "banned": [
+      "coins",
+      "jar",
+      "save",
+      "money"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "mrji67at4e4i",
+     "word": "writing a card",
+     "level": "medium",
+     "banned": [
+      "write",
+      "card",
+      "pen",
+      "message"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "nak8zlkmjyh8",
+     "word": "a sale sign",
+     "level": "medium",
+     "banned": [
+      "sale",
+      "sign",
+      "discount",
+      "percent"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "9y2ajcygrakh",
+     "word": "returning a gift",
+     "level": "medium",
+     "banned": [
+      "return",
+      "gift",
+      "store",
+      "receipt"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "eska2op70wae",
+     "word": "an empty wallet",
+     "level": "easy",
+     "banned": [
+      "wallet",
+      "empty",
+      "money",
+      "broke"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "y11ginmvakye",
+     "word": "a telephone",
+     "level": "easy",
+     "banned": [
+      "phone",
+      "call",
+      "ring",
+      "dial"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "zfz7nblwlhsh",
+     "word": "two coffee cups",
+     "level": "easy",
+     "banned": [
+      "coffee",
+      "cups",
+      "mug",
+      "drink"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "zrgh0jtg72uf",
+     "word": "a park bench",
+     "level": "easy",
+     "banned": [
+      "bench",
+      "park",
+      "sit",
+      "seat"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "t0o60d85eb9p",
+     "word": "a waving hand",
+     "level": "easy",
+     "banned": [
+      "wave",
+      "hand",
+      "hello",
+      "hi"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "rnnwpcfirblq",
+     "word": "a puzzle piece",
+     "level": "easy",
+     "banned": [
+      "puzzle",
+      "jigsaw",
+      "piece",
+      "fit"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "oudw6z1berb5",
+     "word": "a bridge",
+     "level": "easy",
+     "banned": [
+      "river",
+      "cross",
+      "over",
+      "road"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "83c14rl5xy90",
+     "word": "a mailbox",
+     "level": "easy",
+     "banned": [
+      "mail",
+      "letters",
+      "post",
+      "box"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "1i6ul35e9qfw",
+     "word": "a dog",
+     "level": "easy",
+     "banned": [
+      "pet",
+      "bark",
+      "puppy",
+      "woof"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "wd5xxbihjo10",
+     "word": "a campfire",
+     "level": "easy",
+     "banned": [
+      "fire",
+      "camp",
+      "flames",
+      "logs"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "9cxsb395jvq7",
+     "word": "a group hug",
+     "level": "medium",
+     "banned": [
+      "hug",
+      "group",
+      "arms",
+      "together"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "0yeaxcbj2n87",
+     "word": "calling a friend",
+     "level": "medium",
+     "banned": [
+      "phone",
+      "call",
+      "friend",
+      "talk"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "1v20cbdbe2bp",
+     "word": "playing a board game",
+     "level": "medium",
+     "banned": [
+      "game",
+      "dice",
+      "board",
+      "play"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "a490py0pmhpv",
+     "word": "a dinner party",
+     "level": "medium",
+     "banned": [
+      "dinner",
+      "table",
+      "food",
+      "guests"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "4hkz209xrsb6",
+     "word": "knocking on a door",
+     "level": "medium",
+     "banned": [
+      "knock",
+      "door",
+      "visit",
+      "neighbor"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "v22i50kgb7x0",
+     "word": "waving to a neighbor",
+     "level": "medium",
+     "banned": [
+      "wave",
+      "neighbor",
+      "hello",
+      "next door"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "tfiv2gcd0meo",
+     "word": "walking a dog",
+     "level": "medium",
+     "banned": [
+      "dog",
+      "leash",
+      "walk",
+      "pet"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "rohzth2vkk9x",
+     "word": "a book club",
+     "level": "medium",
+     "banned": [
+      "book",
+      "club",
+      "read",
+      "group"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "11hpjyjl0y8d",
+     "word": "holding hands",
+     "level": "medium",
+     "banned": [
+      "hands",
+      "hold",
+      "together",
+      "fingers"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "gwejqkx48i3f",
+     "word": "a friendship bracelet",
+     "level": "easy",
+     "banned": [
+      "bracelet",
+      "friend",
+      "string",
+      "wrist"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "xjftnsrm8dcy",
+     "word": "fireworks",
+     "level": "easy",
+     "banned": [
+      "boom",
+      "sky",
+      "sparkle",
+      "celebrate"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "q02fmh2q6b07",
+     "word": "a party hat",
+     "level": "easy",
+     "banned": [
+      "party",
+      "hat",
+      "cone",
+      "birthday"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "fd294m6lbr0d",
+     "word": "a clock",
+     "level": "easy",
+     "banned": [
+      "time",
+      "tick",
+      "hands",
+      "hour"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "01fdcj4kloyi",
+     "word": "a target",
+     "level": "easy",
+     "banned": [
+      "bullseye",
+      "arrow",
+      "aim",
+      "dart"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "6dsk6oetqm34",
+     "word": "confetti",
+     "level": "easy",
+     "banned": [
+      "paper",
+      "party",
+      "throw",
+      "colors"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "wmqf3qwq41ph",
+     "word": "a notebook",
+     "level": "easy",
+     "banned": [
+      "paper",
+      "write",
+      "pages",
+      "spiral"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "jiio9v6palxi",
+     "word": "a key",
+     "level": "easy",
+     "banned": [
+      "lock",
+      "door",
+      "open",
+      "keychain"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "zydqhns5andh",
+     "word": "a ball drop",
+     "level": "medium",
+     "banned": [
+      "ball",
+      "drop",
+      "midnight",
+      "times square"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "a1f6niidqws4",
+     "word": "writing a goal",
+     "level": "medium",
+     "banned": [
+      "write",
+      "goal",
+      "pen",
+      "list"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "o52pok2d0t6t",
+     "word": "a countdown",
+     "level": "medium",
+     "banned": [
+      "count",
+      "numbers",
+      "ten",
+      "zero"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "h9ewh1ibp345",
+     "word": "a vision board",
+     "level": "medium",
+     "banned": [
+      "vision",
+      "board",
+      "pictures",
+      "goals"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "uvvi7mz8t9t3",
+     "word": "jogging in the snow",
+     "level": "medium",
+     "banned": [
+      "jog",
+      "run",
+      "snow",
+      "winter"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "2h83wyutpb5m",
+     "word": "blowing a party horn",
+     "level": "medium",
+     "banned": [
+      "horn",
+      "blow",
+      "party",
+      "noise"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "uc69fqshttnx",
+     "word": "turning over a new leaf",
+     "level": "medium",
+     "banned": [
+      "leaf",
+      "turn",
+      "new",
+      "tree"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "iirqlr8kfb8f",
+     "word": "climbing stairs",
+     "level": "medium",
+     "banned": [
+      "stairs",
+      "steps",
+      "up",
+      "climb"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "y1hqk01uvxkw",
+     "word": "tearing off a calendar page",
+     "level": "medium",
+     "banned": [
+      "calendar",
+      "tear",
+      "page",
+      "month"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "p9lrzn6mns3f",
+     "word": "a party popper",
+     "level": "easy",
+     "banned": [
+      "pop",
+      "party",
+      "confetti",
+      "string"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ew4e1d7wybkj",
+     "word": "an exit sign",
+     "level": "easy",
+     "banned": [
+      "exit",
+      "sign",
+      "door",
+      "leave"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "mmr06lje7k2o",
+     "word": "a car key",
+     "level": "easy",
+     "banned": [
+      "key",
+      "car",
+      "drive",
+      "keychain"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "y488zxbdkuiq",
+     "word": "a phone",
+     "level": "easy",
+     "banned": [
+      "call",
+      "text",
+      "cell",
+      "ring"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "zbio5t75xper",
+     "word": "an ear",
+     "level": "easy",
+     "banned": [
+      "hear",
+      "listen",
+      "head",
+      "sound"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "2hg8bnzbnq2w",
+     "word": "a nose",
+     "level": "easy",
+     "banned": [
+      "smell",
+      "face",
+      "sniff",
+      "nostril"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "znpsaxqgqusr",
+     "word": "a hand",
+     "level": "easy",
+     "banned": [
+      "fingers",
+      "palm",
+      "wave",
+      "touch"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ulfelnc77myi",
+     "word": "an eye",
+     "level": "easy",
+     "banned": [
+      "see",
+      "look",
+      "eyeball",
+      "vision"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "u1ktged4aabs",
+     "word": "a candy cane",
+     "level": "easy",
+     "banned": [
+      "candy",
+      "striped",
+      "christmas",
+      "peppermint"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "2bh9ee1lmi3n",
+     "word": "a snowflake",
+     "level": "easy",
+     "banned": [
+      "snow",
+      "winter",
+      "cold",
+      "flake"
+     ],
+     "sets": [
+      "Stressful Holiday Moments",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "snuvlz4i4ypy",
+     "word": "a door",
+     "level": "easy",
+     "banned": [
+      "open",
+      "knob",
+      "exit",
+      "close"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "p0llaea2c3wm",
+     "word": "stepping outside",
+     "level": "medium",
+     "banned": [
+      "step",
+      "outside",
+      "door",
+      "air"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "wtjwy3oxyy5l",
+     "word": "a crowded dinner table",
+     "level": "medium",
+     "banned": [
+      "dinner",
+      "table",
+      "crowd",
+      "family"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "bbvow7wvbnr3",
+     "word": "taking a deep breath",
+     "level": "medium",
+     "banned": [
+      "breathe",
+      "inhale",
+      "air",
+      "lungs"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "vupiknllk92w",
+     "word": "texting a friend",
+     "level": "medium",
+     "banned": [
+      "text",
+      "phone",
+      "friend",
+      "message"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "6qhqns9l4nwm",
+     "word": "checking your watch",
+     "level": "medium",
+     "banned": [
+      "watch",
+      "time",
+      "wrist",
+      "look"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "bjpr7c949kqe",
+     "word": "a quiet walk in the snow",
+     "level": "medium",
+     "banned": [
+      "walk",
+      "snow",
+      "quiet",
+      "winter"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "b1kiwguesqlc",
+     "word": "waving goodbye",
+     "level": "medium",
+     "banned": [
+      "wave",
+      "bye",
+      "hand",
+      "leave"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "gu705t9dgo9n",
+     "word": "sipping hot tea",
+     "level": "medium",
+     "banned": [
+      "tea",
+      "sip",
+      "hot",
+      "mug"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "61p99pr9yckp",
+     "word": "putting on a coat",
+     "level": "medium",
+     "banned": [
+      "coat",
+      "jacket",
+      "put on",
+      "cold"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "pypvczc8z0mx",
+     "word": "a wrapped present",
+     "level": "easy",
+     "banned": [
+      "present",
+      "gift",
+      "bow",
+      "wrap"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "9xzeousdz0sk",
+     "word": "a sun",
+     "level": "easy",
+     "banned": [
+      "sun",
+      "hot",
+      "sky",
+      "bright"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "7u14qd16qitb",
+     "word": "a lamp",
+     "level": "easy",
+     "banned": [
+      "light",
+      "bulb",
+      "shade",
+      "lamp"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "tg90a2xt05ul",
+     "word": "a snowman",
+     "level": "easy",
+     "banned": [
+      "snow",
+      "carrot",
+      "frosty",
+      "winter"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "45v83pmm5a0l",
+     "word": "a window",
+     "level": "easy",
+     "banned": [
+      "glass",
+      "pane",
+      "look",
+      "open"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "l8xmocpbv4zz",
+     "word": "a scarf",
+     "level": "easy",
+     "banned": [
+      "neck",
+      "warm",
+      "knit",
+      "winter"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "donx2gpa07zn",
+     "word": "an alarm clock",
+     "level": "easy",
+     "banned": [
+      "alarm",
+      "wake",
+      "clock",
+      "ring"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "54tkmv47ewvz",
+     "word": "a mug of hot cocoa",
+     "level": "easy",
+     "banned": [
+      "cocoa",
+      "hot",
+      "mug",
+      "chocolate"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ml7u71xl57sn",
+     "word": "a pair of boots",
+     "level": "easy",
+     "banned": [
+      "boots",
+      "feet",
+      "shoes",
+      "snow"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "0vwuy0xkc0q4",
+     "word": "a flower bud",
+     "level": "easy",
+     "banned": [
+      "flower",
+      "bud",
+      "bloom",
+      "spring"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "2mb05cc5bkfb",
+     "word": "opening the curtains",
+     "level": "medium",
+     "banned": [
+      "curtains",
+      "open",
+      "window",
+      "light"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "flhig7xtosdj",
+     "word": "going for a winter walk",
+     "level": "medium",
+     "banned": [
+      "walk",
+      "winter",
+      "snow",
+      "cold"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "dqgdl3glb6b9",
+     "word": "building a snowman",
+     "level": "medium",
+     "banned": [
+      "snowman",
+      "build",
+      "snow",
+      "roll"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "9rz5h6ydiw2j",
+     "word": "ice skating",
+     "level": "medium",
+     "banned": [
+      "skate",
+      "ice",
+      "rink",
+      "glide"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ex2w2nlkye8w",
+     "word": "waking up early",
+     "level": "medium",
+     "banned": [
+      "wake",
+      "early",
+      "morning",
+      "alarm"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "i2ym1zncctck",
+     "word": "sitting by a sunny window",
+     "level": "medium",
+     "banned": [
+      "window",
+      "sun",
+      "sit",
+      "light"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "r27wapoqus5s",
+     "word": "making a snow angel",
+     "level": "medium",
+     "banned": [
+      "snow",
+      "angel",
+      "lie",
+      "arms"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "7gv1o9fb9kds",
+     "word": "a sled ride",
+     "level": "medium",
+     "banned": [
+      "sled",
+      "snow",
+      "hill",
+      "slide"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "bdtzfrgor27t",
+     "word": "the first day of spring",
+     "level": "medium",
+     "banned": [
+      "spring",
+      "flowers",
+      "first",
+      "season"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ayotqr3fi1ox",
+     "word": "a pair of mittens",
+     "level": "easy",
+     "banned": [
+      "mittens",
+      "gloves",
+      "hands",
+      "warm"
+     ],
+     "sets": [
+      "Winter SAD"
      ]
     }
    ],
@@ -34295,6 +40256,2646 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Inner Critics"
      ]
+    },
+    {
+     "id": "38qjvteecu2w",
+     "question": "What is the purpose of a year-in-review reflection?",
+     "answer": "To honestly look at what was hard, what changed and what you built",
+     "wrong": [
+      "To grade yourself against your goals",
+      "To list everything that went wrong",
+      "To fill out paperwork"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "4l5hmmppe25z",
+     "question": "True or false: If the year was hard, there's nothing worth reflecting on.",
+     "answer": "False — hard years often hold the most growth",
+     "wrong": [
+      "True — it's best forgotten",
+      "True — only good years count",
+      "False — but wait a few years first"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "0mla9vehtxhz",
+     "question": "What does 'bearing witness to your own story' mean?",
+     "answer": "Honestly acknowledging what happened, without shrinking or inflating it",
+     "wrong": [
+      "Writing a formal report",
+      "Posting your year online",
+      "Having someone else tell your story"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "56617ovsxupj",
+     "question": "What is the 'carry forward / leave behind' exercise?",
+     "answer": "Choosing what to keep from the year and what to let go",
+     "wrong": [
+      "Packing up your belongings",
+      "Sorting thoughts into categories",
+      "Making a moving checklist"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "1c9tem63naqp",
+     "question": "True or false: A year with setbacks can't include real growth.",
+     "answer": "False — a year can hold both setbacks and progress",
+     "wrong": [
+      "True — setbacks erase progress",
+      "True — only perfect years count",
+      "False — but only if you start over"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "kzplj66y2hnl",
+     "question": "What does 'survival is an accomplishment' mean?",
+     "answer": "Getting through a hard year — showing up and not giving up — counts",
+     "wrong": [
+      "Only near-death survivals count",
+      "It's an official milestone",
+      "Survival is the bare minimum"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "yuyuxmexmh61",
+     "question": "Which is worth celebrating in a year-in-review?",
+     "answer": "Any moment of honesty, connection or showing up when it was hard",
+     "wrong": [
+      "Only things someone else documented",
+      "Only beating expectations",
+      "Only doing better than others"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "hvl7gs3dy8gs",
+     "question": "True or false: Reflection is about judging yourself.",
+     "answer": "False — it's about understanding, not grading your worth",
+     "wrong": [
+      "True — you rank your performance",
+      "True — it always includes punishment",
+      "False — but list everything you'd change"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "3c2ei9zq3zvo",
+     "question": "What does it mean to 'leave shame behind'?",
+     "answer": "Owning past mistakes without letting them define you",
+     "wrong": [
+      "Apologizing to everyone",
+      "Filing a statement",
+      "Never talking about the past again"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ozb8whc6h9no",
+     "question": "Why is perfectionism a problem in reflection?",
+     "answer": "It says only a perfect year counts — hiding real growth",
+     "wrong": [
+      "It helps you perform better",
+      "It's a healthy standard",
+      "It improves attention to detail"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "xhugessbpv8e",
+     "question": "True or false: Small, steady steps don't count as real change.",
+     "answer": "False — small steps build the biggest, longest-lasting change",
+     "wrong": [
+      "True — only dramatic change counts",
+      "True — change needs a minimum size",
+      "False — only if written down"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "tmnje1cgxfjt",
+     "question": "Why reflect on what you learned about yourself?",
+     "answer": "Self-knowledge helps you make better choices",
+     "wrong": [
+      "Only an expert can interpret it",
+      "It's an annual requirement",
+      "Only if it confirms what others think"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2745oifppi8m",
+     "question": "Which is NOT a healthy way to reflect on the year?",
+     "answer": "Reviewing only your failures",
+     "wrong": [
+      "Looking at both the good and the hard",
+      "Choosing one thing to carry and one to release",
+      "Celebrating moments of connection"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "xu1o36bmm8s2",
+     "question": "True or false: Once the year is over, it's too late to learn from it.",
+     "answer": "False — the year being over is what makes reflection possible",
+     "wrong": [
+      "True — reflection only helps mid-year",
+      "True — the past can't teach you",
+      "False — but only within 30 days"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ilvxkdfyymar",
+     "question": "What carries forward into the new year?",
+     "answer": "Your skills, connections, self-awareness and values",
+     "wrong": [
+      "Nothing — every year starts at zero",
+      "Only certified skills",
+      "Only what's written down"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "gq5br6slpihr",
+     "question": "True or false: Thinking about who showed up for you helps you see your support network.",
+     "answer": "True — naming them shows connections worth protecting",
+     "wrong": [
+      "False — it creates dependence",
+      "False — only professionals count",
+      "True — but only staff count"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "cxa5rjbtzicw",
+     "question": "Letting go of a habit or pattern that held you back is…",
+     "answer": "A meaningful act of growth and self-respect",
+     "wrong": [
+      "Giving up",
+      "Always a mistake",
+      "Only okay if someone approves"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "00v01picimp8",
+     "question": "What is 'the story that you haven't changed'?",
+     "answer": "An old belief that you're the same person — the evidence says otherwise",
+     "wrong": [
+      "A therapy technique",
+      "A memory test",
+      "Parts of your history"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "3tbw3xiby22t",
+     "question": "True or false: Looking back is the same as getting stuck in the past.",
+     "answer": "False — reflecting to understand is different from dwelling",
+     "wrong": [
+      "True — always avoid looking back",
+      "True — it replays the past",
+      "False — but only for 15 minutes"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ns8vce1axcxq",
+     "question": "What's a great question to end a year-in-review?",
+     "answer": "'What will I carry forward — and what am I ready to let go of?'",
+     "wrong": [
+      "'What did I fail at?'",
+      "'How do I compare to others?'",
+      "'What would others say about me?'"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "5ll3zscw3hb8",
+     "question": "What's the most important thing to remember at the end of a hard year?",
+     "answer": "You made it through — and that shows real strength",
+     "wrong": [
+      "Plan so it never happens again",
+      "Don't think about it",
+      "It doesn't count unless documented"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "4820xzxboo3b",
+     "question": "What is perfectionism called in the handout?",
+     "answer": "The enemy of real progress",
+     "wrong": [
+      "The key to success",
+      "A healthy habit",
+      "A helpful motivator"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "z5docq8hmlql",
+     "question": "What is an act of kindness?",
+     "answer": "An intentional, voluntary action that helps another person",
+     "wrong": [
+      "Any polite behavior",
+      "A required gesture",
+      "A trade where both sides gain equally"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "guwwx50j2w18",
+     "question": "What feel-good brain chemical is released when you do something kind?",
+     "answer": "Dopamine",
+     "wrong": [
+      "Cortisol",
+      "Melatonin",
+      "Adrenaline"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "g2e6m1tb1ot2",
+     "question": "True or false: Only the person receiving kindness benefits.",
+     "answer": "False — the giver benefits too",
+     "wrong": [
+      "True — givers get nothing",
+      "True — it only goes one way",
+      "False — only if it's a big sacrifice"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "4lyi53sp4hgc",
+     "question": "What does it mean that kindness is 'contagious'?",
+     "answer": "Seeing kindness inspires others to be kind — a ripple effect",
+     "wrong": [
+      "It spreads like a cold",
+      "It must be repaid",
+      "Only through touch"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "a8o8a3n5a3x9",
+     "question": "Which is a FREE act of kindness?",
+     "answer": "Listening fully without checking your phone",
+     "wrong": [
+      "Buying a small gift",
+      "Donating money",
+      "Sending flowers"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "8cz48r0khdlo",
+     "question": "What does kindness do to cortisol, the stress hormone?",
+     "answer": "Lowers it — in both the giver and receiver",
+     "wrong": [
+      "Raises it",
+      "Has no effect",
+      "Only lowers it for the receiver"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "qt9tsnhyvgne",
+     "question": "What does research show about people who practice kindness regularly?",
+     "answer": "Higher life satisfaction and lower stress",
+     "wrong": [
+      "More burnout",
+      "Better health but no mood change",
+      "They seem less confident"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "hn4m9z0cry0l",
+     "question": "True or false: Being kind to yourself is selfish.",
+     "answer": "False — self-kindness helps you give to others",
+     "wrong": [
+      "True — always focus outward",
+      "True — it's avoidance",
+      "False — only physical self-care"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "g02j3g4wybq2",
+     "question": "What does receiving kindness gracefully look like?",
+     "answer": "Saying a sincere 'thank you' and accepting it",
+     "wrong": [
+      "Immediately paying them back",
+      "Explaining why you don't deserve it",
+      "Brushing it off"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "xljg7xq9sgxs",
+     "question": "What is 'helper's high'?",
+     "answer": "The boost in mood after helping someone",
+     "wrong": [
+      "Overconfidence from volunteering",
+      "A runner's high",
+      "A medical condition"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "5rpusstua8e0",
+     "question": "True or false: Kindness and healthy boundaries can't go together.",
+     "answer": "False — you can be kind and still have limits",
+     "wrong": [
+      "True — kindness means no limits",
+      "True — limits are unkind",
+      "False — only at work"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "cjd7m2vs370b",
+     "question": "How can writing a thank-you note be an act of kindness?",
+     "answer": "It recognizes someone's value in a specific, lasting way",
+     "wrong": [
+      "It's an obligation",
+      "Only on fancy paper",
+      "Only by email"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "nms8sasndecg",
+     "question": "What happens in the brain when you WITNESS kindness?",
+     "answer": "The same areas light up as if you received it",
+     "wrong": [
+      "You feel envy",
+      "Nothing happens",
+      "You get competitive"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "f85robl9c2ie",
+     "question": "True or false: You have to feel happy to be kind.",
+     "answer": "False — kindness often improves your mood",
+     "wrong": [
+      "True — forced kindness backfires",
+      "True — only happy acts count",
+      "False — but only with supervision"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "j8ih4dcmjamc",
+     "question": "How does focusing outward on others help you?",
+     "answer": "It can quiet worry and self-critical thoughts",
+     "wrong": [
+      "It replaces your own growth",
+      "Only after certain programs",
+      "It has no effect"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "hgnda0vuo6ab",
+     "question": "Which is NOT an act of kindness?",
+     "answer": "Giving advice nobody asked for to 'fix' someone",
+     "wrong": [
+      "Letting someone go ahead in line",
+      "A sincere, specific compliment",
+      "Checking in on a friend"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "cde1plpeqqri",
+     "question": "True or false: Big gestures always matter more than small ones.",
+     "answer": "False — small, frequent acts have more lasting impact",
+     "wrong": [
+      "True — bigger is better",
+      "True — memorable acts must cost a lot",
+      "False — only in therapy"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "bdx6dp66rwja",
+     "question": "Why can it be hard to accept kindness?",
+     "answer": "Feeling unworthy can make it hard to believe you deserve it",
+     "wrong": [
+      "People are taught to reject it",
+      "It creates debt",
+      "It triggers stress in everyone"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "9ged50mqkzr6",
+     "question": "What is the 'helper's paradox'?",
+     "answer": "By helping others, you end up helping yourself",
+     "wrong": [
+      "Helpers burn out fastest",
+      "Help yourself first, always",
+      "Helping lowers your motivation"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "bnk0ymt42uz1",
+     "question": "True or false: Letting others help you is also a kindness.",
+     "answer": "True — it gives them the gift of giving",
+     "wrong": [
+      "False — it creates dependence",
+      "False — kindness only goes outward",
+      "True — only if you pay it back"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "o08ceuu6to8y",
+     "question": "Which act of kindness takes less than one minute?",
+     "answer": "A genuine, specific compliment",
+     "wrong": [
+      "A long appreciation letter",
+      "Organizing a community event",
+      "An afternoon of volunteering"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "sbsj8tld0y3a",
+     "question": "What's the most important quality of an act of kindness?",
+     "answer": "It's genuine and freely given — no strings attached",
+     "wrong": [
+      "It costs a lot",
+      "Others see it",
+      "It gets returned"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "yb6ez5c2s9s7",
+     "question": "According to Hope Theory, what are the three parts of hope?",
+     "answer": "Goals, pathways and agency",
+     "wrong": [
+      "Optimism, planning and patience",
+      "Faith, action and time",
+      "Desire, discipline and resilience"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "0gdunhzzp89j",
+     "question": "Who developed Hope Theory?",
+     "answer": "Dr. C.R. Snyder",
+     "wrong": [
+      "Sigmund Freud",
+      "Abraham Maslow",
+      "B.F. Skinner"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "gaqw5t9m6lyn",
+     "question": "What's the difference between hope and wishful thinking?",
+     "answer": "Hope includes goals and believing you can act; wishing is passive",
+     "wrong": [
+      "Hope is just positive feelings",
+      "There's no difference",
+      "Wishing works better"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "wyy8ioxf8eko",
+     "question": "True or false: Having hope means believing everything will work out perfectly.",
+     "answer": "False — it's believing the future can be different and you have a role",
+     "wrong": [
+      "True — hope means certainty",
+      "True — hope requires positive outcomes",
+      "False — it requires 50% odds"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "ow28hjx9kc1k",
+     "question": "What is 'agency' in Hope Theory?",
+     "answer": "Believing you're capable of making progress",
+     "wrong": [
+      "A legal document",
+      "Someone else's authority over you",
+      "A motivation score"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "dp4vtff3kyc4",
+     "question": "What are 'pathways' in Hope Theory?",
+     "answer": "Different routes to reach your goals",
+     "wrong": [
+      "Hiking trails",
+      "Following orders",
+      "Staying in the present"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "fz6htgkor4a9",
+     "question": "True or false: Hope is passive — it just happens to you.",
+     "answer": "False — hope is active and motivating",
+     "wrong": [
+      "True — good events create it",
+      "True — it's just a feeling",
+      "False — only experts can create it"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "syyl6184k4uh",
+     "question": "What is 'borrowed hope'?",
+     "answer": "Letting others hold hope for you while you rebuild your own",
+     "wrong": [
+      "Taking credit for someone's success",
+      "A formal program",
+      "Hope you have to pay back"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "vb457syk1sdi",
+     "question": "What does research link higher hope to?",
+     "answer": "Better health, faster recovery and more resilience",
+     "wrong": [
+      "Nothing measurable",
+      "Only clinical groups",
+      "More disappointment"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "6g38yb3t5snz",
+     "question": "Which question helps you find what to hope for?",
+     "answer": "'What does a meaningful life look like to me?'",
+     "wrong": [
+      "'What do others expect?'",
+      "'What's realistic for me?'",
+      "'What did I fail at?'"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "suffzczab7j0",
+     "question": "True or false: Once you lose hope, it's gone for good.",
+     "answer": "False — hope can be rebuilt",
+     "wrong": [
+      "True — it's used up",
+      "True — after twice it's gone",
+      "False — but it takes a year"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "dvy33vaf9u1u",
+     "question": "What does 'allow yourself to want things' mean?",
+     "answer": "Desire is the beginning of hope",
+     "wrong": [
+      "Get instant gratification",
+      "A treatment stage",
+      "A therapy tool"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "s4wu7msniiuq",
+     "question": "How does shame damage hope?",
+     "answer": "It says you don't deserve a better future",
+     "wrong": [
+      "It boosts motivation",
+      "It doesn't affect hope",
+      "It only affects guilt"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "jjplzi33z64s",
+     "question": "True or false: You need everything figured out before you can hope.",
+     "answer": "False — you just need to believe the future can be different",
+     "wrong": [
+      "True — you need a full plan",
+      "True — or it's just wishing",
+      "False — but you need a milestone"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "lknsdjxxhe6h",
+     "question": "What can you do when hope feels impossible?",
+     "answer": "Tell a trusted person — hope is easier to hold together",
+     "wrong": [
+      "Wait for it to return",
+      "Do affirmations until it's back",
+      "Assume it's gone"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "5lrbaafgwvo6",
+     "question": "True or false: Hoping just sets you up for disappointment.",
+     "answer": "False — avoiding hope also blocks growth",
+     "wrong": [
+      "True — hope less, hurt less",
+      "True — it's a top trigger",
+      "False — but only hope for sure things"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "js9ppyt26fl3",
+     "question": "True or false: Small changes count toward hope.",
+     "answer": "True — noticing small changes rebuilds hope",
+     "wrong": [
+      "False — only big changes count",
+      "False — they breed complacency",
+      "True — only early on"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "sd4uia8twii6",
+     "question": "What's a first step from hopelessness toward hope?",
+     "answer": "Take one small action toward something that matters",
+     "wrong": [
+      "Attend a certified workshop",
+      "Resolve everything first",
+      "Wait for spring"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "qe8vrdvo0hba",
+     "question": "Why is surviving hard things evidence for hope?",
+     "answer": "It proves you're capable",
+     "wrong": [
+      "It qualifies you for programs",
+      "It's a resilience worksheet",
+      "It actually lowers hope"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "u1zyk7vez6dl",
+     "question": "True or false: Hope is only for people with easy lives.",
+     "answer": "False — hope shows up in people who've faced huge challenges",
+     "wrong": [
+      "True — hardship blocks hope",
+      "True — it's harder after adversity",
+      "False — but it takes longer"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "p5jfou3u6toa",
+     "question": "How are hope and motivation related?",
+     "answer": "Hope fuels motivation",
+     "wrong": [
+      "Motivation must come first",
+      "They're unrelated",
+      "Hope reduces motivation"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "n644p7bmfc0a",
+     "question": "How can you hold onto hope when the future feels uncertain?",
+     "answer": "One day, one step, one action at a time",
+     "wrong": [
+      "Make a 10-year plan",
+      "Avoid thinking about the future",
+      "Get guarantees first"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "34rm4kmz7sz4",
+     "question": "What's a common emotional reason people overspend at the holidays?",
+     "answer": "Wanting to show love or meet expectations through gifts",
+     "wrong": [
+      "A medical condition",
+      "A government policy",
+      "Cold weather"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "nwerrmmbzc5t",
+     "question": "What's the first step in a simple holiday budget?",
+     "answer": "List who you're giving to and set a limit per person",
+     "wrong": [
+      "Open a new credit card",
+      "Plan after the holidays",
+      "Match last year's spending"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "6w1x5z9m2xnb",
+     "question": "Which is a hidden holiday cost people forget?",
+     "answer": "Wrapping, shipping, food, travel and tips",
+     "wrong": [
+      "Sales tax on gift cards",
+      "Exchange rates",
+      "Restocking fees"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "vfgts2hvz41b",
+     "question": "True or false: Real relationships depend on how much you spend.",
+     "answer": "False — they're built on care and presence",
+     "wrong": [
+      "True — gifts measure love",
+      "True — more spending, happier relationships",
+      "False — only for friends"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "3uom4kpnk8nm",
+     "question": "What's a no-cost way to show you care?",
+     "answer": "A handwritten letter, your time or a home-cooked meal",
+     "wrong": [
+      "An expensive gift card",
+      "A social media post",
+      "An IOU for later"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "4sxo16nu60tv",
+     "question": "How can using cash or a prepaid card help?",
+     "answer": "When the money's gone, spending stops",
+     "wrong": [
+      "It earns more points",
+      "It tracks automatically",
+      "It gets discounts"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "dlzmykr2u2qk",
+     "question": "True or false: You must explain your budget to people who expect more.",
+     "answer": "False — 'I'm keeping things simple this year' is enough",
+     "wrong": [
+      "True — honesty requires details",
+      "True — they need context",
+      "False — only if you gave before"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "3rnpqt6vqvpw",
+     "question": "What's a good way to avoid impulse spending?",
+     "answer": "Make a list ahead of time and stick to it",
+     "wrong": [
+      "Shop only on big sale days",
+      "Bring a deal-hunting friend",
+      "Use a low-interest card"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "k4tq7jpgnh2e",
+     "question": "What is 'comparison spending'?",
+     "answer": "Spending more because of what you see others buy",
+     "wrong": [
+      "Comparing prices",
+      "Comparing to last year",
+      "A shopping disorder"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "8ex2efb0lcsl",
+     "question": "What should you do if money pressure feels overwhelming?",
+     "answer": "Talk to a trusted person",
+     "wrong": [
+      "Raise your credit limit",
+      "Skip all holiday activities",
+      "Wait for January"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "d7zhtb935nmf",
+     "question": "True or false: Holiday debt is usually paid off quickly.",
+     "answer": "False — it often takes months",
+     "wrong": [
+      "True — within weeks",
+      "True — it's tax deductible",
+      "False — only for some incomes"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "rhwr88ys9x19",
+     "question": "What is a 'spending cap'?",
+     "answer": "The most you've decided to spend in total",
+     "wrong": [
+      "A government limit",
+      "A store policy",
+      "A bank product"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "3cqinw7ijrbl",
+     "question": "Which is a meaningful gift that costs nothing?",
+     "answer": "Your full, undistracted attention",
+     "wrong": [
+      "An IOU",
+      "A promise for later",
+      "A social media shoutout"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "i7ikrub68lq3",
+     "question": "What's a very common holiday money mistake?",
+     "answer": "Using credit with no plan to pay it back",
+     "wrong": [
+      "Buying too few gifts",
+      "Missing sales",
+      "Buying gift cards"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "lozrdtydwayk",
+     "question": "True or false: Keeping gifts simple is irresponsible.",
+     "answer": "False — it shows planning and self-respect",
+     "wrong": [
+      "True — generosity means spending",
+      "True — the economy needs it",
+      "False — only if you warn people"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "k8gavsqujcok",
+     "question": "Why list your expenses BEFORE you shop?",
+     "answer": "To set a realistic total and avoid surprises",
+     "wrong": [
+      "To qualify for layaway",
+      "For tax records",
+      "To share with family"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "tv8xhdfq2s5i",
+     "question": "Which emotion most often drives unplanned spending?",
+     "answer": "Fear of disappointing people",
+     "wrong": [
+      "Excitement about sales",
+      "Nostalgia",
+      "Gratitude"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "gld0jm9iwdt0",
+     "question": "How does holiday credit card use often affect January?",
+     "answer": "It carries money stress into the new year",
+     "wrong": [
+      "No effect",
+      "It improves budgeting",
+      "Bonuses cover it"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "311l28iq1j92",
+     "question": "How can you honor someone without spending money?",
+     "answer": "Write a letter or share a story about them",
+     "wrong": [
+      "Use your emergency fund",
+      "Post online",
+      "Buy a dollar-store gift"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "vi6ejn72qh8i",
+     "question": "True or false: Budgeting takes the joy out of giving.",
+     "answer": "False — it removes worry so you can give freely",
+     "wrong": [
+      "True — spontaneity is the point",
+      "True — people can tell",
+      "False — only if kept secret"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "h49ntb7y09oi",
+     "question": "What does 'it's only once a year' thinking lead to?",
+     "answer": "Overspending through false urgency",
+     "wrong": [
+      "Smart saving",
+      "Better planning",
+      "Lower prices"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "hc3h9yuvk6gf",
+     "question": "What can setting limits now protect?",
+     "answer": "Your January — and your peace of mind",
+     "wrong": [
+      "Your credit score only",
+      "Nothing",
+      "Store profits"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "vac4w8hfzbl9",
+     "question": "What is loneliness, really?",
+     "answer": "The gap between the connection you have and the connection you need",
+     "wrong": [
+      "Simply being physically alone",
+      "An introvert personality trait",
+      "A mood that always passes quickly"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "nbc0y3b2wssq",
+     "question": "True or false: You can feel lonely surrounded by people.",
+     "answer": "True — it's about the quality of connection, not the number of people",
+     "wrong": [
+      "False — people always cure loneliness",
+      "True — but only with social anxiety",
+      "False — only alone"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "dzuorhl1t4aa",
+     "question": "How common is loneliness?",
+     "answer": "Most adults feel it at some point",
+     "wrong": [
+      "Less than 10% of people",
+      "Only people with a diagnosis",
+      "Exactly half"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "0058b9i4km2u",
+     "question": "Chronic loneliness has been compared to the health effects of…",
+     "answer": "Smoking about 15 cigarettes a day",
+     "wrong": [
+      "A high-fat diet",
+      "One bad night's sleep",
+      "Nothing physical"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "6tq64tqaeu30",
+     "question": "What does 'quality over quantity' mean for relationships?",
+     "answer": "A few real connections beat many shallow ones",
+     "wrong": [
+      "More friends is always better",
+      "Time with anyone helps equally",
+      "Quantity matters most"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "6yagx5dt8m19",
+     "question": "True or false: Scrolling social media reduces loneliness.",
+     "answer": "False — passive scrolling is linked to MORE loneliness",
+     "wrong": [
+      "True — online equals in person",
+      "True — it always helps",
+      "False — only for teens"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "nltpzunnnzh5",
+     "question": "What is 'connection mapping'?",
+     "answer": "Listing or drawing the people in your support network",
+     "wrong": [
+      "Using GPS to find meetings",
+      "A therapist's history chart",
+      "An app"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "scmyswq546gm",
+     "question": "Which is a healthy small step toward connection?",
+     "answer": "Making eye contact and saying hello to someone new",
+     "wrong": [
+      "Sharing your deepest secrets with a stranger",
+      "Posting about loneliness online",
+      "Waiting until you feel totally ready"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "1v0f2pshoi0r",
+     "question": "How does shame add to loneliness?",
+     "answer": "It makes it hard to reach out or trust others",
+     "wrong": [
+      "It motivates reconnection",
+      "It only relates to guilt",
+      "It has no effect"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "rb4lr89u7y6q",
+     "question": "True or false: Needing other people is a sign of weakness.",
+     "answer": "False — humans are wired for connection",
+     "wrong": [
+      "True — maturity means needing no one",
+      "True — independence is everything",
+      "False — only for kids"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "vb8gclmcbdfo",
+     "question": "What does loneliness do to cortisol, the stress hormone?",
+     "answer": "Raises it — affecting sleep and immunity",
+     "wrong": [
+      "Lowers it",
+      "No effect",
+      "Only affects serotonin"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "ivvqttw3glqx",
+     "question": "Why can isolation feel 'safer' than reaching out?",
+     "answer": "Opening up involves risk",
+     "wrong": [
+      "Isolation is actually safer",
+      "It avoids all discomfort",
+      "It's recommended"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "1azbofomis2w",
+     "question": "True or false: Loneliness means you're unlovable.",
+     "answer": "False — it's a normal signal that you need more connection",
+     "wrong": [
+      "True — it shows poor social skills",
+      "True — it's a warning sign",
+      "False — only for some people"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "6oqfmfawdl74",
+     "question": "Why does showing up to group help with loneliness?",
+     "answer": "Regular presence builds familiarity — the start of connection",
+     "wrong": [
+      "It's required",
+      "It guarantees friends",
+      "It doesn't help"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "x56vl7gvujx4",
+     "question": "True or false: It's too late in life to make real friends.",
+     "answer": "False — friendships can form at any age",
+     "wrong": [
+      "True — friendship peaks as a teen",
+      "True — after 35 it's over",
+      "False — only before 50"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "z80jalf7qwns",
+     "question": "What's a first step when you notice you feel lonely?",
+     "answer": "Name it — 'I'm feeling disconnected' — and tell one person",
+     "wrong": [
+      "Wait for it to pass",
+      "Assume it's permanent",
+      "Keep it to yourself"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "iq7yjn5x5k1e",
+     "question": "Which can be a sign of loneliness?",
+     "answer": "Craving connection but avoiding reaching out",
+     "wrong": [
+      "Liking small groups",
+      "Enjoying quiet time without distress",
+      "Having a few close friends"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "m3e4pi2segyd",
+     "question": "What's the best antidote to loneliness, according to research?",
+     "answer": "Brief, in-person, meaningful contact",
+     "wrong": [
+      "Long solitude",
+      "More screen time",
+      "Avoiding people"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "vnonhw1517d4",
+     "question": "True or false: Telling someone you're lonely is a burden to them.",
+     "answer": "False — most people want to be there for you",
+     "wrong": [
+      "True — it's manipulative",
+      "True — only tell professionals",
+      "False — but only family"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "ypvjedpkm220",
+     "question": "Loneliness is like hunger because…",
+     "answer": "It's a signal that you need something — connection",
+     "wrong": [
+      "It goes away by itself",
+      "It's only physical",
+      "Food fixes it"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "nngjvd1x9cnw",
+     "question": "What's the most important thing to remember when loneliness feels permanent?",
+     "answer": "It's a feeling, not a permanent state — small actions help",
+     "wrong": [
+      "Only time fixes it",
+      "Nothing helps",
+      "It's a character flaw"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "a32rv506po2j",
+     "question": "Which is a way to meet people with shared interests?",
+     "answer": "Join a group around something you care about — art, fitness, faith",
+     "wrong": [
+      "Stay home and wait",
+      "Only use social media",
+      "Avoid groups"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "ksfp9noew2gs",
+     "question": "What's the main difference between a resolution and an intention?",
+     "answer": "A resolution is a specific goal; an intention is a values-based direction",
+     "wrong": [
+      "Resolutions are flexible",
+      "Intentions are fixed rules",
+      "There's no difference"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "mn5jw2mh1aqb",
+     "question": "True or false: Motivation is the most reliable way to keep a change going.",
+     "answer": "False — motivation comes and goes; habits and values last",
+     "wrong": [
+      "True — motivation is everything",
+      "True — it's the top driver",
+      "False — only willpower works"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "9i91u3wdb8jr",
+     "question": "What does it mean for a goal to be 'values-based'?",
+     "answer": "It reflects what truly matters to you",
+     "wrong": [
+      "An expert approved it",
+      "Research says it's best",
+      "It's quick to achieve"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "9px0021rrfab",
+     "question": "Why do many New Year's resolutions fail by February?",
+     "answer": "They're too rigid, rely on willpower and don't allow for setbacks",
+     "wrong": [
+      "People forget to write them",
+      "Winter makes it impossible",
+      "Humans can only change in spring"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "45pws5ajsyas",
+     "question": "What does 'starting from shame' mean?",
+     "answer": "Setting goals because 'I need to fix myself' instead of 'I want to grow'",
+     "wrong": [
+      "Fixing past failures first",
+      "Ignoring the past",
+      "Setting easy goals"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "dljm53awhhoc",
+     "question": "True or false: You have to wait until January 1 to start a change.",
+     "answer": "False — any moment can be a fresh start",
+     "wrong": [
+      "True — only big dates work",
+      "True — research requires it",
+      "False — only Mondays work"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "utktf0989koc",
+     "question": "What is the 'One Word' exercise?",
+     "answer": "Choosing one word to guide your year",
+     "wrong": [
+      "Writing one resolution 365 times",
+      "Changing one thing a month",
+      "A vocabulary game"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "gbr5mttagkyw",
+     "question": "What should happen after a setback?",
+     "answer": "Treat it as information and recommit",
+     "wrong": [
+      "Revise and resubmit your goal",
+      "Give up — it was unrealistic",
+      "Wait for next year"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "x9vynx4ew7tq",
+     "question": "True or false: Small, specific steps work better than big declarations.",
+     "answer": "True — research on habits supports small steps",
+     "wrong": [
+      "False — bold goals work better",
+      "False — only dramatic change counts",
+      "True — only in January"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "icklbw00ynba",
+     "question": "What is the 'fresh start effect'?",
+     "answer": "Feeling extra motivated at meaningful moments like a new year",
+     "wrong": [
+      "The brain resets every January",
+      "A marketing trick",
+      "A sleep pattern"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "xjm3m31w9btk",
+     "question": "True or false: If you stumble, the whole year is lost.",
+     "answer": "False — recommitting is how lasting change works",
+     "wrong": [
+      "True — early slips predict failure",
+      "True — the first 30 days decide everything",
+      "False — only if it's February"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "4j0x36p2wg5c",
+     "question": "What does 'moving toward something valued' mean?",
+     "answer": "Being pulled forward by what matters to you",
+     "wrong": [
+      "Moving to a new city",
+      "The last phase of a program",
+      "Running away from problems"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "sm9myuzr2lsr",
+     "question": "True or false: Sharing your intention with someone helps you follow through.",
+     "answer": "True — accountability increases follow-through",
+     "wrong": [
+      "False — it adds pressure",
+      "False — keep it private",
+      "True — only online"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "sipp4z5qh92a",
+     "question": "What is a 'values inventory'?",
+     "answer": "Listing what matters most to you",
+     "wrong": [
+      "A clinical test",
+      "A shopping list",
+      "A required form"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "0d1r9v4csv9q",
+     "question": "True or false: You need to know exactly what you want to set an intention.",
+     "answer": "False — a direction or value is enough to start",
+     "wrong": [
+      "True — you need a full plan",
+      "True — or it's just wishing",
+      "False — but you need a deadline"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "5dpuf1apcvty",
+     "question": "What does it mean for an intention to be 'yours'?",
+     "answer": "It reflects your values — not what others say you should change",
+     "wrong": [
+      "Someone assigned it",
+      "You do it totally alone",
+      "It's written in a file"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "40ukeagyw38t",
+     "question": "True or false: Needing to set an intention means something's wrong with you.",
+     "answer": "False — wanting to grow is healthy and normal",
+     "wrong": [
+      "True — healthy people don't need goals",
+      "True — it signals a problem",
+      "False — only in January"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ipld7s27f21d",
+     "question": "What is a 'partner share'?",
+     "answer": "Telling one person your intention and one step you'll take",
+     "wrong": [
+      "Signing a contract",
+      "Making a joint goal",
+      "Sharing your password"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "twky9xpu6m7k",
+     "question": "What's the most important question when setting an intention?",
+     "answer": "'What do I value — and what would living it look like?'",
+     "wrong": [
+      "'What do others think I should do?'",
+      "'What did I fail at last year?'",
+      "'What's popular this year?'"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "y910gk6a6l68",
+     "question": "How often should you revisit your intention?",
+     "answer": "Monthly — not just on January 1",
+     "wrong": [
+      "Never",
+      "Once a year",
+      "Every hour"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "r80i0981z23i",
+     "question": "How should you treat yourself after a setback?",
+     "answer": "As kindly as you'd treat a friend",
+     "wrong": [
+      "Harshly, to stay motivated",
+      "Ignore it completely",
+      "Start over from zero"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "wjcr3hdt3hy7",
+     "question": "An intention is a direction, not a…",
+     "answer": "Destination",
+     "wrong": [
+      "Resolution",
+      "Value",
+      "Habit"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "q7dru263nyrq",
+     "question": "Why plan ahead before a stressful holiday event?",
+     "answer": "So you have a response ready when stress hits",
+     "wrong": [
+      "To warn your family",
+      "To sign a contract",
+      "It's required"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "9v55tuq5j2w6",
+     "question": "What does 'know your exit' mean?",
+     "answer": "Have a plan and reason to leave early if needed",
+     "wrong": [
+      "Find the emergency exits",
+      "Agree on a curfew",
+      "Avoid going at all"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "v883qija35io",
+     "question": "True or false: Leaving an event early means you failed.",
+     "answer": "False — protecting your wellbeing is the right choice",
+     "wrong": [
+      "True — you should tough it out",
+      "True — it's a bad sign",
+      "False — only if it's late"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "76j9ufljo7p8",
+     "question": "What is the 5-4-3-2-1 technique for?",
+     "answer": "Grounding yourself using your five senses",
+     "wrong": [
+      "A breathing count",
+      "Rating a crisis",
+      "A gift checklist"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "axodkwsymvp9",
+     "question": "In 5-4-3-2-1 grounding, how many things do you SEE?",
+     "answer": "5",
+     "wrong": [
+      "4",
+      "3",
+      "1"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "2zmlpiy511wr",
+     "question": "In 5-4-3-2-1 grounding, what do you notice just ONE of?",
+     "answer": "Something you can taste",
+     "wrong": [
+      "Something you can see",
+      "Something you can hear",
+      "Something you can touch"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "zbimelrkgnqf",
+     "question": "What should you do if a holiday conversation feels unsafe?",
+     "answer": "Calmly excuse yourself — take a break or change the subject",
+     "wrong": [
+      "Argue louder",
+      "Fix it right now",
+      "Stay and endure it"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ykmwe95vpygs",
+     "question": "What does setting a time limit on an event do?",
+     "answer": "Gives you control over how long you're there",
+     "wrong": [
+      "Insults the host",
+      "It's a rule",
+      "Prevents others from leaving"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "1ekqdp3mtk2p",
+     "question": "True or false: You have to attend every holiday event you're invited to.",
+     "answer": "False — you can say no to events that feel overwhelming",
+     "wrong": [
+      "True — it's an obligation",
+      "True — skipping is rude",
+      "False — only work parties"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "x9moe07qtqei",
+     "question": "What does debriefing with a trusted person afterward do?",
+     "answer": "Helps you process feelings and plan for next time",
+     "wrong": [
+      "It's a formal report",
+      "It erases stress",
+      "It assigns blame"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "bh9sjlq4x1ux",
+     "question": "What's a healthy thought after getting through a hard moment?",
+     "answer": "'I got through it — it didn't have to be perfect'",
+     "wrong": [
+      "'I need to fix what went wrong'",
+      "'I should have been stronger'",
+      "'I should have prevented it'"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "kbhqduui1l92",
+     "question": "True or false: Family gatherings must be perfect to be meaningful.",
+     "answer": "False — letting go of perfect lowers stress",
+     "wrong": [
+      "True — planning makes memories",
+      "True — first ones especially",
+      "False — only small ones"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "x9q4yo0jmmn6",
+     "question": "What's the difference between strategies BEFORE vs. DURING an event?",
+     "answer": "Before: planning. During: grounding, breaks and exits.",
+     "wrong": [
+      "Before is for some people only",
+      "Before needs approval",
+      "There's no difference"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "wutyhu8xbv2d",
+     "question": "True or false: You should handle holiday stress entirely on your own.",
+     "answer": "False — using your support system is a strength",
+     "wrong": [
+      "True — independence matters most",
+      "True — asking for help burdens others",
+      "False — only on big days"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "pyqel304ti0h",
+     "question": "What can you do if you feel overwhelmed at an event?",
+     "answer": "Take a short break — step outside or find a quiet space",
+     "wrong": [
+      "Ask everyone to stop",
+      "Leave and never return",
+      "Push through"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "enlgs2gtu2k6",
+     "question": "How can you respond to someone who doesn't support you?",
+     "answer": "Set a calm, clear limit — then follow through",
+     "wrong": [
+      "Lecture them",
+      "Avoid them forever",
+      "Argue until they agree"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "edhiulg6vhop",
+     "question": "True or false: Planning for hard moments is being pessimistic.",
+     "answer": "False — it's proactive self-care",
+     "wrong": [
+      "True — it creates anxiety",
+      "True — think positive only",
+      "False — only for big events"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "dz5e68de9cy8",
+     "question": "What's a healthy way to handle grief during the holidays?",
+     "answer": "Name it, give it space, and share it with someone you trust",
+     "wrong": [
+      "Bury it until January",
+      "Keep busy so you don't feel it",
+      "Treat it as an emergency"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "8vr263vc10oh",
+     "question": "What does feeling exhausted after a hard event tell you?",
+     "answer": "Getting through hard things takes energy — rest matters",
+     "wrong": [
+      "Your skills are weak",
+      "You shouldn't have gone",
+      "Something is wrong with you"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "pt2f71cqxfc6",
+     "question": "True or false: The holidays are enjoyable for everyone.",
+     "answer": "False — they bring mixed feelings for many people",
+     "wrong": [
+      "True — everyone is happier",
+      "True — bad holidays are your fault",
+      "False — only for kids"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "z8tcjtsnewb6",
+     "question": "What does a holiday coping plan include?",
+     "answer": "Stressors, coping strategies, a contact person and an exit plan",
+     "wrong": [
+      "Approved guest lists",
+      "A signed form",
+      "Only a gift list"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ptkz967wbhms",
+     "question": "What's a helpful reminder during a tense moment?",
+     "answer": "'I don't have to fix everything right now'",
+     "wrong": [
+      "'This is all my fault'",
+      "'I must make everyone happy'",
+      "'I can never leave'"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "d0tfj0zthtx8",
+     "question": "What is Seasonal Affective Disorder (SAD)?",
+     "answer": "A type of depression that follows a seasonal pattern, often in fall and winter",
+     "wrong": [
+      "A first-week cold-weather dip",
+      "Preferring winter to summer",
+      "An anxiety disorder"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ditwnxlwdrf9",
+     "question": "What mainly causes winter SAD?",
+     "answer": "Less sunlight disrupting the body's clock and serotonin",
+     "wrong": [
+      "Cold temperatures",
+      "Too many social events",
+      "Eating too much"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "bkfhgk163j0k",
+     "question": "What is the most well-researched treatment for winter SAD?",
+     "answer": "Light therapy with a 10,000-lux lightbox",
+     "wrong": [
+      "Warm vacations",
+      "More caffeine",
+      "Sitting by a fireplace"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "bhrv34odf6tv",
+     "question": "True or false: SAD is just 'the winter blues' everyone gets.",
+     "answer": "False — SAD is a recognized condition",
+     "wrong": [
+      "True — everyone has it",
+      "True — all adults experience it",
+      "False — it's only in kids"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ilwf03g5k96k",
+     "question": "Which brain chemical drops with less winter sunlight?",
+     "answer": "Serotonin",
+     "wrong": [
+      "GABA",
+      "Adrenaline",
+      "Acetylcholine"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "tn3mwgfj8e8r",
+     "question": "Which sleep hormone increases during dark winter months?",
+     "answer": "Melatonin",
+     "wrong": [
+      "Cortisol",
+      "Testosterone",
+      "Oxytocin"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "915eetcp3w1j",
+     "question": "True or false: SAD only happens in very cold, snowy places.",
+     "answer": "False — it's mostly about light, not temperature",
+     "wrong": [
+      "True — only snowy areas",
+      "True — warm places are safe",
+      "False — only near the poles"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "fdrwgivwixtu",
+     "question": "Which is a common symptom of winter SAD?",
+     "answer": "Sleeping more, low energy and trouble concentrating",
+     "wrong": [
+      "Racing thoughts and high energy",
+      "Sudden weight loss",
+      "Elevated mood"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "midfmd9n87uh",
+     "question": "True or false: Willpower alone can beat SAD.",
+     "answer": "False — it has biological causes and needs real strategies",
+     "wrong": [
+      "True — positivity protects you",
+      "True — just push through",
+      "False — only medication works"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "75roa2whlk0x",
+     "question": "How long is light therapy usually used each morning?",
+     "answer": "20–30 minutes",
+     "wrong": [
+      "2 minutes",
+      "3 hours",
+      "All day"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ahfewdz4ztkk",
+     "question": "What effect does exercise have on SAD?",
+     "answer": "It's one of the best mood boosters",
+     "wrong": [
+      "No effect",
+      "It makes it worse",
+      "Only in summer"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "74t1yeleojhu",
+     "question": "True or false: SAD is a character flaw.",
+     "answer": "False — it's a biological response to less light",
+     "wrong": [
+      "True — strong people don't get it",
+      "True — it's poor coping",
+      "False — but it's your fault"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "m6kvy8s50uts",
+     "question": "What sleep habit helps with SAD?",
+     "answer": "Same bedtime and wake-up time every day",
+     "wrong": [
+      "Sleeping as much as possible",
+      "Napping at noon",
+      "Staying up late"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "61xfoaghqgmh",
+     "question": "What is your 'circadian rhythm'?",
+     "answer": "Your body's internal 24-hour clock",
+     "wrong": [
+      "A breathing technique",
+      "A seasonal weight cycle",
+      "A music tempo"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ojmokd96axy9",
+     "question": "True or false: Going outside on cloudy winter days still helps.",
+     "answer": "True — outdoor light beats indoor light",
+     "wrong": [
+      "False — clouds block it all",
+      "False — only sunny days count",
+      "True — only at night"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "0rjb02ek0h8x",
+     "question": "How does isolation affect SAD?",
+     "answer": "It makes it worse — connection helps protect you",
+     "wrong": [
+      "It's healthy rest",
+      "No effect",
+      "It cures it"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "yhy50li94kb4",
+     "question": "What should you do if you notice SAD symptoms?",
+     "answer": "Tell your doctor, counselor or staff",
+     "wrong": [
+      "Wait until they peak",
+      "Only report after 90 days",
+      "Keep it to yourself"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "812mg0n52s4b",
+     "question": "True or false: SAD can start in the fall.",
+     "answer": "True — often as days get shorter",
+     "wrong": [
+      "False — only after Dec. 21",
+      "False — only in January",
+      "True — only in spring"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "of0i6s7jw3de",
+     "question": "What is one low-cost winter wellness strategy?",
+     "answer": "A 10–15 minute walk outside during the brightest part of the day",
+     "wrong": [
+      "A tanning bed",
+      "Sleeping with lights on",
+      "Eating more sugar"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "vfauyr22o7t5",
+     "question": "True or false: Light therapy is dangerous for most people.",
+     "answer": "False — it's safe for most people",
+     "wrong": [
+      "True — always risky",
+      "True — it damages sleep",
+      "False — only for kids"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "vcf2lzfxlt8x",
+     "question": "Which therapy approach is often used for SAD?",
+     "answer": "CBT — cognitive behavioral therapy",
+     "wrong": [
+      "Hypnosis",
+      "Aromatherapy only",
+      "Ice baths"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "y5y2v9s8zmtk",
+     "question": "When does SAD usually lift?",
+     "answer": "In the spring",
+     "wrong": [
+      "In December",
+      "In the fall",
+      "Never"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
     }
    ]
   },
@@ -36472,6 +45073,534 @@ window.GS_MY_CONTENT = {
       {
        "word": "voice",
        "clue": "The inner critic is one of these in your head"
+      }
+     ]
+    },
+    {
+     "id": "teldwxt6mj2x",
+     "title": "Year in Review",
+     "entries": [
+      {
+       "word": "reflection",
+       "clue": "Looking back to understand, not to judge"
+      },
+      {
+       "word": "survival",
+       "clue": "An accomplishment worth naming"
+      },
+      {
+       "word": "growth",
+       "clue": "What hard years often contain the most of"
+      },
+      {
+       "word": "perfectionism",
+       "clue": "The enemy of real progress"
+      },
+      {
+       "word": "shame",
+       "clue": "Leave this behind — you're not your worst moment"
+      },
+      {
+       "word": "lessons",
+       "clue": "Things you learned this year"
+      },
+      {
+       "word": "connections",
+       "clue": "Relationships that matter — carry these forward"
+      },
+      {
+       "word": "values",
+       "clue": "What truly matters to you"
+      },
+      {
+       "word": "forward",
+       "clue": "Carry it ___"
+      },
+      {
+       "word": "release",
+       "clue": "Let go of what no longer serves you"
+      },
+      {
+       "word": "witness",
+       "clue": "Bear ___ to your own story"
+      },
+      {
+       "word": "progress",
+       "clue": "Small, steady steps toward change"
+      },
+      {
+       "word": "calendar",
+       "clue": "Twelve months on one page"
+      },
+      {
+       "word": "proud",
+       "clue": "How you feel about a win"
+      },
+      {
+       "word": "year",
+       "clue": "365 days"
+      }
+     ]
+    },
+    {
+     "id": "8o9oog8gswtz",
+     "title": "Acts of Kindness",
+     "entries": [
+      {
+       "word": "kindness",
+       "clue": "Intentional, voluntary help for another person"
+      },
+      {
+       "word": "dopamine",
+       "clue": "Feel-good chemical kindness releases"
+      },
+      {
+       "word": "ripple",
+       "clue": "One kind act spreading — the ___ effect"
+      },
+      {
+       "word": "compliment",
+       "clue": "Sincere, specific praise"
+      },
+      {
+       "word": "thankyou",
+       "clue": "Two words that are enough (one word)"
+      },
+      {
+       "word": "listen",
+       "clue": "Do this fully, without your phone"
+      },
+      {
+       "word": "contagious",
+       "clue": "Kindness spreads — it's ___"
+      },
+      {
+       "word": "helpers",
+       "clue": "___ high: mood boost from helping (no apostrophe)"
+      },
+      {
+       "word": "boundaries",
+       "clue": "Kindness and these can coexist"
+      },
+      {
+       "word": "purpose",
+       "clue": "Helping others builds this"
+      },
+      {
+       "word": "giving",
+       "clue": "Allowing help gives others the gift of ___"
+      },
+      {
+       "word": "cortisol",
+       "clue": "Stress hormone kindness lowers"
+      },
+      {
+       "word": "generous",
+       "clue": "Giving freely"
+      },
+      {
+       "word": "smile",
+       "clue": "Free, easy and contagious"
+      },
+      {
+       "word": "volunteer",
+       "clue": "Give your time to help"
+      }
+     ]
+    },
+    {
+     "id": "q91lqbpz7ay4",
+     "title": "Hope and the Future",
+     "entries": [
+      {
+       "word": "hope",
+       "clue": "Believing the future can be different"
+      },
+      {
+       "word": "goals",
+       "clue": "What you want to move toward"
+      },
+      {
+       "word": "pathways",
+       "clue": "Routes to get there"
+      },
+      {
+       "word": "agency",
+       "clue": "Believing you can make progress"
+      },
+      {
+       "word": "snyder",
+       "clue": "Psychologist behind Hope Theory"
+      },
+      {
+       "word": "borrowed",
+       "clue": "___ hope: let others hold it for a while"
+      },
+      {
+       "word": "future",
+       "clue": "What hope looks toward"
+      },
+      {
+       "word": "resilience",
+       "clue": "Bouncing back"
+      },
+      {
+       "word": "wishful",
+       "clue": "___ thinking: passive, unlike hope"
+      },
+      {
+       "word": "evidence",
+       "clue": "Proof that change is possible"
+      },
+      {
+       "word": "dream",
+       "clue": "Something you hope for"
+      },
+      {
+       "word": "action",
+       "clue": "Take one small ___"
+      },
+      {
+       "word": "believe",
+       "clue": "Trust that it can happen"
+      },
+      {
+       "word": "tomorrow",
+       "clue": "The day after today"
+      },
+      {
+       "word": "possible",
+       "clue": "Change is ___"
+      }
+     ]
+    },
+    {
+     "id": "0uom5qcwxwqv",
+     "title": "Holiday Cash",
+     "entries": [
+      {
+       "word": "budget",
+       "clue": "A spending plan"
+      },
+      {
+       "word": "cash",
+       "clue": "Paper money — when it's gone, spending stops"
+      },
+      {
+       "word": "comparison",
+       "clue": "Spending because of what others buy"
+      },
+      {
+       "word": "guilt",
+       "clue": "Trying to make up for things with gifts"
+      },
+      {
+       "word": "credit",
+       "clue": "Spending money you don't actually have"
+      },
+      {
+       "word": "list",
+       "clue": "Make one before you shop"
+      },
+      {
+       "word": "simple",
+       "clue": "'I'm keeping things ___ this year'"
+      },
+      {
+       "word": "homemade",
+       "clue": "Made by you, not bought"
+      },
+      {
+       "word": "cap",
+       "clue": "Spending ___: your total limit"
+      },
+      {
+       "word": "hidden",
+       "clue": "___ costs: wrapping, shipping, tips"
+      },
+      {
+       "word": "january",
+       "clue": "The month holiday debt shows up"
+      },
+      {
+       "word": "impulse",
+       "clue": "Unplanned buying"
+      },
+      {
+       "word": "time",
+       "clue": "A gift that costs nothing"
+      },
+      {
+       "word": "debt",
+       "clue": "Money owed"
+      },
+      {
+       "word": "receipt",
+       "clue": "Proof of purchase"
+      }
+     ]
+    },
+    {
+     "id": "kxrihdw5sdar",
+     "title": "Loneliness",
+     "entries": [
+      {
+       "word": "loneliness",
+       "clue": "The gap between the connection you have and need"
+      },
+      {
+       "word": "connection",
+       "clue": "What loneliness signals you need more of"
+      },
+      {
+       "word": "isolation",
+       "clue": "Being cut off from others"
+      },
+      {
+       "word": "hello",
+       "clue": "A simple first step toward connection"
+      },
+      {
+       "word": "network",
+       "clue": "Your support ___"
+      },
+      {
+       "word": "quality",
+       "clue": "___ over quantity"
+      },
+      {
+       "word": "belonging",
+       "clue": "Feeling part of something"
+      },
+      {
+       "word": "familiarity",
+       "clue": "Built by showing up regularly"
+      },
+      {
+       "word": "cortisol",
+       "clue": "Stress hormone loneliness raises"
+      },
+      {
+       "word": "friendship",
+       "clue": "A close, caring relationship"
+      },
+      {
+       "word": "reach",
+       "clue": "___ out to someone"
+      },
+      {
+       "word": "together",
+       "clue": "With each other"
+      },
+      {
+       "word": "vulnerable",
+       "clue": "Open, even when it feels risky"
+      },
+      {
+       "word": "group",
+       "clue": "Join one around something you love"
+      },
+      {
+       "word": "neighbor",
+       "clue": "Someone who lives nearby"
+      }
+     ]
+    },
+    {
+     "id": "0ytmktihcf1o",
+     "title": "New Year, New Intentions",
+     "entries": [
+      {
+       "word": "intention",
+       "clue": "A values-based direction for your year"
+      },
+      {
+       "word": "resolution",
+       "clue": "A specific, often rigid New Year's goal"
+      },
+      {
+       "word": "values",
+       "clue": "Intentions start with these"
+      },
+      {
+       "word": "fresh",
+       "clue": "___ start effect"
+      },
+      {
+       "word": "habits",
+       "clue": "These outlast willpower"
+      },
+      {
+       "word": "setback",
+       "clue": "A stumble — just information"
+      },
+      {
+       "word": "recommit",
+       "clue": "Return to your intention after a slip"
+      },
+      {
+       "word": "word",
+       "clue": "Pick one ___ to guide your year"
+      },
+      {
+       "word": "accountability",
+       "clue": "Telling someone helps with this"
+      },
+      {
+       "word": "january",
+       "clue": "When many people start over"
+      },
+      {
+       "word": "midnight",
+       "clue": "When the new year begins"
+      },
+      {
+       "word": "direction",
+       "clue": "An intention is one of these, not a destination"
+      },
+      {
+       "word": "small",
+       "clue": "___ steps beat big declarations"
+      },
+      {
+       "word": "monthly",
+       "clue": "How often to revisit your intention"
+      },
+      {
+       "word": "growth",
+       "clue": "Wanting this is healthy, not a flaw"
+      }
+     ]
+    },
+    {
+     "id": "m2tdrs57kw45",
+     "title": "Stressful Holiday Moments",
+     "entries": [
+      {
+       "word": "exit",
+       "clue": "Know your ___: a plan to leave early"
+      },
+      {
+       "word": "grounding",
+       "clue": "5-4-3-2-1 is a ___ technique"
+      },
+      {
+       "word": "break",
+       "clue": "Step away and take one"
+      },
+      {
+       "word": "plan",
+       "clue": "Make one before the event"
+      },
+      {
+       "word": "support",
+       "clue": "Bring a ___ person"
+      },
+      {
+       "word": "debrief",
+       "clue": "Talk it over afterward"
+      },
+      {
+       "word": "triggers",
+       "clue": "What sets off your stress"
+      },
+      {
+       "word": "rest",
+       "clue": "What your body needs after a hard event"
+      },
+      {
+       "word": "senses",
+       "clue": "5-4-3-2-1 uses all five"
+      },
+      {
+       "word": "credit",
+       "clue": "Give yourself some for getting through it"
+      },
+      {
+       "word": "timelimit",
+       "clue": "Set one on risky events (one word)"
+      },
+      {
+       "word": "peace",
+       "clue": "Protect your ___"
+      },
+      {
+       "word": "perfect",
+       "clue": "Holidays don't have to be ___"
+      },
+      {
+       "word": "breathe",
+       "clue": "Slow down and ___"
+      },
+      {
+       "word": "gentle",
+       "clue": "How to treat yourself afterward"
+      }
+     ]
+    },
+    {
+     "id": "btgp5c9cshpw",
+     "title": "Winter SAD",
+     "entries": [
+      {
+       "word": "seasonal",
+       "clue": "SAD stands for ___ Affective Disorder"
+      },
+      {
+       "word": "sunlight",
+       "clue": "Less of this causes winter SAD"
+      },
+      {
+       "word": "serotonin",
+       "clue": "Mood chemical that drops in winter"
+      },
+      {
+       "word": "melatonin",
+       "clue": "Sleep hormone that rises in winter"
+      },
+      {
+       "word": "circadian",
+       "clue": "___ rhythm: the body's 24-hour clock"
+      },
+      {
+       "word": "lightbox",
+       "clue": "A 10,000-lux lamp for light therapy"
+      },
+      {
+       "word": "lux",
+       "clue": "Unit of light brightness"
+      },
+      {
+       "word": "exercise",
+       "clue": "A strong natural mood booster"
+      },
+      {
+       "word": "schedule",
+       "clue": "Keep a consistent sleep ___"
+      },
+      {
+       "word": "spring",
+       "clue": "When SAD usually lifts"
+      },
+      {
+       "word": "winter",
+       "clue": "The season SAD is most common"
+      },
+      {
+       "word": "connection",
+       "clue": "Isolation makes SAD worse — keep this up"
+      },
+      {
+       "word": "outside",
+       "clue": "Go ___ even on cloudy days"
+      },
+      {
+       "word": "morning",
+       "clue": "Best time for light therapy"
+      },
+      {
+       "word": "cbt",
+       "clue": "Talk therapy often used for SAD (abbr.)"
       }
      ]
     }
@@ -42476,6 +51605,1606 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Believing you have what it takes to make change",
      "answer": "Self-efficacy"
+    },
+    {
+     "id": "jaqidcb2fe4b",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 100,
+     "clue": "Honestly acknowledging what happened — your own story",
+     "answer": "Bearing witness"
+    },
+    {
+     "id": "plpuwnwwmxcj",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 200,
+     "clue": "The hardest part of the year — and how you got through it — shows this",
+     "answer": "Resilience / strength"
+    },
+    {
+     "id": "97hbu0x3x22k",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 300,
+     "clue": "Something that surprised you about ___ this year",
+     "answer": "Yourself"
+    },
+    {
+     "id": "4ip4wenrrwcy",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 400,
+     "clue": "Who showed ___ for you this year?",
+     "answer": "Up"
+    },
+    {
+     "id": "qbmqzybgni39",
+     "board": "Year in Review",
+     "category": "Look Back",
+     "value": 500,
+     "clue": "A belief, habit or relationship you let ___ of",
+     "answer": "Go"
+    },
+    {
+     "id": "jwo56vll1j0p",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 100,
+     "clue": "Getting through a hard year is one of these",
+     "answer": "An accomplishment"
+    },
+    {
+     "id": "m3nsh1jih8wc",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 200,
+     "clue": "Hard days that didn't turn into hard ___ matter",
+     "answer": "Weeks"
+    },
+    {
+     "id": "x9t2ngkx5ykh",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 300,
+     "clue": "Showing up to group and programming does this",
+     "answer": "Counts"
+    },
+    {
+     "id": "degr1iob7bbg",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 400,
+     "clue": "Moments of honesty, vulnerability or this count too",
+     "answer": "Connection"
+    },
+    {
+     "id": "cll4dtnnoga0",
+     "board": "Year in Review",
+     "category": "Celebrate It",
+     "value": 500,
+     "clue": "Every day you didn't ___ ___ was a choice you made",
+     "answer": "Give up"
+    },
+    {
+     "id": "qznsxxcgk0l5",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 100,
+     "clue": "You are not your worst ___",
+     "answer": "Moment"
+    },
+    {
+     "id": "gclp7ab50h4v",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 200,
+     "clue": "The enemy of real progress",
+     "answer": "Perfectionism"
+    },
+    {
+     "id": "iw3brtpwmymk",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 300,
+     "clue": "The feeling to release about past mistakes",
+     "answer": "Shame"
+    },
+    {
+     "id": "p5e9a30dbbhk",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 400,
+     "clue": "Release ones of these that don't serve you",
+     "answer": "Expectations"
+    },
+    {
+     "id": "m9a7z5299x13",
+     "board": "Year in Review",
+     "category": "Leave Behind",
+     "value": 500,
+     "clue": "'The story that you haven't ___' — look at the evidence",
+     "answer": "Changed"
+    },
+    {
+     "id": "mg0piyi5g66r",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 100,
+     "clue": "These coping and communication tools don't disappear at year's end",
+     "answer": "Skills"
+    },
+    {
+     "id": "tml8khtjhg5a",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 200,
+     "clue": "Relationships that matter",
+     "answer": "Connections"
+    },
+    {
+     "id": "0fvb8wao7kta",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 300,
+     "clue": "The knowledge that you've survived ___ things before",
+     "answer": "Hard"
+    },
+    {
+     "id": "08paw3k7ftwi",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 400,
+     "clue": "What truly matters to you",
+     "answer": "Your values"
+    },
+    {
+     "id": "bbnf2yr93zic",
+     "board": "Year in Review",
+     "category": "Carry Forward",
+     "value": 500,
+     "clue": "Bring one of these from this year that you want to remember",
+     "answer": "A lesson"
+    },
+    {
+     "id": "hqy2bmsxr823",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "A hard year has nothing worth reflecting on",
+     "answer": "Myth"
+    },
+    {
+     "id": "ens9w3wm1byk",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Reflecting can help you plan your future",
+     "answer": "Fact"
+    },
+    {
+     "id": "rzu4j1eiwshy",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "You should only reflect on accomplishments",
+     "answer": "Myth"
+    },
+    {
+     "id": "7emju0xtl5jb",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "A year with setbacks can still have real growth",
+     "answer": "Fact"
+    },
+    {
+     "id": "9o6k6rnza60p",
+     "board": "Year in Review",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "It's too late — the year is already over",
+     "answer": "Myth"
+    },
+    {
+     "id": "f4ypkylttg2g",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 100,
+     "clue": "The feel-good reward chemical released when you're kind",
+     "answer": "Dopamine"
+    },
+    {
+     "id": "xe51oj3ays5q",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 200,
+     "clue": "The stress hormone kindness lowers",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "mlgbr3y7sc7r",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 300,
+     "clue": "The mood boost after helping someone",
+     "answer": "Helper's high"
+    },
+    {
+     "id": "o18uv956xk6b",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 400,
+     "clue": "One kind act sparking another",
+     "answer": "The ripple effect"
+    },
+    {
+     "id": "rdd2i96t5bos",
+     "board": "Acts of Kindness",
+     "category": "Kindness Science",
+     "value": 500,
+     "clue": "Watching kindness lights up the same brain areas as ___ it",
+     "answer": "Receiving / experiencing"
+    },
+    {
+     "id": "tbzi2wo3earf",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 100,
+     "clue": "Write one of these to someone who helped you",
+     "answer": "A thank-you note"
+    },
+    {
+     "id": "zz3za6hd736o",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 200,
+     "clue": "Listen fully without checking this",
+     "answer": "Your phone"
+    },
+    {
+     "id": "qu70fxextr64",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 300,
+     "clue": "Make it sincere and specific",
+     "answer": "A compliment"
+    },
+    {
+     "id": "as56sxzi5g33",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 400,
+     "clue": "Let someone go ahead of you here",
+     "answer": "In line"
+    },
+    {
+     "id": "omcqf3u05qnp",
+     "board": "Acts of Kindness",
+     "category": "Free & Easy",
+     "value": 500,
+     "clue": "Check ___ on someone you haven't talked to in a while",
+     "answer": "In"
+    },
+    {
+     "id": "ftfzhujkc8ur",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 100,
+     "clue": "Accepting kindness gracefully is also one of these",
+     "answer": "A skill"
+    },
+    {
+     "id": "bm2lauol4a8q",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 200,
+     "clue": "You don't have to ___ kindness — it's freely given",
+     "answer": "Earn"
+    },
+    {
+     "id": "axa6ltsz890y",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 300,
+     "clue": "Two words that are enough when someone's kind to you",
+     "answer": "Thank you"
+    },
+    {
+     "id": "atanz3vmkaqe",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 400,
+     "clue": "Letting others help you gives them the gift of ___",
+     "answer": "Giving"
+    },
+    {
+     "id": "30fonsy59oi9",
+     "board": "Acts of Kindness",
+     "category": "Receiving Kindness",
+     "value": 500,
+     "clue": "Feeling this can make it hard to accept kindness",
+     "answer": "Unworthy"
+    },
+    {
+     "id": "jkx867zfmcsn",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 100,
+     "clue": "True or false: kindness only counts if it's big",
+     "answer": "False"
+    },
+    {
+     "id": "q3v4ib3kvquo",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 200,
+     "clue": "True or false: being kind to yourself is selfish",
+     "answer": "False"
+    },
+    {
+     "id": "wv29en6gcet3",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 300,
+     "clue": "True or false: kindness is a skill you can practice",
+     "answer": "True"
+    },
+    {
+     "id": "bego4ynktgyr",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 400,
+     "clue": "True or false: you can be kind AND have boundaries",
+     "answer": "True"
+    },
+    {
+     "id": "kt1efovohapj",
+     "board": "Acts of Kindness",
+     "category": "Kindness Myths",
+     "value": 500,
+     "clue": "True or false: you must feel great before you can be kind",
+     "answer": "False"
+    },
+    {
+     "id": "xmo1gsjvwa4z",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 100,
+     "clue": "By giving to others, you help yourself — the helper's ___",
+     "answer": "Paradox"
+    },
+    {
+     "id": "yumwzumi56in",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 200,
+     "clue": "Small acts done often beat rare ___ gestures",
+     "answer": "Grand"
+    },
+    {
+     "id": "2rf2eg5stb2b",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 300,
+     "clue": "Kindness builds this — a key protective factor",
+     "answer": "Connection"
+    },
+    {
+     "id": "uj5at88pt8lk",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 400,
+     "clue": "Helping others reinforces your sense of this",
+     "answer": "Purpose"
+    },
+    {
+     "id": "d6ohekvwr0z1",
+     "board": "Acts of Kindness",
+     "category": "Pass It On",
+     "value": 500,
+     "clue": "Kindness rebuilds this — with yourself and others",
+     "answer": "Trust"
+    },
+    {
+     "id": "w47z0hd1zzly",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 100,
+     "clue": "The researcher behind Hope Theory: Dr. C.R. ___",
+     "answer": "Snyder"
+    },
+    {
+     "id": "6n2inkdnjnfm",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 200,
+     "clue": "Knowing what you want to move toward",
+     "answer": "Goals"
+    },
+    {
+     "id": "azn3llsev3bz",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 300,
+     "clue": "Identifying ways to get there",
+     "answer": "Pathways"
+    },
+    {
+     "id": "u2nk5mtghjt9",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 400,
+     "clue": "Believing you're capable of making progress",
+     "answer": "Agency"
+    },
+    {
+     "id": "v1pgyt8w59fn",
+     "board": "Hope and the Future",
+     "category": "Hope Theory",
+     "value": 500,
+     "clue": "Hope is not passive — it's this",
+     "answer": "Active"
+    },
+    {
+     "id": "bjhai6qmp5w1",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 100,
+     "clue": "Start this way: one day, one hour, one goal at a time",
+     "answer": "Small"
+    },
+    {
+     "id": "emcv60bpv5kc",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 200,
+     "clue": "Notice this — proof that change is possible",
+     "answer": "Evidence"
+    },
+    {
+     "id": "5jh3zs7l1ofj",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 300,
+     "clue": "Surround yourself with people who ___ hope",
+     "answer": "Model / have"
+    },
+    {
+     "id": "r6otpjcj4dzd",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 400,
+     "clue": "Connect with these — what you care about",
+     "answer": "Your values"
+    },
+    {
+     "id": "eiu1d7spqp9h",
+     "board": "Hope and the Future",
+     "category": "Rebuilding Hope",
+     "value": 500,
+     "clue": "Allowing yourself to do this is the beginning of hope",
+     "answer": "Want things"
+    },
+    {
+     "id": "4ep3qfam30j7",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 100,
+     "clue": "Repeated unmet ___ can damage hope",
+     "answer": "Expectations"
+    },
+    {
+     "id": "36863c2psdf7",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 200,
+     "clue": "This feeling says you don't deserve a better future",
+     "answer": "Shame"
+    },
+    {
+     "id": "80okftttuv0z",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 300,
+     "clue": "Fewer people to reflect hope back to you",
+     "answer": "Isolation"
+    },
+    {
+     "id": "7wp5rzmmtl5w",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 400,
+     "clue": "Passive hoping without action",
+     "answer": "Wishful thinking"
+    },
+    {
+     "id": "nqwqoabbw8zf",
+     "board": "Hope and the Future",
+     "category": "Hope Busters",
+     "value": 500,
+     "clue": "When hope feels impossible, that feeling is a symptom — not a ___",
+     "answer": "Verdict"
+    },
+    {
+     "id": "b9iumw3scu64",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 100,
+     "clue": "Letting others hold hope for you for a while",
+     "answer": "Borrowed hope"
+    },
+    {
+     "id": "2tzoebi3xl2o",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 200,
+     "clue": "Hope is easier to hold when you're not ___",
+     "answer": "Alone"
+    },
+    {
+     "id": "y1et68ypk9bx",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 300,
+     "clue": "Take one small one of these toward what matters",
+     "answer": "Action"
+    },
+    {
+     "id": "nt1xh5te09kh",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 400,
+     "clue": "You've already survived these — evidence of your capacity",
+     "answer": "Hard things"
+    },
+    {
+     "id": "slg5tonfncje",
+     "board": "Hope and the Future",
+     "category": "Hold On",
+     "value": 500,
+     "clue": "Write down what a good ___ looks like to you",
+     "answer": "Life"
+    },
+    {
+     "id": "8d1egp9gk15y",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "Hope is just wishful thinking",
+     "answer": "Myth"
+    },
+    {
+     "id": "fvpk7mlqk4qe",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Hope can be rebuilt after loss",
+     "answer": "Fact"
+    },
+    {
+     "id": "jf6ki6sli7wq",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "You have to feel hopeful to have hope",
+     "answer": "Myth"
+    },
+    {
+     "id": "qrjtiht2g90o",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Hope is linked to better health and resilience",
+     "answer": "Fact"
+    },
+    {
+     "id": "ij29bwax55fc",
+     "board": "Hope and the Future",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "You need everything figured out first",
+     "answer": "Myth"
+    },
+    {
+     "id": "0a7jhqkx14b2",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 100,
+     "clue": "Wanting to show love or avoid conflict — this kind of pressure",
+     "answer": "Emotional pressure"
+    },
+    {
+     "id": "89ea2mlx7cr9",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 200,
+     "clue": "Seeing what others spend or give",
+     "answer": "Comparison"
+    },
+    {
+     "id": "cf3mu0vts65d",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 300,
+     "clue": "'It's only once a year' thinking",
+     "answer": "Urgency"
+    },
+    {
+     "id": "n8v9o95jct67",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 400,
+     "clue": "Spending money we don't actually have",
+     "answer": "Credit"
+    },
+    {
+     "id": "9e8rca07n2cg",
+     "board": "Holiday Cash",
+     "category": "Why We Overspend",
+     "value": 500,
+     "clue": "Trying to make up for things with gifts",
+     "answer": "Guilt"
+    },
+    {
+     "id": "omcb3byaua7o",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 100,
+     "clue": "List everyone you're giving to and set a dollar ___ per person",
+     "answer": "Limit"
+    },
+    {
+     "id": "iqqe9ap96rm8",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 200,
+     "clue": "Add up your total ___ you shop, not after",
+     "answer": "Before"
+    },
+    {
+     "id": "ehrcpak0qbh2",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 300,
+     "clue": "Wrapping, shipping and tips are these kinds of costs",
+     "answer": "Hidden costs"
+    },
+    {
+     "id": "4ezce7e61zdt",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 400,
+     "clue": "Your overall maximum holiday spending",
+     "answer": "A spending cap"
+    },
+    {
+     "id": "4mdp9nqs2jk8",
+     "board": "Holiday Cash",
+     "category": "Budget Basics",
+     "value": 500,
+     "clue": "Pay with these to avoid overspending without noticing",
+     "answer": "Cash or a prepaid card"
+    },
+    {
+     "id": "djgfkownzikp",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 100,
+     "clue": "Often more meaningful than a store-bought gift",
+     "answer": "A handwritten card or letter"
+    },
+    {
+     "id": "77h0xliatpzz",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 200,
+     "clue": "Cook or do this from scratch",
+     "answer": "Bake"
+    },
+    {
+     "id": "6sglstpy1d6o",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 300,
+     "clue": "Offer this — a walk, a movie, a phone call",
+     "answer": "Your time"
+    },
+    {
+     "id": "5mqt072kst8f",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 400,
+     "clue": "Create one of these together instead of buying something",
+     "answer": "A memory"
+    },
+    {
+     "id": "9li0qm4a04x1",
+     "board": "Holiday Cash",
+     "category": "Low-Cost Love",
+     "value": 500,
+     "clue": "Giving your full attention without distraction",
+     "answer": "Listening"
+    },
+    {
+     "id": "7woufxu10bj0",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 100,
+     "clue": "'I'm keeping things ___ this year'",
+     "answer": "Simple"
+    },
+    {
+     "id": "xz5fpg5xzx7g",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 200,
+     "clue": "You don't owe anyone one of these for your budget",
+     "answer": "An explanation"
+    },
+    {
+     "id": "p9o53mxye71b",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 300,
+     "clue": "Real relationships don't depend on how much you ___",
+     "answer": "Spend"
+    },
+    {
+     "id": "vmc68g2jivwd",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 400,
+     "clue": "Setting limits now protects this month",
+     "answer": "January"
+    },
+    {
+     "id": "f8bm1dszwocn",
+     "board": "Holiday Cash",
+     "category": "Saying No Kindly",
+     "value": 500,
+     "clue": "Talk to one of these if money stress feels overwhelming",
+     "answer": "A trusted person"
+    },
+    {
+     "id": "4ufuzl43qi3r",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You have to spend a lot to show love",
+     "answer": "Myth"
+    },
+    {
+     "id": "fd51yk6ovhj3",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Holiday debt can take months to pay off",
+     "answer": "Fact"
+    },
+    {
+     "id": "p6w0qzlbi9px",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "People will be crushed if you spend less",
+     "answer": "Myth"
+    },
+    {
+     "id": "0trll7hmitfs",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "A budget can reduce holiday stress",
+     "answer": "Fact"
+    },
+    {
+     "id": "aw72a9h838mq",
+     "board": "Holiday Cash",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "The holidays are the worst time to think about money",
+     "answer": "Myth"
+    },
+    {
+     "id": "dw9byixztwao",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 100,
+     "clue": "The gap between connection you have and connection you ___",
+     "answer": "Need"
+    },
+    {
+     "id": "5ha0aoztvsa9",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 200,
+     "clue": "You can feel lonely even in one of these",
+     "answer": "A crowd"
+    },
+    {
+     "id": "bsd2fm4a9ysf",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 300,
+     "clue": "Loneliness is the brain's signal — like hunger — that you need this",
+     "answer": "Connection"
+    },
+    {
+     "id": "buzx3d3sxkoc",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 400,
+     "clue": "A few meaningful relationships beat many shallow ones: quality over ___",
+     "answer": "Quantity"
+    },
+    {
+     "id": "2lwg926ruvsm",
+     "board": "Loneliness",
+     "category": "Loneliness 101",
+     "value": 500,
+     "clue": "Chronic loneliness raises this stress hormone",
+     "answer": "Cortisol"
+    },
+    {
+     "id": "x9zzrxpfib1m",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 100,
+     "clue": "Make eye contact and say this to one new person",
+     "answer": "Hello"
+    },
+    {
+     "id": "be8bvm41e6vs",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 200,
+     "clue": "Be ___ with one person about how you've been feeling",
+     "answer": "Honest"
+    },
+    {
+     "id": "hewrdc1z5x8q",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 300,
+     "clue": "Join one of these around something you care about",
+     "answer": "A group / club"
+    },
+    {
+     "id": "wfnvapwnl3x9",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 400,
+     "clue": "Reach ___ to someone you've been meaning to contact",
+     "answer": "Out"
+    },
+    {
+     "id": "3cqtqt7w8pq6",
+     "board": "Loneliness",
+     "category": "Small Steps",
+     "value": 500,
+     "clue": "The simplest step: just do this — to group or events",
+     "answer": "Show up"
+    },
+    {
+     "id": "c9yk5pqr1m8c",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 100,
+     "clue": "Feeling like no one really ___ you",
+     "answer": "Understands"
+    },
+    {
+     "id": "fqyhy5g7e6wd",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 200,
+     "clue": "Dreading being alone but also avoiding this",
+     "answer": "Reaching out"
+    },
+    {
+     "id": "5yybxwn4wct3",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 300,
+     "clue": "Spending more time doing this but feeling emptier afterward",
+     "answer": "Scrolling online"
+    },
+    {
+     "id": "wftnre31so6n",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 400,
+     "clue": "Feeling like a ___ to others",
+     "answer": "Burden"
+    },
+    {
+     "id": "9jmqsbvv8smr",
+     "board": "Loneliness",
+     "category": "Spot the Signs",
+     "value": 500,
+     "clue": "Craving connection but not knowing how to ___",
+     "answer": "Start"
+    },
+    {
+     "id": "j5ui9txpyj25",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 100,
+     "clue": "Drawing or listing the people in your support network",
+     "answer": "Connection mapping"
+    },
+    {
+     "id": "2ed6jsj3wrza",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 200,
+     "clue": "Letting someone else hold your belief in connection for a while",
+     "answer": "Borrowed hope"
+    },
+    {
+     "id": "qk23mixwerhd",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 300,
+     "clue": "Even short exchanges of this kind help most",
+     "answer": "In-person contact"
+    },
+    {
+     "id": "uzobu2zinbav",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 400,
+     "clue": "Regular presence builds this — the foundation of connection",
+     "answer": "Familiarity"
+    },
+    {
+     "id": "7ul33hdkj68y",
+     "board": "Loneliness",
+     "category": "Connection Tools",
+     "value": 500,
+     "clue": "Communities designed to reduce isolation",
+     "answer": "Support groups"
+    },
+    {
+     "id": "nv3kr32965hh",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "If you're lonely, something is wrong with you",
+     "answer": "Myth"
+    },
+    {
+     "id": "67c53hs048ca",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Being around people always fixes loneliness",
+     "answer": "Myth"
+    },
+    {
+     "id": "xrs1j7ap8gun",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Loneliness can affect your physical health",
+     "answer": "Fact"
+    },
+    {
+     "id": "ugqsek1q5wnk",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Needing people means you're weak",
+     "answer": "Myth"
+    },
+    {
+     "id": "upsdbrccbxrv",
+     "board": "Loneliness",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "You can make real friends at any age",
+     "answer": "Fact"
+    },
+    {
+     "id": "w7i92clrnn7j",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 100,
+     "clue": "Often absolute and rigid — 'never miss a workout'",
+     "answer": "A resolution"
+    },
+    {
+     "id": "u665qi38r6ov",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 200,
+     "clue": "A direction, not a destination",
+     "answer": "An intention"
+    },
+    {
+     "id": "tcgbfaiel4ed",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 300,
+     "clue": "Intentions start with these",
+     "answer": "Values"
+    },
+    {
+     "id": "kjo5e8gcazmi",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 400,
+     "clue": "Intentions are directional, not this — all-or-nothing",
+     "answer": "Binary"
+    },
+    {
+     "id": "bvug96e5tb92",
+     "board": "New Year, New Intentions",
+     "category": "Resolution vs. Intention",
+     "value": 500,
+     "clue": "Most resolutions rely on this, which comes and goes",
+     "answer": "Motivation / willpower"
+    },
+    {
+     "id": "l59bonznrh80",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 100,
+     "clue": "Choose one ___ to guide your year",
+     "answer": "Word"
+    },
+    {
+     "id": "6q21x4nsra1p",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 200,
+     "clue": "Break it into one small, concrete ___ this week",
+     "answer": "Action"
+    },
+    {
+     "id": "rj8zjjjhtw8u",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 300,
+     "clue": "Tell someone — this makes intentions stick",
+     "answer": "Accountability"
+    },
+    {
+     "id": "yjkpobihf79p",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 400,
+     "clue": "Write it down and revisit it every ___",
+     "answer": "Month"
+    },
+    {
+     "id": "535dm9bd4pxr",
+     "board": "New Year, New Intentions",
+     "category": "Set It Up",
+     "value": 500,
+     "clue": "Ask: 'What does a meaningful ___ look like to me?'",
+     "answer": "Life"
+    },
+    {
+     "id": "azvmtuiqqzgr",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 100,
+     "clue": "A stumble isn't failure — it's this",
+     "answer": "Information"
+    },
+    {
+     "id": "s9fx38anrawn",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 200,
+     "clue": "Be as kind to yourself as you'd be to a ___",
+     "answer": "Friend"
+    },
+    {
+     "id": "nfv847w0c03h",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 300,
+     "clue": "Revisit your intention and ___ it if needed",
+     "answer": "Adjust"
+    },
+    {
+     "id": "wyqj2dvml5p8",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 400,
+     "clue": "Returning to your intention after a slip",
+     "answer": "Recommitting"
+    },
+    {
+     "id": "99hytxuim5mf",
+     "board": "New Year, New Intentions",
+     "category": "Bounce Back",
+     "value": 500,
+     "clue": "Change isn't this — it has ups and downs",
+     "answer": "Linear"
+    },
+    {
+     "id": "1hqdk7k92uj1",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 100,
+     "clue": "Extra motivation at meaningful dates like January 1",
+     "answer": "The fresh start effect"
+    },
+    {
+     "id": "bdlawjrynq17",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 200,
+     "clue": "These work better than big declarations",
+     "answer": "Small, specific steps"
+    },
+    {
+     "id": "85ur928qvqf3",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 300,
+     "clue": "Being pulled toward what you value is this kind of motivation",
+     "answer": "Positive"
+    },
+    {
+     "id": "slzwf7ibzyvt",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 400,
+     "clue": "Systems and these last longer than willpower",
+     "answer": "Habits"
+    },
+    {
+     "id": "bv0v0yhfmwc4",
+     "board": "New Year, New Intentions",
+     "category": "Science of Change",
+     "value": 500,
+     "clue": "Goals that start from this ('fix myself') tend to fail",
+     "answer": "Shame"
+    },
+    {
+     "id": "h3ngkgcgme4z",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You must wait for January 1 to change",
+     "answer": "Myth"
+    },
+    {
+     "id": "km08g7ehe1mj",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "It's too late if you slip by February",
+     "answer": "Myth"
+    },
+    {
+     "id": "g97zayug1iqx",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Small steps beat big declarations",
+     "answer": "Fact"
+    },
+    {
+     "id": "f5va33jrvxat",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Sharing your goal helps you follow through",
+     "answer": "Fact"
+    },
+    {
+     "id": "q2sfw2mi444k",
+     "board": "New Year, New Intentions",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Setting an intention means something's wrong with you",
+     "answer": "Myth"
+    },
+    {
+     "id": "i3jokpzrfmk0",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 100,
+     "clue": "Have a reason to leave early if needed",
+     "answer": "Know your exit"
+    },
+    {
+     "id": "cpaltwpuevfr",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 200,
+     "clue": "Bring one of these people with you if you can",
+     "answer": "A support person"
+    },
+    {
+     "id": "3reat77e1cwi",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 300,
+     "clue": "Have someone you can do this with if things get hard",
+     "answer": "Text or call"
+    },
+    {
+     "id": "wq3q7bdzfvgt",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 400,
+     "clue": "Decide this before you go",
+     "answer": "What you will and won't do"
+    },
+    {
+     "id": "axtk07daqvsn",
+     "board": "Stressful Holiday Moments",
+     "category": "Plan Ahead",
+     "value": 500,
+     "clue": "Put one of these on events that feel risky",
+     "answer": "A time limit"
+    },
+    {
+     "id": "f81843grt35p",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 100,
+     "clue": "Step outside, use the restroom or take a walk",
+     "answer": "Take a break"
+    },
+    {
+     "id": "1lj5ile0maqp",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 200,
+     "clue": "Focus on one ___ at a time, not the whole room",
+     "answer": "Conversation"
+    },
+    {
+     "id": "uo3r2lo3qy8j",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 300,
+     "clue": "Excuse yourself from conversations that feel ___",
+     "answer": "Unsafe"
+    },
+    {
+     "id": "p02ljjr286x4",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 400,
+     "clue": "'I don't have to ___ everything right now'",
+     "answer": "Fix"
+    },
+    {
+     "id": "626o67f0vbmr",
+     "board": "Stressful Holiday Moments",
+     "category": "In the Moment",
+     "value": 500,
+     "clue": "A 5-4-3-2-1 technique that uses your senses",
+     "answer": "Grounding"
+    },
+    {
+     "id": "3o6i2poleo1a",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 100,
+     "clue": "Name 5 things you can do this",
+     "answer": "See"
+    },
+    {
+     "id": "97hq2u51q8ua",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 200,
+     "clue": "Name 4 things you can do this",
+     "answer": "Touch"
+    },
+    {
+     "id": "8pmbayr641dt",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 300,
+     "clue": "Name 3 things you can do this",
+     "answer": "Hear"
+    },
+    {
+     "id": "b55vrtfg6sn9",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 400,
+     "clue": "Name 2 things you can do this",
+     "answer": "Smell"
+    },
+    {
+     "id": "1pxntpvakin3",
+     "board": "Stressful Holiday Moments",
+     "category": "5-4-3-2-1",
+     "value": 500,
+     "clue": "Name 1 thing you can do this",
+     "answer": "Taste"
+    },
+    {
+     "id": "yg8f3vmxk3pw",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 100,
+     "clue": "Give yourself this for getting through it",
+     "answer": "Credit"
+    },
+    {
+     "id": "5scwyhzdumm2",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 200,
+     "clue": "Talk it over with a trusted person",
+     "answer": "Debrief"
+    },
+    {
+     "id": "z3fddrbbcrro",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 300,
+     "clue": "Emotional stress is physically exhausting — so do this",
+     "answer": "Rest"
+    },
+    {
+     "id": "i21s7puwldsx",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 400,
+     "clue": "Notice what set you off and log it — your ___",
+     "answer": "Triggers"
+    },
+    {
+     "id": "g78ed39vh6rt",
+     "board": "Stressful Holiday Moments",
+     "category": "After the Moment",
+     "value": 500,
+     "clue": "Be this with yourself if it wasn't perfect",
+     "answer": "Gentle"
+    },
+    {
+     "id": "q13kndhupldq",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "You must attend every holiday event",
+     "answer": "Myth"
+    },
+    {
+     "id": "yeidhw9c1h14",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "Feeling stressed means you're not strong enough",
+     "answer": "Myth"
+    },
+    {
+     "id": "ruy4faptzs0z",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Planning ahead is a great coping strategy",
+     "answer": "Fact"
+    },
+    {
+     "id": "4fpya29twrrn",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Leaving early always makes things worse",
+     "answer": "Myth"
+    },
+    {
+     "id": "y0blxzqruwh5",
+     "board": "Stressful Holiday Moments",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Using your support system is a strength",
+     "answer": "Fact"
+    },
+    {
+     "id": "1w2gymkc83j5",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 100,
+     "clue": "The body's internal 24-hour clock",
+     "answer": "Circadian rhythm"
+    },
+    {
+     "id": "vddbv62ygljv",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 200,
+     "clue": "Mood chemical that drops with less sunlight",
+     "answer": "Serotonin"
+    },
+    {
+     "id": "5rdmj0td5gmr",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 300,
+     "clue": "Sleep hormone that rises in dark months",
+     "answer": "Melatonin"
+    },
+    {
+     "id": "xcz97vc3q77t",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 400,
+     "clue": "The main cause of winter SAD: less of this",
+     "answer": "Sunlight"
+    },
+    {
+     "id": "wnz8659zplj9",
+     "board": "Winter SAD",
+     "category": "SAD Science",
+     "value": 500,
+     "clue": "The season when SAD usually lifts",
+     "answer": "Spring"
+    },
+    {
+     "id": "w34iphz3bflj",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 100,
+     "clue": "A special lamp used for light therapy",
+     "answer": "A lightbox"
+    },
+    {
+     "id": "zuk5edxql1pq",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 200,
+     "clue": "A lightbox's brightness: 10,000 ___",
+     "answer": "Lux"
+    },
+    {
+     "id": "kuwuxalg0h68",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 300,
+     "clue": "How long to use it each morning: 20 to ___ minutes",
+     "answer": "30"
+    },
+    {
+     "id": "eayhwtvt4y35",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 400,
+     "clue": "Even on these kinds of days, getting outside helps",
+     "answer": "Cloudy"
+    },
+    {
+     "id": "rnazrdw94nmi",
+     "board": "Winter SAD",
+     "category": "Light It Up",
+     "value": 500,
+     "clue": "Time of day to get outside for the most light",
+     "answer": "Midday / brightest part"
+    },
+    {
+     "id": "glxu4661b94r",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 100,
+     "clue": "Go to bed and wake up at the same ___ every day",
+     "answer": "Time"
+    },
+    {
+     "id": "s50piq7eayrb",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 200,
+     "clue": "One of the best natural mood boosters",
+     "answer": "Exercise"
+    },
+    {
+     "id": "pbkt2lbfthes",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 300,
+     "clue": "Isolation makes SAD worse — so keep this up",
+     "answer": "Social connection"
+    },
+    {
+     "id": "z48hnfg4yq4y",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 400,
+     "clue": "Talk therapy often used for SAD",
+     "answer": "CBT"
+    },
+    {
+     "id": "1spfppti7qx5",
+     "board": "Winter SAD",
+     "category": "Winter Wellness",
+     "value": 500,
+     "clue": "Tell this person if you notice symptoms",
+     "answer": "A doctor or counselor"
+    },
+    {
+     "id": "mrzxvamtozqy",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 100,
+     "clue": "Persistent low mood or feeling this",
+     "answer": "Empty / sad"
+    },
+    {
+     "id": "9yh4a3qts7l6",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 200,
+     "clue": "Losing interest in things you normally ___",
+     "answer": "Enjoy"
+    },
+    {
+     "id": "5tz20djj2sss",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 300,
+     "clue": "Sleeping more than usual but still feeling this",
+     "answer": "Tired"
+    },
+    {
+     "id": "98vo8tsobpu3",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 400,
+     "clue": "Increased appetite, especially for these",
+     "answer": "Carbohydrates"
+    },
+    {
+     "id": "lrz5h3ua5z7e",
+     "board": "Winter SAD",
+     "category": "Spot the Signs",
+     "value": 500,
+     "clue": "Pulling away from friends and activities",
+     "answer": "Withdrawing"
+    },
+    {
+     "id": "jaez8t148jt7",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "SAD is just the winter blues",
+     "answer": "Myth"
+    },
+    {
+     "id": "hg8l4tbf3wyt",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "SAD only happens in snowy places",
+     "answer": "Myth"
+    },
+    {
+     "id": "dux4pbhjx2xz",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "Light therapy is well researched",
+     "answer": "Fact"
+    },
+    {
+     "id": "1kgaem63b3xn",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "SAD is a character flaw",
+     "answer": "Myth"
+    },
+    {
+     "id": "oo6a11w9jwyn",
+     "board": "Winter SAD",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "Exercise can help with winter mood",
+     "answer": "Fact"
     }
    ],
    "wheel": [
@@ -46357,6 +57086,959 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Inner Critics"
      ]
+    },
+    {
+     "id": "f1fbeggoip3u",
+     "category": "Phrase",
+     "phrase": "LOOK HOW FAR YOU HAVE COME",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "m0kunt95xjl2",
+     "category": "Phrase",
+     "phrase": "CARRY IT FORWARD",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2r50rq04ikdo",
+     "category": "Phrase",
+     "phrase": "LET IT GO",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2zccz6ij01o5",
+     "category": "Thing",
+     "phrase": "A YEAR OF GROWTH",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "myr7wxyfyioe",
+     "category": "Phrase",
+     "phrase": "YOU SHOWED UP",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "yttwqcdx1uj7",
+     "category": "Thing",
+     "phrase": "LESSONS LEARNED",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "j7plklad7yyw",
+     "category": "Phrase",
+     "phrase": "SURVIVAL COUNTS",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "4c65os2dcc5e",
+     "category": "Thing",
+     "phrase": "A FRESH PAGE",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "n4a27yllb4ne",
+     "category": "Phrase",
+     "phrase": "ONE DAY AT A TIME",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ioqg19g3x9w2",
+     "category": "Thing",
+     "phrase": "PROUD MOMENTS",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "qhie6siy1uf5",
+     "category": "Phrase",
+     "phrase": "PROGRESS NOT PERFECTION",
+     "sets": [
+      "Year in Review",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "urufvr87usum",
+     "category": "Thing",
+     "phrase": "THE YEAR IN REVIEW",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "n12ptw8055ht",
+     "category": "Event",
+     "phrase": "TURNING THE CALENDAR",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "d2fou3y0bm1m",
+     "category": "Thing",
+     "phrase": "NEW CHAPTER",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "59kn7f7zn5bq",
+     "category": "Phrase",
+     "phrase": "OLD YEAR NEW YOU",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "zb66oh2ghu5m",
+     "category": "Phrase",
+     "phrase": "PAY IT FORWARD",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "eu6wc9fxlif1",
+     "category": "Thing",
+     "phrase": "A RANDOM ACT OF KINDNESS",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "7e9w8pf5m7ty",
+     "category": "Thing",
+     "phrase": "A THANK YOU NOTE",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "wpp657akfh29",
+     "category": "Phrase",
+     "phrase": "KINDNESS IS CONTAGIOUS",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "1tlb2yupw71o",
+     "category": "Thing",
+     "phrase": "A HELPING HAND",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "gunkswcmey9m",
+     "category": "Event",
+     "phrase": "HOLDING THE DOOR",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "v7pnf579ihdf",
+     "category": "Thing",
+     "phrase": "A WARM SMILE",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "o8vbj7evdnlj",
+     "category": "Phrase",
+     "phrase": "SPREAD KINDNESS",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "2wc1gjrywmdq",
+     "category": "Thing",
+     "phrase": "THE RIPPLE EFFECT",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "8klwb31qar13",
+     "category": "Event",
+     "phrase": "CHECKING ON A FRIEND",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "yvq79vw0b744",
+     "category": "Thing",
+     "phrase": "A SINCERE COMPLIMENT",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "negz8293mfjg",
+     "category": "Phrase",
+     "phrase": "BE THE REASON SOMEONE SMILES",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "s6bwek2luxuw",
+     "category": "Event",
+     "phrase": "SHARING A MEAL",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "lj9zoe7xosmi",
+     "category": "Thing",
+     "phrase": "A KIND WORD",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "ij8192h58fck",
+     "category": "Phrase",
+     "phrase": "SMALL ACTS BIG IMPACT",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "2j98qinxl4ax",
+     "category": "Phrase",
+     "phrase": "THERE IS ALWAYS HOPE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "dqo7p25h3ybv",
+     "category": "Thing",
+     "phrase": "A BRIGHTER TOMORROW",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "8c3kbri2iphg",
+     "category": "Phrase",
+     "phrase": "ONE STEP AT A TIME",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "8ndb6h0e7x63",
+     "category": "Thing",
+     "phrase": "GOALS AND PATHWAYS",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "8fvomot8mv43",
+     "category": "Phrase",
+     "phrase": "THE BEST IS YET TO COME",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "4wndbc81p0hh",
+     "category": "Thing",
+     "phrase": "A RAY OF SUNSHINE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "cpor8qz1iyvf",
+     "category": "Phrase",
+     "phrase": "KEEP GOING",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "2r86t0eqncxv",
+     "category": "Thing",
+     "phrase": "A LIGHT AT THE END OF THE TUNNEL",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "hdtvknzm0quf",
+     "category": "Phrase",
+     "phrase": "BELIEVE IN YOURSELF",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "5fk0bzxyiqfb",
+     "category": "Thing",
+     "phrase": "BORROWED HOPE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "xttu2y6e1nqn",
+     "category": "Phrase",
+     "phrase": "CHANGE IS POSSIBLE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "7r51f23674or",
+     "category": "Event",
+     "phrase": "PLANTING A SEED",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "txlwc0bam89u",
+     "category": "Thing",
+     "phrase": "A NEW DAY",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "x12axz7bporp",
+     "category": "Phrase",
+     "phrase": "DREAM BIG START SMALL",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "4dgwd6l4hv38",
+     "category": "Thing",
+     "phrase": "A SUNRISE",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "oejl3fu4kodv",
+     "category": "Phrase",
+     "phrase": "STICK TO THE BUDGET",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "mmgxq6ia77j8",
+     "category": "Thing",
+     "phrase": "A HOLIDAY SPENDING CAP",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "d71fsfrqjt03",
+     "category": "Phrase",
+     "phrase": "KEEP IT SIMPLE",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "uri0mc73rxj2",
+     "category": "Thing",
+     "phrase": "A HOMEMADE GIFT",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "n473lulitqmy",
+     "category": "Thing",
+     "phrase": "A SHOPPING LIST",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "3re4i7zqnp7r",
+     "category": "Phrase",
+     "phrase": "TIME IS THE BEST GIFT",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "v2xyuqpteehr",
+     "category": "Thing",
+     "phrase": "A PIGGY BANK",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "738w94vhujqt",
+     "category": "Event",
+     "phrase": "BAKING COOKIES FOR FRIENDS",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "p26d3s5h0qme",
+     "category": "Phrase",
+     "phrase": "CASH ONLY",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "utjjns3jz9av",
+     "category": "Thing",
+     "phrase": "A HANDWRITTEN CARD",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "r9ko05z1wqjr",
+     "category": "Phrase",
+     "phrase": "PRESENCE NOT PRESENTS",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "obiw7mf32n4c",
+     "category": "Event",
+     "phrase": "WRAPPING GIFTS",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "jlxarwdf60rm",
+     "category": "Phrase",
+     "phrase": "PLAN AHEAD",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "r7mc40lx9ksa",
+     "category": "Thing",
+     "phrase": "A GIFT OF TIME",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "bmhvd4auaefe",
+     "category": "Phrase",
+     "phrase": "PEACE OF MIND",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "88l2tiu7ri6p",
+     "category": "Phrase",
+     "phrase": "YOU ARE NOT ALONE",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "kvi04nexoix7",
+     "category": "Phrase",
+     "phrase": "REACH OUT",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "iwb88oo74z09",
+     "category": "Thing",
+     "phrase": "A FRIENDLY HELLO",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "iayp20i5v6y0",
+     "category": "Event",
+     "phrase": "CALLING AN OLD FRIEND",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "m4grqndjrvqs",
+     "category": "Thing",
+     "phrase": "A SUPPORT NETWORK",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "ay9yma1a3jtr",
+     "category": "Phrase",
+     "phrase": "QUALITY OVER QUANTITY",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "hsq13kihmmvp",
+     "category": "Event",
+     "phrase": "JOINING A CLUB",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "99m737dpzdm9",
+     "category": "Thing",
+     "phrase": "A CUP OF COFFEE WITH A FRIEND",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "iuxdvgdxputm",
+     "category": "Phrase",
+     "phrase": "SHOW UP",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "a28b0pwgcjhp",
+     "category": "Thing",
+     "phrase": "A GROUP HUG",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "owbgymlu8sab",
+     "category": "Event",
+     "phrase": "SAYING HELLO TO A NEIGHBOR",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "p9xg6vdkdaob",
+     "category": "Phrase",
+     "phrase": "WE ARE IN THIS TOGETHER",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "x0ho4qiivcg6",
+     "category": "Thing",
+     "phrase": "A FRIENDLY FACE",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "t72uf3n1bzpl",
+     "category": "Event",
+     "phrase": "GAME NIGHT",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "qdxiez4zxas4",
+     "category": "Phrase",
+     "phrase": "CONNECTION MATTERS",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "fh3q3zq75f6a",
+     "category": "Phrase",
+     "phrase": "HAPPY NEW YEAR",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "856qnpxmpxmc",
+     "category": "Phrase",
+     "phrase": "A DIRECTION NOT A DESTINATION",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "80d1qaeomabm",
+     "category": "Thing",
+     "phrase": "MY ONE WORD",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ju9x1svmtfzp",
+     "category": "Thing",
+     "phrase": "A FRESH START",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ezgpyo8rw6q2",
+     "category": "Phrase",
+     "phrase": "SMALL STEPS BIG CHANGE",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "n02akryuc8lo",
+     "category": "Event",
+     "phrase": "WRITING DOWN YOUR GOALS",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "23dqqovmpz6x",
+     "category": "Thing",
+     "phrase": "A NEW CALENDAR",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "d13wn8n8dke3",
+     "category": "Phrase",
+     "phrase": "TRY AGAIN TOMORROW",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "wsy9id7a38k4",
+     "category": "Thing",
+     "phrase": "A VISION BOARD",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "gueu7k3rpy20",
+     "category": "Phrase",
+     "phrase": "LIVE YOUR VALUES",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "4gd2pwke6vmp",
+     "category": "Event",
+     "phrase": "THE MIDNIGHT COUNTDOWN",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "knih79irvi5o",
+     "category": "Thing",
+     "phrase": "A CLEAN SLATE",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "uvb2wm7fkwwi",
+     "category": "Event",
+     "phrase": "CHEERING AT MIDNIGHT",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "8t0z1hhs8tze",
+     "category": "Phrase",
+     "phrase": "NEW YEAR NEW YOU",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "bunsrsfmkqyq",
+     "category": "Phrase",
+     "phrase": "KNOW YOUR EXIT",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "cza81vf152g5",
+     "category": "Phrase",
+     "phrase": "TAKE A BREAK",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ilxiff4kkulw",
+     "category": "Thing",
+     "phrase": "A HOLIDAY GAME PLAN",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "mytia694xbww",
+     "category": "Phrase",
+     "phrase": "ONE CONVERSATION AT A TIME",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "5q4c5ggu55un",
+     "category": "Event",
+     "phrase": "STEPPING OUTSIDE FOR AIR",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "jlbkne4v05o8",
+     "category": "Phrase",
+     "phrase": "PROTECT YOUR PEACE",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "9qnq7b9iciua",
+     "category": "Thing",
+     "phrase": "A SUPPORT PERSON",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "f7izyiovelt0",
+     "category": "Phrase",
+     "phrase": "GOOD ENOUGH IS GOOD",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "3iu4fjsla5yl",
+     "category": "Event",
+     "phrase": "TEXTING A FRIEND",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "kyffy5str98z",
+     "category": "Thing",
+     "phrase": "FIVE FOUR THREE TWO ONE",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "rkghgtb2cvc1",
+     "category": "Phrase",
+     "phrase": "IT IS OKAY TO SAY NO",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "qwjo5sbhjda8",
+     "category": "Thing",
+     "phrase": "A QUIET CORNER",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "1dbhftgpkgzg",
+     "category": "Phrase",
+     "phrase": "BREATHE IN BREATHE OUT",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "taxjbfggxjfg",
+     "category": "Event",
+     "phrase": "LEAVING A PARTY EARLY",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "og24r6kqi2jt",
+     "category": "Phrase",
+     "phrase": "GIVE YOURSELF CREDIT",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "4nsymb8c6csh",
+     "category": "Phrase",
+     "phrase": "CHASE THE SUNSHINE",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "isl3tcsvzfq1",
+     "category": "Thing",
+     "phrase": "A LIGHT THERAPY LAMP",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "zq528keb9uy2",
+     "category": "Event",
+     "phrase": "A WALK AT MIDDAY",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "zpnsajqg2ap0",
+     "category": "Thing",
+     "phrase": "A CONSISTENT SLEEP SCHEDULE",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "cze62urpzmci",
+     "category": "Phrase",
+     "phrase": "SPRING WILL COME",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "qvd0vme4l4xx",
+     "category": "Thing",
+     "phrase": "WINTER WELLNESS",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "948qtsn3z7pn",
+     "category": "Event",
+     "phrase": "OPENING THE CURTAINS",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "2vikmcu4sfxs",
+     "category": "Thing",
+     "phrase": "A COZY WINTER WALK",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "sva5rucc9kxt",
+     "category": "Phrase",
+     "phrase": "STAY CONNECTED",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "5o0m41isgowq",
+     "category": "Thing",
+     "phrase": "MORNING SUNLIGHT",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "vgzfmumntrvu",
+     "category": "Event",
+     "phrase": "CALLING A FRIEND",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "nfvyo8clo02x",
+     "category": "Thing",
+     "phrase": "A WARM MUG OF TEA",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "roszd584onl2",
+     "category": "Phrase",
+     "phrase": "LET THE LIGHT IN",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "zk1oi089dqmt",
+     "category": "Event",
+     "phrase": "A SNOWBALL FIGHT",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "jesenukjq0hd",
+     "category": "Phrase",
+     "phrase": "BRIGHTER DAYS AHEAD",
+     "sets": [
+      "Winter SAD"
+     ]
     }
    ],
    "words": [
@@ -49480,6 +61162,711 @@ window.GS_MY_CONTENT = {
      "hint": "Inner Critic",
      "sets": [
       "Inner Critics"
+     ]
+    },
+    {
+     "id": "5egsm87grv7e",
+     "word": "YEARS",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "54429qlt9nqi",
+     "word": "GROWN",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "iwv596duhupb",
+     "word": "PROUD",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ha2o0ufv4dql",
+     "word": "SHIFT",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "t1ouajvo98o6",
+     "word": "STEPS",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "7x5nppt2dj2k",
+     "word": "TODAY",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "5235exdwa0rg",
+     "word": "MONTH",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "f83eaclxunig",
+     "word": "CARRY",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "blhxtppdmy47",
+     "word": "LEAVE",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "vdbwv6qqfu55",
+     "word": "LEARN",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "xt9bcmmif9z7",
+     "word": "BUILT",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "flfcn5wjd969",
+     "word": "GAINS",
+     "hint": "Year in Review",
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "mmwwcxy55rr8",
+     "word": "SMILE",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "98aotzeaoez3",
+     "word": "HELPS",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "ztolrluab9n4",
+     "word": "GIVES",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "nswyudwlt2lq",
+     "word": "SHARE",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness",
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "2jmv96wjrf80",
+     "word": "CARES",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "q71m89ixk5zu",
+     "word": "THANK",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "9kb3h1en2yhf",
+     "word": "NOTES",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "44npru2u7hi5",
+     "word": "HEART",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "hfwpacfxm9bw",
+     "word": "SWEET",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "swwem0k0ql4k",
+     "word": "WARMS",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "phhh6ojy823u",
+     "word": "LIFTS",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "96xc8cl9uan0",
+     "word": "SERVE",
+     "hint": "Kindness",
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "1eoiiatlqsbu",
+     "word": "HOPES",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "l1cre5j83asf",
+     "word": "DREAM",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "htd6kgy1h3e6",
+     "word": "LIGHT",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "26j1cw76whv8",
+     "word": "GOALS",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "7wvy3e99ql2s",
+     "word": "SPARK",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "o1fqfl8hec8v",
+     "word": "BLOOM",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "evfkijk7wncq",
+     "word": "RISES",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "bpcc68f2prmu",
+     "word": "AHEAD",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "dqrqgf1spvyq",
+     "word": "PATHS",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "w08mvyx4emie",
+     "word": "SEEDS",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "eg7afktzmx1a",
+     "word": "FAITH",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "5tw2qf3fg7u6",
+     "word": "SUNNY",
+     "hint": "Hope",
+     "sets": [
+      "Hope and the Future",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "hey7jqp314wb",
+     "word": "MONEY",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "23ab3gfprxk0",
+     "word": "SPEND",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "a9q5uarhylbi",
+     "word": "SAVED",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "f0y1rx11f9tv",
+     "word": "COINS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "ahe3ni69xn3m",
+     "word": "LIMIT",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "52ggly81nwye",
+     "word": "GIFTS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "vttfdgyuaykz",
+     "word": "PRICE",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "m4xeemw09jpe",
+     "word": "TOTAL",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "qo6kqyxfmsa5",
+     "word": "WRAPS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "lfm92ov4o1in",
+     "word": "SALES",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "98xforv78yx4",
+     "word": "BILLS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "hwpb1rdnpweq",
+     "word": "PLANS",
+     "hint": "Holiday Money",
+     "sets": [
+      "Holiday Cash",
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "bbdqw5dx71vk",
+     "word": "HELLO",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "4r2wnbc7hiil",
+     "word": "BONDS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "crwa00dycb2f",
+     "word": "UNITE",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "6u016kq5wweo",
+     "word": "CALLS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "8vzpgcy4k5be",
+     "word": "TRUST",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "zz1igzffv1ss",
+     "word": "GROUP",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "umhh8oxakgfa",
+     "word": "VISIT",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "pzztqbncvvp8",
+     "word": "PEERS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "n4o8kejftdnc",
+     "word": "TEAMS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "vh0c19g9szdh",
+     "word": "CHATS",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "9z5vrg8xmehs",
+     "word": "CLOSE",
+     "hint": "Connection",
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "u7e07mk5l4j6",
+     "word": "START",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "vt2tyuy3qxwm",
+     "word": "FRESH",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "zeeodsdnu9so",
+     "word": "FOCUS",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "nf5jnrlmvtfb",
+     "word": "BEGIN",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "9085nxglqzaw",
+     "word": "HABIT",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "4vm9sp3uvq55",
+     "word": "VALUE",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "cc8u2ju2mr3v",
+     "word": "AGAIN",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "oisibuiq4r1f",
+     "word": "SLATE",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "duoo9cjppe78",
+     "word": "CHEER",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "socuu3f6bou2",
+     "word": "CLOCK",
+     "hint": "New Year",
+     "sets": [
+      "New Year, New Intentions",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "b80fyi0qso6t",
+     "word": "CALMS",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "mcgutjn02c8y",
+     "word": "BREAK",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "xn0hwc3xwds1",
+     "word": "PAUSE",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "9z74gelk79d2",
+     "word": "RESTS",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "x220pd59rhfa",
+     "word": "EXITS",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "jichpxpakqne",
+     "word": "PEACE",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "jkebcrcynih6",
+     "word": "HEARS",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "yqrz73f6xw41",
+     "word": "SMELL",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ix7l6n26qiym",
+     "word": "TASTE",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "oihfestdz98y",
+     "word": "TOUCH",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "32gsvmzoslwp",
+     "word": "SPACE",
+     "hint": "Holiday Coping",
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "lxp5gytf6isq",
+     "word": "WALKS",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "dcayqkx7mluw",
+     "word": "SLEEP",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "nqy30n4eydoz",
+     "word": "SNOWY",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "kb05e5bm7oww",
+     "word": "BRISK",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "7c16ufz553fj",
+     "word": "SHINE",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "l0ydbnqatjfy",
+     "word": "DAWNS",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ceo5kpnw2oz2",
+     "word": "MOODS",
+     "hint": "Winter Wellness",
+     "sets": [
+      "Winter SAD"
      ]
     }
    ],
@@ -55549,6 +67936,2181 @@ window.GS_MY_CONTENT = {
      ],
      "sets": [
       "Inner Critics"
+     ]
+    },
+    {
+     "id": "9qhe7eif3a7w",
+     "word": "a calendar",
+     "level": "easy",
+     "banned": [
+      "date",
+      "month",
+      "days",
+      "schedule"
+     ],
+     "sets": [
+      "Year in Review",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "cg99f58qs2t9",
+     "word": "a clock striking midnight",
+     "level": "easy",
+     "banned": [
+      "clock",
+      "twelve",
+      "midnight",
+      "time"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "73f5qexmpxgi",
+     "word": "a photo album",
+     "level": "easy",
+     "banned": [
+      "photos",
+      "pictures",
+      "album",
+      "memories"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2568wypp5nt8",
+     "word": "a backpack",
+     "level": "easy",
+     "banned": [
+      "bag",
+      "school",
+      "carry",
+      "straps"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2sp5f6cf6zm8",
+     "word": "a staircase",
+     "level": "easy",
+     "banned": [
+      "stairs",
+      "steps",
+      "up",
+      "climb"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "3o5rb01aij8n",
+     "word": "a road",
+     "level": "easy",
+     "banned": [
+      "street",
+      "drive",
+      "path",
+      "car"
+     ],
+     "sets": [
+      "Year in Review",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "8cs01f5mmtco",
+     "word": "a rearview mirror",
+     "level": "easy",
+     "banned": [
+      "mirror",
+      "car",
+      "behind",
+      "look"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "jtkvawxvd5zc",
+     "word": "a trophy",
+     "level": "easy",
+     "banned": [
+      "win",
+      "award",
+      "cup",
+      "prize"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "1mf4qp0gnj8o",
+     "word": "a book",
+     "level": "easy",
+     "banned": [
+      "read",
+      "pages",
+      "library",
+      "story"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "vanygi27c6bg",
+     "word": "a balloon",
+     "level": "easy",
+     "banned": [
+      "air",
+      "float",
+      "party",
+      "string"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "agqdw5xnww1x",
+     "word": "looking back over your shoulder",
+     "level": "medium",
+     "banned": [
+      "look",
+      "back",
+      "shoulder",
+      "behind"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "mi5azmktz89p",
+     "word": "turning a page",
+     "level": "medium",
+     "banned": [
+      "page",
+      "book",
+      "turn",
+      "flip"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "u5mkeevlhq9w",
+     "word": "unpacking a suitcase",
+     "level": "medium",
+     "banned": [
+      "suitcase",
+      "unpack",
+      "clothes",
+      "travel"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "f4hxfde8qxqk",
+     "word": "climbing a mountain",
+     "level": "medium",
+     "banned": [
+      "climb",
+      "mountain",
+      "peak",
+      "top"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ey4bz5iou0qy",
+     "word": "a time capsule",
+     "level": "medium",
+     "banned": [
+      "time",
+      "capsule",
+      "bury",
+      "future"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "29aiq9xu5ve4",
+     "word": "letting go of a balloon",
+     "level": "medium",
+     "banned": [
+      "balloon",
+      "let go",
+      "float",
+      "string"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "uzfj28ohchcw",
+     "word": "writing in a journal",
+     "level": "medium",
+     "banned": [
+      "write",
+      "journal",
+      "diary",
+      "pen"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "0rgxy2rwbaqa",
+     "word": "crossing a bridge",
+     "level": "medium",
+     "banned": [
+      "bridge",
+      "cross",
+      "river",
+      "walk"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "zvf7iqiak488",
+     "word": "a scrapbook",
+     "level": "medium",
+     "banned": [
+      "scrap",
+      "book",
+      "photos",
+      "glue"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2jqsve0fhm1x",
+     "word": "a gold star",
+     "level": "easy",
+     "banned": [
+      "star",
+      "gold",
+      "sticker",
+      "reward"
+     ],
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "7ep77gs4g6z6",
+     "word": "a smiley face",
+     "level": "easy",
+     "banned": [
+      "smile",
+      "happy",
+      "face",
+      "emoji"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "44qik92trm6g",
+     "word": "a gift",
+     "level": "easy",
+     "banned": [
+      "present",
+      "bow",
+      "box",
+      "wrap"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "s2llyj5d87l9",
+     "word": "a helping hand",
+     "level": "easy",
+     "banned": [
+      "hand",
+      "help",
+      "reach",
+      "fingers"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "i7i251wbqvu8",
+     "word": "a heart",
+     "level": "easy",
+     "banned": [
+      "love",
+      "valentine",
+      "red",
+      "beat"
+     ],
+     "sets": [
+      "Acts of Kindness",
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "34a2h0wv5da4",
+     "word": "a thank-you card",
+     "level": "easy",
+     "banned": [
+      "thanks",
+      "card",
+      "note",
+      "grateful"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "o9wd8pjszqxb",
+     "word": "a flower",
+     "level": "easy",
+     "banned": [
+      "petal",
+      "bloom",
+      "garden",
+      "stem"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "06osd61ft7qx",
+     "word": "a cookie",
+     "level": "easy",
+     "banned": [
+      "bake",
+      "chocolate",
+      "chip",
+      "treat"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "f848jjqk78nq",
+     "word": "an open door",
+     "level": "easy",
+     "banned": [
+      "door",
+      "open",
+      "enter",
+      "knob"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "alfbgbf8bxnu",
+     "word": "a hug",
+     "level": "easy",
+     "banned": [
+      "arms",
+      "squeeze",
+      "embrace",
+      "cuddle"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "gb8yxxhsgg75",
+     "word": "a ripple in water",
+     "level": "easy",
+     "banned": [
+      "ripple",
+      "water",
+      "pond",
+      "splash"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "k2gqzrx410fy",
+     "word": "holding the door for someone",
+     "level": "medium",
+     "banned": [
+      "door",
+      "hold",
+      "open",
+      "polite"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "2mzax84fu8h9",
+     "word": "carrying groceries",
+     "level": "medium",
+     "banned": [
+      "groceries",
+      "bags",
+      "carry",
+      "food"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "jz47pda9sszm",
+     "word": "shoveling a neighbor's sidewalk",
+     "level": "medium",
+     "banned": [
+      "shovel",
+      "snow",
+      "neighbor",
+      "sidewalk"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "zsxdn42qg05d",
+     "word": "sharing an umbrella",
+     "level": "medium",
+     "banned": [
+      "umbrella",
+      "rain",
+      "share",
+      "wet"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "u04s3o186xlw",
+     "word": "giving a compliment",
+     "level": "medium",
+     "banned": [
+      "compliment",
+      "nice",
+      "praise",
+      "say"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "yptgu90tn4jn",
+     "word": "baking for a friend",
+     "level": "medium",
+     "banned": [
+      "bake",
+      "oven",
+      "cookies",
+      "friend"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "2h7ft496mf5s",
+     "word": "a high five",
+     "level": "medium",
+     "banned": [
+      "hand",
+      "five",
+      "slap",
+      "celebrate"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "dos5jmpzojui",
+     "word": "helping someone up",
+     "level": "medium",
+     "banned": [
+      "help",
+      "up",
+      "fall",
+      "hand"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "wz5ipbmudwjj",
+     "word": "leaving a kind note",
+     "level": "medium",
+     "banned": [
+      "note",
+      "write",
+      "kind",
+      "sticky"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "ddfaf3p3swuh",
+     "word": "a teddy bear",
+     "level": "easy",
+     "banned": [
+      "bear",
+      "stuffed",
+      "toy",
+      "hug"
+     ],
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "zcyqxw6ixxzi",
+     "word": "a rainbow",
+     "level": "easy",
+     "banned": [
+      "colors",
+      "rain",
+      "arc",
+      "sky"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "yzognu80f9xf",
+     "word": "a sunrise",
+     "level": "easy",
+     "banned": [
+      "sun",
+      "morning",
+      "rise",
+      "dawn"
+     ],
+     "sets": [
+      "Hope and the Future",
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ktdl7lgdzbt3",
+     "word": "a seedling",
+     "level": "easy",
+     "banned": [
+      "plant",
+      "sprout",
+      "grow",
+      "seed"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "hz09xhr8xwtu",
+     "word": "a lighthouse",
+     "level": "easy",
+     "banned": [
+      "light",
+      "ocean",
+      "beacon",
+      "tower"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "u77xo8jxxhbi",
+     "word": "an anchor",
+     "level": "easy",
+     "banned": [
+      "boat",
+      "ship",
+      "sea",
+      "heavy"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "14oj8pfxrfv6",
+     "word": "a candle",
+     "level": "easy",
+     "banned": [
+      "flame",
+      "wax",
+      "light",
+      "wick"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "k32m20tfc44b",
+     "word": "a road sign",
+     "level": "easy",
+     "banned": [
+      "sign",
+      "road",
+      "street",
+      "direction"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "ynefv3yjbrbm",
+     "word": "a kite",
+     "level": "easy",
+     "banned": [
+      "fly",
+      "wind",
+      "string",
+      "sky"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "v61sx1sybqjg",
+     "word": "a shooting star",
+     "level": "easy",
+     "banned": [
+      "star",
+      "wish",
+      "sky",
+      "night"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "4rlqxmbh78in",
+     "word": "a butterfly",
+     "level": "easy",
+     "banned": [
+      "wings",
+      "fly",
+      "caterpillar",
+      "insect"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "tugwthgsypj2",
+     "word": "a light at the end of a tunnel",
+     "level": "medium",
+     "banned": [
+      "tunnel",
+      "light",
+      "end",
+      "dark"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "lplm69wufk34",
+     "word": "making a wish",
+     "level": "medium",
+     "banned": [
+      "wish",
+      "star",
+      "blow",
+      "candles"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "td70lua2hk9x",
+     "word": "planting a seed",
+     "level": "medium",
+     "banned": [
+      "plant",
+      "seed",
+      "dirt",
+      "grow"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "1zfavuh3dc7l",
+     "word": "climbing a ladder",
+     "level": "medium",
+     "banned": [
+      "ladder",
+      "climb",
+      "rungs",
+      "up"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "bngltyiplk3u",
+     "word": "a map with a path",
+     "level": "medium",
+     "banned": [
+      "map",
+      "path",
+      "route",
+      "road"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "ud5a8zvvzd0o",
+     "word": "a flower through the snow",
+     "level": "medium",
+     "banned": [
+      "flower",
+      "snow",
+      "winter",
+      "bloom"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "8801hdqbcb6y",
+     "word": "looking through a telescope",
+     "level": "medium",
+     "banned": [
+      "telescope",
+      "stars",
+      "look",
+      "far"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "wfe45o163i5m",
+     "word": "a sun behind clouds",
+     "level": "medium",
+     "banned": [
+      "sun",
+      "cloud",
+      "sky",
+      "peek"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "d0ob8nsfnarg",
+     "word": "opening a window",
+     "level": "medium",
+     "banned": [
+      "window",
+      "open",
+      "fresh",
+      "air"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "jfivk156sx80",
+     "word": "a compass",
+     "level": "easy",
+     "banned": [
+      "north",
+      "direction",
+      "needle",
+      "navigate"
+     ],
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "gkngfi4m52j0",
+     "word": "a piggy bank",
+     "level": "easy",
+     "banned": [
+      "pig",
+      "bank",
+      "coins",
+      "save"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "1f1t2dk0ec2q",
+     "word": "a wallet",
+     "level": "easy",
+     "banned": [
+      "money",
+      "cash",
+      "leather",
+      "pocket"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "xhymu6zpgu6z",
+     "word": "a gift box",
+     "level": "easy",
+     "banned": [
+      "present",
+      "bow",
+      "box",
+      "wrap"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "lf4fikgdi5fl",
+     "word": "a credit card",
+     "level": "easy",
+     "banned": [
+      "card",
+      "plastic",
+      "credit",
+      "pay"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "txsvk0jn4ub0",
+     "word": "a shopping cart",
+     "level": "easy",
+     "banned": [
+      "cart",
+      "store",
+      "shop",
+      "wheels"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "l33h1jrx8a1x",
+     "word": "a price tag",
+     "level": "easy",
+     "banned": [
+      "price",
+      "tag",
+      "cost",
+      "sale"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "kz8yu848q4mo",
+     "word": "a dollar sign",
+     "level": "easy",
+     "banned": [
+      "dollar",
+      "money",
+      "cash",
+      "symbol"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "wdtm2ulqlud9",
+     "word": "a coin",
+     "level": "easy",
+     "banned": [
+      "money",
+      "penny",
+      "quarter",
+      "round"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "nigv1bjvqsgy",
+     "word": "a calculator",
+     "level": "easy",
+     "banned": [
+      "math",
+      "numbers",
+      "add",
+      "plus"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "9otp8hctpfzo",
+     "word": "a cash register",
+     "level": "easy",
+     "banned": [
+      "register",
+      "store",
+      "money",
+      "checkout"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "f9dcw6bqq9sk",
+     "word": "making a shopping list",
+     "level": "medium",
+     "banned": [
+      "list",
+      "write",
+      "shop",
+      "paper"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "osvjmvis4g86",
+     "word": "wrapping a present",
+     "level": "medium",
+     "banned": [
+      "wrap",
+      "gift",
+      "paper",
+      "bow"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "0a69kldnioc9",
+     "word": "counting money",
+     "level": "medium",
+     "banned": [
+      "count",
+      "money",
+      "cash",
+      "bills"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "mdq0eadf41w8",
+     "word": "baking cookies",
+     "level": "medium",
+     "banned": [
+      "bake",
+      "oven",
+      "cookies",
+      "dough"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "mjd0caes10v4",
+     "word": "a long checkout line",
+     "level": "medium",
+     "banned": [
+      "line",
+      "checkout",
+      "store",
+      "wait"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "gpxyswhyfc8z",
+     "word": "putting coins in a jar",
+     "level": "medium",
+     "banned": [
+      "coins",
+      "jar",
+      "save",
+      "money"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "mrji67at4e4i",
+     "word": "writing a card",
+     "level": "medium",
+     "banned": [
+      "write",
+      "card",
+      "pen",
+      "message"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "nak8zlkmjyh8",
+     "word": "a sale sign",
+     "level": "medium",
+     "banned": [
+      "sale",
+      "sign",
+      "discount",
+      "percent"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "9y2ajcygrakh",
+     "word": "returning a gift",
+     "level": "medium",
+     "banned": [
+      "return",
+      "gift",
+      "store",
+      "receipt"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "eska2op70wae",
+     "word": "an empty wallet",
+     "level": "easy",
+     "banned": [
+      "wallet",
+      "empty",
+      "money",
+      "broke"
+     ],
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "y11ginmvakye",
+     "word": "a telephone",
+     "level": "easy",
+     "banned": [
+      "phone",
+      "call",
+      "ring",
+      "dial"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "zfz7nblwlhsh",
+     "word": "two coffee cups",
+     "level": "easy",
+     "banned": [
+      "coffee",
+      "cups",
+      "mug",
+      "drink"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "zrgh0jtg72uf",
+     "word": "a park bench",
+     "level": "easy",
+     "banned": [
+      "bench",
+      "park",
+      "sit",
+      "seat"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "t0o60d85eb9p",
+     "word": "a waving hand",
+     "level": "easy",
+     "banned": [
+      "wave",
+      "hand",
+      "hello",
+      "hi"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "rnnwpcfirblq",
+     "word": "a puzzle piece",
+     "level": "easy",
+     "banned": [
+      "puzzle",
+      "jigsaw",
+      "piece",
+      "fit"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "oudw6z1berb5",
+     "word": "a bridge",
+     "level": "easy",
+     "banned": [
+      "river",
+      "cross",
+      "over",
+      "road"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "83c14rl5xy90",
+     "word": "a mailbox",
+     "level": "easy",
+     "banned": [
+      "mail",
+      "letters",
+      "post",
+      "box"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "1i6ul35e9qfw",
+     "word": "a dog",
+     "level": "easy",
+     "banned": [
+      "pet",
+      "bark",
+      "puppy",
+      "woof"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "wd5xxbihjo10",
+     "word": "a campfire",
+     "level": "easy",
+     "banned": [
+      "fire",
+      "camp",
+      "flames",
+      "logs"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "9cxsb395jvq7",
+     "word": "a group hug",
+     "level": "medium",
+     "banned": [
+      "hug",
+      "group",
+      "arms",
+      "together"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "0yeaxcbj2n87",
+     "word": "calling a friend",
+     "level": "medium",
+     "banned": [
+      "phone",
+      "call",
+      "friend",
+      "talk"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "1v20cbdbe2bp",
+     "word": "playing a board game",
+     "level": "medium",
+     "banned": [
+      "game",
+      "dice",
+      "board",
+      "play"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "a490py0pmhpv",
+     "word": "a dinner party",
+     "level": "medium",
+     "banned": [
+      "dinner",
+      "table",
+      "food",
+      "guests"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "4hkz209xrsb6",
+     "word": "knocking on a door",
+     "level": "medium",
+     "banned": [
+      "knock",
+      "door",
+      "visit",
+      "neighbor"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "v22i50kgb7x0",
+     "word": "waving to a neighbor",
+     "level": "medium",
+     "banned": [
+      "wave",
+      "neighbor",
+      "hello",
+      "next door"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "tfiv2gcd0meo",
+     "word": "walking a dog",
+     "level": "medium",
+     "banned": [
+      "dog",
+      "leash",
+      "walk",
+      "pet"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "rohzth2vkk9x",
+     "word": "a book club",
+     "level": "medium",
+     "banned": [
+      "book",
+      "club",
+      "read",
+      "group"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "11hpjyjl0y8d",
+     "word": "holding hands",
+     "level": "medium",
+     "banned": [
+      "hands",
+      "hold",
+      "together",
+      "fingers"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "gwejqkx48i3f",
+     "word": "a friendship bracelet",
+     "level": "easy",
+     "banned": [
+      "bracelet",
+      "friend",
+      "string",
+      "wrist"
+     ],
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "xjftnsrm8dcy",
+     "word": "fireworks",
+     "level": "easy",
+     "banned": [
+      "boom",
+      "sky",
+      "sparkle",
+      "celebrate"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "q02fmh2q6b07",
+     "word": "a party hat",
+     "level": "easy",
+     "banned": [
+      "party",
+      "hat",
+      "cone",
+      "birthday"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "fd294m6lbr0d",
+     "word": "a clock",
+     "level": "easy",
+     "banned": [
+      "time",
+      "tick",
+      "hands",
+      "hour"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "01fdcj4kloyi",
+     "word": "a target",
+     "level": "easy",
+     "banned": [
+      "bullseye",
+      "arrow",
+      "aim",
+      "dart"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "6dsk6oetqm34",
+     "word": "confetti",
+     "level": "easy",
+     "banned": [
+      "paper",
+      "party",
+      "throw",
+      "colors"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "wmqf3qwq41ph",
+     "word": "a notebook",
+     "level": "easy",
+     "banned": [
+      "paper",
+      "write",
+      "pages",
+      "spiral"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "jiio9v6palxi",
+     "word": "a key",
+     "level": "easy",
+     "banned": [
+      "lock",
+      "door",
+      "open",
+      "keychain"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "zydqhns5andh",
+     "word": "a ball drop",
+     "level": "medium",
+     "banned": [
+      "ball",
+      "drop",
+      "midnight",
+      "times square"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "a1f6niidqws4",
+     "word": "writing a goal",
+     "level": "medium",
+     "banned": [
+      "write",
+      "goal",
+      "pen",
+      "list"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "o52pok2d0t6t",
+     "word": "a countdown",
+     "level": "medium",
+     "banned": [
+      "count",
+      "numbers",
+      "ten",
+      "zero"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "h9ewh1ibp345",
+     "word": "a vision board",
+     "level": "medium",
+     "banned": [
+      "vision",
+      "board",
+      "pictures",
+      "goals"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "uvvi7mz8t9t3",
+     "word": "jogging in the snow",
+     "level": "medium",
+     "banned": [
+      "jog",
+      "run",
+      "snow",
+      "winter"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "2h83wyutpb5m",
+     "word": "blowing a party horn",
+     "level": "medium",
+     "banned": [
+      "horn",
+      "blow",
+      "party",
+      "noise"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "uc69fqshttnx",
+     "word": "turning over a new leaf",
+     "level": "medium",
+     "banned": [
+      "leaf",
+      "turn",
+      "new",
+      "tree"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "iirqlr8kfb8f",
+     "word": "climbing stairs",
+     "level": "medium",
+     "banned": [
+      "stairs",
+      "steps",
+      "up",
+      "climb"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "y1hqk01uvxkw",
+     "word": "tearing off a calendar page",
+     "level": "medium",
+     "banned": [
+      "calendar",
+      "tear",
+      "page",
+      "month"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "p9lrzn6mns3f",
+     "word": "a party popper",
+     "level": "easy",
+     "banned": [
+      "pop",
+      "party",
+      "confetti",
+      "string"
+     ],
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ew4e1d7wybkj",
+     "word": "an exit sign",
+     "level": "easy",
+     "banned": [
+      "exit",
+      "sign",
+      "door",
+      "leave"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "mmr06lje7k2o",
+     "word": "a car key",
+     "level": "easy",
+     "banned": [
+      "key",
+      "car",
+      "drive",
+      "keychain"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "y488zxbdkuiq",
+     "word": "a phone",
+     "level": "easy",
+     "banned": [
+      "call",
+      "text",
+      "cell",
+      "ring"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "zbio5t75xper",
+     "word": "an ear",
+     "level": "easy",
+     "banned": [
+      "hear",
+      "listen",
+      "head",
+      "sound"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "2hg8bnzbnq2w",
+     "word": "a nose",
+     "level": "easy",
+     "banned": [
+      "smell",
+      "face",
+      "sniff",
+      "nostril"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "znpsaxqgqusr",
+     "word": "a hand",
+     "level": "easy",
+     "banned": [
+      "fingers",
+      "palm",
+      "wave",
+      "touch"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ulfelnc77myi",
+     "word": "an eye",
+     "level": "easy",
+     "banned": [
+      "see",
+      "look",
+      "eyeball",
+      "vision"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "u1ktged4aabs",
+     "word": "a candy cane",
+     "level": "easy",
+     "banned": [
+      "candy",
+      "striped",
+      "christmas",
+      "peppermint"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "2bh9ee1lmi3n",
+     "word": "a snowflake",
+     "level": "easy",
+     "banned": [
+      "snow",
+      "winter",
+      "cold",
+      "flake"
+     ],
+     "sets": [
+      "Stressful Holiday Moments",
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "snuvlz4i4ypy",
+     "word": "a door",
+     "level": "easy",
+     "banned": [
+      "open",
+      "knob",
+      "exit",
+      "close"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "p0llaea2c3wm",
+     "word": "stepping outside",
+     "level": "medium",
+     "banned": [
+      "step",
+      "outside",
+      "door",
+      "air"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "wtjwy3oxyy5l",
+     "word": "a crowded dinner table",
+     "level": "medium",
+     "banned": [
+      "dinner",
+      "table",
+      "crowd",
+      "family"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "bbvow7wvbnr3",
+     "word": "taking a deep breath",
+     "level": "medium",
+     "banned": [
+      "breathe",
+      "inhale",
+      "air",
+      "lungs"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "vupiknllk92w",
+     "word": "texting a friend",
+     "level": "medium",
+     "banned": [
+      "text",
+      "phone",
+      "friend",
+      "message"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "6qhqns9l4nwm",
+     "word": "checking your watch",
+     "level": "medium",
+     "banned": [
+      "watch",
+      "time",
+      "wrist",
+      "look"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "bjpr7c949kqe",
+     "word": "a quiet walk in the snow",
+     "level": "medium",
+     "banned": [
+      "walk",
+      "snow",
+      "quiet",
+      "winter"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "b1kiwguesqlc",
+     "word": "waving goodbye",
+     "level": "medium",
+     "banned": [
+      "wave",
+      "bye",
+      "hand",
+      "leave"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "gu705t9dgo9n",
+     "word": "sipping hot tea",
+     "level": "medium",
+     "banned": [
+      "tea",
+      "sip",
+      "hot",
+      "mug"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "61p99pr9yckp",
+     "word": "putting on a coat",
+     "level": "medium",
+     "banned": [
+      "coat",
+      "jacket",
+      "put on",
+      "cold"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "pypvczc8z0mx",
+     "word": "a wrapped present",
+     "level": "easy",
+     "banned": [
+      "present",
+      "gift",
+      "bow",
+      "wrap"
+     ],
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "9xzeousdz0sk",
+     "word": "a sun",
+     "level": "easy",
+     "banned": [
+      "sun",
+      "hot",
+      "sky",
+      "bright"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "7u14qd16qitb",
+     "word": "a lamp",
+     "level": "easy",
+     "banned": [
+      "light",
+      "bulb",
+      "shade",
+      "lamp"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "tg90a2xt05ul",
+     "word": "a snowman",
+     "level": "easy",
+     "banned": [
+      "snow",
+      "carrot",
+      "frosty",
+      "winter"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "45v83pmm5a0l",
+     "word": "a window",
+     "level": "easy",
+     "banned": [
+      "glass",
+      "pane",
+      "look",
+      "open"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "l8xmocpbv4zz",
+     "word": "a scarf",
+     "level": "easy",
+     "banned": [
+      "neck",
+      "warm",
+      "knit",
+      "winter"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "donx2gpa07zn",
+     "word": "an alarm clock",
+     "level": "easy",
+     "banned": [
+      "alarm",
+      "wake",
+      "clock",
+      "ring"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "54tkmv47ewvz",
+     "word": "a mug of hot cocoa",
+     "level": "easy",
+     "banned": [
+      "cocoa",
+      "hot",
+      "mug",
+      "chocolate"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ml7u71xl57sn",
+     "word": "a pair of boots",
+     "level": "easy",
+     "banned": [
+      "boots",
+      "feet",
+      "shoes",
+      "snow"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "0vwuy0xkc0q4",
+     "word": "a flower bud",
+     "level": "easy",
+     "banned": [
+      "flower",
+      "bud",
+      "bloom",
+      "spring"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "2mb05cc5bkfb",
+     "word": "opening the curtains",
+     "level": "medium",
+     "banned": [
+      "curtains",
+      "open",
+      "window",
+      "light"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "flhig7xtosdj",
+     "word": "going for a winter walk",
+     "level": "medium",
+     "banned": [
+      "walk",
+      "winter",
+      "snow",
+      "cold"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "dqgdl3glb6b9",
+     "word": "building a snowman",
+     "level": "medium",
+     "banned": [
+      "snowman",
+      "build",
+      "snow",
+      "roll"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "9rz5h6ydiw2j",
+     "word": "ice skating",
+     "level": "medium",
+     "banned": [
+      "skate",
+      "ice",
+      "rink",
+      "glide"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ex2w2nlkye8w",
+     "word": "waking up early",
+     "level": "medium",
+     "banned": [
+      "wake",
+      "early",
+      "morning",
+      "alarm"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "i2ym1zncctck",
+     "word": "sitting by a sunny window",
+     "level": "medium",
+     "banned": [
+      "window",
+      "sun",
+      "sit",
+      "light"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "r27wapoqus5s",
+     "word": "making a snow angel",
+     "level": "medium",
+     "banned": [
+      "snow",
+      "angel",
+      "lie",
+      "arms"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "7gv1o9fb9kds",
+     "word": "a sled ride",
+     "level": "medium",
+     "banned": [
+      "sled",
+      "snow",
+      "hill",
+      "slide"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "bdtzfrgor27t",
+     "word": "the first day of spring",
+     "level": "medium",
+     "banned": [
+      "spring",
+      "flowers",
+      "first",
+      "season"
+     ],
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ayotqr3fi1ox",
+     "word": "a pair of mittens",
+     "level": "easy",
+     "banned": [
+      "mittens",
+      "gloves",
+      "hands",
+      "warm"
+     ],
+     "sets": [
+      "Winter SAD"
      ]
     }
    ],
@@ -65396,6 +79958,2646 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Inner Critics"
      ]
+    },
+    {
+     "id": "38qjvteecu2w",
+     "question": "What is the purpose of a year-in-review reflection?",
+     "answer": "To honestly look at what was hard, what changed and what you built",
+     "wrong": [
+      "To grade yourself against your goals",
+      "To list everything that went wrong",
+      "To fill out paperwork"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "4l5hmmppe25z",
+     "question": "True or false: If the year was hard, there's nothing worth reflecting on.",
+     "answer": "False — hard years often hold the most growth",
+     "wrong": [
+      "True — it's best forgotten",
+      "True — only good years count",
+      "False — but wait a few years first"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "0mla9vehtxhz",
+     "question": "What does 'bearing witness to your own story' mean?",
+     "answer": "Honestly acknowledging what happened, without shrinking or inflating it",
+     "wrong": [
+      "Writing a formal report",
+      "Posting your year online",
+      "Having someone else tell your story"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "56617ovsxupj",
+     "question": "What is the 'carry forward / leave behind' exercise?",
+     "answer": "Choosing what to keep from the year and what to let go",
+     "wrong": [
+      "Packing up your belongings",
+      "Sorting thoughts into categories",
+      "Making a moving checklist"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "1c9tem63naqp",
+     "question": "True or false: A year with setbacks can't include real growth.",
+     "answer": "False — a year can hold both setbacks and progress",
+     "wrong": [
+      "True — setbacks erase progress",
+      "True — only perfect years count",
+      "False — but only if you start over"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "kzplj66y2hnl",
+     "question": "What does 'survival is an accomplishment' mean?",
+     "answer": "Getting through a hard year — showing up and not giving up — counts",
+     "wrong": [
+      "Only near-death survivals count",
+      "It's an official milestone",
+      "Survival is the bare minimum"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "yuyuxmexmh61",
+     "question": "Which is worth celebrating in a year-in-review?",
+     "answer": "Any moment of honesty, connection or showing up when it was hard",
+     "wrong": [
+      "Only things someone else documented",
+      "Only beating expectations",
+      "Only doing better than others"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "hvl7gs3dy8gs",
+     "question": "True or false: Reflection is about judging yourself.",
+     "answer": "False — it's about understanding, not grading your worth",
+     "wrong": [
+      "True — you rank your performance",
+      "True — it always includes punishment",
+      "False — but list everything you'd change"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "3c2ei9zq3zvo",
+     "question": "What does it mean to 'leave shame behind'?",
+     "answer": "Owning past mistakes without letting them define you",
+     "wrong": [
+      "Apologizing to everyone",
+      "Filing a statement",
+      "Never talking about the past again"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ozb8whc6h9no",
+     "question": "Why is perfectionism a problem in reflection?",
+     "answer": "It says only a perfect year counts — hiding real growth",
+     "wrong": [
+      "It helps you perform better",
+      "It's a healthy standard",
+      "It improves attention to detail"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "xhugessbpv8e",
+     "question": "True or false: Small, steady steps don't count as real change.",
+     "answer": "False — small steps build the biggest, longest-lasting change",
+     "wrong": [
+      "True — only dramatic change counts",
+      "True — change needs a minimum size",
+      "False — only if written down"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "tmnje1cgxfjt",
+     "question": "Why reflect on what you learned about yourself?",
+     "answer": "Self-knowledge helps you make better choices",
+     "wrong": [
+      "Only an expert can interpret it",
+      "It's an annual requirement",
+      "Only if it confirms what others think"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "2745oifppi8m",
+     "question": "Which is NOT a healthy way to reflect on the year?",
+     "answer": "Reviewing only your failures",
+     "wrong": [
+      "Looking at both the good and the hard",
+      "Choosing one thing to carry and one to release",
+      "Celebrating moments of connection"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "xu1o36bmm8s2",
+     "question": "True or false: Once the year is over, it's too late to learn from it.",
+     "answer": "False — the year being over is what makes reflection possible",
+     "wrong": [
+      "True — reflection only helps mid-year",
+      "True — the past can't teach you",
+      "False — but only within 30 days"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ilvxkdfyymar",
+     "question": "What carries forward into the new year?",
+     "answer": "Your skills, connections, self-awareness and values",
+     "wrong": [
+      "Nothing — every year starts at zero",
+      "Only certified skills",
+      "Only what's written down"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "gq5br6slpihr",
+     "question": "True or false: Thinking about who showed up for you helps you see your support network.",
+     "answer": "True — naming them shows connections worth protecting",
+     "wrong": [
+      "False — it creates dependence",
+      "False — only professionals count",
+      "True — but only staff count"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "cxa5rjbtzicw",
+     "question": "Letting go of a habit or pattern that held you back is…",
+     "answer": "A meaningful act of growth and self-respect",
+     "wrong": [
+      "Giving up",
+      "Always a mistake",
+      "Only okay if someone approves"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "00v01picimp8",
+     "question": "What is 'the story that you haven't changed'?",
+     "answer": "An old belief that you're the same person — the evidence says otherwise",
+     "wrong": [
+      "A therapy technique",
+      "A memory test",
+      "Parts of your history"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "3tbw3xiby22t",
+     "question": "True or false: Looking back is the same as getting stuck in the past.",
+     "answer": "False — reflecting to understand is different from dwelling",
+     "wrong": [
+      "True — always avoid looking back",
+      "True — it replays the past",
+      "False — but only for 15 minutes"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "ns8vce1axcxq",
+     "question": "What's a great question to end a year-in-review?",
+     "answer": "'What will I carry forward — and what am I ready to let go of?'",
+     "wrong": [
+      "'What did I fail at?'",
+      "'How do I compare to others?'",
+      "'What would others say about me?'"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "5ll3zscw3hb8",
+     "question": "What's the most important thing to remember at the end of a hard year?",
+     "answer": "You made it through — and that shows real strength",
+     "wrong": [
+      "Plan so it never happens again",
+      "Don't think about it",
+      "It doesn't count unless documented"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "4820xzxboo3b",
+     "question": "What is perfectionism called in the handout?",
+     "answer": "The enemy of real progress",
+     "wrong": [
+      "The key to success",
+      "A healthy habit",
+      "A helpful motivator"
+     ],
+     "category": "Year in Review",
+     "time": 20,
+     "sets": [
+      "Year in Review"
+     ]
+    },
+    {
+     "id": "z5docq8hmlql",
+     "question": "What is an act of kindness?",
+     "answer": "An intentional, voluntary action that helps another person",
+     "wrong": [
+      "Any polite behavior",
+      "A required gesture",
+      "A trade where both sides gain equally"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "guwwx50j2w18",
+     "question": "What feel-good brain chemical is released when you do something kind?",
+     "answer": "Dopamine",
+     "wrong": [
+      "Cortisol",
+      "Melatonin",
+      "Adrenaline"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "g2e6m1tb1ot2",
+     "question": "True or false: Only the person receiving kindness benefits.",
+     "answer": "False — the giver benefits too",
+     "wrong": [
+      "True — givers get nothing",
+      "True — it only goes one way",
+      "False — only if it's a big sacrifice"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "4lyi53sp4hgc",
+     "question": "What does it mean that kindness is 'contagious'?",
+     "answer": "Seeing kindness inspires others to be kind — a ripple effect",
+     "wrong": [
+      "It spreads like a cold",
+      "It must be repaid",
+      "Only through touch"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "a8o8a3n5a3x9",
+     "question": "Which is a FREE act of kindness?",
+     "answer": "Listening fully without checking your phone",
+     "wrong": [
+      "Buying a small gift",
+      "Donating money",
+      "Sending flowers"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "8cz48r0khdlo",
+     "question": "What does kindness do to cortisol, the stress hormone?",
+     "answer": "Lowers it — in both the giver and receiver",
+     "wrong": [
+      "Raises it",
+      "Has no effect",
+      "Only lowers it for the receiver"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "qt9tsnhyvgne",
+     "question": "What does research show about people who practice kindness regularly?",
+     "answer": "Higher life satisfaction and lower stress",
+     "wrong": [
+      "More burnout",
+      "Better health but no mood change",
+      "They seem less confident"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "hn4m9z0cry0l",
+     "question": "True or false: Being kind to yourself is selfish.",
+     "answer": "False — self-kindness helps you give to others",
+     "wrong": [
+      "True — always focus outward",
+      "True — it's avoidance",
+      "False — only physical self-care"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "g02j3g4wybq2",
+     "question": "What does receiving kindness gracefully look like?",
+     "answer": "Saying a sincere 'thank you' and accepting it",
+     "wrong": [
+      "Immediately paying them back",
+      "Explaining why you don't deserve it",
+      "Brushing it off"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "xljg7xq9sgxs",
+     "question": "What is 'helper's high'?",
+     "answer": "The boost in mood after helping someone",
+     "wrong": [
+      "Overconfidence from volunteering",
+      "A runner's high",
+      "A medical condition"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "5rpusstua8e0",
+     "question": "True or false: Kindness and healthy boundaries can't go together.",
+     "answer": "False — you can be kind and still have limits",
+     "wrong": [
+      "True — kindness means no limits",
+      "True — limits are unkind",
+      "False — only at work"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "cjd7m2vs370b",
+     "question": "How can writing a thank-you note be an act of kindness?",
+     "answer": "It recognizes someone's value in a specific, lasting way",
+     "wrong": [
+      "It's an obligation",
+      "Only on fancy paper",
+      "Only by email"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "nms8sasndecg",
+     "question": "What happens in the brain when you WITNESS kindness?",
+     "answer": "The same areas light up as if you received it",
+     "wrong": [
+      "You feel envy",
+      "Nothing happens",
+      "You get competitive"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "f85robl9c2ie",
+     "question": "True or false: You have to feel happy to be kind.",
+     "answer": "False — kindness often improves your mood",
+     "wrong": [
+      "True — forced kindness backfires",
+      "True — only happy acts count",
+      "False — but only with supervision"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "j8ih4dcmjamc",
+     "question": "How does focusing outward on others help you?",
+     "answer": "It can quiet worry and self-critical thoughts",
+     "wrong": [
+      "It replaces your own growth",
+      "Only after certain programs",
+      "It has no effect"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "hgnda0vuo6ab",
+     "question": "Which is NOT an act of kindness?",
+     "answer": "Giving advice nobody asked for to 'fix' someone",
+     "wrong": [
+      "Letting someone go ahead in line",
+      "A sincere, specific compliment",
+      "Checking in on a friend"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "cde1plpeqqri",
+     "question": "True or false: Big gestures always matter more than small ones.",
+     "answer": "False — small, frequent acts have more lasting impact",
+     "wrong": [
+      "True — bigger is better",
+      "True — memorable acts must cost a lot",
+      "False — only in therapy"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "bdx6dp66rwja",
+     "question": "Why can it be hard to accept kindness?",
+     "answer": "Feeling unworthy can make it hard to believe you deserve it",
+     "wrong": [
+      "People are taught to reject it",
+      "It creates debt",
+      "It triggers stress in everyone"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "9ged50mqkzr6",
+     "question": "What is the 'helper's paradox'?",
+     "answer": "By helping others, you end up helping yourself",
+     "wrong": [
+      "Helpers burn out fastest",
+      "Help yourself first, always",
+      "Helping lowers your motivation"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "bnk0ymt42uz1",
+     "question": "True or false: Letting others help you is also a kindness.",
+     "answer": "True — it gives them the gift of giving",
+     "wrong": [
+      "False — it creates dependence",
+      "False — kindness only goes outward",
+      "True — only if you pay it back"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "o08ceuu6to8y",
+     "question": "Which act of kindness takes less than one minute?",
+     "answer": "A genuine, specific compliment",
+     "wrong": [
+      "A long appreciation letter",
+      "Organizing a community event",
+      "An afternoon of volunteering"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "sbsj8tld0y3a",
+     "question": "What's the most important quality of an act of kindness?",
+     "answer": "It's genuine and freely given — no strings attached",
+     "wrong": [
+      "It costs a lot",
+      "Others see it",
+      "It gets returned"
+     ],
+     "category": "Acts of Kindness",
+     "time": 20,
+     "sets": [
+      "Acts of Kindness"
+     ]
+    },
+    {
+     "id": "yb6ez5c2s9s7",
+     "question": "According to Hope Theory, what are the three parts of hope?",
+     "answer": "Goals, pathways and agency",
+     "wrong": [
+      "Optimism, planning and patience",
+      "Faith, action and time",
+      "Desire, discipline and resilience"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "0gdunhzzp89j",
+     "question": "Who developed Hope Theory?",
+     "answer": "Dr. C.R. Snyder",
+     "wrong": [
+      "Sigmund Freud",
+      "Abraham Maslow",
+      "B.F. Skinner"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "gaqw5t9m6lyn",
+     "question": "What's the difference between hope and wishful thinking?",
+     "answer": "Hope includes goals and believing you can act; wishing is passive",
+     "wrong": [
+      "Hope is just positive feelings",
+      "There's no difference",
+      "Wishing works better"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "wyy8ioxf8eko",
+     "question": "True or false: Having hope means believing everything will work out perfectly.",
+     "answer": "False — it's believing the future can be different and you have a role",
+     "wrong": [
+      "True — hope means certainty",
+      "True — hope requires positive outcomes",
+      "False — it requires 50% odds"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "ow28hjx9kc1k",
+     "question": "What is 'agency' in Hope Theory?",
+     "answer": "Believing you're capable of making progress",
+     "wrong": [
+      "A legal document",
+      "Someone else's authority over you",
+      "A motivation score"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "dp4vtff3kyc4",
+     "question": "What are 'pathways' in Hope Theory?",
+     "answer": "Different routes to reach your goals",
+     "wrong": [
+      "Hiking trails",
+      "Following orders",
+      "Staying in the present"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "fz6htgkor4a9",
+     "question": "True or false: Hope is passive — it just happens to you.",
+     "answer": "False — hope is active and motivating",
+     "wrong": [
+      "True — good events create it",
+      "True — it's just a feeling",
+      "False — only experts can create it"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "syyl6184k4uh",
+     "question": "What is 'borrowed hope'?",
+     "answer": "Letting others hold hope for you while you rebuild your own",
+     "wrong": [
+      "Taking credit for someone's success",
+      "A formal program",
+      "Hope you have to pay back"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "vb457syk1sdi",
+     "question": "What does research link higher hope to?",
+     "answer": "Better health, faster recovery and more resilience",
+     "wrong": [
+      "Nothing measurable",
+      "Only clinical groups",
+      "More disappointment"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "6g38yb3t5snz",
+     "question": "Which question helps you find what to hope for?",
+     "answer": "'What does a meaningful life look like to me?'",
+     "wrong": [
+      "'What do others expect?'",
+      "'What's realistic for me?'",
+      "'What did I fail at?'"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "suffzczab7j0",
+     "question": "True or false: Once you lose hope, it's gone for good.",
+     "answer": "False — hope can be rebuilt",
+     "wrong": [
+      "True — it's used up",
+      "True — after twice it's gone",
+      "False — but it takes a year"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "dvy33vaf9u1u",
+     "question": "What does 'allow yourself to want things' mean?",
+     "answer": "Desire is the beginning of hope",
+     "wrong": [
+      "Get instant gratification",
+      "A treatment stage",
+      "A therapy tool"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "s4wu7msniiuq",
+     "question": "How does shame damage hope?",
+     "answer": "It says you don't deserve a better future",
+     "wrong": [
+      "It boosts motivation",
+      "It doesn't affect hope",
+      "It only affects guilt"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "jjplzi33z64s",
+     "question": "True or false: You need everything figured out before you can hope.",
+     "answer": "False — you just need to believe the future can be different",
+     "wrong": [
+      "True — you need a full plan",
+      "True — or it's just wishing",
+      "False — but you need a milestone"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "lknsdjxxhe6h",
+     "question": "What can you do when hope feels impossible?",
+     "answer": "Tell a trusted person — hope is easier to hold together",
+     "wrong": [
+      "Wait for it to return",
+      "Do affirmations until it's back",
+      "Assume it's gone"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "5lrbaafgwvo6",
+     "question": "True or false: Hoping just sets you up for disappointment.",
+     "answer": "False — avoiding hope also blocks growth",
+     "wrong": [
+      "True — hope less, hurt less",
+      "True — it's a top trigger",
+      "False — but only hope for sure things"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "js9ppyt26fl3",
+     "question": "True or false: Small changes count toward hope.",
+     "answer": "True — noticing small changes rebuilds hope",
+     "wrong": [
+      "False — only big changes count",
+      "False — they breed complacency",
+      "True — only early on"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "sd4uia8twii6",
+     "question": "What's a first step from hopelessness toward hope?",
+     "answer": "Take one small action toward something that matters",
+     "wrong": [
+      "Attend a certified workshop",
+      "Resolve everything first",
+      "Wait for spring"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "qe8vrdvo0hba",
+     "question": "Why is surviving hard things evidence for hope?",
+     "answer": "It proves you're capable",
+     "wrong": [
+      "It qualifies you for programs",
+      "It's a resilience worksheet",
+      "It actually lowers hope"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "u1zyk7vez6dl",
+     "question": "True or false: Hope is only for people with easy lives.",
+     "answer": "False — hope shows up in people who've faced huge challenges",
+     "wrong": [
+      "True — hardship blocks hope",
+      "True — it's harder after adversity",
+      "False — but it takes longer"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "p5jfou3u6toa",
+     "question": "How are hope and motivation related?",
+     "answer": "Hope fuels motivation",
+     "wrong": [
+      "Motivation must come first",
+      "They're unrelated",
+      "Hope reduces motivation"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "n644p7bmfc0a",
+     "question": "How can you hold onto hope when the future feels uncertain?",
+     "answer": "One day, one step, one action at a time",
+     "wrong": [
+      "Make a 10-year plan",
+      "Avoid thinking about the future",
+      "Get guarantees first"
+     ],
+     "category": "Hope and the Future",
+     "time": 20,
+     "sets": [
+      "Hope and the Future"
+     ]
+    },
+    {
+     "id": "34rm4kmz7sz4",
+     "question": "What's a common emotional reason people overspend at the holidays?",
+     "answer": "Wanting to show love or meet expectations through gifts",
+     "wrong": [
+      "A medical condition",
+      "A government policy",
+      "Cold weather"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "nwerrmmbzc5t",
+     "question": "What's the first step in a simple holiday budget?",
+     "answer": "List who you're giving to and set a limit per person",
+     "wrong": [
+      "Open a new credit card",
+      "Plan after the holidays",
+      "Match last year's spending"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "6w1x5z9m2xnb",
+     "question": "Which is a hidden holiday cost people forget?",
+     "answer": "Wrapping, shipping, food, travel and tips",
+     "wrong": [
+      "Sales tax on gift cards",
+      "Exchange rates",
+      "Restocking fees"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "vfgts2hvz41b",
+     "question": "True or false: Real relationships depend on how much you spend.",
+     "answer": "False — they're built on care and presence",
+     "wrong": [
+      "True — gifts measure love",
+      "True — more spending, happier relationships",
+      "False — only for friends"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "3uom4kpnk8nm",
+     "question": "What's a no-cost way to show you care?",
+     "answer": "A handwritten letter, your time or a home-cooked meal",
+     "wrong": [
+      "An expensive gift card",
+      "A social media post",
+      "An IOU for later"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "4sxo16nu60tv",
+     "question": "How can using cash or a prepaid card help?",
+     "answer": "When the money's gone, spending stops",
+     "wrong": [
+      "It earns more points",
+      "It tracks automatically",
+      "It gets discounts"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "dlzmykr2u2qk",
+     "question": "True or false: You must explain your budget to people who expect more.",
+     "answer": "False — 'I'm keeping things simple this year' is enough",
+     "wrong": [
+      "True — honesty requires details",
+      "True — they need context",
+      "False — only if you gave before"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "3rnpqt6vqvpw",
+     "question": "What's a good way to avoid impulse spending?",
+     "answer": "Make a list ahead of time and stick to it",
+     "wrong": [
+      "Shop only on big sale days",
+      "Bring a deal-hunting friend",
+      "Use a low-interest card"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "k4tq7jpgnh2e",
+     "question": "What is 'comparison spending'?",
+     "answer": "Spending more because of what you see others buy",
+     "wrong": [
+      "Comparing prices",
+      "Comparing to last year",
+      "A shopping disorder"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "8ex2efb0lcsl",
+     "question": "What should you do if money pressure feels overwhelming?",
+     "answer": "Talk to a trusted person",
+     "wrong": [
+      "Raise your credit limit",
+      "Skip all holiday activities",
+      "Wait for January"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "d7zhtb935nmf",
+     "question": "True or false: Holiday debt is usually paid off quickly.",
+     "answer": "False — it often takes months",
+     "wrong": [
+      "True — within weeks",
+      "True — it's tax deductible",
+      "False — only for some incomes"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "rhwr88ys9x19",
+     "question": "What is a 'spending cap'?",
+     "answer": "The most you've decided to spend in total",
+     "wrong": [
+      "A government limit",
+      "A store policy",
+      "A bank product"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "3cqinw7ijrbl",
+     "question": "Which is a meaningful gift that costs nothing?",
+     "answer": "Your full, undistracted attention",
+     "wrong": [
+      "An IOU",
+      "A promise for later",
+      "A social media shoutout"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "i7ikrub68lq3",
+     "question": "What's a very common holiday money mistake?",
+     "answer": "Using credit with no plan to pay it back",
+     "wrong": [
+      "Buying too few gifts",
+      "Missing sales",
+      "Buying gift cards"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "lozrdtydwayk",
+     "question": "True or false: Keeping gifts simple is irresponsible.",
+     "answer": "False — it shows planning and self-respect",
+     "wrong": [
+      "True — generosity means spending",
+      "True — the economy needs it",
+      "False — only if you warn people"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "k8gavsqujcok",
+     "question": "Why list your expenses BEFORE you shop?",
+     "answer": "To set a realistic total and avoid surprises",
+     "wrong": [
+      "To qualify for layaway",
+      "For tax records",
+      "To share with family"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "tv8xhdfq2s5i",
+     "question": "Which emotion most often drives unplanned spending?",
+     "answer": "Fear of disappointing people",
+     "wrong": [
+      "Excitement about sales",
+      "Nostalgia",
+      "Gratitude"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "gld0jm9iwdt0",
+     "question": "How does holiday credit card use often affect January?",
+     "answer": "It carries money stress into the new year",
+     "wrong": [
+      "No effect",
+      "It improves budgeting",
+      "Bonuses cover it"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "311l28iq1j92",
+     "question": "How can you honor someone without spending money?",
+     "answer": "Write a letter or share a story about them",
+     "wrong": [
+      "Use your emergency fund",
+      "Post online",
+      "Buy a dollar-store gift"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "vi6ejn72qh8i",
+     "question": "True or false: Budgeting takes the joy out of giving.",
+     "answer": "False — it removes worry so you can give freely",
+     "wrong": [
+      "True — spontaneity is the point",
+      "True — people can tell",
+      "False — only if kept secret"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "h49ntb7y09oi",
+     "question": "What does 'it's only once a year' thinking lead to?",
+     "answer": "Overspending through false urgency",
+     "wrong": [
+      "Smart saving",
+      "Better planning",
+      "Lower prices"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "hc3h9yuvk6gf",
+     "question": "What can setting limits now protect?",
+     "answer": "Your January — and your peace of mind",
+     "wrong": [
+      "Your credit score only",
+      "Nothing",
+      "Store profits"
+     ],
+     "category": "Holiday Cash",
+     "time": 20,
+     "sets": [
+      "Holiday Cash"
+     ]
+    },
+    {
+     "id": "vac4w8hfzbl9",
+     "question": "What is loneliness, really?",
+     "answer": "The gap between the connection you have and the connection you need",
+     "wrong": [
+      "Simply being physically alone",
+      "An introvert personality trait",
+      "A mood that always passes quickly"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "nbc0y3b2wssq",
+     "question": "True or false: You can feel lonely surrounded by people.",
+     "answer": "True — it's about the quality of connection, not the number of people",
+     "wrong": [
+      "False — people always cure loneliness",
+      "True — but only with social anxiety",
+      "False — only alone"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "dzuorhl1t4aa",
+     "question": "How common is loneliness?",
+     "answer": "Most adults feel it at some point",
+     "wrong": [
+      "Less than 10% of people",
+      "Only people with a diagnosis",
+      "Exactly half"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "0058b9i4km2u",
+     "question": "Chronic loneliness has been compared to the health effects of…",
+     "answer": "Smoking about 15 cigarettes a day",
+     "wrong": [
+      "A high-fat diet",
+      "One bad night's sleep",
+      "Nothing physical"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "6tq64tqaeu30",
+     "question": "What does 'quality over quantity' mean for relationships?",
+     "answer": "A few real connections beat many shallow ones",
+     "wrong": [
+      "More friends is always better",
+      "Time with anyone helps equally",
+      "Quantity matters most"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "6yagx5dt8m19",
+     "question": "True or false: Scrolling social media reduces loneliness.",
+     "answer": "False — passive scrolling is linked to MORE loneliness",
+     "wrong": [
+      "True — online equals in person",
+      "True — it always helps",
+      "False — only for teens"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "nltpzunnnzh5",
+     "question": "What is 'connection mapping'?",
+     "answer": "Listing or drawing the people in your support network",
+     "wrong": [
+      "Using GPS to find meetings",
+      "A therapist's history chart",
+      "An app"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "scmyswq546gm",
+     "question": "Which is a healthy small step toward connection?",
+     "answer": "Making eye contact and saying hello to someone new",
+     "wrong": [
+      "Sharing your deepest secrets with a stranger",
+      "Posting about loneliness online",
+      "Waiting until you feel totally ready"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "1v0f2pshoi0r",
+     "question": "How does shame add to loneliness?",
+     "answer": "It makes it hard to reach out or trust others",
+     "wrong": [
+      "It motivates reconnection",
+      "It only relates to guilt",
+      "It has no effect"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "rb4lr89u7y6q",
+     "question": "True or false: Needing other people is a sign of weakness.",
+     "answer": "False — humans are wired for connection",
+     "wrong": [
+      "True — maturity means needing no one",
+      "True — independence is everything",
+      "False — only for kids"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "vb8gclmcbdfo",
+     "question": "What does loneliness do to cortisol, the stress hormone?",
+     "answer": "Raises it — affecting sleep and immunity",
+     "wrong": [
+      "Lowers it",
+      "No effect",
+      "Only affects serotonin"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "ivvqttw3glqx",
+     "question": "Why can isolation feel 'safer' than reaching out?",
+     "answer": "Opening up involves risk",
+     "wrong": [
+      "Isolation is actually safer",
+      "It avoids all discomfort",
+      "It's recommended"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "1azbofomis2w",
+     "question": "True or false: Loneliness means you're unlovable.",
+     "answer": "False — it's a normal signal that you need more connection",
+     "wrong": [
+      "True — it shows poor social skills",
+      "True — it's a warning sign",
+      "False — only for some people"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "6oqfmfawdl74",
+     "question": "Why does showing up to group help with loneliness?",
+     "answer": "Regular presence builds familiarity — the start of connection",
+     "wrong": [
+      "It's required",
+      "It guarantees friends",
+      "It doesn't help"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "x56vl7gvujx4",
+     "question": "True or false: It's too late in life to make real friends.",
+     "answer": "False — friendships can form at any age",
+     "wrong": [
+      "True — friendship peaks as a teen",
+      "True — after 35 it's over",
+      "False — only before 50"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "z80jalf7qwns",
+     "question": "What's a first step when you notice you feel lonely?",
+     "answer": "Name it — 'I'm feeling disconnected' — and tell one person",
+     "wrong": [
+      "Wait for it to pass",
+      "Assume it's permanent",
+      "Keep it to yourself"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "iq7yjn5x5k1e",
+     "question": "Which can be a sign of loneliness?",
+     "answer": "Craving connection but avoiding reaching out",
+     "wrong": [
+      "Liking small groups",
+      "Enjoying quiet time without distress",
+      "Having a few close friends"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "m3e4pi2segyd",
+     "question": "What's the best antidote to loneliness, according to research?",
+     "answer": "Brief, in-person, meaningful contact",
+     "wrong": [
+      "Long solitude",
+      "More screen time",
+      "Avoiding people"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "vnonhw1517d4",
+     "question": "True or false: Telling someone you're lonely is a burden to them.",
+     "answer": "False — most people want to be there for you",
+     "wrong": [
+      "True — it's manipulative",
+      "True — only tell professionals",
+      "False — but only family"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "ypvjedpkm220",
+     "question": "Loneliness is like hunger because…",
+     "answer": "It's a signal that you need something — connection",
+     "wrong": [
+      "It goes away by itself",
+      "It's only physical",
+      "Food fixes it"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "nngjvd1x9cnw",
+     "question": "What's the most important thing to remember when loneliness feels permanent?",
+     "answer": "It's a feeling, not a permanent state — small actions help",
+     "wrong": [
+      "Only time fixes it",
+      "Nothing helps",
+      "It's a character flaw"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "a32rv506po2j",
+     "question": "Which is a way to meet people with shared interests?",
+     "answer": "Join a group around something you care about — art, fitness, faith",
+     "wrong": [
+      "Stay home and wait",
+      "Only use social media",
+      "Avoid groups"
+     ],
+     "category": "Loneliness",
+     "time": 20,
+     "sets": [
+      "Loneliness"
+     ]
+    },
+    {
+     "id": "ksfp9noew2gs",
+     "question": "What's the main difference between a resolution and an intention?",
+     "answer": "A resolution is a specific goal; an intention is a values-based direction",
+     "wrong": [
+      "Resolutions are flexible",
+      "Intentions are fixed rules",
+      "There's no difference"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "mn5jw2mh1aqb",
+     "question": "True or false: Motivation is the most reliable way to keep a change going.",
+     "answer": "False — motivation comes and goes; habits and values last",
+     "wrong": [
+      "True — motivation is everything",
+      "True — it's the top driver",
+      "False — only willpower works"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "9i91u3wdb8jr",
+     "question": "What does it mean for a goal to be 'values-based'?",
+     "answer": "It reflects what truly matters to you",
+     "wrong": [
+      "An expert approved it",
+      "Research says it's best",
+      "It's quick to achieve"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "9px0021rrfab",
+     "question": "Why do many New Year's resolutions fail by February?",
+     "answer": "They're too rigid, rely on willpower and don't allow for setbacks",
+     "wrong": [
+      "People forget to write them",
+      "Winter makes it impossible",
+      "Humans can only change in spring"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "45pws5ajsyas",
+     "question": "What does 'starting from shame' mean?",
+     "answer": "Setting goals because 'I need to fix myself' instead of 'I want to grow'",
+     "wrong": [
+      "Fixing past failures first",
+      "Ignoring the past",
+      "Setting easy goals"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "dljm53awhhoc",
+     "question": "True or false: You have to wait until January 1 to start a change.",
+     "answer": "False — any moment can be a fresh start",
+     "wrong": [
+      "True — only big dates work",
+      "True — research requires it",
+      "False — only Mondays work"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "utktf0989koc",
+     "question": "What is the 'One Word' exercise?",
+     "answer": "Choosing one word to guide your year",
+     "wrong": [
+      "Writing one resolution 365 times",
+      "Changing one thing a month",
+      "A vocabulary game"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "gbr5mttagkyw",
+     "question": "What should happen after a setback?",
+     "answer": "Treat it as information and recommit",
+     "wrong": [
+      "Revise and resubmit your goal",
+      "Give up — it was unrealistic",
+      "Wait for next year"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "x9vynx4ew7tq",
+     "question": "True or false: Small, specific steps work better than big declarations.",
+     "answer": "True — research on habits supports small steps",
+     "wrong": [
+      "False — bold goals work better",
+      "False — only dramatic change counts",
+      "True — only in January"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "icklbw00ynba",
+     "question": "What is the 'fresh start effect'?",
+     "answer": "Feeling extra motivated at meaningful moments like a new year",
+     "wrong": [
+      "The brain resets every January",
+      "A marketing trick",
+      "A sleep pattern"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "xjm3m31w9btk",
+     "question": "True or false: If you stumble, the whole year is lost.",
+     "answer": "False — recommitting is how lasting change works",
+     "wrong": [
+      "True — early slips predict failure",
+      "True — the first 30 days decide everything",
+      "False — only if it's February"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "4j0x36p2wg5c",
+     "question": "What does 'moving toward something valued' mean?",
+     "answer": "Being pulled forward by what matters to you",
+     "wrong": [
+      "Moving to a new city",
+      "The last phase of a program",
+      "Running away from problems"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "sm9myuzr2lsr",
+     "question": "True or false: Sharing your intention with someone helps you follow through.",
+     "answer": "True — accountability increases follow-through",
+     "wrong": [
+      "False — it adds pressure",
+      "False — keep it private",
+      "True — only online"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "sipp4z5qh92a",
+     "question": "What is a 'values inventory'?",
+     "answer": "Listing what matters most to you",
+     "wrong": [
+      "A clinical test",
+      "A shopping list",
+      "A required form"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "0d1r9v4csv9q",
+     "question": "True or false: You need to know exactly what you want to set an intention.",
+     "answer": "False — a direction or value is enough to start",
+     "wrong": [
+      "True — you need a full plan",
+      "True — or it's just wishing",
+      "False — but you need a deadline"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "5dpuf1apcvty",
+     "question": "What does it mean for an intention to be 'yours'?",
+     "answer": "It reflects your values — not what others say you should change",
+     "wrong": [
+      "Someone assigned it",
+      "You do it totally alone",
+      "It's written in a file"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "40ukeagyw38t",
+     "question": "True or false: Needing to set an intention means something's wrong with you.",
+     "answer": "False — wanting to grow is healthy and normal",
+     "wrong": [
+      "True — healthy people don't need goals",
+      "True — it signals a problem",
+      "False — only in January"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "ipld7s27f21d",
+     "question": "What is a 'partner share'?",
+     "answer": "Telling one person your intention and one step you'll take",
+     "wrong": [
+      "Signing a contract",
+      "Making a joint goal",
+      "Sharing your password"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "twky9xpu6m7k",
+     "question": "What's the most important question when setting an intention?",
+     "answer": "'What do I value — and what would living it look like?'",
+     "wrong": [
+      "'What do others think I should do?'",
+      "'What did I fail at last year?'",
+      "'What's popular this year?'"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "y910gk6a6l68",
+     "question": "How often should you revisit your intention?",
+     "answer": "Monthly — not just on January 1",
+     "wrong": [
+      "Never",
+      "Once a year",
+      "Every hour"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "r80i0981z23i",
+     "question": "How should you treat yourself after a setback?",
+     "answer": "As kindly as you'd treat a friend",
+     "wrong": [
+      "Harshly, to stay motivated",
+      "Ignore it completely",
+      "Start over from zero"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "wjcr3hdt3hy7",
+     "question": "An intention is a direction, not a…",
+     "answer": "Destination",
+     "wrong": [
+      "Resolution",
+      "Value",
+      "Habit"
+     ],
+     "category": "New Year, New Intentions",
+     "time": 20,
+     "sets": [
+      "New Year, New Intentions"
+     ]
+    },
+    {
+     "id": "q7dru263nyrq",
+     "question": "Why plan ahead before a stressful holiday event?",
+     "answer": "So you have a response ready when stress hits",
+     "wrong": [
+      "To warn your family",
+      "To sign a contract",
+      "It's required"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "9v55tuq5j2w6",
+     "question": "What does 'know your exit' mean?",
+     "answer": "Have a plan and reason to leave early if needed",
+     "wrong": [
+      "Find the emergency exits",
+      "Agree on a curfew",
+      "Avoid going at all"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "v883qija35io",
+     "question": "True or false: Leaving an event early means you failed.",
+     "answer": "False — protecting your wellbeing is the right choice",
+     "wrong": [
+      "True — you should tough it out",
+      "True — it's a bad sign",
+      "False — only if it's late"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "76j9ufljo7p8",
+     "question": "What is the 5-4-3-2-1 technique for?",
+     "answer": "Grounding yourself using your five senses",
+     "wrong": [
+      "A breathing count",
+      "Rating a crisis",
+      "A gift checklist"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "axodkwsymvp9",
+     "question": "In 5-4-3-2-1 grounding, how many things do you SEE?",
+     "answer": "5",
+     "wrong": [
+      "4",
+      "3",
+      "1"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "2zmlpiy511wr",
+     "question": "In 5-4-3-2-1 grounding, what do you notice just ONE of?",
+     "answer": "Something you can taste",
+     "wrong": [
+      "Something you can see",
+      "Something you can hear",
+      "Something you can touch"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "zbimelrkgnqf",
+     "question": "What should you do if a holiday conversation feels unsafe?",
+     "answer": "Calmly excuse yourself — take a break or change the subject",
+     "wrong": [
+      "Argue louder",
+      "Fix it right now",
+      "Stay and endure it"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ykmwe95vpygs",
+     "question": "What does setting a time limit on an event do?",
+     "answer": "Gives you control over how long you're there",
+     "wrong": [
+      "Insults the host",
+      "It's a rule",
+      "Prevents others from leaving"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "1ekqdp3mtk2p",
+     "question": "True or false: You have to attend every holiday event you're invited to.",
+     "answer": "False — you can say no to events that feel overwhelming",
+     "wrong": [
+      "True — it's an obligation",
+      "True — skipping is rude",
+      "False — only work parties"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "x9moe07qtqei",
+     "question": "What does debriefing with a trusted person afterward do?",
+     "answer": "Helps you process feelings and plan for next time",
+     "wrong": [
+      "It's a formal report",
+      "It erases stress",
+      "It assigns blame"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "bh9sjlq4x1ux",
+     "question": "What's a healthy thought after getting through a hard moment?",
+     "answer": "'I got through it — it didn't have to be perfect'",
+     "wrong": [
+      "'I need to fix what went wrong'",
+      "'I should have been stronger'",
+      "'I should have prevented it'"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "kbhqduui1l92",
+     "question": "True or false: Family gatherings must be perfect to be meaningful.",
+     "answer": "False — letting go of perfect lowers stress",
+     "wrong": [
+      "True — planning makes memories",
+      "True — first ones especially",
+      "False — only small ones"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "x9q4yo0jmmn6",
+     "question": "What's the difference between strategies BEFORE vs. DURING an event?",
+     "answer": "Before: planning. During: grounding, breaks and exits.",
+     "wrong": [
+      "Before is for some people only",
+      "Before needs approval",
+      "There's no difference"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "wutyhu8xbv2d",
+     "question": "True or false: You should handle holiday stress entirely on your own.",
+     "answer": "False — using your support system is a strength",
+     "wrong": [
+      "True — independence matters most",
+      "True — asking for help burdens others",
+      "False — only on big days"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "pyqel304ti0h",
+     "question": "What can you do if you feel overwhelmed at an event?",
+     "answer": "Take a short break — step outside or find a quiet space",
+     "wrong": [
+      "Ask everyone to stop",
+      "Leave and never return",
+      "Push through"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "enlgs2gtu2k6",
+     "question": "How can you respond to someone who doesn't support you?",
+     "answer": "Set a calm, clear limit — then follow through",
+     "wrong": [
+      "Lecture them",
+      "Avoid them forever",
+      "Argue until they agree"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "edhiulg6vhop",
+     "question": "True or false: Planning for hard moments is being pessimistic.",
+     "answer": "False — it's proactive self-care",
+     "wrong": [
+      "True — it creates anxiety",
+      "True — think positive only",
+      "False — only for big events"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "dz5e68de9cy8",
+     "question": "What's a healthy way to handle grief during the holidays?",
+     "answer": "Name it, give it space, and share it with someone you trust",
+     "wrong": [
+      "Bury it until January",
+      "Keep busy so you don't feel it",
+      "Treat it as an emergency"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "8vr263vc10oh",
+     "question": "What does feeling exhausted after a hard event tell you?",
+     "answer": "Getting through hard things takes energy — rest matters",
+     "wrong": [
+      "Your skills are weak",
+      "You shouldn't have gone",
+      "Something is wrong with you"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "pt2f71cqxfc6",
+     "question": "True or false: The holidays are enjoyable for everyone.",
+     "answer": "False — they bring mixed feelings for many people",
+     "wrong": [
+      "True — everyone is happier",
+      "True — bad holidays are your fault",
+      "False — only for kids"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "z8tcjtsnewb6",
+     "question": "What does a holiday coping plan include?",
+     "answer": "Stressors, coping strategies, a contact person and an exit plan",
+     "wrong": [
+      "Approved guest lists",
+      "A signed form",
+      "Only a gift list"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "ptkz967wbhms",
+     "question": "What's a helpful reminder during a tense moment?",
+     "answer": "'I don't have to fix everything right now'",
+     "wrong": [
+      "'This is all my fault'",
+      "'I must make everyone happy'",
+      "'I can never leave'"
+     ],
+     "category": "Stressful Holiday Moments",
+     "time": 20,
+     "sets": [
+      "Stressful Holiday Moments"
+     ]
+    },
+    {
+     "id": "d0tfj0zthtx8",
+     "question": "What is Seasonal Affective Disorder (SAD)?",
+     "answer": "A type of depression that follows a seasonal pattern, often in fall and winter",
+     "wrong": [
+      "A first-week cold-weather dip",
+      "Preferring winter to summer",
+      "An anxiety disorder"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ditwnxlwdrf9",
+     "question": "What mainly causes winter SAD?",
+     "answer": "Less sunlight disrupting the body's clock and serotonin",
+     "wrong": [
+      "Cold temperatures",
+      "Too many social events",
+      "Eating too much"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "bkfhgk163j0k",
+     "question": "What is the most well-researched treatment for winter SAD?",
+     "answer": "Light therapy with a 10,000-lux lightbox",
+     "wrong": [
+      "Warm vacations",
+      "More caffeine",
+      "Sitting by a fireplace"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "bhrv34odf6tv",
+     "question": "True or false: SAD is just 'the winter blues' everyone gets.",
+     "answer": "False — SAD is a recognized condition",
+     "wrong": [
+      "True — everyone has it",
+      "True — all adults experience it",
+      "False — it's only in kids"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ilwf03g5k96k",
+     "question": "Which brain chemical drops with less winter sunlight?",
+     "answer": "Serotonin",
+     "wrong": [
+      "GABA",
+      "Adrenaline",
+      "Acetylcholine"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "tn3mwgfj8e8r",
+     "question": "Which sleep hormone increases during dark winter months?",
+     "answer": "Melatonin",
+     "wrong": [
+      "Cortisol",
+      "Testosterone",
+      "Oxytocin"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "915eetcp3w1j",
+     "question": "True or false: SAD only happens in very cold, snowy places.",
+     "answer": "False — it's mostly about light, not temperature",
+     "wrong": [
+      "True — only snowy areas",
+      "True — warm places are safe",
+      "False — only near the poles"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "fdrwgivwixtu",
+     "question": "Which is a common symptom of winter SAD?",
+     "answer": "Sleeping more, low energy and trouble concentrating",
+     "wrong": [
+      "Racing thoughts and high energy",
+      "Sudden weight loss",
+      "Elevated mood"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "midfmd9n87uh",
+     "question": "True or false: Willpower alone can beat SAD.",
+     "answer": "False — it has biological causes and needs real strategies",
+     "wrong": [
+      "True — positivity protects you",
+      "True — just push through",
+      "False — only medication works"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "75roa2whlk0x",
+     "question": "How long is light therapy usually used each morning?",
+     "answer": "20–30 minutes",
+     "wrong": [
+      "2 minutes",
+      "3 hours",
+      "All day"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ahfewdz4ztkk",
+     "question": "What effect does exercise have on SAD?",
+     "answer": "It's one of the best mood boosters",
+     "wrong": [
+      "No effect",
+      "It makes it worse",
+      "Only in summer"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "74t1yeleojhu",
+     "question": "True or false: SAD is a character flaw.",
+     "answer": "False — it's a biological response to less light",
+     "wrong": [
+      "True — strong people don't get it",
+      "True — it's poor coping",
+      "False — but it's your fault"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "m6kvy8s50uts",
+     "question": "What sleep habit helps with SAD?",
+     "answer": "Same bedtime and wake-up time every day",
+     "wrong": [
+      "Sleeping as much as possible",
+      "Napping at noon",
+      "Staying up late"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "61xfoaghqgmh",
+     "question": "What is your 'circadian rhythm'?",
+     "answer": "Your body's internal 24-hour clock",
+     "wrong": [
+      "A breathing technique",
+      "A seasonal weight cycle",
+      "A music tempo"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "ojmokd96axy9",
+     "question": "True or false: Going outside on cloudy winter days still helps.",
+     "answer": "True — outdoor light beats indoor light",
+     "wrong": [
+      "False — clouds block it all",
+      "False — only sunny days count",
+      "True — only at night"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "0rjb02ek0h8x",
+     "question": "How does isolation affect SAD?",
+     "answer": "It makes it worse — connection helps protect you",
+     "wrong": [
+      "It's healthy rest",
+      "No effect",
+      "It cures it"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "yhy50li94kb4",
+     "question": "What should you do if you notice SAD symptoms?",
+     "answer": "Tell your doctor, counselor or staff",
+     "wrong": [
+      "Wait until they peak",
+      "Only report after 90 days",
+      "Keep it to yourself"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "812mg0n52s4b",
+     "question": "True or false: SAD can start in the fall.",
+     "answer": "True — often as days get shorter",
+     "wrong": [
+      "False — only after Dec. 21",
+      "False — only in January",
+      "True — only in spring"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "of0i6s7jw3de",
+     "question": "What is one low-cost winter wellness strategy?",
+     "answer": "A 10–15 minute walk outside during the brightest part of the day",
+     "wrong": [
+      "A tanning bed",
+      "Sleeping with lights on",
+      "Eating more sugar"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "vfauyr22o7t5",
+     "question": "True or false: Light therapy is dangerous for most people.",
+     "answer": "False — it's safe for most people",
+     "wrong": [
+      "True — always risky",
+      "True — it damages sleep",
+      "False — only for kids"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "vcf2lzfxlt8x",
+     "question": "Which therapy approach is often used for SAD?",
+     "answer": "CBT — cognitive behavioral therapy",
+     "wrong": [
+      "Hypnosis",
+      "Aromatherapy only",
+      "Ice baths"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
+    },
+    {
+     "id": "y5y2v9s8zmtk",
+     "question": "When does SAD usually lift?",
+     "answer": "In the spring",
+     "wrong": [
+      "In December",
+      "In the fall",
+      "Never"
+     ],
+     "category": "Winter SAD",
+     "time": 20,
+     "sets": [
+      "Winter SAD"
+     ]
     }
    ]
   }
@@ -70643,6 +87845,642 @@ window.GS_MY_CONTENT = {
    "out",
    "erase",
    "word"
+  ],
+  "a clock striking midnight": [
+   "clock",
+   "twelve",
+   "midnight",
+   "time"
+  ],
+  "a photo album": [
+   "photos",
+   "pictures",
+   "album",
+   "memories"
+  ],
+  "a backpack": [
+   "bag",
+   "school",
+   "carry",
+   "straps"
+  ],
+  "a road": [
+   "street",
+   "drive",
+   "path",
+   "car"
+  ],
+  "a rearview mirror": [
+   "mirror",
+   "car",
+   "behind",
+   "look"
+  ],
+  "a balloon": [
+   "air",
+   "float",
+   "party",
+   "string"
+  ],
+  "looking back over your shoulder": [
+   "look",
+   "back",
+   "shoulder",
+   "behind"
+  ],
+  "turning a page": [
+   "page",
+   "book",
+   "turn",
+   "flip"
+  ],
+  "unpacking a suitcase": [
+   "suitcase",
+   "unpack",
+   "clothes",
+   "travel"
+  ],
+  "a time capsule": [
+   "time",
+   "capsule",
+   "bury",
+   "future"
+  ],
+  "a scrapbook": [
+   "scrap",
+   "book",
+   "photos",
+   "glue"
+  ],
+  "a smiley face": [
+   "smile",
+   "happy",
+   "face",
+   "emoji"
+  ],
+  "a gift": [
+   "present",
+   "bow",
+   "box",
+   "wrap"
+  ],
+  "a thank-you card": [
+   "thanks",
+   "card",
+   "note",
+   "grateful"
+  ],
+  "a cookie": [
+   "bake",
+   "chocolate",
+   "chip",
+   "treat"
+  ],
+  "an open door": [
+   "door",
+   "open",
+   "enter",
+   "knob"
+  ],
+  "a ripple in water": [
+   "ripple",
+   "water",
+   "pond",
+   "splash"
+  ],
+  "holding the door for someone": [
+   "door",
+   "hold",
+   "open",
+   "polite"
+  ],
+  "carrying groceries": [
+   "groceries",
+   "bags",
+   "carry",
+   "food"
+  ],
+  "shoveling a neighbor's sidewalk": [
+   "shovel",
+   "snow",
+   "neighbor",
+   "sidewalk"
+  ],
+  "sharing an umbrella": [
+   "umbrella",
+   "rain",
+   "share",
+   "wet"
+  ],
+  "giving a compliment": [
+   "compliment",
+   "nice",
+   "praise",
+   "say"
+  ],
+  "baking for a friend": [
+   "bake",
+   "oven",
+   "cookies",
+   "friend"
+  ],
+  "helping someone up": [
+   "help",
+   "up",
+   "fall",
+   "hand"
+  ],
+  "leaving a kind note": [
+   "note",
+   "write",
+   "kind",
+   "sticky"
+  ],
+  "a seedling": [
+   "plant",
+   "sprout",
+   "grow",
+   "seed"
+  ],
+  "an anchor": [
+   "boat",
+   "ship",
+   "sea",
+   "heavy"
+  ],
+  "a road sign": [
+   "sign",
+   "road",
+   "street",
+   "direction"
+  ],
+  "a shooting star": [
+   "star",
+   "wish",
+   "sky",
+   "night"
+  ],
+  "a light at the end of a tunnel": [
+   "tunnel",
+   "light",
+   "end",
+   "dark"
+  ],
+  "making a wish": [
+   "wish",
+   "star",
+   "blow",
+   "candles"
+  ],
+  "climbing a ladder": [
+   "ladder",
+   "climb",
+   "rungs",
+   "up"
+  ],
+  "a map with a path": [
+   "map",
+   "path",
+   "route",
+   "road"
+  ],
+  "a flower through the snow": [
+   "flower",
+   "snow",
+   "winter",
+   "bloom"
+  ],
+  "looking through a telescope": [
+   "telescope",
+   "stars",
+   "look",
+   "far"
+  ],
+  "a sun behind clouds": [
+   "sun",
+   "cloud",
+   "sky",
+   "peek"
+  ],
+  "opening a window": [
+   "window",
+   "open",
+   "fresh",
+   "air"
+  ],
+  "a piggy bank": [
+   "pig",
+   "bank",
+   "coins",
+   "save"
+  ],
+  "a wallet": [
+   "money",
+   "cash",
+   "leather",
+   "pocket"
+  ],
+  "a credit card": [
+   "card",
+   "plastic",
+   "credit",
+   "pay"
+  ],
+  "a shopping cart": [
+   "cart",
+   "store",
+   "shop",
+   "wheels"
+  ],
+  "a price tag": [
+   "price",
+   "tag",
+   "cost",
+   "sale"
+  ],
+  "a dollar sign": [
+   "dollar",
+   "money",
+   "cash",
+   "symbol"
+  ],
+  "a coin": [
+   "money",
+   "penny",
+   "quarter",
+   "round"
+  ],
+  "a cash register": [
+   "register",
+   "store",
+   "money",
+   "checkout"
+  ],
+  "making a shopping list": [
+   "list",
+   "write",
+   "shop",
+   "paper"
+  ],
+  "wrapping a present": [
+   "wrap",
+   "gift",
+   "paper",
+   "bow"
+  ],
+  "counting money": [
+   "count",
+   "money",
+   "cash",
+   "bills"
+  ],
+  "a long checkout line": [
+   "line",
+   "checkout",
+   "store",
+   "wait"
+  ],
+  "putting coins in a jar": [
+   "coins",
+   "jar",
+   "save",
+   "money"
+  ],
+  "a sale sign": [
+   "sale",
+   "sign",
+   "discount",
+   "percent"
+  ],
+  "returning a gift": [
+   "return",
+   "gift",
+   "store",
+   "receipt"
+  ],
+  "an empty wallet": [
+   "wallet",
+   "empty",
+   "money",
+   "broke"
+  ],
+  "a telephone": [
+   "phone",
+   "call",
+   "ring",
+   "dial"
+  ],
+  "two coffee cups": [
+   "coffee",
+   "cups",
+   "mug",
+   "drink"
+  ],
+  "a park bench": [
+   "bench",
+   "park",
+   "sit",
+   "seat"
+  ],
+  "a waving hand": [
+   "wave",
+   "hand",
+   "hello",
+   "hi"
+  ],
+  "a dog": [
+   "pet",
+   "bark",
+   "puppy",
+   "woof"
+  ],
+  "a group hug": [
+   "hug",
+   "group",
+   "arms",
+   "together"
+  ],
+  "playing a board game": [
+   "game",
+   "dice",
+   "board",
+   "play"
+  ],
+  "a dinner party": [
+   "dinner",
+   "table",
+   "food",
+   "guests"
+  ],
+  "waving to a neighbor": [
+   "wave",
+   "neighbor",
+   "hello",
+   "next door"
+  ],
+  "a book club": [
+   "book",
+   "club",
+   "read",
+   "group"
+  ],
+  "a friendship bracelet": [
+   "bracelet",
+   "friend",
+   "string",
+   "wrist"
+  ],
+  "a party hat": [
+   "party",
+   "hat",
+   "cone",
+   "birthday"
+  ],
+  "a target": [
+   "bullseye",
+   "arrow",
+   "aim",
+   "dart"
+  ],
+  "confetti": [
+   "paper",
+   "party",
+   "throw",
+   "colors"
+  ],
+  "a notebook": [
+   "paper",
+   "write",
+   "pages",
+   "spiral"
+  ],
+  "a ball drop": [
+   "ball",
+   "drop",
+   "midnight",
+   "times square"
+  ],
+  "writing a goal": [
+   "write",
+   "goal",
+   "pen",
+   "list"
+  ],
+  "a countdown": [
+   "count",
+   "numbers",
+   "ten",
+   "zero"
+  ],
+  "a vision board": [
+   "vision",
+   "board",
+   "pictures",
+   "goals"
+  ],
+  "jogging in the snow": [
+   "jog",
+   "run",
+   "snow",
+   "winter"
+  ],
+  "blowing a party horn": [
+   "horn",
+   "blow",
+   "party",
+   "noise"
+  ],
+  "tearing off a calendar page": [
+   "calendar",
+   "tear",
+   "page",
+   "month"
+  ],
+  "a party popper": [
+   "pop",
+   "party",
+   "confetti",
+   "string"
+  ],
+  "an exit sign": [
+   "exit",
+   "sign",
+   "door",
+   "leave"
+  ],
+  "a car key": [
+   "key",
+   "car",
+   "drive",
+   "keychain"
+  ],
+  "a nose": [
+   "smell",
+   "face",
+   "sniff",
+   "nostril"
+  ],
+  "a hand": [
+   "fingers",
+   "palm",
+   "wave",
+   "touch"
+  ],
+  "an eye": [
+   "see",
+   "look",
+   "eyeball",
+   "vision"
+  ],
+  "a candy cane": [
+   "candy",
+   "striped",
+   "christmas",
+   "peppermint"
+  ],
+  "stepping outside": [
+   "step",
+   "outside",
+   "door",
+   "air"
+  ],
+  "a crowded dinner table": [
+   "dinner",
+   "table",
+   "crowd",
+   "family"
+  ],
+  "texting a friend": [
+   "text",
+   "phone",
+   "friend",
+   "message"
+  ],
+  "checking your watch": [
+   "watch",
+   "time",
+   "wrist",
+   "look"
+  ],
+  "a quiet walk in the snow": [
+   "walk",
+   "snow",
+   "quiet",
+   "winter"
+  ],
+  "sipping hot tea": [
+   "tea",
+   "sip",
+   "hot",
+   "mug"
+  ],
+  "putting on a coat": [
+   "coat",
+   "jacket",
+   "put on",
+   "cold"
+  ],
+  "a wrapped present": [
+   "present",
+   "gift",
+   "bow",
+   "wrap"
+  ],
+  "a lamp": [
+   "light",
+   "bulb",
+   "shade",
+   "lamp"
+  ],
+  "a window": [
+   "glass",
+   "pane",
+   "look",
+   "open"
+  ],
+  "a scarf": [
+   "neck",
+   "warm",
+   "knit",
+   "winter"
+  ],
+  "a mug of hot cocoa": [
+   "cocoa",
+   "hot",
+   "mug",
+   "chocolate"
+  ],
+  "a pair of boots": [
+   "boots",
+   "feet",
+   "shoes",
+   "snow"
+  ],
+  "a flower bud": [
+   "flower",
+   "bud",
+   "bloom",
+   "spring"
+  ],
+  "opening the curtains": [
+   "curtains",
+   "open",
+   "window",
+   "light"
+  ],
+  "going for a winter walk": [
+   "walk",
+   "winter",
+   "snow",
+   "cold"
+  ],
+  "building a snowman": [
+   "snowman",
+   "build",
+   "snow",
+   "roll"
+  ],
+  "ice skating": [
+   "skate",
+   "ice",
+   "rink",
+   "glide"
+  ],
+  "waking up early": [
+   "wake",
+   "early",
+   "morning",
+   "alarm"
+  ],
+  "sitting by a sunny window": [
+   "window",
+   "sun",
+   "sit",
+   "light"
+  ],
+  "making a snow angel": [
+   "snow",
+   "angel",
+   "lie",
+   "arms"
+  ],
+  "a sled ride": [
+   "sled",
+   "snow",
+   "hill",
+   "slide"
+  ],
+  "the first day of spring": [
+   "spring",
+   "flowers",
+   "first",
+   "season"
+  ],
+  "a pair of mittens": [
+   "mittens",
+   "gloves",
+   "hands",
+   "warm"
   ]
  }
 };
