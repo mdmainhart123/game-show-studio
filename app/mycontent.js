@@ -3,7 +3,7 @@
 // in the app's standard content). Added once per browser (by id), merged with what's
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
- "id": "matt-2026-11-25-say-it-match-it",
+ "id": "matt-2026-11-27-ai-for-good",
  "archive": {
   "October": [
    "Halloween Easy",
@@ -26,7 +26,8 @@ window.GS_MY_CONTENT = {
    "November Game Day",
    "Thanksgiving Easy",
    "Thanksgiving Intermediate",
-   "Thanksgiving Hard"
+   "Thanksgiving Hard",
+   "AI Utilization for Good"
   ]
  },
  "banks": {
@@ -1752,6 +1753,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "pardon",
        "clue": "The president's turkey tradition"
+      }
+     ]
+    },
+    {
+     "id": "q40icbotgibu",
+     "title": "AI Utilization for Good",
+     "entries": [
+      {
+       "word": "data",
+       "clue": "What AI learns from"
+      },
+      {
+       "word": "chatbot",
+       "clue": "An AI program you can have a conversation with"
+      },
+      {
+       "word": "privacy",
+       "clue": "Protect this by never sharing passwords with AI"
+      },
+      {
+       "word": "bias",
+       "clue": "Unfair results from unbalanced training data"
+      },
+      {
+       "word": "verify",
+       "clue": "Check important AI answers with a trusted source"
+      },
+      {
+       "word": "tool",
+       "clue": "\"Technology is a ___. You decide how to use it.\""
+      },
+      {
+       "word": "GPS",
+       "clue": "Navigation that uses AI to reroute you"
+      },
+      {
+       "word": "spellcheck",
+       "clue": "Everyday AI that catches your typos"
+      },
+      {
+       "word": "resume",
+       "clue": "AI can help you draft one for a job search"
+      },
+      {
+       "word": "schedule",
+       "clue": "AI can help you build one, with reminders"
+      },
+      {
+       "word": "empathy",
+       "clue": "A human strength AI cannot replace"
+      },
+      {
+       "word": "connection",
+       "clue": "Real human ___: something AI can't replace"
+      },
+      {
+       "word": "mindfulness",
+       "clue": "AI apps can guide this calm, present-moment practice"
+      },
+      {
+       "word": "critically",
+       "clue": "Use AI ___: question and verify"
+      },
+      {
+       "word": "patterns",
+       "clue": "AI finds these in data — it doesn't think or feel"
       }
      ]
     }
@@ -5556,6 +5623,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Volunteering or helping others can boost this feeling",
      "answer": "A sense of purpose"
+    },
+    {
+     "id": "vmuulra7merw",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 100,
+     "clue": "The two words AI stands for",
+     "answer": "Artificial Intelligence"
+    },
+    {
+     "id": "zi4gqwe35nig",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 200,
+     "clue": "AI learns from this to answer questions and solve problems",
+     "answer": "Data"
+    },
+    {
+     "id": "cpa8zkev9cjl",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 300,
+     "clue": "This navigation tool uses AI to reroute you around traffic",
+     "answer": "GPS"
+    },
+    {
+     "id": "eec7nrzx29no",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 400,
+     "clue": "Talking helpers on phones and smart speakers",
+     "answer": "Voice assistants"
+    },
+    {
+     "id": "z33gg5xw9sck",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 500,
+     "clue": "An AI program built to hold text or voice conversations",
+     "answer": "A chatbot"
+    },
+    {
+     "id": "mv9jcg3xacmm",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 100,
+     "clue": "AI can explain confusing topics in this kind of everyday language",
+     "answer": "Plain language"
+    },
+    {
+     "id": "4bxrw59r3cj3",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 200,
+     "clue": "Use AI to rehearse these before having them in real life",
+     "answer": "Difficult conversations"
+    },
+    {
+     "id": "nbcwurlhrt96",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 300,
+     "clue": "AI can help build these, along with reminders and goal trackers",
+     "answer": "Schedules"
+    },
+    {
+     "id": "5r1c24mbrc8x",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 400,
+     "clue": "Job seekers can use AI to help draft this document",
+     "answer": "A resume"
+    },
+    {
+     "id": "2iusr54e2cr5",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 500,
+     "clue": "AI apps can guide these for stress relief",
+     "answer": "Breathing exercises (or mindfulness)"
+    },
+    {
+     "id": "18crsq244l9a",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 100,
+     "clue": "Always do this with important information AI gives you",
+     "answer": "Verify it (fact-check)"
+    },
+    {
+     "id": "4gzt8fwlte90",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 200,
+     "clue": "Never share this nine-digit number with an AI tool",
+     "answer": "Your Social Security number"
+    },
+    {
+     "id": "cc6zksgv0c4z",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 300,
+     "clue": "AI is NOT one of these — it can't replace professional support",
+     "answer": "A therapist, doctor or counselor"
+    },
+    {
+     "id": "se5nuu6bmukl",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 400,
+     "clue": "Unfair results caused by unbalanced training data",
+     "answer": "AI bias"
+    },
+    {
+     "id": "itmzicxanexf",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 500,
+     "clue": "Using AI this way means questioning and verifying, not accepting answers at face value",
+     "answer": "Critically"
+    },
+    {
+     "id": "qea0cd4y9o2t",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "AI can think and feel like a human",
+     "answer": "Myth"
+    },
+    {
+     "id": "5fc57aajp9mp",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "AI can be wrong, biased or outdated",
+     "answer": "Fact"
+    },
+    {
+     "id": "rt87ovi23aaa",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "AI is too complicated for everyday people to use",
+     "answer": "Myth"
+    },
+    {
+     "id": "uv7hzgyygxce",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Using AI to learn is like using a calculator or dictionary",
+     "answer": "Fact"
+    },
+    {
+     "id": "jblm9190kc7d",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "AI knows everything about you",
+     "answer": "Myth"
+    },
+    {
+     "id": "d2amjnykpbuu",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 100,
+     "clue": "Finish it: \"Technology is a tool. YOU are the one who ___\"",
+     "answer": "Decides how to use it"
+    },
+    {
+     "id": "whv6s4i5dmjs",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 200,
+     "clue": "AI can't replace real human ___",
+     "answer": "Connection"
+    },
+    {
+     "id": "q86oxbmn8dfm",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 300,
+     "clue": "Three human strengths that stay essential even as AI changes jobs",
+     "answer": "Judgment, empathy and creativity"
+    },
+    {
+     "id": "7gbtredr5xme",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 400,
+     "clue": "Feeling excited OR nervous about AI — both reactions are this",
+     "answer": "Valid (normal)"
+    },
+    {
+     "id": "do53206f5gtn",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 500,
+     "clue": "The most important part of your growth journey",
+     "answer": "You!"
     }
    ],
    "wheel": [
@@ -8194,6 +8461,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Thanksgiving Intermediate"
      ]
+    },
+    {
+     "id": "ky03cedb9wa3",
+     "category": "Thing",
+     "phrase": "ARTIFICIAL INTELLIGENCE",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "v08vj9135bfq",
+     "category": "Thing",
+     "phrase": "A HELPFUL TOOL",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "yvvk7bh6hqvh",
+     "category": "Phrase",
+     "phrase": "CHECK YOUR SOURCES",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ijp18wboymp6",
+     "category": "Phrase",
+     "phrase": "TECHNOLOGY IS A TOOL",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "6tio2cloui3v",
+     "category": "Thing",
+     "phrase": "A VOICE ASSISTANT",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ijttfs8c4up9",
+     "category": "Thing",
+     "phrase": "SPELL CHECK",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "y2hmjrtlj706",
+     "category": "Phrase",
+     "phrase": "PROTECT YOUR PRIVACY",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "z20f3hhvtlo9",
+     "category": "Thing",
+     "phrase": "A FRIENDLY CHATBOT",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "s91u5d9ztud3",
+     "category": "Event",
+     "phrase": "PRACTICING FOR A JOB INTERVIEW",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "qk2s2f9mg8vk",
+     "category": "Phrase",
+     "phrase": "THINK CRITICALLY",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "q23p4otug0uz",
+     "category": "Thing",
+     "phrase": "REAL HUMAN CONNECTION",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "7j54gy261cho",
+     "category": "Event",
+     "phrase": "LEARNING A NEW SKILL",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "wdz3ewzyzdoz",
+     "category": "Phrase",
+     "phrase": "YOU ARE IN CHARGE",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "1d16vlmlnj2p",
+     "category": "Thing",
+     "phrase": "GPS NAVIGATION",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ou3q8uvhgb5t",
+     "category": "Phrase",
+     "phrase": "USE IT WISELY",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "nclodhxpupeh",
+     "category": "Event",
+     "phrase": "BRAINSTORMING IDEAS",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "44uj1oqdvlfd",
+     "category": "Phrase",
+     "phrase": "ALWAYS DOUBLE CHECK",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "0bfb151hsqlh",
+     "category": "Thing",
+     "phrase": "A STEP BY STEP PLAN",
+     "sets": [
+      "AI Utilization for Good"
+     ]
     }
    ],
    "words": [
@@ -10327,6 +10738,134 @@ window.GS_MY_CONTENT = {
      "hint": "Thanksgiving",
      "sets": [
       "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "nyaz5rxmb6jk",
+     "word": "SMART",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "0qxdh5x2fqd1",
+     "word": "TOOLS",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "wrpqnfaqb0sz",
+     "word": "CHECK",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "hm8p421tdit8",
+     "word": "LIMIT",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "rtsr5wa1bku0",
+     "word": "FACTS",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "r246sebzrw2r",
+     "word": "VOICE",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "kywmg6kqsonx",
+     "word": "ROBOT",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "z9p49v68lgke",
+     "word": "TRUST",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "06j4per6u1np",
+     "word": "GUIDE",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "2ubzhgsym82v",
+     "word": "SKILL",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "j7ra57e8th27",
+     "word": "IDEAS",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "2jookfh7qtlq",
+     "word": "HUMAN",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "wcysd55xdoke",
+     "word": "WRITE",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "qwi7kc4xc702",
+     "word": "PLANS",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "rpobutyinesk",
+     "word": "ERROR",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "i3jqh9akog0l",
+     "word": "LEARN",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
      ]
     }
    ],
@@ -13130,6 +13669,286 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "3ipxacm9avl9",
+     "word": "a robot",
+     "level": "easy",
+     "banned": [
+      "machine",
+      "metal",
+      "beep",
+      "android"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "k6xgh65jgj88",
+     "word": "a computer",
+     "level": "easy",
+     "banned": [
+      "laptop",
+      "screen",
+      "keyboard",
+      "PC"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "gzslj6yoalt7",
+     "word": "a cell phone",
+     "level": "easy",
+     "banned": [
+      "call",
+      "mobile",
+      "smartphone",
+      "text"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "q6frllm8pcuj",
+     "word": "a map",
+     "level": "easy",
+     "banned": [
+      "GPS",
+      "directions",
+      "road",
+      "route"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "g384ydspzmj9",
+     "word": "a light bulb",
+     "level": "easy",
+     "banned": [
+      "lamp",
+      "idea",
+      "bright",
+      "light"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "160r9bwwe8gr",
+     "word": "a calculator",
+     "level": "easy",
+     "banned": [
+      "math",
+      "numbers",
+      "add",
+      "plus"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "wlrbokh1n6n9",
+     "word": "a lock",
+     "level": "easy",
+     "banned": [
+      "key",
+      "padlock",
+      "secure",
+      "safe"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "fs9yi289b9ac",
+     "word": "a book",
+     "level": "easy",
+     "banned": [
+      "read",
+      "pages",
+      "library",
+      "story"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "2ohmkwayimxb",
+     "word": "a microphone",
+     "level": "easy",
+     "banned": [
+      "sing",
+      "voice",
+      "mic",
+      "speak"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "or0cf4nhbrc4",
+     "word": "a magnifying glass",
+     "level": "easy",
+     "banned": [
+      "search",
+      "look",
+      "zoom",
+      "detective"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "r1382gmxeh7l",
+     "word": "a voice assistant",
+     "level": "medium",
+     "banned": [
+      "speaker",
+      "talk",
+      "ask",
+      "smart"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "nyc4trxc50rj",
+     "word": "asking a question",
+     "level": "medium",
+     "banned": [
+      "ask",
+      "answer",
+      "curious",
+      "why"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "v8a2lgigh8yi",
+     "word": "a job interview",
+     "level": "medium",
+     "banned": [
+      "hire",
+      "boss",
+      "resume",
+      "handshake"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "kvvql8sjaa7u",
+     "word": "brainstorming ideas",
+     "level": "medium",
+     "banned": [
+      "think",
+      "storm",
+      "idea",
+      "lightbulb"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "6kyiwulntnm4",
+     "word": "checking your facts",
+     "level": "medium",
+     "banned": [
+      "verify",
+      "true",
+      "check",
+      "source"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ettcsniryanf",
+     "word": "a password",
+     "level": "medium",
+     "banned": [
+      "secret",
+      "login",
+      "lock",
+      "type"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "y2kezsaj0dgn",
+     "word": "typing a letter",
+     "level": "medium",
+     "banned": [
+      "keyboard",
+      "write",
+      "mail",
+      "words"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "q8kfm8kjrfzc",
+     "word": "a self-driving car",
+     "level": "medium",
+     "banned": [
+      "drive",
+      "car",
+      "robot",
+      "steer"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "q5v7yuyrzn20",
+     "word": "making a to-do list",
+     "level": "medium",
+     "banned": [
+      "list",
+      "check",
+      "tasks",
+      "plan"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "qfsk3bodz37o",
+     "word": "a robot vacuum",
+     "level": "medium",
+     "banned": [
+      "clean",
+      "floor",
+      "dust",
+      "robot"
+     ],
+     "sets": [
+      "AI Utilization for Good"
      ]
     }
    ],
@@ -18655,6 +19474,456 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Thanksgiving Intermediate"
      ]
+    },
+    {
+     "id": "pmp0evpdqrgq",
+     "question": "What does AI stand for?",
+     "answer": "Artificial Intelligence",
+     "wrong": [
+      "Automated Information",
+      "Advanced Internet",
+      "Algorithmic Integration"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "pd4l62km6y16",
+     "question": "Which of these is an everyday example of AI?",
+     "answer": "A GPS app that reroutes around traffic",
+     "wrong": [
+      "A printed road map",
+      "A basic calculator",
+      "A phone call connected by an operator"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "6d0qppyho66d",
+     "question": "What is one way AI can support learning?",
+     "answer": "Explaining hard topics in plain language",
+     "wrong": [
+      "Replacing teachers and counselors",
+      "Making every decision for you",
+      "Only providing entertainment"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "hi1c6hx4xw6m",
+     "question": "Which is a responsible way to use AI?",
+     "answer": "Drafting a letter with AI, then reviewing it yourself",
+     "wrong": [
+      "Sharing your Social Security number with it",
+      "Trusting every answer without checking",
+      "Making medical decisions without a professional"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "37ow930rt56x",
+     "question": "True or false: AI can feel emotions just like a person.",
+     "answer": "False — it finds patterns in data",
+     "wrong": [
+      "True — it is built to feel empathy",
+      "True — it learns feelings from chats",
+      "True — but only the newest AI"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "gw8p03s8pn4s",
+     "question": "What is one important limitation of AI?",
+     "answer": "It can be wrong, biased or outdated",
+     "wrong": [
+      "Only experts can use it",
+      "It gets worse the more you use it",
+      "It is too slow for everyday tasks"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "mzsu32ufpzih",
+     "question": "How can AI help you get ready for a job interview?",
+     "answer": "Practicing answers to common questions",
+     "wrong": [
+      "Applying for the job for you",
+      "Calling the employer for you",
+      "Making up a work history"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "odheev02djk2",
+     "question": "What is one risk of sharing too much personal information with AI?",
+     "answer": "Your private data could be stored or misused",
+     "wrong": [
+      "The AI gets too friendly",
+      "The AI slows down",
+      "Other users instantly see it"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "zrfxl3o602yi",
+     "question": "Which is an example of AI supporting wellness?",
+     "answer": "An app that guides breathing and mindfulness",
+     "wrong": [
+      "A watch that massages your muscles",
+      "A device that injects calming hormones",
+      "A headset that replaces therapy"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "s93vb58hpksh",
+     "question": "Why is AI a tool and not a replacement for people?",
+     "answer": "It can't replace human judgment, empathy and experience",
+     "wrong": [
+      "It is better than people at everything",
+      "It will soon replace most people",
+      "AI and people are interchangeable"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "gy68xlccn1he",
+     "question": "What does it mean to fact-check AI?",
+     "answer": "Verify its answers with reliable sources",
+     "wrong": [
+      "Ask the AI if it is right",
+      "Only use certified AI apps",
+      "Have a supervisor approve every answer"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "nr4s3r26tm9d",
+     "question": "Which is a healthy boundary when using AI?",
+     "answer": "Using it for support while still building real relationships",
+     "wrong": [
+      "Replacing all conversations with AI",
+      "Only using it when someone tells you to",
+      "Never using technology at all"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "644s89t33sl6",
+     "question": "How can AI help with time management?",
+     "answer": "Building schedules, reminders and step-by-step plans",
+     "wrong": [
+      "Doing all your tasks for you",
+      "Rescheduling with people for you",
+      "Deciding if your goals are worth it"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "hfztvw53cm2z",
+     "question": "True or false: Everything AI tells you is accurate and up to date.",
+     "answer": "False — it can make mistakes and be outdated",
+     "wrong": [
+      "True — it is always online",
+      "True — it only learns from experts",
+      "True — every answer is double-checked"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "pv3qb2b7xfh0",
+     "question": "What is one way AI can help with creative expression?",
+     "answer": "Brainstorming ideas and giving feedback on your writing",
+     "wrong": [
+      "Selling artwork for you",
+      "Removing the need for any effort",
+      "Judging whether your work is good enough"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "yjikvu1je8t8",
+     "question": "What does it mean to use AI 'critically'?",
+     "answer": "Question and verify instead of accepting answers at face value",
+     "wrong": [
+      "Only use it to complain",
+      "Criticize it in public",
+      "Use it once a day"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "6fgm6kjcb84y",
+     "question": "Which of these would be an inappropriate use of AI?",
+     "answer": "Turning in AI-written work as entirely your own",
+     "wrong": [
+      "Asking it to explain a word",
+      "Researching a topic before you write",
+      "Getting ideas for questions to ask"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ooozycuw4je9",
+     "question": "How can AI help someone improve their communication skills?",
+     "answer": "Practicing conversations and suggesting phrasing",
+     "wrong": [
+      "Talking for you so you never have to",
+      "Diagnosing communication disorders",
+      "Blocking messages it doesn't like"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "uowo7n1g4ofn",
+     "question": "What is 'AI bias'?",
+     "answer": "Unfair results caused by unbalanced training data",
+     "wrong": [
+      "Preferring one AI app over another",
+      "A legal notice all AI apps must show",
+      "When AI runs out of memory"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "iephwqy16x62",
+     "question": "What is the best purpose for using AI in personal growth?",
+     "answer": "A patient, non-judgmental tool for learning and reflection",
+     "wrong": [
+      "Handing off hard life decisions",
+      "Replacing therapy and support groups",
+      "Watching and correcting your behavior"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "fp89yb08x8l4",
+     "question": "What is a chatbot?",
+     "answer": "A program that holds text or voice conversations",
+     "wrong": [
+      "A robot that does chores",
+      "A database of private notes",
+      "A person typing answers behind a screen"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "xqy7iaxfwhuv",
+     "question": "True or false: Using AI for support means you don't need people.",
+     "answer": "False — people offer empathy and real care",
+     "wrong": [
+      "True — AI is available 24/7",
+      "True — AI never needs a break",
+      "True — AI knows you best"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "3syfun05u48a",
+     "question": "How can AI help with a resume?",
+     "answer": "Drafting one from your real experience for you to review",
+     "wrong": [
+      "Applying to jobs for you",
+      "Connecting you straight to hiring managers",
+      "Telling you not to apply"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "qdibkq44fa4q",
+     "question": "What is one way to protect your privacy when using AI?",
+     "answer": "Don't share your full name, address or financial info",
+     "wrong": [
+      "Delete your account after every use",
+      "Only use AI on weekends",
+      "Use your password as your username"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "iv3tchrzfnjb",
+     "question": "Which best sums up 'AI Utilization for Good'?",
+     "answer": "Used thoughtfully, AI can support growth, learning and wellbeing",
+     "wrong": [
+      "AI is the most important skill in life",
+      "AI will replace most people",
+      "AI is dangerous and off-limits"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "tqccymheuuam",
+     "question": "Which of these everyday tools uses AI?",
+     "answer": "Spell-check",
+     "wrong": [
+      "A stapler",
+      "A paper calendar",
+      "A light switch"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "5lkbczjecxmy",
+     "question": "Using AI to learn is most like using…",
+     "answer": "A calculator or a dictionary",
+     "wrong": [
+      "Copying a friend's homework",
+      "Skipping class",
+      "Having someone live your life for you"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "pu36nb4dry2j",
+     "question": "What does an AI chat tool know about you?",
+     "answer": "Only what you share in the conversation",
+     "wrong": [
+      "Everything on your phone",
+      "Your whole life story",
+      "What you are thinking"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "k7b5v78g4wfh",
+     "question": "How does AI affect jobs?",
+     "answer": "It changes some jobs and creates new ones",
+     "wrong": [
+      "It replaces every human job",
+      "It has no effect on work",
+      "It only affects factory robots"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "719tfe68o42f",
+     "question": "Finish the saying: \"Technology is a tool. You are the one who…\"",
+     "answer": "decides how to use it",
+     "wrong": [
+      "has to keep up with it",
+      "follows its directions",
+      "gets replaced by it"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
     }
    ]
   },
@@ -19908,6 +21177,72 @@ window.GS_MY_CONTENT = {
       {
        "word": "pardon",
        "clue": "The president's turkey tradition"
+      }
+     ]
+    },
+    {
+     "id": "q40icbotgibu",
+     "title": "AI Utilization for Good",
+     "entries": [
+      {
+       "word": "data",
+       "clue": "What AI learns from"
+      },
+      {
+       "word": "chatbot",
+       "clue": "An AI program you can have a conversation with"
+      },
+      {
+       "word": "privacy",
+       "clue": "Protect this by never sharing passwords with AI"
+      },
+      {
+       "word": "bias",
+       "clue": "Unfair results from unbalanced training data"
+      },
+      {
+       "word": "verify",
+       "clue": "Check important AI answers with a trusted source"
+      },
+      {
+       "word": "tool",
+       "clue": "\"Technology is a ___. You decide how to use it.\""
+      },
+      {
+       "word": "GPS",
+       "clue": "Navigation that uses AI to reroute you"
+      },
+      {
+       "word": "spellcheck",
+       "clue": "Everyday AI that catches your typos"
+      },
+      {
+       "word": "resume",
+       "clue": "AI can help you draft one for a job search"
+      },
+      {
+       "word": "schedule",
+       "clue": "AI can help you build one, with reminders"
+      },
+      {
+       "word": "empathy",
+       "clue": "A human strength AI cannot replace"
+      },
+      {
+       "word": "connection",
+       "clue": "Real human ___: something AI can't replace"
+      },
+      {
+       "word": "mindfulness",
+       "clue": "AI apps can guide this calm, present-moment practice"
+      },
+      {
+       "word": "critically",
+       "clue": "Use AI ___: question and verify"
+      },
+      {
+       "word": "patterns",
+       "clue": "AI finds these in data — it doesn't think or feel"
       }
      ]
     }
@@ -23112,6 +24447,206 @@ window.GS_MY_CONTENT = {
      "value": 500,
      "clue": "Volunteering or helping others can boost this feeling",
      "answer": "A sense of purpose"
+    },
+    {
+     "id": "vmuulra7merw",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 100,
+     "clue": "The two words AI stands for",
+     "answer": "Artificial Intelligence"
+    },
+    {
+     "id": "zi4gqwe35nig",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 200,
+     "clue": "AI learns from this to answer questions and solve problems",
+     "answer": "Data"
+    },
+    {
+     "id": "cpa8zkev9cjl",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 300,
+     "clue": "This navigation tool uses AI to reroute you around traffic",
+     "answer": "GPS"
+    },
+    {
+     "id": "eec7nrzx29no",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 400,
+     "clue": "Talking helpers on phones and smart speakers",
+     "answer": "Voice assistants"
+    },
+    {
+     "id": "z33gg5xw9sck",
+     "board": "AI Utilization for Good",
+     "category": "What Is AI?",
+     "value": 500,
+     "clue": "An AI program built to hold text or voice conversations",
+     "answer": "A chatbot"
+    },
+    {
+     "id": "mv9jcg3xacmm",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 100,
+     "clue": "AI can explain confusing topics in this kind of everyday language",
+     "answer": "Plain language"
+    },
+    {
+     "id": "4bxrw59r3cj3",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 200,
+     "clue": "Use AI to rehearse these before having them in real life",
+     "answer": "Difficult conversations"
+    },
+    {
+     "id": "nbcwurlhrt96",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 300,
+     "clue": "AI can help build these, along with reminders and goal trackers",
+     "answer": "Schedules"
+    },
+    {
+     "id": "5r1c24mbrc8x",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 400,
+     "clue": "Job seekers can use AI to help draft this document",
+     "answer": "A resume"
+    },
+    {
+     "id": "2iusr54e2cr5",
+     "board": "AI Utilization for Good",
+     "category": "AI Can Help You…",
+     "value": 500,
+     "clue": "AI apps can guide these for stress relief",
+     "answer": "Breathing exercises (or mindfulness)"
+    },
+    {
+     "id": "18crsq244l9a",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 100,
+     "clue": "Always do this with important information AI gives you",
+     "answer": "Verify it (fact-check)"
+    },
+    {
+     "id": "4gzt8fwlte90",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 200,
+     "clue": "Never share this nine-digit number with an AI tool",
+     "answer": "Your Social Security number"
+    },
+    {
+     "id": "cc6zksgv0c4z",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 300,
+     "clue": "AI is NOT one of these — it can't replace professional support",
+     "answer": "A therapist, doctor or counselor"
+    },
+    {
+     "id": "se5nuu6bmukl",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 400,
+     "clue": "Unfair results caused by unbalanced training data",
+     "answer": "AI bias"
+    },
+    {
+     "id": "itmzicxanexf",
+     "board": "AI Utilization for Good",
+     "category": "Use It Wisely",
+     "value": 500,
+     "clue": "Using AI this way means questioning and verifying, not accepting answers at face value",
+     "answer": "Critically"
+    },
+    {
+     "id": "qea0cd4y9o2t",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 100,
+     "clue": "AI can think and feel like a human",
+     "answer": "Myth"
+    },
+    {
+     "id": "5fc57aajp9mp",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 200,
+     "clue": "AI can be wrong, biased or outdated",
+     "answer": "Fact"
+    },
+    {
+     "id": "rt87ovi23aaa",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 300,
+     "clue": "AI is too complicated for everyday people to use",
+     "answer": "Myth"
+    },
+    {
+     "id": "uv7hzgyygxce",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 400,
+     "clue": "Using AI to learn is like using a calculator or dictionary",
+     "answer": "Fact"
+    },
+    {
+     "id": "jblm9190kc7d",
+     "board": "AI Utilization for Good",
+     "category": "Myth or Fact?",
+     "value": 500,
+     "clue": "AI knows everything about you",
+     "answer": "Myth"
+    },
+    {
+     "id": "d2amjnykpbuu",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 100,
+     "clue": "Finish it: \"Technology is a tool. YOU are the one who ___\"",
+     "answer": "Decides how to use it"
+    },
+    {
+     "id": "whv6s4i5dmjs",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 200,
+     "clue": "AI can't replace real human ___",
+     "answer": "Connection"
+    },
+    {
+     "id": "q86oxbmn8dfm",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 300,
+     "clue": "Three human strengths that stay essential even as AI changes jobs",
+     "answer": "Judgment, empathy and creativity"
+    },
+    {
+     "id": "7gbtredr5xme",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 400,
+     "clue": "Feeling excited OR nervous about AI — both reactions are this",
+     "answer": "Valid (normal)"
+    },
+    {
+     "id": "do53206f5gtn",
+     "board": "AI Utilization for Good",
+     "category": "You're in Charge",
+     "value": 500,
+     "clue": "The most important part of your growth journey",
+     "answer": "You!"
     }
    ],
    "wheel": [
@@ -25285,6 +26820,150 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Thanksgiving Intermediate"
      ]
+    },
+    {
+     "id": "ky03cedb9wa3",
+     "category": "Thing",
+     "phrase": "ARTIFICIAL INTELLIGENCE",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "v08vj9135bfq",
+     "category": "Thing",
+     "phrase": "A HELPFUL TOOL",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "yvvk7bh6hqvh",
+     "category": "Phrase",
+     "phrase": "CHECK YOUR SOURCES",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ijp18wboymp6",
+     "category": "Phrase",
+     "phrase": "TECHNOLOGY IS A TOOL",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "6tio2cloui3v",
+     "category": "Thing",
+     "phrase": "A VOICE ASSISTANT",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ijttfs8c4up9",
+     "category": "Thing",
+     "phrase": "SPELL CHECK",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "y2hmjrtlj706",
+     "category": "Phrase",
+     "phrase": "PROTECT YOUR PRIVACY",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "z20f3hhvtlo9",
+     "category": "Thing",
+     "phrase": "A FRIENDLY CHATBOT",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "s91u5d9ztud3",
+     "category": "Event",
+     "phrase": "PRACTICING FOR A JOB INTERVIEW",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "qk2s2f9mg8vk",
+     "category": "Phrase",
+     "phrase": "THINK CRITICALLY",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "q23p4otug0uz",
+     "category": "Thing",
+     "phrase": "REAL HUMAN CONNECTION",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "7j54gy261cho",
+     "category": "Event",
+     "phrase": "LEARNING A NEW SKILL",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "wdz3ewzyzdoz",
+     "category": "Phrase",
+     "phrase": "YOU ARE IN CHARGE",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "1d16vlmlnj2p",
+     "category": "Thing",
+     "phrase": "GPS NAVIGATION",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ou3q8uvhgb5t",
+     "category": "Phrase",
+     "phrase": "USE IT WISELY",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "nclodhxpupeh",
+     "category": "Event",
+     "phrase": "BRAINSTORMING IDEAS",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "44uj1oqdvlfd",
+     "category": "Phrase",
+     "phrase": "ALWAYS DOUBLE CHECK",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "0bfb151hsqlh",
+     "category": "Thing",
+     "phrase": "A STEP BY STEP PLAN",
+     "sets": [
+      "AI Utilization for Good"
+     ]
     }
    ],
    "words": [
@@ -27160,6 +28839,134 @@ window.GS_MY_CONTENT = {
      "hint": "Thanksgiving",
      "sets": [
       "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "nyaz5rxmb6jk",
+     "word": "SMART",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "0qxdh5x2fqd1",
+     "word": "TOOLS",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "wrpqnfaqb0sz",
+     "word": "CHECK",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "hm8p421tdit8",
+     "word": "LIMIT",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "rtsr5wa1bku0",
+     "word": "FACTS",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "r246sebzrw2r",
+     "word": "VOICE",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "kywmg6kqsonx",
+     "word": "ROBOT",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "z9p49v68lgke",
+     "word": "TRUST",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "06j4per6u1np",
+     "word": "GUIDE",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "2ubzhgsym82v",
+     "word": "SKILL",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "j7ra57e8th27",
+     "word": "IDEAS",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "2jookfh7qtlq",
+     "word": "HUMAN",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "wcysd55xdoke",
+     "word": "WRITE",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "qwi7kc4xc702",
+     "word": "PLANS",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "rpobutyinesk",
+     "word": "ERROR",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "i3jqh9akog0l",
+     "word": "LEARN",
+     "hint": "AI for Good",
+     "sets": [
+      "AI Utilization for Good"
      ]
     }
    ],
@@ -29491,6 +31298,286 @@ window.GS_MY_CONTENT = {
      "level": "medium",
      "sets": [
       "Thanksgiving Intermediate"
+     ]
+    },
+    {
+     "id": "3ipxacm9avl9",
+     "word": "a robot",
+     "level": "easy",
+     "banned": [
+      "machine",
+      "metal",
+      "beep",
+      "android"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "k6xgh65jgj88",
+     "word": "a computer",
+     "level": "easy",
+     "banned": [
+      "laptop",
+      "screen",
+      "keyboard",
+      "PC"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "gzslj6yoalt7",
+     "word": "a cell phone",
+     "level": "easy",
+     "banned": [
+      "call",
+      "mobile",
+      "smartphone",
+      "text"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "q6frllm8pcuj",
+     "word": "a map",
+     "level": "easy",
+     "banned": [
+      "GPS",
+      "directions",
+      "road",
+      "route"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "g384ydspzmj9",
+     "word": "a light bulb",
+     "level": "easy",
+     "banned": [
+      "lamp",
+      "idea",
+      "bright",
+      "light"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "160r9bwwe8gr",
+     "word": "a calculator",
+     "level": "easy",
+     "banned": [
+      "math",
+      "numbers",
+      "add",
+      "plus"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "wlrbokh1n6n9",
+     "word": "a lock",
+     "level": "easy",
+     "banned": [
+      "key",
+      "padlock",
+      "secure",
+      "safe"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "fs9yi289b9ac",
+     "word": "a book",
+     "level": "easy",
+     "banned": [
+      "read",
+      "pages",
+      "library",
+      "story"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "2ohmkwayimxb",
+     "word": "a microphone",
+     "level": "easy",
+     "banned": [
+      "sing",
+      "voice",
+      "mic",
+      "speak"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "or0cf4nhbrc4",
+     "word": "a magnifying glass",
+     "level": "easy",
+     "banned": [
+      "search",
+      "look",
+      "zoom",
+      "detective"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "r1382gmxeh7l",
+     "word": "a voice assistant",
+     "level": "medium",
+     "banned": [
+      "speaker",
+      "talk",
+      "ask",
+      "smart"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "nyc4trxc50rj",
+     "word": "asking a question",
+     "level": "medium",
+     "banned": [
+      "ask",
+      "answer",
+      "curious",
+      "why"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "v8a2lgigh8yi",
+     "word": "a job interview",
+     "level": "medium",
+     "banned": [
+      "hire",
+      "boss",
+      "resume",
+      "handshake"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "kvvql8sjaa7u",
+     "word": "brainstorming ideas",
+     "level": "medium",
+     "banned": [
+      "think",
+      "storm",
+      "idea",
+      "lightbulb"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "6kyiwulntnm4",
+     "word": "checking your facts",
+     "level": "medium",
+     "banned": [
+      "verify",
+      "true",
+      "check",
+      "source"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ettcsniryanf",
+     "word": "a password",
+     "level": "medium",
+     "banned": [
+      "secret",
+      "login",
+      "lock",
+      "type"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "y2kezsaj0dgn",
+     "word": "typing a letter",
+     "level": "medium",
+     "banned": [
+      "keyboard",
+      "write",
+      "mail",
+      "words"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "q8kfm8kjrfzc",
+     "word": "a self-driving car",
+     "level": "medium",
+     "banned": [
+      "drive",
+      "car",
+      "robot",
+      "steer"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "q5v7yuyrzn20",
+     "word": "making a to-do list",
+     "level": "medium",
+     "banned": [
+      "list",
+      "check",
+      "tasks",
+      "plan"
+     ],
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "qfsk3bodz37o",
+     "word": "a robot vacuum",
+     "level": "medium",
+     "banned": [
+      "clean",
+      "floor",
+      "dust",
+      "robot"
+     ],
+     "sets": [
+      "AI Utilization for Good"
      ]
     }
    ],
@@ -34116,6 +36203,456 @@ window.GS_MY_CONTENT = {
      "sets": [
       "Thanksgiving Intermediate"
      ]
+    },
+    {
+     "id": "pmp0evpdqrgq",
+     "question": "What does AI stand for?",
+     "answer": "Artificial Intelligence",
+     "wrong": [
+      "Automated Information",
+      "Advanced Internet",
+      "Algorithmic Integration"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "pd4l62km6y16",
+     "question": "Which of these is an everyday example of AI?",
+     "answer": "A GPS app that reroutes around traffic",
+     "wrong": [
+      "A printed road map",
+      "A basic calculator",
+      "A phone call connected by an operator"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "6d0qppyho66d",
+     "question": "What is one way AI can support learning?",
+     "answer": "Explaining hard topics in plain language",
+     "wrong": [
+      "Replacing teachers and counselors",
+      "Making every decision for you",
+      "Only providing entertainment"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "hi1c6hx4xw6m",
+     "question": "Which is a responsible way to use AI?",
+     "answer": "Drafting a letter with AI, then reviewing it yourself",
+     "wrong": [
+      "Sharing your Social Security number with it",
+      "Trusting every answer without checking",
+      "Making medical decisions without a professional"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "37ow930rt56x",
+     "question": "True or false: AI can feel emotions just like a person.",
+     "answer": "False — it finds patterns in data",
+     "wrong": [
+      "True — it is built to feel empathy",
+      "True — it learns feelings from chats",
+      "True — but only the newest AI"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "gw8p03s8pn4s",
+     "question": "What is one important limitation of AI?",
+     "answer": "It can be wrong, biased or outdated",
+     "wrong": [
+      "Only experts can use it",
+      "It gets worse the more you use it",
+      "It is too slow for everyday tasks"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "mzsu32ufpzih",
+     "question": "How can AI help you get ready for a job interview?",
+     "answer": "Practicing answers to common questions",
+     "wrong": [
+      "Applying for the job for you",
+      "Calling the employer for you",
+      "Making up a work history"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "odheev02djk2",
+     "question": "What is one risk of sharing too much personal information with AI?",
+     "answer": "Your private data could be stored or misused",
+     "wrong": [
+      "The AI gets too friendly",
+      "The AI slows down",
+      "Other users instantly see it"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "zrfxl3o602yi",
+     "question": "Which is an example of AI supporting wellness?",
+     "answer": "An app that guides breathing and mindfulness",
+     "wrong": [
+      "A watch that massages your muscles",
+      "A device that injects calming hormones",
+      "A headset that replaces therapy"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "s93vb58hpksh",
+     "question": "Why is AI a tool and not a replacement for people?",
+     "answer": "It can't replace human judgment, empathy and experience",
+     "wrong": [
+      "It is better than people at everything",
+      "It will soon replace most people",
+      "AI and people are interchangeable"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "gy68xlccn1he",
+     "question": "What does it mean to fact-check AI?",
+     "answer": "Verify its answers with reliable sources",
+     "wrong": [
+      "Ask the AI if it is right",
+      "Only use certified AI apps",
+      "Have a supervisor approve every answer"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "nr4s3r26tm9d",
+     "question": "Which is a healthy boundary when using AI?",
+     "answer": "Using it for support while still building real relationships",
+     "wrong": [
+      "Replacing all conversations with AI",
+      "Only using it when someone tells you to",
+      "Never using technology at all"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "644s89t33sl6",
+     "question": "How can AI help with time management?",
+     "answer": "Building schedules, reminders and step-by-step plans",
+     "wrong": [
+      "Doing all your tasks for you",
+      "Rescheduling with people for you",
+      "Deciding if your goals are worth it"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "hfztvw53cm2z",
+     "question": "True or false: Everything AI tells you is accurate and up to date.",
+     "answer": "False — it can make mistakes and be outdated",
+     "wrong": [
+      "True — it is always online",
+      "True — it only learns from experts",
+      "True — every answer is double-checked"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "pv3qb2b7xfh0",
+     "question": "What is one way AI can help with creative expression?",
+     "answer": "Brainstorming ideas and giving feedback on your writing",
+     "wrong": [
+      "Selling artwork for you",
+      "Removing the need for any effort",
+      "Judging whether your work is good enough"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "yjikvu1je8t8",
+     "question": "What does it mean to use AI 'critically'?",
+     "answer": "Question and verify instead of accepting answers at face value",
+     "wrong": [
+      "Only use it to complain",
+      "Criticize it in public",
+      "Use it once a day"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "6fgm6kjcb84y",
+     "question": "Which of these would be an inappropriate use of AI?",
+     "answer": "Turning in AI-written work as entirely your own",
+     "wrong": [
+      "Asking it to explain a word",
+      "Researching a topic before you write",
+      "Getting ideas for questions to ask"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "ooozycuw4je9",
+     "question": "How can AI help someone improve their communication skills?",
+     "answer": "Practicing conversations and suggesting phrasing",
+     "wrong": [
+      "Talking for you so you never have to",
+      "Diagnosing communication disorders",
+      "Blocking messages it doesn't like"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "uowo7n1g4ofn",
+     "question": "What is 'AI bias'?",
+     "answer": "Unfair results caused by unbalanced training data",
+     "wrong": [
+      "Preferring one AI app over another",
+      "A legal notice all AI apps must show",
+      "When AI runs out of memory"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "iephwqy16x62",
+     "question": "What is the best purpose for using AI in personal growth?",
+     "answer": "A patient, non-judgmental tool for learning and reflection",
+     "wrong": [
+      "Handing off hard life decisions",
+      "Replacing therapy and support groups",
+      "Watching and correcting your behavior"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "fp89yb08x8l4",
+     "question": "What is a chatbot?",
+     "answer": "A program that holds text or voice conversations",
+     "wrong": [
+      "A robot that does chores",
+      "A database of private notes",
+      "A person typing answers behind a screen"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "xqy7iaxfwhuv",
+     "question": "True or false: Using AI for support means you don't need people.",
+     "answer": "False — people offer empathy and real care",
+     "wrong": [
+      "True — AI is available 24/7",
+      "True — AI never needs a break",
+      "True — AI knows you best"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "3syfun05u48a",
+     "question": "How can AI help with a resume?",
+     "answer": "Drafting one from your real experience for you to review",
+     "wrong": [
+      "Applying to jobs for you",
+      "Connecting you straight to hiring managers",
+      "Telling you not to apply"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "qdibkq44fa4q",
+     "question": "What is one way to protect your privacy when using AI?",
+     "answer": "Don't share your full name, address or financial info",
+     "wrong": [
+      "Delete your account after every use",
+      "Only use AI on weekends",
+      "Use your password as your username"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "iv3tchrzfnjb",
+     "question": "Which best sums up 'AI Utilization for Good'?",
+     "answer": "Used thoughtfully, AI can support growth, learning and wellbeing",
+     "wrong": [
+      "AI is the most important skill in life",
+      "AI will replace most people",
+      "AI is dangerous and off-limits"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "tqccymheuuam",
+     "question": "Which of these everyday tools uses AI?",
+     "answer": "Spell-check",
+     "wrong": [
+      "A stapler",
+      "A paper calendar",
+      "A light switch"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "5lkbczjecxmy",
+     "question": "Using AI to learn is most like using…",
+     "answer": "A calculator or a dictionary",
+     "wrong": [
+      "Copying a friend's homework",
+      "Skipping class",
+      "Having someone live your life for you"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "pu36nb4dry2j",
+     "question": "What does an AI chat tool know about you?",
+     "answer": "Only what you share in the conversation",
+     "wrong": [
+      "Everything on your phone",
+      "Your whole life story",
+      "What you are thinking"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "k7b5v78g4wfh",
+     "question": "How does AI affect jobs?",
+     "answer": "It changes some jobs and creates new ones",
+     "wrong": [
+      "It replaces every human job",
+      "It has no effect on work",
+      "It only affects factory robots"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
+    },
+    {
+     "id": "719tfe68o42f",
+     "question": "Finish the saying: \"Technology is a tool. You are the one who…\"",
+     "answer": "decides how to use it",
+     "wrong": [
+      "has to keep up with it",
+      "follows its directions",
+      "gets replaced by it"
+     ],
+     "category": "AI Utilization for Good",
+     "time": 20,
+     "sets": [
+      "AI Utilization for Good"
+     ]
     }
    ]
   }
@@ -38157,6 +40694,114 @@ window.GS_MY_CONTENT = {
    "cages",
    "lions",
    "visit"
+  ],
+  "a robot": [
+   "machine",
+   "metal",
+   "beep",
+   "android"
+  ],
+  "a computer": [
+   "laptop",
+   "screen",
+   "keyboard",
+   "PC"
+  ],
+  "a cell phone": [
+   "call",
+   "mobile",
+   "smartphone",
+   "text"
+  ],
+  "a map": [
+   "GPS",
+   "directions",
+   "road",
+   "route"
+  ],
+  "a light bulb": [
+   "lamp",
+   "idea",
+   "bright",
+   "light"
+  ],
+  "a calculator": [
+   "math",
+   "numbers",
+   "add",
+   "plus"
+  ],
+  "a lock": [
+   "key",
+   "padlock",
+   "secure",
+   "safe"
+  ],
+  "a book": [
+   "read",
+   "pages",
+   "library",
+   "story"
+  ],
+  "a voice assistant": [
+   "speaker",
+   "talk",
+   "ask",
+   "smart"
+  ],
+  "asking a question": [
+   "ask",
+   "answer",
+   "curious",
+   "why"
+  ],
+  "a job interview": [
+   "hire",
+   "boss",
+   "resume",
+   "handshake"
+  ],
+  "brainstorming ideas": [
+   "think",
+   "storm",
+   "idea",
+   "lightbulb"
+  ],
+  "checking your facts": [
+   "verify",
+   "true",
+   "check",
+   "source"
+  ],
+  "a password": [
+   "secret",
+   "login",
+   "lock",
+   "type"
+  ],
+  "typing a letter": [
+   "keyboard",
+   "write",
+   "mail",
+   "words"
+  ],
+  "a self-driving car": [
+   "drive",
+   "car",
+   "robot",
+   "steer"
+  ],
+  "making a to-do list": [
+   "list",
+   "check",
+   "tasks",
+   "plan"
+  ],
+  "a robot vacuum": [
+   "clean",
+   "floor",
+   "dust",
+   "robot"
   ]
  }
 };

@@ -13,6 +13,7 @@ window.GS_ACTIVITIES = {
       'Tell your future self about the people who are cheering you on right now.',
       'Write about a habit you are building and why it matters to you.',
       'Describe something you are looking forward to, and how you think it will feel when it happens.',
+      'Imagine yourself one year from now living your best life. What do you want that version of you to know?',
     ] },
     { id: 'past', icon: '🌟', name: 'To your past self — look how far you’ve come', greet: 'Dear Younger Me,', prompts: [
       'Tell your younger self about something you can do now that they would be amazed by.',
@@ -22,6 +23,7 @@ window.GS_ACTIVITIES = {
       'Describe a moment from this year that your younger self would be proud of.',
       'Write to your younger self about a lesson you learned that made life better.',
       'Tell your younger self three things you like about who you are today.',
+      'Think of a time you struggled. What would you say to yourself back then, knowing what you know now?',
     ] },
     { id: 'thanks', icon: '🙏', name: 'A thank-you letter', greet: 'Dear ______,', prompts: [
       'Write to someone who made a difference in your life. What did they do, and how did it help?',
@@ -31,6 +33,7 @@ window.GS_ACTIVITIES = {
       'Write to someone who helped you learn something new.',
       'Thank a family member or friend for a favorite memory you share.',
       'Write a thank-you to a helper in your community — a nurse, a driver, a cook, a neighbor.',
+      'Write to someone — or something — you are genuinely grateful for. It can be a person, a place, even a habit.',
     ] },
     { id: 'group', icon: '🤝', name: 'To someone in this group', greet: 'Dear ______,', prompts: [
       'Write a note of appreciation to someone in this group. What do you admire about them?',
@@ -39,6 +42,7 @@ window.GS_ACTIVITIES = {
       'Name a strength you have noticed in someone here and tell them how it helps the group.',
       'Thank someone in this group for something they shared or did that helped you.',
       'Write a "keep going" note that anyone in this group could open on a hard day.',
+      'Without using their name, write to a fellow group member who has inspired or supported you.',
     ] },
     { id: 'self', icon: '🏆', name: 'Celebrate yourself', greet: 'Dear Me,', prompts: [
       'Write yourself a letter celebrating a win from this week — big or small.',
@@ -48,6 +52,7 @@ window.GS_ACTIVITIES = {
       'Celebrate something you finished, fixed, learned or tried for the first time.',
       'Write yourself a pep talk you can read any time you need a boost.',
       'Write about something you are proud of that no one else may know about.',
+      'What is something you have done recently that deserves recognition? Write a letter of celebration to YOU.',
     ] },
     { id: 'encourage', icon: '🌱', name: 'Encourage someone starting something new', greet: 'Dear Friend,', prompts: [
       'Write to someone starting a new job, class or chapter. What would you want them to know?',
@@ -56,6 +61,7 @@ window.GS_ACTIVITIES = {
       'Tell someone just starting out about a time you grew by trying something new.',
       'Write a letter full of encouragement to someone who is learning a new skill.',
       'Describe what "small steps" look like for you, and cheer someone on for theirs.',
+      'Think of someone beginning a new chapter. What encouragement would you offer them?',
     ] },
   ],
   // ---------------------------------------------------------------- 📓 journal
@@ -71,6 +77,7 @@ window.GS_ACTIVITIES = {
       'Write about a meal or treat you really enjoyed.',
       'What is something beautiful you noticed today?',
       'Describe a cozy moment you love — a blanket, a drink, a sunny window.',
+      'What is a sound that instantly puts you in a good mood?',
     ] },
     { id: 'gratitude', icon: '🙏', name: 'Gratitude', prompts: [
       'List three things you are grateful for today.',
@@ -83,6 +90,7 @@ window.GS_ACTIVITIES = {
       'What is a memory you are thankful for?',
       'What made today a little easier than it could have been?',
       'What about this group are you thankful for?',
+      'Who or what has quietly supported you, even when you did not ask?',
     ] },
     { id: 'strengths', icon: '💪', name: 'Strengths and wins', prompts: [
       'What is a strength you used this week?',
@@ -95,6 +103,11 @@ window.GS_ACTIVITIES = {
       'What is something you did today that you are proud of?',
       'How have you grown in the last year?',
       'What is a compliment you received that you want to remember?',
+      'What is the hardest thing you have overcome? What did it teach you?',
+      'What would you say to the version of you who thought things would never get better?',
+      'Name one win from this week — no matter how small. Why does it matter?',
+      'What is a quality about yourself you are learning to appreciate?',
+      'When did you surprise yourself recently?',
     ] },
     { id: 'goals', icon: '🎯', name: 'Goals and dreams', prompts: [
       'What is one small goal you can work on this week?',
@@ -107,6 +120,9 @@ window.GS_ACTIVITIES = {
       'What is something you want to try before the end of the year?',
       'What habit would you like to build, and how will you start?',
       'Imagine yourself one year from now, doing well. What do you see?',
+      'What do you hope your life looks, feels, and sounds like in one year?',
+      'What is one thing you want to be proud of in the future?',
+      'What is one small thing you can do tomorrow to make it a good day?',
     ] },
     { id: 'connect', icon: '🤝', name: 'People and connection', prompts: [
       'Who is someone who always makes you laugh?',
@@ -119,6 +135,11 @@ window.GS_ACTIVITIES = {
       'What is a tradition you love sharing with others?',
       'Who taught you something important, and what was it?',
       'How do you like to show people you care?',
+      'What strength have you noticed in someone around you this week?',
+      'How has being part of this group changed or supported you?',
+      'What advice would you give someone who feels scared to begin again?',
+      'What would you want someone to know about the courage it takes to start over?',
+      'Who is someone you would like to get to know better? What would you ask them?',
     ] },
     { id: 'fun', icon: '🌈', name: 'Just for fun', prompts: [
       'If you could have dinner with anyone, who would it be and what would you ask?',
@@ -131,6 +152,7 @@ window.GS_ACTIVITIES = {
       'What would you do with a free afternoon and no plans?',
       'If you could live in any time period for a week, which would you choose?',
       'What is a small thing that always makes your day better?',
+      'If you could invent a holiday, what would it celebrate and how would people spend it?',
     ] },
   ],
   // ---------------------------------------------------------------- 🧐 myth or fact
@@ -179,6 +201,19 @@ window.GS_ACTIVITIES = {
     { cat: 'Everyday Myths', s: 'Chameleons change color mainly to blend in.', fact: false, why: 'They mostly change color to communicate and to control their temperature.' },
     { cat: 'Everyday Myths', s: 'Bananas grow on trees.', fact: false, why: 'A banana plant is actually a giant herb — its "trunk" is made of tightly rolled leaves.' },
     { cat: 'Everyday Myths', s: 'A penny dropped from a tall building could seriously hurt someone below.', fact: false, why: 'A penny is too light and flat — air slows it down. It might sting, but it won’t do serious harm.' },
+    // AI for Good
+    { cat: 'AI for Good', s: 'AI can think and feel like a human.', fact: false, why: 'AI finds patterns in data — it doesn\'t think, feel or have opinions. It only simulates responses.' },
+    { cat: 'AI for Good', s: 'AI is too complicated for everyday people to use.', fact: false, why: 'Many AI tools are made for everyone — voice assistants, search and apps use AI simply.' },
+    { cat: 'AI for Good', s: 'AI will replace all human jobs.', fact: false, why: 'AI changes how some jobs work and creates new ones. Human judgment, empathy and creativity stay essential.' },
+    { cat: 'AI for Good', s: 'AI always gives accurate information.', fact: false, why: 'AI can be wrong, biased or outdated. Always double-check important info with a trusted source.' },
+    { cat: 'AI for Good', s: 'Using AI means you\'re lazy or cheating.', fact: false, why: 'Using AI to learn or get organized is like using a calculator or a dictionary — it\'s a tool.' },
+    { cat: 'AI for Good', s: 'AI knows everything about you.', fact: false, why: 'AI only knows what it\'s given in a conversation — so keep your personal info private.' },
+    { cat: 'AI for Good', s: 'Spell-check and GPS both use AI.', fact: true, why: 'You\'ve probably been using AI for years — in spell-check, maps, music picks and search.' },
+    { cat: 'AI for Good', s: 'AI can help you practice a hard conversation before you have it.', fact: true, why: 'Rehearsing with AI is a low-pressure way to find your words and build confidence.' },
+    { cat: 'AI for Good', s: 'AI can replace a therapist or counselor.', fact: false, why: 'AI can be a helpful tool, but it can\'t replace professional support or real human care.' },
+    { cat: 'AI for Good', s: 'It\'s smart to double-check important things AI tells you.', fact: true, why: 'Even great tools make mistakes. Checking a trusted source is what wise users do.' },
+    { cat: 'AI for Good', s: 'AI learns by finding patterns in data.', fact: true, why: 'AI studies huge amounts of examples to spot patterns — that\'s how it makes its guesses.' },
+    { cat: 'AI for Good', s: 'Anyone can learn to use AI tools.', fact: true, why: 'If you can ask a question, you can start. Everyone learns technology one step at a time.' },
   ],
   // ---------------------------------------------------------------- 🫙 gratitude jar
   gratitude: [
@@ -230,5 +265,10 @@ window.GS_ACTIVITIES = {
     'Something that went right today',
     'A reason to celebrate this week',
     'A friend you’re grateful for',
+    'A new thing you learned this week',
+    'A helpful tool or gadget you use every day',
+    'Something beautiful you noticed outside',
+    'A moment someone made you feel included',
+    'A meal that reminds you of home',
   ],
 };
