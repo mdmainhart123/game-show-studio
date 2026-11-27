@@ -48,13 +48,15 @@ App.screens.prompts = (el) => {
     el.innerHTML = `
       <div class="setup ps">
         <h1>✍️ Prompt Studio</h1>
-        <div class="ps-tabs">
-          <button class="ps-tab${kind === 'letters' ? ' on' : ''}" data-k="letters">💌 Letters</button>
-          <button class="ps-tab${kind === 'journal' ? ' on' : ''}" data-k="journal">📓 Journal</button>
-        </div>
-        <div class="ps-chips">
-          <button class="ps-chip${cat === 'any' ? ' on' : ''}" data-c="any">🎲 All prompts</button>
-          ${cats().map(x => `<button class="ps-chip${cat === x.id ? ' on' : ''}" data-c="${x.id}">${x.icon} ${esc(x.name)}</button>`).join('')}
+        <div class="ps-top">
+          <div class="ps-tabs">
+            <button class="ps-tab${kind === 'letters' ? ' on' : ''}" data-k="letters">💌 Letters</button>
+            <button class="ps-tab${kind === 'journal' ? ' on' : ''}" data-k="journal">📓 Journal</button>
+          </div>
+          <select class="input ps-catsel" id="psCat" title="Category">
+            <option value="any"${cat === 'any' ? ' selected' : ''}>🎲 All categories</option>
+            ${cats().map(x => `<option value="${x.id}"${cat === x.id ? ' selected' : ''}>${x.icon} ${esc(x.name)}</option>`).join('')}
+          </select>
         </div>
         <div class="ps-card" id="psCard">
           <div class="ps-label">${c ? `${c.icon} ${esc(c.name)}` : ''}</div>
@@ -63,26 +65,28 @@ App.screens.prompts = (el) => {
           <div class="ps-timer" id="psTimer"></div>
         </div>
         <div class="ps-acts">
-          <button class="btn lg pink ps-spin" id="psSpin">🎰 Random <kbd>Space</kbd></button>
-          <div class="ps-pick" title="Choose a specific prompt">${pickerHTML()}</div>
-          <div class="ps-drop"><button class="btn lg ghost" id="psTimeBtn">⏱ Quiet writing ▾</button>
-            <div class="gf-menu ps-menu" id="psTimeMenu" hidden>${[3, 5, 10, 15].map(m => `<button class="gf-item" data-m="${m}">⏱ ${m} minutes</button>`).join('')}</div></div>
-          <div class="ps-drop"><button class="btn lg ghost" id="psPrintBtn">🖨 Print ▾</button>
-            <div class="gf-menu ps-menu" id="psPrintMenu" hidden>
-              <button class="gf-item" data-p="sheet">📝 This prompt — a writing sheet</button>
-              <button class="gf-item" data-p="home">🏠 Take-home sheet — 10 prompts</button>
-              <button class="gf-item" data-p="all">📚 Every ${kind === 'letters' ? 'letter' : 'journal'} prompt</button>
-            </div></div>
-          <div class="ps-drop"><button class="btn lg ghost" id="psFileBtn" title="Import prompts">📁 ▾</button>
-            <div class="gf-menu ps-menu" id="psFileMenu" hidden>
-              <button class="gf-item" data-f="import">📥 Import prompts (.txt)</button>
-              <button class="gf-item" data-f="sample">📄 Download a sample file</button>
-              ${mine ? `<button class="gf-item" data-f="clear">🗑 Remove imported prompts</button>` : ''}
-            </div></div>
+          <button class="btn xl pink ps-spin" id="psSpin">🎰 Random</button>
+          <div class="ps-tools">
+            <div class="ps-pick" title="Choose a specific prompt">${pickerHTML()}</div>
+            <div class="ps-drop"><button class="ps-tool" id="psTimeBtn">⏱ Timer</button>
+              <div class="gf-menu ps-menu" id="psTimeMenu" hidden>${[3, 5, 10, 15].map(m => `<button class="gf-item" data-m="${m}">⏱ ${m} minutes of quiet writing</button>`).join('')}</div></div>
+            <div class="ps-drop"><button class="ps-tool" id="psPrintBtn">🖨 Print</button>
+              <div class="gf-menu ps-menu" id="psPrintMenu" hidden>
+                <button class="gf-item" data-p="sheet">📝 This prompt — a writing sheet</button>
+                <button class="gf-item" data-p="home">🏠 Take-home sheet — 10 prompts</button>
+                <button class="gf-item" data-p="all">📚 Every ${kind === 'letters' ? 'letter' : 'journal'} prompt</button>
+              </div></div>
+            <div class="ps-drop"><button class="ps-tool" id="psFileBtn" title="Import prompts">📁 Import</button>
+              <div class="gf-menu ps-menu" id="psFileMenu" hidden>
+                <button class="gf-item" data-f="import">📥 Import prompts (.txt)</button>
+                <button class="gf-item" data-f="sample">📄 Download a sample file</button>
+                ${mine ? `<button class="gf-item" data-f="clear">🗑 Remove imported prompts</button>` : ''}
+              </div></div>
+          </div>
         </div>
       </div>`;
     $$('.ps-tab', el).forEach(b => b.onclick = () => { if (spinning || b.dataset.k === kind) return; kind = b.dataset.k; cat = 'any'; save(); pick(); draw(); });
-    $$('.ps-chip', el).forEach(b => b.onclick = () => { if (spinning) return; cat = b.dataset.c; save(); pick(); draw(); Sfx.click(); });
+    $('#psCat', el).onchange = e => { stopSpin(); cat = e.target.value; save(); pick(); draw(); Sfx.click(); };
     $('#psSpin', el).onclick = spin;
     FolderSelect.enhance($('#psPick', el));
     $('#psPick', el).addEventListener('change', e => {

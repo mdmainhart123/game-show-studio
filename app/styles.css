@@ -2170,3 +2170,32 @@ body.theme-classic .mf-btn { box-shadow: none; border-radius: 12px; }
 .ps-spin[disabled] { opacity: .75; cursor: default; }
 .ps-acts kbd { font-size: .55em; }
 @media (max-width: 760px) { .ps-pick { width: 100%; order: 5; } }
+
+/* Prompt Studio — tidy layout */
+.setup.ps { gap: clamp(10px, 2vh, 20px); }
+.ps-top { display: flex; justify-content: center; align-items: center; gap: 14px; flex-wrap: wrap; }
+.ps-tabs { gap: 0; background: rgba(0,0,0,.25); border: 1px solid var(--line); border-radius: 99px; padding: 4px; }
+.ps-tab { border: 0; background: none; padding: 8px 24px; }
+.ps-tab.on { box-shadow: none; }
+.ps-catsel { width: auto; min-width: 280px; max-width: 460px; height: 50px; font-size: 18px; border-radius: 99px; padding: 0 18px; }
+.ps-acts { align-items: center; gap: 18px; }
+.ps-spin { min-width: 220px; }
+.ps-tools { display: flex; align-items: stretch; background: rgba(0,0,0,.22); border: 1px solid var(--line); border-radius: 16px; padding: 4px; gap: 2px; }
+.ps-tool, .ps-tools .ps-pick .fsel-btn { font: inherit; font-size: 17px; font-weight: 600; color: inherit; background: none; border: 0; border-radius: 12px; padding: 0 16px; height: 50px; min-height: 0; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: 6px; box-shadow: none; }
+.ps-tool:hover, .ps-tools .ps-pick .fsel-btn:hover { background: rgba(255,255,255,.1); }
+.ps-tools .ps-pick { width: auto; }
+.ps-tools .ps-pick .fsel-cur { font-size: 0; }
+.ps-tools .ps-pick .fsel-cur::before { content: '📋 Choose'; font-size: 17px; }
+.ps-tools .ps-pick .fsel-caret { display: none; }
+.ps-tools .ps-pick .fsel-panel { left: 0; transform: none; }
+.ps-tools .ps-drop:last-child .ps-menu { left: auto; right: 0; transform: none; }
+body.theme-classic .ps-tools, body.theme-classic .ps-tabs { border-radius: 10px; } body.theme-classic .ps-tab, body.theme-classic .ps-catsel { border-radius: 8px; }
+@media (max-width: 760px) {
+  .ps-catsel { min-width: 0; width: 100%; height: 44px; font-size: 16px; }
+  .ps-spin { width: 100%; }
+  .ps-tools { width: 100%; justify-content: space-between; }
+  .ps-tool, .ps-tools .ps-pick .fsel-btn { padding: 0 8px; font-size: 15px; height: 44px; }
+  .ps-tools .ps-pick .fsel-cur::before { font-size: 15px; }
+  .ps-tools .ps-pick { width: auto; order: 0; }
+  .ps-tools .ps-pick .fsel-panel { width: 92vw; }
+}
