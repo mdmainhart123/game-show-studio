@@ -13,10 +13,10 @@ function hsSources() {
   const sets = [...GameFiles.sets('trivia').entries()]; // [name, count]
   const themes = {};
   sets.forEach(([n]) => { const m = n.match(/^(.*) (Easy|Intermediate|Hard)$/); if (m) (themes[m[1]] ||= []).push(m[2]); });
-  const out = [{ id: 'all', label: `🎲 All trivia questions (${App.data.trivia.length})` }];
+  const out = [{ id: 'all', label: `🎲 All trivia questions (${App.data.trivia.length})`, name: '' }];
   Object.entries(themes).filter(([, l]) => l.length >= 2).forEach(([t, l]) =>
-    out.push({ id: 'ladder:' + t, label: `🪜 ${t}: ${HS_LEVELS.filter(x => l.includes(x)).join(' → ')} (gets harder)` }));
-  sets.forEach(([n, c]) => out.push({ id: 'set:' + n, label: `${n} (${c})` }));
+    out.push({ id: 'ladder:' + t, name: `${t} ${l[0]}`, label: `🪜 ${t}: ${HS_LEVELS.filter(x => l.includes(x)).join(' → ')} (gets harder)` }));
+  sets.forEach(([n, c]) => out.push({ id: 'set:' + n, name: n, label: `${n} (${c})` }));
   return out;
 }
 function hsQuestions(src, count) {
@@ -46,7 +46,8 @@ App.screens.hotseatSetup = (el, opts = {}) => {
       <div class="panel">
         <p style="font-size:20px;margin:0 0 14px">Climb the ladder one question at a time — each is worth more than the last. Pass a <b>🛡 milestone</b> and you keep that amount. Three lifelines, and you can <b>walk away</b> with what you've won at any time.</p>
         <label class="field"><span>Questions from</span><select class="input" id="hSrc">
-          ${sources.map(o => `<option value="${esc(o.id)}" ${o.id === src ? 'selected' : ''}>${esc(o.label)}</option>`).join('')}</select></label>
+          <option value="all" ${src === 'all' ? 'selected' : ''}>${esc(sources[0].label)}</option>
+          ${Archive.options(sources.slice(1).map(o => ({ value: o.id, name: o.name, label: o.label, selected: o.id === src })))}</select></label>
         <div class="field-row">
           <label class="field"><span>Who's in the hot seat?</span><select class="input" id="hWho">
             ${teams.map((t, i) => `<option value="${t.id}" ${i === next % teams.length ? 'selected' : ''}>${esc(t.name)}</option>`).join('')}

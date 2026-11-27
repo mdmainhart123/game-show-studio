@@ -1967,3 +1967,11 @@ body.theme-recovery .game-card.charades { background: linear-gradient(145deg, #f
 .ch-mime { display: inline-block; animation: chMime 1.6s ease-in-out infinite; }
 @keyframes chMime { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-14deg) translateY(-4px); } 75% { transform: rotate(14deg) translateY(-4px); } }
 @media (max-width: 760px) { .ch-signals { grid-template-columns: 1fr; } }
+/* 📁 monthly archive folders in the Crossword list */
+.cw-folder { border: 1px solid var(--line, rgba(255,255,255,.15)); border-radius: 12px; background: rgba(255,255,255,.03); }
+.cw-folder > summary { cursor: pointer; padding: 12px 16px; font-size: 19px; font-weight: 700; list-style: none; display: flex; align-items: center; gap: 10px; }
+.cw-folder > summary::-webkit-details-marker { display: none; }
+.cw-folder > summary::after { content: '▸'; margin-left: auto; transition: transform .2s; }
+.cw-folder[open] > summary::after { transform: rotate(90deg); }
+.cw-folder > summary small { font-weight: 500; color: var(--muted); }
+.cw-folder > .cw-item { margin: 0 10px 8px 22px; }

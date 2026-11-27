@@ -118,13 +118,19 @@ App.screens.crossSetup = (el) => {
         <h1>🧩 Crossword</h1>
         <div class="panel">
           <p style="font-size:20px;margin:0 0 14px">Pick a puzzle — the app builds a fresh crossword from its words every time. Solve it together on the big screen, or print it.</p>
-          ${d.cross.length ? `<div class="cw-list">${d.cross.map(p => `
+          ${d.cross.length ? `<div class="cw-list">${(() => {
+            const row = p => `
             <div class="cw-item" data-id="${p.id}">
               <button class="cw-play" data-play="${p.id}"><b>${esc(p.title)}</b><small>${p.entries.length} words</small></button>
               <button class="btn sm ghost" data-edit="${p.id}" title="Edit">✏️</button>
               <button class="btn sm ghost" data-print="${p.id}" title="Print">🖨️</button>
               <button class="btn sm ghost" data-export="${p.id}" title="Save as a text file">📤</button>
-            </div>`).join('')}</div>` : '<div class="hint">No puzzles yet — make one below.</div>'}
+            </div>`;
+            // 📁 archived months as folders (closed), then everything else
+            const folders = Object.keys(Archive.map()).map(m => [m, d.cross.filter(p => Archive.of(p.title) === m)]).filter(([, l]) => l.length);
+            return folders.map(([m, l]) => `<details class="cw-folder" data-month="${esc(m)}"><summary>📁 ${esc(m)} <small>${l.length} puzzle${l.length === 1 ? '' : 's'}</small></summary>${l.map(row).join('')}</details>`).join('')
+              + d.cross.filter(p => !Archive.of(p.title)).map(row).join('');
+          })()}</div>` : '<div class="hint">No puzzles yet — make one below.</div>'}
           <div class="cw-new">
             <button class="btn green" id="cwNew">＋ Make a new crossword</button>
             ${d.trivia.length ? '<button class="btn cyan" id="cwQuick">⚡ Quick crossword from your trivia answers</button>' : ''}

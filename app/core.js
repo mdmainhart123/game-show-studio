@@ -1,4 +1,4 @@
-const APP_VERSION = '20261125-1535'; // shown at the bottom of the ☰ Menu
+const APP_VERSION = '20261127-0930'; // shown at the bottom of the ☰ Menu
 // Core: storage, teams, screens, scoreboard, modals, sound, confetti.
 const TEAM_COLORS = ['#ff3d8b', '#2f7bff', '#f5a300', '#1fb866', '#9b5bff', '#ff7a1f', '#0fb5c9', '#e0303f', '#72b51c', '#c0399f'];
 const MAX_TEAMS = TEAM_COLORS.length;
@@ -761,7 +761,8 @@ const GameFiles = {
     if (sets.size && panel) {
       const cur = this.chosen(k), f = document.createElement('label');
       f.className = 'field gf-set';
-      f.innerHTML = `<span>Question set</span><select class="input" id="gfSet"><option value="">📚 Everything (${App.data[k].length})</option>${[...sets].sort((a, b) => { const lv = n => n.replace(/\b(easy|beginner)\b/i, '1').replace(/\b(intermediate|medium)\b/i, '2').replace(/\b(hard|advanced)\b/i, '3'); return lv(a[0]).localeCompare(lv(b[0])); }).map(([s, c]) => `<option value="${esc(s)}" ${s === cur ? 'selected' : ''}>${esc(s)} (${c})</option>`).join('')}</select>`;
+      const sorted = [...sets].sort((a, b) => { const lv = n => n.replace(/\b(easy|beginner)\b/i, '1').replace(/\b(intermediate|medium)\b/i, '2').replace(/\b(hard|advanced)\b/i, '3'); return lv(a[0]).localeCompare(lv(b[0])); });
+      f.innerHTML = `<span>Question set</span><select class="input" id="gfSet"><option value="">📚 Everything (${App.data[k].length})</option>${Archive.options(sorted.map(([s, c]) => ({ value: s, label: `${s} (${c})`, name: s, selected: s === cur })))}</select>`;
       panel.prepend(f);
       $('#gfSet', f).onchange = e => { (App.data.settings.setPick ||= {})[k] = e.target.value; App.save(); App.show(App.current); };
     }
@@ -1064,5 +1065,20 @@ const RingClock = {
     el.classList.toggle('low', left <= 10 && left > 0);
     el.classList.toggle('crit', left <= 3 && left > 0);
     el.classList.toggle('paused', !!paused);
+  },
+};
+
+// 📁 Monthly archive: sets, boards and puzzles grouped by the month they were made.
+// The list lives in mycontent.js ("archive": { "November": [names…] }); anything not listed
+// (new material) shows below the folders.
+const Archive = {
+  map() { return (window.GS_MY_CONTENT && window.GS_MY_CONTENT.archive) || {}; },
+  of(name) { for (const [m, l] of Object.entries(this.map())) if (l.includes(name)) return m; return ''; },
+  // items: [{ value, label, name, selected }] → <option>s, archived ones inside "📁 Month" groups first
+  options(items) {
+    const opt = it => `<option value="${esc(it.value)}" ${it.selected ? 'selected' : ''}>${esc(it.label)}</option>`;
+    const groups = Object.keys(this.map()).map(m => [m, items.filter(it => this.of(it.name) === m)]).filter(([, l]) => l.length);
+    const rest = items.filter(it => !this.of(it.name));
+    return groups.map(([m, l]) => `<optgroup label="📁 ${esc(m)}">${l.map(opt).join('')}</optgroup>`).join('') + rest.map(opt).join('');
   },
 };

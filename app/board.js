@@ -23,9 +23,9 @@ App.screens.boardSetup = (el) => {
       ${names.length ? `
       <div class="panel">
         <label class="field"><span>Which board?</span>
-          <select class="input" id="bd">${names.map(n => {
+          <select class="input" id="bd">${Archive.options(names.map(n => {
             const clues = boardLayout(n).flatMap(c => c.clues), left = clues.filter(x => !x.played).length;
-            return `<option value="${esc(n)}" ${pick === n ? 'selected' : ''}>${!left ? `✓ ${esc(n)} — all played` : left < clues.length ? `${esc(n)} — ${left} of ${clues.length} clues left` : `${esc(n)} — ${clues.length} clues`}</option>`; }).join('')}</select></label>
+            return { value: n, name: n, selected: pick === n, label: !left ? `✓ ${n} — all played` : left < clues.length ? `${n} — ${left} of ${clues.length} clues left` : `${n} — ${clues.length} clues` }; }))}</select></label>
         ${played ? `<div class="played-note">✓ = every clue on that board has been played. <button class="link-btn sm" id="resetPlayed">Reset played marks</button></div>` : ''}
         <div class="hint">Wrong answers ${App.data.settings.boardDeduct ? 'subtract' : "don't subtract"} points (change in ☰ Menu → Settings). Scores reset to 0 after each game.</div>
       </div>

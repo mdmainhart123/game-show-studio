@@ -4,6 +4,31 @@
 // already there — nothing is deleted or duplicated. Use a NEW id for each update.
 window.GS_MY_CONTENT = {
  "id": "matt-2026-11-25-say-it-match-it",
+ "archive": {
+  "October": [
+   "Halloween Easy",
+   "Halloween Intermediate",
+   "Halloween Hard"
+  ],
+  "November": [
+   "Personal Strengths",
+   "Handling Stress",
+   "Elections",
+   "Media Literacy",
+   "Handling Disappointment",
+   "Asking for Help",
+   "Music & Emotions",
+   "Mindfulness",
+   "Effective Communication",
+   "Building Confidence",
+   "Social Media & Mental Health",
+   "Holiday Stress",
+   "November Game Day",
+   "Thanksgiving Easy",
+   "Thanksgiving Intermediate",
+   "Thanksgiving Hard"
+  ]
+ },
  "banks": {
   "standard": {
    "cross": [

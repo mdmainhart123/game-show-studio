@@ -13,7 +13,7 @@ App.screens.matchSetup = (el) => {
       <div class="panel">
         <p style="font-size:20px;margin:0 0 14px">Flip two tiles to find a <b>word and its clue</b>. Find a match: <b>${MATCH_POINTS} points and go again!</b> No match: the tiles flip back and the next team tries. Call out tiles by their numbers.</p>
         <label class="field"><span>Topic</span><select class="input" id="mPuz">
-          ${puzzles.map(p => `<option value="${p.id}" ${p === cur ? 'selected' : ''}>${esc(p.title)} (${p.entries.length} pairs)</option>`).join('')}</select></label>
+          ${Archive.options(puzzles.map(p => ({ value: p.id, name: p.title, selected: p === cur, label: `${p.title} (${p.entries.length} pairs)` })))}</select></label>
         <div class="field-row">
           <label class="field"><span>How to play</span><select class="input" id="mMode">
             <option value="teams" selected>${d.teams.length > 1 ? 'Teams (with points)' : `${esc(d.teams[0]?.name || 'Group')} (with points)`}</option>
