@@ -436,6 +436,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Conflict Resolution', s: 'Conflict is always someone\'s fault.', fact: false, why: 'Most disagreements come from two people\'s different needs and styles — not one bad guy.' },
     { cat: 'Conflict Resolution', s: 'Taking a timeout during an argument is okay.', fact: true, why: 'Pausing to cool down and coming back later is one of the healthiest conflict skills there is.' },
     { cat: 'Conflict Resolution', s: 'Handled well, a disagreement can make a relationship stronger.', fact: true, why: 'Working through conflict together builds trust and helps people understand each other better.' },
+    { cat: 'Conflict Resolution', s: 'Using \'I feel\' statements can help calm a disagreement.', fact: true, why: 'Talking about your own feelings — instead of blaming — keeps the other person from getting defensive.' },
+    { cat: 'Conflict Resolution', s: 'Repeating back what someone said shows you\'re really listening.', fact: true, why: 'Reflective listening helps people feel heard and clears up misunderstandings fast.' },
     // Movement as Medicine
     { cat: 'Movement as Medicine', s: 'You need to exercise for an hour a day to get mental health benefits.', fact: false, why: 'Just 10–20 minutes of moderate movement can make a real difference in your mood.' },
     { cat: 'Movement as Medicine', s: 'Exercise is only for people who are already fit.', fact: false, why: 'Movement helps people at ALL fitness levels. Even gentle stretching or a slow walk counts.' },
@@ -445,6 +447,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Movement as Medicine', s: 'Moving your body can improve your mood.', fact: true, why: 'Movement releases endorphins — your brain\'s natural feel-good chemicals.' },
     { cat: 'Movement as Medicine', s: 'Regular movement can help you sleep better.', fact: true, why: 'Being active during the day helps your body rest more deeply at night.' },
     { cat: 'Movement as Medicine', s: 'Dancing in your kitchen counts as exercise.', fact: true, why: 'If it gets you moving and smiling, it counts! Fun movement is some of the best movement.' },
+    { cat: 'Movement as Medicine', s: 'A short walk can help clear your head.', fact: true, why: 'Even 10 minutes of walking can ease stress and sharpen your focus.' },
+    { cat: 'Movement as Medicine', s: 'Stretching only helps athletes.', fact: false, why: 'Stretching helps everyone — it eases tension and can calm your mind, too.' },
     // Food & Nutrition
     { cat: 'Food & Nutrition', s: 'Eating healthy is always too expensive.', fact: false, why: 'Beans, lentils, oats, eggs and frozen vegetables are low-cost and packed with nutrients.' },
     { cat: 'Food & Nutrition', s: 'Carbs are bad and should be avoided.', fact: false, why: 'Carbs are your body\'s main energy source. Whole grains, fruits and veggies are great choices.' },
@@ -454,6 +458,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Food & Nutrition', s: 'What you eat can affect your mood.', fact: true, why: 'Food fuels your brain, so it influences your energy, focus and how you feel.' },
     { cat: 'Food & Nutrition', s: 'Sometimes thirst can feel like hunger.', fact: true, why: 'Drinking a glass of water first can boost your energy and help you know what your body needs.' },
     { cat: 'Food & Nutrition', s: 'Frozen vegetables can be just as nutritious as fresh ones.', fact: true, why: 'Frozen veggies are picked ripe and frozen quickly, so they keep their nutrients — and they\'re budget-friendly.' },
+    { cat: 'Food & Nutrition', s: 'Eating breakfast can help you focus in the morning.', fact: true, why: 'A balanced breakfast gives your brain the fuel it needs to start the day.' },
+    { cat: 'Food & Nutrition', s: 'Your gut and your mood are connected.', fact: true, why: 'Your gut makes a lot of serotonin, a brain chemical that affects how you feel.' },
     // Peer Pressure
     { cat: 'Peer Pressure', s: 'Peer pressure only comes from people who want to hurt you.', fact: false, why: 'Pressure often comes from people who care about you. It doesn\'t take bad intentions to pull you off track.' },
     { cat: 'Peer Pressure', s: 'You have to explain yourself every time you say no.', fact: false, why: '\'No thanks\' is a complete answer. You never have to justify your boundaries.' },
@@ -463,6 +469,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Peer Pressure', s: 'Walking away from a situation can be a smart choice.', fact: true, why: 'Leaving isn\'t running away — it\'s choosing what\'s best for you.' },
     { cat: 'Peer Pressure', s: 'Saying out loud \'I feel pressured right now\' can help.', fact: true, why: 'Naming what you notice takes away some of the pressure\'s power.' },
     { cat: 'Peer Pressure', s: 'Having a friend to text in a tough moment makes a real difference.', fact: true, why: 'You don\'t have to handle hard moments alone. Reaching out is a sign of strength.' },
+    { cat: 'Peer Pressure', s: '\'Let me think about it\' is a smart way to buy time.', fact: true, why: 'Giving yourself a pause helps you make a choice that\'s truly yours.' },
+    { cat: 'Peer Pressure', s: 'Suggesting a different activity can take the pressure off.', fact: true, why: 'Offering an alternative lets you stay connected while sticking to what\'s right for you.' },
     // Personal Responsibility
     { cat: 'Personal Responsibility', s: 'Taking responsibility means admitting you\'re a bad person.', fact: false, why: 'Responsibility is about what you did, not who you are. Owning it is a sign of character.' },
     { cat: 'Personal Responsibility', s: 'If you had a hard past, you can\'t be responsible for today\'s choices.', fact: false, why: 'Your past shapes you, but it doesn\'t decide for you. Every day brings new choices.' },
@@ -472,6 +480,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Personal Responsibility', s: 'If it wasn\'t entirely your fault, you have nothing to own.', fact: false, why: 'You can own your part, even in shared situations. That\'s a sign of growth.' },
     { cat: 'Personal Responsibility', s: 'Keeping small daily promises builds trust in yourself.', fact: true, why: 'Every commitment you keep — even tiny ones — proves to yourself that you can count on you.' },
     { cat: 'Personal Responsibility', s: 'One mistake doesn\'t have to define your whole story.', fact: true, why: 'Learn from it, make it right if you can, and keep moving forward.' },
+    { cat: 'Personal Responsibility', s: 'Asking for help can be a responsible choice.', fact: true, why: 'Knowing your limits and reaching out shows self-awareness and maturity.' },
+    { cat: 'Personal Responsibility', s: 'Following through on small promises builds trust.', fact: true, why: 'When your words match your actions, people — and you — learn you can be counted on.' },
     // Science of Leisure
     { cat: 'Science of Leisure', s: 'Leisure is just wasting time.', fact: false, why: 'Leisure lowers stress hormones, boosts feel-good chemicals and sharpens your focus.' },
     { cat: 'Science of Leisure', s: 'You have to earn rest before you deserve it.', fact: false, why: 'Rest and fun are basic human needs, not prizes. Everyone deserves time to recharge.' },
@@ -481,6 +491,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Science of Leisure', s: 'If you\'re not good at something, it doesn\'t count as a hobby.', fact: false, why: 'Leisure is about enjoyment, not skill. Doing something just for the joy of it is the whole point.' },
     { cat: 'Science of Leisure', s: 'Getting lost in an activity you love is good for your brain.', fact: true, why: 'That \'time flies\' feeling is called flow — and it\'s a great boost for your mood and focus.' },
     { cat: 'Science of Leisure', s: 'Doing fun things with other people helps you feel more connected.', fact: true, why: 'Shared activities build friendships and a sense of belonging.' },
+    { cat: 'Science of Leisure', s: 'Hobbies can help you feel less stressed.', fact: true, why: 'Doing something you enjoy lowers stress hormones and boosts feel-good chemicals.' },
+    { cat: 'Science of Leisure', s: 'Trying a new hobby can help you meet people.', fact: true, why: 'Clubs, classes and group activities are great ways to connect with others who share your interests.' },
     // Healthy Relationships
     { cat: 'Healthy Relationships', s: 'Unhealthy relationships always involve obvious mistreatment.', fact: false, why: 'Unhealthy patterns are often subtle — like constant criticism or isolation. Noticing them is a strength.' },
     { cat: 'Healthy Relationships', s: 'If two people love each other, the relationship must be healthy.', fact: false, why: 'Love and unhealthy patterns can exist together. Healthy relationships need respect, too.' },
@@ -490,6 +502,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Healthy Relationships', s: 'In a healthy relationship, you can say no without feeling afraid.', fact: true, why: 'Feeling safe to share your needs — and to say no — is a sign of a healthy connection.' },
     { cat: 'Healthy Relationships', s: 'Good relationships build you up.', fact: true, why: 'The right people help you feel valued, respected and more like yourself.' },
     { cat: 'Healthy Relationships', s: 'Boundaries are like fences with gates, not walls.', fact: true, why: 'Boundaries let the good in and keep the harmful out — you decide what you accept.' },
+    { cat: 'Healthy Relationships', s: 'Healthy friends are happy for you when good things happen.', fact: true, why: 'People who truly care celebrate your wins instead of competing with them.' },
+    { cat: 'Healthy Relationships', s: 'It\'s okay to disagree with people you care about.', fact: true, why: 'Healthy relationships have room for different opinions — as long as there\'s respect.' },
     // Your Values
     { cat: 'Your Values', s: 'Your values are set in stone once you become an adult.', fact: false, why: 'Values naturally grow and change as you gain new experiences.' },
     { cat: 'Your Values', s: 'People with strong values never make poor choices.', fact: false, why: 'Everyone falls short sometimes. People who know their values just find their way back faster.' },
@@ -499,6 +513,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Your Values', s: 'If you don\'t live your values perfectly, you\'re a hypocrite.', fact: false, why: 'Values are goals to live toward, not perfection requirements.' },
     { cat: 'Your Values', s: 'Your values can help you make tough decisions.', fact: true, why: 'Asking \'Which choice fits my values?\' can cut right through confusion.' },
     { cat: 'Your Values', s: 'Two people can share a value and still make different choices.', fact: true, why: 'Life experience and circumstances shape how each person lives out their values.' },
+    { cat: 'Your Values', s: 'Knowing your values can make decisions easier.', fact: true, why: 'When you know what matters most, it\'s easier to choose what fits you.' },
+    { cat: 'Your Values', s: 'Your values can show up in small, everyday choices.', fact: true, why: 'How you treat a cashier, keep a promise or spend free time all reflect your values.' },
     // Your Happy Place
     { cat: 'Your Happy Place', s: 'A happy place has to be somewhere you\'ve actually been.', fact: false, why: 'Your happy place can be completely imaginary. Some of the most calming places are invented ones.' },
     { cat: 'Your Happy Place', s: 'Thinking about a happy place is just daydreaming.', fact: false, why: 'Picturing a calm place is a real, proven coping tool used by therapists, athletes and more.' },
@@ -508,6 +524,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Your Happy Place', s: 'A happy place only works if you go there in real life.', fact: false, why: 'Just picturing it can slow your heart rate and help you feel calmer.' },
     { cat: 'Your Happy Place', s: 'Using all five senses makes a happy place more calming.', fact: true, why: 'The more you can see, hear, smell and feel it, the more your body relaxes.' },
     { cat: 'Your Happy Place', s: 'Two people\'s happy places can be totally different.', fact: true, why: 'Peace looks different for everyone — a beach, a kitchen, even outer space!' },
+    { cat: 'Your Happy Place', s: 'Picturing a calm place can help you relax.', fact: true, why: 'Imagining a peaceful scene can slow your breathing and help your body settle.' },
+    { cat: 'Your Happy Place', s: 'You can visit your happy place anytime, anywhere.', fact: true, why: 'Close your eyes for a moment and go there — it\'s always available to you.' },
     // Strength-Based Thinking
     { cat: 'Strength-Based Thinking', s: 'Strength-based thinking means ignoring your problems.', fact: false, why: 'It sees real challenges AND asks what skills and character you have to work with. It\'s realistic, not denial.' },
     { cat: 'Strength-Based Thinking', s: 'If you\'ve made mistakes, you don\'t have many strengths.', fact: false, why: 'Mistakes are often where growth happens. Learning and choosing differently is a strength in itself.' },
@@ -517,6 +535,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Strength-Based Thinking', s: 'Other people often notice strengths you can\'t see in yourself.', fact: true, why: 'Asking someone what they appreciate about you can be eye-opening.' },
     { cat: 'Strength-Based Thinking', s: 'Writing down one thing you did well each day can build confidence.', fact: true, why: 'What you focus on grows — and your brain believes what it reads.' },
     { cat: 'Strength-Based Thinking', s: 'Abilities can grow with effort.', fact: true, why: 'That\'s a growth mindset — skills and character get stronger with practice.' },
+    { cat: 'Strength-Based Thinking', s: 'Everyone has strengths, even if they\'re hard to see.', fact: true, why: 'Sometimes others notice our strengths before we do — it\'s worth asking.' },
+    { cat: 'Strength-Based Thinking', s: 'Focusing on strengths means pretending problems don\'t exist.', fact: false, why: 'It means facing challenges while remembering the skills and character you already have.' },
     // Holiday Cards
     { cat: 'Holiday Cards', s: 'You have to be artistic to make a meaningful card.', fact: false, why: 'Cards from the heart mean the most. A simple, honest message beats a fancy card with nothing personal inside.' },
     { cat: 'Holiday Cards', s: 'Making cards is just a craft — it has no real value.', fact: false, why: 'Creative expression can lower stress, build gratitude and help people feel connected.' },
@@ -526,6 +546,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Holiday Cards', s: 'A handwritten note can mean more than a text.', fact: true, why: 'It shows someone took real time and thought — that\'s what makes it special.' },
     { cat: 'Holiday Cards', s: 'Your card doesn\'t need to look store-bought.', fact: true, why: 'It just needs to come from you. That\'s what makes it valuable.' },
     { cat: 'Holiday Cards', s: 'You can make a card for yourself.', fact: true, why: 'Writing kind words to yourself is a great way to practice self-compassion.' },
+    { cat: 'Holiday Cards', s: 'A short, sincere message can mean more than a long one.', fact: true, why: 'A few honest words from the heart are often what people remember most.' },
+    { cat: 'Holiday Cards', s: 'Making something by hand can help you relax.', fact: true, why: 'Creative activities help you slow down and focus on the moment.' },
     // Thoughts Aren't Facts
     { cat: 'Thoughts Aren\'t Facts', s: 'Only some people have random unwanted thoughts.', fact: false, why: 'Nearly everyone has them. Brains make thousands of thoughts a day — including ones we\'d never choose.' },
     { cat: 'Thoughts Aren\'t Facts', s: 'The best way to handle an unwanted thought is to push it out of your mind.', fact: false, why: 'Pushing thoughts away makes them come back more. Letting them pass works much better.' },
@@ -535,6 +557,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Thoughts Aren\'t Facts', s: 'Trying not to think about a pink elephant makes you think about it more.', fact: true, why: 'That\'s the rebound effect — fighting a thought keeps bringing it back.' },
     { cat: 'Thoughts Aren\'t Facts', s: 'You can let a thought pass like a cloud moving across the sky.', fact: true, why: 'You don\'t have to chase or fight thoughts. Notice them, then gently return to what you were doing.' },
     { cat: 'Thoughts Aren\'t Facts', s: 'Stress and tiredness can make your mind busier.', fact: true, why: 'Rest and self-care help calm a noisy mind.' },
+    { cat: 'Thoughts Aren\'t Facts', s: 'Every thought you have is true.', fact: false, why: 'Thoughts are just mental events. You can notice them without believing all of them.' },
+    { cat: 'Thoughts Aren\'t Facts', s: 'You have to figure out why you had a thought before you can let it go.', fact: false, why: 'You can simply notice a thought, let it pass, and return to what you were doing.' },
     // Inner Critic & Self-Kindness
     { cat: 'Inner Critic & Self-Kindness', s: 'Your inner critic is just being honest with you.', fact: false, why: 'The inner critic exaggerates and overgeneralizes. Real honesty is specific and fair — the critic is neither.' },
     { cat: 'Inner Critic & Self-Kindness', s: 'A harsh inner critic means you have high standards.', fact: false, why: 'High standards motivate. A harsh inner voice holds you back — kinder voices help people bounce back faster.' },
@@ -544,6 +568,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Inner Critic & Self-Kindness', s: 'Asking \'Would I say this to a friend?\' can quiet a harsh thought.', fact: true, why: 'Most of us are much kinder to friends than to ourselves — so borrow that kindness.' },
     { cat: 'Inner Critic & Self-Kindness', s: 'Self-compassion helps people recover from setbacks faster.', fact: true, why: 'Research shows a kinder inner voice helps people keep going when things get tough.' },
     { cat: 'Inner Critic & Self-Kindness', s: 'You can build a kinder inner voice with practice.', fact: true, why: 'Each time you notice the critic and choose a gentler thought, you\'re strengthening that new habit.' },
+    { cat: 'Inner Critic & Self-Kindness', s: 'Talking to yourself kindly can help you bounce back faster.', fact: true, why: 'A gentle inner voice helps you learn from mistakes and keep going.' },
+    { cat: 'Inner Critic & Self-Kindness', s: 'Being hard on yourself is the best way to improve.', fact: false, why: 'Kindness builds motivation more reliably than harsh criticism does.' },
     // Year in Review
     { cat: 'Year in Review', s: 'If the year was hard, there\'s nothing worth reflecting on.', fact: false, why: 'Hard years often hold the most growth and the most important lessons.' },
     { cat: 'Year in Review', s: 'Looking back keeps you stuck in the past.', fact: false, why: 'Reflecting to understand — not to relive — helps you plan a better future.' },
@@ -553,6 +579,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Year in Review', s: 'It\'s too late to learn from a year once it\'s over.', fact: false, why: 'The year being over is exactly what makes reflection possible and useful.' },
     { cat: 'Year in Review', s: 'Getting through a hard year is worth celebrating.', fact: true, why: 'Showing up and not giving up is a real accomplishment.' },
     { cat: 'Year in Review', s: 'Naming who showed up for you helps you see your support network.', fact: true, why: 'Those are the connections worth protecting and thanking.' },
+    { cat: 'Year in Review', s: 'Writing down your wins can help you remember them.', fact: true, why: 'It\'s easy to forget progress — putting it on paper makes it real.' },
+    { cat: 'Year in Review', s: 'Looking back can help you plan what\'s next.', fact: true, why: 'Reflection shows you what worked, so you can carry it into the new year.' },
     // Acts of Kindness
     { cat: 'Acts of Kindness', s: 'Kindness only counts if it\'s a big gesture.', fact: false, why: 'Small, frequent acts of kindness have more impact on wellbeing than rare, grand ones.' },
     { cat: 'Acts of Kindness', s: 'Being kind to yourself is selfish.', fact: false, why: 'Self-kindness is what lets you care for others. You can\'t pour from an empty cup.' },
@@ -562,6 +590,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Acts of Kindness', s: 'Doing something kind can boost your own mood.', fact: true, why: 'It\'s called helper\'s high — kindness releases feel-good chemicals in the giver, too.' },
     { cat: 'Acts of Kindness', s: 'Seeing someone be kind makes you more likely to be kind.', fact: true, why: 'Kindness is contagious! One act often sparks a ripple of others.' },
     { cat: 'Acts of Kindness', s: 'Letting someone help you is also a kindness.', fact: true, why: 'Accepting help gives others the joy of giving.' },
+    { cat: 'Acts of Kindness', s: 'A sincere compliment counts as an act of kindness.', fact: true, why: 'It takes seconds and can brighten someone\'s whole day.' },
+    { cat: 'Acts of Kindness', s: 'Being kind can boost your own mood.', fact: true, why: 'Helping others releases feel-good chemicals in the giver\'s brain, too.' },
     // Hope & the Future
     { cat: 'Hope & the Future', s: 'Hope is just wishful thinking.', fact: false, why: 'Hope is active — it\'s linked to setting goals, solving problems and bouncing back.' },
     { cat: 'Hope & the Future', s: 'If you\'ve lost hope before, it\'s gone for good.', fact: false, why: 'Hope rises and falls, and people rebuild it all the time.' },
@@ -571,6 +601,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Hope & the Future', s: 'Other people can help hold hope for you.', fact: true, why: 'That\'s called borrowed hope — and it\'s okay to lean on others while you rebuild your own.' },
     { cat: 'Hope & the Future', s: 'Noticing small changes can rebuild hope.', fact: true, why: 'Small changes are real evidence that change is possible.' },
     { cat: 'Hope & the Future', s: 'Hope is linked to better health and resilience.', fact: true, why: 'Research connects higher hope with better outcomes and bouncing back faster.' },
+    { cat: 'Hope & the Future', s: 'Setting small goals can help build hope.', fact: true, why: 'Each small win is proof that progress is possible.' },
+    { cat: 'Hope & the Future', s: 'People who believe in you can strengthen your hope.', fact: true, why: 'Hope is easier to hold onto when others share it with you.' },
     // Holiday Money
     { cat: 'Holiday Money', s: 'You have to spend a lot to show someone you love them.', fact: false, why: 'Thoughtfulness and time matter more than cost. The best gifts show you paid attention.' },
     { cat: 'Holiday Money', s: 'Overspending for one month isn\'t a big deal.', fact: false, why: 'Holiday debt can stick around for months. Planning ahead protects your new year.' },
@@ -580,6 +612,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Holiday Money', s: 'A handwritten card can mean more than a store-bought gift.', fact: true, why: 'Personal words show real thought and care.' },
     { cat: 'Holiday Money', s: 'Paying with cash can help you stick to a budget.', fact: true, why: 'When the cash is gone, the spending stops — it\'s a built-in limit.' },
     { cat: 'Holiday Money', s: 'It\'s okay to say \'I\'m keeping things simple this year.\'', fact: true, why: 'You don\'t owe anyone an explanation for your budget.' },
+    { cat: 'Holiday Money', s: 'Making a gift list before shopping can help you spend less.', fact: true, why: 'A plan keeps you from buying on impulse.' },
+    { cat: 'Holiday Money', s: 'Your time can be one of the best gifts you give.', fact: true, why: 'A walk, a call or a shared meal often means more than anything bought in a store.' },
     // Staying Connected
     { cat: 'Staying Connected', s: 'If you feel lonely, something is wrong with you.', fact: false, why: 'Loneliness is a universal human experience — a signal that you need connection, just like hunger signals you need food.' },
     { cat: 'Staying Connected', s: 'Being around people always fixes loneliness.', fact: false, why: 'You can feel lonely in a crowd. The quality of your connections matters more than the number.' },
@@ -589,6 +623,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Staying Connected', s: 'A quick hello can make a real difference.', fact: true, why: 'Even brief, friendly moments with others can lift your mood.' },
     { cat: 'Staying Connected', s: 'A few close friends can matter more than lots of acquaintances.', fact: true, why: 'Quality beats quantity when it comes to connection.' },
     { cat: 'Staying Connected', s: 'Most people want to be there for someone who reaches out.', fact: true, why: 'Sharing what you\'re going through often brings people closer.' },
+    { cat: 'Staying Connected', s: 'Sharing a hobby with others can lead to new friendships.', fact: true, why: 'Common interests give people an easy way to connect.' },
+    { cat: 'Staying Connected', s: 'Reaching out first is a sign of weakness.', fact: false, why: 'Reaching out takes courage — and the other person is often glad you did.' },
     // New Year Intentions
     { cat: 'New Year Intentions', s: 'You have to wait for January 1 to make a change.', fact: false, why: 'Any moment can be a fresh start — you don\'t have to wait for a date on the calendar.' },
     { cat: 'New Year Intentions', s: 'If you\'ve slipped by February, it\'s too late.', fact: false, why: 'Coming back to your intention after a slip is exactly how lasting change works.' },
@@ -598,6 +634,8 @@ window.GS_ACTIVITIES = {
     { cat: 'New Year Intentions', s: 'Telling someone your goal makes you more likely to stick with it.', fact: true, why: 'Sharing your intention adds support and accountability.' },
     { cat: 'New Year Intentions', s: 'Picking one word for your year can guide your choices.', fact: true, why: 'A single word tied to your values is easy to remember on busy days.' },
     { cat: 'New Year Intentions', s: 'A setback is information, not failure.', fact: true, why: 'Every stumble teaches you something you can use when you try again.' },
+    { cat: 'New Year Intentions', s: 'You can set a new intention any day of the year.', fact: true, why: 'Any day is a good day for a fresh start — no need to wait for January 1.' },
+    { cat: 'New Year Intentions', s: 'Writing down your goals makes you more likely to reach them.', fact: true, why: 'Putting goals on paper makes them clearer and easier to stick with.' },
     // Holiday Coping
     { cat: 'Holiday Coping', s: 'You have to attend every holiday event you\'re invited to.', fact: false, why: 'You\'re allowed to decline invitations that feel overwhelming. Protecting your peace is responsible self-care.' },
     { cat: 'Holiday Coping', s: 'Feeling stressed during the holidays means you\'re not strong enough.', fact: false, why: 'Stress is a normal response to hard situations. Having a plan is a sign of strength.' },
@@ -607,6 +645,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Holiday Coping', s: 'Using your five senses can help you feel calmer.', fact: true, why: 'The 5-4-3-2-1 grounding technique brings your attention back to the present moment.' },
     { cat: 'Holiday Coping', s: 'Taking a short break during a gathering is okay.', fact: true, why: 'Stepping outside or finding a quiet spot can help you reset.' },
     { cat: 'Holiday Coping', s: 'Reaching out to a friend during a stressful moment is a strength.', fact: true, why: 'That\'s exactly what your support system is there for.' },
+    { cat: 'Holiday Coping', s: 'Planning ahead can make a stressful event feel easier.', fact: true, why: 'Knowing what you\'ll do if things get tough helps you feel more in control.' },
+    { cat: 'Holiday Coping', s: 'Having a buddy at a gathering can help you feel more at ease.', fact: true, why: 'A friendly face to check in with makes busy events easier to enjoy.' },
     // Winter Wellness
     { cat: 'Winter Wellness', s: 'Winter mood changes only happen in cold, snowy places.', fact: false, why: 'Seasonal mood changes are mostly about light, not temperature — they can happen anywhere.' },
     { cat: 'Winter Wellness', s: 'If you just push through and stay positive, winter low moods go away.', fact: false, why: 'Seasonal mood changes have real biological causes. Light, movement and support help more than willpower.' },
@@ -616,6 +656,8 @@ window.GS_ACTIVITIES = {
     { cat: 'Winter Wellness', s: 'Exercise can help lift your mood in winter.', fact: true, why: 'Moving your body is one of the best natural mood boosters.' },
     { cat: 'Winter Wellness', s: 'Keeping a regular sleep schedule helps your body\'s clock.', fact: true, why: 'Same bedtime and wake time keeps your circadian rhythm steady.' },
     { cat: 'Winter Wellness', s: 'Staying connected with people helps in winter.', fact: true, why: 'Connection is a big protector against the winter slump.' },
+    { cat: 'Winter Wellness', s: 'Morning light can help you feel more awake.', fact: true, why: 'Bright morning light helps set your body\'s internal clock for the day.' },
+    { cat: 'Winter Wellness', s: 'Winter has nothing to enjoy.', fact: false, why: 'Cozy drinks, snowy walks and quiet nights in — winter has its own good moments.' },
   ],
   // ---------------------------------------------------------------- 🫙 gratitude jar
   // Each slip finishes the sentence "I'm grateful for…" — say it out loud, then add a quick "because…".
