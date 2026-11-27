@@ -26,21 +26,7 @@ window.GS_MY_CONTENT = {
    "November Game Day",
    "Thanksgiving Easy",
    "Thanksgiving Intermediate",
-   "Thanksgiving Hard",
-   "AI Utilization for Good",
-   "Conflict Resolution",
-   "Movement as Medicine",
-   "Nutritional Values",
-   "Peer Pressure & Recovery",
-   "Personal Responsibility",
-   "The Science of Leisure",
-   "Toxic Relationships",
-   "Your Values",
-   "Your Happy Place",
-   "Strength-Based Thinking",
-   "Holiday Cards",
-   "Intrusive Thoughts",
-   "Inner Critics"
+   "Thanksgiving Hard"
   ]
  },
  "banks": {
